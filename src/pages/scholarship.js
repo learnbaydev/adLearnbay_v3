@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Global/AdsNavbar/Navbar";
-import Scholarship from "../components/Scholarship/Scholarship";
+import Scholarship from "../components/Scholarship/scholarship";
 
 function scholarship() {
   return (
