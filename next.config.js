@@ -1,6 +1,6 @@
-const isProd = process.env.NODE_ENV=="production"
+const isProd = process.env.NODE_ENV == "production";
 const nextConfig = {
-  assetPrefix: isProd ? "https://d32and0ii3b8oy.cloudfront.net/" : undefined,
+  // assetPrefix: isProd ? "https://d32and0ii3b8oy.cloudfront.net/" : undefined,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -28,7 +28,6 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 2678400,
   },
-
 };
 
 // const withBundleAnalyzer = require("@next/bundle-analyzer")({
