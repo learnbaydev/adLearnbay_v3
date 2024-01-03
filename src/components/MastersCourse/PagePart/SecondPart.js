@@ -1,0 +1,127 @@
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+// import BottomBar from "../../global/BottomBar/BottomBar";
+import BottomBar from "@/components/Global/BottomBar/BottomBar";
+import Footer from "@/components/Global/Footer/Footer";
+import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
+const GetHire = dynamic(() => import("../GetHire/GetHire"));
+
+const SyllabusNew = dynamic(() =>
+  import("../../CoursePage/Syllabus/MasterSyllabus")
+);
+const ToolsCovered = dynamic(() =>
+  import("../../CoursePage/ToolsCovered/ToolsCovered")
+);
+const OfferPopup = dynamic(() => import("../../Global/OfferPopup/OfferPopup"));
+const Certificate = dynamic(() => import("../Certificate/Certificate"));
+const FeeSection = dynamic(() =>
+  import("../../CoursePage/FeeSection/FeeSection")
+);
+const MentorsSection = dynamic(() =>
+  import("../../Global/MentorsSection/MentorsSection")
+);
+const SliderTabs = dynamic(() => import("../../Global/SliderTabs/SliderTabs"));
+
+const NewProjectSection = dynamic(() =>
+  import("../../Global/NewProjectSection/NewProjectSection")
+);
+const SeventhSection = dynamic(() =>
+  import("../../Global/SeventhSection/SeventhSection")
+);
+
+const EighgtSection = dynamic(() => import("../EightSection/EightSection"));
+
+const SecondPart = ({
+  CertificateData,
+  masterSyllabusMobile,
+  projectSection,
+  Organic,
+  buttonHide,
+}) => {
+  const [popupData, setPopupData] = useState([]);
+  // console.log(popupData);
+  useEffect(() => {
+    // console.log("inside UseEFFect");
+    const fetchPopup = async () => {
+      const data = await fetch("/api/Popup/popupGenerate", {
+        method: "GET",
+      });
+      if (data.status === 200) {
+        const { popData } = await data.json();
+        // console.log(popData, "get data");
+        if (popData == []) {
+          setPopupData([]);
+        }
+
+        popData.map((data, i) => {
+          // console.log(data);
+          data.page.map((popupData, i) => {
+            // console.log(popData);
+            if (popupData === "Master in Cs") {
+              setPopupData(data);
+              // console.log(popupData);
+              return;
+            }
+          });
+        });
+      }
+    };
+    fetchPopup();
+  }, []);
+  return (
+    <>
+      <GetHire />
+      <SyllabusNew
+        masterSyllabusMobile={masterSyllabusMobile}
+        dataScienceCounselling={true}
+        dataScience={true}
+        buttonHide={buttonHide}
+        titleCourse="Masters in Computer Science: Data Science and AI"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+      />
+      <ToolsCovered
+        deskImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Tools-Logo.png"
+        mobImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Mobile-Tools-Covered.png"
+      />
+      <Certificate data={CertificateData} />
+      <FeeSection
+        Fee="₹ 2,50,000"
+        FeeEmi="12,292/month."
+        weekdaybatch="Weekend Batch"
+        weekendbatch="Weekday Batch"
+        weekday="SAT-SUN"
+        weekend="SAT-SUN"
+        WeekdayDate="JAN 14th"
+        WeekendDate="DEC 9th"
+        WeekendTime="09:30 AM - 1:00 PM"
+        WeekdayTime="09:30 AM - 1:00 PM"
+        CutFee="₹ 3,25,000/-"
+        FeeContent3="Flexible payment"
+        FeeContent4="Easy loan procedure"
+        FeeContent5="15 days refund policy"
+        FeeContent6="No additional cost"
+        dataScienceCounselling={true}
+        dataScience={true}
+      />
+      <MentorsSection />
+      <SliderTabs />
+
+      <NewProjectSection
+        dataScienceCounselling={true}
+        dataScience={true}
+        titleCourse="Masters in Computer Science: Data Science and AI"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
+        projectSection={projectSection}
+      />
+      {/* <FAQNew FAQNewData={DataScienceMastersinCS[0].faq} /> */}
+      <SeventhSection />
+      {Organic ? "" : <EighgtSection />}
+      {Organic ? <Footer /> : ""}
+      <BottomBar masterdegree={true} />
+      <WhatsappFloat />
+      {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+    </>
+  );
+};
+
+export default SecondPart;
