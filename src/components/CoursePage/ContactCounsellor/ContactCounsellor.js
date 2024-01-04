@@ -97,8 +97,8 @@ const ContactCounsellor = ({
       <div>
         <h4>Can’t decide which program to opt for?</h4>
         <p className={styles.botText}>
-          Don’t worry, our expert counsellor is there to guide you make the
-          right career choice
+          Don’t worry, our expert counsellor is there to guide you, <b> make the
+          right career choice</b>
         </p>
 
         <div className={styles.conbtn}>

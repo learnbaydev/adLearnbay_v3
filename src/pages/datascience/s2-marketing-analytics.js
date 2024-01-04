@@ -63,11 +63,12 @@ function Blockchain({ DataScienceCourseDataJson }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection />
+        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
         <SyllabusNew
           interstedInHide={true}
           formotp={true}
           ADS={true}
+          onebtn={true}
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
           }
@@ -79,7 +80,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           redirectDS={true}
           heading=""
           Testimonial={
-            DataScienceCourseData.DataScienceCourseData[0].testimonial
+            DataScienceCourseData.DataScienceCourseData[0].testimonialgenric
           }
         />
         <SeventhSection />

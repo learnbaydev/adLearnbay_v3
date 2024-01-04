@@ -101,7 +101,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           Fee="₹ 1,10,000"
           FeeEmi="₹  7,211/month"
           weekdaybatch="Weekday Evening"
-          weekendbatch="Weekend  Morning"
+          weekendbatch="Weekday Morning"
           weekday="MON - FRI"
           weekend="MON - FRI"
           WeekdayDate="JAN 10th"

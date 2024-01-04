@@ -44,6 +44,7 @@ const PopupContent = ({
               upSkillingHide={true}
               ADS={ADS}
               HideInterest={HideInterest}
+          downloadBrochure={downloadBrochure}
             />
           ) : (
         <Form

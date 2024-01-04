@@ -17,8 +17,7 @@ const BottomBar = ({ whatsappShow, masterdegree, interstedInHide, ADS, formotp, 
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Download Brochure"
-        downloadBrochure
+        heading="Apply for Counselling"
         interstedInHide={interstedInHide}
         upSkillingHide={true}
         ADS={ADS}

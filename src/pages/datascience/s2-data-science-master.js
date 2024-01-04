@@ -100,7 +100,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           Fee="₹ 1,25,000"
           FeeEmi="₹ 8,194/month"
           weekdaybatch="Weekday Evening"
-          weekendbatch="Weekend  Morning"
+          weekendbatch="Weekday Morning"
           weekday="MON - FRI"
           weekend="MON - FRI"
           WeekdayDate="JAN 10th"

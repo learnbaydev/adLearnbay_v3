@@ -5,7 +5,7 @@ export const viewAllD = [
       "Advance Data Science & AI Certification | Domain Specialisation For Professionals",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
   },
   {
     id: 2,
@@ -13,13 +13,13 @@ export const viewAllD = [
       "Advance AI & ML Certification | Become AI Expert In Product based MNCs",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
   },
   {
     id: 4,
     title: "Data Science & AI Master Program",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
   },
   {
     id: 5,
@@ -34,7 +34,7 @@ export const viewAllD = [
     title: "Data Analytics",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf",
   },
 
   {
@@ -49,7 +49,7 @@ export const viewAllD = [
     title: " Software Development Program with Specialization in DevOps & Cloud",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Software+Development+with+Specialization+in+Cloud+and+DevOps.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
   },
   {
     id: 9,
@@ -75,7 +75,7 @@ export const viewAllD = [
     title: "Business Analytics",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf",
   },
   {
     id: 14,
@@ -91,6 +91,13 @@ export const viewAllD = [
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Marketing+Analytics+Certification+Program.pdf",
   },
+  {
+    id: 16,
+    title: "Advance Certification Program in generative AI",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
+  },
   
 ];
 export const dataScience = [
@@ -99,7 +106,7 @@ export const dataScience = [
     title:
       "Advance Data Science & AI Certification | Domain Specialisation For Professionals",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+Data+Science+and+AI+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
   },
   {
     id: 2,
@@ -107,14 +114,14 @@ export const dataScience = [
       "Advance AI & ML Certification | Become AI Expert In Product based MNCs",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Advance+AI+%26+ML+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
   },
   
   {
     id: 4,
     title: "Data Science & AI Master Program",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Master's+Program+%5BWith+Unlimited+Interview+Calls%5D.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
   },
 
   {
@@ -122,7 +129,7 @@ export const dataScience = [
     title: "Data Analytics",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Analytics+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf",
   },
 
   {
@@ -130,7 +137,7 @@ export const dataScience = [
     title: "Business Analytics",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Business+Analytics+Certification+Program+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf",
   },
   {
     id: 7,

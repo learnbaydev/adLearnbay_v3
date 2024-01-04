@@ -92,7 +92,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           Fee="₹ 80,000"
           FeeEmi="₹ 5,244/month"
           weekdaybatch="Weekday Evening"
-          weekendbatch="Weekend  Morning"
+          weekendbatch="Weekday Morning"
           weekday="MON - FRI"
           weekend="MON - FRI"
           WeekdayDate="JAN 10th"

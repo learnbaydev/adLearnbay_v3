@@ -6,9 +6,23 @@
   gap: 60px;
   padding: 10px;
 }
+.threemain{
+  display: grid;
+  grid-template-columns: 36% 40%;
+  align-items: center;
+  text-align: center;
+  margin: 19px 19px 4px 21px;
+  justify-content: center;
+  gap: 31px;
+}
+.iconsss {
+  font-size: 40px;
+ color: #72BC00;
+}
+
 
 .box1{
-display: flex;
+/* display: flex; */
     flex-direction: column;
     justify-content: center;
     /* border: solid 2px; */
@@ -31,7 +45,7 @@ display: flex;
 .cercle{
 display: grid;
     grid-template-columns: 5% 94%;
-    align-items: center;
+    align-items:baseline;
     gap: 10px;
 }
 
@@ -45,8 +59,9 @@ display: grid;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 24px;
+  gap: 6px;
+  /* padding: 1px 24px; */
+  /* margin-bottom: 24px; */
 }
 
 
@@ -63,8 +78,9 @@ display: grid;
 
 .cercle p{
 color: #706f6f;
+margin-top: 0px;
   
-  font-size: 16.492px;
+  font-size: 14.492px;
   font-style: normal;
   font-weight: 400;
   line-height: 151.5%; /* 32.56px */
@@ -97,9 +113,16 @@ color: #706f6f;
 }
 .dots {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:35px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+  /* margin: auto; */
+  padding-left: 57px;
+}
+.boxmbl {
+  display: none;
+  
 }
 
 .boticon  {
@@ -110,7 +133,11 @@ color: #706f6f;
     gap: 15px;
     color: #F99600;
     font-size: 22px;
+    
    
+}
+.onlyicon{
+margin-top:10px;
 }
 .boticon p {
 color: #1C1C1C;
@@ -121,7 +148,7 @@ line-height: 243%;/* 53.46px */
 }
 .gamimg {
   text-align: center;
-    margin: 32px 6px 30px 9px;
+  margin: 20px 6px 10px 9px;
 }
 
 .box3limg {
@@ -151,20 +178,22 @@ background: linear-gradient(180deg, rgba(45, 182, 33, 0.09) 0%, rgba(45, 182, 33
   margin: 10px;
 }
 
-.box3icon {
-  display: grid;
-  grid-template-columns: 44% 40%;
-  gap: 30px;
-  padding: 10px;
-  text-align: center;
 
-}
 
 .box3icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.box3icons span {
+  color: #353535;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    font-size: 14px;
 }
 .logo {
   font-size: 46px;
@@ -178,44 +207,39 @@ background: linear-gradient(180deg, rgba(45, 182, 33, 0.09) 0%, rgba(45, 182, 33
   display: none;
 }
 
-@media only screen and (max-width: 641px){
-.boxmain {
-  display: flex;
-  flex-direction: column;
-  margin: 2px 19px;
-  gap: 20px;
-}
-
-.box1img img {
-width: 268px;
+@media only screen and (min-width: 1480px){
+ 
+  .box1img img {
+    width: 290px;
     height: auto;
-}
-
-.firstboxlastimg {
-  display: none;
-}
-.gamimg img {
-  width: 250px;
-  height: auto;
-}
-.gamimg{
-margin-bottom: 10px;
-}
-.box3limg {
-  display: none;
-}
-.lastimg {
-  display: none;
-}
-.dots {
-  margin: 0px;
-}
-.mobile{
-  display: flex;
-}
+  }
+  .gamimg img {
+    width: 250px;
+    /* margin-left: 24px; */
+  }
+  .dots {
+    padding-left: 48px;
+  }
 
 }
 @media only screen and (min-width: 1280px){
+  
+  .box1img img {
+    width: 320px;
+    height: auto;
+  }
+  .gamimg img {
+    width: 250px;
+    /* margin-left: 24px; */
+  }
+  .dots {
+    padding-left: 48px;
+  }
+    
+  }
+
+
+/* @media only screen and (min-width: 1280px){
 .box1img img {
   width: 300px;
   height: auto;
@@ -225,7 +249,7 @@ margin-bottom: 10px;
   height: auto;
 }
   
-}
+} */
 @media only screen and (max-width: 1024px){
   .box1 {
     display: block;
@@ -240,19 +264,82 @@ margin-bottom: 10px;
   }
     
   }
+ 
 
-  @media only screen and (max-width: 961px){
+
+
+
+
+
+@media only screen and (max-width: 641px){
+  .boxmain {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 19px;
+    gap: 20px;
+  }
   
+  .box1img img {
+  width: 268px;
+      height: auto;
+  }
+  
+  .firstboxlastimg {
+    display: none;
+  }
+  .boxmbl{
+    display: block;
+  }
+  .gamimg img {
+    width: 250px;
+    height: auto;
+  }
+  .gamimg{
+  margin-bottom: 10px;
+  }
+  .box3limg {
+    display: none;
+  }
+  .lastimg {
+    display: none;
+  }
+  .dots {
+    margin: 0px;
+    padding: 0px 4px 2px 24px;
+  }
+  .mobile{
+    display: flex;
+  }
+  .boticon p  {
+    font-size: 14px;
+  }
+  .box1img img {
+
+    width: 300px;
+    height: auto;
+  }
+  .cercle p {
+    font-size: 14px;
+  }
+  .gamimg img {
+    margin-left: 0px;
+  }
+.gamimg {
+  margin: 20px 33px 26px 3px;;
+}
+  
+  }
+  @media only screen and (max-width: 400px){
     .box1img img {
-      width: 220px;
+
+      width: 260px;
       height: auto;
     }
-    .gamimg img {
-      width:  200px;
-      height: auto;
-    }
-      
-    }
+
+
+
+  }
+
 
   /* Define unique colors for each box */
  

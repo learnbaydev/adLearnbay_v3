@@ -48,7 +48,7 @@
   opacity: 2;
   background-color: #1e1e1e;
   padding: 40px 0px;
-  /* margin-top: 30px; */
+  margin-top: 30px;
 }
 .title {
   display: flex;
@@ -204,4 +204,15 @@
     width: 340px;
     height: 40px;
   }
+}
+@media (max-width: 1281px)
+{
+  .PlacementCallMain{
+    overflow: hidden;
+  }
+}
+@media (max-width: 1480px){
+.PlacementCallMain{
+  overflow: hidden;
+}
 }

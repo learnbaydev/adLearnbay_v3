@@ -1,9 +1,17 @@
 import Navbar from "@/components/Global/NavbarHome/Navbar";
+import AdsNavbar from "@/components/Global/AdsNavbar/Navbar";
 import FirstSection from "@/components/MastersCourse/FirstSection/FirstSection";
 import dynamic from "next/dynamic";
 import JobAbroad from "../JobAbroad/JobAbroad";
 import MasterSecondSection from "../MasterSecondSection/MasterSecondSection";
-
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import { FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { BsPersonGear } from "react-icons/bs";
+import { BsDisplay } from "react-icons/bs";
+import { AiOutlineContainer } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsPeople } from "react-icons/bs";
 const TrainerSection = dynamic(() =>
   import("../../Global/TrainerSection/TrainerSection")
 );
@@ -17,11 +25,54 @@ const FirstPart = ({
   plainimg,
   iimgchmbl,
   videoPopupHide,
+  Marketing,
 }) => {
+  const DsSecond = {
+    title1: "Domain Specialization",
+    image1:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds-one.webp",
+    points: [
+      "Leverage your prior work experience for  relevant career transition",
+      "Aim for higher salary hikes.",
+    ],
+    image2:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds.webp",
+    title2: "Job Roles You Can Target",
+    jobRoles: [
+      {
+        icon: <FaReact />,
+        role: "Sr. Data Scientist: ",
+        salary: " 27 LPA",
+      },
+      {
+        icon: <TbBrandGoogleAnalytics />,
+        role: "Sr. Data Analyst:",
+        salary: " 15 LPA",
+      },
+      { icon: <BsPersonGear />, role: "ML Engineer: ", salary: "14 LPA" },
+    ],
+    image3:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Group-768-min.webp",
+    image4:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
+    title3: "Assured Job Assistance",
+    jobAssistance: [
+      { icon: <BsDisplay />, text: "Unlimited Interview Calls" },
+      { icon: <AiOutlineContainer />, text: "Resume Building Session" },
+      { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
+    
+    ],
+    formbl: [
+      { icon: <BsPeople />, text: "Mock Interview Sessions" },
+    ],
+    image5:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
+  };
   return (
     <>
       {" "}
-      <Navbar dataScienceCounselling={true} dataScience={true} />
+      {Marketing ? (<AdsNavbar dataScienceCounselling={true} dataScience={true} />) : (
+      <Navbar dataScienceCounselling={true} dataScience={true} />)}
       <FirstSection
         ThirdTyped="Live Interactive Classes"
         dataScienceCounselling={true}
@@ -34,6 +85,7 @@ const FirstPart = ({
         firstHeading="Advanced Data Science and AI Program"
       />
       <MasterSecondSection />
+      <CloudDevopsecond data={DsSecond} />
       <JobAbroad />
       <TrainerSection
         idss="eautK0odE7Q"

@@ -1,5 +1,6 @@
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Footer from "@/components/Global/Footer/Footer";
+import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
@@ -80,7 +81,7 @@ const SecondPart = ({
         Fee="₹ 1,25,000"
         FeeEmi="₹ 8,194/month"
         weekdaybatch="Weekday Evening"
-        weekendbatch="Weekend  Morning"
+        weekendbatch="Weekday Morning"
         weekday="MON - FRI"
         weekend="MON - FRI"
         WeekdayDate="JAN 10th"
@@ -112,6 +113,7 @@ const SecondPart = ({
       />
 
       <FAQNew FAQNewData={FAQNewData} />
+      <SeventhSection organic={true} />
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
