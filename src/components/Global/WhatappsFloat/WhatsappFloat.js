@@ -67,31 +67,19 @@ function WhatsappFloat({ chat360code1 }) {
 
               },
 
-              "brandSetting":{
-
-                  "brandName":"Learnbay",
-
-                  "brandSubTitle":"The Learner's Path",
-
-                  "brandImg":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/50-min.webp",
-
-                  "welcomeText":"Hi there! How can I help you?",
-
-         "messageText":"I am looking for course, and free career counselling session.",
-
-
-
-                  "backgroundColor":"#0a5f54",
-
-                  "ctaText":"Start Chat",
-
-                  "borderRadius":"25",
-
-                  "autoShow":false,
-
-                  "phoneNumber":"+917349222263"
-
-              }
+              "brandSetting": {
+                "brandName": "Learnbay",
+                "brandSubTitle": "The Learner's Path",
+                "brandImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/50-min.webp",
+                "welcomeText": "Hi there! How can I help you?",
+                "messageText": "I am looking for a course and free career counseling session.",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false, // Set this to true if you want the chat window to open automatically
+                "phoneNumber": "+917349222263"
+            }
+            
 
             };
 
