@@ -118,7 +118,7 @@ const SecondPart = ({
       {Organic ? "" : <EighgtSection />}
       {Organic ? <Footer /> : ""}
       <BottomBar masterdegree={true} />
-      <WhatsappFloat />
+      <WhatsappFloat chat360code1={true} />
       {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
     </>
   );

@@ -137,7 +137,7 @@ const Form = ({
           dataScience
             ? {
                 pathname: "/Thank-you",
-                query: { titleCourse: titleCourse, brochureLink: brochureLink },
+                // query: { titleCourse: titleCourse, brochureLink: brochureLink },
               }
             : {
                 pathname: pushPath,

@@ -29,6 +29,13 @@ const getEndPoint = (pathname, event) => {
   ) {
     endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
   }
+
+  if (
+    pathname ===
+    "/apply-for-counselling-email-marketing"
+  ) {
+    endPoint = "https://getform.io/f/94c74039-f505-4ebf-922e-b4728bd793e3";
+  }
   return endPoint;
   // ... (Logic to determine the endpoint based on the router)
 };

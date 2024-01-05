@@ -39,8 +39,7 @@ const FullStackSoftwareDevelopmentFirstPart = ({ SecondSectionData }) => {
         firstToparaImg=""
         firstHeading="Software Development Certification Program"
         firstTopPara="Crack Interview in Top MNCs"
-        idss="bfl64ANfSV0"
-        softwareBtnHide={true}
+        idss="0cspp1jXAbM"
       />
       <SecondSection SecondSectionData={SecondSectionData} />
       {/* <WhoProgram

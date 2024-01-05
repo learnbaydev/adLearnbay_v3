@@ -50,7 +50,6 @@ function ContactUs({
         </p>
         <FormInline
           dataScience={dataScience}
-          dataScienceCounselling={dataScienceCounselling}
           radio={radio}
           upSkillingHide={upSkillingHide}
           interstedInHide={interstedInHide}
