@@ -17,7 +17,7 @@ export const viewAllD = [
   },
   {
     id: 4,
-    title: "Data Science & AI Master Program",
+    title: "Master’s Degree in CS: Data Science & AI",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
   },
@@ -119,7 +119,7 @@ export const dataScience = [
   
   {
     id: 4,
-    title: "Data Science & AI Master Program",
+    title: "Master’s Degree in CS: Data Science & AI",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
   },
