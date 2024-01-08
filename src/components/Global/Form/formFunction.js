@@ -36,6 +36,9 @@ const getEndPoint = (pathname, event) => {
   ) {
     endPoint = "https://getform.io/f/94c74039-f505-4ebf-922e-b4728bd793e3";
   }
+  if (pathname === "/google") {
+    endPoint = "https://getform.io/f/1cfd5db8-ec05-4d26-b05f-6b73a81ebf89";
+  }
   return endPoint;
   // ... (Logic to determine the endpoint based on the router)
 };
