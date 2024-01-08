@@ -110,18 +110,18 @@ function Counselling() {
                 >
                   <ul>
                     <li>
-                      Can a candidate from the non-programming and non-technical
-                      domain learn data science?
+                      1. Can a candidate from the non-programming & non-tech
+                      Domain learn our Courses?
                     </li>
-                    <li>Will your previous domain experience utilized?</li>
-                    <li>Course Curriculum</li>
-                    <li>Real-Time Projects List</li>
+                    <li>2. Will your previous Domain experience utilized?</li>
+                    <li>3. Our Course Curriculum.</li>
+                    <li>4. Real-Time Projects List provided by us.</li>
                     <li>
-                      How to change the domain and whether your profile is
-                      suitable for data science?
+                      5. How to change the domain and whether your profile is
+                      suitable for our Course?
                     </li>
-                    <li>Career Options in the data science domain</li>
-                    <li>Placement Assistance and Job referrals </li>
+                    <li>6. Career Options in your preferred Domain</li>
+                    <li>7. Placement Assistance and Job referrals</li>
                   </ul>
 
                   <p>
@@ -187,18 +187,18 @@ function Counselling() {
                 </p>
                 <ul>
                   <li>
-                    Can a candidate from the non-programming and non-technical
-                    domain learn data science?
+                    1. Can a candidate from the non-programming & non-tech
+                    Domain learn our Courses?
                   </li>
-                  <li>Will your previous domain experience utilized?</li>
-                  <li>Course Curriculum</li>
-                  <li>Real-Time Projects List</li>
+                  <li>2. Will your previous Domain experience utilized?</li>
+                  <li>3. Our Course Curriculum.</li>
+                  <li>4. Real-Time Projects List provided by us.</li>
                   <li>
-                    How to change the domain and whether your profile is
-                    suitable for data science?
+                    5. How to change the domain and whether your profile is
+                    suitable for our Course?
                   </li>
-                  <li>Career Options in the data science domain</li>
-                  <li>Placement Assistance and Job referrals </li>
+                  <li>6. Career Options in your preferred Domain</li>
+                  <li>7. Placement Assistance and Job referrals</li>
                 </ul>
                 <p>
                   <strong>Minimum Duration:</strong>&nbsp;15 to 20 minutes.
