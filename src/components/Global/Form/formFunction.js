@@ -79,6 +79,7 @@ const redirectionThankYou = (
     pathname === "/referrals" ||
     pathname === "/marketing" ||
     pathname === "/offer" ||
+    pathname === "/google" ||
     pathname === "/apply-for-counselling-data-science-marketing" ||
     pathname === "/scholarship"
   ) {
@@ -203,7 +204,7 @@ const getFormFields = (
         { value: "Calls", label: "Calls" },
         { value: "WhatsApp", label: "WhatsApp" },
         { value: "Referral", label: "Referral" },
-        { value: "Krishna Sir", label: "Krishna Sir" },
+        // { value: "Krishna Sir", label: "Krishna Sir" },
       ],
       required: google, // Conditionally required
       showField: google, // Conditionally render the field
