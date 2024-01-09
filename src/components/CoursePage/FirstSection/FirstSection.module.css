@@ -150,6 +150,39 @@
   height: max-content;
 }
 
+.boxDivGreen {
+  margin-top: 28px;
+}
+
+.special {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 127.182%;
+  margin: 0;
+}
+
+.iconPara {
+  display: flex;
+  gap: 10px;
+}
+
+.iconPara p {
+  border-radius: 7px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: #0c8f00;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 127.182%;
+  margin-top: 15px;
+}
+
+.iconCheck {
+  color: #20a898;
+}
+
 @media (max-width: 1281px) {
   .First {
     padding: 40px 80px;
@@ -242,6 +275,30 @@
     flex-direction: column;
     align-items: center;
   }
+  .boxDivGreen {
+    margin: 30px 20px;
+  }
+
+  .special {
+    font-size: 14px;
+  }
+
+  .paraCollab p {
+    margin: 0px 0px 10px 0px;
+    color: #656464;
+    font-size: 12px;
+  }
+  .BtnDiv {
+    flex-flow: column;
+  }
+  .iconPara {
+    width: auto;
+    gap: 10px;
+  }
+  .iconPara p {
+    font-size: 13px;
+    padding: 8px;
+  }
 }
 @media (max-width: 481px) {
   .FirstLeft {
@@ -280,7 +337,7 @@
   .h1 {
     justify-content: center;
     text-align: left;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.3;
     margin: 0;
     padding: 0px 20px;

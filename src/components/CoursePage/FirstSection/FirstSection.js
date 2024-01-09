@@ -17,7 +17,7 @@ function FirstSection({
   dataScienceCounselling,
   ibmOnly,
   cityParaCont,
-  bannerbtnwhite,
+  woolfUniversity,
   HideInterest,
 }) {
   const [popups, setPopups] = useState(false);
@@ -66,6 +66,7 @@ function FirstSection({
         setPopups={setPopups}
         setVideo={setVideo}
         HideInterest={HideInterest}
+        woolfUniversity={woolfUniversity}
       />
     </>
   );

@@ -363,7 +363,7 @@ export const CloudAndDevOpsCourseData = [
                
               ],
               id: 0,
-              open: true,
+              open: false,
             },
           },
       

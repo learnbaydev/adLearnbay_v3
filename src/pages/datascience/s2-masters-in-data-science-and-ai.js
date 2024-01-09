@@ -17,8 +17,19 @@ import Certificate from "@/components/MastersCourse/Certificate/Certificate";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
+import { FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { BsPersonGear } from "react-icons/bs";
+import { BsDisplay } from "react-icons/bs";
+import { AiOutlineContainer } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsPeople } from "react-icons/bs";
 import { parseJSONData } from "../../../Util/JsonConvertor";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
@@ -26,6 +37,48 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
   const DataScienceMastersinCS = parseJSONData(DataScienceMastersinCSJson);
 
   const [popupData, setPopupData] = useState([]);
+
+  const DsSecond = {
+    title1: "Domain Specialization",
+    image1:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds-one.webp",
+    points: [
+      "Leverage your prior work experience for  relevant career transition",
+      "Aim for higher salary hikes.",
+    ],
+    image2:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds.webp",
+    title2: "Job Roles You Can Target",
+    jobRoles: [
+      {
+        icon: <FaReact />,
+        role: "Sr. Data Scientist: ",
+        salary: " 27 LPA",
+      },
+      {
+        icon: <TbBrandGoogleAnalytics />,
+        role: "Sr. Data Analyst:",
+        salary: " 15 LPA",
+      },
+      { icon: <BsPersonGear />, role: "ML Engineer: ", salary: "14 LPA" },
+    ],
+    image3:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Group-768-min.webp",
+    image4:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
+    title3: "Assured Job Assistance",
+    jobAssistance: [
+      { icon: <BsDisplay />, text: "Unlimited Interview Calls" },
+      { icon: <AiOutlineContainer />, text: "Resume Building Session" },
+      { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
+    
+    ],
+    formbl: [
+      { icon: <BsPeople />, text: "Mock Interview Sessions" },
+    ],
+    image5:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
+  };
 
   return (
     <>
@@ -54,6 +107,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           HideInterest={true}
           formotp={true}
           ADS={true}
+          woolfUniversity={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
@@ -65,14 +119,18 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           softwareBtnHide={true}
         />
 
-        <SecondSection />
+<MasterSecondSection />
+      <CloudDevopsecond data={DsSecond} />
+      <JobAbroad />
+
+        {/* <SecondSection /> */}
         <S2SecondSection MastersPage={true} />
-        <WhoIsProgram
+        {/* <WhoIsProgram
           first="Bachelor's degree with consistent good academic"
           second="Minimum 6 Months of IT/Non-IT work experience"
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
-        />
+        /> */}
         <ProjectSection HideInterest={true} formotp={true} ADS={true} />
         <GetHire />
 
@@ -119,6 +177,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           }
         />
         <MentorsSection />
+      <SliderTabs />
         <NewProjectSection
           HideInterest={true}
           formotp={true}

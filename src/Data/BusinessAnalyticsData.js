@@ -354,7 +354,7 @@ export const BADataScienceCourseData = [
             },
           ],
           id: 0,
-          open: true,
+          open: false,
         },
       },
       {

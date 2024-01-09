@@ -375,7 +375,7 @@ export const DataScienceCourseData = [
             },
           ],
           id: 0,
-          open: true,
+          open: false,
         },
       },
       {

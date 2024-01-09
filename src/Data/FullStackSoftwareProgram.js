@@ -115,7 +115,7 @@ export const FSSPDataScienceCourseData = [
             },
           ],
           id: 0,
-          open: true,
+          open: false,
         },
       },
       {

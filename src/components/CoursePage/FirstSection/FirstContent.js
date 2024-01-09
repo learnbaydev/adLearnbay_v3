@@ -15,6 +15,7 @@ const FirstContent = ({
   setPopups,
   setVideo,
   ADS,
+  woolfUniversity,
 }) => {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -40,7 +41,11 @@ const FirstContent = ({
             {firstHeading}{" "}
             <span className={styles.h1Span}>{firstToparaImg}</span>
           </h1>
-          <p className={styles.ptopCiity}>{cityParaCont}</p>
+          {woolfUniversity ? (
+            ""
+          ) : (
+            <p className={styles.ptopCiity}>{cityParaCont}</p>
+          )}
           {mobile ? (
             ""
           ) : (
@@ -48,24 +53,51 @@ const FirstContent = ({
               <div className={ibmOnly ? styles.DAibm : styles.Desktop}>
                 <p className={styles.ptop}>In Collaboration With</p>
                 <div className={styles.ImageBlock}>
-                  {ibmOnly ? (
+                  {woolfUniversity ? (
                     <Image
-                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
-                      width="70"
-                      height="30"
+                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/woolf-univer.webp"
+                      alt="woolf-university"
                       priority
-                      alt="data science course"
+                      width="268"
+                      height="28"
                     />
                   ) : (
-                    <Image
-                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
-                      width="266"
-                      height="48"
-                      priority
-                      alt="data science course"
-                    />
+                    <>
+                      {ibmOnly ? (
+                        <Image
+                          src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
+                          width="70"
+                          height="30"
+                          priority
+                          alt="data science course"
+                        />
+                      ) : (
+                        <Image
+                          src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
+                          width="266"
+                          height="48"
+                          priority
+                          alt="data science course"
+                        />
+                      )}
+                    </>
                   )}
                 </div>
+                {woolfUniversity ? (
+                  <div className={styles.boxDivGreen}>
+                    <p className={styles.special}>SPECIALIZATION IN</p>
+                    <div className={styles.iconPara}>
+                      <p className={styles.boxGreen}>
+                        Data Science & Analytics
+                      </p>
+                      <p className={styles.boxGreen}>
+                        Artificial Intelligence & ML
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
               <div className={styles.animationTextWrap}>
                 <span className={styles.animationText}>
@@ -74,13 +106,14 @@ const FirstContent = ({
               </div>
               {/* Button */}
               <div className={styles.btnImage}>
-              {ADS ? (<div onClick={popupShow}>
-                  <Button bannerButton={true} text="APPLY FOR COUNSELLING" />
-                </div>
-              ) : (
-                <div onClick={popupShow}>
-                  <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
-                </div>
+                {ADS ? (
+                  <div onClick={popupShow}>
+                    <Button bannerButton={true} text="APPLY FOR COUNSELLING" />
+                  </div>
+                ) : (
+                  <div onClick={popupShow}>
+                    <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                  </div>
                 )}
                 {softwareBtnHide ? (
                   ""
@@ -117,24 +150,51 @@ const FirstContent = ({
             <div className={styles.Mobile}>
               <p className={styles.ptop}>In Collaboration With</p>
               <div className={styles.ImageBlock}>
-                {ibmOnly ? (
+                {woolfUniversity ? (
                   <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
-                    width="70"
-                    height="30"
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/woolf-univer.webp"
+                    alt="woolf-university"
                     priority
-                    alt="data science course"
+                    width="268"
+                    height="28"
                   />
                 ) : (
-                  <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
-                    width="283"
-                    height="51"
-                    priority
-                    alt="data science course"
-                  />
+                  <>
+                    {ibmOnly ? (
+                      <Image
+                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
+                        width="70"
+                        height="30"
+                        priority
+                        alt="data science course"
+                      />
+                    ) : (
+                      <Image
+                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
+                        width="283"
+                        height="51"
+                        priority
+                        alt="data science course"
+                      />
+                    )}
+                  </>
                 )}
               </div>
+              {woolfUniversity ? (
+                  <div className={styles.boxDivGreen}>
+                    <p className={styles.special}>SPECIALIZATION IN</p>
+                    <div className={styles.iconPara}>
+                      <p className={styles.boxGreen}>
+                        Data Science & Analytics
+                      </p>
+                      <p className={styles.boxGreen}>
+                        Artificial Intelligence & ML
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )}
             </div>{" "}
             <div className={styles.btnImageMobile}>
               <div onClick={popupShow}>

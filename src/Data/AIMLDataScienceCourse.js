@@ -372,7 +372,7 @@ export const AIMLDataScienceCourseData = [
             },
           ],
           id: 0,
-          open: true,
+          open: false,
         },
       },
       {

@@ -7,7 +7,7 @@
   z-index: 999;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255);
   right: 0;
   left: 0;
   height: 70px;
@@ -52,7 +52,7 @@
 .right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .right span {
   margin-right: 30px;
@@ -162,7 +162,7 @@
     height: 70px;
     padding: 0px 10px;
     display: grid;
-    grid-template-columns: 52% 48%;
+    grid-template-columns: 44% 56%;
     align-items: center;
   }
   .left {
