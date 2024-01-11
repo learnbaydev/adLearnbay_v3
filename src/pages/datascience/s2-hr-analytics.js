@@ -97,8 +97,8 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           data={DataScienceCourseData.DataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 1,25,000"
-          FeeEmi="₹ 8,194/month"
+          Fee="₹ 89,000"
+          FeeEmi="₹ 8,752/month"
           weekdaybatch="Weekend Batch"
           weekendbatch="Weekday Batch"
           weekday="SAT-SUN"

@@ -95,8 +95,8 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           }
         />
         <FeeSection
-          Fee="₹ 1,25,000"
-          FeeEmi="₹ 8,194/month"
+          Fee="₹ 1,10,000"
+          FeeEmi="₹ 7,211/month"
           weekdaybatch="Weekend Batch"
           weekendbatch="Weekday Batch"
           weekday="SAT-SUN"

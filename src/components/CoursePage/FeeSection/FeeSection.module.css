@@ -31,8 +31,9 @@
 }
 
 .imgFee img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  display: flex;
+  margin: auto;
 }
 
 .second {
