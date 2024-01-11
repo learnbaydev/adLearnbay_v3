@@ -138,29 +138,25 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <WhatsappFloat />
         <BottomBar interstedInHide={true} formotp={true} ADS={true} />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
-        <script
-          defer
-          async
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-    (function (botId) {
-      var s = document.createElement("script");
-      s.async = true;
-      s.type = 'text/javascript';
-      s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
-      s.onload = function () {
-        window.loadChat360Bot(botId);
-      };
-      s.onerror = function (err) {
-        console.error(err);
-      };
-      document.body.appendChild(s);
-    })("3955da5d-1d95-4dfe-b670-c3bcec2f716c");
-    `,
-          }}
-        />
       </main>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function (botId) {
+            var s = document.createElement("script");
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
+            s.onload = function () {
+              window.loadChat360Bot(botId);
+            };
+            s.onerror = function (err) {
+              console.error(err);
+            };
+            document.body.appendChild(s);
+          })("3955da5d-1d95-4dfe-b670-c3bcec2f716c");
+      `,
+        }}
+      />
     </>
   );
 }
