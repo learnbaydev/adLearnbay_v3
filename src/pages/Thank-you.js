@@ -9,6 +9,9 @@ import cookies from "next-cookies";
 
 const ThankYou = ({ initialName }) => {
   const email = JSON.stringify(initialName);
+console.log(email); // Log the email to the console
+
+
   return (
     <>
       <div className={styles.main}>
@@ -23,13 +26,13 @@ const ThankYou = ({ initialName }) => {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'event': 'form_complete',
-            'enhanced_conversion_data': {
-              "email": ${email}
-            }
-          });
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'event': 'form_complete',
+                'enhanced_conversion_data': {
+                  "email": ${email}
+                }
+              });
       `,
             }}
           />
@@ -88,3 +91,4 @@ ThankYou.getInitialProps = async (ctx) => {
     initialName: cookies(ctx).CARD || "",
   };
 };
+

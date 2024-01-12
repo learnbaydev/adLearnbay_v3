@@ -13,7 +13,6 @@ import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
@@ -75,7 +74,6 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           third="Early to mid-career professionals interested in Cloud & DevOps"
           forth="Achieving higher career growth in Cloud & DevoOps"
         />
-        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
         <GetHire />
 
         <SyllabusNew

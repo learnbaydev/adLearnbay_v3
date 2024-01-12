@@ -28,6 +28,17 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 2678400,
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/apply-for-counselling-marketing",
+        destination:
+          "/apply-for-counselling-data-science-marketing",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 // const withBundleAnalyzer = require("@next/bundle-analyzer")({

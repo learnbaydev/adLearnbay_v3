@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import jsCookie from "js-cookie";
 import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -58,6 +59,7 @@ const Form = ({
   });
   useEffect(() => {
     setQuery({ ...query, phone: value });
+    jsCookie.set("CARD", query.email, { expires: 14, secure: true });
   }, [value]);
 
   // Update inputs value
