@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,10 +8,20 @@ import FooterThankYou from "@/components/Global/Footer/FooterThankYou";
 import CourseThankYou from "@/components/Home/Course/ThankYouNew";
 import cookies from "next-cookies";
 
+const setCookie = (name, value, days, domain) => {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;domain=${domain}`;
+};
+
 const ThankYou = ({ initialName }) => {
   const email = JSON.stringify(initialName);
-console.log(email); // Log the email to the console
+  console.log(email); // Log the email to the console
 
+  useEffect(() => {
+    // Set the cookie with a domain that allows cross-origin access
+    setCookie('yourCookieName', initialName, 30, '.learnbay.co');
+  }, [initialName]);
 
   return (
     <>
@@ -26,14 +37,14 @@ console.log(email); // Log the email to the console
           <script
             dangerouslySetInnerHTML={{
               __html: `
-              window.dataLayer = window.dataLayer || [];
-              window.dataLayer.push({
-                'event': 'form_complete',
-                'enhanced_conversion_data': {
-                  "email": ${email}
-                }
-              });
-      `,
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  'event': 'form_complete',
+                  'enhanced_conversion_data': {
+                    "email": ${email}
+                  }
+                });
+              `,
             }}
           />
         </Head>
@@ -65,26 +76,24 @@ console.log(email); // Log the email to the console
       <script
         dangerouslySetInnerHTML={{
           __html: `(function (botId) {
-        var s = document.createElement("script");
-        s.async = true;
-        s.type = 'text/javascript';
-        s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
-        s.onload = function () {
-          window.loadChat360Bot(botId);
-        };
-        s.onerror = function (err) {
-          console.error(err);
-        };
-        document.body.appendChild(s);
-      })("4f4d2e98-0778-4fb7-a9c3-af6fd1bedad8");
-  `,
+            var s = document.createElement("script");
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
+            s.onload = function () {
+              window.loadChat360Bot(botId);
+            };
+            s.onerror = function (err) {
+              console.error(err);
+            };
+            document.body.appendChild(s);
+          })("4f4d2e98-0778-4fb7-a9c3-af6fd1bedad8");
+        `,
         }}
       />
     </>
   );
 };
-
-export default ThankYou;
 
 ThankYou.getInitialProps = async (ctx) => {
   return {
@@ -92,3 +101,4 @@ ThankYou.getInitialProps = async (ctx) => {
   };
 };
 
+export default ThankYou;

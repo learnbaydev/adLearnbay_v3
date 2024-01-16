@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormInline.module.css";
+import jsCookie from "js-cookie";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import {
@@ -56,6 +57,7 @@ const Form = ({
   });
   useEffect(() => {
     setQuery({ ...query, phone: value });
+    jsCookie.set("CARD", query.email, { expires: 14, secure: true });
   }, [value]);
 
   // Update inputs value
