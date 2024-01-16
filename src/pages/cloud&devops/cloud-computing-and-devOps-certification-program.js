@@ -73,12 +73,12 @@ function Blockchain({ CloudAndDevOpsCourseDataJson }) {
         <Navbar
           dataScienceCounselling={true}
           dataScience={true}
-          interstedInHide={true}
+          // interstedInHide={true}
         />
         <FirstSection
           dataScienceCounselling={true}
           dataScience={true}
-          interstedInHide={true}
+          // interstedInHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Adavance Cloud Computing & DevOps Certification Program"
           cityParaCont="Elevate your career to a Cloud Solution Architect or DevOps Engineer"

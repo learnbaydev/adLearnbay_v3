@@ -17,6 +17,7 @@ function FirstSection({
   dataScienceCounselling,
   ibmOnly,
   cityParaCont,
+  HideInterest,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -33,6 +34,7 @@ function FirstSection({
         upSkillingHide={true}
         ADS={ADS}
         formotp={formotp}
+        HideInterest={HideInterest}
       />
       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <FirstContent

@@ -67,7 +67,7 @@ const SecondPart = ({
         masterSyllabusMobile={masterSyllabusMobile}
         dataScienceCounselling={true}
         dataScience={true}
-        interstedInHide={true}
+        // interstedInHide={true}
         titleCourse="Advance Cloud Computing & DevOps Certification Program"
         brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
         buttonHide={true}
@@ -92,7 +92,7 @@ const SecondPart = ({
         FeeContent6="No additional cost"
         dataScienceCounselling={true}
         dataScience={true}
-        interstedInHide={true}
+        // interstedInHide={true}
         titleCourse="Advance Cloud Computing & DevOps Certification Program"
         brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
       />
@@ -106,7 +106,7 @@ const SecondPart = ({
         brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
         dataScienceCounselling={true}
         dataScience={true}
-        interstedInHide={true}
+        // interstedInHide={true}
       />
 
       <FAQNew FAQNewData={FAQNewData} />

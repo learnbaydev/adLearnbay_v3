@@ -71,7 +71,7 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
       <SecondNavbar
         dataScienceCounselling={true}
         dataScience={true}
-        interstedInHide={true}
+        // interstedInHide={true}
         brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
         titleCourse="Advance Data Science & AI Program with Domain Specialization"
       />
@@ -94,7 +94,7 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
       <ContactConsellor
         dataScienceCounselling={true}
         dataScience={true}
-        interstedInHide={true}
+        // interstedInHide={true}
         titleCourse="Advance Data Science & AI Program with Domain Specialization"
         brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
       />
