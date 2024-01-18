@@ -1,5 +1,3 @@
-
-
 export const HeadData = [
   {
     id: "Learnbay",
@@ -54,7 +52,7 @@ export const CourseData = [
   {
     id: "Courses",
     Head: "Courses",
-    Courses: [ 
+    Courses: [
       {
         id: 1,
         url: "/datascience/data-science-certification-courses",
@@ -88,10 +86,8 @@ export const CourseData = [
       {
         id: 6,
         url: "/cloud&devops/cloud-computing-and-devOps-certification-program",
-        name: " Advance Cloud Computing & DevOps Certification Program",
+        name: " Cloud Computing & DevOps Certification Program",
       },
-    
-  
     ],
   },
 ];

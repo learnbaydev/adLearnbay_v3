@@ -39,14 +39,15 @@ export const viewAllD = [
 
   {
     id: 7,
-    title: "Advance Cloud Computing & DevOps Certification Program",
+    title: "Cloud Computing & DevOps Certification Program",
 
     link1:
-      "https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf",
   },
   {
     id: 8,
-    title: " Software Development Program with Specialization in DevOps & Cloud",
+    title:
+      " Software Development Program with Specialization in DevOps & Cloud",
 
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf",
@@ -98,7 +99,6 @@ export const viewAllD = [
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
   },
-  
 ];
 export const dataScience = [
   {
@@ -116,7 +116,7 @@ export const dataScience = [
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
   },
-  
+
   {
     id: 4,
     title: "Master’s Degree in CS: Data Science & AI",
@@ -185,12 +185,11 @@ export const placementProject = [
 export const fullStackD = [
   {
     id: 1,
-    title: "Advance Cloud Computing & DevOps Certification Program",
+    title: "Cloud Computing & DevOps Certification Program",
 
     link1:
-      "https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf",
   },
-  
 ];
 
 export const nonTechD = [

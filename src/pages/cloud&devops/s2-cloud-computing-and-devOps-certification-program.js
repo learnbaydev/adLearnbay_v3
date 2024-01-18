@@ -61,7 +61,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-first-devops-min.webp"
           firstToparaImg=" Certification Program  "
-          firstHeading="Advance Cloud Computing & DevOps"
+          firstHeading="Cloud Computing & DevOps"
           firstTopPara="Crack Interview in top MNCs  "
           softwareBtnHide={true}
         />
@@ -93,8 +93,8 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           }
         />
         <FeeSection
-          Fee="₹ 1,10,000"
-          FeeEmi="₹ 7,211/month"
+          Fee=" ₹70,000"
+          FeeEmi="₹ 4,589/month"
           weekdaybatch="Weekend Batch"
         weekendbatch="Weekday Batch"
         weekday="SAT-SUN"

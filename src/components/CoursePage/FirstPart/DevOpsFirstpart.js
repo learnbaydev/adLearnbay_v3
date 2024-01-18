@@ -1,15 +1,11 @@
 import dynamic from "next/dynamic";
 import React from "react";
-import CloudDevopsecond from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
 import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
-import { TbCloudComputing } from "react-icons/tb";
 import { PiInfinity } from "react-icons/pi";
+import { TbCloudComputing } from "react-icons/tb";
+import CloudDevopsecond from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 // import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
 const SecondNavbar = dynamic(() => import("../SecondNavbar/SecondNavbar"));
 const WhoProgram = dynamic(() => import("../WhoProgram/ThirdSection"));
@@ -72,7 +68,7 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
         dataScienceCounselling={true}
         dataScience={true}
         // interstedInHide={true}
-        brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
         titleCourse="Advance Data Science & AI Program with Domain Specialization"
       />
       {/* <WhoProgram
@@ -96,7 +92,7 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
         dataScience={true}
         // interstedInHide={true}
         titleCourse="Advance Data Science & AI Program with Domain Specialization"
-        brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
       />
     </>
   );

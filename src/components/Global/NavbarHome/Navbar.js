@@ -98,7 +98,7 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience }) => {
               </span>
               <span onClick={showMenu}>
                 <Link href="/cloud&devops/cloud-computing-and-devOps-certification-program">
-                  Advance Cloud Computing & DevOps Certification Program
+                  Cloud Computing & DevOps Certification Program
                 </Link>
               </span>
             </div>
@@ -145,7 +145,7 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience }) => {
                 Data Analytics Program
               </a>
               <a href="/cloud&devops/cloud-computing-and-devOps-certification-program">
-                Advance Cloud Computing & DevOps Certification Program
+                Cloud Computing & DevOps Certification Program
               </a>
             </div>
           </div>

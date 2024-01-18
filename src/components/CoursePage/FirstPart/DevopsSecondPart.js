@@ -68,16 +68,16 @@ const SecondPart = ({
         dataScienceCounselling={true}
         dataScience={true}
         // interstedInHide={true}
-        titleCourse="Advance Cloud Computing & DevOps Certification Program"
-        brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
+        titleCourse="Cloud Computing & DevOps Certification Program"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
         buttonHide={true}
       />
       <ToolsCovered devops={true} mbldevops={mbldevops} />
       <Certificate data={CertificateData} />
       <FeeSection
         devopfee={devopfee}
-        Fee=" ₹ 1,10,000"
-        FeeEmi="₹ 7,211/month"
+        Fee=" ₹70,000"
+        FeeEmi="₹ 4,589/month"
         weekdaybatch="Weekend Batch"
         weekendbatch="Weekday Batch"
         weekday="SAT-SUN"
@@ -93,8 +93,8 @@ const SecondPart = ({
         dataScienceCounselling={true}
         dataScience={true}
         // interstedInHide={true}
-        titleCourse="Advance Cloud Computing & DevOps Certification Program"
-        brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
+        titleCourse="Cloud Computing & DevOps Certification Program"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
       />
 
       <MentorsSection />
@@ -102,8 +102,8 @@ const SecondPart = ({
       <PlacementCall devops={devops} />
 
       <DevOpsProject
-        titleCourse="Advance Cloud Computing & DevOps Certification Program"
-        brochureLink="https://learnbay-s3.s3.us-east-2.amazonaws.com/web/s3_main/cloud-computing/Cloud-and-syllab.pdf"
+        titleCourse="Cloud Computing & DevOps Certification Program"
+        brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
         dataScienceCounselling={true}
         dataScience={true}
         // interstedInHide={true}
