@@ -20,6 +20,18 @@ const FeeSection = ({
   interstedInHide,
   devopfee,
   HideInterest,
+
+  // EMIPOPUP
+  emiPopupProps,
+  emiType,
+  duration1,
+  totalAmount1,
+  monthlyPayment1,
+  greenDown1,
+  duration2,
+  totalAmount2,
+  monthlyPayment2,
+  greenDown2,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -50,6 +62,18 @@ const FeeSection = ({
         weekendbatch={weekendbatch}
         setPopups={setPopups}
         devopfee={devopfee}
+
+        // EMIPOPUp
+        emiPopupProps = {emiPopupProps} 
+     emiType ={ emiType }
+     duration1 ={duration1}
+     totalAmount1 ={totalAmount1}
+     monthlyPayment1 = {monthlyPayment1}
+     greenDown1 ={ greenDown1}
+     duration2 ={duration2}
+     totalAmount2 ={totalAmount2}
+     monthlyPayment2 ={monthlyPayment2}
+     greenDown2 ={greenDown2}
       />
     </div>
   );

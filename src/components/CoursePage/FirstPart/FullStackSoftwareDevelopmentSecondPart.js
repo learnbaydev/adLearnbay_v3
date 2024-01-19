@@ -84,7 +84,18 @@ const FullStackSoftwareDevelopmentSecondPart = ({
         interstedInHide={true}
         titleCourse="Software Development Certification Program"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf"
-      />
+     
+     
+        // <EMI POPUP
+        emiType = "NO COST EMI"
+        duration1 = "18 Months"
+        totalAmount1 = "₹1,15,000"
+        monthlyPayment1 = "₹7,538"
+        greenDown1 = "Standard Intrest rate Applicable"
+        duration2 = "12 Months"
+        totalAmount2 = "₹1,15,000"
+        monthlyPayment2 = "₹11,308"
+     />
       <MentorsSection />
       <SliderTab />
       <PlacementCall />

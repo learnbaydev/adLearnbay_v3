@@ -1506,7 +1506,7 @@ export const PaymentFaqData7 = [
   {
     id: 1,
     ques: "Can I pay in installments for INR 1,10,000/- + GST ?",
-    ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 10,816/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more.",
+    ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 10,817/month up to 12 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip. Please check with our sales team to know more.",
     linkText1: " +917795687988 ",
     link1: "tel:+917795687988",
     link: true,
@@ -1967,7 +1967,7 @@ export const PaymentFaqData9 = [
   {
     id: 1,
     ques: "Can I pay in installments for the course fees?",
-    ans: "Yes, you can use a credit card to pay the installments with a no-fee EMI option for INR ₹10,816/month up to 12 months. By presenting an AAadhar card, Pan card, and the latest three months salary slip, you can also avail of an interest-free loan also.",
+    ans: "Yes, you can use a credit card to pay the installments with a no-fee EMI option for INR ₹10,817/month up to 12 months. By presenting an AAadhar card, Pan card, and the latest three months salary slip, you can also avail of an interest-free loan also.",
     linkText1: " +919731135221 ",
     link1: "tel:+919731135221",
     link: true,
