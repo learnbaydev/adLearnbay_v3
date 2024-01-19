@@ -111,6 +111,17 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           FeeContent6="No additional cost"
           interstedInHide={true}
           formotp={true}
+
+            // <EMI POPUP
+        emiType = "NO COST EMI"
+        duration1 = "18 Months"
+        totalAmount1 = "₹1,25,000"
+        monthlyPayment1 = "₹8,194"
+        greenDown1 = "Standard Intrest rate Applicable"
+        duration2 = "12 Months"
+        totalAmount2 = "₹1,25,000"
+        monthlyPayment2 = "₹12,291"
+
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial

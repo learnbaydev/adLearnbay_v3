@@ -102,6 +102,17 @@ const SecondPart = ({
         FeeContent6="No additional cost"
         dataScienceCounselling={true}
         dataScience={true}
+
+
+        // EMI POPUPDATA
+        emiType = "NO COST EMI"
+        duration1 = "24 Months"
+        totalAmount1 = "₹2,50,000"
+        monthlyPayment1 = "₹12,292"
+        greenDown1 = "Standard Intrest rate Applicable"
+        duration2 = "18 Months"
+        totalAmount2 = "₹2,50,000"
+        monthlyPayment2 = "₹16,389"
       />
       <MentorsSection />
       <SliderTabs />

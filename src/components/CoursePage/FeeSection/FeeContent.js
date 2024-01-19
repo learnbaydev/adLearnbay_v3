@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./FeeSection.module.css";
+import Emipopup from "../EMIPopup/Emipopup";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 const FeeContent = ({
   Fee,
@@ -17,9 +20,31 @@ const FeeContent = ({
   weekdaybatch,
   weekendbatch,
   devopfee,
+
+  // EMIPOPUP
+  emiType,
+  duration1,
+  totalAmount1,
+  monthlyPayment1,
+  greenDown1,
+  duration2,
+  totalAmount2,
+  monthlyPayment2,
+  greenDown2,
 }) => {
+  // const popupShow = () => {
+  //   setPopups(true);
+  // };
+  const [emiPopupIsOpen, setEmiPopupIsOpen] = useState(false);
   const popupShow = () => {
     setPopups(true);
+  };
+  const openEmiPopup = () => {
+    setEmiPopupIsOpen(true);
+  };
+
+  const closeEmiPopup = () => {
+    setEmiPopupIsOpen(false);
   };
   return (
     <div className={styles.feesmain}>
@@ -77,7 +102,7 @@ const FeeContent = ({
             <p>
               For <b>No Cost EMI options</b>{" "}
               <span
-                onClick={popupShow}
+                onClick={openEmiPopup}
                 style={{ color: "#0072BC", cursor: "pointer" }}
               >
                 click here.
@@ -129,6 +154,27 @@ const FeeContent = ({
           </div>
         </div>
       </div>
+        {/* Emi Popup */}
+        <Modal
+        isOpen={emiPopupIsOpen}
+        onRequestClose={closeEmiPopup}
+        className={styles.Emipopup}
+        overlayClassName={styles.Overlay}
+        contentLabel="EMI Popup"
+      >
+         <div className={styles.clostbtn} onClick={closeEmiPopup}><span>close[x]</span></div>
+        <Emipopup 
+        emiType ={ emiType }
+        duration1 ={duration1}
+        totalAmount1 ={totalAmount1}
+        monthlyPayment1 = {monthlyPayment1}
+        greenDown1 ={ greenDown1}
+        duration2 ={duration2}
+        totalAmount2 ={totalAmount2}
+        monthlyPayment2 ={monthlyPayment2}
+        greenDown2 ={greenDown2} />
+       
+      </Modal>
     </div>
   );
 };

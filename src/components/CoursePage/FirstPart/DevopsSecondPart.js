@@ -95,7 +95,16 @@ const SecondPart = ({
         // interstedInHide={true}
         titleCourse="Cloud Computing & DevOps Certification Program"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
-      />
+    // <EMI POPUP
+    emiType = "NO COST EMI"
+    duration1 = "18 Months"
+    totalAmount1 = "₹ 80,000"
+    monthlyPayment1 = "₹ 5,244"
+    greenDown1 = "Standard Intrest rate Applicable"
+    duration2 = "12 Months"
+    totalAmount2 = "₹ 80,000"
+    monthlyPayment2 = "₹ 7,866"
+    />
 
       <MentorsSection />
       <SliderTab />
