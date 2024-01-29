@@ -323,7 +323,7 @@ export const DataScienceMastersinCS = [
             },
           ],
           id: 0,
-          open: false,
+          open: true,
         },
       },
 

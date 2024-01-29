@@ -116,13 +116,15 @@ export default function Home({}) {
           interstedInHide={true}
         />
         <GetHire />
-        <TrainerSection />
+        <TrainerSection 
+        idss="eautK0odE7Q" />
         <Testimonial
         redirectDS={true}
           dataScience={true}
           radio={true}
           interstedInHide={true}
           Testimonial={testimonial}
+          popupvnone={true}
         />
         <ContactUs dataScience={true} radio={true} interstedInHide={true} />
         <SeventhSection organic={true} />

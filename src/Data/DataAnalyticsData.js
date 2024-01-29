@@ -385,7 +385,7 @@ export const DADataScienceCourseData = [
             },
           ],
           id: 0,
-          open: false,
+          open: true,
         },
       },
       {

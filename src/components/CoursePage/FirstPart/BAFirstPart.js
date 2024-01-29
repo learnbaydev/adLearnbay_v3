@@ -34,7 +34,7 @@ const BusinessAnalyticsFirstPart = ({ SecondSectionData, TestimonialData }) => {
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds-two.webp",
     points: [
       "Work in an industry like environment and gain practical hands-on experienc",
-      "2 Real-World Capstone Projects",
+      "12 Real-World + 4 Capstone Projects",
     ],
     image2:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/BA.webp",

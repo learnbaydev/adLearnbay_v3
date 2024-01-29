@@ -43,11 +43,15 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
     title2: "Job Roles You Can Target",
     jobRoles: [
       {
-        icon: <FaReact/>,
+        icon: <FaReact />,
         role: "Sr. Data Scientist ",
         salary: " 27 LPA",
       },
-      { icon: <TbBrandGoogleAnalytics />, role: "Sr. Data Analyst", salary: " 15 LPA" },
+      {
+        icon: <TbBrandGoogleAnalytics />,
+        role: "Sr. Data Analyst",
+        salary: " 15 LPA",
+      },
       { icon: <BsPersonGear />, role: "ML Engineer ", salary: "14 LPA" },
     ],
     image3:
@@ -56,14 +60,11 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
     title3: "Assured Job Assistance",
     jobAssistance: [
-      { icon: <BsDisplay />, text: "Unlimited Interview Calls" },
+      { icon: <BsDisplay />, text: "8-10 Interview Calls" },
       { icon: <AiOutlineContainer />, text: "Resume Building Session" },
       { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
-    
     ],
-    formbl: [
-      { icon: <BsPeople />, text: "Mock Interview Sessions" },
-    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
     image5:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
