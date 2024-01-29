@@ -33,6 +33,36 @@ function FormOtp({
   const [formFields, setFormFields] = useState(
     getFormFields(HideInterest, btnHide, radio)
   );
+  const [location, setLocation] = useState({ country: "", city: "" });
+
+  const fetchLocation = async () => {
+    try {
+      const response = await fetch(
+        "https://ipinfo.io/json?token=bc89c2010abac0"
+      );
+
+      if (response.status === 429) {
+        throw new Error("Rate limit exceeded. Too many requests.");
+      }
+
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch location: ${response.status} ${response.statusText}`
+        );
+      }
+
+      const data = await response.json();
+      console.log("API Response:", data);
+
+      const { country, city } = data;
+      setLocation({ country, city });
+    } catch (error) {
+      console.error("Error fetching location:", error.message);
+
+      // Handle rate limit exceeded or set a default location
+      setLocation({ country: "DefaultCountry", city: "DefaultCity" });
+    }
+  };
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -41,7 +71,25 @@ function FormOtp({
     url: router.asPath,
     phone: "",
     interstedin: "",
+    country: "", // Use the state value directly
+    city: "", // Use the state value directly
   });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetchLocation();
+    };
+    fetchData();
+  }, [value]);
+
+  useEffect(() => {
+    // Update query state when location changes
+    setForm((prevQuery) => ({
+      ...prevQuery,
+      country: location.country,
+      city: location.city,
+    }));
+  }, [location]);
 
   useEffect(() => {
     setForm({ ...form, phone: value });
@@ -80,6 +128,11 @@ function FormOtp({
         formData.append(key, value);
         // console.log("key-", key, "-----", "value-", value)
       });
+
+      formData.append("country", form.country);
+      formData.append("city", form.city);
+
+      console.log("Form Data:", form.country);
 
       const mobileNumber = form.phone;
       const name = form.name;
@@ -380,11 +433,12 @@ function FormOtp({
           )}
           {btnHide ? (
             <div className={styles.formWrapper}>
-              <label htmlFor="OTP">OTP
-                      <span className={styles.spanLabel}>*</span>
-                  </label>
+              <label htmlFor="OTP">
+                OTP
+                <span className={styles.spanLabel}>*</span>
+              </label>
               <input
-                 className={styles.EmailInputs}
+                className={styles.EmailInputs}
                 type="text"
                 name="otp"
                 value={form.otp}
@@ -398,7 +452,8 @@ function FormOtp({
           ) : (
             ""
           )}
-
+          <input name="country" value={form.country} type="hidden" />
+          <input name="city" value={form.city} type="hidden" />
           {error ? (
             <p
               style={{
