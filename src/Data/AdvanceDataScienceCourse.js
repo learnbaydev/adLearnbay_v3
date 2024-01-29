@@ -375,7 +375,7 @@ export const DataScienceCourseData = [
             },
           ],
           id: 0,
-          open: false,
+          open: true,
         },
       },
       {
@@ -409,26 +409,6 @@ export const DataScienceCourseData = [
           open: false,
         },
       },
-      // {
-      //   Module0: {
-      //     title: "L2 :- Module 2 :- Advance Python",
-      //     content: [
-      //       {
-      //         chap: {
-      //           desc: [
-      //             "Data Analysis Using Numpy",
-      //             "Data Analysis Using Pandas",
-      //             "Data Visualization using Matplotlib",
-      //             "Data Visualization using Seaborn",
-      //             "Case Study on Numpy, Pandas, Matplotlib 1 Case Study on Pandas And Seaborn",
-      //           ],
-      //         },
-      //       },
-      //     ],
-      //     id: 1,
-      //     open: false,
-      //   },
-      // },
       {
         Module0: {
           title: " TERM 2 :- Statistics and Machine Learning ",
@@ -561,61 +541,51 @@ export const DataScienceCourseData = [
               },
             },
           ],
-          id: 6,
+          id: 3,
           open: false,
         },
       },
-
       {
         Module0: {
-          title: "TERM 4:-Data Management and Deployment ",
+          title: "TERM 4 :- AI TOOLS",
           content: [
             {
               chap: {
-                title: "Module 1:-Excel ",
+                title: "Module 1 :- Deep Learning ",
                 desc: [
-                  "Introduction to Excel",
-                  "Basic Formulas and Functions",
-                  "Data Formatting and Cell Styles",
-                  "Data Sorting and Filtering",
-                  "Charts and Graphs",
-                  "Data Validation and Protection",
-                  "PivotTables and PivotCharts",
-                  "Advanced Formulas and Functions",
-                  "Data Analysis Tools",
-                  "Excel Macros and Automation",
-                ],
-              },
-            },
-            {
-              chap: {
-                title: "Module 2 :-MLops ",
-                desc: [
-                  "Introduction to MLOps",
-                  "Version Control for ML",
-                  "Containerization and Docker",
-                  "Orchestration with Kubernetes",
-                  "Continuous Integration (CI) for ML",
+                  "Introduction to Deep Learning And TensorFlow",
+                  "TensorFlow Classification Example",
+                  "⁠Understanding Neural Networks With TensorFlow",
+                  "⁠Convolutional Neural Network (CNN",
                 ],
               },
             },
 
             {
               chap: {
-                title: "Module 3:- Deep Learning ",
+                title: "Module 2 :- NLP",
                 desc: [
-                  "Neural Network",
-                  "Simple Computation, Constants, and Variables",
-                  "Back-propagation",
-                  "TensorBoard",
+                  "Natural Language Processing",
+                  "Text Analysis",
+                  "KNN",
                 ],
               },
             },
-
+          ],
+          id: 4,
+          open: false,
+        },
+      },
+      {
+        Module0: {
+          title: "TERM 5 :- Deployment ",
+          content: [
             {
               chap: {
-                title: "Module 4:-  Deployment AWS+Azure ",
+                title: "Deployment AWS+Azure ",
                 desc: [
+                  "Introduction to AWS and Azure Machine Learning Services",
+                  "Setting up the Environment",
                   "Data Preparation and Feature Engineering",
                   "Model Training and Evaluation",
                   "Model Deployment and Management",
@@ -624,14 +594,13 @@ export const DataScienceCourseData = [
               },
             },
           ],
-          id: 6,
+          id: 5,
           open: false,
         },
       },
-
       {
         Module0: {
-          title: "TERM 5 :-AI Generative Tools and Future Trends ",
+          title: "BONUS :- AI Generative Tools and Future Trends",
           content: [
             {
               chap: {
@@ -674,6 +643,95 @@ export const DataScienceCourseData = [
                   "Overview of Graph Neural Networks (GNN) and their applications",
                   "Hands-on exercises using GNN for tasks such as node classification and link prediction",
                   "Case studies on real-world applications of GNN in data science",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 5 :- Python Bootcamp for AI",
+                desc: [
+                  "Python Essentials: Syntax, Data Types, and Variables",
+                  "Flow Control: Conditionals and Loops",
+                  "Functions and Custom Modules",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 6 :- Build Your Interview Assistant",
+                desc: [
+                  "Project Overview: Interview Automation Bot",
+                  "Components & Architecture",
+                  "Natural Language Models (LLMs): Introduction and Uses",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 7 :- Visual AI for eCommerce",
+                desc: [
+                  "Introduction: Digital Transformation for Offline Businesses",
+                  "Multimodal Models: DALL-E and Beyond",
+                  "Style & Photography Principles for Visual AI",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 8 :- Intelligent News Aggregator",
+                desc: [
+                  "Project Outline: Personalized News Recommendation",
+                  "GPT-3 & Copilot for Code Automation",
+                  "Data Loading and Cleaning Techniques",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 9 :- Customer Support Bot - HelpMate Pro",
+                desc: [
+                  "Project Introduction and Components",
+                  "Embeddings vs Fine-Tuning: When and How",
+                  "Semantic Search in Customer Service",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 10 :- Knowledge Discovery Bot",
+                desc: [
+                  "Project Overview and Architecture",
+                  "LangChain Tools and Concepts",
+                  "Backend Development with Vectorstore",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 11 :- Azure OpenAI Integration",
+                desc: [
+                  "OpenAI on Azure: Services and Scalability",
+                  "Revisiting HelpMate Pro: Scaling Strategy",
+                  "UI/UX Best Practices for Bots",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Module 12 :- The Future & Ethics of Generative AI",
+                desc: [
+                  "Responsible AI: Bias and Fairness",
+                  "Future Trends: Multimodal Models and RLHF",
+                  "Closing Remarks",
+                ],
+              },
+            },
+            {
+              chap: {
+                title: "Capstone Project",
+                desc: [
+                  "Building an Integrated Prompt Engineering Solution",
+                  "Project Submission and Peer Review",
                 ],
               },
             },
@@ -781,7 +839,7 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "What is the total Fee for the Advanced Data Science and AI Program?",
-            ans: "The total program fee for the Advanced Data Science and AI Program with Domain Specialization is INR 1,25,000 + 18% GST.",
+            ans: "The total program fee for the Advanced Data Science and AI Program with Domain Specialization is INR  99,000 + 18% GST.",
             open: true,
           },
           {
