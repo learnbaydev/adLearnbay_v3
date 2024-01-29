@@ -17,9 +17,9 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
             titleCourse: "Advance Data Science and AI Certification",
             para: [
-              "11 months | 4 projects",
+              "7 months | 2 capstone projects",
               "Project Certification from IBM",
-              "3+ domain specialization",
+              "Bridge your career gap",
             ],
             link1: "/datascience/data-science-certification-courses",
             link2:
@@ -83,9 +83,9 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
             titleCourse: "Advance Data Science and AI Certification",
             para: [
-              "11 months | 4 projects",
+              "7 months | 2 capstone projects",
               "Project Certification from IBM",
-              "3+ domain specialization",
+              "Bridge your career gap",
             ],
             link1: "/datascience/data-science-certification-courses",
             link2:
@@ -144,8 +144,8 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
             titleCourse: "Advance AI and ML Certification Program",
             para: [
-              "11 months | 3 projects",
-              "Dual certification",
+              "9 months | 2 capstone projects",
+              "Triple certification program",
               "Inclusive of Generative-AI",
             ],
             link1: "/datascience/advance-ai-ml-certification",
@@ -185,7 +185,7 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf",
             titleCourse: "Data Analytics Program",
             para: [
-              "5 months | 3 Projects",
+              "5 months | 1 capstone projects",
               "Global Certification",
               "Designed by industry experts",
               ,
@@ -198,14 +198,14 @@ export const courseDetails = [
             id: 7,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/course-3.webp",
             title: "Business Analytics",
-            title1: "Program",
+            title1: "Master Certification Program",
             tagHead: "For Working Professional",
             tag: "Data science",
             brochureLinks:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf",
             titleCourse: "Business Analytics Program",
             para: [
-              "9 months | 2 projects",
+              "7 months | 4 capstone projects",
               "Project certification from IBM",
               "3 domain electives",
             ],
@@ -410,9 +410,9 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
             titleCourse: "Advance Data Science and AI Certification",
             para: [
-              "11 months | 4 projects",
+              "7 months | 2 capstone projects",
               "Project Certification from IBM",
-              "3+ domain specialization",
+              "Bridge your career gap",
             ],
             link1: "/datascience/data-science-certification-courses",
             link2:
@@ -451,8 +451,8 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
             titleCourse: "Advance AI and ML Certification Program",
             para: [
-              "11 months | 3 projects",
-              "Dual certification",
+              "9 months | 2 capstone projects",
+              "Triple certification program",
               "Inclusive of Generative-AI",
             ],
             link1: "/datascience/advance-ai-ml-certification",
@@ -470,7 +470,7 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf",
             titleCourse: "Business Analytics Program",
             para: [
-              "9 months | 2 projects",
+              "7 months | 4 capstone projects",
               "Project certification from IBM",
               "3 domain electives",
             ],
@@ -489,7 +489,7 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf",
             titleCourse: "Data Analytics Program",
             para: [
-              "5 months | 3 Projects",
+              "5 months | 1 capstone projects",
               "Global Certification",
               "Designed by industry experts",
               ,
