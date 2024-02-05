@@ -48,7 +48,7 @@ const ThankYou = ({ initialName }) => {
             }}
           />
         </Head>
-        <Navbar />
+        <Navbar HideButton={true}/>
 
         <section className={styles.mains}>
           <div className={styles.Back}>

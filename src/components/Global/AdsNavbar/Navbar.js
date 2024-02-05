@@ -18,6 +18,7 @@ const Navbar = ({
   interstedInHide,
   dataScience,
   HideInterest,
+  HideButton,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -101,6 +102,7 @@ const Navbar = ({
           )}
         </div>
         <div className={styles.right}>
+          {HideButton ? ("") : (
           <div onClick={popupShow}>
             <Button
               text="Download Brochure"
@@ -108,6 +110,7 @@ const Navbar = ({
               passIcon={<FaDownload className={styles.icon} />}
             />
           </div>
+          )}
 
           <Popup></Popup>
         </div>
