@@ -13,6 +13,7 @@ const BottomBar = ({
   ADS,
   formotp,
   HideInterest,
+  dataScience,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -30,6 +31,7 @@ const BottomBar = ({
         ADS={ADS}
         formotp={formotp}
         HideInterest={HideInterest}
+        dataScience={dataScience}
       />
       {masterdegree ? (
         <div className="flDivLeft" onClick={popupShow}>
