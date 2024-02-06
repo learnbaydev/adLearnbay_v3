@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React, { useState } from "react";
+import Modal from "react-modal";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./FeeSection.module.css";
@@ -31,6 +31,7 @@ const FeeContent = ({
   totalAmount2,
   monthlyPayment2,
   greenDown2,
+  OS,
 }) => {
   // const popupShow = () => {
   //   setPopups(true);
@@ -93,33 +94,54 @@ const FeeContent = ({
           </div>
         </div>
         <div className={styles.second}>
-          <p style={{ textAlign: "center", margin: "0" }}>
-            <b>EMI Options</b>
-          </p>
-          <div className={styles.divContent}>
-            <p>Pay in easy EMIs starting as low as</p>
-            <p className={styles.boxSpan}> {FeeEmi} </p>
-            <p>
-              For <b>No Cost EMI options</b>{" "}
-              <span
-                onClick={openEmiPopup}
-                style={{ color: "#0072BC", cursor: "pointer" }}
-              >
-                click here.
-              </span>
-            </p>
-          </div>
-          <p className={styles.orangeText}>Payment Partners</p>
-          <div className={styles.iconImage}>
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/Finance+partners.webp"
-              alt="Zest"
-              width="370"
-              height="36"
-              loading="lazy"
-              quality={40}
-            />
-          </div>
+          {OS ? (
+            <>
+              <p className={styles.pTop}>Program Fee</p>
+              <p className={styles.cutText}>{CutFee}</p>
+              <hr
+                style={{
+                  color: "rgba(0, 0, 0, 0.20)",
+                  margin: "10px 20px",
+                  border: "0.9px solid",
+                }}
+              />
+              <p className={styles.price} style={{color:"#2db621"}} >
+                {Fee}
+              </p>
+
+              
+            </>
+          ) : (
+            <>
+              <p style={{ textAlign: "center", margin: "0" }}>
+                <b>EMI Options</b>
+              </p>
+              <div className={styles.divContent}>
+                <p>Pay in easy EMIs starting as low as</p>
+                <p className={styles.boxSpan}> {FeeEmi} </p>
+                <p>
+                  For <b>No Cost EMI options</b>{" "}
+                  <span
+                    onClick={openEmiPopup}
+                    style={{ color: "#0072BC", cursor: "pointer" }}
+                  >
+                    click here.
+                  </span>
+                </p>
+              </div>
+              <p className={styles.orangeText}>Payment Partners</p>
+              <div className={styles.iconImage}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/Finance+partners.webp"
+                  alt="Zest"
+                  width="370"
+                  height="36"
+                  loading="lazy"
+                  quality={40}
+                />
+              </div>
+            </>
+          )}
         </div>
         <div className={styles.third}>
           <p>Batch Details</p>
@@ -154,26 +176,28 @@ const FeeContent = ({
           </div>
         </div>
       </div>
-        {/* Emi Popup */}
-        <Modal
+      {/* Emi Popup */}
+      <Modal
         isOpen={emiPopupIsOpen}
         onRequestClose={closeEmiPopup}
         className={styles.Emipopup}
         overlayClassName={styles.Overlay}
         contentLabel="EMI Popup"
       >
-         <div className={styles.clostbtn} onClick={closeEmiPopup}><span>close[x]</span></div>
-        <Emipopup 
-        emiType ={ emiType }
-        duration1 ={duration1}
-        totalAmount1 ={totalAmount1}
-        monthlyPayment1 = {monthlyPayment1}
-        greenDown1 ={ greenDown1}
-        duration2 ={duration2}
-        totalAmount2 ={totalAmount2}
-        monthlyPayment2 ={monthlyPayment2}
-        greenDown2 ={greenDown2} />
-       
+        <div className={styles.clostbtn} onClick={closeEmiPopup}>
+          <span>close[x]</span>
+        </div>
+        <Emipopup
+          emiType={emiType}
+          duration1={duration1}
+          totalAmount1={totalAmount1}
+          monthlyPayment1={monthlyPayment1}
+          greenDown1={greenDown1}
+          duration2={duration2}
+          totalAmount2={totalAmount2}
+          monthlyPayment2={monthlyPayment2}
+          greenDown2={greenDown2}
+        />
       </Modal>
     </div>
   );

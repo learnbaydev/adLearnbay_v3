@@ -32,6 +32,8 @@ const FeeSection = ({
   totalAmount2,
   monthlyPayment2,
   greenDown2,
+  OS,
+  CutFee,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -55,13 +57,16 @@ const FeeSection = ({
         WeekendDate={WeekendDate}
         WeekdayTime={WeekdayTime}
         WeekendTime={WeekendTime}
+        CutFee={CutFee}
         FeeEmi={FeeEmi}
+        Fee={Fee}
         weekday={weekday}
         weekend={weekend}
         weekdaybatch={weekdaybatch}
         weekendbatch={weekendbatch}
         setPopups={setPopups}
         devopfee={devopfee}
+        OS={OS}
 
         // EMIPOPUp
         emiPopupProps = {emiPopupProps} 
