@@ -3,12 +3,12 @@ import styles from "../../../styles/Home.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 
-function WhatsappFloat({ chat360code1 }) {
+function WhatsappFloat({ chat360code1, OS }) {
   return (
     <>
-      {chat360code1 ? (
+      {OS ? (
         <Link
-          href="https://api.whatsapp.com/send?phone=917349222263"
+          href="https://api.whatsapp.com/send?phone=918123327570"
           target="_blank"
         >
           <div className={styles.FloatWhatsapp}>
@@ -16,7 +16,20 @@ function WhatsappFloat({ chat360code1 }) {
           </div>
         </Link>
       ) : (
-        ""
+        <>
+          {chat360code1 ? (
+            <Link
+              href="https://api.whatsapp.com/send?phone=917349222263"
+              target="_blank"
+            >
+              <div className={styles.FloatWhatsapp}>
+                <FaWhatsapp className={styles.whatsappIcon} />
+              </div>
+            </Link>
+          ) : (
+            ""
+          )}
+        </>
       )}
     </>
   );

@@ -28,6 +28,7 @@ const Form = ({
   interstedInHide,
   promoCode,
   CTC,
+  OS,
 }) => {
   const router = useRouter();
 
@@ -215,17 +216,35 @@ const Form = ({
                   )}
                 </label>
                 {field.type === "phone" ? (
-                  <PhoneInput
-                    inputStyle={field.inputStyle}
-                    containerStyle={field.containerStyle}
-                    name={field.name}
-                    inputProps={field.inputProps}
-                    country="in"
-                    placeholder={field.placeholder}
-                    value={value}
-                    onChange={(phone) => setValue(phone)}
-                    required={field.required}
-                  />
+                  <>
+                    {router.pathname ===
+                    "/datascience/OS/s2-masters-in-data-science-and-ai" ? (
+                      <PhoneInput
+                        inputStyle={field.inputStyle}
+                        containerStyle={field.containerStyle}
+                        name={field.name}
+                        inputProps={field.inputProps}
+                        onlyCountries={["ng", "eg"]}
+                        country={"ng"}
+                        placeholder={field.placeholder}
+                        value={value}
+                        onChange={(phone) => setValue(phone)}
+                        required={field.required}
+                      />
+                    ) : (
+                      <PhoneInput
+                        inputStyle={field.inputStyle}
+                        containerStyle={field.containerStyle}
+                        name={field.name}
+                        inputProps={field.inputProps}
+                        country="in"
+                        placeholder={field.placeholder}
+                        value={value}
+                        onChange={(phone) => setValue(phone)}
+                        required={field.required}
+                      />
+                    )}
+                  </>
                 ) : field.type === "select" ? (
                   <select
                     name={field.name}
@@ -269,25 +288,39 @@ const Form = ({
           <input type="hidden" id="url" name="url" value={router.asPath} />
         )}
         <div>{toggle ? "" : <p className={styles.alert}>{alertMSG}</p>}</div>
-        {syllabus ? (
+        {OS ? (
           <div className={styles.bottomWrap}>
             <p className={styles.FormText}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>
             <button type="submit" className={styles.button}>
-              {downloadBrochure ? "Download Now" : btnText}{" "}
+              {"Apply for Consultation"}
             </button>
           </div>
         ) : (
           <>
-            <p className={styles.FormText}>
-              By submitting the form, you agree to our Terms and Conditions and
-              our Privacy Policy.
-            </p>
-            <button type="submit" className={styles.button}>
-              {downloadBrochure ? "Download Now" : btnText}{" "}
-            </button>
+            {syllabus ? (
+              <div className={styles.bottomWrap}>
+                <p className={styles.FormText}>
+                  By submitting the form, you agree to our Terms and Conditions
+                  and our Privacy Policy.
+                </p>
+                <button type="submit" className={styles.button}>
+                  {downloadBrochure ? "Download Now" : btnText}{" "}
+                </button>
+              </div>
+            ) : (
+              <>
+                <p className={styles.FormText}>
+                  By submitting the form, you agree to our Terms and Conditions
+                  and our Privacy Policy.
+                </p>
+                <button type="submit" className={styles.button}>
+                  {downloadBrochure ? "Download Now" : btnText}{" "}
+                </button>
+              </>
+            )}
           </>
         )}
         <input type="hidden" id="zc_gad" name="zc_gad" value="" />

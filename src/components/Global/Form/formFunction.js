@@ -6,6 +6,10 @@ const getEndPoint = (pathname, event) => {
     endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   }
 
+  if (pathname === "/datascience/OS/s2-masters-in-data-science-and-ai") {
+    endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
+  }
+
   if (pathname === "/organic") {
     endPoint = "https://getform.io/f/a876146f-2c5d-4a1f-b177-f993db3d7aaf";
   }
@@ -55,6 +59,9 @@ const redirectionThankYou = (
   let routerPath = "";
   if (pathname === "/learning-learnbay") {
     routerPath = "/learning-learnbay-select";
+  }
+  if (pathname === "/datascience/OS/s2-masters-in-data-science-and-ai") {
+    routerPath = "/Thank-you";
   }
   if (pathname === "/learning-learnbay-select") {
     routerPath = "/Thank-you";

@@ -3,7 +3,7 @@ import Styles from "./Gethire.module.css";
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 
-function GetHire() {
+function GetHire({HideImage}) {
   return (
     <div id="servicePro">
       <div className={Styles.GetHireMain}>
@@ -42,6 +42,7 @@ function GetHire() {
                   <p>3 Years Flexible Sub.</p>
                 </div>
               </div>
+              {HideImage ? ("") : (
               <div>
                 <Image
                   src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job-ready.webp"
@@ -50,6 +51,7 @@ function GetHire() {
                   alt="getHire"
                 />
               </div>
+              )}
             </div>
           </div>
 

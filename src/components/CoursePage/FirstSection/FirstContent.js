@@ -16,6 +16,8 @@ const FirstContent = ({
   setVideo,
   ADS,
   woolfUniversity,
+  AnimationHide,
+  OS,
 }) => {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -100,20 +102,35 @@ const FirstContent = ({
                 )}
               </div>
               <div className={styles.animationTextWrap}>
-                <span className={styles.animationText}>
-                  Guaranteed Interview Calls
-                </span>
+                {AnimationHide ? (
+                  ""
+                ) : (
+                  <span className={styles.animationText}>
+                    Guaranteed Interview Calls
+                  </span>
+                )}
               </div>
               {/* Button */}
               <div className={styles.btnImage}>
-                {ADS ? (
+                {OS ? (
                   <div onClick={popupShow}>
-                    <Button bannerButton={true} text="APPLY FOR COUNSELLING" />
+                    <Button bannerButton={true} text="APPLY FOR CONSULTATION" />
                   </div>
                 ) : (
-                  <div onClick={popupShow}>
-                    <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
-                  </div>
+                  <>
+                    {ADS ? (
+                      <div onClick={popupShow}>
+                        <Button
+                          bannerButton={true}
+                          text="APPLY FOR COUNSELLING"
+                        />
+                      </div>
+                    ) : (
+                      <div onClick={popupShow}>
+                        <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                      </div>
+                    )}
+                  </>
                 )}
                 {softwareBtnHide ? (
                   ""
@@ -181,20 +198,18 @@ const FirstContent = ({
                 )}
               </div>
               {woolfUniversity ? (
-                  <div className={styles.boxDivGreen}>
-                    <p className={styles.special}>SPECIALIZATION IN</p>
-                    <div className={styles.iconPara}>
-                      <p className={styles.boxGreen}>
-                        Data Science & Analytics
-                      </p>
-                      <p className={styles.boxGreen}>
-                        Artificial Intelligence & ML
-                      </p>
-                    </div>
+                <div className={styles.boxDivGreen}>
+                  <p className={styles.special}>SPECIALIZATION IN</p>
+                  <div className={styles.iconPara}>
+                    <p className={styles.boxGreen}>Data Science & Analytics</p>
+                    <p className={styles.boxGreen}>
+                      Artificial Intelligence & ML
+                    </p>
                   </div>
-                ) : (
-                  ""
-                )}
+                </div>
+              ) : (
+                ""
+              )}
             </div>{" "}
             <div className={styles.btnImageMobile}>
               <div onClick={popupShow}>

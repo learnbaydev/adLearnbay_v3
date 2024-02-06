@@ -19,6 +19,8 @@ function FirstSection({
   cityParaCont,
   woolfUniversity,
   HideInterest,
+  AnimationHide,
+  OS,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -29,13 +31,15 @@ function FirstSection({
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading="Apply for counselling"
+          heading= {OS ? ("Apply for Consultation") : ("Apply for counselling")}
           dataScience={true}
           interstedInHide={interstedInHide}
           upSkillingHide={true}
           ADS={ADS}
           formotp={formotp}
           HideInterest={HideInterest}
+          OS={OS}
+
         />
       ) : (
         <PopupContent
@@ -67,6 +71,8 @@ function FirstSection({
         setVideo={setVideo}
         HideInterest={HideInterest}
         woolfUniversity={woolfUniversity}
+        AnimationHide={AnimationHide}
+        OS={OS}
       />
     </>
   );

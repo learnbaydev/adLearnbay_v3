@@ -22,6 +22,7 @@ function SyllabusNew({
   ADS,
   HideInterest,
   formotp,
+  OS,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -72,9 +73,13 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
+              {OS ? (<h4>
+                Apply For<span> Consultation ?</span>
+              </h4>) : (
               <h4>
                 Apply For<span> counselling ?</span>
               </h4>
+              )}
               {formotp ? (
                 <FormOtp
                   upSkillingHide={true}
@@ -90,6 +95,7 @@ function SyllabusNew({
                   adPage={adPage}
                   interstedInHide={interstedInHide}
                   HideInterest={HideInterest}
+          OS={OS}
                 />
               )}
             </div>

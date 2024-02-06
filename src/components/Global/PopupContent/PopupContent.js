@@ -22,6 +22,7 @@ const PopupContent = ({
   ADS,
   adPage,
   HideInterest,
+  OS,
 }) => {
   return (
     <Popup
@@ -60,6 +61,7 @@ const PopupContent = ({
           interstedInHide={interstedInHide}
           adPage={adPage}
           HideInterest={HideInterest}
+          OS={OS}
         />
           )}
       </div>
