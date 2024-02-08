@@ -42,7 +42,7 @@ const FeeSection = ({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Apply For Counselling"
+        heading={OS ? ("Apply for Consultation") : ("Apply for counselling")}
         dataScience={dataScience}
         dataScienceCounselling={dataScienceCounselling}
         interstedInHide={interstedInHide}
@@ -50,6 +50,7 @@ const FeeSection = ({
         ADS={ADS}
         formotp={formotp}
         HideInterest={HideInterest}
+        OS={OS}
       />
       <FeeContent
         dataScience={dataScience}
