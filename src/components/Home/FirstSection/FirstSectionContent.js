@@ -4,7 +4,7 @@ import React from "react";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 import styles from "./FirstSection.module.css";
 
-const FirstSectionContent = ({ setPopups }) => {
+const FirstSectionContent = ({ setPopups, Osaplybtn }) => {
   const popupShow = () => {
     setPopups(true);
   };
@@ -51,23 +51,34 @@ const FirstSectionContent = ({ setPopups }) => {
               Curriculum inclusive of GenAI and ChatGPT
             </p>
           </div>
-          <div className={styles.btnWrapper}>
-            <a href="#course">
-              <Button
-                className={styles.outLineBtn}
-                ButtonWhiteBg
-                text="Courses"
-                passIcon={<FaChevronDown className="bIconS" />}
-              />
-            </a>
-            <div onClick={popupShow}>
+
+          {Osaplybtn ? (
+            <div onClick={popupShow} className={styles.counbtn}>
               <Button
                 className={styles.Btn}
-                text="Enquire Now"
-                passIcon={<FaBell className="bIconS" />}
+                text="Apply For consultation"
+                // passIcon={<FaBell className="bIconS" />}
               />
             </div>
-          </div>
+          ) : (
+            <div className={styles.btnWrapper}>
+              <a href="#course">
+                <Button
+                  className={styles.outLineBtn}
+                  ButtonWhiteBg
+                  text="Courses"
+                  passIcon={<FaChevronDown className="bIconS" />}
+                />
+              </a>
+              <div onClick={popupShow}>
+                <Button
+                  className={styles.Btn}
+                  text="Enquire Now"
+                  passIcon={<FaBell className="bIconS" />}
+                />
+              </div>
+            </div>
+          )}
         </div>
         <div className={styles.secondLeft}>
           <div className={styles.imgWrapperDesktop}>

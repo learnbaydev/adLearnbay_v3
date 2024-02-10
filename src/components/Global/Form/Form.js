@@ -218,7 +218,7 @@ const Form = ({
                 {field.type === "phone" ? (
                   <>
                     {router.pathname ===
-                    "/datascience/OS/s2-masters-in-data-science-and-ai" ? (
+                    "/datascience/OS/s2-masters-in-data-science-and-ai" || "/OS" ? (
                       <PhoneInput
                         inputStyle={field.inputStyle}
                         containerStyle={field.containerStyle}

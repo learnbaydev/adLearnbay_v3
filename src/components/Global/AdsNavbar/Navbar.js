@@ -19,6 +19,7 @@ const Navbar = ({
   dataScience,
   HideInterest,
   HideButton,
+  OS,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -71,6 +72,7 @@ const Navbar = ({
               interstedInHide={interstedInHide}
               dataScience={dataScience}
               HideInterest={HideInterest}
+              OS={OS}
             />
           )}
         </div>
