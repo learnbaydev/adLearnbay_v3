@@ -10,6 +10,9 @@ const FirstSection = ({
   radio,
   dataScienceCounselling,
   interstedInHide,
+  Osaplybtn,
+  OS,
+  ADS,
 }) => {
   const [popups, setPopups] = useState(false);
   return (
@@ -21,9 +24,16 @@ const FirstSection = ({
         popups={popups}
         setPopups={setPopups}
         interstedInHide={interstedInHide}
-        heading="Apply For Counselling"
+        OS={OS}
+        ADS={ADS}
+        heading={OS ? "Apply for Consultation" : "Apply for counselling"}
       />
-      <FirstSectionContent setPopups={setPopups} />
+      <FirstSectionContent
+        setPopups={setPopups}
+        Osaplybtn={Osaplybtn}
+        OS={OS}
+        ADS={ADS}
+      />
     </>
   );
 };

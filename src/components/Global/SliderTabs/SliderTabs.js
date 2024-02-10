@@ -8,7 +8,7 @@ import styles from "./SliderTab.module.css";
 const Form = dynamic(() => import("../Form/Form"));
 const Popup = dynamic(() => import("../Popup/Popup"));
 
-const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
+const SliderTabs = ({ dataScience, dataScienceCounselling, OSserviced }) => {
   const services = [
     {
       title: "Placement Support",
@@ -46,6 +46,28 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
         "Open-ended access to potential employers.",
       ],
     },
+  ];
+  const OSservices = [
+   
+    {
+      title: "Mock Interviews",
+      icon: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/career2.webp",
+      content: [
+        "LearnBay's targeted mock interviews sessions to ready you for your dream role.",
+        "Actionable feedback for skill enhancement that keeps you in pace with interview trends.",
+        "Industry-specific interview practice so that you can crack your dream job.",
+      ],
+    },
+    {
+      title: "Resume BuildUp",
+      icon: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/career3.webp",
+      content: [
+        "LearnBay's tailored resume-building guidance.",
+        "Strategic advice for impactful resumes.",
+        "Tools and tips for resume optimization.",
+      ],
+    },
+  
   ];
 
   const renderServiceItem = (service, index) => {
@@ -107,6 +129,7 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
 
   const [activeService, setActiveService] = useState(0);
   const currentService = services[activeService];
+ 
 
   return (
     <div className={styles.Course} id="servicePro">
@@ -116,9 +139,13 @@ const SliderTabs = ({ dataScience, dataScienceCounselling }) => {
       </h2>
 
       <div className={styles.courses}>
-        <div className={styles.listPanel}>
+        {OSserviced ?( <div className={styles.listPanel}>
+          {OSservices.map(renderServiceItem)}
+        </div>):( <div className={styles.listPanel}>
           {services.map(renderServiceItem)}
-        </div>
+        </div>)}
+       
+
 
         <div className={styles.middlePanel}>
           <div className={styles.gridPanel}>
