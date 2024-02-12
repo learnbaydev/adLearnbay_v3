@@ -20,6 +20,7 @@ function NewProjectSection({
   interstedInHide,
   ADS,
   HideInterest,
+  radio,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -46,6 +47,7 @@ function NewProjectSection({
         ADS={ADS}
         formotp={formotp}
         HideInterest={HideInterest}
+        radio={radio}
       />
       <h4>Industry Projects</h4>
       <p>
