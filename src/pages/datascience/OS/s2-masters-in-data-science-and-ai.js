@@ -32,6 +32,7 @@ import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondS
 import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 
 function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
   const DataScienceMastersinCS = parseJSONData(DataScienceMastersinCSJson);
@@ -148,11 +149,10 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           weekdaybatch="Weekend Batch"
           weekendbatch="Weekday Batch"
           weekday="SAT-SUN"
-          weekend="SAT-SUN"
+          weekend="MON- FRI"
           WeekdayDate="JAN 14th"
-          CutFee="$4000"
-          WeekendDate="DEC 9th"
-          WeekendTime="09:30 AM - 1:00 PM"
+          WeekendDate="MAR 25th"
+          WeekendTime="08:00 PM - 9:00 PM"
           WeekdayTime="09:30 AM - 1:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
@@ -194,6 +194,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <EightSection HideInterest={true} ADS={true} dataScience={true} />
         <WhatsappFloat OS={true}/>
         <BottomBar HideInterest={true} ADS={true} dataScience={true} />
+        <MyCookieConsent />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>
