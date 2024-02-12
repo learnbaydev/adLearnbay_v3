@@ -2,10 +2,10 @@ import Image from "next/image";
 import Styles from "./JobAbroad.module.css";
 import Link from "next/link";
 import Popup from "../../Global/Popup/Popup";
-import Form from "../../Global/Form/Form"
+import Form from "../../Global/Form/Form";
 import { useState } from "react";
 
-const JobAbroad = () => {
+const JobAbroad = ({dataScience, interstedInHide, ADS, HideInterest, radio}) => {
   const [popupsApp, setPopupsApp] = useState(false);
 
   const popupShowApp = () => {
@@ -13,13 +13,26 @@ const JobAbroad = () => {
   };
   return (
     <div>
-      <Popup trigger={popupsApp} setTrigger={setPopupsApp} className="popupModal">
+      <Popup
+        trigger={popupsApp}
+        setTrigger={setPopupsApp}
+        className="popupModal"
+      >
         <div className="leftPopup">
           <div className="whiteP" />
         </div>
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
-          <Form popup={true} setTrigger={setPopupsApp} />
+          <Form
+            popup={true}
+            setTrigger={setPopupsApp}
+            dataScience={dataScience}
+            interstedInHide={interstedInHide}
+            upSkillingHide={true}
+            ADS={ADS}
+            HideInterest={HideInterest}
+            radio={radio}
+          />
         </div>
       </Popup>
       <div className={Styles.JobAbroadMain}>
@@ -88,9 +101,9 @@ const JobAbroad = () => {
             </div>
 
             <div className={Styles.consbtn1}>
-                <button className={Styles.consbtn} onClick={popupShowApp}>
-                  Start Your Application
-                </button>
+              <button className={Styles.consbtn} onClick={popupShowApp}>
+                Start Your Application
+              </button>
             </div>
             <p className={Styles.woolfText}>
               Learnbay Excelversity is a constituent college affiliated with{" "}

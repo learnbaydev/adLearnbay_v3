@@ -111,7 +111,7 @@ export default function Home({ DataScienceMastersinCSJson}) {
         dataScienceGeneric={true}/>
         <MasterSecondSection/>
         <CloudDevopsecond data={DsSecond} />
-        <JobAbroad/>
+        <JobAbroad HideInterest={true} ADS={true} dataScience={true} radio={true}/>
  
         <ProjectSection
           dataScience={true}
@@ -127,17 +127,18 @@ export default function Home({ DataScienceMastersinCSJson}) {
           HideInterest={true}
           radio={true}
           ADS={true}
+          dataScience={true}
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
         />
      
         {/* <ContactUs dataScience={true} radio={true} HideInterest={true} /> */}
-        <SeventhSection organic={true} />
-        <EightSection HideInterest={true}  ADS={true} radio={true} />
-        <WhatsappFloat chat360code1={true} />
+        <SeventhSection />
+        <EightSection HideInterest={true}  ADS={true} radio={true} dataScience={true}/>
+        <WhatsappFloat OS={true} />
         <BottomBar dataScience={true} radio={true} HideInterest={true} />
-        <CookieConsent/>
+        <CookieConsent />
       </main>
     </>
   );
