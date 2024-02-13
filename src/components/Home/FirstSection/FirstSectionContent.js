@@ -65,7 +65,7 @@ const FirstSectionContent = ({ setPopups, Osaplybtn }) => {
               <a href="#course">
                 <Button
                   className={styles.outLineBtn}
-                  ButtonWhiteBg
+                  ButtonWhiteBg 
                   text="Courses"
                   passIcon={<FaChevronDown className="bIconS" />}
                 />
