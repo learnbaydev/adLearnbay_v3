@@ -56,7 +56,7 @@ const FirstSectionContent = ({ setPopups, Osaplybtn }) => {
             <div onClick={popupShow} className={styles.counbtn}>
               <Button
                 className={styles.Btn}
-                text="Apply For consultation"
+                text="Apply For Consultation"
                 // passIcon={<FaBell className="bIconS" />}
               />
             </div>
