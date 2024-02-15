@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./FeeSection.module.css";
 import Emipopup from "../EMIPopup/Emipopup";
+import { FaGlobe } from "react-icons/fa6";
+import { FaRegCreditCard } from "react-icons/fa";
 const Button = dynamic(() => import("../../Global/Button/Button"));
 const FeeContent = ({
   Fee,
@@ -55,7 +57,7 @@ const FeeContent = ({
         options
       </p>
 
-      <div className={styles.ThreeCard}>
+      <div className={OS ? styles.ThreeCardOS : styles.ThreeCard }>
         <div className={styles.first}>
           <p style={{ textAlign: "center" }}>
             <b>Scholarship Details</b>
@@ -105,11 +107,22 @@ const FeeContent = ({
                   border: "0.9px solid",
                 }}
               />
-              <p className={styles.price} style={{color:"#2db621"}} >
+              <p className={styles.price} style={{ color: "#2db621" }}>
                 {Fee}
               </p>
-
-              
+              <p className={styles.feeHead}>
+                We provide the following options for one-time payment
+              </p>
+              <div className={styles.iconDiv}>
+                <div className={styles.icons}>
+                  <FaGlobe className={styles.PaymentsIcon} />
+                  <p>Internet Banking</p>
+                </div>
+                <div className={styles.icons}>
+                  <FaRegCreditCard className={styles.PaymentsIcon} />
+                  <p>Credit/Debit Card</p>
+                </div>
+              </div>
             </>
           ) : (
             <>
@@ -143,6 +156,7 @@ const FeeContent = ({
             </>
           )}
         </div>
+        {OS ? ("") : (
         <div className={styles.third}>
           <p>Batch Details</p>
           <div className={styles.boxOrange}>
@@ -175,6 +189,7 @@ const FeeContent = ({
             </div>
           </div>
         </div>
+        )}
       </div>
       {/* Emi Popup */}
       <Modal

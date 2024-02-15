@@ -6,7 +6,11 @@ const getEndPoint = (pathname, event) => {
     endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   }
 
-  if (pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" || pathname === "/OS") {
+  if (
+    pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
+    pathname === "/OS" ||
+    pathname === "/datascience/OS/s2-data-science-generic"
+  ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
   }
 
@@ -34,10 +38,7 @@ const getEndPoint = (pathname, event) => {
     endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
   }
 
-  if (
-    pathname ===
-    "/apply-for-counselling-email-marketing"
-  ) {
+  if (pathname === "/apply-for-counselling-email-marketing") {
     endPoint = "https://getform.io/f/94c74039-f505-4ebf-922e-b4728bd793e3";
   }
   if (pathname === "/google") {
@@ -52,16 +53,12 @@ const redirectionThankYou = (
   fullStack,
   event,
   dataScience,
-  dataScienceGeneric,
   dataScienceCounselling,
   redirection
 ) => {
   let routerPath = "";
   if (pathname === "/learning-learnbay") {
     routerPath = "/learning-learnbay-select";
-  }
-  if (pathname === "/datascience/OS/s2-masters-in-data-science-and-ai") {
-    routerPath = "/Thank-you";
   }
   if (pathname === "/learning-learnbay-select") {
     routerPath = "/Thank-you";
@@ -78,9 +75,15 @@ const redirectionThankYou = (
   if (dataScience) {
     routerPath = "/Thank-you";
   }
-  if (dataScienceGeneric) {
-    redirection();
+
+  if (
+    pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
+    pathname === "/OS" ||
+    pathname === "/datascience/OS/s2-data-science-generic"
+  ) {
+    routerPath = "/Thank-you-sp";
   }
+
   if (dataScienceCounselling) {
     routerPath = "/Thank-you";
   }
@@ -96,10 +99,9 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
-  if (
-    pathname === "/marketing/data-science-ai-masters-program"
-  ) {
-    routerPath = "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf";
+  if (pathname === "/marketing/data-science-ai-masters-program") {
+    routerPath =
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf";
   }
   if (pathname === "/Thank-you") {
     setToggle(false);

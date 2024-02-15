@@ -101,20 +101,20 @@ export default function Home({ DataScienceMastersinCSJson}) {
         />
       </Head>
       <main>
-      <Navbar HideInterest={true} ADS={true} dataScience={true} OS={true} radio={true}  />
-        <FirstSection dataScience={true} radio={true} HideInterest={true} OS={true}  Osaplybtn={true} />
+      <Navbar HideInterest={true} ADS={true} OS={true} radio={true}  />
+        <FirstSection OS={true} radio={true} HideInterest={true}  Osaplybtn={true} />
         <HomeLine />
-        <Course  dataScience={true}
+        <Course  OS={true}
         radio={true}
         organicADS={true}
         newDesign={true}
-        dataScienceGeneric={true}/>
+        />
         <MasterSecondSection/>
         <CloudDevopsecond data={DsSecond} />
-        <JobAbroad HideInterest={true} ADS={true} dataScience={true} radio={true}/>
+        <JobAbroad HideInterest={true} ADS={true} OS={true} radio={true}/>
  
         <ProjectSection
-          dataScience={true}
+          OS={true}
           radio={true}
           HideInterest={true}
         />
@@ -127,17 +127,17 @@ export default function Home({ DataScienceMastersinCSJson}) {
           HideInterest={true}
           radio={true}
           ADS={true}
-          dataScience={true}
+          OS={true}
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
         />
      
-        {/* <ContactUs dataScience={true} radio={true} HideInterest={true} /> */}
+        {/* <ContactUs OS={true} radio={true} HideInterest={true} /> */}
         <SeventhSection />
-        <EightSection HideInterest={true}  ADS={true} radio={true} dataScience={true}/>
+        <EightSection HideInterest={true}  ADS={true} radio={true} OS={true}/>
         <WhatsappFloat OS={true} />
-        <BottomBar dataScience={true} radio={true} HideInterest={true} />
+        <BottomBar OS={true} radio={true} HideInterest={true} />
         <CookieConsent />
       </main>
     </>

@@ -3,15 +3,19 @@ import Styles from "./Gethire.module.css";
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 
-function GetHire({HideImage}) {
+function GetHire({ HideImage, OS }) {
   return (
     <div id="servicePro">
       <div className={Styles.GetHireMain}>
         <div className={Styles.GetHireHead}>
           <div className={Styles.HireLeft}>
             <h2>
-              Land Your Dream Job with Career Services{" "}
-              <span className={Styles.PRo}>PRO</span>
+              {OS
+                ? "Land Your Dream Job with Our "
+                : "              Land Your Dream Job with Career Services"}
+              <span className={Styles.PRo}>
+                {OS ? "Self-Paced Course" : " PRO"}
+              </span>
             </h2>
             <div className={Styles.GetHireBulet}>
               <div className={Styles.minibullet}>
@@ -42,15 +46,17 @@ function GetHire({HideImage}) {
                   <p>3 Years Flexible Sub.</p>
                 </div>
               </div>
-              {HideImage ? ("") : (
-              <div>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job-ready.webp"
-                  width={160}
-                  height={190}
-                  alt="getHire"
-                />
-              </div>
+              {HideImage ? (
+                ""
+              ) : (
+                <div>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job-ready.webp"
+                    width={160}
+                    height={190}
+                    alt="getHire"
+                  />
+                </div>
               )}
             </div>
           </div>

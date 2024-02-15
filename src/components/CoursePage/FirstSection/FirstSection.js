@@ -32,7 +32,7 @@ function FirstSection({
           popups={popups}
           setPopups={setPopups}
           heading= {OS ? ("Apply for Consultation") : ("Apply for counselling")}
-          dataScience={true}
+          dataScience={dataScience}
           interstedInHide={interstedInHide}
           upSkillingHide={true}
           ADS={ADS}
