@@ -103,12 +103,12 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} ADS={true} dataScience={true} />
+        <Navbar HideInterest={true} OS={true} ADS={true} />
         <FirstSection
           HideInterest={true}
           AnimationHide={true}
           OS={true}
-          ADS={true} dataScience={true}
+          ADS={true} 
           woolfUniversity={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -126,13 +126,13 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
       <JobAbroad />
 
         <S2SecondSection MastersPage={true} />
-        <ProjectSection HideInterest={true} ADS={true} dataScience={true} />
+        <ProjectSection HideInterest={true} ADS={true}  />
         <GetHire HideImage={true}/>
 
         <SyllabusNew
           HideInterest={true}
           OS={true}
-          ADS={true} dataScience={true}
+          ADS={true} 
           masterSyllabusMobile={
             DataScienceMastersinCS.DataScienceMastersinCS[0]
               .masterSyllabusMobile
@@ -160,7 +160,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           FeeContent6="No additional cost"
           HideInterest={true}
           OS={true}
-          ADS={true} dataScience={true}
+          ADS={true} 
 
         emiType = "NO COST EMI"
         duration1 = "24 Months"
@@ -185,15 +185,15 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <NewProjectSection
           HideInterest={true}
         
-          ADS={true} dataScience={true}
+          ADS={true} 
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} ADS={true} dataScience={true} />
+        <EightSection HideInterest={true} ADS={true}  />
         <WhatsappFloat OS={true}/>
-        <BottomBar HideInterest={true} ADS={true} dataScience={true} />
+        <BottomBar HideInterest={true} ADS={true}  />
         <MyCookieConsent />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>

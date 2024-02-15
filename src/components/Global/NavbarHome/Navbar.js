@@ -10,7 +10,7 @@ import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import Popup from "@/components/Global/Popup/Popup";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ radio, formotp, interstedInHide, dataScience }) => {
+const Navbar = ({ radio, formotp, interstedInHide, dataScience, OS }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
 
@@ -51,6 +51,7 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience }) => {
               upSkillingHide={true}
               interstedInHide={interstedInHide}
               dataScience={dataScience}
+              OS={OS}
             />
           )}
         </div>

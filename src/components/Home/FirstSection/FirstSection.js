@@ -33,6 +33,8 @@ const FirstSection = ({
         Osaplybtn={Osaplybtn}
         OS={OS}
         ADS={ADS}
+        dataScience={dataScience}
+
       />
     </>
   );

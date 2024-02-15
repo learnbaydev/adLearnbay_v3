@@ -145,10 +145,11 @@ const Form = ({
       router.pathname,
       fullStack,
       event,
+      OS,
       dataScience,
       dataScienceGeneric,
       dataScienceCounselling,
-      redirection
+      redirection,
     );
     console.log("pushPath:", pushPath);
     setError(getValidation(radio, interstedInHide, query, CTC));
@@ -218,13 +219,16 @@ const Form = ({
                 {field.type === "phone" ? (
                   <>
                     {router.pathname ===
-                    "/datascience/OS/s2-masters-in-data-science-and-ai" || router.pathname === "/OS" ? (
+                      "/datascience/OS/s2-masters-in-data-science-and-ai" ||
+                    router.pathname === "/OS" ||
+                    router.pathname ===
+                      "/datascience/OS/s2-data-science-generic" ? (
                       <PhoneInput
                         inputStyle={field.inputStyle}
                         containerStyle={field.containerStyle}
                         name={field.name}
                         inputProps={field.inputProps}
-                        onlyCountries={["ng", "eg"]}
+                        onlyCountries={["ng"]}
                         country={"ng"}
                         placeholder={field.placeholder}
                         value={value}
