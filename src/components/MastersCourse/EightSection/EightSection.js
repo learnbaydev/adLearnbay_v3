@@ -46,7 +46,7 @@ function EightSection({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Download Brochure"
+        heading="Download Syllabus"
         downloadBrochure
         interstedInHide={interstedInHide}
         upSkillingHide={true}
@@ -72,7 +72,7 @@ function EightSection({
         ) : (
           <Button
             className={styles.buttonDiv}
-            text="Download Brochure"
+            text="Download Syllabus"
             passIcon={<FaDownload className={styles.icon} />}
             invert
           />

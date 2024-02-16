@@ -4,7 +4,7 @@ import { FaChevronDown, FaDownload } from "react-icons/fa";
 import Link from "next/link";
 
 import {
-  dataScience,
+  SP,
 } from "./courseDetailsThankYouNew";
 
 function CourseThankYou() {
@@ -16,7 +16,7 @@ function CourseThankYou() {
         <div className={styles.listPanel}>
           {oneYear ? (
             <div className={styles.gridPanel}>
-              {dataScience.map((viewAllData) => {
+              {SP.map((viewAllData) => {
                 const { id, title, link1 } = viewAllData;
                 return (
                   <>
@@ -42,7 +42,7 @@ function CourseThankYou() {
       <div className={styles.coursesD}>
         {oneYear ? (
           <div className={styles.gridPanel}>
-            {dataScience.map((viewAllData) => {
+            {SP.map((viewAllData) => {
               const { id, title, link1 } = viewAllData;
               return (
                 <>

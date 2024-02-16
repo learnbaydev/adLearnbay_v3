@@ -92,7 +92,7 @@ const Course = ({
           ></div>
         </div>
         <div className="RightPopup">
-          <h5>Download Brochure</h5>
+          <h5>Download Syllabus</h5>
           <Form
             titleCourse={titleCourse}
             brochureLink={brochureLinks}
@@ -388,7 +388,7 @@ const Course = ({
                                               borderRadius: "0px 0px 0px 20px",
                                             }}
                                           >
-                                            Brochure
+                                            Syllabus
                                             <FaDownload
                                               className="bIcon"
                                               style={{ color: "#2979AD" }}

@@ -39,8 +39,10 @@ import { AiOutlineContainer } from "react-icons/ai";
 import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 import Certificate from "@/components/MastersCourse/Certificate/Certificate";
 import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
+import SliderTabsDomain from "@/components/CoursePage/SliderTab/SliderTabs"
 
 import CookieConsent from "@/components/Global/CookieConsent/CookieConstent"
+import Slider from "@/components/OrganicGeneric/FirstSection/Slider";
 export default function Home({ DataScienceMastersinCSJson}) {
     const DataScienceMastersinCS = parseJSONData(DataScienceMastersinCSJson);
  
@@ -101,23 +103,26 @@ export default function Home({ DataScienceMastersinCSJson}) {
         />
       </Head>
       <main>
-      <Navbar HideInterest={true} ADS={true} OS={true} radio={true}  />
-        <FirstSection OS={true} radio={true} HideInterest={true}  Osaplybtn={true} />
+      <Navbar HideInterest={true} ADS={true} OS={true} radio={true}  dataScience={true} />
+        <FirstSection OS={true} radio={true} HideInterest={true}  Osaplybtn={true} dataScience={true} />
         <HomeLine />
         <Course  OS={true}
         radio={true}
         organicADS={true}
         newDesign={true}
+        dataScience={true}
         />
         <MasterSecondSection/>
         <CloudDevopsecond data={DsSecond} />
-        <JobAbroad HideInterest={true} ADS={true} OS={true} radio={true}/>
+        <JobAbroad HideInterest={true} ADS={true} OS={true} radio={true}  dataScience={true}/>
  
-        <ProjectSection
+        {/* <ProjectSection
           OS={true}
           radio={true}
           HideInterest={true}
-        />
+          dataScience={true}
+        /> */}
+        <SliderTabsDomain />
        <Certificate
           data={DataScienceMastersinCS.DataScienceMastersinCS[0].Certificate}
         />
@@ -131,13 +136,14 @@ export default function Home({ DataScienceMastersinCSJson}) {
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
+          dataScience={true}
         />
      
         {/* <ContactUs OS={true} radio={true} HideInterest={true} /> */}
         <SeventhSection />
-        <EightSection HideInterest={true}  ADS={true} radio={true} OS={true}/>
+        <EightSection HideInterest={true}  ADS={true} radio={true} OS={true}  dataScience={true} />
         <WhatsappFloat OS={true} />
-        <BottomBar OS={true} radio={true} HideInterest={true} />
+        <BottomBar OS={true} radio={true} HideInterest={true}  dataScience={true} />
         <CookieConsent />
       </main>
     </>

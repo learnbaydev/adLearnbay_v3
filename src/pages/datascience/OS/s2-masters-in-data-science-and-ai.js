@@ -1,38 +1,33 @@
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
-import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabsOS";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
 import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import Certificate from "@/components/MastersCourse/Certificate/Certificate";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
 import { AiOutlineContainer } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
-import { parseJSONData } from "../../../Util/JsonConvertor";
-import SliderTabs from "@/components/Global/SliderTabs/SliderTabsOS";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { parseJSONData } from "../../../../Util/JsonConvertor";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/MasterSyllabus";
-import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 
-import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
   const DataScienceMastersinCS = parseJSONData(DataScienceMastersinCSJson);
@@ -72,11 +67,8 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
       { icon: <BsDisplay />, text: "Real Time Projects" },
       { icon: <AiOutlineContainer />, text: "Resume Building Session" },
       { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
-    
     ],
-    formbl: [
-      { icon: <BsPeople />, text: "Mock Interview Sessions" },
-    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
     image5:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
@@ -103,12 +95,13 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} OS={true} ADS={true} />
+        <Navbar HideInterest={true} OS={true} ADS={true}  dataScience={true} />
         <FirstSection
           HideInterest={true}
           AnimationHide={true}
           OS={true}
-          ADS={true} 
+          ADS={true}
+          dataScience={true}
           woolfUniversity={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -119,27 +112,25 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           firstHeading="Master's in Computer Science:   "
           firstTopPara="Learnbay Excelvarsity"
           softwareBtnHide={true}
-        />,
-
-<MasterSecondSection />
-      <CloudDevopsecond data={DsSecond} />
-      <JobAbroad />
-
+        />
+        ,
+        <MasterSecondSection />
+        <CloudDevopsecond data={DsSecond} />
+        <JobAbroad dataScience={true}/>
         <S2SecondSection MastersPage={true} />
-        <ProjectSection HideInterest={true} ADS={true}  />
-        <GetHire HideImage={true}/>
-
+        <ProjectSection HideInterest={true} ADS={true}  dataScience={true} />
+        <GetHire HideImage={true} />
         <SyllabusNew
           HideInterest={true}
           OS={true}
-          ADS={true} 
+          ADS={true}
+          dataScience={true}
           masterSyllabusMobile={
             DataScienceMastersinCS.DataScienceMastersinCS[0]
               .masterSyllabusMobile
           }
           onebtn={true}
         />
-
         <Certificate
           data={DataScienceMastersinCS.DataScienceMastersinCS[0].Certificate}
         />
@@ -160,16 +151,16 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           FeeContent6="No additional cost"
           HideInterest={true}
           OS={true}
-          ADS={true} 
-
-        emiType = "NO COST EMI"
-        duration1 = "24 Months"
-        totalAmount1 = "₹2,50,000"
-        monthlyPayment1 = "₹12,292"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "18 Months"
-        totalAmount2 = "₹2,50,000"
-        monthlyPayment2 = "₹16,389"
+          ADS={true}
+          dataScience={true}
+          emiType="NO COST EMI"
+          duration1="24 Months"
+          totalAmount1="₹2,50,000"
+          monthlyPayment1="₹12,292"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="18 Months"
+          totalAmount2="₹2,50,000"
+          monthlyPayment2="₹16,389"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
@@ -181,19 +172,19 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           }
         />
         <MentorsSection />
-      <SliderTabs />
+        <SliderTabs />
         <NewProjectSection
           HideInterest={true}
-        
-          ADS={true} 
+          ADS={true}
+          dataScience={true}
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} ADS={true}  />
-        <WhatsappFloat OS={true}/>
-        <BottomBar HideInterest={true} ADS={true}  />
+        <EightSection HideInterest={true} ADS={true}  dataScience={true}/>
+        <WhatsappFloat OS={true} />
+        <BottomBar HideInterest={true} ADS={true}  dataScience={true}/>
         <MyCookieConsent />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>

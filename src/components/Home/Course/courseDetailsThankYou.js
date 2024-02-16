@@ -77,14 +77,14 @@ export const viewAllD = [
   {
     id: 10,
     img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/data-science-ai-master-program.png",
-    title: "Full-Stack Project Brochure",
+    title: "Full-Stack Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
   },
   {
     id: 11,
     img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/data-science-ai-for-managers.png",
-    title: "Data Science Project Brochure",
+    title: "Data Science Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
   },
@@ -176,14 +176,14 @@ export const placementProject = [
   {
     id: 3,
     img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/full-stack-web-development.png",
-    title: "Full-Stack Project Brochure",
+    title: "Full-Stack Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
   },
   {
     id: 4,
     img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/data-analytics.png",
-    title: "Data Science Project Brochure",
+    title: "Data Science Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
   },

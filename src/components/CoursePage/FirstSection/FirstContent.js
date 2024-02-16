@@ -127,7 +127,7 @@ const FirstContent = ({
                       </div>
                     ) : (
                       <div onClick={popupShow}>
-                        <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                        <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
                       </div>
                     )}
                   </>
@@ -213,7 +213,7 @@ const FirstContent = ({
             </div>{" "}
             <div className={styles.btnImageMobile}>
               <div onClick={popupShow}>
-                <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+                <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
               </div>
               {softwareBtnHide ? (
                 ""

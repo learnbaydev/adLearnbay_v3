@@ -9,7 +9,7 @@ const getEndPoint = (pathname, event) => {
   if (
     pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
     pathname === "/OS" ||
-    pathname === "/datascience/OS/s2-data-science-generic"
+    pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
   }
@@ -76,11 +76,7 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
-  if (
-    pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
-    pathname === "/OS" ||
-    pathname === "/datascience/OS/s2-data-science-generic"
-  ) {
+  if (pathname === "/datascience/OS/sp/s2-data-science-generic") {
     routerPath = "/Thank-you-sp";
   }
 

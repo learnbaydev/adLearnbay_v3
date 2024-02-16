@@ -54,7 +54,7 @@ function WhyLearnbay({ dataScience, interstedInHide }) {
         dataScience={dataScience}
         interstedInHide={interstedInHide}
         upSkillingHide={true}
-        heading="Download Brochure"
+        heading="Download Syllabus"
       />
       <h4 className={Styles.h4}>
         Learnbay’s <span style={{ color: "#F99600" }}>ProjectLab</span>
@@ -185,7 +185,7 @@ function WhyLearnbay({ dataScience, interstedInHide }) {
                     onClick={() => popupShow()}
                   >
                     <Button
-                      text="Download Domain Brochures"
+                      text="Download Domain Syllabus"
                       passIcon={<FaDownload className="bIconS" />}
                     />
                   </div>
@@ -260,7 +260,7 @@ function WhyLearnbay({ dataScience, interstedInHide }) {
                   <div className={Styles.buttonDiv} onClick={() => popupShow()}>
                     <Button
                       bannerButton={true}
-                      text="Download Domain Brochures"
+                      text="Download Domain Syllabus"
                       passIcon={<FaDownload className="bIconS" />}
                     />
                   </div>

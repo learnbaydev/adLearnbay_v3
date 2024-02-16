@@ -49,7 +49,7 @@ const Navbar = ({
           <div className="whiteP" />
         </div>
         <div className="RightPopup">
-          <h5>Download Brochure</h5>
+          <h5>Download Syllabus</h5>
 
           {formotp ? (
             <FormOtp
@@ -104,14 +104,16 @@ const Navbar = ({
           )}
         </div>
         <div className={styles.right}>
-          {HideButton ? ("") : (
-          <div onClick={popupShow}>
-            <Button
-              text="Download Brochure"
-              outline={true}
-              passIcon={<FaDownload className={styles.icon} />}
-            />
-          </div>
+          {HideButton ? (
+            ""
+          ) : (
+            <div onClick={popupShow}>
+              <Button
+                text="Download Syllabus"
+                outline={true}
+                passIcon={<FaDownload className={styles.icon} />}
+              />
+            </div>
           )}
 
           <Popup></Popup>

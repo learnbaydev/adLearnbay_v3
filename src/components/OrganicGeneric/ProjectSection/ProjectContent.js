@@ -49,7 +49,7 @@ const ProjectContent = ({
             ></div>
           </div>
           <div className="RightPopup">
-            <h5>Download Brochure</h5>
+            <h5>Download Syllabus</h5>
             <Form
               dataScience={dataScience}
               upSkillingHide={true}
@@ -151,7 +151,7 @@ const ProjectContent = ({
               <div onClick={popupShow}>
                 <Button
                   bannerButton={true}
-                  text="Download Domain Brochures"
+                  text="Download Domain Syllabus"
                   passIcon={<FaDownload className="bIconS" />}
                 />
               </div>
@@ -179,7 +179,7 @@ const ProjectContent = ({
             <div className={styles.buttonDiv} onClick={popupShow}>
               <Button
                 bannerButton={true}
-                text="Download Domain Brochures"
+                text="Download Domain Syllabus"
                 passIcon={<FaDownload className="bIconS" />}
               />
             </div>
