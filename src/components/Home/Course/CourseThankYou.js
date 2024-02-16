@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import styles from "./CourseThankYou.module.css";
 import Image from "next/image";
+import { useState } from "react";
 import { AiOutlineDownload } from "react-icons/ai";
+import styles from "./CourseThankYou.module.css";
 
 import {
-  viewAllD,
   dataScience,
-  placementProject,
   fullStackD,
   nonTechD,
+  placementProject,
+  viewAllD,
 } from "./courseDetailsThankYou";
 
 function CourseThankYou() {
@@ -37,7 +37,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Data Science Brochure
+            Data Science Syllabus
           </span>
           <span
             onClick={() => {
@@ -53,7 +53,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Brochure
+            Syllabus
           </span>
           <span
             onClick={() => {
@@ -69,7 +69,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Placement & Project Brochure
+            Placement & Project Syllabus
           </span>
           <span
             onClick={() => {
@@ -85,7 +85,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Domain Brochure
+            Domain Syllabus
           </span>
           <span
             onClick={() => {
@@ -126,7 +126,7 @@ function CourseThankYou() {
                     <button className={styles.Button}>
                       <AiOutlineDownload className="bIcons" />
                       <a href={link1} target="_blank">
-                        Download Brochure
+                        Download Syllabus
                       </a>
                     </button>
                   </div>
@@ -157,7 +157,7 @@ function CourseThankYou() {
                     <button className={styles.Button}>
                       <AiOutlineDownload className="bIcons" />
                       <a href={link1} target="_blank">
-                        Download Brochure
+                        Download Syllabus
                       </a>
                     </button>
                   </div>
@@ -189,7 +189,7 @@ function CourseThankYou() {
                     <button className={styles.Button}>
                       <AiOutlineDownload className="bIcons" />
                       <a href={link1} target="_blank">
-                        Download Brochure
+                        Download Syllabus
                       </a>
                     </button>
                   </div>
@@ -220,7 +220,7 @@ function CourseThankYou() {
                     <button className={styles.Button}>
                       <AiOutlineDownload className="bIcons" />
                       <a href={link1} target="_blank">
-                        Download Brochure
+                        Download Syllabus
                       </a>
                     </button>
                   </div>
@@ -251,7 +251,7 @@ function CourseThankYou() {
                     <button className={styles.Button}>
                       <AiOutlineDownload className="bIcons" />
                       <a href={link1} target="_blank">
-                        Download Brochure
+                        Download Syllabus
                       </a>
                     </button>
                   </div>

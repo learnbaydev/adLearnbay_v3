@@ -42,7 +42,7 @@ function SyllabusNew({
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading="Download Brochure"
+          heading="Download Syllabus"
           downloadBrochure
           dataScience={dataScience}
           interstedInHide={interstedInHide}
@@ -73,12 +73,14 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              {OS ? (<h4>
-                Apply For<span> Consultation ?</span>
-              </h4>) : (
-              <h4>
-                Apply For<span> counselling ?</span>
-              </h4>
+              {OS ? (
+                <h4>
+                  Apply For<span> Consultation ?</span>
+                </h4>
+              ) : (
+                <h4>
+                  Apply For<span> counselling ?</span>
+                </h4>
               )}
               {formotp ? (
                 <FormOtp
@@ -95,7 +97,7 @@ function SyllabusNew({
                   adPage={adPage}
                   interstedInHide={interstedInHide}
                   HideInterest={HideInterest}
-          OS={OS}
+                  OS={OS}
                 />
               )}
             </div>
@@ -105,7 +107,7 @@ function SyllabusNew({
           <div className={styles.buttonDiv}>
             {buttonHide ? "" : ""}
             <div onClick={popupShow}>
-              <Button nobannerButton={true} text="DOWNLOAD BROCHURE" />
+              <Button nobannerButton={true} text="DOWNLOAD SYLLABUS" />
             </div>
           </div>
         ) : (
@@ -117,12 +119,12 @@ function SyllabusNew({
                 <Button
                   onClick={popupShowApp}
                   bannerButton={true}
-                  text="DOWNLOAD BROCHURE"
+                  text="DOWNLOAD SYLLABUS"
                 />
               </div>
             )}
             <div onClick={popupShow}>
-              <Button nobannerButton={true} text="DOWNLOAD BROCHURE" />
+              <Button nobannerButton={true} text="DOWNLOAD SYLLABUS" />
             </div>
           </div>
         )}

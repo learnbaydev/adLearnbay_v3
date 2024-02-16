@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import styles from "./ThankYouNew.module.css";
-import { FaChevronDown, FaDownload } from "react-icons/fa";
 import Link from "next/link";
+import { useState } from "react";
+import { FaChevronDown, FaDownload } from "react-icons/fa";
+import styles from "./ThankYouNew.module.css";
 
 import {
-  viewAllD,
   dataScience,
-  placementProject,
   fullStackD,
   nonTechD,
+  placementProject,
+  viewAllD,
 } from "./courseDetailsThankYouNew";
 
 function CourseThankYou() {
@@ -55,7 +55,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Data Science Brochure</p>
+            <p>Data Science Syllabus</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -115,7 +115,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Cloud Computing & Devops Brochure</p>
+            <p>Cloud Computing & Devops Syllabus</p>
             <p>
               <FaChevronDown className="Icons" style={{ fontWeight: "600" }} />
             </p>
@@ -175,7 +175,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Placement & Project Brochure</p>
+            <p>Placement & Project Syllabus</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -235,7 +235,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Domain Brochure</p>
+            <p>Domain Syllabus</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -341,7 +341,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Data Science Brochure
+            Data Science Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -358,7 +358,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Cloud Computing & Devops Brochure
+            Cloud Computing & Devops Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -375,7 +375,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Placement & Project Brochure
+            Placement & Project Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -392,7 +392,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Domain Brochure
+            Domain Syllabus
           </span>
           <div className={styles.line}></div>
           <span

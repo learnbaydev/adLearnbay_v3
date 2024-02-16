@@ -61,7 +61,7 @@ function WhyLearnbay({
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading="Download Brochure"
+          heading="Download Syllabus"
           downloadBrochure
           dataScience={dataScience}
           dataScienceCounselling={dataScienceCounselling}
@@ -180,7 +180,7 @@ function WhyLearnbay({
                   <div className={Styles.iconButton}>
                     <div onClick={popupShow}>
                       <Button
-                        text="Download Domain Brochures"
+                        text="Download Domain Syllabus"
                         passIcon={<FaDownload className="bIconS" />}
                       />
                     </div>
@@ -221,7 +221,7 @@ function WhyLearnbay({
                     <div onClick={popupShow}>
                       <Button
                         bannerButton={true}
-                        text="Download Domain Brochures"
+                        text="Download Domain Syllabus"
                         passIcon={<FaDownload className="bIconS" />}
                       />
                     </div>

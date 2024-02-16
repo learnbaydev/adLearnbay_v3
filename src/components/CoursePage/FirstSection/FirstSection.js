@@ -31,7 +31,7 @@ function FirstSection({
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading= {OS ? ("Apply for Consultation") : ("Apply for counselling")}
+          heading={OS ? "Apply for Consultation" : "Apply for counselling"}
           dataScience={dataScience}
           interstedInHide={interstedInHide}
           upSkillingHide={true}
@@ -39,13 +39,12 @@ function FirstSection({
           formotp={formotp}
           HideInterest={HideInterest}
           OS={OS}
-
         />
       ) : (
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading="Download Brochure"
+          heading="Download Syllabus"
           dataScience={true}
           downloadBrochure
           interstedInHide={interstedInHide}

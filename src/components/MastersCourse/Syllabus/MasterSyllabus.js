@@ -110,7 +110,7 @@ function SyllabusNew({
             ></div>
           </div>
           <div className="RightPopup">
-            <h5>Download Brochure</h5>
+            <h5>Download Syllabus</h5>
             <Form
               dataScience={dataScience}
               downloadBrochure
@@ -275,14 +275,14 @@ function SyllabusNew({
           <a href="/master-application">
             <Button
               bannerButton={true}
-              text="DOWNLOAD BROCHURE"
+              text="DOWNLOAD SYLLABUS"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </a>
           <div onClick={popupShow}>
             <Button
               nobannerButton={true}
-              text="DOWNLOAD BROCHURE"
+              text="DOWNLOAD SYLLABUS"
               // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
             />
           </div>

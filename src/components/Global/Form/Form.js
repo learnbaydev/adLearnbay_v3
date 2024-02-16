@@ -222,7 +222,7 @@ const Form = ({
                       "/datascience/OS/s2-masters-in-data-science-and-ai" ||
                     router.pathname === "/OS" ||
                     router.pathname ===
-                      "/datascience/OS/s2-data-science-generic" ? (
+                      "/datascience/OS/sp/s2-data-science-generic" ? (
                       <PhoneInput
                         inputStyle={field.inputStyle}
                         containerStyle={field.containerStyle}

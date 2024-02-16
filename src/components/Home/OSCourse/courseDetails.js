@@ -1,5 +1,4 @@
 export const courseDetails = [
-  
   {
     id: "Popular Courses",
     title: "Popular Courses",
@@ -26,8 +25,7 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
           },
-         
-         
+
           {
             id: 4,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/course-2.webp",
@@ -99,7 +97,7 @@ export const courseDetails = [
             titleCourse: "Data Science and AI Master Certification Program",
             para: [
               "13 months | 4 capstone projects",
-              "Global Certification form IBM",
+              "Global Certification from IBM",
               "Price $1,555",
             ],
             link1:
@@ -107,15 +105,13 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
-
-        
         ],
       },
       {
         courseName: "Master course and add on ",
         id: "Popular Program",
         courseDetails: [
-        {
+          {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/masters-11.webp",
             title: "Master in CS:",
@@ -129,15 +125,16 @@ export const courseDetails = [
             para: [
               "18 months | 3 Projects",
               "Globally recognized degree",
-              "Price $3,011",,
-              
+              "Price $3,011",
+
+              ,
             ],
             newDesign: true,
             link1: "/datascience/data-science-ai-masters-program",
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
           },
-          
+
           {
             id: 5,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/Add-on-3.webp",
@@ -159,10 +156,8 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Generative+AI+Certification+Course.pdf",
           },
-          
         ],
       },
-     
     ],
   },
   // {

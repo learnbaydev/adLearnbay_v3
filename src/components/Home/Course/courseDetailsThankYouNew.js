@@ -61,13 +61,13 @@ export const viewAllD = [
 
   {
     id: 10,
-    title: "Software Development Project Brochure",
+    title: "Software Development Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
   },
   {
     id: 11,
-    title: "Data Science Project Brochure",
+    title: "Data Science Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
   },
@@ -171,13 +171,13 @@ export const placementProject = [
   },
   {
     id: 3,
-    title: "Software Development Project Brochure",
+    title: "Software Development Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
   },
   {
     id: 4,
-    title: "Data Science Project Brochure",
+    title: "Data Science Project Syllabus",
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
   },
@@ -234,5 +234,31 @@ export const nonTechD = [
 
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
+  },
+];
+
+export const SP = [
+  {
+    id: 1,
+    title:
+      "Advance Data Science & AI Certification | Domain Specialisation For Professionals",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/sp/Advanced_Data_Science_and_AI_Certification_Program_sp.pdf",
+  },
+  {
+    id: 2,
+    title:
+      "Advance AI & ML Certification | Become AI Expert In Product based MNCs",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/sp/Advanced_Aritificial_Intelligence_and_ML+Certification_Program_sp.pdf",
+  },
+
+  {
+    id: 5,
+    title: "Data Analytics",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/sp/Data_Analytics_Certification_Program_sp.pdf",
   },
 ];

@@ -13,15 +13,14 @@ import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
-import { parseJSONData } from "../../../Util/JsonConvertor";
-import SyllabusNew from "../../../components/CoursePage/Syllabus/MasterSyllabus";
+import { parseJSONData } from "../../../../../Util/JsonConvertor";
+import SyllabusNew from "../../../../components/CoursePage/Syllabus/MasterSyllabus";
 
-import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
@@ -48,7 +47,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} OS={true} ADS={true}  />
+        <Navbar HideInterest={true} OS={true} ADS={true} />
         <FirstSection
           HideInterest={true}
           ADS={true}
@@ -83,13 +82,12 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           forth="Developing skills in data science for future opportunities"
         />
         {/* <ProjectSection HideInterest={true} ADS={true} /> */}
-        <GetHire OS={true}/>
+        <GetHire OS={true} />
 
         <SyllabusNew
           HideInterest={true}
           OS={true}
           ADS={true}
-          
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
           }
@@ -156,7 +154,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
 }
 export default Blockchain;
 export async function getStaticProps() {
-  const data = await import("../../../Data/AdvanceDataScienceCourse");
+  const data = await import("../../../../Data/AdvanceDataScienceCourse");
   function getDataScienceCourseDataJSON(dataScienceCourseData) {
     return JSON.stringify(dataScienceCourseData);
   }

@@ -23,7 +23,7 @@ function FirstSection({
         brochureLink={brochureLink}
         interstedInHide={interstedInHide}
         upSkillingHide={true}
-        heading="Download Brochure"
+        heading="Download Syllabus"
       />
 
       <FirstSectionContent

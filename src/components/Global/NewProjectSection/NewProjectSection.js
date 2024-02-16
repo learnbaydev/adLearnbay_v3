@@ -38,7 +38,7 @@ function NewProjectSection({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Download Brochure"
+        heading="Download Syllabus"
         downloadBrochure
         dataScience={dataScience}
         dataScienceCounselling={dataScienceCounselling}
@@ -138,7 +138,7 @@ function NewProjectSection({
         </Swiper>
       </div>
       <div onClick={popupShow} className={Styles.buttonDiv}>
-        <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
+        <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
       </div>
     </section>
   );
