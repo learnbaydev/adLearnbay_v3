@@ -132,6 +132,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           onebtn={true}
         />
         <Certificate
+        
           data={DataScienceMastersinCS.DataScienceMastersinCS[0].Certificate}
         />
         <FeeSection
