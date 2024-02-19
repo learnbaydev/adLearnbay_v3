@@ -13,8 +13,14 @@ export default async function handler(req, res) {
     addDateTime = addDateTime.toUTCString();
 
     const MTALKZ_SEND_SMS_POST_API_URL = "https://msg.mtalkz.com/V2/http-api-post.php";
-    const MTALKZ_SEND_SMS_API_KEY = "ASnH8bAWcDjKVJao";
-    const MTALKZ_SEND_SMS_SENDERID = "LEABAY";
+    const MTALKZ_SEND_SMS_API_KEY = process.env.MTALKZ_SEND_SMS_API_KEY;
+    const MTALKZ_SEND_SMS_SENDERID = process.env.MTALKZ_SEND_SMS_SENDERID;
+
+    // Ensure credentials are defined
+    if (!MTALKZ_SEND_SMS_API_KEY || !MTALKZ_SEND_SMS_SENDERID) {
+      return res.status(500).json({ error: "SMS credentials are not provided." });
+    }
+
     // const MTALKZ_SEND_SMS_SENDERID = "MTAMOI";
     const message = `Your OTP for registration is ${otp} . Use this for phone verification. Do not share this OTP for security reasons. Thanks, Learnbay.    `;
     // const message = `Your OTP- One Time Password is ${otp} to authenticate your login with Learnbay Powered By mTalkz`;
