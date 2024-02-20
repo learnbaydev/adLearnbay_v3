@@ -35,7 +35,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
         />
-        <meta name="robots" content="index, nofollow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="keywords" content="Data Science Generic" />
         <link
           rel="icon"
@@ -145,6 +145,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <SeventhSection />
         <EightSection HideInterest={true} ADS={true} />
         <MyCookieConsent />
+        <WhatsappFloat OS={true} />
         <BottomBar HideInterest={true} ADS={true} />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
