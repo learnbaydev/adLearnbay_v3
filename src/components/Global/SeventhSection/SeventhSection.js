@@ -85,16 +85,16 @@ function SeventhSection({ fullStackCont, organic }) {
               ) : (
                 <div className={styles.btnWrap}>
                 {/* <a
-                  href="https://api.whatsapp.com/send?phone=918123327570&text=Hello,"
+                  href="https://api.whatsapp.com/send?phone=916364939404&text=Hello,"
                   target="_blank"
                 >
                   <button className={styles.btn1}>
                     <AiOutlineWhatsApp /> Enquire Now
                   </button>
                 </a> */}
-                <a href="tel: +918123327570">
+                <a href="tel: +916364939404">
                   <Button
-                    text="+91 8123 327570"
+                    text="+91 6364 939404"
                     passIcon={<MdCall />}
                     outline={true}
                     invert

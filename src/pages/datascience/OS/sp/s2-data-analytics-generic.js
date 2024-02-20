@@ -21,6 +21,7 @@ import SyllabusNew from "../../../../components/CoursePage/Syllabus/MasterSyllab
 
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
+import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 
 function Blockchain({ DataAnalyticsdataJson, projectSection }) {
   const DataAnalyticsdata = parseJSONData(DataAnalyticsdataJson);
@@ -35,7 +36,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
         />
-        <meta name="robots" content="index, nofollow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="keywords" content="Data Science Generic" />
         <link
           rel="icon"
@@ -138,6 +139,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <SeventhSection />
         <EightSection HideInterest={true} OS={true} ADS={true} />
         <MyCookieConsent />
+        <WhatsappFloat OS={true} />
         <BottomBar HideInterest={true} OS={true} ADS={true} />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
