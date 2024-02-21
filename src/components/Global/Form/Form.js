@@ -39,31 +39,32 @@ const Form = ({
   const [location, setLocation] = useState({ country: "", city: "" });
 
   const fetchLocation = async () => {
-    try {
-      const response = await fetch(
-        "https://ipinfo.io/json?token=bc89c2010abac0"
-      );
-
-      if (response.status === 429) {
-        throw new Error("Rate limit exceeded. Too many requests.");
-      }
-
-      if (!response.ok) {
-        throw new Error(
-          `Failed to fetch location: ${response.status} ${response.statusText}`
+    if (location.country === "" && location.city === "") {
+      try {
+        const response = await fetch(
+          "https://ipinfo.io/json?token=bc89c2010abac0"
         );
+
+        if (response.status === 429) {
+          throw new Error("Rate limit exceeded. Too many requests.");
+        }
+
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch location: ${response.status} ${response.statusText}`
+          );
+        }
+        const data = await response.json();
+        console.log("API Response:", data);
+
+        const { country, city } = data;
+        setLocation({ country, city });
+      } catch (error) {
+        console.error("Error fetching location:", error.message);
+
+        // Handle rate limit exceeded or set a default location
+        setLocation({ country: "DefaultCountry", city: "DefaultCity" });
       }
-
-      const data = await response.json();
-      console.log("API Response:", data);
-
-      const { country, city } = data;
-      setLocation({ country, city });
-    } catch (error) {
-      console.error("Error fetching location:", error.message);
-
-      // Handle rate limit exceeded or set a default location
-      setLocation({ country: "DefaultCountry", city: "DefaultCity" });
     }
   };
 
@@ -92,19 +93,19 @@ const Form = ({
     url: router.asPath,
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await fetchLocation();
-    };
-    fetchData();
-  }, [value]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await fetchLocation();
+  //   };
+  //   fetchData();
+  // }, [value]);
 
   useEffect(() => {
     // Update query state when location changes
     setQuery((prevQuery) => ({
       ...prevQuery,
-      country: location.country,
-      city: location.city,
+      // country: location.country,
+      // city: location.city,
     }));
   }, [location]);
 
@@ -140,6 +141,7 @@ const Form = ({
   // Form Submit function
   const formSubmit = async (e) => {
     e.preventDefault();
+    await fetchLocation();
     const endPoint = getEndPoint(router.pathname, event);
     const pushPath = redirectionThankYou(
       router.pathname,
@@ -149,7 +151,7 @@ const Form = ({
       dataScience,
       dataScienceGeneric,
       dataScienceCounselling,
-      redirection,
+      redirection
     );
     console.log("pushPath:", pushPath);
     setError(getValidation(radio, interstedInHide, query, CTC));
@@ -221,8 +223,10 @@ const Form = ({
                     {router.pathname ===
                       "/datascience/OS/s2-masters-in-data-science-and-ai" ||
                     router.pathname === "/OS" ||
-                    router.pathname === "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
-                    router.pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
+                    router.pathname ===
+                      "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
+                    router.pathname ===
+                      "/datascience/OS/sp/s2-data-analytics-generic" ||
                     router.pathname ===
                       "/datascience/OS/sp/s2-data-science-generic" ? (
                       <PhoneInput
@@ -230,8 +234,8 @@ const Form = ({
                         containerStyle={field.containerStyle}
                         name={field.name}
                         inputProps={field.inputProps}
-                        onlyCountries={["ng"]}
-                        country={"ng"}
+                        onlyCountries={["eg", "ng"]}
+                        country={""}
                         placeholder={field.placeholder}
                         value={value}
                         onChange={(phone) => setValue(phone)}
