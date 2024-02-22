@@ -203,27 +203,39 @@ const Form = ({
                       "/datascience/OS/sp/s2-data-analytics-generic" ||
                     router.pathname ===
                       "/datascience/OS/sp/s2-data-science-generic" ? (
-                      <div className={styles.osDiv}>
-                        <input
-                          type="type"
-                          name="CountryCode"
-                          className={styles.EmailInputs}
-                          required={field.required}
-                          placeholder="+CC"
-                          value={query.CountryCode}
-                          onChange={handleParam(value)}
-                          style={{ width: "25%" }}
-                        />
-                        <input
-                          type="phone"
-                          name="phone"
-                          className={styles.EmailInputs}
-                          required={field.required}
-                          placeholder="Phone Number"
-                          value={query.phone}
-                          onChange={handleParam(value)}
-                        />
-                      </div>
+                      // <div className={styles.osDiv}>
+                      //   <input
+                      //     type="type"
+                      //     name="CountryCode"
+                      //     className={styles.EmailInputs}
+                      //     required={field.required}
+                      //     placeholder="+CC"
+                      //     value={query.CountryCode}
+                      //     onChange={handleParam(value)}
+                      //     style={{ width: "25%" }}
+                      //   />
+                      //   <input
+                      //     type="phone"
+                      //     name="phone"
+                      //     className={styles.EmailInputs}
+                      //     required={field.required}
+                      //     placeholder="Phone Number"
+                      //     value={query.phone}
+                      //     onChange={handleParam(value)}
+                      //   />
+                      // </div>
+                      <PhoneInput
+                        inputStyle={field.inputStyle}
+                        containerStyle={field.containerStyle}
+                        name={field.name}
+                        inputProps={field.inputProps}
+                        onlyCountries={["eg"]}
+                        country={"eg"}
+                        placeholder={field.placeholder}
+                        value={value}
+                        onChange={(phone) => setValue(phone)}
+                        required={field.required}
+                      />
                     ) : (
                       <PhoneInput
                         inputStyle={field.inputStyle}
