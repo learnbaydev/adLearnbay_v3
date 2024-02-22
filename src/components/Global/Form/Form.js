@@ -32,41 +32,9 @@ const Form = ({
 }) => {
   const router = useRouter();
 
-  //offset to maintain time zone difference
   const [formFields, setFormFields] = useState(
     getFormFields(radio, google, referrals, interstedInHide, promoCode, CTC)
   );
-  const [location, setLocation] = useState({ country: "", city: "" });
-
-  const fetchLocation = async () => {
-    if (location.country === "" && location.city === "") {
-      try {
-        const response = await fetch(
-          "https://ipinfo.io/json?token=bc89c2010abac0"
-        );
-
-        if (response.status === 429) {
-          throw new Error("Rate limit exceeded. Too many requests.");
-        }
-
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch location: ${response.status} ${response.statusText}`
-          );
-        }
-        const data = await response.json();
-        console.log("API Response:", data);
-
-        const { country, city } = data;
-        setLocation({ country, city });
-      } catch (error) {
-        console.error("Error fetching location:", error.message);
-
-        // Handle rate limit exceeded or set a default location
-        setLocation({ country: "DefaultCountry", city: "DefaultCity" });
-      }
-    }
-  };
 
   const [value, setValue] = useState();
   const [error, setError] = useState();
@@ -88,26 +56,11 @@ const Form = ({
     currentOrganization: "",
     currentDesignation: "",
     interstedin: "",
-    country: "", // Use the state value directly
-    city: "", // Use the state value directly
+    CountryCode: "",
     url: router.asPath,
   });
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     await fetchLocation();
-  //   };
-  //   fetchData();
-  // }, [value]);
-
-  useEffect(() => {
-    // Update query state when location changes
-    setQuery((prevQuery) => ({
-      ...prevQuery,
-      // country: location.country,
-      // city: location.city,
-    }));
-  }, [location]);
+  const [submitting, setSubmitting] = useState(false); // State to track form submission
 
   useEffect(() => {
     setQuery({ ...query, phone: value });
@@ -141,68 +94,89 @@ const Form = ({
   // Form Submit function
   const formSubmit = async (e) => {
     e.preventDefault();
-    await fetchLocation();
-    const endPoint = getEndPoint(router.pathname, event);
-    const pushPath = redirectionThankYou(
-      router.pathname,
-      fullStack,
-      event,
-      OS,
-      dataScience,
-      dataScienceGeneric,
-      dataScienceCounselling,
-      redirection
-    );
-    console.log("pushPath:", pushPath);
-    setError(getValidation(radio, interstedInHide, query, CTC));
-    const validation = getValidation(radio, interstedInHide, query, CTC);
-
+    setSubmitting(true); // Set submitting state to true
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
       formData.append(key, value);
     });
-
-    formData.append("country", query.country);
-    formData.append("city", query.city);
-
-    console.log("Form Data:", query.country);
-
-    if (validation === false) {
-      const sendData = await fetch(`${endPoint}`, {
-        method: "POST",
-        body: formData,
-      });
-      setQuery({
-        name: "",
-        PromoCode: "",
-        CTC: "",
-        email: "",
-        phone: "",
-        upskillPlanning: "",
-        upskillingObjective: "",
-        jobDescription: "",
-        platform: "",
-        workExperience: "",
-        dateTime: "",
-        WAdropdown: "",
-        currentOrganization: "",
-        currentDesignation: "",
-        interstedin: "",
-        country: "", // Use the state value directly
-        city: "", // Use the state value directly
-        url: router.asPath,
-      });
-
-      if (popup) {
-        const off = () => {
-          setTrigger(false);
-        };
-        off();
-      }
-      if (sendData.status === 200) {
-        router.push(pushPath);
-      }
+    try {
+      const locationData = await fetchLocation();
+      formData.append("country", locationData.country);
+      formData.append("city", locationData.city);
+      formData.append("region", locationData.region);
+    } catch (error) {
+      console.error("Error fetching location:", error.message);
     }
+
+    try {
+      const endPoint = getEndPoint(router.pathname, event);
+      const pushPath = redirectionThankYou(
+        router.pathname,
+        fullStack,
+        event,
+        dataScience,
+        dataScienceGeneric,
+        dataScienceCounselling,
+        redirection
+      );
+
+      setError(getValidation(radio, interstedInHide, query, CTC));
+      const validation = getValidation(radio, interstedInHide, query, CTC);
+
+      if (validation === false) {
+        const sendData = await fetch(endPoint, {
+          method: "POST",
+          body: formData,
+        });
+        setQuery({
+          name: "",
+          PromoCode: "",
+          CTC: "",
+          email: "",
+          phone: "",
+          upskillPlanning: "",
+          upskillingObjective: "",
+          jobDescription: "",
+          platform: "",
+          workExperience: "",
+          dateTime: "",
+          WAdropdown: "",
+          currentOrganization: "",
+          currentDesignation: "",
+          interstedin: "",
+          country: "",
+          region: "",
+          city: "",
+          url: router.asPath,
+        });
+
+        if (popup) {
+          const off = () => {
+            setTrigger(false);
+          };
+          off();
+        }
+        if (sendData.status === 200) {
+          router.push(pushPath);
+        }
+      }
+      setSubmitting(false); // Set submitting state to false after form submission
+    } catch (error) {
+      console.error("Error submitting form:", error.message);
+    }
+  };
+
+  const fetchLocation = async () => {
+    const response = await fetch("https://ipinfo.io/json?token=a0d76b66419a6c");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch location: ${response.status} ${response.statusText}`
+      );
+    }
+    const data = await response.json();
+    console.log("API Response:", data);
+    const { country, region, city } = data;
+    return { country, region, city };
   };
 
   return (
@@ -229,18 +203,27 @@ const Form = ({
                       "/datascience/OS/sp/s2-data-analytics-generic" ||
                     router.pathname ===
                       "/datascience/OS/sp/s2-data-science-generic" ? (
-                      <PhoneInput
-                        inputStyle={field.inputStyle}
-                        containerStyle={field.containerStyle}
-                        name={field.name}
-                        inputProps={field.inputProps}
-                        onlyCountries={["eg", "ng"]}
-                        country={""}
-                        placeholder={field.placeholder}
-                        value={value}
-                        onChange={(phone) => setValue(phone)}
-                        required={field.required}
-                      />
+                      <div className={styles.osDiv}>
+                        <input
+                          type="type"
+                          name="CountryCode"
+                          className={styles.EmailInputs}
+                          required={field.required}
+                          placeholder="+CC"
+                          value={query.CountryCode}
+                          onChange={handleParam(value)}
+                          style={{ width: "25%" }}
+                        />
+                        <input
+                          type="phone"
+                          name="phone"
+                          className={styles.EmailInputs}
+                          required={field.required}
+                          placeholder="Phone Number"
+                          value={query.phone}
+                          onChange={handleParam(value)}
+                        />
+                      </div>
                     ) : (
                       <PhoneInput
                         inputStyle={field.inputStyle}
@@ -288,6 +271,7 @@ const Form = ({
             )
         )}
         <input name="country" value={query.country} type="hidden" />
+        <input name="region" value={query.region} type="hidden" />
         <input name="city" value={query.city} type="hidden" />
         {error && (
           <p className={styles.errorMsg}>
@@ -304,8 +288,13 @@ const Form = ({
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.
             </p>
-            <button type="submit" className={styles.button}>
-              {"Apply for Consultation"}
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={submitting}
+            >
+              {submitting ? "Submitting..." : "Apply for Consultation"}
+              {/* {"Apply for Consultation"} */}
             </button>
           </div>
         ) : (
@@ -316,8 +305,17 @@ const Form = ({
                   By submitting the form, you agree to our Terms and Conditions
                   and our Privacy Policy.
                 </p>
-                <button type="submit" className={styles.button}>
-                  {downloadBrochure ? "Download Now" : btnText}{" "}
+                <button
+                  type="submit"
+                  className={styles.button}
+                  disabled={submitting}
+                >
+                  {submitting
+                    ? "Submitting..."
+                    : downloadBrochure
+                    ? "Download Now"
+                    : btnText}
+                  {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </div>
             ) : (
@@ -326,8 +324,17 @@ const Form = ({
                   By submitting the form, you agree to our Terms and Conditions
                   and our Privacy Policy.
                 </p>
-                <button type="submit" className={styles.button}>
-                  {downloadBrochure ? "Download Now" : btnText}{" "}
+                <button
+                  type="submit"
+                  className={styles.button}
+                  disabled={submitting}
+                >
+                  {submitting
+                    ? "Submitting..."
+                    : downloadBrochure
+                    ? "Download Now"
+                    : btnText}
+                  {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </>
             )}
