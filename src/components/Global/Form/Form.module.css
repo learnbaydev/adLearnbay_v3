@@ -18,6 +18,11 @@
   font-weight: 500;
 }
 
+.osDiv {
+  display: flex;
+  gap: 10px;
+}
+
 .spanLabel {
   color: #ff3131 !important;
   font-size: 15px;
@@ -42,6 +47,12 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+.button[disabled] {
+  opacity: 0.5; /* Adjust opacity as needed */
+  pointer-events: none; /* Disable pointer events when button is faded */
+}
+
 .NameInput {
   border-radius: 2px;
   border: 0;

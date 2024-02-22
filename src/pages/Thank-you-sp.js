@@ -20,7 +20,7 @@ const ThankYou = ({ initialName }) => {
 
   useEffect(() => {
     // Set the cookie with a domain that allows cross-origin access
-    setCookie('yourCookieName', initialName, 30, '.learnbay.co');
+    setCookie("yourCookieName", initialName, 30, ".learnbay.co");
   }, [initialName]);
 
   return (
@@ -48,7 +48,7 @@ const ThankYou = ({ initialName }) => {
             }}
           />
         </Head>
-        <Navbar HideButton={true}/>
+        <Navbar HideButton={true} ADS={true} />
 
         <section className={styles.mains}>
           <div className={styles.Back}>

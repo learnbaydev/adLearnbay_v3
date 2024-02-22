@@ -48,7 +48,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} OS={true} ADS={true} />
+        <Navbar HideInterest={true}  ADS={true} />
         <FirstSection
           HideInterest={true}
           OS={true}
