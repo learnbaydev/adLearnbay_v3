@@ -90,6 +90,27 @@ export const CourseData = [
       },
     ],
   },
+  {
+    id: "Terms",
+    Head: "Terms",
+    Courses: [
+      {
+        id: 1,
+        url: "/terms-conditions",
+        name: "Terms and Conditions",
+      },
+      {
+        id: 2,
+        url: "/refund-cancellation-policy",
+        name: "Refund/Cancellation policy",
+      },
+      {
+        id: 3,
+        url: "privacy-policy",
+        name: "Privacy Policy",
+      },
+    ],
+  },
 ];
 
 export const puneLocation = [
