@@ -33,36 +33,7 @@ function FormOtp({
   const [formFields, setFormFields] = useState(
     getFormFields(HideInterest, btnHide, radio)
   );
-  const [location, setLocation] = useState({ country: "", city: "" });
 
-  const fetchLocation = async () => {
-    try {
-      const response = await fetch(
-        "https://ipinfo.io/json?token=bc89c2010abac0"
-      );
-
-      if (response.status === 429) {
-        throw new Error("Rate limit exceeded. Too many requests.");
-      }
-
-      if (!response.ok) {
-        throw new Error(
-          `Failed to fetch location: ${response.status} ${response.statusText}`
-        );
-      }
-
-      const data = await response.json();
-      console.log("API Response:", data);
-
-      const { country, city } = data;
-      setLocation({ country, city });
-    } catch (error) {
-      console.error("Error fetching location:", error.message);
-
-      // Handle rate limit exceeded or set a default location
-      setLocation({ country: "DefaultCountry", city: "DefaultCity" });
-    }
-  };
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -71,25 +42,12 @@ function FormOtp({
     url: router.asPath,
     phone: "",
     interstedin: "",
-    country: "", // Use the state value directly
-    city: "", // Use the state value directly
+    country: "",
+    region: "",
+    city: "",
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await fetchLocation();
-    };
-    fetchData();
-  }, [value]);
-
-  useEffect(() => {
-    // Update query state when location changes
-    setForm((prevQuery) => ({
-      ...prevQuery,
-      country: location.country,
-      city: location.city,
-    }));
-  }, [location]);
+  const [submitting, setSubmitting] = useState(false); // State to track form submission
 
   useEffect(() => {
     setForm({ ...form, phone: value });
@@ -117,23 +75,19 @@ function FormOtp({
     btnTxt = "Register Now";
   }
 
-  const sendOtp = (e) => {
+  const sendOtp = async (e) => {
     e.preventDefault();
+    setSubmitting(true); // Set submitting state to true
+
+    const formData = new FormData();
+    Object.entries(form).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
     if (Validation) {
       setError(true);
     } else {
       setError(false);
-      const formData = new FormData();
-      Object.entries(form).forEach(([key, value]) => {
-        formData.append(key, value);
-        // console.log("key-", key, "-----", "value-", value)
-      });
-
-      formData.append("country", form.country);
-      formData.append("city", form.city);
-
-      console.log("Form Data:", form.country);
-
       const mobileNumber = form.phone;
       const name = form.name;
       const email = form.email;
@@ -212,17 +166,19 @@ function FormOtp({
         setAlertMSG("Please Enter Empty Fields");
       }
     }
+    setSubmitting(false);
   };
 
-  const sendOtpDownload = (e) => {
+  const sendOtpDownload = async (e) => {
     e.preventDefault();
-    console.log("vdhjgvdghwgdg", "sendOtp");
-    console.log("vhello", form.interstedin);
+    setSubmitting(true); // Set submitting state to true
     const formData = new FormData();
     Object.entries(form).forEach(([key, value]) => {
       formData.append(key, value);
-      // console.log("key-", key, "-----", "value-", value)
     });
+
+    console.log("vdhjgvdghwgdg", "sendOtp");
+    console.log("vhello", form.interstedin);
 
     const mobileNumber = form.phone;
     console.log(form.phone);
@@ -291,6 +247,9 @@ function FormOtp({
             url: router.asPath,
             phone: "",
             interstedin: "",
+            country: "",
+            region: "",
+            city: "",
           })
         );
 
@@ -302,74 +261,101 @@ function FormOtp({
       setAlertMSG("Please Enter Empty Fields");
       // console.log("please enter number")
     }
+    setSubmitting(false);
   };
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
-    if (Validation) {
-      setError(true);
-    } else {
-      setError(false);
-      setSendOtpBtnHide(true);
-      setBtnHide(true);
-      const formData = new FormData();
+    setSubmitting(true); // Set submitting state to true
+    const formData = new FormData();
+    Object.entries(form).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
 
-      Object.entries(form).forEach(([key, value]) => {
-        formData.append(key, value);
-        // console.log("key-", key, "-----", "value-", value)
-      });
-
-      const mobileNumber = updateMobileNumber;
-      const otp = form.otp;
-
-      const data = fetch(`${"/api/Authentication/matchOtp"}`, {
-        method: "POST",
-        body: JSON.stringify({ mobileNumber: mobileNumber, otp: otp }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((response) => response.json())
-        .then((response) => {
-          // console.log("Response", response)
-
-          if (response.msg == "OTP Validated Successfully") {
-            setToggle(false);
-            setAlertMSG("OTP Validated Successfully");
-            setSendOtpBtnHide(false);
-            setBtnHide(false);
-
-            fetch(`${endPoint}`, {
-              method: "POST",
-              body: formData,
-            });
-            setDisable(true);
-            router.push(ThankYou);
-
-            setSendOtpBtnHide(true);
-            setBtnHide(true);
-          } else if (response.msg == "OTP Not Validate") {
-            setToggle(false);
-            setAlertMSG("OTP Not Validate");
-            setSendOtpBtnHide(true);
-            setBtnHide(true);
-          } else if (response.msg == "OTP Expired") {
-            setSendOtpBtnHide(false);
-            setBtnHide(false);
-          } else if (response.msg == "Invalid Phone Number") {
-            setToggle(false);
-            setAlertMSG("Invalid Phone Number");
-            setSendOtpBtnHide(false);
-            setBtnHide(false);
-          } else {
-            console.log("API IS NOT WORKING");
-          }
-        })
-        .catch((err) => {
-          console.log("API IS NOT WORKING");
-          console.log(err);
-        });
+    try {
+      const locationData = await fetchLocation();
+      formData.append("country", locationData.country);
+      formData.append("city", locationData.city);
+      formData.append("region", locationData.region);
+    } catch (error) {
+      console.error("Error fetching location:", error.message);
     }
+
+    try {
+      if (Validation) {
+        setError(true);
+      } else {
+        setError(false);
+        setSendOtpBtnHide(true);
+        setBtnHide(true);
+        const mobileNumber = updateMobileNumber;
+        const otp = form.otp;
+
+        const data = fetch(`${"/api/Authentication/matchOtp"}`, {
+          method: "POST",
+          body: JSON.stringify({ mobileNumber: mobileNumber, otp: otp }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((response) => {
+            // console.log("Response", response)
+
+            if (response.msg == "OTP Validated Successfully") {
+              setToggle(false);
+              setAlertMSG("OTP Validated Successfully");
+              setSendOtpBtnHide(false);
+              setBtnHide(false);
+
+              fetch(`${endPoint}`, {
+                method: "POST",
+                body: formData,
+              });
+              setDisable(true);
+              router.push(ThankYou);
+
+              setSendOtpBtnHide(true);
+              setBtnHide(true);
+            } else if (response.msg == "OTP Not Validate") {
+              setToggle(false);
+              setAlertMSG("OTP Not Validate");
+              setSendOtpBtnHide(true);
+              setBtnHide(true);
+            } else if (response.msg == "OTP Expired") {
+              setSendOtpBtnHide(false);
+              setBtnHide(false);
+            } else if (response.msg == "Invalid Phone Number") {
+              setToggle(false);
+              setAlertMSG("Invalid Phone Number");
+              setSendOtpBtnHide(false);
+              setBtnHide(false);
+            } else {
+              console.log("API IS NOT WORKING");
+            }
+          })
+          .catch((err) => {
+            console.log("API IS NOT WORKING");
+            console.log(err);
+          });
+      }
+      setSubmitting(false);
+    } catch (error) {
+      console.error("Error submitting form:", error.message);
+    }
+  };
+
+  const fetchLocation = async () => {
+    const response = await fetch("https://ipinfo.io/json?token=a0d76b66419a6c");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch location: ${response.status} ${response.statusText}`
+      );
+    }
+    const data = await response.json();
+    console.log("API Response:", data);
+    const { country, region, city } = data;
+    return { country, region, city };
   };
 
   return (
@@ -453,6 +439,7 @@ function FormOtp({
             ""
           )}
           <input name="country" value={form.country} type="hidden" />
+          <input name="region" value={form.region} type="hidden" />
           <input name="city" value={form.city} type="hidden" />
           {error ? (
             <p
@@ -478,9 +465,14 @@ function FormOtp({
           ) : (
             <button
               className={styles.button}
+              disabled={submitting}
               onClick={upSkillingHide ? sendOtpDownload : sendOtp}
             >
-              {downloadBrochure ? "Download Now" : "Apply Now"}
+              {submitting
+                ? "Sending..."
+                : downloadBrochure
+                ? "Download Now"
+                : "Apply Now"}
             </button>
           )}
 
@@ -496,8 +488,12 @@ function FormOtp({
                   </div>
                 </div>
               ) : (
-                <button disabled={disable} className={styles.button}>
-                  {downloadBrochure ? "Download Now" : "Apply Now"}
+                <button className={styles.button} disabled={submitting}>
+                  {submitting
+                    ? "Submitting..."
+                    : downloadBrochure
+                    ? "Download Now"
+                    : "Apply Now"}
                 </button>
               )}
             </>
