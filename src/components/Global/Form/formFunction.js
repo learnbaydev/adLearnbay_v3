@@ -11,6 +11,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/OS" ||
     pathname ===
       "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
+    pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
@@ -76,6 +77,10 @@ const redirectionThankYou = (
     routerPath = "/event/Thank-You-event";
   }
   if (dataScience) {
+    routerPath = "/Thank-you";
+  }
+
+  if (pathname === "/datascience/OS/s2-data-science-generic") {
     routerPath = "/Thank-you";
   }
 
