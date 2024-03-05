@@ -200,8 +200,8 @@ const Form = ({
                         containerStyle={field.containerStyle}
                         name={field.name}
                         inputProps={field.inputProps}
-                        country={"om"}
-                        onlyCountries={["om"]}
+                        country={"ae"}
+                        onlyCountries={["ae"]}
                         placeholder={field.placeholder}
                         value={value}
                         onChange={(phone) => setValue(phone)}
