@@ -144,7 +144,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
         <SeventhSection />
         <EightSection HideInterest={true} formotp={true} ADS={true} />
-        <WhatsappFloat />
+        <WhatsappFloat OS={true}/>
         <BottomBar HideInterest={true} formotp={true} ADS={true} />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
