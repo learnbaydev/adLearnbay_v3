@@ -13,6 +13,8 @@ const getEndPoint = (pathname, event) => {
       "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
     pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
+    pathname === "/scholarship-react-email" ||
+    pathname === "/scholarship-react-phone" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
@@ -119,8 +121,8 @@ const redirectionThankYou = (
   return routerPath;
 };
 
-const getValidation = (radio, interstedInHide, query, CTC) => {
-  if (query.phone === "" || query.phone === undefined) {
+const getValidation = (radio, interstedInHide, query, CTC, PhoneHidden) => {
+  if ( (PhoneHidden === false || PhoneHidden === undefined) && (query.phone === "" || query.phone === undefined)) {
     console.log("1");
     return true;
   } else if (radio === true && interstedInHide === true) {
@@ -176,7 +178,9 @@ const getFormFields = (
   referrals,
   interstedInHide,
   promoCode,
-  CTC
+  CTC,
+  PhoneHidden,
+  emailHidden,
 ) => {
   return [
     // ... (previous form fields)
@@ -192,9 +196,9 @@ const getFormFields = (
       name: "email",
       label: "E-Mail",
       type: "email",
-      required: true,
+      required: emailHidden ? false : true,
       placeholder: "Enter your Email",
-      showField: true,
+      showField: emailHidden ? false : true,
     },
     {
       name: "phone",
@@ -210,11 +214,11 @@ const getFormFields = (
       },
       inputProps: {
         name: "phone",
-        required: true,
+        required: PhoneHidden ? false : true,
       },
-      required: true,
+      required: PhoneHidden ? false : true,
       placeholder: "Enter Phone Number",
-      showField: true,
+      showField: PhoneHidden ? false : true,
     },
     {
       name: "WAdropdown",

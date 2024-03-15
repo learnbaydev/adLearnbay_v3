@@ -29,11 +29,12 @@ const Form = ({
   promoCode,
   CTC,
   OS,
+  PhoneHidden, emailHidden,
 }) => {
   const router = useRouter();
 
   const [formFields, setFormFields] = useState(
-    getFormFields(radio, google, referrals, interstedInHide, promoCode, CTC)
+    getFormFields(radio, google, referrals, interstedInHide, promoCode, CTC, PhoneHidden, emailHidden)
   );
 
   const [value, setValue] = useState();
@@ -120,8 +121,8 @@ const Form = ({
         redirection
       );
 
-      setError(getValidation(radio, interstedInHide, query, CTC));
-      const validation = getValidation(radio, interstedInHide, query, CTC);
+      setError(getValidation(radio, interstedInHide, query, CTC, PhoneHidden, emailHidden));
+      const validation = getValidation(radio, interstedInHide, query, CTC, PhoneHidden, emailHidden);
 
       if (validation === false) {
         const sendData = await fetch(endPoint, {
