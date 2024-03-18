@@ -78,14 +78,14 @@ const SecondPart = ({
         devopfee={devopfee}
         Fee=" ₹ 80,000"
         FeeEmi="₹ 5,244/month"
-        weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="(MON-THU)"
-        weekend="(MON-THU)"
-        WeekdayDate="FEB 23rd"
-        WeekendDate="MARCH 8th"
-        WeekendTime="8 PM - 10 PM"
-        WeekdayTime="8 PM - 10 PM"
+        weekdaybatch="Weekend Batch"
+        weekendbatch="Weekend Batch"
+        weekday="(SAT-SUN)"
+        weekend="(SAT-SUN)"
+        WeekdayDate="MAR 17th"
+        WeekendDate="APR 6th"
+        WeekendTime="9:30 AM - 1 PM"
+        WeekdayTime="9:30 AM - 1 PM"
         FeeContent3="Flexible payment"
         FeeContent4="Easy loan procedure"
         FeeContent5="15 days refund policy"
@@ -95,16 +95,16 @@ const SecondPart = ({
         // interstedInHide={true}
         titleCourse="Cloud Computing & DevOps Certification Program"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf"
-    // <EMI POPUP
-    emiType = "NO COST EMI"
-    duration1 = "18 Months"
-    totalAmount1 = "₹ 80,000"
-    monthlyPayment1 = "₹ 5,244"
-    greenDown1 = "Standard Intrest rate Applicable"
-    duration2 = "12 Months"
-    totalAmount2 = "₹ 80,000"
-    monthlyPayment2 = "₹ 7,866"
-    />
+        // <EMI POPUP
+        emiType="NO COST EMI"
+        duration1="18 Months"
+        totalAmount1="₹ 80,000"
+        monthlyPayment1="₹ 5,244"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="12 Months"
+        totalAmount2="₹ 80,000"
+        monthlyPayment2="₹ 7,866"
+      />
 
       <MentorsSection />
       <SliderTab />

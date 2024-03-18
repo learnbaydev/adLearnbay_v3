@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Global/AdsNavbar/Navbar";
 import Scholarship from "../components/Scholarship/scholarship";
+import FooterThankYou from "@/components/Global/Footer/FooterThankYou";
 
 function scholarship() {
   return (
@@ -15,7 +16,8 @@ function scholarship() {
           />
         </Head>
         <Navbar HideButton={true} />
-        <Scholarship reactEmail={true}/>
+        <Scholarship reactPhone={true} reactEmail={true}/>
+        <FooterThankYou />
       </div>
     </>
   );

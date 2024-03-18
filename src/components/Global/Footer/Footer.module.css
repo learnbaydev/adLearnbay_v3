@@ -7,7 +7,7 @@
   .FooterDiv {
     justify-content: center;
     display: grid;
-    grid-template-columns: 33% 25% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     padding: 20px 0px 20px 0px;
   }
   .FooterDivInner {

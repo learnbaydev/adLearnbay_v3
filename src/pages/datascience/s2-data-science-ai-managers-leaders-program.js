@@ -30,12 +30,18 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   return (
     <>
       <Head>
-        <title>Data Science & AI Certification Program For Managers and Leaders - Learnbay</title>
+        <title>
+          Data Science & AI Certification Program For Managers and Leaders -
+          Learnbay
+        </title>
         <meta
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Data Science & AI Certification Program."
         />
-        <meta name="keywords" content="Data Science & AI Certification Program For Managers and Leaders" />
+        <meta
+          name="keywords"
+          content="Data Science & AI Certification Program For Managers and Leaders"
+        />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
@@ -98,14 +104,14 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 1,10,000"
           FeeEmi="₹ 7,211/month"
-           weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
-        weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -113,17 +119,15 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           interstedInHide={true}
           formotp={true}
           ADS={true}
-
-
           // <EMI POPUP
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹1,10,000"
-        monthlyPayment1 = "₹7,211"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹1,10,000"
-        monthlyPayment2 = "₹10,817"
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹1,10,000"
+          monthlyPayment1="₹7,211"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹1,10,000"
+          monthlyPayment2="₹10,817"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial

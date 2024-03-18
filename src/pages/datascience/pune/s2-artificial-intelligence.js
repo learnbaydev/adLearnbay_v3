@@ -91,14 +91,14 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         <FeeSection
           Fee="₹ 1,10,000"
           FeeEmi="₹  7,211/month"
-           weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
-        weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -108,17 +108,16 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
-       
-         // <EMI POPUP
-         emiType = "NO COST EMI"
-         duration1 = "18 Months"
-         totalAmount1 = "₹1,10,000"
-         monthlyPayment1 = "₹7,211"
-         greenDown1 = "Standard Intrest rate Applicable"
-         duration2 = "12 Months"
-         totalAmount2 = "₹1,10,000"
-         monthlyPayment2 = "₹10,817"
-       />
+          // <EMI POPUP
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹1,10,000"
+          monthlyPayment1="₹7,211"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹1,10,000"
+          monthlyPayment2="₹10,817"
+        />
         <Testimonial
           redirectDS={true}
           heading=""

@@ -102,7 +102,7 @@ const Footer = ({ adPage, adPageCity }) => {
             );
           })}
         </div>
-        {/* <div className={styles.FooterDivInner}>
+        <div className={styles.FooterDivInner}>
           {HeadData.map((Head, index) => {
             return (
               <div key={index}>
@@ -119,7 +119,7 @@ const Footer = ({ adPage, adPageCity }) => {
               </div>
             );
           })}
-        </div> */}
+        </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Get Our Apps On</p>
           <a

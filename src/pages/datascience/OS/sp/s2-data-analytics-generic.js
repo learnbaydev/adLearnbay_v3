@@ -12,16 +12,15 @@ import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
 import { parseJSONData } from "../../../../Util/JsonConvertor";
 import SyllabusNew from "../../../../components/CoursePage/Syllabus/MasterSyllabus";
 
-import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataAnalyticsdataJson, projectSection }) {
   const DataAnalyticsdata = parseJSONData(DataAnalyticsdataJson);
@@ -66,7 +65,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           AnimationHide={true}
         />
 
-        <SecondSection OS={true}/>
+        <SecondSection OS={true} />
         <S2SecondSection />
         <WhoIsProgram
           first="Bachelor's degree with consistent good academic"
@@ -74,7 +73,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           third="Early to mid-career professionals interested in Data analytics"
           forth="Developing skills in Data analytics for future opportunities"
         />
-        <GetHire OS={true}/>
+        <GetHire OS={true} />
 
         <SyllabusNew
           HideInterest={true}
@@ -92,14 +91,14 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <FeeSection
           Fee="$499"
           FeeEmi="₹ 5,244/month"
-           weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
-        weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -107,16 +106,15 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           HideInterest={true}
           OS={true}
           ADS={true}
-
-            // EMI POPUPDATA
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹80,000"
-        monthlyPayment1 = "₹5,244"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹80,000"
-        monthlyPayment2 = "₹7,866"
+          // EMI POPUPDATA
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹80,000"
+          monthlyPayment1="₹5,244"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹80,000"
+          monthlyPayment2="₹7,866"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
