@@ -13,8 +13,7 @@ const getEndPoint = (pathname, event) => {
       "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
     pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
-    pathname === "/scholarship-react-email" ||
-    pathname === "/scholarship-react-phone" ||
+    pathname === "/scholarship-ads" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";

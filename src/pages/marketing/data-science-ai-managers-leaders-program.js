@@ -30,12 +30,18 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   return (
     <>
       <Head>
-        <title>Data Science & AI Certification Program For Managers and Leaders - Learnbay</title>
+        <title>
+          Data Science & AI Certification Program For Managers and Leaders -
+          Learnbay
+        </title>
         <meta
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Data Science & AI Certification Program."
         />
-        <meta name="keywords" content="Data Science & AI Certification Program For Managers and Leaders" />
+        <meta
+          name="keywords"
+          content="Data Science & AI Certification Program For Managers and Leaders"
+        />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
@@ -46,10 +52,9 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true}  dataScience={true} />
+        <Navbar interstedInHide={true} dataScience={true} />
         <FirstSection
           interstedInHide={true}
-          
           dataScience={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -79,12 +84,11 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           third="Working professionals interested in Data Science & AI"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection interstedInHide={true}  dataScience={true} />
+        <ProjectSection interstedInHide={true} dataScience={true} />
         <GetHire />
 
         <SyllabusNew
           interstedInHide={true}
-          
           dataScience={true}
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
@@ -98,32 +102,29 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 1,10,000"
           FeeEmi="₹ 7,211/month"
-           weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
-        weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          
           dataScience={true}
-
-
           // <EMI POPUP
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹1,10,000"
-        monthlyPayment1 = "₹7,211"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹1,10,000"
-        monthlyPayment2 = "₹10,817"
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹1,10,000"
+          monthlyPayment1="₹7,211"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹1,10,000"
+          monthlyPayment2="₹10,817"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
@@ -137,16 +138,15 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <MentorsSection />
         <NewProjectSection
           interstedInHide={true}
-          
           dataScience={true}
           projectSection={
             DataScienceCourseData.DataScienceCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true}  dataScience={true} />
+        <EightSection interstedInHide={true} dataScience={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true}  dataScience={true} />
+        <BottomBar interstedInHide={true} dataScience={true} />
         {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
       </main>
     </>

@@ -1,31 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
 import styles from "../Footer/Footer.module.css";
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaYoutube,
+  FaInstagram,
+  FaApple,
+  FaAndroid,
+} from "react-icons/fa";
+
+import { BsFillTelephoneFill, BsTwitterX } from "react-icons/bs";
+
 
 const FooterThankYou = () => {
   return (
     <section className={styles.FooterSection}>
       <div className={styles.FooterDiv}>
         <div className={styles.FooterDivInner}>
-          <a href="/">
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/white-logo.webp"
-              alt="Learnbay"
-              quality={100}
-              width="230"
-              height="100"
-            />
-          </a>
+          <Image
+            src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/white-logo.webp"
+            alt="Learnbay"
+            quality={100}
+            width="230"
+            height="100"
+          />
           <p className={styles.FooterInnerli}>
-            The Full-Stack Developer Program is a demanding course that offers
-            you everything you need to know about becoming a skillful developer.
-            Prepare for top product based MNCs interviews by brushing up on your
-            technical skills. Enroll now for a smooth transition.
+            Enrol Now For Data Science Courses, System Designing Or Full Stack
+            Development Courses. Master The Most Demanding Skills Of Job Market
+            And Experience And Ever Growing And Lucrative Career Transformation.
           </p>
+          <div className={styles.FooterSocial}>
+              <BsTwitterX className="bIcons" />
+              <FaFacebookF className="bIcons" />
+              <FaLinkedinIn className="bIcons" />
+              <FaYoutube className="bIcons" />
+              <FaInstagram className="bIcons" />
+          </div>
           <span style={{ display: "flex", marginTop: "20px" }}>
             <IoMailSharp className="bIcons" />
             <Link href="mailto:contacts@learnbay.co">contacts@learnbay.co</Link>
@@ -37,56 +52,63 @@ const FooterThankYou = () => {
         </div>
         <div className={styles.FooterDivInner}>
           <p className={styles.FooterInnerP}>Popular Courses</p>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Data Science & AI Certification
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Advance Data Science & AI Certification
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Data Structures & Algorithm And System Design
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Software Development Master Program
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Advance AI & ML Certification
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Data Science & AI Cert. For Managers & Leaders
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Data Science and AI Master Program
-            </p>
-          </a>
-          <a>
-            <p className={styles.FooterInnerli} style={{ display: "flex" }}>
-              <FaCheck className="bIcons" />
-              Data Analytics & Business Analytics Program | Fast Track Course
-            </p>
-          </a>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Data Science & AI Certification
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Advance Data Science & AI Certification
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Data Structures & Algorithm And System Design
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Software Development Master Program
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Advance AI & ML Certification
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Data Science & AI Cert. For Managers & Leaders
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Data Science and AI Master Program
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Data Analytics & Business Analytics Program | Fast Track Course
+          </p>
+        </div>
+
+        <div className={styles.FooterDivInner}>
+          <p className={styles.FooterInnerP}>Learnbay</p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            About Us
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Contact Us
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Demo
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Blogs
+          </p>
+          <p className={styles.FooterInnerP}>Terms</p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Terms And Conditions
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Refund/Cancellation Policy
+          </p>
+          <p className={styles.FooterInnerli} style={{ display: "flex" }}>
+            Privacy Policy
+          </p>
         </div>
         <div className={styles.FooterDivInner}>
+        <p className={styles.FooterInnerP}>Get Our Apps On</p>
+            <button className={styles.btnout}>
+              <FaAndroid className="bIcons" style={{ fontSize: "30px" }} />
+              Get Our Android App
+            </button>
           <p className={styles.FooterInnerP}>Find Us Here</p>
           <p className={styles.FooterInnerli}>
             #1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore -

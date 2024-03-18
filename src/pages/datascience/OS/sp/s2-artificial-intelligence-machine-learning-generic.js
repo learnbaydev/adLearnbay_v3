@@ -5,6 +5,7 @@ import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
+import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
@@ -12,14 +13,12 @@ import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
 import { parseJSONData } from "../../../../../Util/JsonConvertor";
 import SyllabusNew from "../../../../components/CoursePage/Syllabus/MasterSyllabus";
-import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 
 function Blockchain({ AIMLDataScienceCourseDataJson }) {
   const AIMLDataScienceCourseData = parseJSONData(
@@ -48,7 +47,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true}  ADS={true} />
+        <Navbar HideInterest={true} ADS={true} />
         <FirstSection
           HideInterest={true}
           OS={true}
@@ -65,7 +64,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           softwareBtnHide={true}
           AnimationHide={true}
         />
-        <SecondSection  OS={true}/>
+        <SecondSection OS={true} />
         <S2SecondSection
           p1="IBM Certified"
           p11="Capstone Projects"
@@ -82,7 +81,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           third="Early to mid-career professionals interested in AI & ML "
           forth="Developing skills in AI & ML for future opportunities"
         />
-        <GetHire  OS={true}/>
+        <GetHire OS={true} />
         <SyllabusNew
           masterSyllabusMobile={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
@@ -101,14 +100,14 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         <FeeSection
           Fee="$699"
           FeeEmi="₹  7,211/month"
-           weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
-        weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -118,16 +117,15 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
-        
-         // <EMI POPUP
-         emiType = "NO COST EMI"
-         duration1 = "18 Months"
-         totalAmount1 = "₹1,10,000"
-         monthlyPayment1 = "₹7,211"
-         greenDown1 = "Standard Intrest rate Applicable"
-         duration2 = "12 Months"
-         totalAmount2 = "₹1,10,000"
-         monthlyPayment2 = "₹10,817"
+          // <EMI POPUP
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹1,10,000"
+          monthlyPayment1="₹7,211"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹1,10,000"
+          monthlyPayment2="₹10,817"
         />
         <Testimonial
           redirectDS={true}

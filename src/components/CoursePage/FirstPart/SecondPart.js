@@ -80,14 +80,14 @@ const SecondPart = ({
       <FeeSection
         Fee="₹ 1,25,000"
         FeeEmi="₹ 6,490/month"
-        weekdaybatch="Weekend Batch"
+        weekdaybatch="Weekday Batch"
         weekendbatch="Weekday  Batch"
-        weekday="SAT - SUN"
+        weekday="MON - FRI"
         weekend="MON - FRI"
-        WeekdayDate="FEB 18th"
-        WeekendDate="MAR 8th"
-        WeekdayTime="9.30AM - 1.00PM"
-        WeekendTime="8.00PM - 10.00PM"
+        WeekdayDate="APR 12th"
+        WeekendDate="APR 19th"
+        WeekdayTime="8.00PM - 10.00PM"
+        WeekendTime="8.00AM - 10.00AM"
         FeeContent3="Flexible payment"
         FeeContent4="Easy loan procedure"
         FeeContent5="15 days refund policy"
@@ -97,16 +97,15 @@ const SecondPart = ({
         dataScience={true}
         titleCourse="Advanced Data Science and AI Program with domain specialization"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
-      
-      // <EMI POPUP
-      emiType = "NO COST EMI"
-      duration1 = "18 Months"
-      totalAmount1 = "₹99,000"
-      monthlyPayment1 = "₹6,490"
-      greenDown1 = "Standard Intrest rate Applicable"
-      duration2 = "12 Months"
-      totalAmount2 = "₹99,000"
-      monthlyPayment2 = "₹9,735"
+        // <EMI POPUP
+        emiType="NO COST EMI"
+        duration1="18 Months"
+        totalAmount1="₹99,000"
+        monthlyPayment1="₹6,490"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="12 Months"
+        totalAmount2="₹99,000"
+        monthlyPayment2="₹9,735"
       />
 
       <MentorsSection />

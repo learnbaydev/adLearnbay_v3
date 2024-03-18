@@ -18,7 +18,7 @@ function Scholarship({ Offer, reactEmail, reactPhone }) {
         {reactPhone ? (
           <>
           <h4>Apply for Scholarship</h4>
-          <FormOtp dataScience={true} emailHidden={true} />
+          <FormOtp dataScience={true} />
         </>
         ) : (
           <>
