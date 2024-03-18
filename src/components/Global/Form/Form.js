@@ -29,12 +29,22 @@ const Form = ({
   promoCode,
   CTC,
   OS,
-  PhoneHidden, emailHidden,
+  PhoneHidden,
+  emailHidden,
 }) => {
   const router = useRouter();
 
   const [formFields, setFormFields] = useState(
-    getFormFields(radio, google, referrals, interstedInHide, promoCode, CTC, PhoneHidden, emailHidden)
+    getFormFields(
+      radio,
+      google,
+      referrals,
+      interstedInHide,
+      promoCode,
+      CTC,
+      PhoneHidden,
+      emailHidden
+    )
   );
 
   const [value, setValue] = useState();
@@ -126,8 +136,24 @@ const Form = ({
         redirection
       );
 
-      setError(getValidation(radio, interstedInHide, query, CTC, PhoneHidden, emailHidden));
-      const validation = getValidation(radio, interstedInHide, query, CTC, PhoneHidden, emailHidden);
+      setError(
+        getValidation(
+          radio,
+          interstedInHide,
+          query,
+          CTC,
+          PhoneHidden,
+          emailHidden
+        )
+      );
+      const validation = getValidation(
+        radio,
+        interstedInHide,
+        query,
+        CTC,
+        PhoneHidden,
+        emailHidden
+      );
 
       if (validation === false) {
         const sendData = await fetch(endPoint, {
@@ -191,7 +217,11 @@ const Form = ({
     } catch (error) {
       console.error("Error fetching location:", error.message);
       // If there's an error fetching location data, return default or placeholder values
-      return { country: "Country Undefined", region: "Region Undefined", city: "City Undefined" };
+      return {
+        country: "Country Undefined",
+        region: "Region Undefined",
+        city: "City Undefined",
+      };
     }
   };
 
@@ -210,14 +240,16 @@ const Form = ({
                 </label>
                 {field.type === "phone" ? (
                   <>
-                    {router.pathname === "/OS" || router.pathname === "/datascience/OS/s2-data-science-generic" ? (
+                    {router.pathname === "/OS" ||
+                    router.pathname ===
+                      "/datascience/OS/s2-data-science-generic" ? (
                       <PhoneInput
                         inputStyle={field.inputStyle}
                         containerStyle={field.containerStyle}
                         name={field.name}
                         inputProps={field.inputProps}
-                        country={"sg"}
-                        onlyCountries={["sg"]}
+                        country={"us"}
+                        onlyCountries={["us"]}
                         placeholder={field.placeholder}
                         value={value}
                         onChange={(phone) => setValue(phone)}
