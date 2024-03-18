@@ -15,7 +15,7 @@ function scholarship() {
             href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
           />
         </Head>
-        <Navbar HideButton={true} />
+        <Navbar HideButton={true} ADS={true}/>
         <Scholarship reactPhone={true} reactEmail={true}/>
         <FooterThankYou />
       </div>
