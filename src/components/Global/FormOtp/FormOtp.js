@@ -84,31 +84,146 @@ function FormOtp({
       formData.append(key, value);
     });
 
-    if (Validation) {
-      setError(true);
-    } else {
-      setError(false);
+    try {
+      const locationData = await fetchLocation();
+      formData.append("country", locationData.country);
+      formData.append("city", locationData.city);
+      formData.append("region", locationData.region);
+    } catch (error) {
+      console.error("Error fetching location:", error.message);
+    }
+
+    try {
+      if (Validation) {
+        setError(true);
+      } else {
+        setError(false);
+        const mobileNumber = form.phone;
+        const name = form.name;
+        const email = form.email;
+        // console.log(mobileNumber)
+
+        if (mobileNumber !== undefined && name !== "" && email !== "") {
+          const regex = /(\+91)/g;
+          const str = mobileNumber.toString();
+          const subst = `\$1-`;
+          const result = str.replace(regex, subst);
+          // console.log(result)
+          const num = result.split("-")[0];
+          console.log(num);
+          const mobileNumber1 = result.split("-")[1];
+          // console.log(mobileNumber1)
+
+          if (num === "+91") {
+            setupdateMobileNumber(mobileNumber1);
+            const data = fetch(`${"/api/Authentication/sendOtp"}`, {
+              method: "POST",
+              body: JSON.stringify({ mobileNumber: mobileNumber1 }),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            })
+              .then((response) => response.json())
+              .then((response) => {
+                // console.log("Response", response)
+                if (response.msg == "OTP Sent Successfully") {
+                  setToggle(false);
+                  setAlertMSG("OTP Sent Successfully");
+                  setSendOtpBtnHide(true);
+                  setBtnHide(true);
+                } else if (response.msg == "OTP Sending Failed Through API") {
+                  setSendOtpBtnHide(false);
+                  setBtnHide(false);
+                } else if (
+                  response.msg == "Mobile Number is Not Match from DataBase"
+                ) {
+                  setSendOtpBtnHide(false);
+                  setBtnHide(false);
+                } else if (response.msg == "Invalid Phone Number") {
+                  setToggle(false);
+                  setAlertMSG("Invalid Phone Number");
+                  setSendOtpBtnHide(false);
+                  setBtnHide(false);
+                } else {
+                  console.log("API IS NOT WORKING");
+                }
+              })
+              .catch((err) => {
+                console.log("API IS NOT WORKING");
+                console.log(err);
+              });
+          } else {
+            fetch(endPoint, {
+              method: "POST",
+              body: formData,
+            }).then(() =>
+              setForm({
+                name: "",
+                email: "",
+                platform: "",
+                otp: "",
+                url: router.asPath,
+                phone: "",
+                interstedin: "",
+              })
+            );
+
+            setDisable(true);
+            router.push(ThankYou);
+          }
+        } else {
+          setToggle(false);
+          setAlertMSG("Please Enter Empty Fields");
+        }
+      }
+      setSubmitting(false);
+    } catch (error) {
+      console.error("Error submitting form:", error.message);
+    }
+  };
+
+  const sendOtpDownload = async (e) => {
+    e.preventDefault();
+    setSubmitting(true); // Set submitting state to true
+    const formData = new FormData();
+    Object.entries(form).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
+    try {
+      const locationData = await fetchLocation();
+      formData.append("country", locationData.country);
+      formData.append("city", locationData.city);
+      formData.append("region", locationData.region);
+    } catch (error) {
+      console.error("Error fetching location:", error.message);
+    }
+
+    try {
+      console.log("vdhjgvdghwgdg", "sendOtp");
+      console.log("vhello", form.interstedin);
+
       const mobileNumber = form.phone;
+      console.log(form.phone);
       const name = form.name;
       const email = form.email;
-      // console.log(mobileNumber)
-
       if (mobileNumber !== undefined && name !== "" && email !== "") {
-        const regex = /(\+91)/g;
-        const str = mobileNumber.toString();
-        const subst = `\$1-`;
-        const result = str.replace(regex, subst);
+        const strippedPhoneNumber = mobileNumber.replace(/^91/, "");
         // console.log(result)
-        const num = result.split("-")[0];
-        console.log(num);
-        const mobileNumber1 = result.split("-")[1];
+        const isIndianPhoneNumber = (phoneNumber) => {
+          const indianPhoneNumberRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+          return indianPhoneNumberRegex.test(phoneNumber);
+        };
+        const checkNumber = isIndianPhoneNumber(mobileNumber);
+
         // console.log(mobileNumber1)
 
-        if (num === "+91") {
-          setupdateMobileNumber(mobileNumber1);
+        if (checkNumber) {
+          console.log("inside");
+          setupdateMobileNumber(strippedPhoneNumber);
           const data = fetch(`${"/api/Authentication/sendOtp"}`, {
             method: "POST",
-            body: JSON.stringify({ mobileNumber: mobileNumber1 }),
+            body: JSON.stringify({ mobileNumber: strippedPhoneNumber }),
             headers: {
               "Content-Type": "application/json",
             },
@@ -143,7 +258,7 @@ function FormOtp({
               console.log(err);
             });
         } else {
-          fetch(endPoint, {
+          fetch(`${endPoint}`, {
             method: "POST",
             body: formData,
           }).then(() =>
@@ -155,6 +270,9 @@ function FormOtp({
               url: router.asPath,
               phone: "",
               interstedin: "",
+              country: "",
+              region: "",
+              city: "",
             })
           );
 
@@ -164,104 +282,12 @@ function FormOtp({
       } else {
         setToggle(false);
         setAlertMSG("Please Enter Empty Fields");
+        // console.log("please enter number")
       }
+      setSubmitting(false);
+    } catch (error) {
+      console.error("Error submitting form:", error.message);
     }
-    setSubmitting(false);
-  };
-
-  const sendOtpDownload = async (e) => {
-    e.preventDefault();
-    setSubmitting(true); // Set submitting state to true
-    const formData = new FormData();
-    Object.entries(form).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
-
-    console.log("vdhjgvdghwgdg", "sendOtp");
-    console.log("vhello", form.interstedin);
-
-    const mobileNumber = form.phone;
-    console.log(form.phone);
-    const name = form.name;
-    const email = form.email;
-    if (mobileNumber !== undefined && name !== "" && email !== "") {
-      const strippedPhoneNumber = mobileNumber.replace(/^91/, "");
-      // console.log(result)
-      const isIndianPhoneNumber = (phoneNumber) => {
-        const indianPhoneNumberRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
-        return indianPhoneNumberRegex.test(phoneNumber);
-      };
-      const checkNumber = isIndianPhoneNumber(mobileNumber);
-
-      // console.log(mobileNumber1)
-
-      if (checkNumber) {
-        console.log("inside");
-        setupdateMobileNumber(strippedPhoneNumber);
-        const data = fetch(`${"/api/Authentication/sendOtp"}`, {
-          method: "POST",
-          body: JSON.stringify({ mobileNumber: strippedPhoneNumber }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
-          .then((response) => response.json())
-          .then((response) => {
-            // console.log("Response", response)
-            if (response.msg == "OTP Sent Successfully") {
-              setToggle(false);
-              setAlertMSG("OTP Sent Successfully");
-              setSendOtpBtnHide(true);
-              setBtnHide(true);
-            } else if (response.msg == "OTP Sending Failed Through API") {
-              setSendOtpBtnHide(false);
-              setBtnHide(false);
-            } else if (
-              response.msg == "Mobile Number is Not Match from DataBase"
-            ) {
-              setSendOtpBtnHide(false);
-              setBtnHide(false);
-            } else if (response.msg == "Invalid Phone Number") {
-              setToggle(false);
-              setAlertMSG("Invalid Phone Number");
-              setSendOtpBtnHide(false);
-              setBtnHide(false);
-            } else {
-              console.log("API IS NOT WORKING");
-            }
-          })
-          .catch((err) => {
-            console.log("API IS NOT WORKING");
-            console.log(err);
-          });
-      } else {
-        fetch(`${endPoint}`, {
-          method: "POST",
-          body: formData,
-        }).then(() =>
-          setForm({
-            name: "",
-            email: "",
-            platform: "",
-            otp: "",
-            url: router.asPath,
-            phone: "",
-            interstedin: "",
-            country: "",
-            region: "",
-            city: "",
-          })
-        );
-
-        setDisable(true);
-        router.push(ThankYou);
-      }
-    } else {
-      setToggle(false);
-      setAlertMSG("Please Enter Empty Fields");
-      // console.log("please enter number")
-    }
-    setSubmitting(false);
   };
 
   const formSubmit = async (e) => {
@@ -364,7 +390,11 @@ function FormOtp({
     } catch (error) {
       console.error("Error fetching location:", error.message);
       // If there's an error fetching location data, return default or placeholder values
-      return { country: "Country Undefined", region: "Region Undefined", city: "City Undefined" };
+      return {
+        country: "Country Undefined",
+        region: "Region Undefined",
+        city: "City Undefined",
+      };
     }
   };
 
