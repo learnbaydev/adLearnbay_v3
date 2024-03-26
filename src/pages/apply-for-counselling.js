@@ -6,6 +6,7 @@ import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { MdLocationPin, MdWatchLater } from "react-icons/md";
+import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 
 function Counselling() {
   const [mobile, setMobile] = useState(false);
@@ -219,6 +220,7 @@ function Counselling() {
             </div>
           </div>
         )}
+        <OfferPopup radio={true} ADS={true} upSkillingHide={true} />
       </div>
       <script
         dangerouslySetInnerHTML={{

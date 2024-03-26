@@ -92,7 +92,6 @@ const Blockchain = ({ DataScienceCourseDataJson }) => {
           }
           buttonHide={true}
         />
-        {/* {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />} */}
       </main>
     </>
   );

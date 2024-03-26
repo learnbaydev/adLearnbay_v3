@@ -36,36 +36,6 @@ const SecondPart = ({
   projectSection,
   FAQNewData,
 }) => {
-  const [popupData, setPopupData] = useState([]);
-  // console.log(popupData);
-  useEffect(() => {
-    // console.log("inside UseEFFect");
-    const fetchPopup = async () => {
-      const data = await fetch("/api/Popup/popupGenerate", {
-        method: "GET",
-      });
-      if (data.status === 200) {
-        const { popData } = await data.json();
-        // console.log(popData, "get data");
-        if (popData == []) {
-          setPopupData([]);
-        }
-
-        popData.map((data, i) => {
-          // console.log(data);
-          data.page.map((popupData, i) => {
-            // console.log(popData);
-            if (popupData === "Adv AI and ML Certification") {
-              setPopupData(data);
-              // console.log(popupData);
-              return;
-            }
-          });
-        });
-      }
-    };
-    fetchPopup();
-  }, []);
   return (
     <div>
       <SyllabusNew
@@ -128,7 +98,11 @@ const SecondPart = ({
       <Footer />
       <WhatsappFloat chat360code1={true} />
       <BottomBar />
-      {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+      <OfferPopup
+        dataScienceCounselling={true}
+        dataScience={true}
+        interstedInHide={true}
+      />
     </div>
   );
 };

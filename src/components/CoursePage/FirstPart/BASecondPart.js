@@ -36,36 +36,6 @@ const SecondPart = ({
   projectSection,
   FAQNewData,
 }) => {
-  const [popupData, setPopupData] = useState([]);
-  // console.log(popupData);
-  useEffect(() => {
-    // console.log("inside UseEFFect");
-    const fetchPopup = async () => {
-      const data = await fetch("/api/Popup/popupGenerate", {
-        method: "GET",
-      });
-      if (data.status === 200) {
-        const { popData } = await data.json();
-        // console.log(popData, "get data");
-        if (popData == []) {
-          setPopupData([]);
-        }
-
-        popData.map((data, i) => {
-          // console.log(data);
-          data.page.map((popupData, i) => {
-            // console.log(popData);
-            if (popupData === "Business Analytics Program") {
-              setPopupData(data);
-              // console.log(popupData);
-              return;
-            }
-          });
-        });
-      }
-    };
-    fetchPopup();
-  }, []);
   return (
     <div>
       <SyllabusNew
@@ -99,20 +69,15 @@ const SecondPart = ({
         titleCourse="Advanced Data Science and AI Program with domain specialization"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf"
         dataScience={true}
-      
-
-
-
         // EMI POPUPDATA
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹90,000"
-        monthlyPayment1 = "₹5,900"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹90,000"
-        monthlyPayment2 = "₹8,850"
-      
+        emiType="NO COST EMI"
+        duration1="18 Months"
+        totalAmount1="₹90,000"
+        monthlyPayment1="₹5,900"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="12 Months"
+        totalAmount2="₹90,000"
+        monthlyPayment2="₹8,850"
       />
       <MentorsSection />
       <SliderTab />
@@ -129,7 +94,12 @@ const SecondPart = ({
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
-      {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+      <OfferPopup
+        BA={true}
+        dataScienceCounselling={true}
+        dataScience={true}
+        interstedInHide={true}
+      />
     </div>
   );
 };

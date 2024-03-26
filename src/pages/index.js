@@ -8,6 +8,8 @@ const Course = dynamic(() => import("@/components/Home/Course/Course"));
 const WhyLearnbay = dynamic(() =>
   import("@/components/Home/WhyLearnbay/WhyLearnbay")
 );
+const OfferPopup = dynamic(() => import("@/components/Global/Popup/Popup"));
+
 
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 const ProjectSection = dynamic(() =>
@@ -128,6 +130,9 @@ export default function Home({}) {
         />
         <ContactUs dataScience={true} radio={true} interstedInHide={true} />
         <SeventhSection organic={true} />
+        <OfferPopup
+        dataScience={true} radio={true} interstedInHide={true}
+      />
         <Footer />
         <WhatsappFloat chat360code1={true} />
         <BottomBar dataScience={true} radio={true} interstedInHide={true} />

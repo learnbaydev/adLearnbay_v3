@@ -94,13 +94,13 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           Fee=" ₹80,000"
           FeeEmi="₹5,244/month"
           weekdaybatch="Weekend Batch"
-          weekendbatch="Weekday Batch"
-          weekday="SAT-SUN"
-          weekend="(MON-TUE-WED-THU)"
-          WeekdayDate="JAN 14th"
-          WeekendDate="FEB 23rd"
-          WeekendTime="8 PM - 10 PM"
-          WeekdayTime="09:30 AM - 1:00 PM"
+        weekendbatch="Weekend Batch"
+        weekday="(SAT-SUN)"
+        weekend="(SAT-SUN)"
+        WeekdayDate="MAR 17th"
+        WeekendDate="APR 6th"
+        WeekendTime="9:30 AM - 1 PM"
+        WeekdayTime="9:30 AM - 1 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -141,7 +141,10 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <EightSection HideInterest={true} dataScience={true} />
         <WhatsappFloat />
         <BottomBar HideInterest={true} dataScience={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup
+        Cloud={true}
+        HideInterest={true} dataScience={true}
+      />
       </main>
     </>
   );

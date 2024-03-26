@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 // import BottomBar from "../../global/BottomBar/BottomBar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Footer from "@/components/Global/Footer/Footer";
@@ -38,36 +37,6 @@ const SecondPart = ({
   Organic,
   buttonHide,
 }) => {
-  const [popupData, setPopupData] = useState([]);
-  // console.log(popupData);
-  useEffect(() => {
-    // console.log("inside UseEFFect");
-    const fetchPopup = async () => {
-      const data = await fetch("/api/Popup/popupGenerate", {
-        method: "GET",
-      });
-      if (data.status === 200) {
-        const { popData } = await data.json();
-        // console.log(popData, "get data");
-        if (popData == []) {
-          setPopupData([]);
-        }
-
-        popData.map((data, i) => {
-          // console.log(data);
-          data.page.map((popupData, i) => {
-            // console.log(popData);
-            if (popupData === "Master in Cs") {
-              setPopupData(data);
-              // console.log(popupData);
-              return;
-            }
-          });
-        });
-      }
-    };
-    fetchPopup();
-  }, []);
   return (
     <>
       <GetHire />
@@ -87,14 +56,14 @@ const SecondPart = ({
       <FeeSection
         Fee="₹ 2,50,000"
         FeeEmi="12,292/month."
-        weekdaybatch="Weekend Batch"
-        weekendbatch="Weekday Batch"
-        weekday="SAT-SUN"
-        weekend="SAT-SUN"
-        WeekdayDate="JAN 14th"
-        WeekendDate="DEC 9th"
-        WeekendTime="09:30 AM - 1:00 PM"
-        WeekdayTime="09:30 AM - 1:00 PM"
+        weekdaybatch="Weekday Batch"
+        weekendbatch="Weekday  Batch"
+        weekday="MON - FRI"
+        weekend="MON - FRI"
+        WeekdayDate="APR 12th"
+        WeekendDate="APR 19th"
+        WeekdayTime="8.00PM - 10.00PM"
+        WeekendTime="8.00AM - 10.00AM"
         CutFee="₹ 3,25,000/-"
         FeeContent3="Flexible payment"
         FeeContent4="Easy loan procedure"
@@ -102,17 +71,15 @@ const SecondPart = ({
         FeeContent6="No additional cost"
         dataScienceCounselling={true}
         dataScience={true}
-
-
         // EMI POPUPDATA
-        emiType = "NO COST EMI"
-        duration1 = "24 Months"
-        totalAmount1 = "₹2,50,000"
-        monthlyPayment1 = "₹12,292"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "18 Months"
-        totalAmount2 = "₹2,50,000"
-        monthlyPayment2 = "₹16,389"
+        emiType="NO COST EMI"
+        duration1="24 Months"
+        totalAmount1="₹2,50,000"
+        monthlyPayment1="₹12,292"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="18 Months"
+        totalAmount2="₹2,50,000"
+        monthlyPayment2="₹16,389"
       />
       <MentorsSection />
       <SliderTabs />
@@ -130,7 +97,11 @@ const SecondPart = ({
       {Organic ? <Footer /> : ""}
       <BottomBar masterdegree={true} />
       <WhatsappFloat chat360code1={true} />
-      {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+      <OfferPopup
+        dataScienceCounselling={true}
+        dataScience={true}
+        interstedInHide={true}
+      />
     </>
   );
 };

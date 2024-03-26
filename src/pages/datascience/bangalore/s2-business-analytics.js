@@ -91,14 +91,14 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 1,25,000"
           FeeEmi="₹  5,900/month"
-          weekdaybatch="Weekend Batch"
-          weekendbatch="Weekday Batch"
-          weekday="SAT-SUN"
-          weekend="MON-TUE"
-          WeekdayDate="JAN 14th"
-          WeekendDate="FEB 9th"
-          WeekendTime="8 PM - 10 PM"
-          WeekdayTime="09:30 AM - 1:00 PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON-FRI"
+          weekend="SAT-SUN"
+          WeekdayDate="APR 12th"
+          WeekendDate="MAR 10th"
+          WeekendTime="09:30 AM - 1:00 PM"
+          WeekdayTime="8.00 PM - 10.00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -108,17 +108,15 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
-        
-
-           // EMI POPUPDATA
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹90,000"
-        monthlyPayment1 = "₹5,900"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹90,000"
-        monthlyPayment2 = "₹8,850"
+          // EMI POPUPDATA
+          emiType="NO COST EMI"
+          duration1="18 Months"
+          totalAmount1="₹90,000"
+          monthlyPayment1="₹5,900"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹90,000"
+          monthlyPayment2="₹8,850"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
@@ -142,7 +140,7 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
         <EightSection interstedInHide={true} formotp={true} ADS={true} />
         <WhatsappFloat />
         <BottomBar interstedInHide={true} formotp={true} ADS={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );
