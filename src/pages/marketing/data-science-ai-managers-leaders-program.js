@@ -147,7 +147,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <EightSection interstedInHide={true} dataScience={true} />
         <WhatsappFloat />
         <BottomBar interstedInHide={true} dataScience={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup interstedInHide={true} dataScience={true} />
       </main>
     </>
   );

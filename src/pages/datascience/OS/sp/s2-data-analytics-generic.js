@@ -139,7 +139,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <MyCookieConsent />
         <WhatsappFloat OS={true} />
         <BottomBar HideInterest={true} OS={true} ADS={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup HideInterest={true} OS={true} ADS={true} />
       </main>
     </>
   );

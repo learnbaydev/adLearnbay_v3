@@ -30,7 +30,7 @@
 }
 .header h6 {
   text-align: center;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 900;
   margin: 0;
   color: #f99600;
@@ -90,6 +90,7 @@
 } */
 .Offer button {
   display: flex;
+  margin: auto;
   margin-top: 20px;
   align-items: center;
   justify-content: center;

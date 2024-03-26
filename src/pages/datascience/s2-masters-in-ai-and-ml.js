@@ -102,14 +102,14 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <FeeSection
           Fee="₹ 2,50,000"
           FeeEmi="₹  12,292/month"
-          weekdaybatch="Weekend Batch"
-          weekendbatch="Weekday Batch"
-          weekday="SAT-SUN"
-          weekend="SAT-SUN"
-          WeekdayDate="JAN 14th"
-          WeekendDate="DEC 9th"
-          WeekendTime="09:30 AM - 1:00 PM"
-          WeekdayTime="09:30 AM - 1:00 PM"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekday  Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="APR 12th"
+          WeekendDate="APR 19th"
+          WeekdayTime="8.00PM - 10.00PM"
+          WeekendTime="8.00AM - 10.00AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -117,16 +117,15 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           HideInterest={true}
           formotp={true}
           ADS={true}
-
           // EMI POPUPDATA
-        emiType = "NO COST EMI"
-        duration1 = "24 Months"
-        totalAmount1 = "₹2,50,000"
-        monthlyPayment1 = "₹12,292"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "18 Months"
-        totalAmount2 = "₹2,50,000"
-        monthlyPayment2 = "₹16,389"
+          emiType="NO COST EMI"
+          duration1="24 Months"
+          totalAmount1="₹2,50,000"
+          monthlyPayment1="₹12,292"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="18 Months"
+          totalAmount2="₹2,50,000"
+          monthlyPayment2="₹16,389"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
@@ -150,7 +149,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <EightSection HideInterest={true} formotp={true} ADS={true} />
         <WhatsappFloat />
         <BottomBar HideInterest={true} formotp={true} ADS={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );

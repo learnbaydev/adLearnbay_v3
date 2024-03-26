@@ -150,7 +150,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         <WhatsappFloat OS={true} />
         <MyCookieConsent />
         <BottomBar HideInterest={true} OS={true} ADS={true} />
-        {popupData.length == 0 ? "" : <OfferPopup popupData={popupData} />}
+        <OfferPopup HideInterest={true} OS={true} ADS={true} />
       </main>
     </>
   );

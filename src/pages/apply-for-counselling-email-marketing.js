@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { MdLocationPin, MdWatchLater } from "react-icons/md";
 import styles from "../styles/Counseling.module.css";
+import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 
 function Counselling() {
   const [mobile, setMobile] = useState(false);
@@ -177,6 +178,7 @@ function Counselling() {
           </div>
         )}
       </div>
+      <OfferPopup upSkillingHide={true} radio={true} interstedInHide={true} dataScience={true} />
     </>
   );
 }
