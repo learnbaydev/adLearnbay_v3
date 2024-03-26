@@ -4,7 +4,7 @@
 
   border-radius: 8px 8px 0 0;
   z-index: 9999;
-  height: 350px;
+  height: 320px;
   width: 550px;
   bottom: 0;
   left: 50px;
@@ -120,7 +120,7 @@
 @media (max-width: 481px) {
   .OfferPopup {
     width: 95%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     height: 340px;
     left: 10px;
     padding: 0;
@@ -132,13 +132,14 @@
     font-size: 16px;
   }
   .Offer button {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
   .bHeading {
     font-size: 18px;
   }
   .tag {
-    top: 30px;
+    top: 0px;
     right: 0;
     padding: 5px 25px;
   }
