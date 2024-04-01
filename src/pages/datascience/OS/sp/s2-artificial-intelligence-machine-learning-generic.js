@@ -8,7 +8,6 @@ import Certificate from "@/components/Global/Certificate/Certificate";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
@@ -150,7 +149,6 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         <WhatsappFloat OS={true} />
         <MyCookieConsent />
         <BottomBar HideInterest={true} OS={true} ADS={true} />
-        <OfferPopup HideInterest={true} OS={true} ADS={true} />
       </main>
     </>
   );

@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
 const Certificate = dynamic(() => import("../Certificate/Certificate"));
-const OfferPopup = dynamic(() => import("../../Global/Popup/Popup"));
 const FeeSection = dynamic(() => import("../FeeSection/FeeSection"));
 const MentorsSection = dynamic(() =>
   import("../../Global/MentorsSection/MentorsSection")
@@ -93,12 +92,7 @@ const SecondPart = ({
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
-      <OfferPopup
-        Cloud={true}
-        dataScienceCounselling={true}
-        dataScience={true}
-        interstedInHide={true}
-      />
+      
     </div>
   );
 };

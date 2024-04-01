@@ -11,7 +11,7 @@ const SyllabusNew = dynamic(() =>
 const ToolsCovered = dynamic(() =>
   import("../../CoursePage/ToolsCovered/ToolsCovered")
 );
-const OfferPopup = dynamic(() => import("../../Global/OfferPopup/OfferPopup"));
+
 const Certificate = dynamic(() => import("../Certificate/Certificate"));
 const FeeSection = dynamic(() =>
   import("../../CoursePage/FeeSection/FeeSection")
@@ -97,11 +97,6 @@ const SecondPart = ({
       {Organic ? <Footer /> : ""}
       <BottomBar masterdegree={true} />
       <WhatsappFloat chat360code1={true} />
-      <OfferPopup
-        dataScienceCounselling={true}
-        dataScience={true}
-        interstedInHide={true}
-      />
     </>
   );
 };

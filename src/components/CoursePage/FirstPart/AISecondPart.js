@@ -1,13 +1,12 @@
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
 const WhatsappFloat = dynamic(() =>
   import("@/components/Global/WhatappsFloat/WhatsappFloat")
 );
 const Certificate = dynamic(() => import("../Certificate/Certificate"));
-const OfferPopup = dynamic(() => import("../../Global/OfferPopup/OfferPopup"));
+
 const FeeSection = dynamic(() => import("../FeeSection/FeeSection"));
 
 const MentorsSection = dynamic(() =>
@@ -98,11 +97,6 @@ const SecondPart = ({
       <Footer />
       <WhatsappFloat chat360code1={true} />
       <BottomBar />
-      <OfferPopup
-        dataScienceCounselling={true}
-        dataScience={true}
-        interstedInHide={true}
-      />
     </div>
   );
 };

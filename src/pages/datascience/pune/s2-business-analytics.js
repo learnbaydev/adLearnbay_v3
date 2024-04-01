@@ -7,7 +7,6 @@ import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
@@ -140,7 +139,6 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
         <EightSection interstedInHide={true} formotp={true} ADS={true} />
         <WhatsappFloat />
         <BottomBar interstedInHide={true} formotp={true} ADS={true} />
-        <OfferPopup interstedInHide={true} formotp={true} ADS={true} BA={true} />
       </main>
     </>
   );

@@ -3,13 +3,12 @@ import Footer from "@/components/Global/Footer/Footer";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
 const Certificate = dynamic(() =>
   import("@/components/CoursePage/Certificate/Certificate")
 );
-const OfferPopup = dynamic(() => import("../../Global/OfferPopup/OfferPopup"));
+
 const FeeSection = dynamic(() =>
   import("@/components/CoursePage/FeeSection/FeeSection")
 );
@@ -96,11 +95,6 @@ const SecondPart = ({
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
-      <OfferPopup
-        dataScienceCounselling={true}
-        dataScience={true}
-        interstedInHide={true}
-      />
     </div>
   );
 };

@@ -5,7 +5,6 @@ import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import SliderTabs from "@/components/Global/SliderTabs/SliderTabsOS";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
@@ -186,7 +185,6 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <WhatsappFloat OS={true} />
         <BottomBar HideInterest={true} ADS={true} dataScience={true} />
         <MyCookieConsent />
-        <OfferPopup HideInterest={true} ADS={true} dataScience={true} />
       </main>
     </>
   );

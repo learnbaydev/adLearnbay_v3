@@ -1,10 +1,7 @@
 import { parseJSONData } from "@/Util/JsonConvertor";
 import FullStackSoftwareDevelopmentFirstPart from "@/components/CoursePage/FirstPart/FullStackSoftwareDevelopmentFirstPart";
 import FullStackSoftwareDevelopmentSecondPart from "@/components/CoursePage/FirstPart/FullStackSoftwareDevelopmentSecondPart";
-import dynamic from "next/dynamic";
 import Head from "next/head";
-
-const OfferPopup = dynamic(() => import("../../components/Global/Popup/Popup"));
 
 function Blockchain({ DataScienceCourseDataJson }) {
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
