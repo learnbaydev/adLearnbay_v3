@@ -7,7 +7,6 @@ import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
@@ -147,7 +146,6 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <MyCookieConsent />
         <WhatsappFloat OS={true} />
         <BottomBar HideInterest={true} ADS={true} />
-        <OfferPopup  HideInterest={true} ADS={true} />
       </main>
     </>
   );

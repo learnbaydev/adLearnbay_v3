@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 
 import FirstPart from "@/components/MastersCourse/PagePart/FirstPart";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 const SecondPart = dynamic(() =>
   import("@/components/MastersCourse/PagePart/SecondPart")
 );
@@ -94,7 +93,6 @@ const Blockchain = ({ DataScienceCourseDataJson }) => {
           }
           buttonHide={true}
         />
-       <OfferPopup interstedInHide={true} dataScience={true} />
       </main>
     </>
   );

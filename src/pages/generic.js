@@ -11,7 +11,6 @@ import Switch from "@/components/OrganicGeneric/Switch/Switch";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
@@ -137,7 +136,6 @@ export default function Home() {
       <EightSection interstedInHide={true} radio={true} dataScience={true} />
       <WhatsappFloat chat360code1={true} />
       <BottomBar interstedInHide={true} radio={true} dataScience={true} />
-      <OfferPopup interstedInHide={true} radio={true} dataScience={true} />
     </div>
   );
 }

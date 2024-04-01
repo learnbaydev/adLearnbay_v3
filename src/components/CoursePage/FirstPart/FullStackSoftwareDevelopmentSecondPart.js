@@ -2,13 +2,12 @@ import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Footer from "@/components/Global/Footer/Footer";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const FeeSection = dynamic(() => import("../FeeSection/FeeSection"));
-const OfferPopup = dynamic(() => import("../../Global/OfferPopup/OfferPopup"));
+
 const MentorsSection = dynamic(() =>
   import("../../Global/MentorsSection/MentorsSection")
 );
@@ -54,18 +53,16 @@ const FullStackSoftwareDevelopmentSecondPart = ({
         interstedInHide={true}
         titleCourse="Software Development Certification Program"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Software+Developer+Certification.pdf"
-     
-     
         // <EMI POPUP
-        emiType = "NO COST EMI"
-        duration1 = "18 Months"
-        totalAmount1 = "₹1,15,000"
-        monthlyPayment1 = "₹7,538"
-        greenDown1 = "Standard Intrest rate Applicable"
-        duration2 = "12 Months"
-        totalAmount2 = "₹1,15,000"
-        monthlyPayment2 = "₹11,308"
-     />
+        emiType="NO COST EMI"
+        duration1="18 Months"
+        totalAmount1="₹1,15,000"
+        monthlyPayment1="₹7,538"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="12 Months"
+        totalAmount2="₹1,15,000"
+        monthlyPayment2="₹11,308"
+      />
       <MentorsSection />
       <SliderTab />
       <PlacementCall />
@@ -74,12 +71,6 @@ const FullStackSoftwareDevelopmentSecondPart = ({
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
-      <OfferPopup
-        Cloud={true}
-        dataScienceCounselling={true}
-        dataScience={true}
-        interstedInHide={true}
-      />
     </div>
   );
 };

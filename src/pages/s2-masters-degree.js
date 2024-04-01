@@ -12,7 +12,6 @@ import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 import Footer from "@/components/Global/Footer/Footer";
-import OfferPopup from "@/components/Global/OfferPopup/OfferPopup";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
@@ -85,7 +84,6 @@ function Blockchain({ DataScienceCourseDataJson }) {
         <WhatsappFloat />
         <BottomBar radio={true} />
         <MyCookieConsent />
-        <OfferPopup interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );
