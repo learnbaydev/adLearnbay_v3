@@ -12,13 +12,13 @@ import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
+import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
-import { parseJSONData } from "../../../../../Util/JsonConvertor";
-import SyllabusNew from "../../../../components/CoursePage/Syllabus/MasterSyllabus";
+import { parseJSONData } from "../../../Util/JsonConvertor";
+import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
-import MyCookieConsent from "@/components/Global/CookieConsent/CookieConstent";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataScienceCourseDataJson, projectSection }) {
@@ -34,7 +34,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           name="description"
           content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
         />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <meta name="keywords" content="Data Science Generic" />
         <link
           rel="icon"
@@ -46,24 +46,23 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} ADS={true} />
+        <Navbar interstedInHide={true} formotp={true} ADS={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
+          formotp={true}
           ADS={true}
-          OS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
-          firstToparaImg="Domain Specialization for Professionals "
-          firstHeading="Data Science Course with "
-          firstTopPara="Self-Paced Online Course "
+          firstToparaImg="for Healthcare Professionals "
+          firstHeading=" Data Science and AI "
+          firstTopPara="Ready to master the Healthcare domain?          "
           softwareBtnHide={true}
-          AnimationHide={true}
         />
 
-        <SecondSection OS={true} />
+        <SecondSection />
         <S2SecondSection
           p1="IBM Certified"
           p11="Capstone Projects"
@@ -80,12 +79,12 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        {/* <ProjectSection HideInterest={true} ADS={true} /> */}
-        <GetHire OS={true} />
+        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
+        <GetHire />
 
         <SyllabusNew
-          HideInterest={true}
-          OS={true}
+          interstedInHide={true}
+          formotp={true}
           ADS={true}
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
@@ -97,8 +96,8 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           data={DataScienceCourseData.DataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="$599"
-          FeeEmi="₹ 6,490/month"
+          Fee="₹ 89,000"
+          FeeEmi="₹ 8,752/month"
           weekdaybatch="Weekday Batch"
           weekendbatch="Weekday  Batch"
           weekday="MON - FRI"
@@ -111,9 +110,9 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
+          formotp={true}
           ADS={true}
-          OS={true}
           // <EMI POPUP
           emiType="NO COST EMI"
           duration1="18 Months"
@@ -135,24 +134,24 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
+          formotp={true}
           ADS={true}
           projectSection={
             DataScienceCourseData.DataScienceCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} ADS={true} />
-        <MyCookieConsent />
-        <WhatsappFloat OS={true} />
-        <BottomBar HideInterest={true} ADS={true} />
+        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <WhatsappFloat />
+        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );
 }
 export default Blockchain;
 export async function getStaticProps() {
-  const data = await import("../../../../Data/AdvanceDataScienceCourse");
+  const data = await import("../../Data/AdvanceDataScienceCourse");
   function getDataScienceCourseDataJSON(dataScienceCourseData) {
     return JSON.stringify(dataScienceCourseData);
   }
