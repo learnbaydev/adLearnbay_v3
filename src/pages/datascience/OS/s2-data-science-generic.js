@@ -122,7 +122,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           greenDown1="Standard Intrest rate Applicable"
           duration2="12 Months"
           totalAmount2="₹99,000"
-          monthlyPayment2="₹9,735"
+          monthlyPayment2="₹6,490"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
