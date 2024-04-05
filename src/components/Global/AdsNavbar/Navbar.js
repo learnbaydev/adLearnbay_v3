@@ -60,6 +60,7 @@ const Navbar = ({
               fullstackADS={fullstackADS}
               marketing={marketing}
               grad={grad}
+              radio={radio}
               HideInterest={HideInterest}
             />
           ) : (
