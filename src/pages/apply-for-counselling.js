@@ -76,7 +76,7 @@ function Counselling() {
           async
         ></script> */}
         </Head>
-        <Navbar radio={true} />
+        <Navbar radio={true} ADS={true} upSkillingHide={true} formotp={true} />
 
         {mobile ? (
           <div className={styles.formq}>
