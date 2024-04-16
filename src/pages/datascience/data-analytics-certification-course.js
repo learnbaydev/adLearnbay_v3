@@ -114,7 +114,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
                "courseWorkload": "P10W",
                 "courseFee": {
                   "@type": "PriceSpecification",
-                  "price": "₹ 80,000 + 18% GST",
+                  "price": "₹ 85,000 + 18% GST",
                   "priceCurrency": "INR"
                 }
               }
