@@ -89,15 +89,15 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
         />
         <FeeSection
           Fee="₹ 1,25,000"
-          FeeEmi="₹  5,900/month"
-          weekdaybatch="Weekday Batch"
+          FeeEmi="₹6,228/month"
+          weekdaybatch="Weekend Batch"
           weekendbatch="Weekday  Batch"
-          weekday="MON - FRI"
+          weekday="SAT - SUN"
           weekend="MON - FRI"
-          WeekdayDate="APR 12th"
+          WeekdayDate="APR 21st"
           WeekendDate="APR 19th"
-          WeekdayTime="8.00PM - 10.00PM"
-          WeekendTime="8.00AM - 10.00AM"
+          WeekdayTime="9:30 AM - 1:00 PM"
+          WeekendTime="8:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -110,12 +110,12 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           // EMI POPUPDATA
           emiType="NO COST EMI"
           duration1="18 Months"
-          totalAmount1="₹90,000"
-          monthlyPayment1="₹5,900"
+          totalAmount1="₹95,000"
+          monthlyPayment1="₹6,228"
           greenDown1="Standard Intrest rate Applicable"
           duration2="12 Months"
-          totalAmount2="₹90,000"
-          monthlyPayment2="₹8,850"
+          totalAmount2="₹95,000"
+          monthlyPayment2="₹11,308"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial

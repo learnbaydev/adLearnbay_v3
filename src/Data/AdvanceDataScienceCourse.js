@@ -141,8 +141,6 @@ export const DataScienceCourseData = [
       //   statLogo: "142% Hike",
       // },
     ],
-    
-
 
     testimonialgenric: [
       {
@@ -564,11 +562,7 @@ export const DataScienceCourseData = [
             {
               chap: {
                 title: "Module 2 :- NLP",
-                desc: [
-                  "Natural Language Processing",
-                  "Text Analysis",
-                  "KNN",
-                ],
+                desc: ["Natural Language Processing", "Text Analysis", "KNN"],
               },
             },
           ],
@@ -839,7 +833,7 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "What is the total Fee for the Advanced Data Science and AI Program?",
-            ans: "The total program fee for the Advanced Data Science and AI Program with Domain Specialization is INR  99,000 + 18% GST.",
+            ans: "The total program fee for the Advanced Data Science and AI Program with Domain Specialization is INR  1,05,000 + 18% GST.",
             open: true,
           },
           {

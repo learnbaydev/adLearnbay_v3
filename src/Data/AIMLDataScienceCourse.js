@@ -910,7 +910,7 @@ export const AIMLDataScienceCourseData = [
           {
             id: 0,
             ques: "What is the total Fee for the AI & ML Program?",
-            ans: "The total program fee for the AI & ML Program with Domain Specialization is INR 1,10,000 + 18% GST.",
+            ans: "The total program fee for the AI & ML Program with Domain Specialization is INR 1,15,000 + 18% GST.",
             open: true,
           },
           {

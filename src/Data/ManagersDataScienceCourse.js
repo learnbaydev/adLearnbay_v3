@@ -250,7 +250,6 @@ export const DataScienceCourseData = [
       // },
     ],
 
-
     projectSection: [
       {
         id: 1,
@@ -280,9 +279,8 @@ export const DataScienceCourseData = [
         id: 3,
         duration: "26 Hours",
         logo: "",
-        heading:
-          "Forecasting future sales with trends and price maximization",
-     
+        heading: "Forecasting future sales with trends and price maximization",
+
         img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Project+company+logos/bmw.png",
         para: "BMW customers can sell old vehicles, but rivals provide superior resale prices. BMW's data science-powered software will deliver the greatest market value for used vehicles based on Km travelled, daily price changes, production dates, etc. Such tasks build analytical abilities.",
         toolImg:
@@ -959,12 +957,12 @@ export const DataScienceCourseData = [
           {
             id: 0,
             ques: "What is the total Fee for the Data Science and AI for Managers & Leaders Program?",
-            ans: "The total program fee for the Data Science and AI for Managers & Leaders Program is INR 1,10,000 + 18% GST.",
+            ans: "The total program fee for the Data Science and AI for Managers & Leaders Program is INR 1,15,000 + 18% GST.",
             open: true,
           },
           {
             id: 1,
-            ques: "Can I pay in installments for 1,10,000/-?",
+            ques: "Can I pay in installments for 1,15,000/-?",
             ans: "Yes, you can pay the installments using a credit card with a no-cost EMI option for INR 7,211/month up to 18 months. You can also choose an interest-free loan by submitting an Aadhar card, Pan Card, and 3-month salary slip.",
             open: false,
           },
