@@ -151,7 +151,7 @@ export const OtherLocation = [
     id: 5,
     cityName: "Bangalore",
     location:
-      "1090 1st floor, 18th Cross Rd, above Sangam Sweets, Sector 3, HSR Layout, Bengaluru, Karnataka 560102",
+      "1090 1st floor, 18th Cross Road, above Sangam Sweets, Sector 3, HSR Layout, Bengaluru, Karnataka 560102",
   },
   {
     id: 6,
