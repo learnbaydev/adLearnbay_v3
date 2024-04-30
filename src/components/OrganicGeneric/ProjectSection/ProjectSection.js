@@ -17,9 +17,10 @@ const ProjectSection = ({
   adPage,
   dataScienceGeneric,
   interstedInHide,
-
+  formotp,
   nolinkO,
   linkomb,
+  ADS,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -48,6 +49,8 @@ const ProjectSection = ({
         upSkillingHide={true}
         interstedInHide={interstedInHide}
         adPage={adPage}
+        formotp={formotp}
+        ADS={ADS}
       />
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="leftPopup">

@@ -6,6 +6,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BsBank, BsTruck } from "react-icons/bs";
 import { FaCheckCircle, FaClinicMedical, FaDownload } from "react-icons/fa";
 import Form from "../../Global/Form/Form";
+import FormOtp from "../../Global/FormOtp/FormOtp";
 import Popup from "../../Global/Popup/Popup";
 import styles from "./ProjectSection.module.css";
 const VideoPopup = dynamic(() => import("../../Global/VideoPopup/VideoPopup"));
@@ -17,6 +18,8 @@ const ProjectContent = ({
   dataScienceCounselling,
   organicADS,
   interstedInHide,
+  formotp,
+  ADS,
 }) => {
   const [popups, setPopups] = useState(false);
   const el = useRef(null);
@@ -50,15 +53,29 @@ const ProjectContent = ({
           </div>
           <div className="RightPopup">
             <h5>Download Syllabus</h5>
-            <Form
-              dataScience={dataScience}
-              upSkillingHide={true}
-              dataScienceGeneric={dataScienceGeneric}
-              dataScienceCounselling={dataScienceCounselling}
-              radio={radio}
-              downloadBrochure
-              interstedInHide={interstedInHide}
-            />
+            {formotp ? (
+              <FormOtp
+                popup={true}
+                downloadBrochure
+                upSkillingHide={true}
+                radio={radio}
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                dataScienceGeneric={dataScienceGeneric}
+                interstedInHide={interstedInHide}
+                ADS={ADS}
+              />
+            ) : (
+              <Form
+                dataScience={dataScience}
+                upSkillingHide={true}
+                dataScienceGeneric={dataScienceGeneric}
+                dataScienceCounselling={dataScienceCounselling}
+                radio={radio}
+                downloadBrochure
+                interstedInHide={interstedInHide}
+              />
+            )}
           </div>
         </Popup>
 

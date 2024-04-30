@@ -41,12 +41,16 @@ const PopupContent = ({
         <h5>{heading}</h5>
         {formotp ? (
             <FormOtp
-              popup={true}
-              upSkillingHide={true}
-              ADS={ADS}
-              HideInterest={HideInterest}
-          downloadBrochure={downloadBrochure}
-            />
+            popup={true}
+            downloadBrochure
+            upSkillingHide={true}
+            radio={radio}
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            dataScienceGeneric={dataScienceGeneric}
+            interstedInHide={interstedInHide}
+            ADS={ADS}
+          />
           ) : (
         <Form
           dataScience={dataScience}
