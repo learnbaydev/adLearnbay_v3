@@ -4,6 +4,7 @@ import styles from "./FirstSection.module.css";
 import { FaChevronDown } from "react-icons/fa";
 import Popup from "../../Global/Popup/Popup";
 import Form from "../../Global/Form/Form";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import Image from "next/image";
 import Typed from "typed.js";
 const Button = dynamic(() => import("../../Global/Button/Button"));
@@ -15,6 +16,8 @@ const FirstSection = ({
   dataScienceCounselling,
   organicADS,
   interstedInHide,
+  formotp,
+  ADS,
 }) => {
   const [mobile, setMobile] = useState(false);
   const [show, setShow] = useState(false);
@@ -75,14 +78,27 @@ const FirstSection = ({
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-            <Form
-              dataScience={dataScience}
-              upSkillingHide={true}
-              dataScienceGeneric={dataScienceGeneric}
-              dataScienceCounselling={dataScienceCounselling}
-              radio={radio}
-              interstedInHide={interstedInHide}
-            />
+            {formotp ? (
+              <FormOtp
+                popup={true}
+                upSkillingHide={true}
+                radio={radio}
+                interstedInHide={interstedInHide}
+                dataScience={dataScience}
+                dataScienceGeneric={dataScienceGeneric}
+                dataScienceCounselling={dataScienceCounselling}
+                ADS={ADS}
+              />
+            ) : (
+              <Form
+                dataScience={dataScience}
+                upSkillingHide={true}
+                dataScienceGeneric={dataScienceGeneric}
+                dataScienceCounselling={dataScienceCounselling}
+                radio={radio}
+                interstedInHide={interstedInHide}
+              />
+            )}
           </div>
         </Popup>
         <div className={styles.FirstLeft}>
