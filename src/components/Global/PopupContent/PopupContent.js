@@ -42,7 +42,7 @@ const PopupContent = ({
         {formotp ? (
             <FormOtp
             popup={true}
-            downloadBrochure
+            downloadBrochure={downloadBrochure}
             upSkillingHide={true}
             radio={radio}
             dataScience={dataScience}
