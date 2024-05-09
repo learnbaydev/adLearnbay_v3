@@ -26,6 +26,7 @@ const FirstPart = ({
   iimgchmbl,
   videoPopupHide,
   Marketing,
+  adsCont,
 }) => {
   const DsSecond = {
     title1: "Domain Specialization",
@@ -57,22 +58,22 @@ const FirstPart = ({
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
     title3: "Assured Job Assistance",
     jobAssistance: [
-      { icon: <BsDisplay />, text: "Unlimited Interview Calls" },
+      { icon: <BsDisplay />, text: "Mock Interview Sessions" },
       { icon: <AiOutlineContainer />, text: "Resume Building Session" },
       { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
-    
     ],
-    formbl: [
-      { icon: <BsPeople />, text: "Mock Interview Sessions" },
-    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
     image5:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
   return (
     <>
       {" "}
-      {Marketing ? (<AdsNavbar dataScienceCounselling={true} dataScience={true} />) : (
-      <Navbar dataScienceCounselling={true} dataScience={true} />)}
+      {Marketing ? (
+        <AdsNavbar dataScienceCounselling={true} dataScience={true} />
+      ) : (
+        <Navbar dataScienceCounselling={true} dataScience={true} />
+      )}
       <FirstSection
         ThirdTyped="Live Interactive Classes"
         dataScienceCounselling={true}
@@ -87,17 +88,31 @@ const FirstPart = ({
       <MasterSecondSection />
       <CloudDevopsecond data={DsSecond} />
       <JobAbroad />
-      <TrainerSection
-        idss="eautK0odE7Q"
-        plainimg={plainimg}
-        iimgchmbl={iimgchmbl}
-      />
-      <Testimonial
-        redirectDS={true}
-        Testimonial={TestimonialData}
-        videoPopupHide={videoPopupHide}
-        popupvnone={true}
-      />
+      {adsCont ? (
+        <>
+          <TrainerSection plainimg={true} iimgchmbl={true} />
+          <Testimonial
+            redirectDS={true}
+            videotest={true}
+            heading=""
+            Testimonial={TestimonialData}
+          />
+        </>
+      ) : (
+        <>
+          <TrainerSection
+            idss="eautK0odE7Q"
+            plainimg={plainimg}
+            iimgchmbl={iimgchmbl}
+          />
+          <Testimonial
+            redirectDS={true}
+            Testimonial={TestimonialData}
+            videoPopupHide={videoPopupHide}
+            popupvnone={true}
+          />
+        </>
+      )}
       <WhyLearnbay dataScienceCounselling={true} dataScience={true} />
     </>
   );

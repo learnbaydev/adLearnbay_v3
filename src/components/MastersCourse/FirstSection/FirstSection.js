@@ -30,6 +30,7 @@ function FirstSection({
         dataScienceCounselling={dataScienceCounselling}
         interstedInHide={interstedInHide}
         fullStack={fullStack}
+        dataScience={dataScience}
         setPopups={setPopups}
       />
     </>
