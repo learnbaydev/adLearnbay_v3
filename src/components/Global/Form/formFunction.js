@@ -8,6 +8,7 @@ const getEndPoint = (pathname, event) => {
 
   if (
     pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
+    pathname === "/datascience/s2-data-science-ai-masters-program" ||
     pathname === "/OS" ||
     pathname ===
       "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||

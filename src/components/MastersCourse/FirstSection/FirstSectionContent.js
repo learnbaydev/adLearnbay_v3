@@ -9,6 +9,7 @@ const FirstSectionContent = ({
   fullStack,
   dataScienceCounselling,
   interstedInHide,
+  dataScience,
 }) => {
   const popupShow = () => {
     setPopups(true);
@@ -76,6 +77,7 @@ const FirstSectionContent = ({
               fullStack={fullStack}
               syllabus={true}
               upSkillingHide={true}
+              dataScience={dataScience}
               interstedInHide={interstedInHide}
             />
           </div>

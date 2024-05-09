@@ -53,7 +53,7 @@ function EightSection({
         ADS={ADS}
         formotp={formotp}
         radio={radio}
-        dataScience={dataScience}
+        dataScience={true}
         HideInterest={HideInterest}
       />
       <div>

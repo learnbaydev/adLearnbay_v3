@@ -36,6 +36,7 @@ const SecondPart = ({
   projectSection,
   Organic,
   buttonHide,
+  hideAds,
 }) => {
   return (
     <>
@@ -48,20 +49,24 @@ const SecondPart = ({
         titleCourse="Masters in Computer Science: Data Science and AI"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
       />
-      <ToolsCovered
-        deskImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Tools-Logo.png"
-        mobImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Mobile-Tools-Covered.png"
-      />
+      {hideAds ? (
+        ""
+      ) : (
+        <ToolsCovered
+          deskImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Tools-Logo.png"
+          mobImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Mobile-Tools-Covered.png"
+        />
+      )}
       <Certificate data={CertificateData} />
       <FeeSection
         Fee="₹ 2,50,000"
         FeeEmi="12,292/month."
         weekdaybatch="Weekday Batch"
         weekendbatch="Weekend Batch"
-        weekday="MON- FRI"
+        weekday="MON-WED-FRI"
         weekend="SAT-SUN"
-        WeekdayDate="MAR 25th"
-        WeekendDate="JAN 14th"
+        WeekdayDate="AUG 19th"
+        WeekendDate="JUN 1st"
         WeekendTime="9:30 AM - 1:00 PM"
         WeekdayTime="08:00 PM - 10:00 PM"
         CutFee="₹ 3,25,000/-"
@@ -82,7 +87,7 @@ const SecondPart = ({
         monthlyPayment2="₹16,389"
       />
       <MentorsSection />
-      <SliderTabs />
+      {hideAds ? "" : <SliderTabs />}
 
       <NewProjectSection
         dataScienceCounselling={true}
@@ -96,7 +101,7 @@ const SecondPart = ({
       {Organic ? "" : <EighgtSection />}
       {Organic ? <Footer /> : ""}
       <BottomBar masterdegree={true} />
-      <WhatsappFloat chat360code1={true} />
+      {hideAds ? "" : <WhatsappFloat chat360code1={true} />}
     </>
   );
 };
