@@ -1,11 +1,10 @@
+import Navbar from "@/components/Global/AdsNavbar/Navbar";
+import Form from "@/components/Global/Form/Form";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import styles from "../styles/Counseling.module.css";
-
-import Navbar from "@/components/Global/AdsNavbar/Navbar";
-import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { MdLocationPin, MdWatchLater } from "react-icons/md";
+import styles from "../styles/Counseling.module.css";
 
 function Counselling() {
   const [mobile, setMobile] = useState(false);
@@ -31,52 +30,10 @@ function Counselling() {
           <meta name="description" content="Learnbay Courses" />
           <link
             rel="icon"
-            href="https://learnbay-wb.s3.ap-south-1.amazonaws.com/main/Learnbay-Favicon-L.png"
+            href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
           />
-          {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?77928';
-                var s = document.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = url;
-                var options = {
-              "enabled":true,
-              "chatButtonSetting":{
-                  "backgroundColor":"#4dc247",
-                  "ctaText":"",
-                  "borderRadius":"10",
-                  "marginLeft":"0",
-                  "marginBottom":"30",
-                  "marginRight":"30",
-                  "position":"right"
-              },
-              "brandSetting":{
-                  "brandName":"Learnbay",
-                  "brandSubTitle":"The Learner's Path",
-                  "brandImg":"https://course.learnbay.co/Learnbay-Favicon-L.png",
-                  "welcomeText":"Hi there! How can I help you?",
- "messageText":"I am looking for course, and free career counselling session.",
-              "backgroundColor":"#0a5f54",
-                  "ctaText":"Start Chat",
-                  "borderRadius":"25",
-                  "autoShow":false,
-                  "phoneNumber":"+918123327570"
-              }
-            };
-                s.onload = function() {
-                    CreateWhatsappChatWidget(options);
-                };
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s, x);`,
-          }}
-        /> */}
-          {/* <script
-          src="//code.tidio.co/mgl99n6cbvvabah9x8jj98no83kdozym.js"
-          async
-        ></script> */}
         </Head>
-        <Navbar radio={true} ADS={true} upSkillingHide={true} formotp={true} />
+        <Navbar upSkillingHide={true} radio={true} interstedInHide={true} dataScience={true} />
 
         {mobile ? (
           <div className={styles.formq}>
@@ -108,7 +65,7 @@ function Counselling() {
                     display: showMe ? "block" : "none",
                   }}
                 >
-                  <ul>
+<ul>
                     <li>
                       1. Can a candidate from the non-programming & non-tech
                       Domain learn our Courses?
@@ -158,7 +115,7 @@ function Counselling() {
             </div>
 
             <div className={styles.formr}>
-              <FormOtp radio={true} ADS={true} upSkillingHide={true} />
+              <Form upSkillingHide={true} radio={true} interstedInHide={true} dataScience={true} />
             </div>
           </div>
         ) : (
@@ -186,20 +143,20 @@ function Counselling() {
                   <strong>TOPICS COVERED IN DISCUSSION:</strong>
                 </p>
                 <ul>
-                  <li>
-                    1. Can a candidate from the non-programming & non-tech
-                    Domain learn our Courses?
-                  </li>
-                  <li>2. Will your previous Domain experience utilized?</li>
-                  <li>3. Our Course Curriculum.</li>
-                  <li>4. Real-Time Projects List provided by us.</li>
-                  <li>
-                    5. How to change the domain and whether your profile is
-                    suitable for our Course?
-                  </li>
-                  <li>6. Career Options in your preferred Domain</li>
-                  <li>7. Placement Assistance and Job referrals</li>
-                </ul>
+                    <li>
+                      1. Can a candidate from the non-programming & non-tech
+                      Domain learn our Courses?
+                    </li>
+                    <li>2. Will your previous Domain experience utilized?</li>
+                    <li>3. Our Course Curriculum.</li>
+                    <li>4. Real-Time Projects List provided by us.</li>
+                    <li>
+                      5. How to change the domain and whether your profile is
+                      suitable for our Course?
+                    </li>
+                    <li>6. Career Options in your preferred Domain</li>
+                    <li>7. Placement Assistance and Job referrals</li>
+                  </ul>
                 <p>
                   <strong>Minimum Duration:</strong>&nbsp;15 to 20 minutes.
                 </p>
@@ -215,29 +172,11 @@ function Counselling() {
             </div>
 
             <div className={styles.formr}>
-              <FormOtp radio={true} ADS={true} upSkillingHide={true} />
+              <Form upSkillingHide={true} radio={true} interstedInHide={true} dataScience={true} />
             </div>
           </div>
         )}
       </div>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `(function (botId) {
-            var s = document.createElement("script");
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
-            s.onload = function () {
-              window.loadChat360Bot(botId);
-            };
-            s.onerror = function (err) {
-              console.error(err);
-            };
-            document.body.appendChild(s);
-          })("4f4d2e98-0778-4fb7-a9c3-af6fd1bedad8");
-      `,
-        }}
-      />
     </>
   );
 }

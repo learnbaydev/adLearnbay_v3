@@ -24,6 +24,10 @@ const getEndPoint = (pathname, event) => {
     endPoint = "https://getform.io/f/a876146f-2c5d-4a1f-b177-f993db3d7aaf";
   }
 
+  if (pathname === "/apply-for-counselling") {
+    endPoint = "https://getform.io/f/85e92281-63f9-4d2f-b946-31d1098532f4";
+  }
+
   if (pathname === "/referrals") {
     endPoint = "https://getform.io/f/a876146f-2c5d-4a1f-b177-f993db3d7aaf";
   }
