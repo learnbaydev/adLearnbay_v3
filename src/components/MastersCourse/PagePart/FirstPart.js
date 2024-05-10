@@ -70,7 +70,7 @@ const FirstPart = ({
     <>
       {" "}
       {Marketing ? (
-        <AdsNavbar dataScienceCounselling={true} dataScience={true} />
+        <AdsNavbar dataScienceCounselling={true} dataScience={true} ADS={true}/>
       ) : (
         <Navbar dataScienceCounselling={true} dataScience={true} />
       )}
