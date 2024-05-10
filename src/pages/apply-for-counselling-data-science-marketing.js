@@ -33,7 +33,7 @@ function Counselling() {
             href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
           />
         </Head>
-        <Navbar radio={true} />
+        <Navbar upSkillingHide={true} radio={true} interstedInHide={true} />
 
         {mobile ? (
           <div className={styles.formq}>
@@ -115,7 +115,7 @@ function Counselling() {
             </div>
 
             <div className={styles.formr}>
-              <Form upSkillingHide={true} />
+              <Form upSkillingHide={true} radio={true} interstedInHide={true} />
             </div>
           </div>
         ) : (
