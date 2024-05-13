@@ -14,14 +14,16 @@ const setCookie = (name, value, days, domain) => {
   document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;domain=${domain}`;
 };
 
-const ThankYou = ({ initialName }) => {
+const ThankYou = ({ initialName, initialPhone}) => {
   const email = JSON.stringify(initialName);
+  const phone = JSON.stringify(initialPhone);
   console.log(email); // Log the email to the console
 
   useEffect(() => {
     // Set the cookie with a domain that allows cross-origin access
     setCookie('yourCookieName', initialName, 30, '.learnbay.co');
-  }, [initialName]);
+    setCookie('yourCookieName', initialPhone, 30, '.learnbay.co');
+  }, [initialName, initialPhone]);
 
   return (
     <>
@@ -41,7 +43,8 @@ const ThankYou = ({ initialName }) => {
                 window.dataLayer.push({
                   'event': 'form_complete',
                   'enhanced_conversion_data': {
-                    "email": ${email}
+                    "email": ${email},
+                    "phone": ${phone},
                   }
                 });
               `,
@@ -98,6 +101,7 @@ const ThankYou = ({ initialName }) => {
 ThankYou.getInitialProps = async (ctx) => {
   return {
     initialName: cookies(ctx).CARD || "",
+    initialPhone: cookies(ctx).CARDPHONE || "",
   };
 };
 

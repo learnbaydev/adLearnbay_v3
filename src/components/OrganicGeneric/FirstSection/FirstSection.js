@@ -124,7 +124,7 @@ const FirstSection = ({
           <p className={styles.ptop}>In collaboration with</p>
           <div className={styles.IBMlogo}>
             <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/FirstSection.png"
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibm%2526microsoft.avif"
               width="283"
               height="51"
               layout="intrinsic"
