@@ -106,7 +106,7 @@ const Course = ({
           />
         </div>
       </Popup>
-      <h2>Our Courses</h2>
+      {/* <h2>Our Courses</h2> */}
 
       <div className={styles.courses}>
         <div className={styles.listPanel}>

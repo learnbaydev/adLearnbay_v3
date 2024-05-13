@@ -994,10 +994,10 @@
 }
 
 .h5font {
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 700;
-  margin: 0;
-  padding: 10px 0px;
+  margin: 0 0 0 10px;
+  padding: 10px 0 20px;
 }
 
 .timeIcon {
@@ -1083,6 +1083,11 @@
   .Course h2 {
     font-size: 24px;
     font-weight: 600;
+  }
+  .h5font {
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 0;
   }
 }
 
