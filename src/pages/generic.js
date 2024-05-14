@@ -24,13 +24,13 @@ export default function Home() {
       working: "HCL",
       link: "vSjfKdIzUjY",
       proImg:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/organic/test-0.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/testimonial1.webp",
       sDesc:
         "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job ...",
       lDesc:
         "I had a great learning experience at Learnbay. The faculties here are top notch. Right from enrollment to getting a good job, they keep putting enormous efforts for each and every candidate. Thanks to all the trainers, backend team, the HR team and to the directors for making this journey smooth.",
       complogo:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/microsoft.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/hcl.webp",
       statLogo: "140% Hike",
     },
     {
@@ -39,13 +39,13 @@ export default function Home() {
       working: "Cendrol Technology",
       link: "JoKquvfAhZU",
       proImg:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/organic/test-1.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/testimonial2.webp",
       sDesc:
         "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech...",
       lDesc:
         "I moved from teaching to data science with Learnbay's help. Their course was easy to follow, even for someone like me without a tech background. In six months, I got to learn how data science is used in the real world. Their mock interviews also prepared me for job interviews, and I got a data analyst job at Cendrol. This course really helped me change my career.",
       complogo:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/microsoft.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/cendrol.webp",
       statLogo: "  210% Hike",
     },
     {
@@ -54,13 +54,13 @@ export default function Home() {
       working: "The Math Company",
       link: "hewBtR_WoDM",
       proImg:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/organic/test-2.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/testimonial3.webp",
       sDesc:
         "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that...",
       lDesc:
         "Choosing Learnbay was my best decision ever. The instructors were encouraging and glad to answer questions. The best feature is that their flexible modules & small size batches. I was able to manage my time and learn while working. Thanks to Learnbay for my lucrative placement.",
       complogo:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/microsoft.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/themath.webp",
       statLogo: " 150% Hike",
     },
     {
@@ -69,7 +69,7 @@ export default function Home() {
       working: "Amazon",
       link: "A-BkcEM0rQM",
       proImg:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/organic/test-3.webp",
+        "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/testimonial4.webp",
       sDesc:
         "Transitioning from a non-tech role, LearnBay's IBM data science certification equipped me with the skills needed in today's...",
       lDesc:
@@ -98,7 +98,7 @@ export default function Home() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar radio={true} interstedInHide={true} dataScience={true} />
+      <Navbar radio={true} interstedInHide={true} dataScience={true} ADS={true}/>
 
       <FirstSection
         first="Tools"
