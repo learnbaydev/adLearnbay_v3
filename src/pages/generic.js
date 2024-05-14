@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       id: 2,
-      name: "Shubham Kumar",
+      name: "Shubham Kumar", 
       working: "Cendrol Technology",
       link: "JoKquvfAhZU",
       proImg:
