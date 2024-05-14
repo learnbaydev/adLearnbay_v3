@@ -7,7 +7,6 @@
   grid-template-columns: 53% 43%;
   gap: 50px;
   background: linear-gradient(180deg, #232323 16.69%, #012f4e 99.97%);
-
 }
 
 .animationTextWrap {
@@ -124,17 +123,16 @@
 
   .FirstLeft p {
     margin: 10px 0px 20px 0px;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     line-height: 26px;
- 
   }
 
   .FirstLeft .ptop {
     color: #fff;
     font-size: 18px;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .FirstLeft .ptopC {
@@ -152,11 +150,14 @@
   }
 
   .FirstLeft .h1 {
-    color: #0072bc;
     margin: 10px 0px 20px 0px;
-    font-size: 24px;
-    text-align: left;
+    font-size: 28px;
+    text-align: center;
     line-height: normal;
+  }
+
+  .animationTextWrap {
+    text-align: center;
   }
 
   .logos {
@@ -168,7 +169,7 @@
   }
   .IBMlogo,
   .IBMlogoPlay {
-    text-align: left;
+    text-align: center;
     margin: 10px 0px;
   }
 
@@ -203,6 +204,6 @@
     left: 80%;
   }
   .btnWrapper {
-    justify-content: left;
+    justify-content: center;
   }
 }
