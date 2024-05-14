@@ -132,9 +132,8 @@ export default function Home() {
 
       <Testimonial redirectDS={true} heading="" Testimonial={testimonial} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection organic={true} />
+      <SeventhSection />
       <EightSection interstedInHide={true} radio={true} dataScience={true} />
-      <WhatsappFloat chat360code1={true} />
       <BottomBar interstedInHide={true} radio={true} dataScience={true} />
     </div>
   );

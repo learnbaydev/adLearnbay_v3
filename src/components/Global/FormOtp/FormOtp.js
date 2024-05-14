@@ -54,6 +54,12 @@ function FormOtp({
     jsCookie.set("CARD", form.email, { expires: 14, secure: true });
   }, [value]);
 
+  useEffect(() => {
+    const formattedPhone = `+${value}`;
+    setForm((prevState) => ({ ...prevState, phone: value })); // Update the phone number in the form state
+    jsCookie.set("CARDPHONE", formattedPhone, { expires: 14, secure: true }); // Set the phone number as the value of the "CARDPHONE" cookie
+  }, [value]);
+
   const handleForm = () => (e) => {
     const name = e.target.name;
     console.log(e.target.name);
