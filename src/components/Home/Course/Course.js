@@ -221,7 +221,7 @@ const Course = ({
                                             src={img}
                                             fill={true}
                                             quality={60}
-                                            loading="lazy"
+                                            // loading="lazy"
                                             style={{ objectFit: "cover" }}
                                             alt="data science course"
                                           />
@@ -237,7 +237,7 @@ const Course = ({
                                             src={img}
                                             fill={true}
                                             quality={80}
-                                            loading="lazy"
+                                            // loading="lazy"
                                             style={{ objectFit: "cover" }}
                                             alt="data science course"
                                           />
@@ -274,7 +274,7 @@ const Course = ({
                                                 src={img}
                                                 fill={true}
                                                 quality={100}
-                                                loading="lazy"
+                                                // loading="lazy"
                                                 style={{ objectFit: "cover" }}
                                                 alt="data science course"
                                               />
@@ -290,7 +290,7 @@ const Course = ({
                                                 src={img}
                                                 fill={true}
                                                 quality={100}
-                                                loading="lazy"
+                                                // loading="lazy"
                                                 style={{ objectFit: "cover" }}
                                                 alt="data science course"
                                               />
