@@ -135,7 +135,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
         <FeeSection
           Fee="$3500"
-          FeeEmi="₹ 12,292/month"
+          FeeEmi="15,980/month"
           weekdaybatch="Weekday Batch"
           weekendbatch="Weekend  Batch"
           weekday="MON - FRI"
@@ -154,12 +154,12 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           dataScience={true}
           emiType="NO COST EMI"
           duration1="24 Months"
-          totalAmount1="₹2,50,000"
-          monthlyPayment1="₹12,292"
+          totalAmount1="₹3,25,000"
+          monthlyPayment1="₹15,980"
           greenDown1="Standard Intrest rate Applicable"
           duration2="18 Months"
-          totalAmount2="₹2,50,000"
-          monthlyPayment2="₹16,389"
+          totalAmount2="₹3,25,000"
+          monthlyPayment2="₹21,306"
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
