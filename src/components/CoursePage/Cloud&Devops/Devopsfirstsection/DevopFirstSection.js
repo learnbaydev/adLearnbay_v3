@@ -18,6 +18,7 @@ function FirstSection({
   ibmOnly,
   cityParaCont,
   HideInterest,
+  downloadBrochure,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -28,7 +29,7 @@ function FirstSection({
         popups={popups}
         setPopups={setPopups}
         heading="Apply For Counselling"
-        downloadBrochure
+        downloadBrochure={downloadBrochure}
         dataScience={true}
         interstedInHide={interstedInHide}
         upSkillingHide={true}
