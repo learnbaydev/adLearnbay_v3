@@ -15,6 +15,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/scholarship-ads" ||
+    pathname === "/walk-in-counselling" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
