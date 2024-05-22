@@ -28,7 +28,7 @@ function Counselling() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar upSkillingHide={true} dataScience={true} />
+      <Navbar upSkillingHide={true} dataScience={true} dateTime={true} />
       <div className={styles.container}>
         <div className={styles.width}>
           <div className={styles.leftsidecontent}>
@@ -49,12 +49,12 @@ function Counselling() {
               </div>
               <div className={styles.divbtn}>
                 <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/office_phone.webp"
-                  width={40}
-                  height={50}
+                  src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/next_location.webp"
+                  width={58}
+                  height={40}
                   alt="machine"
                 />
-                <span>Telephonic Discussion</span>
+                <span>Walk in Discussion</span>
               </div>
             </div>
             <p className={styles.para}>
@@ -73,7 +73,7 @@ function Counselling() {
           </div>
           <div className={styles.formr}>
             <p>Free Career Counselling</p>
-            <Form upSkillingHide={true} dataScience={true} />
+            <Form upSkillingHide={true} dataScience={true} dateTime={true} />
           </div>
         </div>
       </div>
@@ -94,9 +94,9 @@ function Counselling() {
           <li>Career Options in your preferred Domain</li>
           <li>Placement Assistance and Job referrals</li>
         </ul>
-        <p className={styles.paraBot}>
+        {/* <p className={styles.paraBot}>
           <b>Minimum Duration:</b> 15 to 20 minutes.
-        </p>
+        </p> */}
         <p className={styles.paraBot}>
           Your queries and doubts will be answered through this session with a
           professional.
