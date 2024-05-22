@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import styles from "./Form.module.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import {
   getEndPoint,
   getFormFields,
@@ -31,6 +33,7 @@ const Form = ({
   OS,
   PhoneHidden,
   emailHidden,
+  dateTime,
 }) => {
   const router = useRouter();
 
@@ -76,19 +79,17 @@ const Form = ({
   useEffect(() => {
     setQuery({ ...query, phone: value });
     jsCookie.set("CARD", query.email, { expires: 14, secure: true });
-  }, [value]);
+  }, [query, value]);
 
-useEffect(() => {
-  // Ensure value is in the expected format
-  const formattedPhone = value; // You might need to parse/format value here
-  const phoneWithPlus = `+${formattedPhone}`; // Add "+" symbol before the phone number
-  setQuery({ ...query, phone: phoneWithPlus });
+  useEffect(() => {
+    // Ensure value is in the expected format
+    const formattedPhone = value; // You might need to parse/format value here
+    const phoneWithPlus = `+${formattedPhone}`; // Add "+" symbol before the phone number
+    setQuery({ ...query, phone: phoneWithPlus });
 
-  // Set cookies with the updated phone value
-  jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
-}, [value]);
-
-
+    // Set cookies with the updated phone value
+    jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
+  }, [query, value]);
 
   // Update inputs value
   const handleParam = () => (e) => {
@@ -98,6 +99,16 @@ useEffect(() => {
       ...prevState,
       [name]: value,
     }));
+  };
+  const handleDateChange = (date) => {
+    setQuery((prevState) => ({
+      ...prevState,
+      datetime: date,
+    }));
+  };
+  const isSunday = (date) => {
+    const day = date.getDay();
+    return day === 0;
   };
   const redirection = async () => {
     const myTimeout = setTimeout(() => {
@@ -357,6 +368,43 @@ useEffect(() => {
                 )}
               </div>
             )
+        )}
+         {dateTime && (
+          // <div className={styles.formWrapper}>
+          //   <label htmlFor="datetime">
+          //     Date & Time
+          //     <span className={styles.spanLabel}>*</span>
+          //   </label>
+          //   <DatePicker
+          //     selected={query.datetime}
+          //     onChange={handleDateChange}
+          //     showTimeSelect
+          //     dateFormat="Pp"
+          //     className={styles.EmailInputs}
+          //     placeholderText="Select Date & Time"
+          //     filterDate={(date) => !isSunday(date)}
+          //     required
+          //   />
+          // </div>
+          <div className={styles.formWrapper}>
+          <label htmlFor="datetime">
+            Date & Time<span className={styles.spanLabel}>*</span>
+          </label>
+          <DatePicker
+            selected={query.datetime}
+            onChange={handleDateChange}
+            showTimeSelect
+            dateFormat="d MMMM, yyyy h:mm aa" // Format date and time as desired
+            placeholderText="Select Date & Time"
+            filterDate={(date) => !isSunday(date)}
+            required
+            className={styles.EmailInputs}
+            // Hide time zone information
+            timeInputLabel="Time:"
+           
+          
+          />
+        </div>
         )}
         <input name="country" value={query.country} type="hidden" />
         <input name="region" value={query.region} type="hidden" />
