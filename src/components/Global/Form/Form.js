@@ -79,7 +79,7 @@ const Form = ({
   useEffect(() => {
     setQuery({ ...query, phone: value });
     jsCookie.set("CARD", query.email, { expires: 14, secure: true });
-  }, [query, value]);
+  }, [value]);
 
   useEffect(() => {
     // Ensure value is in the expected format
@@ -89,8 +89,17 @@ const Form = ({
 
     // Set cookies with the updated phone value
     jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
-  }, [query, value]);
+  }, [value]);
 
+  // // Update inputs value
+  // const handleParam = () => (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
+  //   setQuery((prevState) => ({
+  //     ...prevState,
+  //     [name]: value,
+  //   }));
+  // };
   // Update inputs value
   const handleParam = () => (e) => {
     const name = e.target.name;
@@ -369,7 +378,7 @@ const Form = ({
               </div>
             )
         )}
-         {dateTime && (
+        {dateTime && (
           // <div className={styles.formWrapper}>
           //   <label htmlFor="datetime">
           //     Date & Time
@@ -387,24 +396,22 @@ const Form = ({
           //   />
           // </div>
           <div className={styles.formWrapper}>
-          <label htmlFor="datetime">
-            Date & Time<span className={styles.spanLabel}>*</span>
-          </label>
-          <DatePicker
-            selected={query.datetime}
-            onChange={handleDateChange}
-            showTimeSelect
-            dateFormat="d MMMM, yyyy h:mm aa" // Format date and time as desired
-            placeholderText="Select Date & Time"
-            filterDate={(date) => !isSunday(date)}
-            required
-            className={styles.EmailInputs}
-            // Hide time zone information
-            timeInputLabel="Time:"
-           
-          
-          />
-        </div>
+            <label htmlFor="datetime">
+              Date & Time<span className={styles.spanLabel}>*</span>
+            </label>
+            <DatePicker
+              selected={query.datetime}
+              onChange={handleDateChange}
+              showTimeSelect
+              dateFormat="d MMMM, yyyy h:mm aa" // Format date and time as desired
+              placeholderText="Select Date & Time"
+              filterDate={(date) => !isSunday(date)}
+              required
+              className={styles.EmailInputs}
+              // Hide time zone information
+              timeInputLabel="Time:"
+            />
+          </div>
         )}
         <input name="country" value={query.country} type="hidden" />
         <input name="region" value={query.region} type="hidden" />
