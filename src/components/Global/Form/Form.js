@@ -74,7 +74,7 @@ const Form = ({
     url: router.asPath,
   });
 
-  const [submitting, setSubmitting] = useState(false); // State to track form submission
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     setQuery({ ...query, phone: value });
@@ -82,25 +82,13 @@ const Form = ({
   }, [value]);
 
   useEffect(() => {
-    // Ensure value is in the expected format
-    const formattedPhone = value; // You might need to parse/format value here
-    const phoneWithPlus = `+${formattedPhone}`; // Add "+" symbol before the phone number
+    const formattedPhone = value;
+    const phoneWithPlus = `+${formattedPhone}`;
     setQuery({ ...query, phone: phoneWithPlus });
 
-    // Set cookies with the updated phone value
     jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
   }, [value]);
 
-  // // Update inputs value
-  // const handleParam = () => (e) => {
-  //   const name = e.target.name;
-  //   const value = e.target.value;
-  //   setQuery((prevState) => ({
-  //     ...prevState,
-  //     [name]: value,
-  //   }));
-  // };
-  // Update inputs value
   const handleParam = () => (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -109,16 +97,42 @@ const Form = ({
       [name]: value,
     }));
   };
+  const [selectedDate, setSelectedDate] = useState(null);
   const handleDateChange = (date) => {
-    setQuery((prevState) => ({
-      ...prevState,
-      datetime: date,
-    }));
+    if (date) {
+      const formattedDateTime = date
+        .toLocaleString("en-GB", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
+        })
+        .replace(/\//g, "-");
+
+      setSelectedDate(date);
+      setQuery((prevState) => ({
+        ...prevState,
+        datetime: formattedDateTime,
+      }));
+      setDateTimeError("");
+    }
   };
   const isSunday = (date) => {
     const day = date.getDay();
     return day === 0;
   };
+
+  // Get the current date
+  const currentDate = new Date();
+
+  const filterTime = (time) => {
+    const hour = time.getHours();
+    const minutes = time.getMinutes();
+    return (hour > 9 && hour < 18) || (hour === 18 && minutes === 0);
+  };
+
   const redirection = async () => {
     const myTimeout = setTimeout(() => {
       router.push("/Thank-you");
@@ -134,10 +148,17 @@ const Form = ({
     btnText = "Download Resources";
   }
 
-  // Form Submit function
+  const [dateTimeError, setDateTimeError] = useState("");
+
   const formSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true); // Set submitting state to true
+    setSubmitting(true);
+    const selectedTime = selectedDate ? selectedDate.getHours() : null;
+    if (selectedTime === 0) {
+      setDateTimeError("Please select a valid time.");
+      setSubmitting(false);
+      return;
+    }
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
       formData.append(key, value);
@@ -379,38 +400,31 @@ const Form = ({
             )
         )}
         {dateTime && (
-          // <div className={styles.formWrapper}>
-          //   <label htmlFor="datetime">
-          //     Date & Time
-          //     <span className={styles.spanLabel}>*</span>
-          //   </label>
-          //   <DatePicker
-          //     selected={query.datetime}
-          //     onChange={handleDateChange}
-          //     showTimeSelect
-          //     dateFormat="Pp"
-          //     className={styles.EmailInputs}
-          //     placeholderText="Select Date & Time"
-          //     filterDate={(date) => !isSunday(date)}
-          //     required
-          //   />
-          // </div>
-          <div className={styles.formWrapper}>
+          <div className={styles.formWrapper} style={{ marginBottom: "10px" }}>
             <label htmlFor="datetime">
               Date & Time<span className={styles.spanLabel}>*</span>
             </label>
             <DatePicker
-              selected={query.datetime}
+              selected={selectedDate}
               onChange={handleDateChange}
               showTimeSelect
-              dateFormat="d MMMM, yyyy h:mm aa" // Format date and time as desired
+              minDate={currentDate}
+              dateFormat="d MMMM yyyy, h:mm aa"
               placeholderText="Select Date & Time"
               filterDate={(date) => !isSunday(date)}
+              filterTime={filterTime}
               required
               className={styles.EmailInputs}
-              // Hide time zone information
               timeInputLabel="Time:"
             />
+            {dateTimeError && (
+              <p
+                className={styles.errorMsg}
+                style={{ textAlign: "center", marginBottom: "-10px" }}
+              >
+                {dateTimeError}
+              </p>
+            )}
           </div>
         )}
         <input name="country" value={query.country} type="hidden" />

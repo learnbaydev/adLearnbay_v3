@@ -28,7 +28,7 @@ function Counselling() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar upSkillingHide={true} dataScience={true} dateTime={true} />
+      <Navbar upSkillingHide={true} dataScience={true} dateTime={true} radio={true}/>
       <div className={styles.container}>
         <div className={styles.width}>
           <div className={styles.leftsidecontent}>
@@ -73,7 +73,7 @@ function Counselling() {
           </div>
           <div className={styles.formr}>
             <p>Free Career Counselling</p>
-            <Form upSkillingHide={true} dataScience={true} dateTime={true} />
+            <Form upSkillingHide={true} dataScience={true} dateTime={true} radio={true} />
           </div>
         </div>
       </div>

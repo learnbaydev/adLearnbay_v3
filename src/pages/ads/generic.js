@@ -139,7 +139,6 @@ export default function Home() {
         interstedInHide={true}
         formotp={true}
         ADS={true}
-
       />
       <Switch organicADS={true} />
       <ProjectSection
@@ -155,7 +154,7 @@ export default function Home() {
 
       <Testimonial redirectDS={true} heading="" Testimonial={testimonial} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection organic={true} />
+      <SeventhSection />
       <EightSection
         interstedInHide={true}
         radio={true}
@@ -163,7 +162,7 @@ export default function Home() {
         formotp={true}
         ADS={true}
       />
-      <WhatsappFloat chat360code1={true} />
+      <WhatsappFloat OS={true} />
       <BottomBar
         interstedInHide={true}
         radio={true}
