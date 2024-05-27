@@ -111,6 +111,21 @@
   margin: 20px 0px 0px -10px;
 }
 
+.divbtnOrange {
+  display: flex;
+  gap: 10px;
+  color: #f99600;
+  background: linear-gradient(90deg, #482b00, rgba(9, 9, 9, 0));
+  border-radius: 10px 0 0 10px;
+  align-items: center;
+}
+
+.iconMap {
+  border-radius: 12px 12px 0 12px;
+    background: #3a3a3a;
+    padding: 5px 5px 0;
+}
+
 @media (max-width: 641px) {
   .width {
     width: 100%;
