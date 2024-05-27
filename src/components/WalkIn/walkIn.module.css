@@ -1,0 +1,106 @@
+.section {
+    margin-top: 70px;
+    padding: 70px 0px;
+    background: url("https://d32and0ii3b8oy.cloudfront.net/adlearnbay/TY1-Couselling.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -10px;
+
+}
+
+.container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.minContainer {
+    display: grid;
+    grid-template-columns: 56% 44%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #E7F3F9;
+    /* padding: 30px; */
+    margin-top:30px;
+}
+
+.container h4 {
+    background: #EDBB52;
+    width: fit-content;
+    padding: 0px 3px;
+}
+
+.white {
+    color: #fff;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+.firstMin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+}
+
+.Cont {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Cont p {
+    margin: 0;
+}
+
+.para {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+}
+
+.para p {
+    margin: 0;
+}
+
+.image {
+    padding: 30px;
+}
+
+.black {
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    color: #2390d9;
+    border: 1px solid;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+@media (max-width: 641px) {
+    .section {
+    padding: 40px 20px;
+    }
+    .container {
+        width: 100%;
+        display: block;
+    }
+    .minContainer {
+        display: block;
+        padding: 30px 20px 20px;
+    }
+    .firstMin {
+        padding: 0;
+    }
+    .image {
+        padding: 30px 0px 0px;
+    }
+}

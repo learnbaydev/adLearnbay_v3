@@ -91,6 +91,10 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
+  if (pathname === "/walk-in-counselling") {
+    routerPath = "/Thank-you-directions";
+  }
+
   if (
     pathname === "/datascience/OS/sp/s2-data-science-generic" ||
     pathname ===

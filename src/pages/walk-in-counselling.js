@@ -38,21 +38,13 @@ function Counselling() {
             </h1>
 
             <div className={styles.twobtn}>
-              <div className={styles.divbtn}>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/time_machine.webp"
-                  width={50}
-                  height={30}
-                  alt="machine"
-                />
-                <span>15-20 mins</span>
-              </div>
-              <div className={styles.divbtn}>
+              <div className={styles.divbtnOrange}>
                 <Image
                   src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/next_location.webp"
                   width={58}
                   height={40}
                   alt="machine"
+                  className={styles.iconMap}
                 />
                 <span>Walk in Discussion</span>
               </div>
