@@ -84,10 +84,19 @@
     font-size: 20px;
     border-radius: 3px;
 }
+.arrowDown {
+    display: none;
+}
 
 @media (max-width: 641px) {
     .section {
     padding: 40px 20px;
+    }
+    .arrowDown {
+        display: flex;
+        margin: auto;
+        color: #EDBB52;
+        font-size: 38px;
     }
     .container {
         width: 100%;
