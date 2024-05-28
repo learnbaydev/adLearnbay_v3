@@ -1,6 +1,7 @@
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import styles from "./walkIn.module.css";
 import Image from "next/image";
+import { FaArrowDown } from "react-icons/fa6";
 
 function WalkIn() {
   return (
@@ -9,8 +10,9 @@ function WalkIn() {
         <div>
           <h4>Thank You!</h4>
           <p className={styles.white}>
-            We Received your request and look forward to getting in touch soon.
+          We Received your request and you can visit our Institute by clicking on the Map below.
           </p>
+          <FaArrowDown className={styles.arrowDown} />
           <div className={styles.minContainer}>
             <div className={styles.firstMin}>
               <p className={styles.para}>
