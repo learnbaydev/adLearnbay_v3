@@ -21,7 +21,7 @@ function WalkIn() {
               <div className={styles.Cont}>
               <p className={styles.black}>
                 <FaPhone className={styles.icon}/>
-                77956 87988
+                +91 6364 939404
               </p>
               <p className={styles.black}>
                 <FaEnvelope className={styles.icon}/>
