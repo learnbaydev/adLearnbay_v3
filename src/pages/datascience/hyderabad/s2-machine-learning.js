@@ -100,13 +100,13 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           Fee="₹ 1,15,000"
           FeeEmi="₹7,539/month"
           weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="June 14th"
-        WeekendDate="June 7th"
-        WeekdayTime="8:00 AM - 10:00 AM"
-        WeekendTime="8:00 PM - 10:00 PM"
+          weekendbatch="Weekday Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="June 14th"
+          WeekendDate="June 7th"
+          WeekdayTime="8:00 AM - 10:00 AM"
+          WeekendTime="8:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -128,7 +128,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
         <Testimonial
           redirectDS={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
               .testimonialgenric

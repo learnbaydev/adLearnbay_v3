@@ -1,14 +1,10 @@
+import { ThirdSectionData } from "@/Data/ThirdSectionData";
 import dynamic from "next/dynamic";
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
 import { AiOutlineContainer } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
-import { ThirdSectionData } from "@/Data/ThirdSectionData";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import CloudDevopsecond from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 const SecondNavbar = dynamic(() =>
   import("@/components/CoursePage/SecondNavbar/SecondNavbar")
@@ -86,7 +82,7 @@ const FirstPart = ({ SecondSectionData, TestimonialData }) => {
       <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
-        heading=""
+        heading="Hear it from our Alumni"
         Testimonial={TestimonialData}
         popupvnone={true}
       />

@@ -1,13 +1,12 @@
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import HomeLine from "@/components/Home/HomeLine/HomeLine";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import BoxShape from "@/components/OrganicGeneric/BoxShape/BoxShape";
 import FirstSection from "@/components/OrganicGeneric/FirstSection/FirstSection";
 import ProjectSection from "@/components/OrganicGeneric/ProjectSection/ProjectSection";
-import Testimonial from "@/components/OrganicGeneric/TestimonialOrganic/Testimonial";
 import Switch from "@/components/OrganicGeneric/Switch/Switch";
+import Testimonial from "@/components/OrganicGeneric/TestimonialOrganic/Testimonial";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -35,7 +34,7 @@ export default function Home() {
     },
     {
       id: 2,
-      name: "Shubham Kumar", 
+      name: "Shubham Kumar",
       working: "Cendrol Technology",
       link: "JoKquvfAhZU",
       proImg:
@@ -98,7 +97,12 @@ export default function Home() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar radio={true} interstedInHide={true} dataScience={true} ADS={true}/>
+      <Navbar
+        radio={true}
+        interstedInHide={true}
+        dataScience={true}
+        ADS={true}
+      />
 
       <FirstSection
         first="Tools"
@@ -130,7 +134,11 @@ export default function Home() {
       <Switch organicADS={true} />
       <ProjectSection interstedInHide={true} radio={true} dataScience={true} />
 
-      <Testimonial redirectDS={true} heading="" Testimonial={testimonial} />
+      <Testimonial
+        redirectDS={true}
+        heading="Hear it from our Alumni"
+        Testimonial={testimonial}
+      />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
       <SeventhSection />
       <EightSection interstedInHide={true} radio={true} dataScience={true} />

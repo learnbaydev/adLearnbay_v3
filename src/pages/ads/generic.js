@@ -6,8 +6,8 @@ import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import BoxShape from "@/components/OrganicGeneric/BoxShape/BoxShape";
 import FirstSection from "@/components/OrganicGeneric/FirstSection/FirstSection";
 import ProjectSection from "@/components/OrganicGeneric/ProjectSection/ProjectSection";
-import Testimonial from "@/components/OrganicGeneric/TestimonialOrganic/Testimonial";
 import Switch from "@/components/OrganicGeneric/Switch/Switch";
+import Testimonial from "@/components/OrganicGeneric/TestimonialOrganic/Testimonial";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
@@ -152,7 +152,11 @@ export default function Home() {
         ADS={true}
       />
 
-      <Testimonial redirectDS={true} heading="" Testimonial={testimonial} />
+      <Testimonial
+        redirectDS={true}
+        heading="Hear it from our Alumni"
+        Testimonial={testimonial}
+      />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
       <SeventhSection />
       <EightSection

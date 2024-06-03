@@ -171,7 +171,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <Testimonial
           redirectDS={true}
           videotest={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             DataScienceMastersinCS.DataScienceMastersinCS[0].testimonialgenric
           }

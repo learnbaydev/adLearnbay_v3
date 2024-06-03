@@ -121,7 +121,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <Testimonial
           redirectDS={true}
           videotest={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             DataAnalyticsdata.DADataScienceCourseData[0].testimonialgenric
           }

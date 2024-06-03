@@ -1,17 +1,14 @@
-import Navbar from "@/components/Global/NavbarHome/Navbar";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 import AdsNavbar from "@/components/Global/AdsNavbar/Navbar";
+import Navbar from "@/components/Global/NavbarHome/Navbar";
 import FirstSection from "@/components/MastersCourse/FirstSection/FirstSection";
 import dynamic from "next/dynamic";
+import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import JobAbroad from "../JobAbroad/JobAbroad";
 import MasterSecondSection from "../MasterSecondSection/MasterSecondSection";
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
-import { AiOutlineContainer } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
 const TrainerSection = dynamic(() =>
   import("../../Global/TrainerSection/TrainerSection")
 );
@@ -70,7 +67,11 @@ const FirstPart = ({
     <>
       {" "}
       {Marketing ? (
-        <AdsNavbar dataScienceCounselling={true} dataScience={true} ADS={true}/>
+        <AdsNavbar
+          dataScienceCounselling={true}
+          dataScience={true}
+          ADS={true}
+        />
       ) : (
         <Navbar dataScienceCounselling={true} dataScience={true} />
       )}
@@ -94,7 +95,7 @@ const FirstPart = ({
           <Testimonial
             redirectDS={true}
             videotest={true}
-            heading=""
+            heading="Hear it from our Alumni"
             Testimonial={TestimonialData}
           />
         </>
