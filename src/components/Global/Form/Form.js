@@ -82,11 +82,13 @@ const Form = ({
   }, [value]);
 
   useEffect(() => {
-    const formattedPhone = value;
-    const phoneWithPlus = `+${formattedPhone}`;
-    setQuery({ ...query, phone: phoneWithPlus });
+    if (value) {
+      const formattedPhone = value;
+      const phoneWithPlus = `+${formattedPhone}`;
+      setQuery({ ...query, phone: phoneWithPlus });
 
-    jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
+      jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
+    }
   }, [value]);
 
   const handleParam = () => (e) => {
