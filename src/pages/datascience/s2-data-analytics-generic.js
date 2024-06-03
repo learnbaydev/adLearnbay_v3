@@ -91,13 +91,13 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           Fee="₹ 85,000"
           FeeEmi="₹5,572/month"
           weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="June 14th"
-        WeekendDate="June 7th"
-        WeekdayTime="8:00 AM - 10:00 AM"
-        WeekendTime="8:00 PM - 10:00 PM"
+          weekendbatch="Weekday Batch"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="June 14th"
+          WeekendDate="June 7th"
+          WeekdayTime="8:00 AM - 10:00 AM"
+          WeekendTime="8:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -119,7 +119,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <Testimonial
           redirectDS={true}
           videotest={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             DataAnalyticsdata.DADataScienceCourseData[0].testimonialgenric
           }

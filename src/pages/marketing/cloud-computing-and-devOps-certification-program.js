@@ -49,7 +49,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} dataScience={true}/>
+        <Navbar HideInterest={true} dataScience={true} />
         <FirstSection
           HideInterest={true}
           ThirdTyped="Live Interactive Classes"
@@ -93,13 +93,13 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           Fee=" ₹80,000"
           FeeEmi="₹5,244/month"
           weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="(MON-TUE-WED-THU)"
-        weekend="(MON-TUE-WED-THU)"
-        WeekdayDate="JUNE 14th"
-        WeekendDate="MAY 31st"
-        WeekendTime="8 PM - 10 PM"
-        WeekdayTime="8 PM - 10 PM"
+          weekendbatch="Weekday Batch"
+          weekday="(MON-TUE-WED-THU)"
+          weekend="(MON-TUE-WED-THU)"
+          WeekdayDate="JUNE 14th"
+          WeekendDate="MAY 31st"
+          WeekendTime="8 PM - 10 PM"
+          WeekdayTime="8 PM - 10 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -122,12 +122,12 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <Testimonial
           redirectDS={true}
           videotest={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0]
               .testimonialgenric
           }
-        /> 
+        />
         <MentorsSection />
         <NewProjectSection
           HideInterest={true}

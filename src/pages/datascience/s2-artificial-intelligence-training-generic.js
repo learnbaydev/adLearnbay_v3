@@ -126,7 +126,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
         <Testimonial
           redirectDS={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
               .testimonialgenric

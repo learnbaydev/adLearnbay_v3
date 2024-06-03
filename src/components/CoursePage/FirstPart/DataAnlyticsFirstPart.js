@@ -1,15 +1,10 @@
+import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
 import dynamic from "next/dynamic";
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
 import { AiOutlineContainer } from "react-icons/ai";
-import { BsDatabaseUp } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
-import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
+import { BsDatabaseUp, BsDisplay, BsPeople } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import Navbar from "../../Global/NavbarHome/Navbar";
 import CloudDevopsecond from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 const SecondNavbar = dynamic(() => import("../SecondNavbar/SecondNavbar"));
@@ -88,7 +83,7 @@ const DataAnlyticsFirstPart = ({
         idss="y_0IdhFKJKM"
         ibmOnly={ibmOnly}
       />
-       <CloudDevopsecond data={DsSecond} />
+      <CloudDevopsecond data={DsSecond} />
       <SecondNavbar
         dataScienceCounselling={true}
         dataScience={true}
@@ -97,7 +92,7 @@ const DataAnlyticsFirstPart = ({
       <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
-        heading=""
+        heading="Hear it from our Alumni"
         Testimonial={TestimonialData}
         popupvnone={true}
       />

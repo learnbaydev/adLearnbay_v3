@@ -1,18 +1,12 @@
-import dynamic from "next/dynamic";
-import React from "react";
-import { FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import { BsPersonGear } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
-import { AiOutlineContainer } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsPeople } from "react-icons/bs";
 import { ThirdSectionData } from "@/Data/ThirdSectionData";
 import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
 import Navbar from "@/components/Global/NavbarHome/Navbar";
-import { CloudAndDevOpsCourseData } from "@/Data/CloudAndDevOpsCourse";
-import Gethire from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import dynamic from "next/dynamic";
+import React from "react";
+import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import CloudDevopsecond from "../Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 const SecondNavbar = dynamic(() => import("../SecondNavbar/SecondNavbar"));
 const WhoProgram = dynamic(() => import("../WhoProgram/ThirdSection"));
@@ -62,11 +56,8 @@ const AIFirstPart = ({ SecondSectionData, TestimonialData }) => {
       { icon: <BsDisplay />, text: "8-10 Interview Calls" },
       { icon: <AiOutlineContainer />, text: "Resume Building Session" },
       { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
-    
     ],
-    formbl: [
-      { icon: <BsPeople />, text: "Mock Interview Sessions" },
-    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
     image5:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
@@ -110,7 +101,7 @@ const AIFirstPart = ({ SecondSectionData, TestimonialData }) => {
       <TrainerSection idss="eautK0odE7Q" />
       <Testimonial
         redirectDS={true}
-        heading=""
+        heading="Hear it from our Alumni"
         Testimonial={TestimonialData}
         popupvnone={true}
       />

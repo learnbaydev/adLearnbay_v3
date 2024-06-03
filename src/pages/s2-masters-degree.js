@@ -74,7 +74,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
         <Testimonial
           redirectDS={true}
-          heading=""
+          heading="Hear it from our Alumni"
           Testimonial={
             DataScienceCourseData.DataScienceCourseData[0].testimonial
           }
