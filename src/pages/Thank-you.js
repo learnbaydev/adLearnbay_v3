@@ -14,15 +14,15 @@ const setCookie = (name, value, days, domain) => {
   document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;domain=${domain}`;
 };
 
-const ThankYou = ({ initialName, initialPhone}) => {
+const ThankYou = ({ initialName, initialPhone }) => {
   const email = JSON.stringify(initialName);
   const phone = JSON.stringify(initialPhone);
   console.log(email); // Log the email to the console
 
   useEffect(() => {
     // Set the cookie with a domain that allows cross-origin access
-    setCookie('yourCookieName', initialName, 30, '.learnbay.co');
-    setCookie('yourCookieName', initialPhone, 30, '.learnbay.co');
+    setCookie("yourCookieName", initialName, 30, ".learnbay.co");
+    setCookie("yourCookieName", initialPhone, 30, ".learnbay.co");
   }, [initialName, initialPhone]);
 
   return (
@@ -51,7 +51,7 @@ const ThankYou = ({ initialName, initialPhone}) => {
             }}
           />
         </Head>
-        <Navbar HideButton={true}/>
+        <Navbar HideButton={true} />
 
         <section className={styles.mains}>
           <div className={styles.Back}>
