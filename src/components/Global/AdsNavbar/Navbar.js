@@ -21,6 +21,7 @@ const Navbar = ({
   HideButton,
   OS,
   dateTime,
+  ApplyS2,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -50,12 +51,11 @@ const Navbar = ({
           <div className="whiteP" />
         </div>
         <div className="RightPopup">
-          <h5>Download Syllabus</h5>
+          {ApplyS2 ? <h5>Apply for Counsellling</h5> : <h5>Download Syllabus</h5>}
 
-          {formotp ? (
+          {ApplyS2 ? (
             <FormOtp
               popup={true}
-              downloadBrochure
               upSkillingHide={true}
               ADS={ADS}
               fullstackADS={fullstackADS}
@@ -65,18 +65,34 @@ const Navbar = ({
               HideInterest={HideInterest}
             />
           ) : (
-            <Form
-              popup={true}
-              setTrigger={setPopups}
-              radio={radio}
-              upSkillingHide={true}
-              downloadBrochure
-              interstedInHide={interstedInHide}
-              dataScience={dataScience}
-              HideInterest={HideInterest}
-              OS={OS}
-              dateTime={dateTime}
-            />
+            <>
+              {formotp ? (
+                <FormOtp
+                  popup={true}
+                  downloadBrochure
+                  upSkillingHide={true}
+                  ADS={ADS}
+                  fullstackADS={fullstackADS}
+                  marketing={marketing}
+                  grad={grad}
+                  radio={radio}
+                  HideInterest={HideInterest}
+                />
+              ) : (
+                <Form
+                  popup={true}
+                  setTrigger={setPopups}
+                  radio={radio}
+                  upSkillingHide={true}
+                  downloadBrochure
+                  interstedInHide={interstedInHide}
+                  dataScience={dataScience}
+                  HideInterest={HideInterest}
+                  OS={OS}
+                  dateTime={dateTime}
+                />
+              )}
+            </>
           )}
         </div>
       </Popup>
@@ -107,16 +123,24 @@ const Navbar = ({
           )}
         </div>
         <div className={styles.right}>
-          {HideButton ? (
-            ""
-          ) : (
+          {ApplyS2 ? (
             <div onClick={popupShow}>
-              <Button
-                text="Download Syllabus"
-                outline={true}
-                passIcon={<FaDownload className={styles.icon} />}
-              />
+              <Button text="Apply for Counselling" outline={true} />
             </div>
+          ) : (
+            <>
+              {HideButton ? (
+                ""
+              ) : (
+                <div onClick={popupShow}>
+                  <Button
+                    text="Download Syllabus"
+                    outline={true}
+                    passIcon={<FaDownload className={styles.icon} />}
+                  />
+                </div>
+              )}
+            </>
           )}
 
           <Popup></Popup>
