@@ -86,6 +86,8 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
 
         <Certificate
           data={DataAnalyticsdata.DADataScienceCourseData[0].Certificate}
+          projectWithCertificate={true}
+        singlecertificate={true}
         />
         <FeeSection
           Fee="$499"
