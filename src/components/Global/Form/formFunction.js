@@ -16,6 +16,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/scholarship-ads" ||
     pathname === "/walk-in-counselling" ||
+    pathname === "/datascience/s2-apply-for-counselling-data-science" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
@@ -114,6 +115,7 @@ const redirectionThankYou = (
     pathname === "/offer" ||
     pathname === "/google" ||
     pathname === "/apply-for-counselling-data-science-marketing" ||
+    pathname === "/datascience/s2-apply-for-counselling-data-science" ||
     pathname === "/scholarship"
   ) {
     routerPath = "/Thank-you";

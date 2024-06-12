@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../../styles/NewCounseling.module.css";
-import FormOtp from "@/components/Global/FormOtp/FormOtp";
+import Form from "@/components/Global/Form/Form";
 
 function Counselling() {
   const [mobile, setMobile] = useState(false);
@@ -27,7 +27,7 @@ function Counselling() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar ADS={true} formotp={true} upSkillingHide={true} ApplyS2={true} />
+      <Navbar upSkillingHide={true} interstedInHide={true} ApplyS2={true} />
       <div className={styles.container}>
         <div className={styles.width}>
           <div className={styles.leftsidecontent}>
@@ -72,7 +72,7 @@ function Counselling() {
           </div>
           <div className={styles.formr}>
             <p>Free Career Counselling</p>
-            <FormOtp ADS={true} upSkillingHide={true} />
+            <Form upSkillingHide={true} interstedInHide={true} />
           </div>
         </div>
       </div>

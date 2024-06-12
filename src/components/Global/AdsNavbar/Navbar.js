@@ -54,16 +54,17 @@ const Navbar = ({
           {ApplyS2 ? <h5>Apply for Counsellling</h5> : <h5>Download Syllabus</h5>}
 
           {ApplyS2 ? (
-            <FormOtp
-              popup={true}
-              upSkillingHide={true}
-              ADS={ADS}
-              fullstackADS={fullstackADS}
-              marketing={marketing}
-              grad={grad}
-              radio={radio}
-              HideInterest={HideInterest}
-            />
+            <Form
+            popup={true}
+            setTrigger={setPopups}
+            radio={radio}
+            upSkillingHide={true}
+            interstedInHide={interstedInHide}
+            dataScience={dataScience}
+            HideInterest={HideInterest}
+            OS={OS}
+            dateTime={dateTime}
+          />
           ) : (
             <>
               {formotp ? (
