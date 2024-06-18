@@ -56,7 +56,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
-          firstToparaImg="In Bangalore "
+          firstToparaImg="In Pune "
           firstHeading="Data Science Course "
           firstTopPara="Choose Specialization over Generalization"
           softwareBtnHide={true}
