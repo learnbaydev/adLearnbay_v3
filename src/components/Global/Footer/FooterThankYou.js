@@ -16,7 +16,6 @@ import {
 
 import { BsFillTelephoneFill, BsTwitterX } from "react-icons/bs";
 
-
 const FooterThankYou = () => {
   return (
     <section className={styles.FooterSection}>
@@ -35,11 +34,11 @@ const FooterThankYou = () => {
             And Experience And Ever Growing And Lucrative Career Transformation.
           </p>
           <div className={styles.FooterSocial}>
-              <BsTwitterX className="bIcons" />
-              <FaFacebookF className="bIcons" />
-              <FaLinkedinIn className="bIcons" />
-              <FaYoutube className="bIcons" />
-              <FaInstagram className="bIcons" />
+            <BsTwitterX className="bIcons" />
+            <FaFacebookF className="bIcons" />
+            <FaLinkedinIn className="bIcons" />
+            <FaYoutube className="bIcons" />
+            <FaInstagram className="bIcons" />
           </div>
           <span style={{ display: "flex", marginTop: "20px" }}>
             <IoMailSharp className="bIcons" />
@@ -104,11 +103,11 @@ const FooterThankYou = () => {
           </p>
         </div>
         <div className={styles.FooterDivInner}>
-        <p className={styles.FooterInnerP}>Get Our Apps On</p>
-            <button className={styles.btnout}>
-              <FaAndroid className="bIcons" style={{ fontSize: "30px" }} />
-              Get Our Android App
-            </button>
+          <p className={styles.FooterInnerP}>Get Our Apps On</p>
+          <button className={styles.btnout}>
+            <FaAndroid className="bIcons" style={{ fontSize: "30px" }} />
+            Get Our Android App
+          </button>
           <p className={styles.FooterInnerP}>Find Us Here</p>
           <p className={styles.FooterInnerli}>
             #1090 , 1st floor, 18th cross road HSR layout sector 3, Bangalore -
@@ -119,7 +118,7 @@ const FooterThankYou = () => {
       <div className={styles.FooterBottom}>
         <div className={styles.FooterBottomInner}>
           <p className={styles.FooterInnerB}>
-            Copyright © 2022 Learnbay by Learnvista Pvt. Ltd. All Rights
+            Copyright © 2015 - 2024 Learnbay by Learnvista Pvt. Ltd. All Rights
             Reserved.
           </p>
         </div>
