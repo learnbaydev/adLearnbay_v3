@@ -26,14 +26,14 @@ const Footer = ({ adPage, adPageCity }) => {
     <section className={styles.FooterSection}>
       <div className={styles.FooterDiv}>
         <div className={styles.FooterDivInner}>
-          <a href="/">
+          <Link href="/">
             <Image
               src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/white-logo.webp"
               alt="Learnbay"
               width="230"
               height="100"
             />
-          </a>
+          </Link>
           <p className={styles.FooterInnerli}>
             Enrol now for data science courses, System designing or full stack
             development courses. Master the most demanding skills of job market
@@ -183,7 +183,7 @@ const Footer = ({ adPage, adPageCity }) => {
       <div className={styles.FooterBottom}>
         <div className={styles.FooterBottomInner}>
           <p className={styles.FooterInnerB}>
-            Copyright © 2022 Learnbay by Learnvista Pvt. Ltd. All Rights
+            Copyright © 2015 - 2024 Learnbay by Learnvista Pvt. Ltd. All Rights
             Reserved.
           </p>
         </div>
