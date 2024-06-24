@@ -7,6 +7,7 @@ import Popup from "@/components/Global/Popup/Popup";
 import { FaDownload } from "react-icons/fa";
 import Button from "../Button/Button";
 import styles from "./Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = ({
   radio,
@@ -110,7 +111,7 @@ const Navbar = ({
               height={60}
             />
           ) : (
-            <a href="/">
+        
               <Image
                 src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
                 alt="Learnbay"
@@ -120,7 +121,7 @@ const Navbar = ({
                 width={mobile ? "135" : "230"}
                 height={60}
               />
-            </a>
+          
           )}
         </div>
         <div className={styles.right}>
