@@ -158,30 +158,14 @@ export const dataScience = [
 export const placementProject = [
   {
     id: 1,
-    title: "Data Science Placement Report",
+    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/Business-Analytics.png",
+    title: "Executive program in Data Science & AI    ",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
   },
-  {
-    id: 2,
-    title: "Software Development Placement Report",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf",
-  },
-  {
-    id: 3,
-    title: "Software Development Project Syllabus",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
-  },
-  {
-    id: 4,
-    title: "Data Science Project Syllabus",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
-  },
-];
+]
+
 export const fullStackD = [
   {
     id: 1,
@@ -195,46 +179,12 @@ export const fullStackD = [
 export const nonTechD = [
   {
     id: 1,
-    title: "BFSI (Banking, Finance, Services and Insurance) Domain",
+    title: "Master’s Degree in CS: Data Science & AI",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Banking%2C+Finance+and+Insurance+Domain.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
   },
-  {
-    id: 2,
-    title: "Sales, Marketing and (HR) Human Resources Domain",
 
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Sales%2C+Marketing+and+HR+Domain.pdf",
-  },
-  {
-    id: 3,
-    title: "Healthcare, Pharma and Clinical Research Domain",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Healthcare%2C+Pharma+and+Clinical+Research+Domain.pdf",
-  },
-  {
-    id: 4,
-    title: "Retail, Ecommerce and Supply Chain Domain",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Retail%2C+Ecommerce+and+Supply+chain+Domain.pdf",
-  },
-  {
-    id: 5,
-    title: "Media, Hospitality and Transportation Domain",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Media%2C+Hospitality+and+Transportation+Domain.pdf",
-  },
-  {
-    id: 6,
-    title: "Manufacturing, Mechanical and Telecom Domain",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/domain/Manufacturing%2C+Mechanical+and+Telecom+Domain.pdf",
-  },
 ];
 
 export const SP = [

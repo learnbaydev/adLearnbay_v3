@@ -161,32 +161,12 @@ export const placementProject = [
   {
     id: 1,
     img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/Business-Analytics.png",
-    title: "Data Science Placement Report",
+    title: "Executive program in Data Science & AI    ",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
   },
-  {
-    id: 2,
-    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/full-stack-developer-course.png",
-    title: "Full-Stack Placement Report",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Placement+Report+(1).pdf",
-  },
-  {
-    id: 3,
-    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/full-stack-web-development.png",
-    title: "Full-Stack Project Syllabus",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Real-time+Projects+%26+Use+cases.pdf",
-  },
-  {
-    id: 4,
-    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/data-analytics.png",
-    title: "Data Science Project Syllabus",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Science+and+AI+Projects.pdf",
-  },
+ 
 ];
 export const fullStackD = [
   {

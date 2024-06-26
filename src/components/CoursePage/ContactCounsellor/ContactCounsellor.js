@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../ContactCounsellor/ContactCounsellor.module.css";
-import { MdOutlineWhatsapp } from "react-icons/md";
+import { MdOutlineCall, MdOutlineWhatsapp } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import Image from "next/image";
 import { useState } from "react";
 import Popup from "@/components/Global/Popup/Popup";
-import Form from "@/components/Global/Form/Form";
+import Form from "@/components/Global/FormOtp/FormOtp";
 
 const ContactCounsellor = ({
   dataScience,
@@ -13,6 +13,9 @@ const ContactCounsellor = ({
   interstedInHide,
   titleCourse,
   brochureLink,
+  noWt,
+  formotp,
+  ADS
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -24,6 +27,9 @@ const ContactCounsellor = ({
     const phoneNumber = "+917795687988"; // Replace with the desired WhatsApp phone number
     const whatsappURL = `https://wa.me/${phoneNumber}`;
     window.open(whatsappURL, "_blank");
+  };
+  const handleCall = () => {
+    window.location.href = 'tel:+916364939404';
   };
   // const sendEmailViaApi = () => {
   //   // Replace with the API endpoint that triggers the email
@@ -90,6 +96,8 @@ const ContactCounsellor = ({
             interstedInHide={interstedInHide}
             dataScienceCounselling={dataScienceCounselling}
             upSkillingHide={true}
+            formotp={formotp}
+            ADS={ADS}
             // radio={radio}
           />
         </div>
@@ -101,7 +109,20 @@ const ContactCounsellor = ({
           right career choice</b>
         </p>
 
+      {noWt ? (<>
+        <div className={styles.onlycall}>
+      <button onClick={handleCall} className={styles.inf}>
+        <MdOutlineCall className={styles.conicon} />
+        (+91) 6364939404
+      </button>
+    </div></>):(<>
         <div className={styles.conbtn}>
+          <button onClick={openWhatsApp} className={styles.inf}>
+            <MdOutlineWhatsapp className={styles.conicon} />
+            (+91) 77956 87988
+          </button>
+         
+        </div>  <div className={styles.conbtn}>
           <button onClick={openWhatsApp} className={styles.inf}>
             <MdOutlineWhatsapp className={styles.conicon} />
             (+91) 77956 87988
@@ -109,7 +130,7 @@ const ContactCounsellor = ({
           <button onClick={sendEmail} className={styles.inf}>
             <AiOutlineMail className={styles.conicon} /> contacts@learnbay.co
           </button>
-        </div>
+        </div></>)}
 
         <div className={styles.consbtn1} onClick={popupShow}>
           <button className={styles.consbtn} onClick={null}>
