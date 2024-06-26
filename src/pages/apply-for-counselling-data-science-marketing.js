@@ -28,7 +28,7 @@ function Counselling() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar upSkillingHide={true} radio={true} interstedInHide={true} />
+      <Navbar upSkillingHide={true} radio={true} interstedInHide={true} ADS={true} />
       <div className={styles.container}>
         <div className={styles.width}>
           <div className={styles.leftsidecontent}>
