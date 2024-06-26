@@ -72,6 +72,43 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
 
+  const JobData = {
+    title: "Fast-Track Your Career in AI   ",
+    points: [
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
+        imgAlt: "",
+        title: "Comprehensive Mastery of AI and Data Science:     ",
+        description:
+          "Gain in-depth knowledge and practical skills in AI and Data Science     ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
+        imgAlt: "",
+        title: "Complimentary Advance Gen-AI Module     ",
+        description:
+          "Tailored for career transformation in a tech-driven era      ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
+        imgAlt: "",
+        title: "3 years of Job and Placement support     ",
+        description: "Online and flexible, ideal for busy professionals:      ",
+      },
+    ],
+    bannerImage: {
+      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/guwati-job.webp",
+      width: 410,
+      height: 400,
+      priority: true,
+      quality: 80,
+      alt: "Banner Image 1 Alt",
+    },
+  };
+
   return (
     <>
       <Head>
@@ -115,7 +152,11 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         ,
         <MasterSecondSection />
         <CloudDevopsecond data={DsSecond} />
-        <JobAbroad dataScience={true} />
+        <JobAbroad
+          data={JobData}
+          dataScienceCounselling={true}
+          interstedInHide={true}
+        />
         <S2SecondSection MastersPage={true} />
         <ProjectSection HideInterest={true} ADS={true} dataScience={true} />
         <GetHire HideImage={true} />
