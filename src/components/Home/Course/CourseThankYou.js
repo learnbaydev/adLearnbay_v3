@@ -69,7 +69,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Placement & Project Syllabus
+            IIT Guwahati
           </span>
           <span
             onClick={() => {
@@ -85,7 +85,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            Domain Syllabus
+   Domain Syllabus         
           </span>
           <span
             onClick={() => {

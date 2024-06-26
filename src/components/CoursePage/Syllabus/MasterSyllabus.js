@@ -1,9 +1,9 @@
-import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import PopupContent from "@/components/Global/PopupContent/PopupContent";
+import Link from "next/link";
 import { useState } from "react";
 import { FaRegUser } from "react-icons/fa";
 import Button from "../../Global/Button/Button";
-import Form from "../../Global/Form/Form";
+import Form from "../../Global/FormOtp/FormOtp";
 import NewSyllabusMap from "./NewSyllabusMap";
 import styles from "./Syllabus.module.css";
 
@@ -16,13 +16,10 @@ function SyllabusNew({
   buttonHide,
   dataScienceCounselling,
   interstedInHide,
-  onebtn,
-  adPage,
-  dataScienceGeneric,
-  ADS,
-  HideInterest,
+  MastersContent,
+  isGuwahati,
   formotp,
-  OS,
+ ADS,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -30,31 +27,26 @@ function SyllabusNew({
     setPopups(true);
   };
 
-  const [popupsApp, setPopupsApp] = useState(false);
-
-  const popupShowApp = () => {
-    setPopupsApp(true);
-  };
-
   return (
     <>
       <div id="curriculum" className={styles.containerDiv}>
         <PopupContent
+          dataScience={dataScience}
+          downloadBrochure
+          titleCourse={titleCourse}
+          brochureLink={brochureLink}
+          interstedInHide={interstedInHide}
+          upSkillingHide={true}
           popups={popups}
           setPopups={setPopups}
           heading="Download Syllabus"
-          downloadBrochure
-          dataScience={dataScience}
-          interstedInHide={interstedInHide}
-          upSkillingHide={true}
-          titleCourse={titleCourse}
-          brochureLink={brochureLink}
           formotp={formotp}
           ADS={ADS}
-          HideInterest={HideInterest}
         />
+
+
         <div className={styles.project}>
-          <h4 className={styles.h1}>Explore our Syllabus</h4>
+          <h3 className={styles.h1}>Explore our Syllabus</h3>
           <p className={styles.ptop}>
             Curriculum is specifically engineered to meet the expectations of
             leading tech companies
@@ -73,61 +65,45 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              {OS ? (
+              
+              {MastersContent ? (
                 <h4>
-                  Apply For<span> Consultation ?</span>
+                  Interested in {isGuwahati ? (<> <span>Degree?</span></>):(<> <span>Master’s Degree?</span></>)}
                 </h4>
               ) : (
                 <h4>
-                  Apply For<span> counselling ?</span>
+                  Free Consultation with<span> Expert</span>
                 </h4>
               )}
-              {formotp ? (
-                <FormOtp
-                  upSkillingHide={true}
-                  ADS={true}
-                  HideInterest={HideInterest}
-                />
-              ) : (
-                <Form
-                  dataScience={dataScience}
-                  upSkillingHide={true}
-                  dataScienceGeneric={dataScienceGeneric}
-                  dataScienceCounselling={dataScienceCounselling}
-                  adPage={adPage}
-                  interstedInHide={interstedInHide}
-                  HideInterest={HideInterest}
-                  OS={OS}
-                />
-              )}
+              <Form
+                dataScienceCounselling={dataScienceCounselling}
+                interstedInHide={interstedInHide}
+                titleCourse={titleCourse}
+                brochureLink={brochureLink}
+                fullStack={fullStack}
+                syllabus={true}
+                upSkillingHide={true}
+                formotp={formotp}
+                ADS={ADS}
+                dataScience={dataScience}
+              />
             </div>
           </div>
         </section>
-        {onebtn ? (
-          <div className={styles.buttonDiv}>
-            {buttonHide ? "" : ""}
-            <div onClick={popupShow}>
-              <Button nobannerButton={true} text="DOWNLOAD SYLLABUS" />
-            </div>
+        <div className={styles.buttonDiv}>
+          {buttonHide ? (
+            ""
+          ) : (
+           <></>
+          )}
+          <div onClick={popupShow}>
+            <Button
+              nobannerButton={true}
+              text="DOWNLOAD SYLLABUS"
+              // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+            />
           </div>
-        ) : (
-          <div className={styles.buttonDiv}>
-            {buttonHide ? (
-              ""
-            ) : (
-              <div>
-                <Button
-                  onClick={popupShowApp}
-                  bannerButton={true}
-                  text="DOWNLOAD SYLLABUS"
-                />
-              </div>
-            )}
-            <div onClick={popupShow}>
-              <Button nobannerButton={true} text="DOWNLOAD SYLLABUS" />
-            </div>
-          </div>
-        )}
+        </div>
       </div>
     </>
   );

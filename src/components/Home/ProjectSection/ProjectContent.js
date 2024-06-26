@@ -38,6 +38,7 @@ const ProjectContent = ({
           className="popupModal"
           popup={true}
           radio={radio}
+          downloadBrochure
           dataScience={dataScience}
           dataScienceGeneric={dataScienceGeneric}
           dataScienceCounselling={dataScienceCounselling}
@@ -56,6 +57,7 @@ const ProjectContent = ({
                 upSkillingHide={true}
                 ADS={ADS}
                 HideInterest={HideInterest}
+                downloadBrochure
               />
             ) : (
               <Form

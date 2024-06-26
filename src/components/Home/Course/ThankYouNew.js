@@ -235,7 +235,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Domain Syllabus</p>
+            <p></p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -375,7 +375,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Placement & Project Syllabus
+         IIT Guwahati
           </span>
           <div className={styles.line}></div>
           <span
@@ -392,7 +392,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Domain Syllabus
+                Data Science Master in CS
           </span>
           <div className={styles.line}></div>
           <span

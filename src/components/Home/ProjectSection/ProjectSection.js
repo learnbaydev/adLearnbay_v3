@@ -33,6 +33,7 @@ ADS,
         radio={radio}
         formotp={formotp}
         ADS={ADS}
+        downloadBrochure
         popups={popups}
         setPopups={setPopups}
         heading="Apply For Counselling"
@@ -46,6 +47,7 @@ ADS,
         setTrigger={setPopups}
         radio={radio}
         formotp={formotp}
+        downloadBrochure
         ADS={ADS}
         fullStack={fullStack}
         dataScience={dataScience}

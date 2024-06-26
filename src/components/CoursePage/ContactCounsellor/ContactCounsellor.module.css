@@ -100,12 +100,36 @@
   gap: 40px;
   /* margin-bottom: -20px; */
 }
+.onlycall button{
+  padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(228, 245, 255, 0.6) 0.16%,
+      rgba(255, 246, 233, 0.6) 99.84%
+    );
+    border-radius: 20px;
+}
+.onlycall{
+  display: block;
+}
+
+
+
 
 @media (max-width: 1281px){
   .conbtn button {
     font-size: 14px;
+    border-radius: 14px;
   }
 }
+
+
 
 @media (max-width: 641px) {
   .consmain {
@@ -123,6 +147,10 @@
     line-height: 28px;
     color: #2e2e2e;
     font-size: 20px;
+  }
+  .onlycall {
+    display: flex;
+    justify-content: center;
   }
   .consmain p {
     color: #5e5e5e;
