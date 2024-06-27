@@ -5,6 +5,7 @@ import Styles from "./JobAbroad.module.css";
 import Link from "next/link";
 import Form from "../../Global/Form/Form";
 import Popup from "../../Global/Popup/Popup";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
 const JobAbroad = ({
   data,
   WolfLink,
@@ -14,6 +15,8 @@ const JobAbroad = ({
   interstedInHide,
   titleCourse,
   brochureLink,
+  formotp,
+  ADS,
 }) => {
   const { title, points, bannerImage } = data;
   const [popups, setPopups] = useState(false);
@@ -41,15 +44,26 @@ const JobAbroad = ({
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-            <Form
-              titleCourse={titleCourse}
-              brochureLink={brochureLink}
-              dataScience={dataScience}
-              interstedInHide={interstedInHide}
-              dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-              // radio={radio}
-            />
+            {formotp ? (
+              <FormOtp
+                popup={true}
+                upSkillingHide={true}
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                interstedInHide={interstedInHide}
+                ADS={ADS}
+              />
+            ) : (
+              <Form
+                titleCourse={titleCourse}
+                brochureLink={brochureLink}
+                dataScience={dataScience}
+                interstedInHide={interstedInHide}
+                dataScienceCounselling={dataScienceCounselling}
+                upSkillingHide={true}
+                // radio={radio}
+              />
+            )}
           </div>
         </Popup>
 
@@ -85,7 +99,7 @@ const JobAbroad = ({
             ) : (
               <div className={Styles.consbtn1} onClick={popupShow}>
                 <button className={Styles.consbtn}>
-                Apply For Counselling
+                  Apply For Counselling
                 </button>
               </div>
             )}

@@ -139,10 +139,10 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
     checkScreenSize();
 
     // Add event listener to check screen size on resize
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
     // Clean up the event listener on component unmount
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
   return (
     <>
@@ -203,8 +203,10 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
         <CloudDevopsecond data={DsSecond} dataScience={true} />
         <JobAbroad
           data={JobData}
-          dataScienceCounselling={true}
+          dataScience={true}
           interstedInHide={true}
+          formotp={true}
+          ADS={true}
         />
 
         <WhoProgram
@@ -217,14 +219,14 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
         />
         <Realstory />
         <TrainerSection plainimg={true} iimgchmbl={true} />
-        <div style={{ marginTop: isMobile ? '0px' : '100px' }}>
-      <WhoIsProgram
-        first="Bachelor's degree with consistent good academic"
-        second="Minimum 6 Months of IT/Non-IT work experience"
-        third="Early to mid-career professionals interested in data science"
-        forth="Developing skills in data science for future opportunities"
-      />
-    </div>
+        <div style={{ marginTop: isMobile ? "0px" : "100px" }}>
+          <WhoIsProgram
+            first="Bachelor's degree with consistent good academic"
+            second="Minimum 6 Months of IT/Non-IT work experience"
+            third="Early to mid-career professionals interested in data science"
+            forth="Developing skills in data science for future opportunities"
+          />
+        </div>
 
         <WhyLearnbay
           projectInno={true}
@@ -303,17 +305,19 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
         <MentorsSection />
         <SliderTabs WithoutService={true} />
         <MobileTestimonial
-         interstedInHide={true}
-         formotp={true}
-         ADS={true}
-         dataScience={true}
-         upSkillingHide={true}/>
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+          dataScience={true}
+          upSkillingHide={true}
+        />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}x
+          formotp={true}
+          x
           ADS={true}
           dataScienceCounselling={true}
-         dataScience={true}
+          dataScience={true}
           projectSection={
             ExcutiveProgramAIDS.ExcutiveProgramAIDS[0].projectSection
           }

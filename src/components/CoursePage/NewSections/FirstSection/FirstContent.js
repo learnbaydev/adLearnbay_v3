@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { FaYoutube } from "react-icons/fa";
+import { FaCheck, FaYoutube } from "react-icons/fa";
 import Button from "../../../Global/Button/Button";
 import Form from "../../../Global/FormOtp/FormOtp";
 import styles from "./FirstSection.module.css";
@@ -196,10 +196,16 @@ const FirstContent = ({
                 <>
                   <div className={styles.twodiv}>
                     <div className={styles.divone}>
-                      <span>⬤</span> Flexible Timing
+                      <span>
+                        <FaCheck />
+                      </span>{" "}
+                      Campus Immersion
                     </div>
                     <div className={styles.divone}>
-                      <span>⬤</span> on-demand doubt clearing
+                      <span>
+                        <FaCheck />
+                      </span>{" "}
+                      Industry Certification
                     </div>
                   </div>
                 </>
@@ -388,10 +394,16 @@ const FirstContent = ({
               {isGuwahati ? (
                 <div className={styles.twodiv}>
                   <div className={styles.divone}>
-                    <span>⬤</span> flexible timing
+                    <span>
+                      <FaCheck />
+                    </span>{" "}
+                    Campus Immersion
                   </div>
                   <div className={styles.divone}>
-                    <span>⬤</span> On-Demand Doubt Clearing
+                    <span>
+                      <FaCheck />
+                    </span>{" "}
+                    Industry Certification
                   </div>
                 </div>
               ) : (
@@ -403,7 +415,7 @@ const FirstContent = ({
                   {" "}
                   <div className={styles.btnImageMobile}>
                     <div onClick={popupShow}>
-                      <Button bannerButton={true} text="EXPLORE PROGRAM" />
+                      <Button bannerButton={true} text="DOWNLOAD BROCHURE" />
                     </div>
                     {softwareBtnHide ? (
                       ""
