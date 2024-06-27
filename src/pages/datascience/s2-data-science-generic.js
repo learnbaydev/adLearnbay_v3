@@ -174,8 +174,10 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <CloudDevopsecond data={DsSecond} dataScience={true} />
         <JobAbroad
           data={JobData}
-          dataScienceCounselling={true}
+          dataScience={true}
           interstedInHide={true}
+          formotp={true}
+          ADS={true}
         />
 
         <WhoProgram
