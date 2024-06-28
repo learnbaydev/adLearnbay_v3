@@ -247,6 +247,18 @@
   margin-top: 20px;
 }
 
+.newDiv {
+  display: grid;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  }
+
+  .optMsg {
+    margin: 10px 0px;
+  }
+
 .App form .divFirst {
   display: grid;
   grid-template-columns: 50% 50%;

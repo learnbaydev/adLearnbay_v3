@@ -467,10 +467,10 @@ function FormOtp({
 
             {btnHide ? (
               <div className={styles.formWrapper}>
-                <label htmlFor="OTP">
+                {/* <label htmlFor="OTP">
                   OTP
                   <span className={styles.spanLabel}>*</span>
-                </label>
+                </label> */}
                 <input
                   className={styles.EmailInputs}
                   type="text"
@@ -490,7 +490,7 @@ function FormOtp({
             <input name="region" value={form.region} type="hidden" />
             <input name="city" value={form.city} type="hidden" />
           </div>
-          <div>
+          <div className={styles.newDiv}>
             {error ? (
               <p
                 style={{
@@ -504,7 +504,7 @@ function FormOtp({
             ) : (
               ""
             )}
-            <div>
+            <div className={styles.optMsg}>
               {toggle ? "" : <p className={styles.alert}>{alertMSG}</p>}
             </div>
             <p className={styles.FormText} style={{ fontSize: "10px" }}>
