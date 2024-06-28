@@ -16,6 +16,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/scholarship-ads" ||
     pathname === "/walk-in-counselling" ||
+    pathname === "/ads/generic" ||
     pathname === "/datascience/s2-apply-for-counselling-data-science" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {

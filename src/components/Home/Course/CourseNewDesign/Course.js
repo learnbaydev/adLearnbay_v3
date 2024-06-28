@@ -31,29 +31,36 @@ const Course = ({
   const [popups, setPopups] = useState(false);
 
   const [CourseLoop, setCourseLoop] = useState([
-    { title: "Domain Courses", value: true },
+    { title: "Popular Courses", value: true },
+    { title: "Domain Courses", value: false },
     { title: "Data Science", value: false },
     { title: "Master's Degree", value: false },
     { title: "Cloud & DevOps", value: false },
-    { title: "Popular", value: false },
+  ]);
+
+  const [CourseMLoop, setCourseMLoop] = useState([
+    { title: "Popular Courses", value: true },
+    { title: "Data Science", value: false },
+    { title: "Cloud & DevOps", value: false },
   ]);
 
   const menuChange = (title, index) => {
-    if (title === CourseLoop[index].title) {
-      setCourseLoop([...CourseLoop], (CourseLoop[index].value = true));
-      for (let i = 0; i < CourseLoop.length; i++) {
-        if (index === i) {
-          setCourseLoop([...CourseLoop], (CourseLoop[index].value = true));
-        } else {
-          setCourseLoop([...CourseLoop], (CourseLoop[i].value = false));
-        }
-      }
+    const loop = mobile ? CourseMLoop : CourseLoop;
+    const setLoop = mobile ? setCourseMLoop : setCourseLoop;
+    
+    if (title === loop[index].title) {
+      const updatedLoop = loop.map((item, idx) => ({
+        ...item,
+        value: idx === index
+      }));
+      setLoop(updatedLoop);
     }
   };
 
   const popupShow = () => {
     setPopups(true);
   };
+  
   const [titleCourse, setTitleCourse] = useState();
   const [brochureLinks, setBrochureLinks] = useState();
 
@@ -61,16 +68,15 @@ const Course = ({
     let width = window.innerWidth;
     if (width < 481) {
       setCourseArray(courseDetailsM);
-      console.log("inside", courseDetailsM);
     }
-  }, [courseArray]);
+  }, []);
+
   useEffect(() => {
     let width = window.innerWidth;
     if (width < 481) {
       setValue(1.4);
       setMobile(true);
       setCourseArray(courseDetailsM);
-      console.log("inside", courseDetailsM);
     }
     if (width < 600) {
       setValue(1.1);
@@ -91,6 +97,7 @@ const Course = ({
       setValue(3.1);
     }
   }, []);
+
   return (
     <div className={styles.Course} id="course">
       <Popup
@@ -136,11 +143,10 @@ const Course = ({
           )}
         </div>
       </Popup>
-      {/* <h2>Our Courses</h2> */}
 
       <div className={styles.courses}>
         <div className={styles.listPanel}>
-          {courseArray.map((CourseData, index) => {
+          {(mobile ? CourseMLoop : CourseLoop).map((CourseData, index) => {
             return (
               <span
                 key={index}
@@ -148,12 +154,12 @@ const Course = ({
                   menuChange(CourseData.title, index);
                 }}
                 className={
-                  CourseLoop[index].value ? styles.ActiveSpan : styles.span
+                  (mobile ? CourseMLoop : CourseLoop)[index].value ? styles.ActiveSpan : styles.span
                 }
               >
                 {CourseData.title}
 
-                {CourseData.title === "Popular" ? (
+                {CourseData.title === "Popular Courses" ? (
                   <BsFire
                     style={{
                       color: "red",
@@ -171,7 +177,7 @@ const Course = ({
         <div>
           {courseArray.map((courseDetail, index) => {
             const { courses } = courseDetail;
-            return CourseLoop[index].value ? (
+            return (mobile ? CourseMLoop : CourseLoop)[index].value ? (
               <div key={index}>
                 {courses.map((courseDetail, index) => {
                   return (
@@ -180,7 +186,6 @@ const Course = ({
                         <h5 className={styles.h5font}>
                           {courseDetail.courseName}
                         </h5>
-                        {/* <h5 className={styles.textView}>View All</h5> */}
                       </div>
                       <div className={styles.borderTop}></div>
                       <div className={styles.gridPanel}>
@@ -211,6 +216,34 @@ const Course = ({
                                 newDesign,
                                 newDesignOrange,
                               } = viewAllData;
+
+                              // Define custom inline style for specific cards
+                              const specificCards = [
+                                "Data Science and AI Master",
+                                "Master's Degree in CS:",
+                                "Executive program in",
+                                "Cloud and DevOps",
+                              ];
+                              const customOrangeBgStyle =
+                                specificCards.includes(title)
+                                  ? {
+                                      background:
+                                        "linear-gradient(90deg, #04C988 0%, #0072BC 100%)",
+                                      color: "#fff",
+                                    }
+                                  : {};
+
+                              // Apply custom text alignment style for specific cards
+                              const customTitleStyle = specificCards.includes(
+                                title
+                              )
+                                ? {
+                                    textAlign: "start",
+                                    marginLeft: "20px",
+                                    marginTop: "30px",
+                                  }
+                                : {};
+
                               return (
                                 <SwiperSlide
                                   className={styles.leftSide}
@@ -257,12 +290,7 @@ const Course = ({
                                     <div className={styles.zIndex}>
                                       <div
                                         className={styles.headWrapper}
-                                        style={
-                                          title === "Master in CS:" ||
-                                          title === "Advance Certification"
-                                            ? { marginTop: "0px" }
-                                            : { marginTop: "0px" }
-                                        }
+                                        style={customTitleStyle}
                                       >
                                         <h6
                                           className={
@@ -283,7 +311,10 @@ const Course = ({
                                           {title1}
                                         </h6>
                                       </div>
-                                      <div className={styles.orangeBg}>
+                                      <div
+                                        className={styles.orangeBg}
+                                        style={customOrangeBgStyle}
+                                      >
                                         <p>{tagHead}</p>
                                       </div>
                                       <div
@@ -299,28 +330,14 @@ const Course = ({
                                         }}
                                       >
                                         <div className={styles.contentBox}>
-                                          {/* <hr className={styles.hr} /> */}
                                           <div className={styles.paraDiv}>
                                             <p className={styles.singleP}>
                                               <BiTimeFive
                                                 className={styles.checkCircle}
                                               />
-                                              {/* <IoTimeOutline
-                                          className={styles.timeIcon}
-                                        />{" "} */}
                                               {para[0]} {courseTime}
                                             </p>
-                                            {/* <p>
-                                      <AiOutlineFundProjectionScreen
-                                        className={styles.checkCircle}
-                                        style={{ color: "#edb552" }}
-                                      />
-                                      {para[1]}
-                                    </p> */}
                                             <p className={styles.singleP}>
-                                              {/* <TbCurrencyRupee
-                                          className={styles.checkCircle}
-                                        /> */}
                                               <BsCheckLg
                                                 className={styles.checkIcon}
                                               />
@@ -328,9 +345,6 @@ const Course = ({
                                             </p>
                                             {para.length >= 3 ? (
                                               <p className={styles.singleP}>
-                                                {/* <TbCurrencyRupee
-                                          className={styles.checkCircle}
-                                        /> */}
                                                 <BsCheckLg
                                                   className={styles.checkIcon}
                                                 />
@@ -390,9 +404,6 @@ const Course = ({
                                                 }}
                                               >
                                                 View Details
-                                                {/* <MdChecklist
-                                                className={styles.bellIcon}
-                                              /> */}
                                               </button>
                                             </a>
                                           ) : (
@@ -414,9 +425,6 @@ const Course = ({
                                                 }}
                                               >
                                                 View Details
-                                                {/* <MdChecklist
-                                                className={styles.bellIcon}
-                                              /> */}
                                               </button>
                                             </a>
                                           )}

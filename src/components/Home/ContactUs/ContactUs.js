@@ -1,6 +1,7 @@
-import FormInline from "@/components/Global/FormSection/FormInline";
 import Image from "next/image";
+import FormInline from "../../Global/FormSection/FormInline";
 import styles from "./ContactUs.module.css";
+import FormOtp from "@/components/Global/FormSection/FormOtp";
 
 function ContactUs({
   dataScience,
@@ -8,13 +9,15 @@ function ContactUs({
   radio,
   upSkillingHide,
   interstedInHide,
+  formotp,
+  ADS,
 }) {
   return (
     <section className={styles.ContactUs}>
       <div className={styles.LeftSide}>
-        <h1 className={styles.h1}>
+        <h2 className={styles.h1}>
           Get Ahead with Industry-Leading Courses <br />
-        </h1>
+        </h2>
 
         <div className={styles.conpara}>
           <p>
@@ -48,12 +51,24 @@ function ContactUs({
         <p className={styles.NormalPForm}>
           Apply for <span className={styles.span}>Career Counselling</span>
         </p>
-        <FormInline
-          dataScience={dataScience}
-          radio={radio}
-          upSkillingHide={upSkillingHide}
-          interstedInHide={interstedInHide}
-        />
+        {formotp ? (
+          <FormOtp
+            popup={true}
+            upSkillingHide={true}
+            radio={radio}
+            dataScience={dataScience}
+            interstedInHide={interstedInHide}
+            ADS={ADS}
+          />
+        ) : (
+          <FormInline
+            dataScience={dataScience}
+            dataScienceCounselling={dataScienceCounselling}
+            radio={radio}
+            upSkillingHide={upSkillingHide}
+            interstedInHide={interstedInHide}
+          />
+        )}
       </div>
     </section>
   );

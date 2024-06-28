@@ -235,7 +235,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p></p>
+            <p>Data Science Master in CS</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -375,7 +375,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-         IIT Guwahati
+            IIT Guwahati
           </span>
           <div className={styles.line}></div>
           <span
@@ -392,7 +392,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-                Data Science Master in CS
+            Data Science Master in CS
           </span>
           <div className={styles.line}></div>
           <span
