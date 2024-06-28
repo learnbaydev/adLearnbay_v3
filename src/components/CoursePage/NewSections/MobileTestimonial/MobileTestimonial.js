@@ -261,6 +261,7 @@ function MobileTestimonial({
   formotp,
   ADS,
   dataScience,
+  radio,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -301,25 +302,21 @@ function MobileTestimonial({
   return (
     <>
       <section className={Styles.section}>
-        <Popup
-          trigger={popups}
-          setTrigger={setPopups}
-          className="popupModal "
-        >
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal ">
           <div className="leftPopup">
             <div className="whiteP" />
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
+
             <Form
-    
-     
-          dataScience={dataScience}
-          interstedInHide={interstedInHide}
-          dataScienceCounselling={dataScienceCounselling}
-          upSkillingHide={true}
-          formotp={formotp}
-          ADS={ADS}
+              dataScience={dataScience}
+              interstedInHide={interstedInHide}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              radio={radio}
             />
           </div>
         </Popup>

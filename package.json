@@ -30,6 +30,8 @@
     "react-modal": "^3.16.1",
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.3.7",
+    "react-responsive": "^10.0.0",
+    "sass": "^1.77.6",
     "swiper": "^9.4.1",
     "typed.js": "^2.1.0"
   },

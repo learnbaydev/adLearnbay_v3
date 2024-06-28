@@ -1,176 +1,39 @@
-import React, { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import styles from "./FirstSection.module.css";
-import { FaChevronDown } from "react-icons/fa";
-import Popup from "../../Global/Popup/Popup";
-import Form from "../../Global/Form/Form";
-import FormOtp from "@/components/Global/FormOtp/FormOtp";
-import Image from "next/image";
-import Typed from "typed.js";
-const Button = dynamic(() => import("../../Global/Button/Button"));
+import React, { useState } from "react";
+const PopupContent = dynamic(() =>
+  import("../../Global/PopupContent/PopupContent")
+);
+import VideoPopup from "@/components/Global/VideoPopup/VideoPopup";
+const FirstSectionContent = dynamic(() => import("./FirstSectionContent"));
 
 const FirstSection = ({
   dataScience,
   radio,
-  dataScienceGeneric,
   dataScienceCounselling,
-  organicADS,
   interstedInHide,
+  idss,
   formotp,
   ADS,
 }) => {
-  const [mobile, setMobile] = useState(false);
-  const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
-  const el = useRef(null);
-
-  const popupShow = () => {
-    setPopups(true);
-  };
-
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  });
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [
-        "Are you looking to upskill ?",
-        "Gain a competitive edge",
-        "Land your dream job",
-      ], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
-      startDelay: 100,
-      typeSpeed: 80,
-      backSpeed: 50,
-      backDelay: 200,
-      smartBackspace: true,
-      loop: true,
-      showCursor: false,
-    });
-
-    // Destropying
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
+  const [video, setVideo] = useState(false);
   return (
     <>
-      <div className={styles.First}>
-        <Popup
-          trigger={popups}
-          setTrigger={setPopups}
-          className="popupModal"
-          popup={true}
-          radio={radio}
-          dataScience={dataScience}
-          dataScienceGeneric={dataScienceGeneric}
-          dataScienceCounselling={dataScienceCounselling}
-        >
-          <div className="leftPopup">
-            <div
-              className="whiteP"
-              style={{ width: "340px", height: "400px" }}
-            ></div>
-          </div>
-          <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
-            {formotp ? (
-              <FormOtp
-                popup={true}
-                upSkillingHide={true}
-                radio={radio}
-                interstedInHide={interstedInHide}
-                dataScience={dataScience}
-                dataScienceGeneric={dataScienceGeneric}
-                dataScienceCounselling={dataScienceCounselling}
-                ADS={ADS}
-              />
-            ) : (
-              <Form
-                dataScience={dataScience}
-                upSkillingHide={true}
-                dataScienceGeneric={dataScienceGeneric}
-                dataScienceCounselling={dataScienceCounselling}
-                radio={radio}
-                interstedInHide={interstedInHide}
-              />
-            )}
-          </div>
-        </Popup>
-        <div className={styles.FirstLeft}>
-          <div className={styles.animationTextWrap}>
-            <span ref={el} className={styles.animationText}></span>
-          </div>
-          {/* <p className={styles.ptop}>
-            Take the first step in your blockchain development journey with our
-          </p> */}
-          <h1 className={styles.h1}>
-            #1 Domain Specialised Certification Program For{" "}
-            <span className={styles.h1Span}>Working Professionals</span>
-          </h1>
-          <div className={styles.IBMlogoPlay}>
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/newHeaderOne.webp"
-              width="580"
-              height="450"
-              layout="intrinsic"
-              alt="data science course"
-            />
-          </div>
-          <p className={styles.ptop}>In collaboration with</p>
-          <div className={styles.IBMlogo}>
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibm%2526microsoft.avif"
-              width="283"
-              height="51"
-              layout="intrinsic"
-              alt="data science course"
-            />
-          </div>
-          <p className={styles.blink}>
-            Advance your career by gaining expertise in your field and ace
-            interviews with India’s leading companies
-          </p>
-          {/* <div className={styles.line}>
-            <img
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Vector-1-line.png"
-              width="80px"
-            />
-          </div> */}
-          <div className={styles.btnWrapper}>
-            {organicADS ? (
-              ""
-            ) : (
-              <a href="#course">
-                <button className={styles.outLineBtn}>
-                  Courses <FaChevronDown className="bIconS" />
-                </button>
-              </a>
-            )}
-            <div onClick={popupShow}>
-              <Button outline={true} text="Enquire Now" />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.secondLeft}>
-          <div className={styles.PlayImg}>
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/newHeaderOne.webp"
-              width="580"
-              height="450"
-              layout="intrinsic"
-              alt="data science course"
-            />
-          </div>
-        </div>
-      </div>
+      <PopupContent
+        dataScience={dataScience}
+        radio={radio}
+        dataScienceCounselling={dataScienceCounselling}
+        popups={popups}
+        setPopups={setPopups}
+        interstedInHide={interstedInHide}
+        heading="Apply For Counselling"
+        formotp={formotp}
+        ADS={ADS}
+      />
+       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
+      <FirstSectionContent    setPopups={setPopups}
+        setVideo={setVideo}/>
     </>
   );
 };
-
-export default FirstSection;
+export default React.memo(FirstSection);
