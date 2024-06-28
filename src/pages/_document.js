@@ -16,6 +16,26 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="preload"
+          href="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/mbl_home_two.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BG_Home_1.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/logo_mix_mbl.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibm_mix_logo.webp"
+          as="image"
+        />
         <meta
           name="facebook-domain-verification"
           content="dborjxjhu9kiklk06c38hf5v5raay4"
