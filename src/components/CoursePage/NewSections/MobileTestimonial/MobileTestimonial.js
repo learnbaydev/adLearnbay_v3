@@ -3,7 +3,8 @@ import Styles from "./MobileTestimonial.module.css";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Button from "@/components/Global/Button/Button";
-import Form from "@/components/Global/FormOtp/FormOtp";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
+import Form from "@/components/Global/Form/Form";
 import Popup from "@/components/Global/Popup/Popup";
 
 const testimonials = [
@@ -308,8 +309,8 @@ function MobileTestimonial({
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-
-            <Form
+            {formotp ? (
+              <FormOtp
               dataScience={dataScience}
               interstedInHide={interstedInHide}
               dataScienceCounselling={dataScienceCounselling}
@@ -318,6 +319,16 @@ function MobileTestimonial({
               ADS={ADS}
               radio={radio}
             />
+            ) : (
+              <Form
+                dataScience={dataScience}
+                interstedInHide={interstedInHide}
+                dataScienceCounselling={dataScienceCounselling}
+                upSkillingHide={true}
+                ADS={ADS}
+                radio={radio}
+              />
+            )}
           </div>
         </Popup>
         <div className={Styles.TestimonialContainer}>
