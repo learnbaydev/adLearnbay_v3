@@ -2,7 +2,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa";
 import Button from "../../../Global/Button/Button";
-import Form from "../../../Global/FormOtp/FormOtp";
+import FormOtp from "../../../Global/FormOtp/FormOtp";
+import Form from "../../../Global/Form/Form";
 import Popup from "../../../Global/Popup/Popup";
 import styles from "./ThirdSection.module.css";
 
@@ -37,17 +38,31 @@ const ThirdSection = ({
         </div>
         <div className="RightPopup">
           <h5>Download Syllabus</h5>
-          <Form
-            dataScience={dataScience}
-            dataScienceCounselling={dataScienceCounselling}
-            upSkillingHide={true}
-            downloadBrochure
-            interstedInHide={true}
-            titleCourse={titleCourse}
-            brochureLink={brochureLinks}
-            formotp={formotp}
-            ADS={ADS}
-          />
+          {formotp ? (
+            <FormOtp
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+              downloadBrochure
+              interstedInHide={true}
+              titleCourse={titleCourse}
+              brochureLink={brochureLinks}
+              formotp={formotp}
+              ADS={ADS}
+            />
+          ) : (
+            <Form
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+              downloadBrochure
+              interstedInHide={true}
+              titleCourse={titleCourse}
+              brochureLink={brochureLinks}
+              formotp={formotp}
+              ADS={ADS}
+            />
+          )}
         </div>
       </Popup>
 

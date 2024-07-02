@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaCheck, FaYoutube } from "react-icons/fa";
 import Button from "../../../Global/Button/Button";
-import Form from "../../../Global/FormOtp/FormOtp";
+import FormOtp from "../../../Global/FormOtp/FormOtp";
+import Form from "../../../Global/Form/Form";
 import styles from "./FirstSection.module.css";
 
 // const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -307,18 +308,33 @@ const FirstContent = ({
               </>
             )}
 
-            <Form
-              dataScience={dataScience}
-              dataScienceCounselling={dataScienceCounselling}
-              radio={radio}
-              downloadBrochure={downloadBrochure}
-              fullStack={fullStack}
-              dataScienceGeneric={dataScienceGeneric}
-              upSkillingHide={upSkillingHide}
-              interstedInHide={interstedInHide}
-              formotp={formotp}
-              ADS={ADS}
-            />
+            {formotp ? (
+              <FormOtp
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                radio={radio}
+                downloadBrochure={downloadBrochure}
+                fullStack={fullStack}
+                dataScienceGeneric={dataScienceGeneric}
+                upSkillingHide={upSkillingHide}
+                interstedInHide={interstedInHide}
+                formotp={formotp}
+                ADS={ADS}
+              />
+            ) : (
+              <Form
+                dataScience={dataScience}
+                dataScienceCounselling={dataScienceCounselling}
+                radio={radio}
+                downloadBrochure={downloadBrochure}
+                fullStack={fullStack}
+                dataScienceGeneric={dataScienceGeneric}
+                upSkillingHide={upSkillingHide}
+                interstedInHide={interstedInHide}
+                formotp={formotp}
+                ADS={ADS}
+              />
+            )}
           </div>
           {/* {S3RightImage ? (
             <div className={`"bgVideo"`}>
@@ -452,20 +468,35 @@ const FirstContent = ({
               <div className={styles.secondLeft}>
                 <div className={styles.form}>
                   <p className={styles.p}>Free Career Counselling</p>
-                  <Form
-                    dataScience={dataScience}
-                    dataScienceCounselling={dataScienceCounselling}
-                    radio={radio}
-                    downloadBrochure={downloadBrochure}
-                    fullStack={fullStack}
-                    titleCourse={titleCourse}
-                    // brochureLink={brochureLink}
-                    dataScienceGeneric={dataScienceGeneric}
-                    upSkillingHide={upSkillingHide}
-                    interstedInHide={interstedInHide}
-                    formotp={formotp}
-                    ADS={ADS}
-                  />
+                  {formotp ? (
+                    <FormOtp
+                      dataScience={dataScience}
+                      dataScienceCounselling={dataScienceCounselling}
+                      radio={radio}
+                      downloadBrochure={downloadBrochure}
+                      fullStack={fullStack}
+                      dataScienceGeneric={dataScienceGeneric}
+                      upSkillingHide={upSkillingHide}
+                      interstedInHide={interstedInHide}
+                      formotp={formotp}
+                      ADS={ADS}
+                    />
+                  ) : (
+                    <Form
+                      dataScience={dataScience}
+                      dataScienceCounselling={dataScienceCounselling}
+                      radio={radio}
+                      downloadBrochure={downloadBrochure}
+                      fullStack={fullStack}
+                      titleCourse={titleCourse}
+                      // brochureLink={brochureLink}
+                      dataScienceGeneric={dataScienceGeneric}
+                      upSkillingHide={upSkillingHide}
+                      interstedInHide={interstedInHide}
+                      formotp={formotp}
+                      ADS={ADS}
+                    />
+                  )}
                 </div>
                 {/* {S3RightImage ? (
                   <div className={`"bgVideo"`}>

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaRegUser } from "react-icons/fa";
 import Button from "../../Global/Button/Button";
-import Form from "../../Global/FormOtp/FormOtp";
+import FormOtp from "../../Global/FormOtp/FormOtp";
+import Form from "../../Global/Form/Form";
 import NewSyllabusMap from "./NewSyllabusMap";
 import styles from "./Syllabus.module.css";
 
@@ -19,7 +20,7 @@ function SyllabusNew({
   MastersContent,
   isGuwahati,
   formotp,
- ADS,
+  ADS,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -44,7 +45,6 @@ function SyllabusNew({
           ADS={ADS}
         />
 
-
         <div className={styles.project}>
           <h3 className={styles.h1}>Explore our Syllabus</h3>
           <p className={styles.ptop}>
@@ -65,37 +65,59 @@ function SyllabusNew({
                   <FaRegUser className={styles.iconUser} /> 7,568 people filled
                 </div>
               </div>
-              
+
               {MastersContent ? (
                 <h4>
-                  Interested in {isGuwahati ? (<> <span>Degree?</span></>):(<> <span>Master’s Degree?</span></>)}
+                  Interested in{" "}
+                  {isGuwahati ? (
+                    <>
+                      {" "}
+                      <span>Degree?</span>
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      <span>Master’s Degree?</span>
+                    </>
+                  )}
                 </h4>
               ) : (
                 <h4>
                   Free Consultation with<span> Expert</span>
                 </h4>
               )}
-              <Form
-                dataScienceCounselling={dataScienceCounselling}
-                interstedInHide={interstedInHide}
-                titleCourse={titleCourse}
-                brochureLink={brochureLink}
-                fullStack={fullStack}
-                syllabus={true}
-                upSkillingHide={true}
-                formotp={formotp}
-                ADS={ADS}
-                dataScience={dataScience}
-              />
+              {formotp ? (
+                <FormOtp
+                  dataScienceCounselling={dataScienceCounselling}
+                  interstedInHide={interstedInHide}
+                  titleCourse={titleCourse}
+                  brochureLink={brochureLink}
+                  fullStack={fullStack}
+                  syllabus={true}
+                  upSkillingHide={true}
+                  formotp={formotp}
+                  ADS={ADS}
+                  dataScience={dataScience}
+                />
+              ) : (
+                <Form
+                  dataScienceCounselling={dataScienceCounselling}
+                  interstedInHide={interstedInHide}
+                  titleCourse={titleCourse}
+                  brochureLink={brochureLink}
+                  fullStack={fullStack}
+                  syllabus={true}
+                  upSkillingHide={true}
+                  formotp={formotp}
+                  ADS={ADS}
+                  dataScience={dataScience}
+                />
+              )}
             </div>
           </div>
         </section>
         <div className={styles.buttonDiv}>
-          {buttonHide ? (
-            ""
-          ) : (
-           <></>
-          )}
+          {buttonHide ? "" : <></>}
           <div onClick={popupShow}>
             <Button
               nobannerButton={true}

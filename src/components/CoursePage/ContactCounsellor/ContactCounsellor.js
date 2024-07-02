@@ -5,7 +5,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import Image from "next/image";
 import { useState } from "react";
 import Popup from "@/components/Global/Popup/Popup";
-import Form from "@/components/Global/FormOtp/FormOtp";
+import Form from "@/components/Global/Form/Form";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
 
 const ContactCounsellor = ({
   dataScience,
@@ -15,7 +16,7 @@ const ContactCounsellor = ({
   brochureLink,
   noWt,
   formotp,
-  ADS
+  ADS,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -29,7 +30,7 @@ const ContactCounsellor = ({
     window.open(whatsappURL, "_blank");
   };
   const handleCall = () => {
-    window.location.href = 'tel:+916364939404';
+    window.location.href = "tel:+916364939404";
   };
   // const sendEmailViaApi = () => {
   //   // Replace with the API endpoint that triggers the email
@@ -89,48 +90,69 @@ const ContactCounsellor = ({
         </div>
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
-          <Form
-            titleCourse={titleCourse}
-            brochureLink={brochureLink}
-            dataScience={dataScience}
-            interstedInHide={interstedInHide}
-            dataScienceCounselling={dataScienceCounselling}
-            upSkillingHide={true}
-            formotp={formotp}
-            ADS={ADS}
-            // radio={radio}
-          />
+          {formotp ? (
+            <FormOtp
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+              dataScience={dataScience}
+              interstedInHide={interstedInHide}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              // radio={radio}
+            />
+          ) : (
+            <Form
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+              dataScience={dataScience}
+              interstedInHide={interstedInHide}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              // radio={radio}
+            />
+          )}
         </div>
       </Popup>
       <div>
         <h4>Can’t decide which program to opt for?</h4>
         <p className={styles.botText}>
-          Don’t worry, our expert counsellor is there to guide you, <b> make the
-          right career choice</b>
+          Don’t worry, our expert counsellor is there to guide you,{" "}
+          <b> make the right career choice</b>
         </p>
 
-      {noWt ? (<>
-        <div className={styles.onlycall}>
-      <button onClick={handleCall} className={styles.inf}>
-        <MdOutlineCall className={styles.conicon} />
-        (+91) 6364939404
-      </button>
-    </div></>):(<>
-        <div className={styles.conbtn}>
-          <button onClick={openWhatsApp} className={styles.inf}>
-            <MdOutlineWhatsapp className={styles.conicon} />
-            (+91) 77956 87988
-          </button>
-         
-        </div>  <div className={styles.conbtn}>
-          <button onClick={openWhatsApp} className={styles.inf}>
-            <MdOutlineWhatsapp className={styles.conicon} />
-            (+91) 77956 87988
-          </button>
-          <button onClick={sendEmail} className={styles.inf}>
-            <AiOutlineMail className={styles.conicon} /> contacts@learnbay.co
-          </button>
-        </div></>)}
+        {noWt ? (
+          <>
+            <div className={styles.onlycall}>
+              <button onClick={handleCall} className={styles.inf}>
+                <MdOutlineCall className={styles.conicon} />
+                (+91) 6364939404
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className={styles.conbtn}>
+              <button onClick={openWhatsApp} className={styles.inf}>
+                <MdOutlineWhatsapp className={styles.conicon} />
+                (+91) 77956 87988
+              </button>
+            </div>{" "}
+            <div className={styles.conbtn}>
+              <button onClick={openWhatsApp} className={styles.inf}>
+                <MdOutlineWhatsapp className={styles.conicon} />
+                (+91) 77956 87988
+              </button>
+              <button onClick={sendEmail} className={styles.inf}>
+                <AiOutlineMail className={styles.conicon} />{" "}
+                contacts@learnbay.co
+              </button>
+            </div>
+          </>
+        )}
 
         <div className={styles.consbtn1} onClick={popupShow}>
           <button className={styles.consbtn} onClick={null}>
