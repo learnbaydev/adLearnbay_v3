@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import Popup from "../Popup/Popup";
 import styles from "./Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = ({ radio }) => {
   const router = useRouter();
@@ -46,6 +47,7 @@ const Navbar = ({ radio }) => {
       </Popup>
       <nav className={styles.nav}>
         <div className={styles.left}>
+          <Link href="/" >
           <Image
             src="https://d32and0ii3b8oy.cloudfront.net/adlearnbay/learnbay-logo.png"
             alt="Learnbay"
@@ -56,6 +58,7 @@ const Navbar = ({ radio }) => {
             loading="eager"
             height="60"
           />
+          </Link>
         </div>
       </nav>
     </div>
