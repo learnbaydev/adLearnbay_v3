@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Navbar from "@/components/Global/AdsNavbar/Navbar";
+import Navbar from "@/components/Global/NavbarHome/NavbarThankYou";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/ThankYou.module.css";

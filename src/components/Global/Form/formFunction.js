@@ -41,7 +41,7 @@ const getEndPoint = (pathname, event) => {
   ) {
     endPoint = "https://getform.io/f/fd68bf82-a911-435e-9719-7c134a89a731";
   }
-  if (pathname === "/resume-builder") {
+  if (pathname === "/resume-builder" || pathname === "/marketing/walk-in-counselling" ) {
     endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   }
   if (
@@ -93,7 +93,7 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
-  if (pathname === "/walk-in-counselling") {
+  if (pathname === "/walk-in-counselling" || pathname === "/marketing/walk-in-counselling" ) {
     routerPath = "/Thank-you-directions";
   }
 
