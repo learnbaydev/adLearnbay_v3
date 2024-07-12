@@ -1,40 +1,36 @@
+import { ThirdSectionData } from "@/Data/ThirdSectionData";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
+import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
+import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
 import WhoProgram from "@/components/CoursePage/NewSections/WhoProgram/ThirdSection";
+import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
+import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
+import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
-import Testimonial from "@/components/Global/Testimonial/Testimonial";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
-import { ThirdSectionData } from "@/Data/ThirdSectionData";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
 import Head from "next/head";
 import { useState } from "react";
-import { parseJSONData } from "../../../Util/JsonConvertor";
-import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
-
-import EightSection from "@/components/MastersCourse/EightSection/EightSection";
-import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
-import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
 import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
-import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
-import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
-import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
-import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
-import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
-import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
-import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
-import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import { parseJSONData } from "../../../Util/JsonConvertor";
+import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
 function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
@@ -133,20 +129,25 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   return (
     <>
       <Head>
-        <title>Data Science Generic - Learnbay</title>
+        <title>
+          Advanced Data Science Course & AI Program With Certification
+        </title>
         <meta
           name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
+          content="Are you searching for the Advanced Data Science and Artificial Intelligence Program With Certification? Learnbay is providing the best online Advanced Data Science and AI Program . Enroll now!"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="Data Science Generic" />
+        <meta
+          name="keywords"
+          content="data science and ai course, advanced data science course, data science and ai, ai and data science course, artificial intelligence and data science course, advanced certification in data science and ai"
+        />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://course.learnbay.co/datascience/s2-data-science-generic"
         />
       </Head>
       <main>
@@ -238,14 +239,14 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 1,25,000"
           FeeEmi="₹6,883/month"
-          weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="JULY 12th"
-        WeekendDate="JULY 5th"
-        WeekendTime="8:00 PM - 10:00 PM"
-        WeekdayTime="8:00 AM - 10:00 AM"
+          weekdaybatch="Weekend Batch"
+          weekendbatch="Weekday Batch"
+          weekday="SAT - SUN"
+          weekend="MON - FRI"
+          WeekdayDate="July 14th"
+          WeekendDate="August 2nd"
+          WeekendTime="8:00 PM - 10:00 PM"
+          WeekdayTime="9:30 AM - 1:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -275,10 +276,11 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <MentorsSection />
         <SliderTabs WithoutService={true} />
         <MobileTestimonial
-        dataScience={true}
-        interstedInHide={true}
-        formotp={true}
-        ADS={true}/>
+          dataScience={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+        />
         <NewProjectSection
           interstedInHide={true}
           formotp={true}

@@ -3,147 +3,50 @@ export const DataScienceMastersinCS = [
     projectSection: [
       {
         id: 1,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Career progression planning of employees with workforce defections & efficiency",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/image+688-min.png",
-        para: "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m1-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 2,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Descriptive study of trends and irregularities with prediction analysis for conversion.",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Project+company+logos/swiggy.png",
-        para: "Swiggy seeks a broad marketing campaign. They also require proper message preparation and delivery of the same to the right audience at the right time. You can help them with text analytics and NLP-based keyword research.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m2-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 3,
-        duration: "26 Hours",
-        logo: "",
-        heading: "Forecasting future sales with trends and price maximization",
-
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewDesignImage/Project+company+logos/bmw.png",
-        para: "BMW customers can sell old vehicles, but rivals provide superior resale prices. BMW's data science-powered software will deliver the greatest market value for used vehicles based on Km travelled, daily price changes, production dates, etc. Such tasks build analytical abilities.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m3-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 4,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Understanding covid-19 cases and fatality rate by time series forecasting",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/samsung.webp",
-        para: "Samsung will launch a new healthcare app soon. The key goal of this app is an accurate human activity tracking and providing relevant health-related recommendations. Continuous analysis of a massive amount of mobile data is required for such an app.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m4-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 5,
-        duration: "26 Hours",
+        duration: "12 Hours",
         logo: "",
         heading:
           "Learn and develop classification techniques for the digital transformation of banking",
         img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/image+675+(1)-min.png",
-        para: "JPMorgan offers tax-friendly insurance choices. You can help them forecast insurance premiums. Targeted marketing using your random forest algorithm skills can help obtain better premium values.",
+        para: "JPMorgan offers tax-friendly insurance choices. You can help them forecastinsurance premiums. Targeted marketing using your random forest algorithm skills can help obtain better premium values.",
         toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m5-min.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/morgan-strip.webp",
         learnMore: "Learn more",
       },
       {
-        id: 6,
-        duration: "26 Hours",
+        id: 2,
+        duration: "17 Hours",
         logo: "",
         heading:
           "Building a content recommendation model on the basis of regional viewer categorization",
         img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/image+674-min.png",
         para: "Netflix is a global entertainment video streaming site. They offer content in various regional languages. Build a local recommendation engine for Netflix customers residing in south Bangalore on their weekend and weekdays activities, utilizing NLP.",
         toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m6-min.webp",
-        learnMore: "Learn more",
-      },
-
-      {
-        id: 7,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Reduction of waiting time via a highly precise forecasting model",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ola.webp",
-        para: "Make a demand forecasting model based on specific time period rider demands. Such a model will help both riders and cab drivers to ensure the least possible waiting time. You can include measures like latitude and longitude identification.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m7-min.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/Netfliix.webp",
         learnMore: "Learn more",
       },
       {
-        id: 8,
-        duration: "26 Hours",
+        id: 3,
+        duration: "14 Hours",
         logo: "",
         heading:
           "Understanding in-depth about logging while drilling (LWD) technique",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ramco.webp",
-        para: "Saudi Aramco company is working on the development of high-efficiency drilling models. Use the bright sides of big data analytics to identify the most cost-effective and highly productive drilling sites.",
+        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/image+683-min.png",
+        para: "Saudi Aramco company is working onthe development of high-efficiency drilling models. Use the bright sides of big data analytics to identify the most cost-effective and highly productive drilling sites.",
         toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m8-min.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/saudi-aramco-strip.webp",
         learnMore: "Learn more",
       },
       {
-        id: 9,
-        duration: "26 Hours",
+        id: 4,
+        duration: "19 Hours",
         logo: "",
         heading:
-          "Churn forecasting for the telecom industry using R programming with ML",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/jio.webp",
-        para: "The goal of this project is to design a precise customer churn prediction model. Based on the same, Jio can identify the exact reason for customer dissatisfaction and work accordingly.",
+          "Career progression planning of employees with workforce defections & efficiency",
+        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/image+688-min.png",
+        para: "IBM intends to boost its HR department by identifying employees' masked inconsistency. They need models to identify the graphical variations in their 14000+ employees' performances. Help them build models with your regressions and other ML abilities.",
         toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m9-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 10,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Recommendation system with customer lifetime value analysis (CLV)",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/amazon.webp",
-        para: "Amazon wants to find the most successful electronics. Live consumer reviews are needed. Using data visualisation, help regenerate consumer insights from ongoing and current reviews.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m10-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 11,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Condition-based preventative maintenance and fault prediction in depth",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/bosch.webp",
-        para: "This project helped BOSCH to predict their internal failures by production line dataset analysis. But still, they are struggling to predict automated faults in their assembly stage. Help them by building more advanced predictive models for assembly stage monitoring.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m11-min.webp",
-        learnMore: "Learn more",
-      },
-      {
-        id: 12,
-        duration: "26 Hours",
-        logo: "",
-        heading:
-          "Automated inventory monitoring for supportable supply chain management",
-        img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/dataco.webp",
-        para: "An automated inventory management system will keep track of stock levels and upcoming orders. In addition, you can contribute to DataCo's intelligent supply chain software generation project by using ML algorithms and R programming skills.",
-        toolImg:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/m12-min.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/IBM-Strip.webp",
         learnMore: "Learn more",
       },
     ],
@@ -394,13 +297,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "Foundation Track (10 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_round.webp",
-        StartImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/down_syll.webp",
-        points: "Python Fundamentals",
-        points1: "Numerical Programming",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_round.webp",
+          StartImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/down_syll.webp",
+          points: "Python Fundamentals",
+          points1: "Numerical Programming",
           content: [
             {
               chap: {
@@ -436,13 +339,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "Statistics & Machine Learning (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_round.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_up.webp",
-        points: "Applied statistics",
-        points1: "Machine Learning",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_round.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_up.webp",
+          points: "Applied statistics",
+          points1: "Machine Learning",
           content: [
             {
               chap: {
@@ -506,14 +409,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S1 :- Data Analytics & Visualization (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_round.webp",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_Down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_up.webp",
-        points: "SQL",
-        points1: "MongoDB",
-        points2:"Tableau",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_round.webp",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_Down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_up.webp",
+          points: "SQL",
+          points1: "MongoDB",
+          points2: "Tableau",
           content: [
             {
               chap: {
@@ -604,13 +507,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S1 :- Deep Learning & Applied Analytics (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_Round.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-        points: "Introduction to deep learning",
-        points1: "Product Analytics",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_Round.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
+          points: "Introduction to deep learning",
+          points1: "Product Analytics",
           content: [
             {
               chap: {
@@ -705,13 +608,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S1 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_round.webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Down.webp",
           endImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_up+(1).webp",
-          points: "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc) ",
+          points:
+            "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc) ",
           content: [
             {
               chap: {
@@ -732,7 +636,7 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S2 :- Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_round+(1).webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_down+(1).webp",
@@ -803,13 +707,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S2 :- Deployment & Gen-AI (15 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Gen_AI_syll.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ARTIFICIAL+INTELLIGENCE_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_up.webp",
-        points: "Deep learning for computer vision",
-        points1: "(NLP)",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Gen_AI_syll.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ARTIFICIAL+INTELLIGENCE_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_up.webp",
+          points: "Deep learning for computer vision",
+          points1: "(NLP)",
           content: [
             {
               chap: {
@@ -873,12 +777,12 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S2 :- Comprehensive Data Structures (10 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_round.webp ",
-        StartImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-        points: "Essential Data Structures: Lists, Queues, Stacks",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_round.webp ",
+          StartImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
+          points: "Essential Data Structures: Lists, Queues, Stacks",
           content: [
             {
               chap: {
@@ -924,13 +828,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S2 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_round.webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Down.webp",
           endImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-          points: "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+          points:
+            "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
           content: [
             {
               chap: {
@@ -947,18 +852,19 @@ export const DataScienceMastersinCS = [
           open: false,
         },
       },
-    ], masterSyllabusMobile: [
+    ],
+    masterSyllabusMobile: [
       {
         Module0: {
           title: "Foundation Track (10 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_round.webp",
-        StartImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/down_syll.webp",
-        points: "Python Fundamentals",
-        points1: "Numerical Programming",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_round.webp",
+          StartImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/PREPARATORY+CLASSES_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/down_syll.webp",
+          points: "Python Fundamentals",
+          points1: "Numerical Programming",
           content: [
             {
               chap: {
@@ -994,13 +900,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "Statistics & Machine Learning (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_round.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_up.webp",
-        points: "Applied statistics",
-        points1: "Machine Learning",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_round.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/level_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_up.webp",
+          points: "Applied statistics",
+          points1: "Machine Learning",
           content: [
             {
               chap: {
@@ -1064,14 +970,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S1 :- Data Analytics & Visualization (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_round.webp",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_Down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_up.webp",
-        points: "SQL",
-        points1: "MongoDB",
-        points2:"Tableau",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_round.webp",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BIG+DATA_Down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_up.webp",
+          points: "SQL",
+          points1: "MongoDB",
+          points2: "Tableau",
           content: [
             {
               chap: {
@@ -1162,13 +1068,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S1 :- Deep Learning & Applied Analytics (20 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_Round.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-        points: "Introduction to deep learning",
-        points1: "Product Analytics",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_Round.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Data+Science+%26+AI_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
+          points: "Introduction to deep learning",
+          points1: "Product Analytics",
           content: [
             {
               chap: {
@@ -1263,13 +1169,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S1 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_round.webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Down.webp",
           endImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_up+(1).webp",
-          points: "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc) ",
+          points:
+            "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc) ",
           content: [
             {
               chap: {
@@ -1290,7 +1197,7 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S2 :- Deep Learning & Advanced Data Analysis (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_round+(1).webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ESSENTIALS_down+(1).webp",
@@ -1361,13 +1268,13 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S2 :- Deployment & Gen-AI (15 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Gen_AI_syll.webp ",
-        StartImageUrl:
-          " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ARTIFICIAL+INTELLIGENCE_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_up.webp",
-        points: "Deep learning for computer vision",
-        points1: "(NLP)",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Gen_AI_syll.webp ",
+          StartImageUrl:
+            " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ARTIFICIAL+INTELLIGENCE_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_up.webp",
+          points: "Deep learning for computer vision",
+          points1: "(NLP)",
           content: [
             {
               chap: {
@@ -1431,12 +1338,12 @@ export const DataScienceMastersinCS = [
         Module0: {
           title: "S2 :- Comprehensive Data Structures (10 ECTS Credits)",
           imageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_round.webp ",
-        StartImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_down.webp",
-        endImageUrl:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-        points: "Essential Data Structures: Lists, Queues, Stacks",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_round.webp ",
+          StartImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MICROSOFT+AZURE_down.webp",
+          endImageUrl:
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
+          points: "Essential Data Structures: Lists, Queues, Stacks",
           content: [
             {
               chap: {
@@ -1482,13 +1389,14 @@ export const DataScienceMastersinCS = [
         Module0: {
           title:
             "S2 :- Industry-Specific DA & Professional Development (20 ECTS Credits)",
-            imageUrl:
+          imageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_round.webp",
           StartImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Down.webp",
           endImageUrl:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/BUSINESS+ANALYTICS_Up.webp",
-          points: "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
+          points:
+            "Domain electives (BFSI, Healthcare, E-Commerce, Supplychain, etc)",
           content: [
             {
               chap: {

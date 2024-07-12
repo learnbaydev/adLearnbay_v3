@@ -32,6 +32,21 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
 
   const [popupData, setPopupData] = useState([]);
 
+  const seconddata = [
+    {
+      boldText: "60+",
+      normalText: "Countries Recognition",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review1.webp",
+    },
+    {
+      CboldText: "90+",
+      normalText: "Transferrable ECTS Credits",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review2.webp",
+    },
+    { boldText: "35K+", normalText: "Trusted Learners" },
+  ];
   const DsSecond = {
     title1: "Domain Specialization",
     image1:
@@ -70,37 +85,37 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
     image5:
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
-
   const JobData = {
-    title: "Fast-Track Your Career in AI   ",
+    title: "Master’s Degree that gets you Job Abroad   ",
     points: [
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
         imgAlt: "",
-        title: "Comprehensive Mastery of AI and Data Science:     ",
+        title: "Earn a Degree Without Pausing Your Career        ",
         description:
-          "Gain in-depth knowledge and practical skills in AI and Data Science     ",
+          "Flexible online degrees from LearnBay's ExcelVarsity for working pros.       ",
       },
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
         imgAlt: "",
-        title: "Complimentary Advance Gen-AI Module     ",
+        title: "Skill Up for Swift Promotions       ",
         description:
-          "Tailored for career transformation in a tech-driven era      ",
+          "Curriculum designed for rapid career advancement and leadership roles.       ",
       },
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
         imgAlt: "",
-        title: "3 years of Job and Placement support     ",
-        description: "Online and flexible, ideal for busy professionals:      ",
+        title: "Step into High-Value Research Careers        ",
+        description:
+          "Degree for prestigious research jobs and institutional collaborations.        ",
       },
     ],
     bannerImage: {
-      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/guwati-job.webp",
-      width: 410,
+      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job1.webp",
+      width: 500,
       height: 400,
       priority: true,
       quality: 80,
@@ -147,7 +162,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           softwareBtnHide={true}
         />
 
-        <MasterSecondSection />
+        <MasterSecondSection data={seconddata} />
         <CloudDevopsecond data={DsSecond} />
         <JobAbroad
           data={JobData}
@@ -184,13 +199,13 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           Fee="₹ 3,25,000"
           FeeEmi="15,980/month"
           weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="JULY 12th"
-        WeekendDate="JULY 5th"
-        WeekendTime="8:00 PM - 10:00 PM"
-        WeekdayTime="8:00 AM - 10:00 AM"
+          weekendbatch="Weekday Batch"
+          weekday="MON-WED-FRI"
+          weekend="MON-FRI"
+          WeekdayDate="AUG 19th"
+          WeekendDate="SEP 13th"
+          WeekendTime="08:00 PM - 10:00 PM"
+          WeekdayTime="08:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

@@ -29,20 +29,26 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   return (
     <>
       <Head>
-        <title>Data Science Generic - Learnbay</title>
+        <title>
+          Data Science Course with Certifications for Healthcare Professionals -
+          Learnbay
+        </title>
         <meta
           name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
+          content="Empower your Healthcare career with Learnbay's Data Science course for BSFI professionals. Elevate skills, drive innovation in banking and finance. Enroll now!"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="Data Science Generic" />
+        <meta
+          name="keywords"
+          content="Data Science for Healthcare Professional course, Data Science for Healthcare Professional certification course, Data Science for Healthcare Professional certification, Healthcare Professional Program training, hr analytics course, Healthcare Professional Program course online, marketing analytics course, Healthcare Professional Program certification course, best Healthcare Professional Program course, best Healthcare Professional Program certification"
+        />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/advance-data-science-certification-courses"
+          href="https://course.learnbay.co/datascience/s2-data-science-healthcare"
         />
       </Head>
       <main>
@@ -98,14 +104,14 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 89,000"
           FeeEmi="₹ 8,752/month"
-          weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="JULY 12th"
-        WeekendDate="JULY 5th"
-        WeekendTime="8:00 PM - 10:00 PM"
-        WeekdayTime="8:00 AM - 10:00 AM"
+          weekdaybatch="Weekend Batch"
+          weekendbatch="Weekday Batch"
+          weekday="SAT - SUN"
+          weekend="MON - FRI"
+          WeekdayDate="July 14th"
+          WeekendDate="August 2nd"
+          WeekendTime="8:00 PM - 10:00 PM"
+          WeekdayTime="9:30 AM - 1:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
