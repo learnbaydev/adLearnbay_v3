@@ -4,7 +4,7 @@ import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
 import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import Certificate from "@/components/Global/Certificate/Certificate";
+import Certificate from "@/components/MastersCourse/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
@@ -102,13 +102,13 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           Fee="₹3,25,000"
           FeeEmi="15,980/month"
           weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="JULY 12th"
-        WeekendDate="JULY 5th"
-        WeekendTime="8:00 PM - 10:00 PM"
-        WeekdayTime="8:00 AM - 10:00 AM"
+          weekendbatch="Weekday Batch"
+          weekday="MON-WED-FRI"
+          weekend="MON-FRI"
+          WeekdayDate="AUG 19th"
+          WeekendDate="SEP 13th"
+          WeekendTime="08:00 PM - 10:00 PM"
+          WeekdayTime="08:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

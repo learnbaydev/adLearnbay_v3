@@ -1,13 +1,8 @@
 .GetHireMain {
   opacity: 10;
-  background: linear-gradient(
-    270deg,
-    #fff -5.52%,
-    #eae9e9 50.41%,
-    #fff 102.11%
-  );
-  padding: 50px 150px 50px 150px;
-  margin: 50px 0px 40px 0px;
+  background: #fff;
+  padding: 0px 150px;
+  margin: 0px 0px 0px 0px;
 }
 
 .mainpara {
@@ -36,7 +31,7 @@
 
 .GetHireBulet {
   display: grid;
-  grid-template-columns: 58% 33%;
+  grid-template-columns: 54% 33%;
   grid-gap: 50px;
   grid-gap: 50px;
   gap: 60px;
@@ -53,7 +48,7 @@
   margin-left: 16px;
 }
 .PRo {
-  color: #f99600;
+  color: #FE7A36;
 }
 
 .Points {
@@ -103,6 +98,57 @@
 .showMobile {
   display: none;
 }
+
+@media only screen and (max-width: 1281px) {
+  .GetHireMain  {
+    padding: 0px 30px;
+  }
+
+
+}
+@media only screen and (max-width: 1024px) {
+.showDesktop {
+  width: 320px;
+  height: auto;
+}
+/* .minibullet {
+  display: grid;
+    grid-template-columns: 60% 60%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+} */
+.GetHireHead {
+display: grid;
+    grid-template-columns: 40% 45%;
+    grid-gap: 195px;
+    gap: 180px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+
+.showDesktop img {
+  width: 400px;
+  height: 100%;
+}
+.GetHireBulet {
+  display: grid;
+  grid-template-columns: 70% 39%;
+  grid-gap: 50px;
+  grid-gap: 50px;
+  grid-gap: 60px;
+  gap: 35px;
+  align-items: center;
+}
+.GetHireHead h2{
+font-size: 24px;
+}
+
+
+}
+
+
 
 @media only screen and (max-width: 600px) {
   .GetHireMain {

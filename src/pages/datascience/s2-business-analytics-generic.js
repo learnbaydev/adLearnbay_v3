@@ -1,48 +1,147 @@
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
-import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
-import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
-import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
+import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
+import WhoProgram from "@/components/CoursePage/NewSections/WhoProgram/ThirdSection";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
-import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
-import S2SecondSection from "@/components/S2SecondSection/SecondSection";
+import { BAThirdSectionData } from "@/Data/ThirdSectionData";
 import Head from "next/head";
-import { useState } from "react";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
-
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
+import { BsDisplay, BsPeople } from "react-icons/bs";
+import { AiOutlineContainer } from "react-icons/ai";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
+import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
+import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
+import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
+import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
+import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
+import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
+import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import { LuBrainCircuit } from "react-icons/lu";
 
-function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
+function Blockchain({ BusinessAnalyticsDataJson }) {
   const BusinessAnalyticsData = parseJSONData(BusinessAnalyticsDataJson);
 
-  const [popupData, setPopupData] = useState([]);
+  const seconddata = [
+    {
+      boldText: "IBM",
+      normalText: "Certified Capstone",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review1.webp",
+    },
+    {
+      CboldText: "175%",
+      normalText: "Average Salary Hike",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review2.webp",
+    },
+    { boldText: "35K+", normalText: "Trusted Learners" },
+  ];
+  const BASecond = {
+    title1: "Domain Specialization",
+    image1:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds-two.webp",
+    points: [
+      "Work in an industry like environment and gain practical hands-on experienc",
+      "12 Real-World + 4 Capstone Projects",
+    ],
+    image2:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/BA.webp",
+    title2: "Job Roles You Can Target",
+    jobRoles: [
+      {
+        icon: <TbBrandGoogleAnalytics />,
+        role: "Business Analyst   ",
+        salary: " 27 LPA",
+      },
+      { icon: <LuBrainCircuit />, role: "BI Engineer ", salary: "  20 LPA" },
+      { icon: <FaReact />, role: "Data Scientist ", salary: " 17 LPA" },
+    ],
+    image3:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Group-768-min.webp",
+    image4:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
+    title3: "Assured Job Assistance",
+    jobAssistance: [
+      { icon: <BsDisplay />, text: "Unlimited Interview Calls" },
+      { icon: <AiOutlineContainer />, text: "Resume Building Session" },
+      { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
+    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
+    image5:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
+  };
+  const JobData = {
+    title: "Business Decisions Empowered by Analytics    ",
+    points: [
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
+        imgAlt: "",
+        title: "Lead with Data-Driven Decisions   ",
+        description:
+          "Learn to drive business growth by making informed business strategies.   ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
+        imgAlt: "",
+        title: "Flexible Learning at your Convenience        ",
+        description:
+          "Designed for professionals aiming to upskill without quitting their job         ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
+        imgAlt: "",
+        title: "Fast-Track to Higher Earnings    ",
+        description:
+          "Get significant salary increases in the business analytics domain.",
+      },
+    ],
+    bannerImage: {
+      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BA-min.webp",
+      width: 500,
+      height: 400,
+      priority: true,
+      quality: 80,
+      alt: "Banner Image 1 Alt",
+    },
+  };
 
   return (
     <>
       <Head>
-        <title>Business Analytics Generic - Learnbay</title>
+      <title>Best Business Analyst Course with Placement Support</title>
         <meta
           name="description"
-          content="Upskill yourself with cutting edge Artificial Intelligence and Data Science Skills, Techniques by enrolling into the Learnbay's Advanced Data Science Course."
+          content="Get the best Business Analytics & Analyst Course with placement support. Top certification & training for online classes. Enrol now for better career options."
         />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="Data Science Generic" />
+        <meta
+          name="keywords"
+          content="  business analytics course, business analyst course with placement, business analyst classes online, business analyst course with placement guarantee, best business analyst course, best business analysis course, best business analyst training, top business analyst certification, business analytics course with placement, business analysis training and placement, best business analyst course with placement,      "
+        />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/s2-business-analytics-generic"
+          href="https://course.learnbay.co/datascience/s2-business-analytics-generic"
         />
       </Head>
       <main>
@@ -51,6 +150,11 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           interstedInHide={true}
           formotp={true}
           ADS={true}
+          softwareBtnHide={true}
+          dataScienceCounselling={true}
+          dataScience={true}
+          radio={true}
+          upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Training based on real-time projects specially designed for working professionals who aspire of having a lucrative career.          "
@@ -59,45 +163,85 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           firstToparaImg="for Working Professionals "
           firstHeading="Business Analytics Course  "
           firstTopPara="Acquire practical skills you can apply immediately          "
-          softwareBtnHide={true}
         />
 
-        <SecondSection />
-        <S2SecondSection />
-        <WhoIsProgram
-          first="Bachelor's degree with consistent good academic"
-          second="Minimum 6 Months of IT/Non-IT work experience"
-          third="Early to mid-career professionals interested in Business analytics"
-          forth="Developing skills in Business analytics for future opportunities"
-        />
-        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
-        <GetHire />
-
-        <SyllabusNew
+        <MasterSecondSection data={seconddata} />
+        <CloudDevopsecond data={BASecond} dataScience={true} />
+        <JobAbroad
+          data={JobData}
+          dataScience={true}
           interstedInHide={true}
           formotp={true}
           ADS={true}
+        />
+
+        <WhoProgram
+          dataScience={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+          leftImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/advance-who.webp"
+          ThirdSectionData={BAThirdSectionData}
+        />
+        <Realstory />
+        <TrainerSection plainimg={true} iimgchmbl={true} />
+        <div style={{ marginTop: "100px" }}>
+          <WhoIsProgram
+            first="Bachelor's degree with consistent good academic"
+            second="Minimum 6 Month of IT/Non-IT work experience"
+            third="Early to mid-career professionals interested in Business analytics"
+            forth="Developing skills in Business analytics for future opportunities"
+          />
+        </div>
+
+        <WhyLearnbay
+          projectInno={true}
+          adsHide={true}
+          dataScience={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+        />
+        <GetHire />
+
+        <ContactCounsellor
+          noWt={true}
+          dataScience={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+        />
+        <LJourney />
+
+        <SyllabusNew
+          buttonHide={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+          dataScienceCounselling={true}
+          dataScience={true}
           masterSyllabusMobile={
             BusinessAnalyticsData.BADataScienceCourseData[0]
               .masterSyllabusMobile
           }
           onebtn={true}
         />
+        <ToolsCovered />
 
         <Certificate
           data={BusinessAnalyticsData.BADataScienceCourseData[0].Certificate}
         />
         <FeeSection
-          Fee="₹ 1,25,000"
-          FeeEmi="₹6,228/month"
-          weekdaybatch="Weekend Batch"
-          weekendbatch="Weekday Batch"
-          weekday="SAT-SUN"
-          weekend="MON-FRI"
-          WeekdayDate="July 7th"
-          WeekendDate="JUNE 7th"
-          WeekendTime="8.00 PM - 10.00 PM"
-          WeekdayTime="9:30 AM - 1:00 PM"
+          Fee="₹ 95,000"
+          FeeEmi="₹ 6,228/month"
+          weekdaybatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
+          weekday="MON-FRI"
+          weekend="SAT-SUN"
+          WeekdayDate="August 9th"
+          WeekendDate="July 7th"
+          WeekendTime="9:30 AM - 1:00 PM"
+          WeekdayTime="8.00 PM - 10.00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -105,7 +249,7 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           interstedInHide={true}
           formotp={true}
           ADS={true}
-          // EMI POPUPDATA
+          // <EMI POPUP
           emiType="NO COST EMI"
           duration1="18 Months"
           totalAmount1="₹95,000"
@@ -113,18 +257,16 @@ function Blockchain({ BusinessAnalyticsDataJson, projectSection }) {
           greenDown1="Standard Intrest rate Applicable"
           duration2="12 Months"
           totalAmount2="₹95,000"
-          monthlyPayment2="₹11,308"
-        />
-        <TrainerSection plainimg={true} iimgchmbl={true} />
-        <Testimonial
-          redirectDS={true}
-          videotest={true}
-          heading="Hear it from our Alumni"
-          Testimonial={
-            BusinessAnalyticsData.BADataScienceCourseData[0].testimonialgenric
-          }
+          monthlyPayment2="₹9,342"
         />
         <MentorsSection />
+        <SliderTabs WithoutService={true} />
+        <MobileTestimonial
+          dataScience={true}
+          interstedInHide={true}
+          formotp={true}
+          ADS={true}
+        />
         <NewProjectSection
           interstedInHide={true}
           formotp={true}

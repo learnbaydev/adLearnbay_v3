@@ -46,7 +46,7 @@ function Blockchain({ DADataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true}  />
+        <Navbar interstedInHide={true} formotp={true} />
         <FirstSection
           interstedInHide={true}
           formotp={true}
@@ -99,14 +99,14 @@ function Blockchain({ DADataScienceCourseDataJson, projectSection }) {
         <FeeSection
           Fee="₹ 85,000"
           FeeEmi="₹5,572/month"
-          weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="MON - FRI"
-        weekend="MON - FRI"
-        WeekdayDate="JULY 12th"
-        WeekendDate="JULY 5th"
-        WeekendTime="8:00 PM - 10:00 PM"
-        WeekdayTime="8:00 AM - 10:00 AM"
+          weekdaybatch="Weekend Batch"
+          weekendbatch="Weekday Batch"
+          weekday="SAT - SUN"
+          weekend="MON - FRI"
+          WeekdayDate="July 14th"
+          WeekendDate="August 2nd"
+          WeekendTime="8:00 PM - 10:00 PM"
+          WeekdayTime="9:30 AM - 1:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"

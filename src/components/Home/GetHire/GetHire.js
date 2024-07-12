@@ -3,19 +3,15 @@ import Styles from "./Gethire.module.css";
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 
-function GetHire({ HideImage, OS }) {
+function GetHire({proHide}) {
   return (
     <div id="servicePro">
       <div className={Styles.GetHireMain}>
         <div className={Styles.GetHireHead}>
           <div className={Styles.HireLeft}>
             <h2>
-              {OS
-                ? "Land Your Dream Job with Our "
-                : "              Land Your Dream Job with Career Services"}
-              <span className={Styles.PRo}>
-                {OS ? "Self-Paced Course" : " PRO"}
-              </span>
+              Land Your Dream Job with Career Services{" "}
+              {proHide ? ("") : ( <span className={Styles.PRo}>PRO</span>)}
             </h2>
             <div className={Styles.GetHireBulet}>
               <div className={Styles.minibullet}>
@@ -46,18 +42,15 @@ function GetHire({ HideImage, OS }) {
                   <p>3 Years Flexible Sub.</p>
                 </div>
               </div>
-              {HideImage ? (
-                ""
-              ) : (
-                <div>
-                  <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job-ready.webp"
-                    width={160}
-                    height={190}
-                    alt="getHire"
-                  />
-                </div>
-              )}
+              <div>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job-ready.webp"
+                  width={160}
+                  height={190}
+                  alt="getHire"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
@@ -72,6 +65,7 @@ function GetHire({ HideImage, OS }) {
                 width={550}
                 height={260}
                 alt="company"
+                loading="lazy"
               />
             </div>
             <div className={Styles.showMobile}>
@@ -80,6 +74,7 @@ function GetHire({ HideImage, OS }) {
                 width={550}
                 height={260}
                 alt="company"
+                loading="lazy"
               />
             </div>
           </div>
