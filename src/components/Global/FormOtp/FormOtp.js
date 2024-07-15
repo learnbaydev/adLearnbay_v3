@@ -110,7 +110,7 @@ function FormOtp({
         // console.log(mobileNumber)
 
         if (mobileNumber !== undefined && name !== "" && email !== "") {
-          const regex = /(\+91)/g;
+          const regex = /^(\+91[\-\s]?)?[0]?(91)?[0-9]\d{9}$/g;
           const str = mobileNumber.toString();
           const subst = `\$1-`;
           const result = str.replace(regex, subst);
@@ -217,7 +217,7 @@ function FormOtp({
         const strippedPhoneNumber = mobileNumber.replace(/^91/, "");
         // console.log(result)
         const isIndianPhoneNumber = (phoneNumber) => {
-          const indianPhoneNumberRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+          const indianPhoneNumberRegex = /^(\+91[\-\s]?)?[0]?(91)?[0-9]\d{9}$/g;
           return indianPhoneNumberRegex.test(phoneNumber);
         };
         const checkNumber = isIndianPhoneNumber(mobileNumber);
