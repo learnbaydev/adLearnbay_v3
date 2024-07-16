@@ -10,10 +10,10 @@ import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
-import Footer from "@/components/Global/Footer/Footer";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataScienceCourseDataJson }) {
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
@@ -54,6 +54,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           firstHeading="Advance Data Science & AI Program"
           firstTopPara="Curriculum Inclusive of Gen-AI "
           idss="YWxTtvb3x-U"
+          softwareBtnHide={true}
         />
         <SecondSection />
         <WhoIsProgram
@@ -83,9 +84,9 @@ function Blockchain({ DataScienceCourseDataJson }) {
           }
         />
         <SeventhSection />
-        <Footer />
         <WhatsappFloat />
         <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );
