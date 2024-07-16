@@ -15,6 +15,7 @@ import Footer from "@/components/Global/Footer/Footer";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 
 function Blockchain({ DataScienceCourseDataJson }) {
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
@@ -54,6 +55,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           firstToparaImg="with Domain Specialization"
           firstHeading="Advance Data Science & AI Program"
           firstTopPara="Curriculum Inclusive of Gen-AI "
+          softwareBtnHide={true}
           idss="YWxTtvb3x-U"
         />
         <SecondSection />
@@ -63,11 +65,12 @@ function Blockchain({ DataScienceCourseDataJson }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection />
+        <ProjectSection dataScienceCounselling={true} interstedInHide={true} />
         <SyllabusNew
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
           }
+          dataScienceCounselling={true} interstedInHide={true}
         />
         <Certificate
           data={DataScienceCourseData.DataScienceCourseData[0].Certificate}
@@ -76,11 +79,11 @@ function Blockchain({ DataScienceCourseDataJson }) {
           redirectDS={true}
           heading="Hear it from our Alumni"
           Testimonial={
-            DataScienceCourseData.DataScienceCourseData[0].testimonial
+            DataScienceCourseData.DataScienceCourseData[0].testimonialgenric
           }
         />
         <SeventhSection />
-        <Footer />
+        <EightSection />
         <WhatsappFloat />
         <BottomBar radio={true} />
         <MyCookieConsent />

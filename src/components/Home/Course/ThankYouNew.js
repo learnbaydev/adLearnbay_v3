@@ -175,7 +175,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Placement & Project Syllabus</p>
+            <p>IIT Guwahati</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -295,7 +295,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>View All</p>
+            <p>Domain Courses Syllabus</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -358,7 +358,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Cloud Computing & Devops Syllabus
+            Cloud & DevOps Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -392,7 +392,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Data Science Master in CS
+            Master's Degree Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -409,7 +409,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            View All
+            Domain Courses Syllabus
           </span>
         </div>
         {viewAll ? (
