@@ -140,12 +140,6 @@ const ContactCounsellor = ({
                 <MdOutlineWhatsapp className={styles.conicon} />
                 (+91) 77956 87988
               </button>
-            </div>{" "}
-            <div className={styles.conbtn}>
-              <button onClick={openWhatsApp} className={styles.inf}>
-                <MdOutlineWhatsapp className={styles.conicon} />
-                (+91) 77956 87988
-              </button>
               <button onClick={sendEmail} className={styles.inf}>
                 <AiOutlineMail className={styles.conicon} />{" "}
                 contacts@learnbay.co
