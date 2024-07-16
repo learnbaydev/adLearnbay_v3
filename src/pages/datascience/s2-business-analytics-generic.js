@@ -1,36 +1,36 @@
+import { BAThirdSectionData } from "@/Data/ThirdSectionData";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
+import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
+import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
 import WhoProgram from "@/components/CoursePage/NewSections/WhoProgram/ThirdSection";
+import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
+import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
+import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import { BAThirdSectionData } from "@/Data/ThirdSectionData";
+import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
 import Head from "next/head";
+import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople } from "react-icons/bs";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
-import EightSection from "@/components/MastersCourse/EightSection/EightSection";
-import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
-import { BsDisplay, BsPeople } from "react-icons/bs";
-import { AiOutlineContainer } from "react-icons/ai";
-import { FaLinkedinIn, FaReact } from "react-icons/fa";
-import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
-import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
-import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
-import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
-import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
-import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
-import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
-import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
-import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
-import { LuBrainCircuit } from "react-icons/lu";
 
 function Blockchain({ BusinessAnalyticsDataJson }) {
   const BusinessAnalyticsData = parseJSONData(BusinessAnalyticsDataJson);
@@ -125,7 +125,7 @@ function Blockchain({ BusinessAnalyticsDataJson }) {
   return (
     <>
       <Head>
-      <title>Best Business Analyst Course with Placement Support</title>
+        <title>Best Business Analyst Course with Placement Support</title>
         <meta
           name="description"
           content="Get the best Business Analytics & Analyst Course with placement support. Top certification & training for online classes. Enrol now for better career options."
@@ -235,13 +235,13 @@ function Blockchain({ BusinessAnalyticsDataJson }) {
           Fee="₹ 95,000"
           FeeEmi="₹ 6,228/month"
           weekdaybatch="Weekday Batch"
-          weekendbatch="Weekend Batch"
+          weekendbatch="Weekday Batch"
           weekday="MON-FRI"
-          weekend="SAT-SUN"
-          WeekdayDate="August 9th"
-          WeekendDate="July 7th"
-          WeekendTime="9:30 AM - 1:00 PM"
-          WeekdayTime="8.00 PM - 10.00 PM"
+          weekend="MON-FRI"
+          WeekdayDate="Sept 15th"
+          WeekendDate="August 9th"
+          WeekendTime="8.00 PM - 10.00 PM"
+          WeekdayTime="8.00 AM - 10.00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
