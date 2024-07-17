@@ -62,7 +62,6 @@ function FormOtp({
 
   const handleForm = () => (e) => {
     const name = e.target.name;
-    console.log(e.target.name);
     const value = e.target.value;
     setForm((prevState) => ({
       ...prevState,
@@ -107,18 +106,19 @@ function FormOtp({
         const mobileNumber = form.phone;
         const name = form.name;
         const email = form.email;
-        // console.log(mobileNumber)
 
-        if (mobileNumber !== undefined && name !== "" && email !== "") {
+        if (
+          mobileNumber !== undefined &&
+          name !== "" &&
+          email !== "" &&
+          mobileNumber !== ""
+        ) {
           const regex = /(\+91)/g;
           const str = mobileNumber.toString();
           const subst = `\$1-`;
           const result = str.replace(regex, subst);
-          // console.log(result)
           const num = result.split("-")[0];
-          console.log(num);
           const mobileNumber1 = result.split("-")[1];
-          // console.log(mobileNumber1)
 
           if (num === "+91") {
             setupdateMobileNumber(mobileNumber1);
@@ -131,7 +131,6 @@ function FormOtp({
             })
               .then((response) => response.json())
               .then((response) => {
-                // console.log("Response", response)
                 if (response.msg == "OTP Sent Successfully") {
                   setToggle(false);
                   setAlertMSG("OTP Sent Successfully");
@@ -159,23 +158,32 @@ function FormOtp({
                 console.log(err);
               });
           } else {
-            fetch(endPoint, {
-              method: "POST",
-              body: formData,
-            }).then(() =>
-              setForm({
-                name: "",
-                email: "",
-                platform: "",
-                otp: "",
-                url: router.asPath,
-                phone: "",
-                interstedin: "",
-              })
-            );
+            const isInternationalNumber = !/^\+?91/.test(mobileNumber); // Check if not starting with +91 or 91
 
-            setDisable(true);
-            router.push(ThankYou);
+            if (isInternationalNumber) {
+              fetch(endPoint, {
+                method: "POST",
+                body: formData,
+              }).then(() =>
+                setForm({
+                  name: "",
+                  email: "",
+                  platform: "",
+                  otp: "",
+                  url: router.asPath,
+                  phone: "",
+                  interstedin: "",
+                  country: "",
+                  region: "",
+                  city: "",
+                })
+              );
+              setDisable(true);
+              router.push(ThankYou);
+            } else {
+              setToggle(false);
+              setAlertMSG("Invalid Phone Number");
+            }
           }
         } else {
           setToggle(false);
@@ -206,26 +214,23 @@ function FormOtp({
     }
 
     try {
-      console.log("vdhjgvdghwgdg", "sendOtp");
-      console.log("vhello", form.interstedin);
-
       const mobileNumber = form.phone;
-      console.log(form.phone);
       const name = form.name;
       const email = form.email;
-      if (mobileNumber !== undefined && name !== "" && email !== "") {
+      if (
+        mobileNumber !== undefined &&
+        name !== "" &&
+        email !== "" &&
+        mobileNumber !== ""
+      ) {
         const strippedPhoneNumber = mobileNumber.replace(/^91/, "");
-        // console.log(result)
         const isIndianPhoneNumber = (phoneNumber) => {
           const indianPhoneNumberRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
           return indianPhoneNumberRegex.test(phoneNumber);
         };
         const checkNumber = isIndianPhoneNumber(mobileNumber);
 
-        // console.log(mobileNumber1)
-
         if (checkNumber) {
-          console.log("inside");
           setupdateMobileNumber(strippedPhoneNumber);
           const data = fetch(`${"/api/Authentication/sendOtp"}`, {
             method: "POST",
@@ -236,7 +241,6 @@ function FormOtp({
           })
             .then((response) => response.json())
             .then((response) => {
-              // console.log("Response", response)
               if (response.msg == "OTP Sent Successfully") {
                 setToggle(false);
                 setAlertMSG("OTP Sent Successfully");
@@ -264,31 +268,36 @@ function FormOtp({
               console.log(err);
             });
         } else {
-          fetch(`${endPoint}`, {
-            method: "POST",
-            body: formData,
-          }).then(() =>
-            setForm({
-              name: "",
-              email: "",
-              platform: "",
-              otp: "",
-              url: router.asPath,
-              phone: "",
-              interstedin: "",
-              country: "",
-              region: "",
-              city: "",
-            })
-          );
+          const isInternationalNumber = !/^\+?91/.test(mobileNumber); // Check if not starting with +91 or 91
 
-          setDisable(true);
-          router.push(ThankYou);
+          if (isInternationalNumber) {
+            fetch(endPoint, {
+              method: "POST",
+              body: formData,
+            }).then(() =>
+              setForm({
+                name: "",
+                email: "",
+                platform: "",
+                otp: "",
+                url: router.asPath,
+                phone: "",
+                interstedin: "",
+                country: "",
+                region: "",
+                city: "",
+              })
+            );
+            setDisable(true);
+            router.push(ThankYou);
+          } else {
+            setToggle(false);
+            setAlertMSG("Invalid Phone Number");
+          }
         }
       } else {
         setToggle(false);
         setAlertMSG("Please Enter Empty Fields");
-        // console.log("please enter number")
       }
       setSubmitting(false);
     } catch (error) {
@@ -332,8 +341,6 @@ function FormOtp({
         })
           .then((response) => response.json())
           .then((response) => {
-            // console.log("Response", response)
-
             if (response.msg == "OTP Validated Successfully") {
               setToggle(false);
               setAlertMSG("OTP Validated Successfully");
