@@ -14,6 +14,8 @@ const FirstSection = ({
   idss,
   formotp,
   ADS,
+  HideInterest,
+  DomainInput,
 }) => {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -29,6 +31,8 @@ const FirstSection = ({
         heading="Apply For Counselling"
         formotp={formotp}
         ADS={ADS}
+        HideInterest={HideInterest}
+        DomainInput={DomainInput}
       />
        <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <FirstSectionContent    setPopups={setPopups}

@@ -257,12 +257,13 @@ const testimonials = [
 
 function MobileTestimonial({
   dataScienceCounselling,
-  upSkillingHide,
+  HideInterest,
   interstedInHide,
   formotp,
   ADS,
   dataScience,
   radio,
+  DomainInput,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -318,6 +319,8 @@ function MobileTestimonial({
               formotp={formotp}
               ADS={ADS}
               radio={radio}
+            HideInterest={HideInterest}
+            DomainInput={DomainInput}
             />
             ) : (
               <Form

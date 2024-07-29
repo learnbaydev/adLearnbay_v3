@@ -19,6 +19,7 @@ function FormOtp({
   upSkillingHide,
   HideInterest,
   radio,
+  DomainInput,
 }) {
   const router = useRouter();
   const [btnHide, setBtnHide] = useState(false);
@@ -31,7 +32,7 @@ function FormOtp({
   const [error, setError] = useState(false);
   const [disable, setDisable] = useState(false);
   const [formFields, setFormFields] = useState(
-    getFormFields(HideInterest, btnHide, radio)
+    getFormFields(HideInterest, btnHide, radio,  DomainInput)
   );
 
   const [form, setForm] = useState({

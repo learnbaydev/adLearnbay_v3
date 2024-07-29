@@ -11,6 +11,8 @@ function ContactUs({
   interstedInHide,
   formotp,
   ADS,
+  DomainInput,
+  HideInterest,
 }) {
   return (
     <section className={styles.ContactUs}>
@@ -59,6 +61,8 @@ function ContactUs({
             dataScience={dataScience}
             interstedInHide={interstedInHide}
             ADS={ADS}
+            DomainInput={DomainInput}
+            HideInterest={HideInterest}
           />
         ) : (
           <FormInline

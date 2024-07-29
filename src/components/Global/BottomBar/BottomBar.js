@@ -15,6 +15,7 @@ const BottomBar = ({
   HideInterest,
   dataScience,
   radio,
+  DomainInput,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -34,6 +35,7 @@ const BottomBar = ({
         HideInterest={HideInterest}
         dataScience={dataScience}
         radio={radio}
+        DomainInput={DomainInput}
       />
       {masterdegree ? (
         <div className="flDivLeft" onClick={popupShow}>

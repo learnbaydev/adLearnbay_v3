@@ -27,7 +27,7 @@ function FirstSection({
   fresher,
   upSkillingHide,
   dataScienceGeneric,
-  radio,
+  noImg,
   downloadBrochure,
   fullStack,
   DSWolf,
@@ -86,6 +86,7 @@ function FirstSection({
         ibmOnly={ibmOnly}
         formotp={formotp}
         ADS={ADS}
+        noImg={noImg}
       />
     </>
   );

@@ -23,7 +23,9 @@ const Course = ({
   dataScienceGeneric,
   interstedInHide,
   formotp,
+  HideInterest,
   ADS,
+  DomainInput,
 }) => {
   const [courseArray, setCourseArray] = useState(courseDetails);
   const [mobile, setMobile] = useState(false);
@@ -109,7 +111,7 @@ const Course = ({
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: "340px", height: "400px" }}
+            // style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
@@ -127,6 +129,8 @@ const Course = ({
               dataScienceGeneric={dataScienceGeneric}
               interstedInHide={interstedInHide}
               ADS={ADS}
+              HideInterest={HideInterest}
+              DomainInput={DomainInput}
             />
           ) : (
             <Form

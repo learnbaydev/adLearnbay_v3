@@ -222,6 +222,13 @@ a {
   color: #555;
 }
 
+.leftPopup {
+  background-image: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/popup-left.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 .swiper-scrollbar-drag {
   background-color: #0072bc !important;
   width: 20% !important;

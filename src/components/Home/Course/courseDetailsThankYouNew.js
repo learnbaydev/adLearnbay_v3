@@ -114,6 +114,13 @@ export const fullStackD = [
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/AWS-Cloud-and-Devops-Certification-Program.pdf",
   },
+  {
+    id: 3,
+    title: "DSA & System Design Program",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Structure+Algorithm+%26+System+Design+Learnbay.pdf",
+  },
 ];
 
 export const nonTechD = [

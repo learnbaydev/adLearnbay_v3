@@ -23,6 +23,7 @@ const Navbar = ({
   OS,
   dateTime,
   ApplyS2,
+  DomainInput,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -79,6 +80,7 @@ const Navbar = ({
                   grad={grad}
                   radio={radio}
                   HideInterest={HideInterest}
+                  DomainInput={DomainInput}
                 />
               ) : (
                 <Form
