@@ -74,9 +74,10 @@
 .DivCont03 {
   position: absolute;
   margin-left: 30px;
-overflow-x: scroll;
+  overflow-x: scroll;
   height: 360px;
   scroll-snap-type: x mandatory; /* Add smooth scrolling */
+  scrollbar-width: none;
 }
 .iconContent {
   display: flex;
@@ -179,21 +180,18 @@ overflow-x: scroll;
 
 
     } */
-    @media (max-width: 481px) {
-      .imgWrap img {
-        height: 1090px;
-        
-      }
-    }
+@media (max-width: 481px) {
+  .imgWrap img {
+    height: 1090px;
+  }
+}
 
 @media (max-width: 641px) {
   .mainDiv {
-
-width: 100%;
-margin-top: 50px;
-padding-bottom: 20px;
-padding-top: 40px;
-
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 40px;
   }
   .container {
     display: flex;
@@ -241,9 +239,6 @@ padding-top: 40px;
   .goldenH4 {
     width: 250px;
     font-size: 20px;
-
-
-
   }
   .paraBot {
     font-size: 14px;
@@ -257,16 +252,16 @@ padding-top: 40px;
   .DivCont03 {
     height: 310px;
     position: absolute;
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 24px;
   }
-  .downdiv{
+  .downdiv {
     margin-top: -20px;
   }
-  .iconText{
+  .iconText {
     font-size: 12px;
     font-weight: 600;
     align-items: center;
@@ -274,29 +269,20 @@ padding-top: 40px;
     gap: 13px;
     text-align: center;
   }
-  .paraSideshow{
+  .paraSideshow {
     font-size: 10px;
   }
-
-
-
-
-
-
 }
 
 @media (max-width: 391px) {
   .mainDiv {
-height: fit-content;
+    height: fit-content;
   }
-.imgWrap img {
-  height: 1070px;
-}
-
-
+  .imgWrap img {
+    height: 1070px;
+  }
 }
 @media (max-width: 340px) {
-
   .imgWrap img {
     height: 700px;
   }
