@@ -10,7 +10,6 @@ import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Certificate from "@/components/Global/Certificate/Certificate";
-import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
@@ -20,19 +19,19 @@ import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
 import Head from "next/head";
-import { useState } from "react";
 import { AiOutlineContainer } from "react-icons/ai";
 import { BsDatabaseUp, BsDisplay, BsPeople } from "react-icons/bs";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import FullStackSecondSection from  "../../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
 
-function Blockchain({ DataScienceCourseDataJson, projectSection }) {
+function Blockchain({ DataScienceCourseDataJson }) {
   const seconddata = [
     {
-      boldText: "IBM",
-      normalText: "Certified Capstone",
+      boldText: "250+",
+      normalText: "Hiring Partner",
       imageUrl:
         "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review1.webp",
     },
@@ -86,29 +85,29 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
       "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
   };
   const JobData = {
-    title: "Lead the Future of Healthcare with AI Expertise",
+    title: "Code Your Career Path To Success",
     points: [
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
         imgAlt: "",
-        title: "Stand Out in Healthcare with Innovative Analytics Skills",
-        description: "Gain specialisation by working on real-time projects",
+        title: "Transform with Top Tech Skills",
+        description: "Learn from industry experts and crack top MNC interviews",
       },
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
         imgAlt: "",
-        title: "Curriculum inclusive of Gen-AI",
-        description: "Designed for career advancement in a tech-driven era",
+        title: "Practise Real-time projects in industry setting",
+        description: "Dive into real-time projects that solve real-world problems",
       },
       {
         imgSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
         imgAlt: "",
-        title: "Online Classes with Flexible Learning Options",
+        title: "From Novice to Expert",
         description:
-          "Learning experience that fits the schedule of Healthcare Professionals",
+          "Learn from basics to advanced DSA & System Design Techniques",
       },
     ],
     bannerImage: {
@@ -122,23 +121,18 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
   };
   const DataScienceCourseData = parseJSONData(DataScienceCourseDataJson);
 
-  const [popupData, setPopupData] = useState([]);
-
   return (
     <>
       <Head>
-        <title>
-          Data Science Course with Certifications for Healthcare Professionals -
-          Learnbay
-        </title>
+        <title>Software Development Certification Program - Learnbay</title>
         <meta
           name="description"
-          content="Empower your Healthcare career with Learnbay's Data Science course for BSFI professionals. Elevate skills, drive innovation in banking and finance. Enroll now!"
+          content="Elevate your tech skills through our Software development Certification Program and switch from service-based to product-based companies. Earn globally recoganized IBM and Microsoft Certifications.          "
         />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="Data Science for Healthcare Professional course, Data Science for Healthcare Professional certification course, Data Science for Healthcare Professional certification, Healthcare Professional Program training, hr analytics course, Healthcare Professional Program course online, marketing analytics course, Healthcare Professional Program certification course, best Healthcare Professional Program course, best Healthcare Professional Program certification"
+          content="software development course, software development program, software engineering course, software engineer certification, software developer certifications, software developer training, software engineer online course          "
         />
         <link
           rel="icon"
@@ -146,7 +140,44 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
         <link
           rel="canonical"
-          href="https://course.learnbay.co/datascience/s2-data-science-healthcare"
+          href="https://www.learnbay.co/fullstack/full-stack-software-development-program"
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+      "@context": "http://schema.org",
+      "@type": "Course",
+      "name": "Software Development Certification Program",
+      "description": "Elevate your tech skills through our Software Development Certification Program and switch from service-based to product-based companies. Earn globally recognized IBM and Microsoft Certifications.",
+      "url": "https://www.learnbay.co/fullstack/full-stack-software-development-program",
+      "offers": {
+        "@type": "Offer",
+        "price": 115000,
+        "priceCurrency": "INR",
+        "category": "Educational"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Learnbay",
+        "url": "https://www.learnbay.co/"
+      },
+      "coursePrerequisites": "Nothing but basic coding knowledge is required to start with this course.",
+      "hasCourseInstance": [
+        {
+          "@type": "CourseInstance",
+          "courseMode": "Online",
+          "courseWorkload": "P10W",
+          "courseFee": {
+            "@type": "PriceSpecification",
+            "price": "₹ 1,15,000 + 18% GST",
+            "priceCurrency": "INR"
+          }
+        }
+      ]
+    }`,
+          }}
         />
       </Head>
       <main>
@@ -155,18 +186,18 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           interstedInHide={true}
           formotp={true}
           ADS={true}
+          noImg={true}
           ThirdTyped="Live Interactive Classes"
-          titleCourse="Advance Data Science & AI Program with Domain Specialization"
+          titleCourse="DSA & System Design Program for working professionals"
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
-          firstToparaImg="for Healthcare Professionals "
-          firstHeading=" Data Science and AI "
-          firstTopPara="Ready to master the Healthcare domain?          "
+          firstToparaImg=" Working Professionals"
+          firstHeading="DSA & System Design Program for"
+          firstTopPara="Crack Interview in Top Product Companies"
           softwareBtnHide={true}
         />
         <MasterSecondSection data={seconddata} />
-        <CloudDevopsecond data={BASecond} dataScience={true} />
         <JobAbroad
           data={JobData}
           dataScience={true}
@@ -174,13 +205,13 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           formotp={true}
           ADS={true}
         />
-        <Realstory />
         <TrainerSection plainimg={true} iimgchmbl={true} />
+      <FullStackSecondSection />
         <WhoIsProgram
           first="Bachelor’s degree with consistent good academic"
-          second="Minimum 6 Month of IT/Non-IT work experience"
-          third="Early to mid-career professionals interested in Healthcare domain"
-          forth="Developing skills in Healthcare for future opportunities"
+          second="1+ year(s) experience in IT domain"
+          third="For working professionals with technical experience"
+          forth="For professionals seeking DSA & System Design skills"
         />
         <GetHire />
 
@@ -201,7 +232,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           dataScienceCounselling={true}
           dataScience={true}
           masterSyllabusMobile={
-            DataScienceCourseData.HealthcareDataScienceCourseData[0]
+            DataScienceCourseData.DsaSystemDesign[0]
               .masterSyllabusMobile
           }
           onebtn={true}
@@ -209,22 +240,17 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
 
         <ToolsCovered />
 
-        <Certificate
-          data={
-            DataScienceCourseData.HealthcareDataScienceCourseData[0].Certificate
-          }
-        />
         <FeeSection
-          Fee="₹95,000"
-          FeeEmi="₹6,228/month"
+          Fee="₹85,000"
+          FeeEmi="₹5,572/month"
           weekdaybatch="Weekday Batch"
           weekendbatch="Weekday Batch"
-          weekday="MON-FRI"
-          weekend="MON-FRI"
-          WeekdayDate="Sept 15th"
-          WeekendDate="August 9th"
-          WeekendTime="8.00 PM - 10.00 PM"
-          WeekdayTime="8.00 AM - 10.00 AM"
+          weekday="MON - FRI"
+          weekend="MON - FRI"
+          WeekdayDate="August 16th"
+          WeekendDate="August 2nd"
+          WeekendTime="8:00 PM - 10:00 PM"
+          WeekdayTime="8:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
@@ -232,24 +258,19 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           interstedInHide={true}
           formotp={true}
           ADS={true}
+          HideThird={true}
           // <EMI POPUP
           emiType="NO COST EMI"
-          duration1="18 Months"
-          totalAmount1="₹95,000"
-          monthlyPayment1="₹6,228"
-          greenDown1="Standard Intrest rate Applicable"
-          duration2="12 Months"
-          totalAmount2="₹95,000"
-          monthlyPayment2="₹9,342"
+        duration1="18 Months"
+        totalAmount1="₹85,000"
+        monthlyPayment1="₹5,572"
+        greenDown1="Standard Intrest rate Applicable"
+        duration2="12 Months"
+        totalAmount2="₹85,000"
+        monthlyPayment2="₹8,358"
         />
-        <MentorsSection />
+
         <SliderTabs WithoutService={true} />
-        <MobileTestimonial
-          dataScience={true}
-          interstedInHide={true}
-          formotp={true}
-          ADS={true}
-        />
         <SeventhSection />
         <EightSection interstedInHide={true} formotp={true} ADS={true} />
         <WhatsappFloat />
@@ -260,7 +281,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
 }
 export default Blockchain;
 export async function getStaticProps() {
-  const data = await import("../../Data/HealthCareAnalyticsData");
+  const data = await import("../../Data/DsaSystemDesign");
   function getDataScienceCourseDataJSON(dataScienceCourseData) {
     return JSON.stringify(dataScienceCourseData);
   }

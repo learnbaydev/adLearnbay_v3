@@ -15,6 +15,7 @@ function EightSection({
   dataScience,
   HideInterest,
   upSkilling,
+  DomainInput,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -55,6 +56,7 @@ function EightSection({
         radio={radio}
         dataScience={true}
         HideInterest={HideInterest}
+        DomainInput={DomainInput}
       />
       <div>
         <p className={styles.career}>

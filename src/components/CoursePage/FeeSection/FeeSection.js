@@ -20,7 +20,7 @@ const FeeSection = ({
   interstedInHide,
   devopfee,
   HideInterest,
-
+  HideThird,
   // EMIPOPUP
   emiPopupProps,
   emiType,
@@ -68,7 +68,7 @@ const FeeSection = ({
         setPopups={setPopups}
         devopfee={devopfee}
         OS={OS}
-
+        HideThird={HideThird}
         // EMIPOPUp
         emiPopupProps = {emiPopupProps} 
      emiType ={ emiType }

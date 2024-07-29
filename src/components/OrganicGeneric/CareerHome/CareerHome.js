@@ -7,7 +7,7 @@ import Form from "../../Global/Form/Form";
 import Popup from "../../Global/Popup/Popup";
 import FormOtp from "@/components/Global/FormOtp/FormOtp";
 
-function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS, formotp, radio }) {
+function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS, formotp, radio, HideInterest, DomainInput }) {
   const [textOpen, setTextOpen] = useState(1);
 
   const toggleTab = (index) => {
@@ -53,7 +53,7 @@ function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: "340px", height: "400px" }}
+            // style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
@@ -68,6 +68,8 @@ function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS
               dataScienceCounselling={dataScienceCounselling}
               interstedInHide={true}
               ADS={ADS}
+              HideInterest={HideInterest}
+              DomainInput={DomainInput}
             />
           ) : (
             <Form

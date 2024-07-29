@@ -61,7 +61,7 @@ function SyllabusNew({
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: "340px", height: "400px" }}
+            // style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">

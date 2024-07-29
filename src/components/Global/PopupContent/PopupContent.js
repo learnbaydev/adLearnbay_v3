@@ -23,6 +23,7 @@ const PopupContent = ({
   adPage,
   HideInterest,
   OS,
+  DomainInput,
 }) => {
   return (
     <Popup
@@ -34,7 +35,7 @@ const PopupContent = ({
       <div className="leftPopup">
         <div
           className="whiteP"
-          style={{ width: "340px", height: "400px" }}
+          // style={{ width: "340px", height: "400px" }}
         ></div>
       </div>
       <div className="RightPopup">
@@ -50,6 +51,8 @@ const PopupContent = ({
             dataScienceGeneric={dataScienceGeneric}
             interstedInHide={interstedInHide}
             ADS={ADS}
+            HideInterest={HideInterest}
+        DomainInput={DomainInput}
           />
           ) : (
         <Form
@@ -57,6 +60,7 @@ const PopupContent = ({
           dataScienceCounselling={dataScienceCounselling}
           radio={radio}
           downloadBrochure={downloadBrochure}
+          
           fullStack={fullStack}
           titleCourse={titleCourse}
           brochureLink={brochureLink}
