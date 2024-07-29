@@ -187,6 +187,10 @@ function Blockchain({ DataScienceCourseDataJson }) {
           formotp={true}
           ADS={true}
           noImg={true}
+          dataScienceCounselling={true}
+          dataScience={true}
+          radio={true}
+          upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="DSA & System Design Program for working professionals"
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
