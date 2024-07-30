@@ -406,9 +406,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 650px;
-  padding-top: 40px;
+  height: 464px;
   overflow: scroll;
+  padding-top: 20px;
 }
 
 .RightPopup h5 {
@@ -466,5 +466,7 @@ a {
 
   .RightPopup {
     margin-left: 0;
+    height: 480px;
+    padding-top: 20px;
   }
 }
