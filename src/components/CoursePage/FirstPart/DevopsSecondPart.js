@@ -3,7 +3,6 @@ import Footer from "@/components/Global/Footer/Footer";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
 const Certificate = dynamic(() => import("../Certificate/Certificate"));
@@ -47,14 +46,14 @@ const SecondPart = ({
         devopfee={devopfee}
         Fee=" ₹ 80,000"
         FeeEmi="₹ 5,244/month"
-      weekdaybatch="Weekday Batch"
-        weekendbatch="Weekday Batch"
-        weekday="(MON-TUE-WED-THU)"
-        weekend="(MON-TUE-WED-THU)"
-        WeekdayDate="AUGUST 2nd"
-        WeekendDate="JULY 12th"
-        WeekendTime="8 PM - 10 PM"
-        WeekdayTime="8 PM - 10 PM"
+        weekdaybatch="Weekend Batch"
+        weekendbatch="Weekend Batch"
+        weekday="SAT - SUN"
+        weekend="SAT - SUN"
+        WeekdayDate="August 11th"
+        WeekendDate="August 31st"
+        WeekendTime="9:30 AM - 1 PM"
+        WeekdayTime="9:30 AM - 1 PM"
         FeeContent3="Flexible payment"
         FeeContent4="Easy loan procedure"
         FeeContent5="15 days refund policy"
@@ -92,7 +91,6 @@ const SecondPart = ({
       <Footer />
       <BottomBar />
       <WhatsappFloat chat360code1={true} />
-      
     </div>
   );
 };
