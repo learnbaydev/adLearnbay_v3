@@ -1,15 +1,11 @@
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
 import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
-import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
-import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
 import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
 import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import Certificate from "@/components/Global/Certificate/Certificate";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
@@ -24,8 +20,8 @@ import { BsDatabaseUp, BsDisplay, BsPeople } from "react-icons/bs";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { parseJSONData } from "../../../Util/JsonConvertor";
+import FullStackSecondSection from "../../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
-import FullStackSecondSection from  "../../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
 
 function Blockchain({ DataScienceCourseDataJson }) {
   const seconddata = [
@@ -99,7 +95,8 @@ function Blockchain({ DataScienceCourseDataJson }) {
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
         imgAlt: "",
         title: "Practise Real-time projects in industry setting",
-        description: "Dive into real-time projects that solve real-world problems",
+        description:
+          "Dive into real-time projects that solve real-world problems",
       },
       {
         imgSrc:
@@ -210,7 +207,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           ADS={true}
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
-      <FullStackSecondSection />
+        <FullStackSecondSection />
         <WhoIsProgram
           first="Bachelor’s degree with consistent good academic"
           second="1+ year(s) experience in IT domain"
@@ -236,8 +233,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           dataScienceCounselling={true}
           dataScience={true}
           masterSyllabusMobile={
-            DataScienceCourseData.DsaSystemDesign[0]
-              .masterSyllabusMobile
+            DataScienceCourseData.DsaSystemDesign[0].masterSyllabusMobile
           }
           onebtn={true}
         />
@@ -248,12 +244,12 @@ function Blockchain({ DataScienceCourseDataJson }) {
           Fee="₹85,000"
           FeeEmi="₹5,572/month"
           weekdaybatch="Weekday Batch"
-          weekendbatch="Weekday Batch"
+          weekendbatch="Weekend Batch"
           weekday="MON - FRI"
-          weekend="MON - FRI"
+          weekend="SAT - SUN"
           WeekdayDate="August 16th"
-          WeekendDate="August 2nd"
-          WeekendTime="8:00 PM - 10:00 PM"
+          WeekendDate="August 25th"
+          WeekendTime="9:30 AM - 1 PM"
           WeekdayTime="8:00 AM - 10:00 AM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
@@ -265,13 +261,13 @@ function Blockchain({ DataScienceCourseDataJson }) {
           HideThird={true}
           // <EMI POPUP
           emiType="NO COST EMI"
-        duration1="18 Months"
-        totalAmount1="₹85,000"
-        monthlyPayment1="₹5,572"
-        greenDown1="Standard Intrest rate Applicable"
-        duration2="12 Months"
-        totalAmount2="₹85,000"
-        monthlyPayment2="₹8,358"
+          duration1="18 Months"
+          totalAmount1="₹85,000"
+          monthlyPayment1="₹5,572"
+          greenDown1="Standard Intrest rate Applicable"
+          duration2="12 Months"
+          totalAmount2="₹85,000"
+          monthlyPayment2="₹8,358"
         />
 
         <SliderTabs WithoutService={true} />
