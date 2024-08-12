@@ -46,9 +46,9 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} ADS={true} />
+        <Navbar interstedInHide={true} ADS={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           ADS={true}
           OS={true}
           ThirdTyped="Live Interactive Classes"
@@ -80,11 +80,11 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        {/* <ProjectSection HideInterest={true} ADS={true} /> */}
+        {/* <ProjectSection interstedInHide={true} ADS={true} /> */}
         <GetHire />
 
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           masterSyllabusMobile={
@@ -111,7 +111,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           ADS={true}
           OS={true}
           // <EMI POPUP
@@ -135,17 +135,17 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           ADS={true}
           projectSection={
             DataScienceCourseData.DataScienceCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} ADS={true} />
+        <EightSection interstedInHide={true} ADS={true} />
         <MyCookieConsent />
         <WhatsappFloat OS={true} />
-        <BottomBar HideInterest={true} ADS={true} />
+        <BottomBar interstedInHide={true} ADS={true} />
       </main>
     </>
   );

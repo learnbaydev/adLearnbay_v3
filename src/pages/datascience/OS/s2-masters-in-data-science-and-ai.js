@@ -143,9 +143,14 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} OS={true} ADS={true} dataScience={true} />
+        <Navbar
+          interstedInHide={true}
+          OS={true}
+          ADS={true}
+          dataScience={true}
+        />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           AnimationHide={true}
           OS={true}
           ADS={true}
@@ -170,10 +175,10 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           interstedInHide={true}
         />
         <S2SecondSection MastersPage={true} />
-        <ProjectSection HideInterest={true} ADS={true} dataScience={true} />
+        <ProjectSection interstedInHide={true} ADS={true} dataScience={true} />
         <GetHire HideImage={true} />
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           dataScience={true}
@@ -201,7 +206,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           dataScience={true}
@@ -226,7 +231,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <MentorsSection />
         <SliderTabs />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           ADS={true}
           dataScience={true}
           projectSection={
@@ -234,9 +239,9 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} ADS={true} dataScience={true} />
+        <EightSection interstedInHide={true} ADS={true} dataScience={true} />
         <WhatsappFloat OS={true} />
-        <BottomBar HideInterest={true} ADS={true} dataScience={true} />
+        <BottomBar interstedInHide={true} ADS={true} dataScience={true} />
         <MyCookieConsent />
       </main>
     </>

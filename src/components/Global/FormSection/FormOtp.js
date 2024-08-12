@@ -74,7 +74,7 @@ function FormOtp({
 
   const ThankYou = redirectionThankYou();
 
-  const Validation = getValidation(form.interstedin, form, HideInterest);
+  const Validation = getValidation(radio, form.WorkExperience, form, HideInterest);
 
   let btnTxt = "Apply for  Counseliing";
   if (event) {

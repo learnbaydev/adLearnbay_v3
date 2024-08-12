@@ -172,6 +172,7 @@ function Counselling() {
             </div>
 
             <div className={styles.formr}>
+            <h4>Apply for Counselling</h4>
               <Form upSkillingHide={true} radio={true} interstedInHide={true} dataScience={true} />
             </div>
           </div>
