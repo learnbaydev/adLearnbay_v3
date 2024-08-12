@@ -45,6 +45,7 @@ const SecondPart = ({
         masterSyllabusMobile={masterSyllabusMobile}
         dataScienceCounselling={true}
         dataScience={true}
+        interstedInHide={true}
         buttonHide={buttonHide}
         titleCourse="Masters in Computer Science: Data Science and AI"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
@@ -76,6 +77,7 @@ const SecondPart = ({
         FeeContent6="No additional cost"
         dataScienceCounselling={true}
         dataScience={true}
+        interstedInHide={true}
         // EMI POPUPDATA
         emiType="NO COST EMI"
         duration1="24 Months"
@@ -92,6 +94,7 @@ const SecondPart = ({
       <NewProjectSection
         dataScienceCounselling={true}
         dataScience={true}
+        interstedInHide={true}
         titleCourse="Masters in Computer Science: Data Science and AI"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
         projectSection={projectSection}

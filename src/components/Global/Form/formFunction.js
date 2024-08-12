@@ -41,7 +41,10 @@ const getEndPoint = (pathname, event) => {
   ) {
     endPoint = "https://getform.io/f/fd68bf82-a911-435e-9719-7c134a89a731";
   }
-  if (pathname === "/resume-builder" || pathname === "/marketing/walk-in-counselling" ) {
+  if (
+    pathname === "/resume-builder" ||
+    pathname === "/marketing/walk-in-counselling"
+  ) {
     endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   }
   if (
@@ -93,7 +96,10 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
-  if (pathname === "/walk-in-counselling" || pathname === "/marketing/walk-in-counselling" ) {
+  if (
+    pathname === "/walk-in-counselling" ||
+    pathname === "/marketing/walk-in-counselling"
+  ) {
     routerPath = "/Thank-you-directions";
   }
 
@@ -134,33 +140,47 @@ const redirectionThankYou = (
 };
 
 const getValidation = (radio, interstedInHide, query, CTC, PhoneHidden) => {
-  if ( (PhoneHidden === false || PhoneHidden === undefined) && (query.phone === "" || query.phone === undefined)) {
+  console.log("radio trrue", radio);
+  // Check if the phone number is hidden and missing
+  if (
+    (PhoneHidden === false || PhoneHidden === undefined) &&
+    (query.phone === "" || query.phone === undefined)
+  ) {
     console.log("1");
     return true;
-  } else if (radio === true && interstedInHide === true) {
+  }
+
+  // Check if both radio and interestedInHide are true and validate WorkExperience and platform fields
+  if (radio === true && interstedInHide === true) {
     console.log("2");
-    if (query.interstedin === "Interested In") {
+    console.log("worrrr", query.WorkExperience);
+    if (
+      query.WorkExperience === "Select Work Experience *" ||
+      query.WorkExperience === undefined ||
+      (query.WorkExperience === "" &&
+        query.platform === "Course Preference *") ||
+      query.platform === ""
+    ) {
       return true;
-    } else if (query.interstedin === "") {
-      return true;
-    } else if (query.platform === "Select an option") {
-      return true;
-    } else if (query.platform === "") {
-      return true;
-    } else {
-      return false;
     }
-  } else if (
-    interstedInHide === true &&
-    (radio === undefined || radio === false)
-  ) {
+    return false;
+  }
+
+  // Check if interestedInHide is true and radio is false or undefined, then validate WorkExperience field
+  if (interstedInHide === true && (radio === undefined || radio === false)) {
     console.log("3");
-    if (query.interstedin === "Interested In") {
+    if (
+      query.WorkExperience === "Select Work Experience *" ||
+      query.WorkExperience === undefined ||
+      query.WorkExperience === ""
+    ) {
       return true;
-    } else if (query.interstedin === "") {
-      return true;
-    } else return false;
-  } else if (
+    }
+    return false;
+  }
+
+  // Check if interestedInHide is false or undefined or radio is false or undefined, then validate CTC field
+  if (
     interstedInHide === false ||
     interstedInHide === undefined ||
     radio === false ||
@@ -168,22 +188,18 @@ const getValidation = (radio, interstedInHide, query, CTC, PhoneHidden) => {
   ) {
     console.log("4");
     if (CTC) {
-      if (query.CTC === "Interested In") {
+      if (query.CTC === "Interested In" || query.CTC === "") {
         return true;
-      } else if (query.CTC === "") {
-        return true;
-      } else return false;
-    } else return false;
-  } else if (
-    interstedInHide === false ||
-    interstedInHide === undefined ||
-    radio === false ||
-    radio === undefined
-  ) {
-    console.log("5");
+      }
+      return false;
+    }
     return false;
   }
+
+  // Default return false if none of the conditions are met
+  return false;
 };
+
 const getFormFields = (
   radio,
   google,
@@ -192,7 +208,7 @@ const getFormFields = (
   promoCode,
   CTC,
   PhoneHidden,
-  emailHidden,
+  emailHidden
 ) => {
   return [
     // ... (previous form fields)
@@ -201,7 +217,7 @@ const getFormFields = (
       label: "Name",
       type: "text",
       required: true,
-      placeholder: "Enter your Full Name",
+      placeholder: "Enter your Full Name *",
       showField: true,
     },
     {
@@ -209,7 +225,7 @@ const getFormFields = (
       label: "E-Mail",
       type: "email",
       required: emailHidden ? false : true,
-      placeholder: "Enter your Email",
+      placeholder: "Enter your Email *",
       showField: emailHidden ? false : true,
     },
     {
@@ -258,19 +274,63 @@ const getFormFields = (
       required: referrals, // Conditionally required
       showField: referrals, // Conditionally render the field
     },
+    // {
+    //   name: "interstedin",
+    //   label: "Interested In",
+    //   type: "select",
+    //   options: [
+    //     { value: "Interested In", label: "Interested In", hidden: true },
+    //     {
+    //       value: "Master Degree Program",
+    //       label: "Master Degree Program",
+    //     },
+    //     {
+    //       value: "Certification Program",
+    //       label: "Certification Program",
+    //     },
+    //   ],
+    //   required: interstedInHide, // Conditionally required
+    //   showField: interstedInHide, // Conditionally render the field
+    // },
+
     {
-      name: "interstedin",
-      label: "Interested In",
+      name: "jobTitle",
+      label: "Job Title",
+      type: "text",
+      placeholder: "Enter your Job Title *",
+      required: interstedInHide, // Conditionally required
+      showField: interstedInHide, // Conditionally render the field
+    },
+
+    {
+      name: "WorkExperience",
+      label: "Select Work Experience *",
       type: "select",
       options: [
-        { value: "Interested In", label: "Interested In", hidden: true },
         {
-          value: "Master Degree Program",
-          label: "Master Degree Program",
+          value: "Select Work Experience *",
+          label: "Select Work Experience *",
+          hidden: true,
         },
         {
-          value: "Certification Program",
-          label: "Certification Program",
+          value: "Freshers",
+          label: "Freshers",
+        },
+        {
+          value: "1-3 years",
+          label: "1-3 years",
+        },
+        {
+          value: "2-5 years",
+          label: "2-5 years",
+        },
+        {
+          value: "5-7 years",
+          label: "5-7 years",
+        },
+        {
+          value: "7+ years",
+          label: "7+ years",
         },
       ],
       required: interstedInHide, // Conditionally required
@@ -318,10 +378,14 @@ const getFormFields = (
 
     {
       name: "platform",
-      label: "Course Preference",
+      label: "Course Preference *",
       type: "select",
       options: [
-        { value: "Select an option", label: "Select an option", hidden: true },
+        {
+          value: "Course Preference *",
+          label: "Course Preference *",
+          hidden: true,
+        },
         {
           value: "Data Science & AI Courses",
           label: "Data Science & AI Courses",

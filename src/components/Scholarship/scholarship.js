@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import FormOtp from "../Global/Form/Form";
 import Styles from "./scholarship.module.css";
 
@@ -17,15 +16,15 @@ function Scholarship({ Offer, reactEmail, reactPhone }) {
       <div className={Styles.FormDiv}>
         {reactPhone ? (
           <>
-          <h4>Apply for Scholarship</h4>
-          <FormOtp dataScience={true} />
-        </>
+            <h4>Apply for Scholarship</h4>
+            <FormOtp dataScience={true} interstedInHide={true} radio={true} />
+          </>
         ) : (
           <>
             {reactEmail ? (
               <>
                 <h4>Apply for Scholarship</h4>
-                <FormOtp dataScience={true} PhoneHidden={true} />
+                <FormOtp dataScience={true} PhoneHidden={true}  />
               </>
             ) : (
               <>
@@ -35,7 +34,7 @@ function Scholarship({ Offer, reactEmail, reactPhone }) {
                     <FormOtp
                       upSkillingHide={true}
                       s2dataScience={true}
-                      HideInterest={true}
+                      interstedInHide={true}
                       promoCode={true}
                     />
                   </>
@@ -46,7 +45,7 @@ function Scholarship({ Offer, reactEmail, reactPhone }) {
                       upSkillingHide={true}
                       CTC={true}
                       s2dataScience={true}
-                      HideInterest={true}
+                      interstedInHide={true}
                     />
                   </>
                 )}

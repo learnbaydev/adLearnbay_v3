@@ -74,7 +74,7 @@ function FormOtp({
 
   const ThankYou = redirectionThankYou();
 
-  const Validation = getValidation(form.interstedin, form, HideInterest);
+  const Validation = getValidation(radio, form.WorkExperience, form, HideInterest );
 
   let btnTxt = "Apply for  Counseliing";
   if (event) {
@@ -417,12 +417,12 @@ function FormOtp({
             (field) =>
               field.showField && ( // Only render the field if showField is true
                 <div key={field.name} className={styles.formWrapper}>
-                  <label htmlFor={field.name}>
+                  {/* <label htmlFor={field.name}>
                     {field.label}
                     {field.required && (
                       <span className={styles.spanLabel}>*</span>
                     )}
-                  </label>
+                  </label> */}
                   {field.type === "phone" ? (
                     <PhoneInput
                       inputStyle={field.inputStyle}
@@ -470,10 +470,10 @@ function FormOtp({
           )}
           {btnHide ? (
             <div className={styles.formWrapper}>
-              <label htmlFor="OTP">
+              {/* <label htmlFor="OTP">
                 OTP
                 <span className={styles.spanLabel}>*</span>
-              </label>
+              </label> */}
               <input
                 className={styles.EmailInputs}
                 type="text"

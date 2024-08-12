@@ -62,9 +62,9 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} ADS={true} />
+        <Navbar interstedInHide={true} ADS={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
@@ -91,7 +91,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <GetHire OS={true} />
 
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           masterSyllabusMobile={
@@ -120,7 +120,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           // EMI POPUPDATA
@@ -144,7 +144,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           projectSection={
@@ -152,10 +152,10 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} OS={true} ADS={true} />
+        <EightSection interstedInHide={true} OS={true} ADS={true} />
         <MyCookieConsent />
         <WhatsappFloat OS={true} />
-        <BottomBar HideInterest={true} OS={true} ADS={true} />
+        <BottomBar interstedInHide={true} OS={true} ADS={true} />
       </main>
     </>
   );

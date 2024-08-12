@@ -287,12 +287,12 @@ const Form = ({
           (field) =>
             field.showField && ( // Only render the field if showField is true
               <div key={field.name} className={styles.formWrapper}>
-                <label htmlFor={field.name}>
+                {/* <label htmlFor={field.name}>
                   {field.label}
                   {field.required && (
                     <span className={styles.spanLabel}>*</span>
                   )}
-                </label>
+                </label> */}
                 {field.type === "phone" ? (
                   <>
                     {router.pathname === "/OS" ||

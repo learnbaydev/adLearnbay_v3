@@ -125,12 +125,13 @@ const FirstPart = ({
           ADS={true}
         />
       ) : (
-        <Navbar dataScienceCounselling={true} dataScience={true} />
+        <Navbar dataScienceCounselling={true} dataScience={true} interstedInHide={true} />
       )}
       <FirstSection
         ThirdTyped="Live Interactive Classes"
         dataScienceCounselling={true}
         dataScience={true}
+        interstedInHide={true}
         titleCourse="Masters in Computer Science: Data Science and AI"
         cityParaCont="Elevate your tech career with our Master's programs"
         brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters+in+CS+Data+Science+%26+AI.pdf"
@@ -142,7 +143,7 @@ const FirstPart = ({
       <CloudDevopsecond data={DsSecond} />
       <JobAbroad
           data={JobData}
-          dataScienceCounselling={true} dataScience={true}
+          dataScienceCounselling={true} dataScience={true} interstedInHide={true}
         />
       {adsCont ? (
         <>
@@ -169,7 +170,7 @@ const FirstPart = ({
           />
         </>
       )}
-      <WhyLearnbay dataScienceCounselling={true} dataScience={true} />
+      <WhyLearnbay dataScienceCounselling={true} dataScience={true} interstedInHide={true} />
     </>
   );
 };

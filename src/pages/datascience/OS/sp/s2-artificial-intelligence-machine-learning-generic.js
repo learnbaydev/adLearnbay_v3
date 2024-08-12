@@ -62,9 +62,9 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} ADS={true} />
+        <Navbar interstedInHide={true} ADS={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
@@ -103,7 +103,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
               .masterSyllabusMobile
           }
           onebtn={true}
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
         />
@@ -127,7 +127,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -152,7 +152,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           OS={true}
           ADS={true}
           projectSection={
@@ -161,10 +161,10 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} OS={true} ADS={true} />
+        <EightSection interstedInHide={true} OS={true} ADS={true} />
         <WhatsappFloat OS={true} />
         <MyCookieConsent />
-        <BottomBar HideInterest={true} OS={true} ADS={true} />
+        <BottomBar interstedInHide={true} OS={true} ADS={true} />
       </main>
     </>
   );

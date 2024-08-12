@@ -16,6 +16,11 @@
 
   }
 
+  .formq h4 {
+    margin: 70px 0px -50px 0px;
+    text-align: center;
+  }
+
   .forml, .formlImage {
     margin: 80px 20px 50px 80px;  
     overflow: auto;
@@ -75,6 +80,11 @@
       max-width: 100%;
       margin-bottom: 34px;
       margin-left: 20px;
+  }
+
+  .formq h4 {
+    margin:  0px;
+    text-align: center;
   }
 
   .formlImage {

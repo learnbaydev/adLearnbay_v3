@@ -48,9 +48,9 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar formotp={true} ADS={true} HideInterest={true} />
+        <Navbar formotp={true} ADS={true} interstedInHide={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
@@ -72,11 +72,11 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection HideInterest={true} formotp={true} ADS={true} />
+        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
         <GetHire />
 
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           masterSyllabusMobile={
@@ -104,7 +104,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           // EMI POPUPDATA
@@ -128,7 +128,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           projectSection={
@@ -136,9 +136,9 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true} formotp={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar HideInterest={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );

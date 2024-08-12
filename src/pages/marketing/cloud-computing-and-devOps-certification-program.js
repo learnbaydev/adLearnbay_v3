@@ -49,9 +49,9 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} dataScience={true} />
+        <Navbar interstedInHide={true} dataScience={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
@@ -75,7 +75,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <GetHire />
 
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           masterSyllabusMobile={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0]
               .masterSyllabusMobile
@@ -104,7 +104,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           // <EMI POPUP
@@ -130,16 +130,16 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           projectSection={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0].projectSection
           }
           dataScience={true}
         />
         <SeventhSection />
-        <EightSection HideInterest={true} dataScience={true} />
+        <EightSection interstedInHide={true} dataScience={true} />
         <WhatsappFloat />
-        <BottomBar HideInterest={true} dataScience={true} />
+        <BottomBar interstedInHide={true} dataScience={true} />
       </main>
     </>
   );

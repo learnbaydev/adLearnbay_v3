@@ -13,18 +13,52 @@ const redirectionThankYou = (pathname) => {
   return routerPath;
 };
 
-const getValidation = (interstedin, query, HideInterest, Domain) => {
+const getValidation = (
+  radio,
+  interstedin,
+  query,
+  HideInterest,
+  Domain,
+  WorkExperience,
+) => {
+  console.log("radio true3", radio);
   if (query.phone === "" || query.phone === undefined) {
     return true;
   }
-  if (!HideInterest) {
-    if (interstedin === "" || interstedin === "Select an option") {
+  if (
+    (radio && !HideInterest && query.platform === "") ||
+    query.platform === undefined
+  ) {
+    console.log("radio", query.platform, query.WorkExperience);
+    if (
+      query.WorkExperience === "Select Work Experience *" ||
+      query.WorkExperience === undefined ||
+      (query.WorkExperience === "" &&
+        query.platform === "Course Preference *") ||
+      query.platform === undefined ||
+      query.platform === ""
+    ) {
       return true;
     }
-  } else if (query.Domain === "") {
-    return true;
-  } else if (query.Domain === "Select Domain") {
-    return true;
+    // return false;
+  }
+  if (
+    !HideInterest &&
+    (radio === undefined || radio === false) &&
+    query.platform === ""
+  ) {
+    console.log("work", query.WorkExperience, query.platform, radio);
+    if (
+      query.WorkExperience === "Select Work Experience *" ||
+      query.WorkExperience === undefined ||
+      query.WorkExperience === ""
+    ) {
+      return true;
+    }
+    if ((radio && query.platform === "") || query.platform === undefined) {
+      return true;
+    }
+    return false;
   }
 };
 
@@ -36,7 +70,7 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
       label: "Name",
       type: "text",
       required: true,
-      placeholder: "Enter your Full Name",
+      placeholder: "Enter your Full Name *",
       showField: true,
     },
     {
@@ -44,29 +78,71 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
       label: "E-Mail",
       type: "email",
       required: true,
-      placeholder: "Enter your Email",
+      placeholder: "Enter your Email *",
       showField: true,
     },
     {
-      name: "interstedin",
-      label: "Interested In",
+      name: "jobTitle",
+      label: "Job Title",
+      type: "text",
+      placeholder: "Enter your Job Title *",
+      required: true, // Conditionally required
+      showField: !HideInterest, // Conditionally render the field
+    },
+    // {
+    //   name: "interstedin",
+    //   label: "Interested In",
+    //   type: "select",
+    //   options: [
+    //     { value: "Select an option", label: "Select an option", hidden: true },
+    //     { value: "Master degree program", label: "Master degree program" },
+    //     { value: "Certification Program", label: "Certification Program" },
+    //   ],
+    //   required: true, // Conditionally required
+    //   showField: !HideInterest, // Conditionally render the field
+    // },
+    {
+      name: "WorkExperience",
+      label: "Select Work Experience *",
       type: "select",
       options: [
-        { value: "Select an option", label: "Select an option", hidden: true },
-        { value: "Master degree program", label: "Master degree program" },
-        { value: "Certification Program", label: "Certification Program" },
+        {
+          value: "Select Work Experience *",
+          label: "Select Work Experience *",
+          hidden: true,
+        },
+        {
+          value: "Freshers",
+          label: "Freshers",
+        },
+        {
+          value: "1-3 years",
+          label: "1-3 years",
+        },
+        {
+          value: "2-5 years",
+          label: "2-5 years",
+        },
+        {
+          value: "5-7 years",
+          label: "5-7 years",
+        },
+        {
+          value: "7+ years",
+          label: "7+ years",
+        },
       ],
       required: true, // Conditionally required
       showField: !HideInterest, // Conditionally render the field
     },
     {
       name: "WorkExperience",
-      label: "Select Work Experience",
+      label: "Select Work Experience *",
       type: "select",
       options: [
         {
-          value: "Select Work Experience",
-          label: "Select Work Experience",
+          value: "Select Work Experience *",
+          label: "Select Work Experience *",
           hidden: true,
         },
         {
@@ -95,10 +171,10 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
     },
     {
       name: "Domain",
-      label: "Select Domain",
+      label: "Select Domain *",
       type: "select",
       options: [
-        { value: "Select Domain", label: "Select Domain", hidden: true },
+        { value: "Select Domain *", label: "Select Domain *", hidden: true },
         {
           value: "Banking and Finance (BFSI) and IT",
           label: "Banking and Finance (BFSI) and IT",
@@ -133,30 +209,34 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
     },
     {
       name: "HighestQualification",
-      label: "Highest Qualification",
+      label: "Highest Qualification *",
       type: "text",
       required: true,
-      placeholder: "Enter your Highest Qualification",
+      placeholder: "Enter your Highest Qualification *",
       showField: true,
       required: Domain, // Conditionally required
       showField: Domain, // Conditionally render the field
     },
     {
       name: "LatestTechnology",
-      label: "Latest technology you worked on",
+      label: "Latest technology you worked on *",
       type: "text",
       required: true,
-      placeholder: "Enter your Latest technology you worked on",
+      placeholder: "Enter your Latest technology you worked on *",
       showField: true,
       required: Domain, // Conditionally required
       showField: Domain, // Conditionally render the field
     },
     {
       name: "platform",
-      label: "Course Preference",
+      label: "Course Preference *",
       type: "select",
       options: [
-        { value: "Select an option", label: "Select an option", hidden: true },
+        {
+          value: "Course Preference *",
+          label: "Course Preference *",
+          hidden: true,
+        },
         {
           value: "Data Science & AI Courses",
           label: "Data Science & AI Courses",
@@ -170,7 +250,7 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
           label: "Master in CS: Data Science and AI",
         },
       ],
-      required: true, // Conditionally required
+      required: radio, // Conditionally required
       showField: radio, // Conditionally render the field
     },
     {
@@ -190,7 +270,7 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
         required: true,
       },
       required: true,
-      placeholder: "Enter Phone Number",
+      placeholder: "Enter your Phone Number with Country Code *",
       showField: true,
     },
   ];

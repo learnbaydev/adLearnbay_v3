@@ -49,9 +49,9 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar HideInterest={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true} formotp={true} ADS={true} />
         <FirstSection
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
@@ -76,7 +76,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <GetHire />
 
         <SyllabusNew
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           masterSyllabusMobile={
@@ -106,7 +106,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           FeeContent4="Easy loan procedure"
           FeeContent5="15 days refund policy"
           FeeContent6="No additional cost"
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
@@ -133,7 +133,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
         <MentorsSection />
         <NewProjectSection
-          HideInterest={true}
+          interstedInHide={true}
           formotp={true}
           ADS={true}
           projectSection={
@@ -141,9 +141,9 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           }
         />
         <SeventhSection />
-        <EightSection HideInterest={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true} formotp={true} ADS={true} />
         <WhatsappFloat OS={true} />
-        <BottomBar HideInterest={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
       </main>
     </>
   );

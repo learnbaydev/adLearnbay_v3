@@ -405,8 +405,7 @@ a {
   margin-left: 40px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  height: 464px;
+  gap: 20px;
   overflow: scroll;
   padding-top: 20px;
 }
@@ -466,7 +465,7 @@ a {
 
   .RightPopup {
     margin-left: 0;
-    height: 480px;
     padding-top: 20px;
+    gap: 20px;
   }
 }

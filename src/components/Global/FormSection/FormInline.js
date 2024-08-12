@@ -260,13 +260,7 @@ const Form = ({
           {popup && (
             <input type="hidden" id="url" name="url" value={router.asPath} />
           )}
-          <div className={styles.error}>
-            {error && (
-              <p className={styles.errorMsg}>
-                Please fill all the fields marked with *
-              </p>
-            )}
-          </div>
+          
 
           <input type="hidden" id="zc_gad" name="zc_gad" value="" />
         </div>
@@ -283,6 +277,13 @@ const Form = ({
           </div>
         ) : (
           <>
+          <div className={styles.error}>
+            {error && (
+              <p className={styles.errorMsg}>
+                Please fill all the fields marked with *
+              </p>
+            )}
+          </div>
             <p className={styles.FormText}>
               By submitting the form, you agree to our Terms and Conditions and
               our Privacy Policy.

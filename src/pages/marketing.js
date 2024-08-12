@@ -26,6 +26,7 @@ function Counselling() {
           />
         </div>
         <div className={styles.formr}>
+        <h4>Apply for Counselling</h4>
           <Form radio={true} interstedInHide={true} />
         </div>
       </div>
