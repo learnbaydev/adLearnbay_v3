@@ -7,7 +7,7 @@ import Form from "../../Global/Form/Form";
 import Popup from "../../Global/Popup/Popup";
 import FormOtp from "@/components/Global/FormOtp/FormOtp";
 
-function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS, formotp, radio, HideInterest, DomainInput }) {
+function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS, formotp, radio, HideInterest, DomainInput, interstedInHide }) {
   const [textOpen, setTextOpen] = useState(1);
 
   const toggleTab = (index) => {
@@ -78,7 +78,7 @@ function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS
               upSkillingHide={true}
               radio={radio}
               downloadBrochure
-              interstedInHide={true}
+              interstedInHide={interstedInHide}
               titleCourse={titleCourse}
               brochureLink={brochureLinks}
             />
