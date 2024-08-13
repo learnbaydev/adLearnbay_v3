@@ -21,7 +21,6 @@ const getValidation = (
   Domain,
   WorkExperience,
 ) => {
-  console.log("radio true3", radio);
   if (query.phone === "" || query.phone === undefined) {
     return true;
   }
