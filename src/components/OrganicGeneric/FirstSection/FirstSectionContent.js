@@ -15,15 +15,15 @@ function HeroSection({ setPopups, setVideo }) {
 
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
-  const [bgImage, setBgImage] = useState("");
+  // const [bgImage, setBgImage] = useState("");
   const [typeLogo, setTypeLogo] = useState("");
 
   useEffect(() => {
-    setBgImage(
-      isMobile
-        ? "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/mbl_home_two.webp"
-        : "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BG_Home_1.webp"
-    );
+    // setBgImage(
+    //   isMobile
+    //     ? "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/mbl_home_two.webp"
+    //     : "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BG_Home_1.webp"
+    // );
 
     setTypeLogo(
       isMobile
@@ -35,7 +35,7 @@ function HeroSection({ setPopups, setVideo }) {
   return (
     <section className={styles.section}>
       <div className={styles.bgWrap}>
-        {bgImage && (
+        {/* {bgImage && (
           <Image
             src={bgImage}
             alt="Learnbay Background"
@@ -49,7 +49,7 @@ function HeroSection({ setPopups, setVideo }) {
             }
             sizes="(max-width: 640px) 100vw, 100vw"
           />
-        )}
+        )} */}
       </div>
       <div className={styles.content}>
         <h1>

@@ -11,6 +11,8 @@
   z-index: -1;
   width: 100%;
   height: 680px;
+  background: #212121;
+  border-radius: 50px;
 }
 
 .content {
@@ -260,6 +262,7 @@
   .bgWrap {
     width: 100%;
     height: 100%;
+    border-radius: 0;
   }
   .topdivround{
     display: flex;

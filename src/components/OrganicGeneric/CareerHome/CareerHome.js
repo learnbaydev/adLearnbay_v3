@@ -76,6 +76,7 @@ function careerHome({ dataScience, dataScienceCounselling, downloadBrochure, ADS
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               upSkillingHide={true}
+              radio={radio}
               downloadBrochure
               interstedInHide={true}
               titleCourse={titleCourse}
