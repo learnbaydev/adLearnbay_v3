@@ -4,17 +4,15 @@
   position: relative;
   height: 620px;
 }
-
 .bgWrap {
   position: absolute;
   overflow: hidden;
   z-index: -1;
   width: 100%;
-  height: 680px;
-  background: #212121;
-  border-radius: 50px;
+  height: 690px;
+  background: url('https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BG_Home_1.webp') no-repeat center center;
+  background-size: contain;
 }
-
 .content {
   display: flex;
   justify-content: center;
@@ -22,7 +20,6 @@
   align-items: center;
   padding: 60px 0px 0px 0px;
 }
-
 @keyframes animate-gradient {
   0% {
     background-position: 0% 0%;
@@ -34,7 +31,6 @@
     background-position: 0% 0%;
   }
 }
-
 .content h3 {
   background: linear-gradient(90deg, #0FA1FF 12.99%, #0FA1FF 32.19%, #686AFB 53.32%, #FE5449 70.48%);
   background-size: 200% 200%;
@@ -47,7 +43,6 @@
   margin: 40px 0px 80px 0px;
   animation: animate-gradient 6s linear infinite;
 }
-
 .content h1 {
   text-align: center;
   font-size: 52px;
@@ -58,16 +53,14 @@
   line-height: 62px;
   color: #fff;
 }
-.india{
+.india {
   color: #FE7A36;
 }
-
 .round {
   display: flex;
   gap: 30px;
   margin: 0px 0px 30px 0px;
 }
-
 .round p {
   border-radius: 30.964px;
   background: linear-gradient(0deg, #212121 0%, #212121 100%), #212121;
@@ -79,14 +72,12 @@
   margin: auto;
   padding: 10px 30px;
   color: #fff;
-  display: flex;
   gap: 10px;
 }
 .round svg {
   color: #35d028;
   font-size: 24px;
 }
-
 .buttonDiv {
   display: flex;
   gap: 50px;
@@ -94,12 +85,10 @@
   align-items: center;
   margin-top: 40px;
 }
-
 .playIcon {
   font-size: 32px;
   margin-left: 5px;
 }
-
 .iconDiv {
   padding: 5px;
   width: 70px;
@@ -109,7 +98,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .learnDiv {
   display: flex;
   gap: 10px;
@@ -119,15 +107,12 @@
   text-underline-offset: 2px;
   cursor: pointer;
 }
-
 .learnDiv svg {
   transition: filter 0.3s ease;
 }
-
 .learnDiv:hover svg {
   filter: drop-shadow(0 0 9px rgba(390, 40, 40, 0.9));
 }
-
 .button {
   position: relative;
   overflow: hidden;
@@ -145,7 +130,6 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .button::before {
   content: '';
   position: absolute;
@@ -157,20 +141,16 @@
   transform: skewX(-30deg);
   transition: left 0.8s;
 }
-
 .button:hover::before {
   left: 100%;
 }
-
 .button:hover {
-  background:#FE7A36;
+  background: #FE7A36;
   color: #fff;
 }
-
 .curverdiv {
   margin: auto;
 }
-
 .typeLogo {
   display: flex;
   flex-direction: column;
@@ -178,7 +158,6 @@
   margin-top: 40px;
   gap: 10px;
 }
-
 .typeLogo p {
   color: #9C9C9C;
   font-size: 22px;
@@ -186,45 +165,29 @@
   font-weight: 600;
   line-height: 153%; /* 38.25px */
 }
-/* .bgWrap {
-
-  background: url('https://d32and0ii3b8oy.cloudfront.net/web/s3_main/BG_Home_1.webp') no-repeat center center;
-  background-size:contain;
-} */
-
+/* Media Queries */
 @media (max-width: 641px) {
-  .section{
+  .section {
     width: 100%;
-    margin: 70px auto 0px auto;
+    margin: 60px auto;
     align-items: center;
     height: fit-content;
   }
   .learnDiv span {
     display: none;
   }
-  @media (max-width: 640px) {
-    /* .bgWrap {
-      background: url('https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/mbl_home_two.webp') no-repeat center center;
-      background-size: cover;
-    } */
-  }
   .content {
     padding: 70px 0px 60px 0px;
   }
   .content h3 {
     font-size: 20px;
-    /* margin-bottom: 14px; */
     text-align: center;
     margin: 20px;
-    
   }
   .content h1 {
     font-size: 32px;
-    width: -moz-fit-content;
     width: fit-content;
     line-height: 116%;
-    
-    
   }
   .round {
     margin: 10px 0px 70px 0px;
@@ -232,14 +195,11 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 16px 0px;
-    
-    /* width: 280px; */
   }
   .buttonDiv {
     gap: 16px;
     margin: auto;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
   }
@@ -262,18 +222,8 @@
   .bgWrap {
     width: 100%;
     height: 100%;
-    border-radius: 0;
-  }
-  .topdivround{
-    display: flex;
-    gap: 10px;
-    padding: 0;
-  }
- 
-  .round p {
-    font-size: 16px;
-    padding: 0px 10px;
-    border-radius: 14px;
+    background: #161616;
+    background-size: cover;
   }
   .typeLogoMobile {
     display: flex;
@@ -285,16 +235,13 @@
     position: relative;
     top: -20px;
   }
-  .logoWrapMobile{
-text-align: center;
+  .logoWrapMobile {
+    text-align: center;
   }
   .typeLogo {
-    /* align-items: center; */
-    user-select: auto;
     margin: 10px 22px;
     position: relative;
     top: -21px;
-
   }
   .typeLogo p {
     text-align: start;
@@ -308,29 +255,21 @@ text-align: center;
     font-size: 16px;
   }
 }
-
-
-
 @media (max-width: 370px) {
   .content h3 {
     font-size: 16px;
     margin-bottom: 14px;
     text-align: center;
   }
-
-  .content{
+  .content {
     font-size: 25px;
-        width: -moz-fit-content;
-        width: fit-content;
-        line-height: 116%;
-        padding: 40px 10px 60px 10px;
+    width: fit-content;
+    line-height: 116%;
+    padding: 40px 10px 60px 10px;
   }
   .content h1 {
     font-size: 26px;
   }
-
-
-
 }
 @media (max-width: 412px) {
   .content h3 {
@@ -338,13 +277,11 @@ text-align: center;
     margin: 40px 20px;
     text-align: center;
   }
-
-  .content{
+  .content {
     font-size: 25px;
-        width: -moz-fit-content;
-        width: fit-content;
-        line-height: 116%;
-        padding: 40px 10px 50px 10px;
+    width: fit-content;
+    line-height: 116%;
+    padding: 40px 10px 50px 10px;
   }
   .content h1 {
     font-size: 30px;

@@ -27,7 +27,10 @@ const getEndPoint = (pathname, event) => {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
   }
 
-  if (pathname === "/apply-for-counselling" || pathname === "/organic/generic") {
+  if (
+    pathname === "/apply-for-counselling" ||
+    pathname === "/organic/generic"
+  ) {
     endPoint = "https://getform.io/f/85e92281-63f9-4d2f-b946-31d1098532f4";
   }
 
@@ -159,6 +162,16 @@ const getValidation = (radio, interstedInHide, query, CTC, PhoneHidden) => {
       query.WorkExperience === undefined ||
       (query.WorkExperience === "" &&
         query.platform === "Course Preference *") ||
+      query.platform === ""
+    ) {
+      return true;
+    }
+    return false;
+  }
+
+  if (radio === true || query.name === "") {
+    if (
+      (query.name === "" && query.platform === "Course Preference *") ||
       query.platform === ""
     ) {
       return true;

@@ -132,7 +132,6 @@ export default function Home() {
       </Head>
       <Navbar
         radio={true}
-        interstedInHide={true}
         dataScience={true}
         ADS={true}
       />
@@ -142,7 +141,6 @@ export default function Home() {
         second="Tips"
         third="Technology"
         radio={true}
-        interstedInHide={true}
         dataScience={true}
         organicADS={true}
         ADS={true}
@@ -153,13 +151,11 @@ export default function Home() {
         organicADS={true}
         newDesign={true}
         dataScienceGeneric={true}
-        interstedInHide={true}
         ADS={true}
       />
       <WhyLearnbay />
       <CareerHome
         radio={true}
-        interstedInHide={true}
         dataScience={true}
         organicADS={true}
         ADS={true}
@@ -171,7 +167,6 @@ export default function Home() {
       <TrainerSection plainimg={true} iimgchmbl={true} />
       <ContactUs
         radio={true}
-        interstedInHide={true}
         dataScience={true}
         organicADS={true}
         ADS={true}
@@ -181,22 +176,19 @@ export default function Home() {
 
       <MobileTestimonial
         dataScience={true}
-        interstedInHide={true}
         ADS={true}
         radio={true}
       />
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection />
+      <SeventhSection organic={true}/>
       <EightSection
-        interstedInHide={true}
         radio={true}
         dataScience={true}
         ADS={true}
       />
-      <WhatsappFloat OS={true} />
+      <WhatsappFloat chat360code1={true} />
       <BottomBar
-        interstedInHide={true}
         radio={true}
         dataScience={true}
         ADS={true}
