@@ -1,36 +1,36 @@
+import { ThirdSectionData } from "@/Data/ThirdSectionData";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
+import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
+import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
+import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
 import WhoProgram from "@/components/CoursePage/NewSections/WhoProgram/ThirdSection";
+import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
+import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
+import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import Certificate from "@/components/MastersCourse/Certificate/Certificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
 import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import { ThirdSectionData } from "@/Data/ThirdSectionData";
-import Head from "next/head";
-import { useState, useEffect } from "react";
-import { parseJSONData } from "../../../Util/JsonConvertor";
-import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import Certificate from "@/components/MastersCourse/Certificate/Certificate";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
-import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 import { AiOutlineContainer } from "react-icons/ai";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
-import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
-import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
-import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
-import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
-import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
-import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
-import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
-import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
-import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
-import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import { parseJSONData } from "../../../Util/JsonConvertor";
+import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
 function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
   const ExcutiveProgramAIDS = parseJSONData(ExcutiveProgramAIDSJson);
@@ -152,7 +152,7 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
         </title>
         <meta
           name="description"
-          content="Advance your career with Learnbay's Executive Program in Data Science and AI. Gain advanced skills and become IIT Guwahati certified Data Scientist."
+          content="Advance your career with Learnbay's Executive Program in Data Science and AI. Gain advanced skills and become E&ICT Academy of IIT Guwahati certified Data Scientist."
         />
         <meta name="robots" content="index, follow" />
         <meta
