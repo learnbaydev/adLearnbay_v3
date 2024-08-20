@@ -69,7 +69,7 @@ function CourseThankYou() {
                 : { background: "#E5F3FA" }
             }
           >
-            IIT Guwahati
+            E&ICT Academy of IIT Guwahati
           </span>
           <span
             onClick={() => {

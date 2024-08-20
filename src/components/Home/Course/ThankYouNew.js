@@ -175,7 +175,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>IIT Guwahati</p>
+            <p>E&ICT Academy of IIT Guwahati</p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -375,7 +375,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            IIT Guwahati
+            E&ICT Academy of IIT Guwahati
           </span>
           <div className={styles.line}></div>
           <span

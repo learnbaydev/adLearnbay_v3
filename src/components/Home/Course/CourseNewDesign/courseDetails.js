@@ -41,7 +41,7 @@ export const courseDetails = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -92,8 +92,6 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf",
           },
-
-         
 
           // {
           //   id: 1,
@@ -376,7 +374,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -737,7 +735,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -803,7 +801,7 @@ export const courseDetails = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -845,7 +843,7 @@ export const courseDetails = [
           //   titleCourse: "Advance Data Analytics Program Data Science & AI",
           //   para: [
           //     "6 months | 4 capstone projects",
-          //     "Certification form IIT Guwahati",
+          //     "E&ICT Academy IIT Guwahati Certification",
           //     "Unlimited Interview Calls",
           //   ],
           //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1206,7 +1204,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1272,7 +1270,7 @@ export const courseDetails = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -1315,7 +1313,7 @@ export const courseDetails = [
           //   titleCourse: "Advance Data Analytics Program Data Science & AI",
           //   para: [
           //     "6 months | 4 capstone projects",
-          //     "Certification form IIT Guwahati",
+          //     "E&ICT Academy IIT Guwahati Certification",
           //     "Unlimited Interview Calls",
           //   ],
           //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1536,7 +1534,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1602,7 +1600,7 @@ export const courseDetails = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -1645,7 +1643,7 @@ export const courseDetails = [
           //   titleCourse: "Advance Data Analytics Program Data Science & AI",
           //   para: [
           //     "6 months | 4 capstone projects",
-          //     "Certification form IIT Guwahati",
+          //     "E&ICT Academy IIT Guwahati Certification",
           //     "Unlimited Interview Calls",
           //   ],
           //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1893,7 +1891,7 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-        {
+          {
             id: 4,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
             title: "Advance Data Analytics",
@@ -1905,7 +1903,7 @@ export const courseDetails = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -1971,7 +1969,7 @@ export const courseDetails = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -2014,7 +2012,7 @@ export const courseDetails = [
           //   titleCourse: "Advance Data Analytics Program Data Science & AI",
           //   para: [
           //     "6 months | 4 capstone projects",
-          //     "Certification form IIT Guwahati",
+          //     "E&ICT Academy IIT Guwahati Certification",
           //     "Unlimited Interview Calls",
           //   ],
           //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -2092,7 +2090,7 @@ export const courseDetailsM = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -2156,7 +2154,7 @@ export const courseDetailsM = [
           //   titleCourse: "Advance Data Analytics Program Data Science & AI",
           //   para: [
           //     "6 months | 4 capstone projects",
-          //     "Certification form IIT Guwahati",
+          //     "E&ICT Academy IIT Guwahati Certification",
           //     "Unlimited Interview Calls",
           //   ],
           //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -2445,7 +2443,7 @@ export const courseDetailsM = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -2491,7 +2489,6 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/AWS-Cloud-and-Devops-Certification-Program.pdf",
           },
-      
         ],
       },
       {
@@ -2895,7 +2892,7 @@ export const courseDetailsM = [
   //           titleCourse: "Executive program in Data Science & AI",
   //           para: [
   //             "11 months  |  4 Capstone Projects",
-  //             "Certification form IIT Guwahati",
+  //             "E&ICT Academy IIT Guwahati Certification",
   //             "2 days Campus Immersion at IIT",
   //           ],
   //           link1:
@@ -2938,7 +2935,7 @@ export const courseDetailsM = [
   //           titleCourse: "Advance Data Analytics Program Data Science & AI",
   //           para: [
   //             "6 months | 4 capstone projects",
-  //             "Certification form IIT Guwahati",
+  //             "E&ICT Academy IIT Guwahati Certification",
   //             "Unlimited Interview Calls",
   //           ],
   //           link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -3278,7 +3275,7 @@ export const courseDetailsM = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -3325,7 +3322,6 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/AWS-Cloud-and-Devops-Certification-Program.pdf",
           },
-        
         ],
       },
 
@@ -3451,7 +3447,7 @@ export const courseDetailsM = [
       //       titleCourse: "Executive program in Data Science & AI",
       //       para: [
       //         "11 months  |  4 Capstone Projects",
-      //         "Certification form IIT Guwahati",
+      //         "E&ICT Academy IIT Guwahati Certification",
       //         "2 days Campus Immersion at IIT",
       //       ],
       //       link1:
@@ -3494,7 +3490,7 @@ export const courseDetailsM = [
       //       titleCourse: "Advance Data Analytics Program Data Science & AI",
       //       para: [
       //         "6 months | 4 capstone projects",
-      //         "Certification form IIT Guwahati",
+      //         "E&ICT Academy IIT Guwahati Certification",
       //         "Unlimited Interview Calls",
       //       ],
       //       link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -3762,7 +3758,7 @@ export const courseDetailsM = [
   //           titleCourse: "Executive program in Data Science & AI",
   //           para: [
   //             "11 months  |  4 Capstone Projects",
-  //             "Certification form IIT Guwahati",
+  //             "E&ICT Academy IIT Guwahati Certification",
   //             "2 days Campus Immersion at IIT",
   //           ],
   //           link1:
@@ -3805,7 +3801,7 @@ export const courseDetailsM = [
   //           titleCourse: "Advance Data Analytics Program Data Science & AI",
   //           para: [
   //             "6 months | 4 capstone projects",
-  //             "Certification form IIT Guwahati",
+  //             "E&ICT Academy IIT Guwahati Certification",
   //             "Unlimited Interview Calls",
   //           ],
   //           link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -4044,7 +4040,7 @@ export const courseDetailsM = [
             titleCourse: "Advance Data Analytics Program Data Science & AI",
             para: [
               "6 months | 4 capstone projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "Unlimited Interview Calls",
             ],
             link1: "/datascience/advance-data-analytics-program-iit-guwahati",
@@ -4090,7 +4086,6 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/AWS-Cloud-and-Devops-Certification-Program.pdf",
           },
-        
         ],
       },
       {
@@ -4131,7 +4126,7 @@ export const courseDetailsM = [
             titleCourse: "Executive program in Data Science & AI",
             para: [
               "11 months  |  4 Capstone Projects",
-              "Certification form IIT Guwahati",
+              "E&ICT Academy IIT Guwahati Certification",
               "2 days Campus Immersion at IIT",
             ],
             link1:
@@ -4162,7 +4157,6 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
           },
 
-        
           {
             id: 1,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/Cloud_devops_IMG.webp",
