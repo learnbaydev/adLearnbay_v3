@@ -27,7 +27,7 @@ function Counselling() {
           />
         </div>
         <div className={styles.formr}>
-          <Form google={true} upSkillingHide={true}/>
+          <Form google={true} upSkillingHide={true} radio={true}/>
         </div>
       </div>
     </div>
