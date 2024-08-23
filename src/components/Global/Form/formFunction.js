@@ -270,7 +270,7 @@ const getFormFields = (
         { value: "Calls", label: "Calls" },
         { value: "WhatsApp", label: "WhatsApp" },
         { value: "Referral", label: "Referral" },
-        { value: "Walk-In", label: "Walk-In" },
+        // { value: "Walk-In", label: "Walk-In" },
         // { value: "Krishna Sir", label: "Krishna Sir" },
       ],
       required: google, // Conditionally required
