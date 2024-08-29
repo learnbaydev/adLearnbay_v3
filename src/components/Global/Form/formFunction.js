@@ -18,6 +18,14 @@ const getEndPoint = (pathname, event) => {
     pathname === "/walk-in-counselling" ||
     pathname === "/ads/generic" ||
     pathname === "/datascience/s2-apply-for-counselling-data-science" ||
+    pathname === "/" ||
+    pathname === "/datascience/data-science-certification-courses" ||
+    pathname === "/fullstack/fssd" ||
+    pathname === "/datascience/advance-ai-ml-certification" ||
+    pathname === "/datascience/data-science-ai-masters-program" ||
+    pathname === "/datascience/business-analytics-certification-course" ||
+    pathname === "/datascience/data-analytics-certification-course" ||
+    pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
