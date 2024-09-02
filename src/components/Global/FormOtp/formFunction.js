@@ -147,6 +147,14 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
       showField: !HideInterest, // Conditionally render the field
     },
     {
+      name: "jobTitle",
+      label: "Job Title",
+      type: "text",
+      placeholder: "Enter your Job Title *",
+      required: Domain, // Conditionally required
+      showField: Domain, // Conditionally render the field
+    },
+    {
       name: "WorkExperience",
       label: "Select Work Experience *",
       type: "select",
