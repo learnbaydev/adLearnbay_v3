@@ -278,7 +278,7 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
           WeekendTime="8:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
           FeeContent4="Easy loan procedure"
-          FeeContent5="15 days refund policy"
+          FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
           formotp={true}
