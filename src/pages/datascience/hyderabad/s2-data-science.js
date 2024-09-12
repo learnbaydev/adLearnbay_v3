@@ -53,11 +53,11 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
-          cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
+          cityParaCont="Live interactive training based on real-time projects specially designed for working professionals who aspire of having a lucrative career."
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
           firstToparaImg=" Hyderabad "
-          firstHeading="Data Science Course In"
+          firstHeading="Data Science Online Course In"
           firstTopPara="Choose Specialization over Generalization"
           softwareBtnHide={true}
         />

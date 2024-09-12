@@ -53,11 +53,11 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
-          cityParaCont="With demanding industry projects, you can acquire the most advanced technical expertise possible. Be a master even without a master's degree."
+          cityParaCont="Live interactive training based on real-time projects specially designed for working professionals who aspire of having a lucrative career."
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ai-ml-main.webp"
           firstToparaImg="Hyderabad"
-          firstHeading="Machine Learning Course in "
+          firstHeading="Machine Learning Online Course in "
           firstTopPara="Boost Your Professional Growth To a Whole New Level   "
           idss="YWxTtvb3x-U"
           softwareBtnHide={true}

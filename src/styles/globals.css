@@ -243,6 +243,11 @@ a {
   width: 100% !important;
 }
 
+.containerWidth {
+  width: 1300px;
+  margin: auto;
+}
+
 @media (max-width: 1281px) {
   .wrapper {
     padding: 40px 80px;
@@ -268,10 +273,32 @@ a {
     align-items: center;
     justify-content: center;
   }
+  .containerWidth {
+    width: 1180px;
+    margin: auto;
+  }
+}
+@media (max-width: 1180px) {
+  .containerWidth {
+    width: auto;
+    margin: auto;
+  }
+  
+}
+@media (max-width: 1080px) {
+  .containerWidth {
+    width: 1040px;
+    margin: auto;
+  }
+  
 }
 @media (max-width: 1024px) {
   .wrapper {
     padding: 30px 60px;
+  }
+  .containerWidth {
+    width: 980px;
+    margin: auto;
   }
 }
 @media (max-width: 961px) {
@@ -284,6 +311,10 @@ a {
   .RightPopup {
     width: 90%;
     margin-left: 50px;
+  }
+  .containerWidth {
+    width: auto;
+    margin: auto;
   }
 }
 @media (max-width: 850px) {

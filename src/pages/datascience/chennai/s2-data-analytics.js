@@ -53,11 +53,11 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
-          cityParaCont="Training based on real-time projects specially designed for working professionals who aspire of having a lucrative career."
+          cityParaCont="Live interactive training based on real-time projects specially designed for working professionals who aspire of having a lucrative career."
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/dahead.webp"
           firstToparaImg=" Chennai"
-          firstHeading="Data Analytics Course in "
+          firstHeading="Data Analytics Online Course in "
           firstTopPara="Get ahead of the competition with popular skill sets."
           softwareBtnHide={true}
           ibmOnly={true}

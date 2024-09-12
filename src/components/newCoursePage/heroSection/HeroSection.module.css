@@ -1,0 +1,349 @@
+.container {
+  background: linear-gradient(
+    177deg,
+    #212121 3.2%,
+    #212121 42.94%,
+    #212121 79.56%,
+    #212121 97.79%
+  );
+  color: #000;
+  padding: 46px 0px;
+  margin-top: 70px;
+}
+
+.mainBg {
+  background: linear-gradient(
+    176deg,
+    #eff3f6 3.89%,
+    #fff 42.38%,
+    #eff3f6 80.09%,
+    #fff 95.5%
+  );
+  padding-bottom: 70px;
+}
+
+.innerDiv {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.firstSection {
+  padding-top: 60px;
+}
+
+.firstSection h5 {
+  color: #7d7d7d;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.starDiv {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.starDiv p {
+  color: #dedede;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 127.182%; /* 31.795px */
+}
+
+.starDiv img {
+  width: 28px;
+  height: 100%;
+}
+
+.starDivSection {
+  display: grid;
+  gap: 20px;
+}
+
+.firstSection h1 {
+  margin: 30px 0px 30px 0px;
+  font-size: 38px;
+  color: #fff;
+}
+
+.firstSection p {
+  margin: 0;
+}
+
+.btnDiv {
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.secondSection img {
+  width: 100%;
+  height: auto;
+}
+
+.outlineButton {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 10px;
+  padding: 12px 24px 10px 24px;
+  font-weight: 700;
+  border: 1px solid #212121;
+  color: #fff;
+  position: relative;
+  overflow: hidden; /* Ensures the animated effect stays within the button bounds */
+  cursor: pointer;
+}
+
+.outlineButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start the animation from the left */
+  width: 200%; /* Ensure the gradient covers the button */
+  height: 100%;
+
+  transition: left 0.4s ease-in-out; /* Smooth transition */
+}
+
+.outlineButton:hover::before {
+  left: 100%; /* Move gradient to the right on hover */
+  animation: moveGlass 1s forwards; /* Trigger animation on hover */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  ); /* Create a glass-like gradient */
+}
+
+@keyframes moveGlass {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.orangeButton {
+  background: #fe7a36; /* Original orange background */
+  border-radius: 10px;
+  color: #fff;
+  padding: 12px 24px 10px 24px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.orangeButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+
+  transition: left 0.4s ease-in-out;
+}
+
+.orangeButton:hover::before {
+  left: 100%;
+  animation: moveGlass 1s forwards;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+}
+
+@keyframes moveGlass {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.botDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  border-radius: 30px;
+  background: #fff;
+  margin: 20px 0px 0px;
+  width: 100%;
+}
+
+.innerBotDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  display: grid;
+  gap: 6px;
+}
+
+.content p {
+  margin: 0;
+  color: #212121;
+  font-weight: 500;
+}
+
+.content h3 {
+  color: #737373;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.span {
+  color: #fe7a36;
+}
+.formdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 24.25px;
+  border: 0.6px solid #dfdada;
+  background: #383838;
+}
+.formdiv h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 11.682%; /* 52.021px */
+}
+.span {
+  color: #fe7a36;
+  font-weight: 700;
+}
+.formdiv form input {
+  border-radius: 8.75px;
+  border: 0.07px solid rgba(0, 0, 0, 0.2);
+  background: #212121;
+  color: #fff;
+  font-weight: 400;
+  height: 42px;
+}
+
+.formdiv form input::placeholder {
+  opacity: 1;
+  color: #969494;
+  font-weight: 300;
+}
+.formdiv form label {
+  display: none;
+}
+.formdiv form input[type="tel"] {
+  background: #212121; /* Set background color to black */
+  color: #fff; /* Ensure the text color is white */
+  border-radius: 8.75px;
+  border: 0.607px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  height: 38px;
+}
+.formdiv form select {
+  background-color: #212121; /* Set background color to black */
+  color: #969494; /* Set text color to white */
+  border-radius: 8.775px;
+  border: 0.607px solid rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Add some padding */
+  font-weight: 400; /* Set font weight */
+  appearance: none; /* Remove default dropdown arrow (optional) */
+  -webkit-appearance: none; /* Remove default dropdown arrow in Safari */
+  height: 42px;
+}
+
+.formdiv form select option {
+  background-color: #212121; /* Set background color for dropdown options */
+  color: #969494; /* Set text color for dropdown options */
+}
+
+.formdiv form p {
+  margin: 0px 30px;
+}
+
+.formdiv form button {
+  border-radius: 10.492px;
+  background: #0383ff;
+  margin-bottom: 10px;
+}
+
+.formdiv form > div {
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.icon {
+  background-color: #0383ff;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  color: #000;
+}
+
+.fill {
+  float: right;
+  border-radius: 0px 25.742px 0px 19px;
+  background: rgba(3, 131, 255, 0.25);
+  padding: 5px 20px 5px 8px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  color: #afafaf;
+  font-size: 8px;
+  font-weight: 600;
+  position: relative;
+  left: 132px;
+}
+
+@media only screen and (max-width: 1302px) {
+  .innerDiv {
+    margin: 20px 60px;
+  }
+
+  .firstSection h1 {
+    font-size: 32px;
+  }
+  .firstSection h5 {
+    font-size: 22px;
+  }
+
+  .botDiv {
+    width: 100%;
+  }
+  .videoIframe {
+    width: 100%;
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .botDiv {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .firstSection h1 {
+    font-size: 26px;
+  }
+  .firstSection h5 {
+    font-size: 20px;
+  }
+  .innerDiv {
+    margin: 20px 30px;
+  }
+}
