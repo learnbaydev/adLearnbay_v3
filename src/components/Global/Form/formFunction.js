@@ -25,7 +25,8 @@ const getEndPoint = (pathname, event) => {
     pathname === "/datascience/data-science-ai-masters-program" ||
     pathname === "/datascience/business-analytics-certification-course" ||
     pathname === "/datascience/data-analytics-certification-course" ||
-    pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
+    pathname ===
+      "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
@@ -315,10 +316,10 @@ const getFormFields = (
     // },
 
     {
-      name: "jobTitle",
+      name: "currentDesignation",
       label: "Job Title",
       type: "text",
-      placeholder: "Enter your Job Title *",
+      placeholder: "Current Designation *",
       required: interstedInHide, // Conditionally required
       showField: interstedInHide, // Conditionally render the field
     },
@@ -426,4 +427,4 @@ const getFormFields = (
   ];
 };
 
-export { getEndPoint, redirectionThankYou, getValidation, getFormFields };
+export { getEndPoint, getFormFields, getValidation, redirectionThankYou };

@@ -13,7 +13,8 @@ const getEndPoint = (pathname, ADS) => {
     pathname === "/datascience/data-science-ai-masters-program" ||
     pathname === "/datascience/business-analytics-certification-course" ||
     pathname === "/datascience/data-analytics-certification-course" ||
-    pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program"
+    pathname ===
+      "/cloud&devops/cloud-computing-and-devOps-certification-program"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
   }
@@ -31,7 +32,7 @@ const getValidation = (
   query,
   HideInterest,
   Domain,
-  WorkExperience,
+  WorkExperience
 ) => {
   if (query.phone === "" || query.phone === undefined) {
     return true;
@@ -93,10 +94,10 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
       showField: true,
     },
     {
-      name: "jobTitle",
+      name: "currentDesignation",
       label: "Job Title",
       type: "text",
-      placeholder: "Enter your Job Title *",
+      placeholder: "Current Designation *",
       required: true, // Conditionally required
       showField: !HideInterest, // Conditionally render the field
     },
@@ -243,7 +244,11 @@ const getFormFields = (HideInterest, btnHide, radio, Domain) => {
       label: "Course Preference *",
       type: "select",
       options: [
-        { value: "Course Preference *", label: "Course Preference *", hidden: true },
+        {
+          value: "Course Preference *",
+          label: "Course Preference *",
+          hidden: true,
+        },
         {
           value: "Data Science & AI Courses",
           label: "Data Science & AI Courses",
