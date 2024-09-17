@@ -13,10 +13,9 @@
 .upskillHeading{
     font-size: 42px;
     color: #fff;
-    display: flex;
     font-weight: 400;
-    justify-content: center;
     margin-bottom: 50px;
+    text-align: center;
 }
 .spanHead {
     font-weight: 700;
@@ -79,3 +78,51 @@ margin: 30px auto 50px auto;
         fill: #20A898;
         font-size: 22px;
     }
+
+@media only screen and (max-width: 641px) {
+.mainBg{
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+    padding: 40px 24px;
+}
+.upskillHeading{
+    font-size: 28px;
+}
+.middleLine {
+    width: 0px;
+    margin: 10px 0px;
+}
+.spanHead {
+    text-underline-offset: 14px;
+}
+.innerDiv {
+    grid-template-columns: 100%;
+    gap: 30px;
+}
+.certBox img {
+    height: auto;
+    width: 100%;
+}
+.iconDiv {
+    grid-template-columns: 7% 90%;
+}
+.iconDivMain h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.iconDivMain {
+    margin-left: 8px;
+}
+.iconDiv svg {
+    font-size: 20px;
+}
+.iconDiv p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.mHead {
+    margin-top: -24px;
+}
+}

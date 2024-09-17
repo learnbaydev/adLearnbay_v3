@@ -104,7 +104,8 @@ function programSection({
                     width="60"
                     height="60"
                   />
-                  <h3>Tech Lead(IT/Non-IT)</h3>
+                  <h3 className={styles.dShow}>Tech Lead(IT/Non-IT)</h3>
+                  <h3 className={styles.dHide}>Team Lead</h3>
                 </div>
               </div>
               <p className={styles.pBot}>

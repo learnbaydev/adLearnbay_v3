@@ -11,7 +11,6 @@ function CertificateSection() {
           Get certified and accelerate your
           <span className={styles.spanHead}>&nbsp;career growth</span>
         </h2>
-        <div className="containerWidth">
           <div className={styles.innerDiv}>
             <div className={styles.certBox}>
               <Image
@@ -86,7 +85,7 @@ function CertificateSection() {
             </div>
             <div className={styles.certBox}>
               <div className={styles.iconDivMain}>
-                <h4>Capstone Project Certificate from IBM</h4>
+                <h4 className={styles.mHead}>Capstone Project Certificate from IBM</h4>
                 <div className={styles.iconDiv}>
                   <FaCheckCircle />
                   <p>Globally recognized IBM certification based on industrial-level projects.</p>
@@ -102,7 +101,6 @@ function CertificateSection() {
                   Individualized project experience with easy access to premium job opportunities.
                   </p>
                 </div>
-              </div>
             </div>
           </div>
         </div>

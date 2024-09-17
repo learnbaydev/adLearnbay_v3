@@ -195,6 +195,14 @@ function HeroSectionContent({
             )}
           </div>
         </div>
+        <div className={styles.btnDivM}>
+                <div className={styles.outlineButton} onClick={popupShow}>
+                  DOWNLOAD SYLLABUS
+                </div>
+                <div className={styles.orangeButton} onClick={popupShow}>
+                  START MY APPLICATION
+                </div>
+              </div>
       </div>
       <div className="containerWidth">
         <div className={styles.botDiv}>

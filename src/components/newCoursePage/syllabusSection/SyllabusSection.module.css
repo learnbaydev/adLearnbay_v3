@@ -499,3 +499,67 @@
     height: 600px;
   }
 }
+
+@media screen and (max-width: 641px) {
+  .mainConteiner {
+    margin: 70px 24px 50px 24px;
+  }
+  .headline {
+    margin: 40px 0px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .gridConteiner {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+  .leftinside {
+    gap: 10px;
+  }
+  .rytmain {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  .leftinside img {
+    width: 40px;
+    height: auto;
+    padding: 3px;
+  }
+  .leftinside h3 {
+    font-size: 24px;
+  }
+  .ryttop > p {
+    font-size: 18px;
+  }
+  .date p {
+    font-size: 14px;
+  }
+  .tools {
+    flex-direction: column;
+  }
+  .tools img {
+    width: auto;
+    height: auto;
+  }
+  .buttondiv {
+    margin: 20px 0px 50px 0px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .btnone, .btntwo {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btnone svg, .btntwo svg {
+    width: 30px;
+    height: 30px;
+  }
+}

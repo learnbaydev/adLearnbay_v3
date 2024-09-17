@@ -1,3 +1,7 @@
+  .container {
+    margin-top: 100px;
+  }
+  
   .headH4 {
     color: #000;
 font-size: 34px;
@@ -70,3 +74,50 @@ text-align: center;
   .img2 {
     margin-bottom: -13px;
   }
+
+@media only screen and (max-width: 641px) {
+  .container {
+    margin-top: 0px;
+  }
+  .innerdiv {
+    gap: 24px;
+    overflow: scroll;
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    grid-template-columns: 90% 90% 90% 90%;
+    border-radius: 0px;
+    padding-right: 20px;
+  }
+  .innerdiv div:nth-child(1), .innerdiv div:nth-child(2), .innerdiv div:nth-child(3), .innerdiv div:nth-child(4) {
+    border: 0.961px solid transparent;
+    border-radius: 21.628px; /* Border radius */
+        padding: 24px 0px 0px 24px;
+  }
+  .innerdiv h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .innerdiv img {
+
+    width: 120px;
+    margin-top: -80px;
+    margin-right: 4px;
+
+  }
+
+  .headH4 {
+    text-align: left;
+    margin: 0px 24px;
+    font-size: 26px;
+  }
+
+  .innerdiv div P {
+    margin: 0 46px 30px 0px;
+    font-size: 17px;
+  }
+
+}

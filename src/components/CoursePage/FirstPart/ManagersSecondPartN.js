@@ -22,41 +22,21 @@ const JobReadySection = dynamic(() =>
 const UpskillingSection = dynamic(() =>
   import("@/components/newCoursePage/upskillingSection/upskillingSection")
 );
-const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
-const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
 const WhatsappFloat = dynamic(() =>
   import("@/components/Global/WhatappsFloat/WhatsappFloat")
 );
-const Certificate = dynamic(() => import("../Certificate/Certificate"));
-
-const SliderTab = dynamic(() => import("../../Global/SliderTabs/SliderTabs"));
-
-const PlacementCall = dynamic(() =>
-  import("../../Global/PlacementCall/PlacementCall")
-);
-
-const NewProjectSection = dynamic(() =>
-  import("../../Global/NewProjectSection/NewProjectSection")
-);
-
-const FAQNew = dynamic(() => import("../FAQNew/FAQNew"));
-const Footer = dynamic(() => import("@/components/Global/Footer/Footer"));
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
 
 const ManagersSecondPartN = ({
-  masterSyllabusMobile,
-  CertificateData,
-  projectSection,
-  FAQNewData,
   sections,
 }) => {
   return (
     <div>
       <ReviewSlider />
       <MentorsSection />
-      <UpskillingSection />
+      {/* <UpskillingSection /> */}
       <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
       <SyllabusSection
         sections={sections}
@@ -64,10 +44,9 @@ const ManagersSecondPartN = ({
         formotp={true}
         ADS={true}
       />
-      <CertificateSection />
       <ToolsSection />
+      <CertificateSection />
       <FeeSection
-        // EMIPOPUP
         emiType="Live online classes"
         duration1="18 Months"
         totalAmount1="₹1,50,000"

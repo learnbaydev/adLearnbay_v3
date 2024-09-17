@@ -52,7 +52,7 @@ function MentorsSection() {
           navigation
           pagination={{ clickable: true }}
           spaceBetween={0}
-          slidesPerView={1} // This will show 4 cards on desktop
+          slidesPerView={1.3} // This will show 4 cards on desktop
           breakpoints={{
             768: {
               slidesPerView: 4, // This will show only 1 card on mobile (adjust as needed)

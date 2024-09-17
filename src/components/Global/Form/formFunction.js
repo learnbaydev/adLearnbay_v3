@@ -343,8 +343,8 @@ const getFormFields = (
           label: "1-3 years",
         },
         {
-          value: "2-5 years",
-          label: "2-5 years",
+          value: "3-5 years",
+          label: "3-5 years",
         },
         {
           value: "5-7 years",
