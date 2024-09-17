@@ -296,6 +296,7 @@ height: 40px;
 
   .botDivMobile {
     padding: 30px 24px 0px 24px;
+    display: block;
   }
 
   .projectCard {

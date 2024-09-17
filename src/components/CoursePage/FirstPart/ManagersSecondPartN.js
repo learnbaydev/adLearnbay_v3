@@ -38,12 +38,12 @@ const ManagersSecondPartN = ({
       <MentorsSection />
       {/* <UpskillingSection /> */}
       <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
-      {/* <SyllabusSection
+      <SyllabusSection
         sections={sections}
         interstedInHide={true}
         formotp={true}
         ADS={true}
-      /> */}
+      />
       <ToolsSection />
       <CertificateSection />
       <FeeSection

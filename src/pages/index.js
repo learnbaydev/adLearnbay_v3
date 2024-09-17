@@ -1,16 +1,17 @@
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import Navbar from "@/components/Global/NavbarHome/Navbar";
 import FirstSection from "@/components/Home/FirstSection/FirstSection";
-const WhyChooseSection = dynamic(() =>
-  import("@/components/Home/whyChooseSection/whyChooseSection")
-);
+import HomeLine from "@/components/Home/HomeLine/HomeLine";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 const Course = dynamic(() => import("@/components/Home/Course/Course"));
+const WhyLearnbay = dynamic(() =>
+  import("@/components/Home/WhyLearnbay/WhyLearnbay")
+);
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
-import InfinityLogo from "@/components/Home/InfinityLogo/InfinityLogo";
-import KickStart from "@/components/Home/KickStartSection/KickStart";
-import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+const ProjectSection = dynamic(() =>
+  import("@/components/Home/ProjectSection/ProjectSection")
+);
 const Testimonial = dynamic(() =>
   import("@/components/Global/Testimonial/Testimonial")
 );
@@ -105,13 +106,26 @@ export default function Home({}) {
       <main>
         <Navbar radio={true} interstedInHide={true} dataScience={true} />
         <FirstSection dataScience={true} radio={true} interstedInHide={true} />
-      <InfinityLogo/>
-      <KickStart/>
+        <HomeLine />
         <Course dataScience={true} radio={true} interstedInHide={true} />
-      <WhyChooseSection />
-        <ContactUs dataScience={true} radio={true} interstedInHide={true} />
+        <WhyLearnbay />
+        <ProjectSection
+          dataScience={true}
+          radio={true}
+          interstedInHide={true}
+        />
         <GetHire />
-      <MobileTestimonial dataScience={true} radio={true} interstedInHide={true} />
+        <TrainerSection 
+        idss="eautK0odE7Q" />
+        <Testimonial
+        redirectDS={true}
+          dataScience={true}
+          radio={true}
+          interstedInHide={true}
+          Testimonial={testimonial}
+          popupvnone={true}
+        />
+        <ContactUs dataScience={true} radio={true} interstedInHide={true} />
         <SeventhSection organic={true} />
         <Footer />
         <WhatsappFloat chat360code1={true} />

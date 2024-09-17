@@ -1,430 +1,436 @@
 
-.conteiner {
-  margin-top: 80px;
-  background: url(https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/shades.webp);
-  background-color: rgba(15, 14, 14, 0.954);
-  background-repeat: no-repeat;
+.counbtn{
+  margin-top: 50px;
 }
-
-
-.gridConteiner{
-
+.First {
+  margin-top: 70px;
+  padding: 70px 100px 76px 100px;
   display: grid;
-    grid-template-columns: 60% 33%;
-    width: 1300px;
-    margin: auto;
-    padding: 60px 0;
-    gap: 10px;
-    justify-content: space-between;
-
-
-  
-
-}
-.gridConteiner h1 {
-font-size: 45px;
-font-style: normal;
-font-weight: 600;
-line-height: 126.5%; /* 75.9px */
-letter-spacing: 0.6px;
-color: #fff;
-font-weight: 700;
-}
-.btn {
-  position: relative; /* For positioning the pseudo-element */
-  overflow: hidden; /* To prevent the pseudo-element from overflowing */
-  border-radius: 12px;
-  background: linear-gradient(90deg, #0383FF 0%, #003456 100%);
-  border: none;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
-  margin-top: 60px;
-  transition: all 10s ease; /* Smooth transition for the button */
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%; /* Start from outside the button */
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Glass-like effect */
-  border-radius: 1px;
-  backdrop-filter: blur(1px); /* Adds a blur to create the glass effect */
-  transition: all 0.5s ease; /* Smooth transition */
-}
-
-.btn:hover::before {
-  left: 100%; /* Move to the other side */
-}
-
-.backgroundGradient {
-  width: 100vw;
-  height: 800px; /* Adjust the height as needed */
-  background: radial-gradient(circle at top left, #063B5C, transparent 60%),
-              radial-gradient(circle at bottom right, #FE7A36, transparent 60%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  /* align-items: center; */
+  grid-template-columns: 53% 43%;
+  height: 526px;
+  gap: 50px;
+}
+.First {
+  background: linear-gradient(180deg, #232323 16.69%, #012f4e 99.97%);
 }
 
-
-
-.rytConteiner{
-  border-top-right-radius: 34px;
-  border-top-left-radius: 34px;
-background: linear-gradient(0deg, #FBFBFB 0%, #FBFBFB 100%), linear-gradient(0deg, #F5F5F5 0%, #F5F5F5 100%), #F5F5F5;
-display: flex;
-flex-direction: column;
-gap: 10px;
-padding: 40px;
-position: relative;
-}
-.rytConteiner h2 {
-  color: #4F4B4B;
-font-size: 38px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.hr{
-  width: 330px;
-  height: 1px;
-}
-.spandiv{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 16px;
-
-  
-}
-.listryt{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.listryt span {
-  color: #212121;
-font-size: 17.377px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.listDown{
-border-radius: 0px 0px 34px 34px;
-background: linear-gradient(0deg, #E1E1E1 0%, #E1E1E1 100%), linear-gradient(0deg, #F5F5F5 0%, #F5F5F5 100%), #F5F5F5;
-padding: 26px;
-display: flex;
-}
-.bookFreebtn{
-  display: grid;
-  grid-template-columns: 70% 30%;
-  gap: 6px;
-
-
-}
-.bookFreebtn button {
-  color: #FFF;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 6px;
-  background: #022646;
-  border: none;
-  padding: 15px 20px;
-  align-items: center;
+.GenAiBox {
   display: flex;
   gap: 10px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s, box-shadow 0.5s ease;
-
-  cursor: pointer;
+  background: linear-gradient(90deg, #00406a 0.08%, rgba(0, 0, 0, 0) 99.89%);
+  margin-top: 20px;
+  border-radius: 10px 0px 0px 10px;
+  align-items: center;
 }
-
-.bookFreebtn button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(39, 103, 180, 0.2); /* Transparent white for glow */
-  transition: left 0.5s ease;
-  z-index: 0;
-}
-
-.bookFreebtn button:hover::before {
-  left: 0;
-}
-
-.bookFreebtn button:hover {
-  background: #022646; /* Keep the same background color */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Glowing effect */
+.TextGreen {
   color: #35d028;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 153%;
+  margin: 0;
+}
+.GenImageBlock {
+  border-radius: 12px 12px 0px 12px;
+  background: #0072bc;
+  padding: 5px 5px 0px 5px;
 }
 
-.bookFreebtn button span {
-  position: relative;
-  z-index: 1; /* Ensure text is above the glowing effect */
+.pTop {
+  color: #f99600;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0;
 }
-
-.bookFreebtn p {
-  color: #000;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-
-
-
-
-.greenTag{
-  width: fit-content;
-  float: right;
-  position: absolute;
-  top: -3px;
-  right: 20px;
-
-}
-
-
-.pointsDiv{
-  display: flex;
-  align-items:center;
-  gap: 10px;
-}
-
-
-
-.listleft{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin:60px 0;
-
-
-}
-.listleft p {
-  color: #FFF;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 153%; /* 45.9px */
-}
-
-
-
-
-.orgleft{
-  color: #FE7A36;
-font-style: normal;
-font-weight: 700;
-line-height: 153%;
-}
-.typelogo{
-  width: 100%;
-  height: auto;
-}
-
-
-
-.bgWrap {
-  position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%;
-  height: 690px;
-  /* Default background image for desktop */
-  background: url("")
-    no-repeat center center;
-  background-size: contain;
-  background: linear-gradient(89deg, #212121 11.25%, rgba(33, 33, 33, 0.90) 62.25%, #212121 95.94%);
-  
-}
-
-.btnmblDiv{
+.imgWrapperMobile {
   display: none;
 }
 
-@media screen and (max-width:1381px) {
-
-  .gridConteiner{
-    width: 1200px;
-  }
-
-  .gridConteiner h1{
-    font-size: 40px;
-  }
-
-  .rytConteiner h2 {
-    font-size: 34px;
-  }
-  
-
-  
-  
-}
-
-@media screen and (max-width:1181px) {
-
-  .gridConteiner{
-    width: 980px;
-    display: grid;
-    grid-template-columns: 62% 38%;
-
-    margin: auto;
-    padding: 60px 0;
-    gap: 0;
-    justify-content:center;
-
-  }
-
-  .gridConteiner h1{
-    font-size: 30px;
-  }
-
-  .rytConteiner h2 {
-    font-size: 32px;
-  }
-  .listleft p{
-    font-size: 20px;
-  }
-
-  .listleft img {
-    width: 30px;
-    height: auto;
-  }
-  .rytConteiner {
-    padding: 40px 20px;
-  }
-  .hr {
-    width: 200px;
-  }
-  .listryt span {
-    font-size: 14px;
-  }
-
-  .bookFreebtn{
-    grid-template-columns: 75% 24%;
-  }
-
-  .bookFreebtn button {
-    font-size: 14px;
-  }
- 
-  .typelogo img {
-    width: 100%;
-    height: auto;
-
-  }
-
-
-
-
-
-
-
-}
-
-@media screen  and (max-width:641px){
-  .conteiner {
-    padding: 0 30px;
-    background: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/mbl_shadows.webp");
-    background-color: rgba(15, 14, 14, 0.954);
-    margin-top: 64px;
-  }
-.gridConteiner{
+.imgWrapperDesktop img {
   width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 20px;
+}
+.ImageBlock {
+  width: 300px;
+  height: max-content;
+}
+.animationTextWrap {
+  font-size: 22px;
+  height: 24px;
+  font-weight: 600;
+}
+.ptop {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.h1 {
+  color: #fff;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0px 0px 0px;
+  text-align: left;
+  font-size: 42px;
+}
+.FirstLeft {
+  position: relative;
+}
+.line {
+  position: absolute;
+  top: 72%;
+  left: 48%;
+  transform: rotate(-20deg);
+}
+.blink {
+  font-size: 21px;
+  color: #dfdfdf;
+  margin-top: 15px;
+  padding-right: 120px;
+  line-height: 31px;
+}
+.descLine {
+  color: #767676;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+}
+/* .FirstLeft p {
+  margin: 10px 0px 10px 0px;
+} */
+.logos {
+  display: none;
+}
+.IBMlogoPlay {
+  display: none;
+}
+.logosD {
   display: flex;
-  flex-direction: column;
-  margin: 0px;
-  gap: 30px;
-  padding-bottom: 20px;
-
+  justify-content: space-evenly;
 }
-
-.gridConteiner h1 {
-  font-size: 26px;
+.PlayImg {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
 }
-.listleft p {
-  font-size: 17px;
-}
-.listleft {
-  margin: 20px 0;
+.btnWrapper {
+  display: flex;
   gap: 20px;
+  margin: 30px 0px 0px;
 }
-.rytConteiner h2 {
-  font-size: 30px;
+.outLineBtn {
+  padding: 10px 14px;
+  font-size: 18px;
+  background: #fff;
+  color: #0072bc;
 }
-.rytConteiner {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0 20px 0;
+.outLineBtn:hover {
+  background: #0072bc;
+  color: #fff;
 }
-
-  .listDown {
-    padding: 11px 20px;
+.Btn {
+  background: #0072bc;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 18px;
+}
+.Btn:hover {
+  background: #fff;
+  color: #0072bc;
+}
+.blinkMobile,
+.ibmLogoMobile {
+  display: none;
+}
+@media (max-width: 1281px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 38px;
   }
-
-  .bookFreebtn button {
-    font-size: 12px;
+  .blink,
+  .ptop {
+    font-size: 18px;
   }
-  .bookFreebtn p{
-    font-size: 11px;
+  .First {
+    padding: 40px 80px;
   }
-  .btn{
-    display: none;
-  }
-  .hr{
+  .ImageBlock {
     width: 250px;
   }
-  .spandiv {
-    margin: 0;
-  }
-  .btnMbl{
-    display: flex;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #0383FF 0%, #003456 100%);
-    border: none;
-    padding: 14px 20px;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
-    margin-top: 20px;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: 20px;
-
-  }
-
-  .btnmblDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  .blinkMobile,
+  .ibmLogoMobile {
+    display: none;
   }
 }
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 7px 0px 20px 0px;
+  }
+  .blink,
+  .ptop {
+    font-size: 17px;
+  }
+  .animationTextWrap {
+    font-size: 20px;
+  }
+  .ImageBlock {
+    width: 200px;
+  }
+  .blinkMobile,
+  .ibmLogoMobile {
+    display: none;
+  }
+}
+@media (max-width: 961px) {
+  .First {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+  .h1 {
+    font-size: 22px;
+  }
+  .animationTextWrap {
+    font-size: 19px;
+  }
+  .blink,
+  .ptop {
+    font-size: 15px;
+  }
+  .ImageBlock {
+    width: 180px;
+  }
+  .blinkMobile,
+  .ibmLogoMobile {
+    display: none;
+  }
+}
+@media (max-width: 801px) {
+  .First {
+    grid-template-columns: 100%;
+  }
+  .secondLeft {
+    display: none;
+  }
+  .imgWrapperMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgWrapperMobile img {
+    width: 50%;
+    height: auto;
+  }
+  .imgWrapperDesktop {
+    display: none;
+  }
+  .h1 {
+    font-size: 31px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .animationTextWrap {
+    font-size: 20px;
+    text-align: center;
+  }
+  .blink,
+  .ptop {
+    font-size: 18px;
+    text-align: center;
+  }
+  .btnWrapper {
+    justify-content: center;
+    align-self: center;
+  }
+  .ImageBlock {
+    margin: auto;
+  }
+  .blinkMobile,
+  .ibmLogoMobile {
+    display: none;
+  }
+}
+@media (max-width: 641px) {
+  .SecondSectionLeft {
+    gap: 15px;
+  }
+  .First {
+    padding: 50px 20px 40px 20px;
+    display: block;
+    margin-top: 47px;
+    background-color: #fff;
+    height: fit-content;
+  }
+  .SecondSectionLeft .h1 {
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+    font-size: 26px;
+    padding: 0px;
+  }
+  .box {
+    display: none;
+  }
+  .FirstLeft {
+    gap: 0;
+  }
+  .pTop {
+    font-size: 22px;
+  }
+  /* .FirstLeft {
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  } */
+  .FirstLeft .ptop {
+    color: #767676;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .FirstLeft .ptopC {
+    color: #767676;
+    font-size: 14px;
+    margin: 0px;
+    text-align: center;
+  }
+  .FirstLeft .h1Span {
+    background: linear-gradient(90deg, #f99600 50%, #edb552 103.64%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  .FirstLeft .h1 {
+    margin: 10px 0px 10px 0px;
+    font-size: 26px;
+    text-align: center;
+    line-height: normal;
+    padding: 0px;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .IBMlogo,
+  .IBMlogoPlay {
+    text-align: left;
+    margin: 10px 0px;
+  }
+  .IBMlogoPlay {
+    display: block;
+  }
+  .secondLeft {
+    display: none;
+  }
+  .PlayImg {
+    display: none;
+  }
+  .logosD {
+    display: none;
+  }
+  .FirstLeft button {
+    margin: auto;
+    font-size: 16px;
+    height: fit-content;
+    padding: 12px 15px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .blink {
+    display: none;
+  }
+  .blinkMobile {
+    display: block;
+    color: #ffffff90;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .line {
+    top: 82%;
+    left: 80%;
+  }
 
-
-
-
-
-
+  .btnWrapper {
+    justify-content: center;
+    margin: 30px auto 0px auto;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .btnWrapper a,
+  .btnWrapper div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ibmLogoMobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .forth .h1 {
+    font-size: 26px;
+    line-height: normal;
+    text-align: left;
+  }
+}
+@media (max-width: 481px) {
+  .imgWrapperMobile img {
+    width: 100%;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+  .FirstLeft p {
+    text-align: left;
+  }
+  .greenBox {
+    padding: 5px 10px;
+  }
+  .greenBox p {
+    font-size: 12px;
+  }
+  .TextGreen {
+    font-size: 14px;
+  }
+  .FirstLeft .ptopC {
+    text-align: left;
+  }
+  .FirstLeft .h1Span {
+    text-align: left;
+  }
+  .FirstLeft .h1 {
+    text-align: left;
+  }
+  .logos {
+    justify-content: left;
+    text-align: left;
+  }
+  .IBMlogo,
+  .IBMlogoPlay {
+    text-align: left;
+  }
+  .blink {
+    line-height: 30px;
+    text-align: left;
+  }
+  .ImageBlock {
+    margin: 0px;
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .animationTextWrap {
+    text-align: left;
+  }
+}
