@@ -133,7 +133,7 @@ function whyChooseSection() {
           </div>
           <div className={styles.threeSecond}>
             <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/yt_choose.webp"
+              src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/project_img.webp"
               alt="Learnbay"
               quality={100}
               priority

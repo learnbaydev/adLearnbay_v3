@@ -23,14 +23,13 @@ const ProjectSection = ({
   ADS,
   formotp,
 }) => {
-
   const [popups, setPopups] = useState(false);
   const popupShow = () => {
     setPopups(true);
   };
   return (
     <section className={styles.projectSection}>
-            <PopupContent
+      <PopupContent
         popups={popups}
         setPopups={setPopups}
         heading="Download Syllabus"
@@ -43,16 +42,21 @@ const ProjectSection = ({
         formotp={formotp}
       />
       <h2 className={styles.headline}>
-      Industry <span>Projects</span>
+        Industry <span>Projects</span>
       </h2>
       <div className={styles.subheadingContainer}>
         <div className={styles.orangeBox}>95% industry relevance</div>
-        <div className={styles.blueBox}>22+ tools, 100% hands-on</div>
+        <div className={styles.blueBox}>22+ tools and modules</div>
         <div className={styles.greenBox}>100% real-world experience</div>
       </div>
       <div className={styles.projectsConatiner}>
         <Swiper
-          slidesPerView={3}
+          breakpoints={{
+            320: { slidesPerView: 1.1, spaceBetween: 30 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
+            1440: { slidesPerView: 3, spaceBetween: 30 },
+          }}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -88,11 +92,16 @@ const ProjectSection = ({
                     className={styles.projectIcon}
                   />
                 </div>
-                <div className={styles.cardText}><span style={{color:"#0072BC"}}><b>Outcome:</b></span> {item.cta}</div>
+                <div className={styles.cardText}>
+                  <span style={{ color: "#0072BC" }}>
+                    <b>Outcome:</b>
+                  </span>{" "}
+                  {item.cta}
+                </div>
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>  
+        </Swiper>
       </div>
       <div className={styles.botDiv}>
         <Image
@@ -103,7 +112,31 @@ const ProjectSection = ({
           loading="lazy"
         />
         <h4 className={styles.h4Bot}>Practical Project Experience</h4>
-        <p className={styles.pBot}><span className={styles.spanOrange}>Important Note:</span> The final number of quizzes, assignments and discussions will be confirmed closer to the programme start. To know more <span className={styles.blueSpan } onClick={popupShow}>check eligibility</span></p>
+        <p className={styles.pBot}>
+          <span className={styles.spanOrange}>Important Note:</span> The final
+          number of quizzes, assignments and discussions will be confirmed
+          closer to the programme start. To know more{" "}
+          <span className={styles.blueSpan} onClick={popupShow}>
+            check eligibility
+          </span>
+        </p>
+      </div>
+      <div className={styles.botDivMobile}>
+        <Image
+          src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/practical_bot_mobile.webp"
+          alt="practical"
+          width={555}
+          height={313}
+          loading="lazy"
+        />
+        <p className={styles.pBot}>
+          <span className={styles.spanOrange}>Important Note:</span> The final
+          number of quizzes, assignments and discussions will be confirmed
+          closer to the programme start. To know more{" "}
+          <span className={styles.blueSpan} onClick={popupShow}>
+            check eligibility
+          </span>
+        </p>
       </div>
     </section>
   );

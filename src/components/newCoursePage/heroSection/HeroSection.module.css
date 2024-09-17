@@ -73,7 +73,7 @@
   margin: 0;
 }
 
-.btnDiv {
+.btnDiv{
   display: flex;
   gap: 30px;
   margin-top: 80px;
@@ -293,6 +293,10 @@
   color: #000;
 }
 
+.btnDivM {
+  display: none;
+}
+
 .fill {
   float: right;
   border-radius: 0px 25.742px 0px 19px;
@@ -312,6 +316,9 @@
 @media only screen and (max-width: 1302px) {
   .innerDiv {
     margin: 20px 60px;
+  }
+  .btnDivM {
+    display: none;
   }
 
   .firstSection h1 {
@@ -334,6 +341,9 @@
   .botDiv {
     width: 100vw;
   }
+  .btnDivM {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 890px) {
@@ -346,4 +356,67 @@
   .innerDiv {
     margin: 20px 30px;
   }
+  .btnDivM {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+.container {
+  padding: 1dvh 0px;
+}
+
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSection {
+  padding: 0;
+}
+.firstSection h1 {
+  margin: 15px 0px 24px 0px;
+}
+
+.firstSection p {
+  font-size: 14px;
+}
+.btnDiv {
+  display: none;
+}
+.btnDivM {
+  display: flex;
+  margin: 50px 40px;
+gap: 20px;
+}
+.btnDivM .outlineButton, .btnDivM .orangeButton {
+  border-radius: 17px;
+text-align: center;
+font-size: 10px;
+font-weight: 700;
+line-height: 14.132px; /* 143.396% */
+text-transform: uppercase;
+padding: 8px 20px;
+}
+.btnDivM .outlineButton {
+  color: #383838;
+  background: #fff;
+}
+.formdiv h3 {
+  font-size: 20px;
+}
+.fill {
+  left: 114px;
+}
+.botDiv {
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 20px 24px;
+  width: auto;
+  padding: 20px;
+}
+.mainBg {
+  padding-bottom: 0;
+}
 }
