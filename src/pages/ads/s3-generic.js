@@ -131,11 +131,12 @@ export default function Home() {
         />
       </Head>
       <Navbar
-        formotp={true}
+        // formotp={true}
         HideInterest={true}
         dataScience={true}
         ADS={true}
-        DomainInput={true}
+        interstedInHide={true}
+        // DomainInput={true}
       />
 
       <FirstSection
@@ -145,9 +146,10 @@ export default function Home() {
         HideInterest={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+        interstedInHide={true}
+        // formotp={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
       <Course
         dataScience={true}
@@ -155,18 +157,20 @@ export default function Home() {
         organicADS={true}
         newDesign={true}
         dataScienceGeneric={true}
-        formotp={true}
+        interstedInHide={true}
+        // formotp={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
       <WhyLearnbay />
       <CareerHome
         HideInterest={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+        interstedInHide={true}
+        // formotp={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
       <div className="realstory">
         <Realstory />
@@ -177,36 +181,40 @@ export default function Home() {
         HideInterest={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+        interstedInHide={true}
+        // formotp={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
 
       <GetHire />
 
       <MobileTestimonial
         dataScience={true}
-        formotp={true}
+        // formotp={true}
         ADS={true}
         HideInterest={true}
-        DomainInput={true}
+        interstedInHide={true}
+        // DomainInput={true}
       />
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} HideInterest={true} /> */}
       <SeventhSection />
       <EightSection
         HideInterest={true}
+        interstedInHide={true}
         dataScience={true}
-        formotp={true}
+        // formotp={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
       <BottomBar
-        formotp={true}
+        // formotp={true}
         HideInterest={true}
+        interstedInHide={true}
         dataScience={true}
         ADS={true}
-        DomainInput={true}
+        // DomainInput={true}
       />
     </>
   );

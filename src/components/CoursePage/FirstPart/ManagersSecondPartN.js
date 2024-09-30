@@ -19,6 +19,9 @@ const MentorsSection = dynamic(() =>
 const JobReadySection = dynamic(() =>
   import("@/components/newCoursePage/jobReadySection/jobReadySection")
 );
+const StructuredSection = dynamic(() =>
+  import("@/components/newCoursePage/structuredSection/structuredSection")
+);
 const UpskillingSection = dynamic(() =>
   import("@/components/newCoursePage/upskillingSection/upskillingSection")
 );
@@ -59,6 +62,7 @@ const ManagersSecondPartN = ({
         iitGuwatiGen={true}
       />
       <JobReadySection />
+      <StructuredSection />
       <SeventhSection />
       <EightSection interstedInHide={true} formotp={true} ADS={true} />
       <WhatsappFloat />

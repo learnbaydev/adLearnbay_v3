@@ -17,11 +17,12 @@ function HeroSectionContent({
   dataScience,
   DomainInput,
   ADS,
-  HideInterest,}) {
+  HideInterest,
+}) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [showThumbnail, setShowThumbnail] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
-  const [counter, setCounter] = useState(1568); 
+  const [counter, setCounter] = useState(1568);
   const videoRef = useRef(null);
   const iframeRef = useRef(null);
 
@@ -90,26 +91,29 @@ function HeroSectionContent({
         <div className="containerWidth">
           <div className={styles.innerDiv}>
             <div className={styles.firstSection}>
-            <div className={styles.starDiv}>
-                  <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/hero_brain.webp"
-                    alt="Curriculum Inclusive of Gen-AI"
-                    width={59}
-                    height={72}
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/hero_brain.webp"
-                  />
-                  <h5>Curriculum Inclusive of Gen-AI</h5>
-                </div>
+              <div className={styles.starDiv}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/hero_brain.webp"
+                  alt="Curriculum Inclusive of Gen-AI"
+                  width={59}
+                  height={72}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/hero_brain.webp"
+                />
+                <h5>Curriculum Inclusive of Gen-AI</h5>
+              </div>
               <h1>
                 Executive Program in Data Science & AI for{" "}
                 <span className={styles.span}>Managers and Tech Leaders</span>
               </h1>
               <div className={styles.starDivSection}>
-                
-              <div className={styles.starDiv}>
-                  <p>"Learn to leverage the power of data and AI to solve complex business challenges, enhance decision-making, and lead high-impact projects in your organization."</p>
+                <div className={styles.starDiv}>
+                  <p>
+                    "Learn to leverage the power of data and AI to solve complex
+                    business challenges, enhance decision-making, and lead
+                    high-impact projects in your organization."
+                  </p>
                 </div>
               </div>
               <div className={styles.btnDiv}>
@@ -119,6 +123,17 @@ function HeroSectionContent({
                 <div className={styles.orangeButton} onClick={popupShow}>
                   START MY APPLICATION
                 </div>
+              </div>
+              <div className={styles.imgBot}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
+                  alt="Video Thumbnail"
+                  width={684}
+                  height={450}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
+                />
               </div>
             </div>
             {noIIt ? (
@@ -130,33 +145,30 @@ function HeroSectionContent({
                   Check Your <span className={styles.span}>Eligibility</span>
                 </h3>
                 {formotp ? (
-            <FormOtp
-            popup={true}
-            upSkillingHide={true}
-            
-            dataScience={dataScience}
-            dataScienceCounselling={dataScienceCounselling}
-            interstedInHide={interstedInHide}
-            ADS={ADS}
-            HideInterest={HideInterest}
-        DomainInput={DomainInput}
-          />
-          ) : (
-        <Form
-          dataScience={dataScience}
-          dataScienceCounselling={dataScienceCounselling}
-          
-          
-          fullStack={fullStack}
-          titleCourse={titleCourse}
-          brochureLink={brochureLink}
-          upSkillingHide={upSkillingHide}
-          interstedInHide={interstedInHide}
-          adPage={adPage}
-          HideInterest={HideInterest}
-          OS={OS}
-        />
-          )}
+                  <FormOtp
+                    popup={true}
+                    upSkillingHide={true}
+                    dataScience={dataScience}
+                    dataScienceCounselling={dataScienceCounselling}
+                    interstedInHide={interstedInHide}
+                    ADS={ADS}
+                    HideInterest={HideInterest}
+                    DomainInput={DomainInput}
+                  />
+                ) : (
+                  <Form
+                    dataScience={dataScience}
+                    dataScienceCounselling={dataScienceCounselling}
+                    fullStack={fullStack}
+                    titleCourse={titleCourse}
+                    brochureLink={brochureLink}
+                    upSkillingHide={upSkillingHide}
+                    interstedInHide={interstedInHide}
+                    adPage={adPage}
+                    HideInterest={HideInterest}
+                    OS={OS}
+                  />
+                )}
               </div>
             ) : (
               <div className={styles.secondSection} onClick={handleVideoPlay}>
@@ -196,13 +208,13 @@ function HeroSectionContent({
           </div>
         </div>
         <div className={styles.btnDivM}>
-                <div className={styles.outlineButton} onClick={popupShow}>
-                  DOWNLOAD SYLLABUS
-                </div>
-                <div className={styles.orangeButton} onClick={popupShow}>
-                  START MY APPLICATION
-                </div>
-              </div>
+          <div className={styles.outlineButton} onClick={popupShow}>
+            DOWNLOAD SYLLABUS
+          </div>
+          <div className={styles.orangeButton} onClick={popupShow}>
+            START MY APPLICATION
+          </div>
+        </div>
       </div>
       <div className="containerWidth">
         <div className={styles.botDiv}>

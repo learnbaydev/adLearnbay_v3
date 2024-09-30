@@ -29,8 +29,8 @@ function OutcomeSection() {
                       src={item.imgSrc}
                       alt={item.imgAlt}
                       quality={100}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                     loading="lazy"
                     />
                     <h3>{item.title}</h3>
