@@ -2,7 +2,7 @@
 const outcomeData = [
     {
       id: 1,
-      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_work.webp",
+      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/brain_img_outcome.webp",
       imgAlt: "Learnbay",
       title: "Integrate AI Solutions in Projects",
       description:
@@ -10,7 +10,7 @@ const outcomeData = [
     },
     {
       id: 2,
-      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_project_outcome.webp",
+      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/strategic_img_outcome.webp",
       imgAlt: "Learnbay",
       title: "Drive Strategic Innovation with AI",
       description:
@@ -18,7 +18,7 @@ const outcomeData = [
     },
     {
       id: 3,
-      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_team_outcome.webp",
+      imgSrc: "https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/Lead_img_outcome.webp",
       imgAlt: "Learnbay",
       title: "Lead Data Science Projects",
       description:
