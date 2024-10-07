@@ -13,11 +13,30 @@ const HeroSection = ({
   dataScience,
   dataScienceCounselling,
   radio,
-  noIIt,
-  ADS,
-  formotp,
   spanTag,
+  spanIcon,
   thumbnailurl,
+  noIIt,
+  title,
+  orgTitle,
+  descrption,
+  OrangeButton,
+  applicationIcon,
+  CloseDes,
+  ProgramIcon,
+  DurationBot,
+  DurationBotDate,
+  trainingIcon,
+  TrainingBot,
+  CloseBotDate,
+  BotWidth,
+  BotHeight,
+  backgroundGradient,
+  backgroundImage,
+  showRightForm,
+  purpleButton,
+  PointsDiv,
+  ADS,
 }) => {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -34,10 +53,11 @@ const HeroSection = ({
         brochurePdf={brochurePdf}
         radio={radio}
         ADS={ADS}
-        formotp={formotp}
       />
       <VideoPopup triggers={video} setTriggers={setVideo} ids={idss} />
       <HeroSectionContent
+        title={title}
+        orgTitle={orgTitle}
         thumbnailurl={thumbnailurl}
         spanTag={spanTag}
         setPopups={setPopups}
@@ -49,8 +69,25 @@ const HeroSection = ({
         dataScienceCounselling={dataScienceCounselling}
         radio={radio}
         noIIt={noIIt}
+        descrption={descrption}
+        spanIcon={spanIcon}
+        OrangeButton={OrangeButton}
+        applicationIcon={applicationIcon}
+        CloseDes={CloseDes}
+        ProgramIcon={ProgramIcon}
+        DurationBot={DurationBot}
+        DurationBotDate={DurationBotDate}
+        trainingIcon={trainingIcon}
+        TrainingBot={TrainingBot}
+        CloseBotDate={CloseBotDate}
+        BotWidth={BotWidth}
+        BotHeight={BotHeight}
+        backgroundGradient={backgroundGradient}
+        backgroundImage={backgroundImage}
+        showRightForm={showRightForm}
+        purpleButton={purpleButton}
+        PointsDiv={PointsDiv}
         ADS={ADS}
-        formotp={formotp}
       />
     </div>
   );
