@@ -1,10 +1,10 @@
 .mainConteiner {
-  width: 1300px;
+  width: 1100px;
   /* background-color: red; */
   margin: 50px auto;
 }
 .headline {
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   color: #000;
   font-size: 40px;
   font-style: normal;
@@ -20,10 +20,9 @@
   /* background-color: #e5ecf3; */
 }
 .headline span {
-  text-decoration: underline;
-  text-decoration-color: #fe7a36;
-  text-underline-offset: 14px;
-  font-weight: 700;
+  border-bottom: 4px solid #fe7a36;
+  line-height: 20px;
+  font-weight: 600;
 }
 
 .leftinside {
@@ -35,7 +34,8 @@
 .leftinside h3 {
   color: #8a8a8a;
   font-style: normal;
-  font-size: 40px;
+  font-size: 34px;
+  font-weight: 500;
   line-height: 126.5%;
   /* 56.925px */
 }
@@ -56,7 +56,7 @@
 
 .ryttop p {
   color: #000;
-  font-size: 26px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 126.5%;
@@ -136,9 +136,6 @@
   align-items: center;
   text-align: center;
   gap: 20px;
-}
-.tools img {
-  mix-blend-mode: multiply;
 }
 .tools p {
   color: #000;
@@ -296,8 +293,8 @@
   border-radius: 20px;
   overflow: scroll;
   padding: 10px;
-  width: 650px;
-  height: 700px;
+  width: 550px;
+  height: 600px;
 }
 
 .cardContent {
@@ -468,16 +465,25 @@
 
 
 .pdficon{
-  background-color: #fff;
+
   font-size: 26px;
   border-radius: 50%;
-  padding: 9px;
-  width: 50px;
-  height: auto;
-  text-align: center;
-  color: red;
+  /* padding: 9px; */
+  /* width: 50px; */
+  /* height: auto; */
+  /* text-align: center; */
+  /* color: red;
 
 }
+
+.swiper {
+  overflow: hidden; /* Ensure overflow is hidden */
+}
+.swiper-slide {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
 @media (max-width:1381px) {
 
 
@@ -500,66 +506,124 @@
   }
 }
 
-@media screen and (max-width: 641px) {
-  .mainConteiner {
-    margin: 70px 24px 50px 24px;
-  }
-  .headline {
-    margin: 40px 0px;
-    font-size: 28px;
-    line-height: 38px;
-  }
 
+
+
+
+@media screen and (max-width:641px){
+.mainConteiner{
+  width: 100%;
+  padding: 20px;
+}
   .gridConteiner {
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
     gap: 20px;
   }
-
-  .verticalLine {
+  .verticalLine{
     display: none;
   }
-  .leftinside {
-    gap: 10px;
+  .headline{
+    font-size: 30px;
+    margin: 20px;
   }
-  .rytmain {
-    margin: 0;
-    padding: 10px;
-    margin-bottom: 40px;
-  }
-  .leftinside img {
-    width: 40px;
+.leftinside h3 {
+  font-size: 30px;
+}
+.leftinside img {
+  width: 40px;
     height: auto;
-    padding: 3px;
-  }
-  .leftinside h3 {
-    font-size: 24px;
-  }
-  .ryttop > p {
-    font-size: 18px;
-  }
-  .date p {
-    font-size: 14px;
-  }
-  .tools {
-    flex-direction: column;
-  }
-  .tools img {
-    width: auto;
-    height: auto;
+}
+.rytmain{
+  padding: 10px;
+  margin: 0;
+}
+.ryttop p{
+  color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 126.5%; /* 22.77px */
+}
+.date{
+  border-radius: 16.804px;
+background: rgba(254, 122, 54, 0.16);
+padding: 2px;
+}
+.date p {
+  color: #FE7A36;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 126.5%; /* 17.71px */
+
+}
+.date svg {
+  width: 20px;
+}
+.ryttop{
+  display: grid;
+  grid-template-columns: 57% 32%;
+  justify-content: space-around;
+}
+.pline{
+  color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 126.5%;
+}
+.org{
+  color: #FE7A36;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 126.5%; /* 18.975px */
+}
+.contentlist{
+  margin-top: 24px;
+}
+  .lists{
+    color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 126.5%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
   }
   .buttondiv {
-    margin: 20px 0px 50px 0px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    flex-direction: column;
+    gap: 20px;
   }
-  .btnone, .btntwo {
-    padding: 10px;
+  .card{
+    width: 350px;
+    height: 500px;
+  }
+  .titleH{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .rytdiv p {
     font-size: 14px;
-    line-height: 20px;
   }
-  .btnone svg, .btntwo svg {
-    width: 30px;
-    height: 30px;
+  .listItem {
+    font-size: 14px;
   }
+  .rotateText {
+    font-size: 14px;
+  }
+  .closePopup{
+    top: 130px;
+    right: 30px;
+  }
+  .tools img {
+    width: 200px;
+    height: auto;
+  }
+
+  
 }
+

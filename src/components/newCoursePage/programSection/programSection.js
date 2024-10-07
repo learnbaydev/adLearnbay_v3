@@ -2,10 +2,10 @@ import Image from "next/image";
 import styles from "./programSection.module.css";
 import Popup from "../../Global/Popup/Popup";
 import Form from "../../Global/Form/Form";
-import FormOtp from "../../Global/FormOtp/FormOtp";
 import { useState } from "react";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
 
-function programSection({
+function ProgramSection({
   dataScience,
   dataScienceCounselling,
   interstedInHide,
@@ -17,6 +17,16 @@ function programSection({
   HideInterest,
   OS,
   DomainInput,
+  upSkillingHide,
+  mid,
+  senoir,
+  yearExp,
+  to,
+  PointOne,
+  pointTwo,
+  pointTwoIcon,
+  PointOneIcon,
+  rightImg,
 }) {
 
   const [popups, setPopups] = useState(false);
@@ -44,29 +54,23 @@ function programSection({
           <h5>Apply For Counselling</h5>
           {formotp ? (
             <FormOtp
-            popup={true}
-            upSkillingHide={true}
-            dataScience={dataScience}
-            dataScienceCounselling={dataScienceCounselling}
-            interstedInHide={interstedInHide}
-            ADS={ADS}
-            HideInterest={HideInterest}
-        DomainInput={DomainInput}
-          />
+              popup={true}
+              upSkillingHide={true}
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              interstedInHide={interstedInHide}
+              ADS={ADS}
+              HideInterest={HideInterest}
+              DomainInput={DomainInput}
+            />
           ) : (
-        <Form
-          dataScience={dataScience}
-          dataScienceCounselling={dataScienceCounselling}
-          
-          fullStack={fullStack}
-          titleCourse={titleCourse}
-          brochureLink={brochureLink}
-          upSkillingHide={upSkillingHide}
-          interstedInHide={interstedInHide}
-          adPage={adPage}
-          HideInterest={HideInterest}
-          OS={OS}
-        />
+            <Form
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              upSkillingHide={upSkillingHide}
+              interstedInHide={interstedInHide}
+              HideInterest={HideInterest}
+            />
           )}
         </div>
       </Popup>
@@ -76,9 +80,8 @@ function programSection({
           <div className={styles.twoSection}>
             <div className={styles.firstSection}>
               <h3>
-                Mid <span className={styles.lightGray}>to</span> Senior <span className={styles.lightGray}>Level 
-                Professionals with</span><span className={styles.orangeHead}> 4+
-                Years of Experience</span>
+                {mid} <span className={styles.lightGray}>{to}</span> {senoir} <span className={styles.lightGray}>Level 
+                Professionals with</span><span className={styles.orangeHead}> {yearExp}</span>
               </h3>
               <p className={styles.pTop}>
               This program is perfect for <span>Business Analysts, Data Scientist, Consultant, Finance Professional, Entrepreneurs, IT Professionals</span>
@@ -86,25 +89,26 @@ function programSection({
               <div className={styles.innerBoxDiv}>
                 <div className={styles.innerBox}>
                   <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/project_ma.webp"
+                    src={PointOneIcon}
                     alt="Learnbay"
                     quality={100}
                     priority
-                    width="40"
-                    height="40"
+                    width={40}
+                    height={40}
                   />
-                  <h3>Project Manager</h3>
+                  <h3>{PointOne}</h3>
                 </div>
                 <div className={styles.innerBox}>
                   <Image
-                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/eligible_de.webp"
+                                   src={pointTwoIcon}
+                
                     alt="Learnbay"
                     quality={100}
                     priority
                     width="50"
                     height="50"
                   />
-                  <h3 className={styles.dShow}>Tech Lead(IT/Non-IT)</h3>
+                  <h3 className={styles.dShow}>{pointTwo}</h3>
                   <h3 className={styles.dHide}>Team Lead</h3>
                 </div>
               </div>
@@ -115,7 +119,7 @@ function programSection({
             </div>
             <div className={styles.secondSection}>
               <Image
-                src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_right_side.webp"
+                src={rightImg}
                 alt="Learnbay"
                 quality={100}
                 priority
@@ -130,4 +134,4 @@ function programSection({
   );
 }
 
-export default programSection;
+export default ProgramSection;
