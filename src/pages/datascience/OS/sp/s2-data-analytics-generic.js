@@ -112,7 +112,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           weekendbatch="Weekend Batch"
           weekday="MON - THU"
           weekend="SAT - SUN"
-          WeekdayDate="Oct 11th"
+          WeekdayDate="Nov 8th"
           WeekendDate="Oct 27th"
           WeekendTime="9:30 AM - 1 PM"
           WeekdayTime="8:00 PM - 10:30 PM"

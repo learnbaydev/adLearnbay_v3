@@ -165,7 +165,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
           firstToparaImg="for BFSI Professionals "
-          firstHeading=" Data Science and AI "
+          firstHeading=" Data Science and AI Course "
           firstTopPara="Ready to master the finance domain?          "
         />
 
@@ -224,7 +224,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           weekday="MON-FRI"
           weekend="SAT- SUN"
           WeekdayDate=" Oct 18th"
-          WeekendDate="Sept 15th"
+          WeekendDate="Nov 17th"
           WeekendTime="9:30 AM - 1:00 PM"
           WeekdayTime="8:00 PM - 10:30 PM"
           FeeContent3="Flexible payment"
