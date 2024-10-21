@@ -1,0 +1,127 @@
+.mainContainer {
+  background-image: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/bgFestiveOffer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+}
+
+.container {
+  margin: auto;
+  padding: 80px 100px 195px 170px;
+  display: grid;
+  grid-template-columns: 52% 34%;
+  gap: 110px;
+}
+
+.botContent {
+  padding: 50px 100px 50px 195px;
+}
+
+.content {
+    margin-top: 24px;
+}
+
+.content h1 {
+  color: #ffc436;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px -12px 0px;
+}
+
+.desc {
+  overflow: hidden;
+  color: rgba(255, 237, 193, 0.98);
+  font-size: 18px;
+  font-weight: 400;
+}
+.botCont {
+  color: #ffffffc4;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 34px 0px 40px 0px;
+}
+.botCont span {
+  border-radius: 10px;
+  border-width: 0px 1.5px 0px 1.5px;
+  border-color: #fff;
+  border-style: solid;
+  padding: 0px 20px;
+  background: #ffc436;
+  overflow: hidden;
+  color: #0b0b08;
+  font-size: 42px;
+  font-weight: 600;
+}
+.valid {
+  background: rgba(254, 122, 54, 0);
+  width: fit-content;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.form {
+  border-radius: 10px;
+  background: #eff3f6;
+  box-shadow: -13px 13px 30.3px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 0px 20px 0px;
+  float: left;
+}
+
+.form > p {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.topBold {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0px 0px 10px -10px;
+}
+
+.botContent ul {
+  line-height: 24px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.paraBot {
+  margin: 20px 0px 0px -10px;
+}
+
+@media (max-width: 641px) {
+    .mainContainer {
+        background-position:  left;
+    }
+    .content {
+        margin-top: 0px;
+    }
+  .container {
+    padding: 50px 20px;
+    grid-template-columns: 100%;
+    gap: 50px;
+  }
+  .botContent {
+    padding: 30px 20px;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .desc {
+    margin: 14px 0px;
+    font-size: 14px;
+  }
+  .botCont {
+    font-size: 22px;
+  }
+  .botCont span {
+    font-size: 36px;
+  }
+  .valid {
+    font-size: 18px;
+  }
+}

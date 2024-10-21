@@ -27,6 +27,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/datascience/data-science-ai-masters-program" ||
     pathname === "/datascience/business-analytics-certification-course" ||
     pathname === "/datascience/data-analytics-certification-course" ||
+    pathname === "/apply-for-counselling-offer" ||
     pathname ===
       "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
@@ -136,6 +137,7 @@ const redirectionThankYou = (
     pathname === "/offer" ||
     pathname === "/google" ||
     pathname === "/apply-for-counselling-data-science-marketing" ||
+    pathname === "/apply-for-counselling-offer" ||
     pathname === "/datascience/s2-apply-for-counselling-data-science" ||
     pathname === "/scholarship"
   ) {
