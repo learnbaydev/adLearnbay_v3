@@ -34,6 +34,7 @@ const Form = ({
   PhoneHidden,
   emailHidden,
   dateTime,
+  offerFestive,
 }) => {
   const router = useRouter();
 
@@ -144,6 +145,10 @@ const Form = ({
   let btnText = "Apply For Counselling";
   if (event) {
     btnText = "Register Now";
+  }
+
+  if (offerFestive) {
+    btnText = "Enroll Now";
   }
 
   if (learning) {

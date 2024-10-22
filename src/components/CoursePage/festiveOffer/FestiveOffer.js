@@ -23,12 +23,12 @@ function FestiveOffer() {
           </div>
           <div className={styles.form}>
             <p>Check Your Eligibility</p>
-            <Form upSkillingHide={true} />
+            <Form upSkillingHide={true} offerFestive={true}/>
           </div>
         </div>
       </div>
       <div className={styles.botContent}>
-        <p className={styles.topBold}>Topics covered in discussion:</p>
+        <p className={styles.topBold}>Free Profile Review and Career Counselling</p>
         <ul>
           <li>
             Can a candidate from the non-programming & non-tech Domain learn our
