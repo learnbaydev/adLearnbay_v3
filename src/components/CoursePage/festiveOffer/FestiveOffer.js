@@ -44,7 +44,7 @@ function FestiveOffer() {
           <li>Career Options in your preferred Domain</li>
           <li>Placement Assistance and Job referrals</li>
         </ul>
-        <p className={styles.paraBot}><b>Minimum Duration:</b> 15 to 20 minutes.</p>
+        <p className={styles.paraBot}><b>Minimum Duration:</b> 15 to 20 minutes. </p>
         <p className={styles.paraBot}>Your queries and doubts will be answered through this session with a professional.</p>
       </div>
     </section>
