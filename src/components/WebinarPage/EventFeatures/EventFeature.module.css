@@ -1,0 +1,409 @@
+.eFeature {
+  display: flex;
+  flex-flow: column;
+}
+.eFeature h2 {
+  font-size: 36px;
+  margin: 0px 0px 20px 0px;
+}
+.bodyContent {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.centerBtn {
+  display: flex;
+  margin-top: 20px;
+  color: #fff;
+}
+.centerBtn button {
+  background-color: #0072bc;
+  color: #fff;
+  border: 2px solid #0072bc;
+  padding: 10px 20px;
+}
+.eLeft,
+.eMiddle,
+.eRight {
+  position: relative;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+  -moz-box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+  box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
+  margin-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.topicHead h1 {
+  font-size: 30px;
+}
+
+.eLeft h6,
+.eMiddle h6,
+.eRight h6 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  z-index: 1;
+}
+.eLeft p,
+.eMiddle p,
+.eRight p {
+  margin: 0;
+  color: rgb(80, 80, 80);
+  z-index: 1;
+}
+.eFIcon {
+  font-size: 48px;
+  color: #f14d5d;
+}
+
+.iconDiv {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #00a0e9;
+  font-size: 16px;
+  margin: 0px 10px;
+}
+
+.iconB {
+  color: #fff;
+  font-size: 16px;
+  margin: 0px 10px;
+}
+
+.iconG {
+  color: #787c7d;
+  font-size: 24px;
+}
+
+.iconP {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paragramTitle {
+  box-sizing: inherit;
+  margin-bottom: -8px;
+  font-size: 28px;
+  overflow: auto;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+}
+.listMargin {
+  margin-left: 0px;
+}
+.PreRequisites {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+  padding-left: 16px;
+}
+.PreRequisites p {
+  width: 20rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  text-align: center;
+}
+.fontweight {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.backTrainer {
+  width: 600px;
+  padding: 30px 50px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 25px rgb(237 187 82 / 30%);
+  border-radius: 20px;
+}
+
+.backTrainer > p {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.innerDiv {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.innerDiv p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.trainerHead {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.spanT {
+  color: #00a0e9;
+}
+
+.master {
+  background: linear-gradient(
+    89.93deg,
+    #e1f1f5 0.41%,
+    rgba(217, 217, 217, 0) 56.5%
+  );
+  width: auto;
+  background-size: cover;
+  padding: 10px 50px 30px 50px;
+  background-repeat: no-repeat;
+  margin: 50px 0px;
+}
+
+.iconP {
+  display: flex;
+}
+
+.TopMargin {
+  margin-top: 20px;
+}
+
+.paragramTitleReview {
+  background-color: #2979a8;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.paragramTitlestrong {
+  font-size: 20px;
+  margin: 30px 0px 0px 0px;
+}
+
+.iconBlue {
+  font-size: 50px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #0072bc;
+  color: #fff;
+}
+
+.iconOrange {
+  font-size: 50px;
+  padding: 0px 5px;
+  border-radius: 10px;
+  background-color: #edbb52;
+  color: #fff;
+}
+
+.iconPs {
+  margin: 5px;
+}
+
+.iconList {
+  margin: 20px 0px;
+}
+
+.spanTrainerImg span {
+  border-radius: 10px;
+}
+
+.webinarInfo {
+  display: grid ;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px 20px;
+}
+
+.innerBox {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.innerBox button {
+  margin: auto;
+  margin-top:16px;
+  font-weight: 500;
+  padding: 8px 26px;
+}
+
+.innerBox P {
+font-size: 22px;
+}
+
+@media (max-width: 1281px) {
+  .eFeature {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 1281px) {
+  .eFeature h2 {
+    font-size: 27px;
+  }
+
+  .bodyContent {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .eFeature h2 {
+    font-size: 27px;
+    text-align: center;
+  }
+  .webinarInfo {
+    grid-template-columns: 80% 80% 80%;
+    overflow: scroll;
+    justify-content: left;
+    scrollbar-width: none;
+  }
+  .innerBox p {
+    font-size: 18px;
+  }
+
+  .topicHead h1 {
+    font-size: 34px;
+  }
+
+  .eLeft h6,
+  .eMiddle h6,
+  .eRight h6 {
+    margin-top: 8px;
+  }
+
+  .eLeft,
+  .eMiddle,
+  .eRight {
+    margin-right: 0px;
+  }
+
+  .eLeft p,
+  .eMiddle p,
+  .eRight p {
+    padding-right: 10px;
+  }
+  .centerBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 481px) {
+  .PreRequisites {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5rem 0;
+    padding-left: 16px;
+  }
+
+  .paragramTitle {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .PreRequisites p {
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    text-align: center;
+  }
+  .fontweight {
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .iconDiv {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+  }
+
+  .backTrainer {
+    background-image: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(237, 187, 82, 0.3);
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .master {
+    background: linear-gradient(
+      89.93deg,
+      #e1f1f5 0.41%,
+      rgba(217, 217, 217, 0) 56.5%
+    );
+    width: auto;
+    background-size: cover;
+    padding: 20px;
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+  }
+
+  .iconP {
+    display: grid;
+    margin: 8px 0px;
+    grid-template-columns: 10% 90%;
+  }
+
+  .paragramTitleReview {
+    font-size: 20px;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .iconPs {
+    margin: 8px;
+  }
+
+  .innerDiv {
+    gap: 10px;
+  }
+
+  .trainerHead {
+    font-size: 18px;
+  }
+
+  .innerDiv p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .backTrainer > p {
+    margin: 0 0 15px 0;
+  }
+
+  .bodyContent {
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
+  .iconBlue {
+    font-size: 42px;
+  }
+
+  .iconOrange {
+    font-size: 42px;
+  }
+  .listMargin {
+    margin-left: 0px;
+    padding: 0px 20px;
+  }
+}
