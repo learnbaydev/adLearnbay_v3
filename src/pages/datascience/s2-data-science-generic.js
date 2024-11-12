@@ -166,8 +166,8 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
-          firstToparaImg="Domain Specialization for Professionals "
-          firstHeading="Data Science Course with "
+          firstToparaImg="for Working Professionals "
+          firstHeading="Data Science Course "
           firstTopPara="Choose Specialization over Generalization "
         />
 
@@ -243,8 +243,8 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           weekendbatch="Weekend Batch"
           weekday="MON - THU"
           weekend="SAT - SUN"
-          WeekdayDate="Nov 8th"
-          WeekendDate="Oct 27th"
+          WeekdayDate="Dec 6th"
+          WeekendDate="Nov 24th"
           WeekendTime="9:30 AM - 1 PM"
           WeekdayTime="8:00 PM - 10:30 PM"
           FeeContent3="Flexible payment"
