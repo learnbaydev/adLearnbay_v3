@@ -131,7 +131,7 @@ function SecondNavbar({
           </div>
         </Popup>
         <Link
-          href="/"
+          href="#"
           className={
             showApplyButton ? styles.buttonBlock : styles.buttonNoBlock
           }
