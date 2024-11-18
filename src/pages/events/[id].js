@@ -5,10 +5,7 @@ import { EventHeader } from "@/components/WebinarPage/EventHeaderFSD/EventHeader
 import { getAllPostIds, getPostData } from "@/lib/event";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import {
-  FaCalendarAlt,
-  FaClock,
-} from "react-icons/fa";
+import { FaCalendarAlt, FaClock } from "react-icons/fa";
 import styles from "../../styles/DataScienceEvent.module.css";
 
 export default function DataScienceEvent({ eventData, formotp }) {
@@ -35,7 +32,7 @@ export default function DataScienceEvent({ eventData, formotp }) {
         <meta name="description" content={eventData.data.metaInfo.desc} />
         <link
           rel="icon"
-          href="https://d32and0ii3b8oy.cloudfront.net/main/Learnbay-Favicon-L.png"
+          href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
         <link rel="canonical" href="https://www.learnbay.co/event" />
       </Head>
@@ -69,13 +66,12 @@ export default function DataScienceEvent({ eventData, formotp }) {
                 <h3>MASTERCLASS</h3>
               </div>
               <p>
-                
                 {eventData.data.mainData.Duration}
                 <br />
                 {eventData.data.mainData.register}
                 <br />
                 <span style={{ color: "#0072bc", fontWeight: "500" }}>
-                {eventData.data.mainData.likes}
+                  {eventData.data.mainData.likes}
                 </span>
               </p>
               <div className={styles.iconsRegister}>
