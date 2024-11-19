@@ -13,6 +13,7 @@
     "Duration": "AYUSH KUMAR",
     "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
     "register": "Software Development Engineer",
+    "webinarLink": "#",
     "likes": "(EX JP Morgan, EX Oracle)"
   },
   "headImg": {
@@ -21,6 +22,7 @@
   },
   "eventFeatureData": {
     "heading1": "About this Masterclass",
+    "webinarLink": "#",
     "aboutThisMasterclass": [
       "Bookmyshow, one of the most popular movie ticket booking apps, has built its platform using a well-designed Low Level Design architecture. LLD has helped them create a user-friendly interface that efficiently handles high volumes of traffic, transactions, and user requests.",
       "Our masterclass will teach you to design a Movie-Ticket Booking App similar to Bookmyshow, by understanding their LLD principles, identifying key features, and ensuring optimal performance, scalability, and security. ",

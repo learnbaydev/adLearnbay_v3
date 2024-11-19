@@ -7,6 +7,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 import styles from "../../styles/DataScienceEvent.module.css";
+import Link from "next/link";
 
 export default function DataScienceEvent({ eventData, formotp }) {
   const [mobile, setMobile] = useState(false);
@@ -93,7 +94,11 @@ export default function DataScienceEvent({ eventData, formotp }) {
               </div>
 
               <div className={styles.centerBtn}>
-                <button className="outLineBtn">Register NOW!</button>
+              <Link href={eventData.data.mainData.webinarLink} >
+          <button className="outLineBtn">
+            Register NOW!
+          </button>
+          </Link>
               </div>
             </section>
           </div>

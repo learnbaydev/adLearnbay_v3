@@ -13,6 +13,7 @@
     "Duration": "AYUSH KUMAR",
     "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
     "register": "Software Development Engineer",
+    "webinarLink": "https://event.webinarjam.com/register/3/o3n7zs1",
     "likes": "(EX JP Morgan, EX Oracle)"
   },
   "headImg": {
@@ -21,6 +22,7 @@
   },
   "eventFeatureData": {
     "heading2": "Topics covered",
+    "webinarLink": "https://event.webinarjam.com/register/3/o3n7zs1",
     "topicsCoveredMasterclass": [
       "Data flow diagram of Movie Ticket Booking App",
       "How systems handle Real-Time Tracking of APIs",
