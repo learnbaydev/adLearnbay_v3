@@ -13,6 +13,7 @@ import { MdAltRoute, MdAnalytics, MdLiveTv } from "react-icons/md";
 import Reviews from "../../WebinarPage/CareerImpactHome/CareerImpact";
 import ReviewsFSD from "../../WebinarPage/CareerImpactHomeFSD/CareerImpact";
 import styles from "./EventFeature.module.css";
+import Link from "next/link";
 
 const EventFeature = ({
   data,
@@ -57,9 +58,11 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
+          <Link href={data.webinarLink} >
           <button className="outLineBtn">
             Register NOW!
           </button>
+          </Link>
         </div>
       </div>
 
@@ -191,10 +194,11 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
+        <Link href={data.webinarLink} >
           <button className="outLineBtn">
             Register NOW!
-            {/* <FaArrowRight className={styles.iconB} /> */}
           </button>
+          </Link>
         </div>
       </div>
 
