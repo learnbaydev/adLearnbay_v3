@@ -1,3 +1,5 @@
+
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -43,6 +45,8 @@ const FirstContent = ({
   formotp,
   noImg,
   ADS,
+  DSA,
+  microsoftOnly,
 }) => {
   const texts = [
     "Guaranteed Interview Calls",
@@ -123,20 +127,50 @@ const FirstContent = ({
       <div className={styles.First} style={backgorunimg ? containerStyle : {}}>
         <div className={styles.FirstLeft}>
           {topHide ? "" : <p className={styles.ptopC}>{firstTopPara}</p>}
-          <h1
-            className={`${styles.h1} ${
-              isSpecialPage ? styles.specialPageH1 : ""
-            }`}
-          >
-            {firstHeading}{" "}
-            <span className={styles.h1Span}>{firstToparaImg}</span>
-          </h1>
-          <p className={styles.ptopCiity}>{cityParaCont}</p>
+          {DSA ? (
+            <h1 className={`${styles.h1} ${styles.DsaH1}`}>
+              {firstHeading}{" "}
+              <span className={styles.DsaSpan}>{firstToparaImg}</span>
+            </h1>
+          ) : (
+            <h1
+              className={`${styles.h1} ${
+                isSpecialPage ? styles.specialPageH1 : ""
+              }`}
+            >
+              {firstHeading}{" "}
+              <span className={styles.h1Span}>{firstToparaImg}</span>
+            </h1>
+          )}
+          {DSA ? (
+            <p className={`${styles.ptopCiity} ${styles.ptopGen}`}>
+              {cityParaCont.split("Gen-AI").map((part, index, arr) => (
+                <React.Fragment key={index}>
+                  {part}
+                  {index < arr.length - 1 && (
+                    <span className={styles.GENAI}>Gen-AI</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </p>
+          ) : (
+            <p className={styles.ptopCiity}>{cityParaCont}</p>
+          )}
           {mobile ? (
             ""
           ) : (
             <>
-              {noImg ? (
+          {  microsoftOnly ?(    <div className={styles.microsoftDiv}>
+                         <p className={styles.ptop}>In Collaboration With</p>{" "}
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/micrososfttss.webp"
+                  width={190}
+                  height={40}
+                  priority
+                  alt="data science course"
+            
+                />
+                </div>):(<>  {noImg ? (
                 ""
               ) : (
                 <div className={ibmOnly ? styles.DAibm : styles.Desktop}>
@@ -198,7 +232,7 @@ const FirstContent = ({
                     </>
                   )}
                 </div>
-              )}
+              )}</>) }
 
               {isGuwahati ? (
                 <>
@@ -357,7 +391,17 @@ const FirstContent = ({
         {mobile ? (
           <>
             <div className={styles.Mobile}>
-              {noImg ? (
+             {microsoftOnly ? (<>
+              <p className={styles.ptoptwo}>In Collaboration With</p>{" "}
+                  <div className={styles.ImageBlock}>
+                    <Image
+                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/micrososfttss.webp"
+                      width={160}
+                      height={30}
+                      priority
+                      alt="data science course"
+                    />
+                  </div></>):(<> {noImg ? (
                 ""
               ) : (
                 <>
@@ -421,7 +465,7 @@ const FirstContent = ({
                     </>
                   )}
                 </>
-              )}
+              )}</>)}
               {isGuwahati ? (
                 <div className={styles.twodiv}>
                   <div className={styles.divone}>

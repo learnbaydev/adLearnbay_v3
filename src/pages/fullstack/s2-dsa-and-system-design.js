@@ -2,7 +2,6 @@ import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/Contact
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
 import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
 import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
-import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
 import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
@@ -13,7 +12,6 @@ import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
-import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
 import Head from "next/head";
 import { AiOutlineContainer } from "react-icons/ai";
 import { BsDatabaseUp, BsDisplay, BsPeople } from "react-icons/bs";
@@ -22,95 +20,45 @@ import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import FullStackSecondSection from "../../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import PSummaryAD from "@/components/CoursePage/pSummary/PSummaryAD";
+import AnimationDSA from "@/components/CoursePage/AnimationDsa/AnimationDSA";
+import NewCertificateSection from "@/components/CoursePage/newCertificate/NewCertificate";
+import DSAFeeSection from "@/components/CoursePage/dsaFee/DSAFeeSection";
 
 function Blockchain({ DataScienceCourseDataJson }) {
-  const seconddata = [
-    {
-      boldText: "250+",
-      normalText: "Hiring Partner",
-      imageUrl:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review1.webp",
-    },
-    {
-      CboldText: "175%",
-      normalText: "Average Salary Hike",
-      imageUrl:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review2.webp",
-    },
-    { boldText: "35K+", normalText: "Trusted Learners" },
-  ];
-  const BASecond = {
-    title1: "Project-Based Learning",
-    image1: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Group+773.webp",
-    points: [
-      "Work in an industry like environment and gain practical hands-on experience",
-      "10 Real-World + 2 Capstone Projects",
-    ],
-    image2:
-      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask-group-_32_-min.webp",
-    title2: "Job Roles You Can Target",
-    jobRoles: [
-      {
-        icon: <FaReact />,
-        role: "Predictive Analyst",
-        salary: " 12-15 LPA",
-      },
-      {
-        icon: <TbBrandGoogleAnalytics />,
-        role: "Medical Data Scientist",
-        salary: " 12-20 LPA",
-      },
-      {
-        icon: <BsDatabaseUp />,
-        role: "Telemedicine Analyst",
-        salary: " 20-25 LPA",
-      },
-    ],
-    image3:
-      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/health-bottom.webp",
-    image4:
-      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
-    title3: "Assured Job Assistance",
-    jobAssistance: [
-      { icon: <BsDisplay />, text: "8-10 Interview Calls" },
-      { icon: <AiOutlineContainer />, text: "Resume Building Session" },
-      { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
-    ],
-    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
-    image5:
-      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
-  };
+  
   const JobData = {
-    title: "Code Your Career Path To Success",
+    title: "Decode Your Tech Carer Path to Competitive Success",
     points: [
       {
         imgSrc:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/adobe_illustrator+(1).webp",
         imgAlt: "",
-        title: "Transform with Top Tech Skills",
-        description: "Learn from industry experts and crack top MNC interviews",
+        title: "Transform with Coding Expertise",
+        description:
+          "Build a highly desired software developer/engineer role with our multifaceted training.",
       },
       {
         imgSrc:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/generated_photos+(1).webp",
         imgAlt: "",
-        title: "Practise Real-time projects in industry setting",
+        title: "Elevate Your Coding Skills with Real-World Projects",
         description:
-          "Dive into real-time projects that solve real-world problems",
+          "Exhibit real-time coding mastery to tackle algorithmic ordeals.",
       },
       {
         imgSrc:
-          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/smart_upscaler+(1).webp",
         imgAlt: "",
-        title: "From Novice to Expert",
+        title: "From Novice to Specialist",
         description:
-          "Learn from basics to advanced DSA & System Design Techniques",
+          "Master, from basics to advanced DSA concepts to specify your reign in the tech field. ",
       },
     ],
     bannerImage: {
-      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/health-right-side.webp",
-      width: 414,
-      height: 400,
+      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/dsa-job-lefts.webp",
+      width: 360,
+      height: 350,
       priority: true,
       quality: 80,
       alt: "Banner Image 1 Alt",
@@ -121,7 +69,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
   return (
     <>
       <Head>
-        <title>Software Development Certification Program - Learnbay</title>
+      <title>Data Structures Algorithms and System Design Course - Learnbay</title>
         <meta
           name="description"
           content="Elevate your tech skills through our Software development Certification Program and switch from service-based to product-based companies. Earn globally recoganized IBM and Microsoft Certifications.          "
@@ -190,15 +138,22 @@ function Blockchain({ DataScienceCourseDataJson }) {
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="DSA & System Design Program for working professionals"
-          cityParaCont="Successfully transition careers through our courses & real-time capstone projects. All while making your previous work experience count!"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf"
+          cityParaCont="with Gen-AI for Software Developers"
+          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/DSA.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
-          firstToparaImg=" Working Professionals"
-          firstHeading="DSA & System Design Program for"
-          firstTopPara="Crack Interview in Top Product Companies"
+          firstToparaImg="Algorithms & System Design"
+          firstHeading="Data Structure"
+          firstTopPara="Ace PRODUCT-BASED interviews in Top MNCs"
           softwareBtnHide={true}
+          DSA={true}
+          backgorunimg={true}
+          backgroundImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/dsa_backgrounds.webp"
+          microsoftOnly={true}
         />
-        <MasterSecondSection data={seconddata} />
+        <PSummaryAD
+          summaryData={DataScienceCourseData.DsaSystemDesign[0].summarySection}
+        />
+        {/* <MasterSecondSection data={seconddata} /> */}
         <JobAbroad
           data={JobData}
           dataScience={true}
@@ -214,6 +169,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           third="For working professionals with technical experience"
           forth="For professionals seeking DSA & System Design skills"
         />
+        <AnimationDSA />
         <GetHire />
 
         <ContactCounsellor
@@ -238,37 +194,39 @@ function Blockchain({ DataScienceCourseDataJson }) {
           onebtn={true}
         />
 
-        <ToolsCovered />
+        <NewCertificateSection
+          certificateNew={
+            DataScienceCourseData.DsaSystemDesign[0].certificateNew
+          }
+        />
 
-        <FeeSection
-          Fee="₹85,000"
-          FeeEmi="₹5,572/month"
-          weekdaybatch="Weekend Batch"
-          weekendbatch="Weekday Batch"
-          weekday="SAT - SUN"
-          weekend="MON - FRI"
-          WeekdayDate="Oct 27th"
-          WeekendDate="Nov 22nd"
-          WeekendTime="8:00 PM - 10:00 PM"
-          WeekdayTime="9:30 AM - 1 PM"
+        <DSAFeeSection
+          Fee="₹ 75,000"
+          FeeEmi="₹ 4,916/month"
+          weekendbatch="Weekday Evening (DSA BATCHES)"
+          weekdaybatch="Weekday Evening (DSA BATCHES)"
+          weekday="MON-WED-FRI"
+          weekend="MON-WED-FRI"
+          WeekendDate="JAN 26th"
+          WeekdayDate="JAN 10th "
+          WeekendTime="08:00PM - 10:00PM"
+          WeekdayTime="08:00PM - 10:00PM"
           FeeContent3="Flexible payment"
-          FeeContent4="Easy loan procedure"
-          FeeContent5="10 days refund policy"
-          FeeContent6="No additional cost"
           interstedInHide={true}
           formotp={true}
           ADS={true}
           HideThird={true}
+
           // <EMI POPUP
           emiType="NO COST EMI"
           duration1="18 Months"
-          totalAmount1="₹85,000"
-          monthlyPayment1="₹5,572"
+          totalAmount1="₹75,000"
+          monthlyPayment1="₹4,916"
           greenDown1="Standard Intrest rate Applicable"
           duration2="12 Months"
-          totalAmount2="₹85,000"
-          monthlyPayment2="₹8,358"
-        />
+          totalAmount2="₹75,000"
+          monthlyPayment2="₹7,375"
+          />
 
         <SliderTabs WithoutService={true} />
         <SeventhSection />

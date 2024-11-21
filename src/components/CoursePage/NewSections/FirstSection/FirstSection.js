@@ -36,7 +36,9 @@ function FirstSection({
   isGuwahati,
   backgroundImage,
   formotp,
-        ADS
+  ADS,
+  DSA,
+  microsoftOnly,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -87,6 +89,8 @@ function FirstSection({
         formotp={formotp}
         ADS={ADS}
         noImg={noImg}
+        DSA={DSA}
+        microsoftOnly={microsoftOnly}
       />
     </>
   );
