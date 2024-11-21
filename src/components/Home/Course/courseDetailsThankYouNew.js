@@ -119,7 +119,7 @@ export const fullStackD = [
     title: "DSA & System Design Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/learnbay/Data+Structure+Algorithm+%26+System+Design+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/DSA.pdf",
   },
 ];
 

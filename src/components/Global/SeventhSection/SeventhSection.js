@@ -21,16 +21,18 @@ function SeventhSection({ fullStackCont, organic }) {
         <div className="bgWrap">
           {mobile ? (
             <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learner's+support.webp"
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven-girl-mbls.webp"
               fill={true}
               className={styles.deskImage}
               alt="Learners support"
+              loading="lazy"
             />
           ) : (
             <Image
               src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/new-bg-sevventt.webp"
               fill={true}
               alt="Learners support"
+              loading="lazy"
             />
           )}
         </div>
@@ -64,27 +66,27 @@ function SeventhSection({ fullStackCont, organic }) {
             <>
               {organic ? (
                 <div className={styles.btnWrap}>
-                <a
-                  href="https://api.whatsapp.com/send?phone=917349222263&text=Hello,"
-                  target="_blank"
-                >
-                  <button className={styles.btn1}>
-                    <AiOutlineWhatsApp /> Enquire Now
-                  </button>
-                </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=917349222263&text=Hello,"
+                    target="_blank"
+                  >
+                    <button className={styles.btn1}>
+                      <AiOutlineWhatsApp /> Enquire Now
+                    </button>
+                  </a>
 
-                <a href="tel: +917795687988">
-                  <Button
-                    text="917795687988"
-                    passIcon={<MdCall />}
-                    outline={true}
-                    invert
-                  />
-                </a>
-              </div>
+                  <a href="tel: +917795687988">
+                    <Button
+                      text="917795687988"
+                      passIcon={<MdCall />}
+                      outline={true}
+                      invert
+                    />
+                  </a>
+                </div>
               ) : (
                 <div className={styles.btnWrap}>
-                {/* <a
+                  {/* <a
                   href="https://api.whatsapp.com/send?phone=916364939404&text=Hello,"
                   target="_blank"
                 >
@@ -92,15 +94,15 @@ function SeventhSection({ fullStackCont, organic }) {
                     <AiOutlineWhatsApp /> Enquire Now
                   </button>
                 </a> */}
-                <a href="tel: +916364939404">
-                  <Button
-                    text="+91 6364 939404"
-                    passIcon={<MdCall />}
-                    outline={true}
-                    invert
-                  />
-                </a>
-              </div>
+                  <a href="tel: +916364939404">
+                    <Button
+                      text="+91 6364 939404"
+                      passIcon={<MdCall />}
+                      outline={true}
+                      invert
+                    />
+                  </a>
+                </div>
               )}
             </>
           )}
@@ -108,11 +110,12 @@ function SeventhSection({ fullStackCont, organic }) {
         <div className={styles.rightPart}>
           <div className="imgWrapper">
             <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/girl-seventh.webp"
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven-new-girls.webp"
               width={600}
               height={600}
               alt="data science course"
               style={{ borderRadius: "5px" }}
+              loading="lazy"
             />
           </div>
         </div>

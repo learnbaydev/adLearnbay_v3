@@ -58,6 +58,29 @@ width: 100%;
   }
 }
 
+.GENAI{
+  background: linear-gradient(90deg, #42B5FF 40%, #F58CFF 50%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-style: normal;
+font-weight: 400;
+line-height: 109%;
+}
+
+
+.DsaH1{
+  background: linear-gradient(90deg, #FE7A36 0.02%, #FFC436 49.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.DsaSpan {
+  background: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color:#fff;
+}
 
 .bgvidos {
   width: 564px;
