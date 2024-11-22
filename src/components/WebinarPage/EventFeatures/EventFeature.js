@@ -222,7 +222,7 @@ const EventFeature = ({
           </div>
         </div>
       </div>
-      <p className={styles.paragramTitlestrong}>
+      {/* <p className={styles.paragramTitlestrong}>
         <strong>Our Webinar</strong>
       </p>
       <Image
@@ -274,7 +274,7 @@ const EventFeature = ({
             View webinar
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

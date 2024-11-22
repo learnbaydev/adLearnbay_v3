@@ -1,45 +1,51 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import styles from "./EventHeader.module.css";
 
-export const EventHeader = ({deskimg, mobimg}) => {
-  // console.log(deskimg)
-  const [mobile, setMobile] = useState(false);
-  
-  useEffect(() => {
-    let width = window.innerWidth;
+export const EventHeader = ({ deskimg, mobimg }) => {
+  const [isMobile, setIsMobile] = useState(null); // Initially null to avoid flicker
 
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, [mobile]);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 481);
+    };
+
+
+    handleResize();
+
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isMobile === null) {
+
+    return null;
+  }
+
   return (
     <div>
       <section className={styles.wrapper}>
-        {mobile ? (
-          <img
+        {isMobile ? (
+          <Image
             src={mobimg}
             alt="Learnbay"
-            quality={100}
-
-            width="100%"
-            height="400"
+            layout="responsive"
+            width={375} // Adjust based on your mobile image dimensions
+            height={400} // Adjust based on your mobile image dimensions
+            priority={true}
           />
         ) : (
-         
-          <img 
+          <Image
             src={deskimg}
             alt="Learnbay"
-            quality={100}
-            width="100%"
-            height="100%"
+            layout="responsive"
+            width={1920} // Adjust based on your desktop image dimensions
+            height={1080} // Adjust based on your desktop image dimensions
+            priority={true}
           />
-          
         )}
       </section>
     </div>
   );
 };
-

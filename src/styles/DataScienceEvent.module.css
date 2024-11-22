@@ -495,7 +495,13 @@
 }
 
 /* event main page style end*/
-
+@media (max-width: 1281px) {
+  
+  .iconsRegister {
+    
+    padding:0 20px;
+  }
+}
 @media (max-width: 1281px) {
   .Page {
     padding-left: 20px;
@@ -530,7 +536,7 @@
 
   .iconsRegister {
     
-    padding: 0px;
+    padding:0 20px;
     gap: 10px;
 
   }
@@ -796,4 +802,12 @@
     color: #f28705;
     font-size: 46px;
   }
+}
+
+@media screen and (max-width:375px) {
+  
+  .iconsRegisterp{
+    font-size: 12px;
+  }
+  
 }
