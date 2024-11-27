@@ -14,6 +14,9 @@ import Reviews from "../../WebinarPage/CareerImpactHome/CareerImpact";
 import ReviewsFSD from "../../WebinarPage/CareerImpactHomeFSD/CareerImpact";
 import styles from "./EventFeature.module.css";
 import Link from "next/link";
+import FormOtp from "@/components/Global/FormOtp/FormOtp";
+import Form from "@/components/Global/Form/Form";
+import Popup from "@/components/Global/Popup/Popup";
 
 const EventFeature = ({
   data,
@@ -21,6 +24,14 @@ const EventFeature = ({
   domainDataD,
   reviewsDataD,
   datascienceImg,
+  dataScience,
+  formotp,
+  titleCourse,
+  interstedInHide,
+  ADS,
+  event,
+
+
 }) => {
   const [eventData, setEventData] = useState({
     aboutThisMasterclass: data.aboutThisMasterclass,
@@ -33,8 +44,52 @@ const EventFeature = ({
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
 
+  const popupShow = () => {
+    setPopups(true);
+  };
+
   return (
     <div className={styles.eFeature}>
+          <Popup
+        trigger={popups}
+        setTrigger={setPopups}
+        className="popupModal"
+        popup={true}
+        // radio={radio}
+        dataScience={dataScience}
+      >
+        <div className="leftPopup">
+          <div
+            className="whiteP"
+            // style={{ width: "340px", height: "400px" }}
+          ></div>
+        </div>
+        <div className="RightPopup">
+          <h5>Apply For Counselling</h5>
+          {formotp ? (
+            <FormOtp
+              titleCourse={titleCourse}
+              dataScience={dataScience}
+              interstedInHide={interstedInHide}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              // radio={radio}
+            />
+          ) : (
+            <Form
+              titleCourse={titleCourse}
+              dataScience={dataScience}
+              interstedInHide={interstedInHide}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              event={event}
+              // radio={radio}
+            />
+          )}
+        </div>
+      </Popup>
       <div className={styles.topicCover}>
         <p className={styles.paragramTitle}>{data.heading2}</p>
         <Image
@@ -58,11 +113,11 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
-          <Link href={data.webinarLink} >
-          <button className="outLineBtn">
+          {/* <Link href={data.webinarLink} > */}
+          <button className="outLineBtn" onClick={popupShow}>
             Register NOW!
           </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
 
@@ -194,11 +249,11 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
-        <Link href={data.webinarLink} >
-          <button className="outLineBtn">
+        {/* <Link href={data.webinarLink} > */}
+          <button className="outLineBtn" onClick={popupShow}>
             Register NOW!
           </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
 

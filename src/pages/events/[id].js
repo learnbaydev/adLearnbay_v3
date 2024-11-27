@@ -5,26 +5,27 @@ import { EventHeader } from "@/components/WebinarPage/EventHeaderFSD/EventHeader
 import { getAllPostIds, getPostData } from "@/lib/event";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { FaCalendarAlt, FaClock } from "react-icons/fa";
 import styles from "../../styles/DataScienceEvent.module.css";
-import Link from "next/link";
+import RightDomain from "@/components/WebinarPage/rytDomain/RightDomain";
+import WBotomLine from "@/components/WebinarPage/botomLine/WBotomLine";
+import BottomBar from "@/components/Global/BottomBar/BottomBar";
 
-export default function DataScienceEvent({ eventData, formotp }) {
+export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD }) {
   const [mobile, setMobile] = useState(false);
 
   let today = new Date();
   let eventDateInfo = new Date(eventData.data.mainData.eventDate);
 
   useEffect(() => {
-    let width = window.innerWidth;
+    const handleResize = () => {
+      setMobile(window.innerWidth < 481);
+    };
 
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, [mobile]);
+    handleResize(); // Set the initial state on component mount
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -50,61 +51,26 @@ export default function DataScienceEvent({ eventData, formotp }) {
           <div className={styles.left}>
             <div className={styles.prgrmFeature}>
               <EventFeature
-                domainDataD={true}
-                reviewsDataD={true}
                 event={true}
-                formotp={true}
+                domainDataD={true}
+                reviewsDataD={reviewsDataD}
+                interstedInHide={true}
                 data={eventData.data.eventFeatureData}
                 eventDateInfo={eventDateInfo}
+                dataScience={true}
+                google={true}
               />
             </div>
           </div>
         </div>
         <div>
-          <div className={styles.rightDomain}>
-            <section className={styles.formDomain}>
-              <div className={styles.headerDomain}>
-                <h3>MASTERCLASS</h3>
-              </div>
-              <p>
-                {eventData.data.mainData.Duration}
-                <br />
-                {eventData.data.mainData.register}
-                <br />
-                <span style={{ color: "#0072bc", fontWeight: "500" }}>
-                  {eventData.data.mainData.likes}
-                </span>
-              </p>
-              <div className={styles.iconsRegister}>
-                <p className={styles.iconsRegisterp}>
-                  <FaCalendarAlt
-                    className={styles.IconDomain}
-                    style={{ color: "#E24C32" }}
-                  />
-                  {eventData.data.mainData.eventDate}
-                </p>
-                <p className={styles.iconsRegisterp}>|</p>
-                <p className={styles.iconsRegisterp}>
-                  <FaClock
-                    className={styles.IconDomain}
-                    style={{ color: "#E24C32" }}
-                  />
-                  {eventData.data.mainData.eventTime}
-                </p>
-              </div>
-
-              <div className={styles.centerBtn}>
-              <Link href={eventData.data.mainData.webinarLink} >
-          <button className="outLineBtn">
-            Register NOW!
-          </button>
-          </Link>
-              </div>
-            </section>
-          </div>
+          <RightDomain eventData={eventData} webinarDate={webinarDate} />
         </div>
       </div>
+
       <Footer />
+      <WBotomLine interstedInHide={true} dataScience={true} event={true} />
+      {/* <BottomBar interstedInHide={true} dataScience={true} event={true} /> */}
     </div>
   );
 }
@@ -119,9 +85,16 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const eventData = getPostData(params.id);
+  const webinarDate = eventData.data.eventFeatureData.webinarDate;
+
+  // Handle undefined for reviewsDataD
+  const reviewsDataD = eventData.data.eventFeatureData.reviewsDataD || null; // Default to null if undefined
+
   return {
     props: {
       eventData,
+      webinarDate,
+      reviewsDataD, // Will be null if undefined
     },
   };
 }

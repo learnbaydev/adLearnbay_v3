@@ -105,7 +105,7 @@
 }
 
 .slide {
-  padding: 30px 20px 30px 0px;
+  padding: 30px 20px 30px 20px;
   display: flex;
   height: 250px !important;
   flex-flow: column-reverse;
@@ -116,6 +116,10 @@
   box-shadow: 4px 4px 20px rgba(41, 121, 173, 0.25);
   border-radius: 34px;
   margin: 30px 10px 40px 10px;
+}
+
+.img{
+border-radius: 50%;
 }
 .content {
   display: grid;
@@ -270,12 +274,13 @@
 
   .content {
     gap: 10px;
+    align-items: center;
   }
 
   .slide {
-    padding: 20px 30px 20px 10px;
+    padding:0 20px;
     height: 260px !important;
     width: fit-content;
-    height: fit-content;
+    height:100%;
   }
 }
