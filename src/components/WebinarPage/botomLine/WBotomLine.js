@@ -50,7 +50,7 @@ const WBotomLine = ({
     <div className={styles.WContainer}>
       
       <p>Acquire in-demand skills and start a successful career   </p>
-      <div className={styles.btnSpan} onClick={popupShow}>Register NOW</div>
+      <div className={styles.btnSpan} onClick={popupShow}>Register Now</div>
     </div>
     </>
   )

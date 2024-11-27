@@ -17,15 +17,15 @@ export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD 
   let eventDateInfo = new Date(eventData.data.mainData.eventDate);
 
   useEffect(() => {
-    const handleResize = () => {
-      setMobile(window.innerWidth < 481);
-    };
+    let width = window.innerWidth;
 
-    handleResize(); // Set the initial state on component mount
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
-  }, []);
+    if (width < 481) {
+      setMobile(true);
+    }
+    if (width > 481) {
+      setMobile(false);
+    }
+  }, [mobile]);
 
   return (
     <div className={styles.container}>
@@ -69,7 +69,7 @@ export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD 
       </div>
 
       <Footer />
-      <WBotomLine interstedInHide={true} dataScience={true} event={true} />
+      <WBotomLine  interstedInHide={true} dataScience={true} event={true}/>
       {/* <BottomBar interstedInHide={true} dataScience={true} event={true} /> */}
     </div>
   );
@@ -85,16 +85,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const eventData = getPostData(params.id);
-  const webinarDate = eventData.data.eventFeatureData.webinarDate;
-
-  // Handle undefined for reviewsDataD
-  const reviewsDataD = eventData.data.eventFeatureData.reviewsDataD || null; // Default to null if undefined
+  const webinarDate = eventData.data.eventFeatureData.webinarDate; 
+  const  reviewsDataD = eventData.data.eventFeatureData.reviewsDataD;
 
   return {
     props: {
       eventData,
       webinarDate,
-      reviewsDataD, // Will be null if undefined
+      reviewsDataD,
     },
   };
 }
