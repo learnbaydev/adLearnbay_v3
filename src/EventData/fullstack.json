@@ -10,15 +10,15 @@
     "eventDate": "11th March 2025",
     "tag": "System Design",
     "eventTime": "5-7PM, Saturday",
-    "Duration": "AYUSH KUMAR",
+    "Duration": "Dr. Darshan Ingle",
     "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
-    "register": "Software Development Engineer",
+    "register": "Principal Consultant",
     "webinarLink": "#",
-    "likes": "(EX JP Morgan, EX Oracle)"
+    "likes": ""
   },
   "headImg": {
-    "deskimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/event/LLDWebsitebanner.jpg",
-    "mobimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/event/LLDMobile.jpg"
+    "deskimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack.webp",
+    "mobimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack-mblss.webp"
   },
   "eventFeatureData": {
     "heading1": "About this Masterclass",
@@ -28,18 +28,22 @@
       "Our masterclass will teach you to design a Movie-Ticket Booking App similar to Bookmyshow, by understanding their LLD principles, identifying key features, and ensuring optimal performance, scalability, and security. ",
       "Whether you are an experienced developer or a beginner, we will help you build a successful platform that stands out in today's competitive market."
     ],
+    "reviewsDataD":true,
+    "webinarDate":"2024-12-10T20:00:00",
 
     "heading2": "Topics covered in this Masterclass",
     "topicsCoveredMasterclass": [
-      "Data flow diagram of Movie Ticket Booking App",
-      "How systems handle Real-Time Tracking of APIs",
-      "Build scalable systems for a movie ticket booking app for millions of users"
+      "What is Generative AI and Why is it Relevant in Software Development?",
+      "Benefits of Gen AI Tools like Copilot for Developers and Teams",
+      "GenAI Copilot Tools: Autocompleting Code, Code Conversion, and Quality Review",
+      " Real-World Examples and Case Studies.",
+      "Engage in Questions & Answer Round."
     ],
 
-    "speakerName": "Ayush",
-    "speakerDesignation": "Designation : Software Development Engineer",
-    "speakerComp": "Ex JP Morgan, Ex Oracle",
-    "img4": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/event/userWebinar.png",
+    "speakerName": "Dr. Darshan Ingle",
+    "speakerDesignation": "Designation : Principal Consultant",
+    "speakerComp": " 14+ years",
+    "img4": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/Ingle-round.webp",
 
     "h1": "100% Live Classes",
     "h2": "Customized Learning",
@@ -49,9 +53,10 @@
     "heading3": "This Masterclass is for",
 
     "topicsMasterclass": [
-      "SDEs looking to upskill",
-      "SDEs wishing to convert to Product Companies from Service Companies",
-      "SDEs wanting to learn System Design"
+      "Software Developers & Engineers: Master Generative AI tools for efficient coding",
+      "Tech enthusiasts and coders: Interested in upskilling their career in DSA and System Design.",
+      "Team Leads and Managers: Aiming to enhance team productivity with AI tools like Copilot.",
+      "AI and ML professionals: Exploring real-world applications of Generative AI."
     ],
 
     "heading4": "What our Learners have to say",
@@ -59,15 +64,15 @@
     "heading5": "About Learnbay Academy",
     "aboutLearnbay": [
       "Welcome to Learnbay!",
-      "We are a leading provider of specialized courses in Data Structures and System Design in our Full Stack Software Development Program. We are dedicated to helping working professionals advance their careers and gain the technical expertise needed to succeed in the fast-paced world of technology."
+      "We offer specialized DSA, System Design, and Advanced AI & ML Programs to help working professionals advance their careers and succeed in the fast-paced world of tech."
     ],
     "aboutLearnbayHeading": "Some of our standout features include: ",
     "standoutFeatures": [
-      "Curriculum that is developed, supervised and approved by industry experts",
-      "1:1 mentorship from top experts in the field",
+      "Curriculum that is developed, supervised, and approved by industry experts.",
+      "Curriculum inclusive of Gen AI",
+      "1:1 Mentorship from top experts in the field.",
       "Opportunities to gain technical expertise through real-world projects",
-      "Over 120 hiring partners and dedicated placement support",
-      "100% guarantee interview calls"
+      "Over 120 hiring partners and dedicated placement support"
     ],
     "standoutFeaturesLastHead": [
       "Sign up for a free demo class and enroll in the domain of your choice."

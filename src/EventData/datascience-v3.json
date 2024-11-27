@@ -1,74 +1,75 @@
 {
-    "metaInfo": {
-      "title": "Datascience-v3",
-      "desc": "Enroll in the System Design Event and learn from live classes. Get Knowledge by working on industry projects.",
-      "keyword": "System Design",
-      "canonical": "https://course.learnbay.co/Event/datascience-v3"
-    },
-    "mainData": {
-      "title": "Datascience",
+  "metaInfo": {
+    "title": "Datascience",
+    "desc": "Enroll in the System Design Event and learn from live classes. Get Knowledge by working on industry projects.",
+    "keyword": "System Design",
+    "canonical": "https://course.learnbay.co/Event/datascience"
+  },
+  "mainData": {
+    "title": "Datascience",
     "eventDate": "3rd Dec 2024",
     "tag": "Data scientist",
     "eventTime": "7:30-9:30PM, Tuesday",
     "Duration": "Kumar Sundram",
     "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
     "register": "data scientist and GenAI Specialist",
-      "webinarLink": "https://event.webinarjam.com/register/2/xr6zxsl?utm_source=linkedin&utm_medium=M%26L_webinar_bfsi_company_jobtitle_exp_353576476&utm_campaign=DS_webinar&utm_id=630394006&utm_term=conversation_ad&utm_content=why_should_every_manager_learn_genAI_in_2025%3F",
-      "likes": "(EX HSBC)"
-    },
-    "headImg": {
-      "deskimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/desktop-webinar.webp",
-      "mobimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/mbl-webinar.webp"
-    },
-    "eventFeatureData": {
-      "heading2": "Topics covered",
-      "webinarLink": "https://event.webinarjam.com/register/2/xr6zxsl?utm_source=linkedin&utm_medium=M%26L_webinar_bfsi_company_jobtitle_exp_353576476&utm_campaign=DS_webinar&utm_id=630394006&utm_term=conversation_ad&utm_content=why_should_every_manager_learn_genAI_in_2025%3F",
-      "topicsCoveredMasterclass": [
-        "Overview of GenAI and its capability",
-        "How AI Redefines Job Roles Across Industries",
-        "Smarter leadership with ChatGPT integration in apps and assistants.",
-        "Understand Zapier AI & Automata, Simplify Managerial Workflows",
-        "Learn how to Improve your Team Collaboration and Productivity using GenAI",
-        "Project management using GenAI"
-      ],
-  
-     "speakerName": "Kumar Sundram",
+    "webinarLink": "https://event.webinarjam.com/register/2/xr6zxsl?utm_source=linkedin&utm_medium=M%26L_Webinar_exp_function_seniority_int_353632546&utm_campaign=DS_webinar&utm_id=630394006&utm_term=conversation_ad&utm_content=why_should_every_manager_learn_genAI_in_2025%3F",
+    "likes": "(EX HSBC)"
+  },
+  "headImg": {
+    "deskimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/desktop-datascience-webinar.webp",
+    "mobimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/mblls-datascience-webinar.webp"
+  },
+  "eventFeatureData": {
+    "heading2": "Topics covered",
+    "webinarLink": "https://event.webinarjam.com/register/2/xr6zxsl?utm_source=linkedin&utm_medium=M%26L_Webinar_exp_function_seniority_int_353632546&utm_campaign=DS_webinar&utm_id=630394006&utm_term=conversation_ad&utm_content=why_should_every_manager_learn_genAI_in_2025%3F",
+    "topicsCoveredMasterclass": [
+      "Overview of GenAI and its capability",
+      "How AI Redefines Job Roles Across Industries",
+      "Smarter leadership with ChatGPT integration in apps and assistants.",
+      "Understand Zapier AI & Automata, Simplify Managerial Workflows",
+      "Learn how to Improve your Team Collaboration and Productivity using GenAI",
+      "Project management using GenAI"
+    ],
+    "reviewsDataD":false,
+    "webinarDate":"2024-12-03T20:00:00",
+
+    "speakerName": "Kumar Sundram",
     "speakerDesignation": "Designation : data scientist and GenAI Specialist",
     "speakerComp": "EX HSBC",
-    "img4": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/event/userWebinar.png",
+    "img4": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/kumar-per-modified-new.webp",
 
-      "h1": "100% Live Classes",
-      "h2": "Customized Learning",
-      "h3": "IBM Certified Projects",
-      "h4": "3-year Subscription",
-  
-      "heading3": "This Masterclass is for",
-  
-      "topicsMasterclass": [
-        "Managers and Leaders looking to upskill",
-        "Managers and Leaders looking to integrate AI into decision-making processes",
-        "Managers exploring AI for team collaboration and Productivity",
-        "Senior professionals interested in automating workflows and processes"
-      ],
-  
-      "heading4": "What our Learners have to say",
-  
-      "heading5": "About Learnbay Academy",
-      "aboutLearnbay": [
-        "Welcome to Learnbay!",
-        "We are a leading provider of specialized courses in Data Structures and System Design in our Full Stack Software Development Program. We are dedicated to helping working professionals advance their careers and gain the technical expertise needed to succeed in the fast-paced world of technology."
-      ],
-      "aboutLearnbayHeading": "Some of our standout features include: ",
-      "standoutFeatures": [
-        "Curriculum that is developed, supervised and approved by industry experts",
-        "1:1 mentorship from top experts in the field",
-        "Opportunities to gain technical expertise through real-world projects",
-        "Over 120 hiring partners and dedicated placement support",
-        "100% guarantee interview calls"
-      ],
-      "standoutFeaturesLastHead": [
-        "Sign up for a free demo class and enroll in the domain of your choice."
-      ]
-    }
+    "h1": "100% Live Classes",
+    "h2": "Customized Learning",
+    "h3": "IBM Certified Projects",
+    "h4": "3-year Subscription",
+
+    "heading3": "This Masterclass is for",
+
+    "topicsMasterclass": [
+      "Managers and Leaders looking to upskill",
+      "Managers and Leaders looking to integrate AI into decision-making processes",
+      "Managers exploring AI for team collaboration and Productivity",
+      "Senior professionals interested in automating workflows and processes"
+    ],
+
+    "heading4": "What our Learners have to say",
+
+    "heading5": "About Learnbay Academy",
+    "aboutLearnbay": [
+      "Welcome to Learnbay!",
+      "We are a leading provider of specialized courses in Data Structures and System Design in our Full Stack Software Development Program. We are dedicated to helping working professionals advance their careers and gain the technical expertise needed to succeed in the fast-paced world of technology."
+    ],
+    "aboutLearnbayHeading": "Some of our standout features include: ",
+    "standoutFeatures": [
+      "Curriculum that is developed, supervised and approved by industry experts",
+      "1:1 mentorship from top experts in the field",
+      "Opportunities to gain technical expertise through real-world projects",
+      "Over 120 hiring partners and dedicated placement support",
+      "100% guarantee interview calls"
+    ],
+    "standoutFeaturesLastHead": [
+      "Sign up for a free demo class and enroll in the domain of your choice."
+    ]
   }
-  
+}

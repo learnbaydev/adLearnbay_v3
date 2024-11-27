@@ -3,6 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+.eventContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally if needed */
+}
+
+.formDomain {
+  margin-top: 30vh;  /* Move down by 30% of the viewport height */
+  width: 100%;       /* Adjust width as needed */
+  padding: 20px;     /* Optional padding */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
 
 
 .Back {
@@ -428,16 +440,17 @@
 
 .formDomain {
   background-color: #ffffff;
-  display: flex;
+  display: flex
+;
   flex-flow: column;
   border: 1px solid #0072bc20;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 0px 0px 40px 0px;
   box-shadow: 0 0 5px 0 rgb(45 156 215 / 31%);
-  position: fixed;
+  position: sticky;
   top: 4rem;
   margin-top: 50px;
-  width: 30%;
+  /* width: 25%; */
   text-align: center;
 }
 
@@ -493,6 +506,27 @@
 .IconDomain {
   font-size: 20px;
 }
+.formDomain{
+  padding: 18px 0px;
+  margin-top: 20px;
+}
+.formDomain h2 {
+  text-align: center;
+  font-size: 16px;
+  /* background: linear-gradient(109.5deg, #0072bc 30.4%, rgb(245, 110, 26) 78.4%); */
+  /* padding-bottom: 20px; */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Makes the text transparent so the background gradient shows through */
+  color: #000;
+}
+
+.topForm{
+  display: flex;
+  justify-content: space-between;
+padding: 0 20px 20px;
+}
+
 
 /* event main page style end*/
 @media (max-width: 1281px) {
@@ -500,6 +534,10 @@
   .iconsRegister {
     
     padding:0 20px;
+  }
+  .formDomain{
+    width: 30%;
+    right: 6%;
   }
 }
 @media (max-width: 1281px) {
@@ -527,6 +565,14 @@
 }
 
 
+@media(max-width:1081px){
+
+  .formDomain{
+    right: 4%;
+    width: 32%;
+  }
+}
+
 @media(max-width:1024px){
   .headerDomain h3 {
   
@@ -539,6 +585,13 @@
     padding:0 20px;
     gap: 10px;
 
+
+  }
+   .formDomain{
+    right: 7%;
+    z-index: 1;
+    position: initial;
+    width: 100%;
   }
 }
 
@@ -666,7 +719,7 @@
 
   .formDomain {
     grid-template-columns: 100%;
-    padding:  0px 0px 20px 0px;
+    padding:  20px 0px 20px 0px;
     display: flex;
     margin-top: 0px;
     position: initial;

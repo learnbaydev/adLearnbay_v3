@@ -3,7 +3,7 @@
 const getEndPoint = (pathname, event) => {
   let endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   if (event) {
-    endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
+    endPoint = "https://getform.io/f/a0a0fb5b-0cba-4b29-9d35-03c35d0e0d28";
   }
 
   if (
@@ -12,6 +12,7 @@ const getEndPoint = (pathname, event) => {
     pathname === "/OS" ||
     pathname ===
       "/datascience/OS/sp/s2-artificial-intelligence-machine-learning-generic" ||
+    pathname === "/events/datascience" ||
     pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/s3-data-science-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
@@ -75,6 +76,7 @@ const getEndPoint = (pathname, event) => {
   if (pathname === "/google") {
     endPoint = "https://getform.io/f/1cfd5db8-ec05-4d26-b05f-6b73a81ebf89";
   }
+ 
   return endPoint;
   // ... (Logic to determine the endpoint based on the router)
 };

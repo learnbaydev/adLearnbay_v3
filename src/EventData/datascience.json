@@ -17,8 +17,8 @@
     "likes": "(EX HSBC)"
   },
   "headImg": {
-    "deskimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/desktop-webinar.webp",
-    "mobimg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/mbl-webinar.webp"
+    "deskimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/desktop-datascience-webinar.webp",
+    "mobimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/mblls-datascience-webinar.webp"
   },
   "eventFeatureData": {
     "heading2": "Topics covered",
@@ -31,11 +31,13 @@
       "Learn how to Improve your Team Collaboration and Productivity using GenAI",
       "Project management using GenAI"
     ],
+    "reviewsDataD":false,
+    "webinarDate":"2024-12-03T20:00:00",
 
     "speakerName": "Kumar Sundram",
     "speakerDesignation": "Designation : data scientist and GenAI Specialist",
     "speakerComp": "EX HSBC",
-    "img4": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/event/userWebinar.png",
+    "img4": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/kumar-per-modified-new.webp",
 
     "h1": "100% Live Classes",
     "h2": "Customized Learning",
