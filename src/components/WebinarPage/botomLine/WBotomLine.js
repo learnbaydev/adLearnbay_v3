@@ -7,6 +7,7 @@ const WBotomLine = ({
     dataScience,
     interstedInHide,
     event,
+    eventFullStack,
 
 }) => {
 
@@ -38,7 +39,7 @@ const WBotomLine = ({
               dataScience={dataScience}
               interstedInHide={interstedInHide}
               upSkillingHide={true}
-           
+              eventFullStack={eventFullStack}
 
               event={event}
               // radio={radio}

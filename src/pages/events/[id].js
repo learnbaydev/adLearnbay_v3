@@ -8,30 +8,27 @@ import { useEffect, useState } from "react";
 import styles from "../../styles/DataScienceEvent.module.css";
 import RightDomain from "@/components/WebinarPage/rytDomain/RightDomain";
 import WBotomLine from "@/components/WebinarPage/botomLine/WBotomLine";
-import BottomBar from "@/components/Global/BottomBar/BottomBar";
 
-export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD }) {
+export default function DataScienceEvent({ eventData }) {
   const [mobile, setMobile] = useState(false);
 
-  let today = new Date();
-  let eventDateInfo = new Date(eventData.data.mainData.eventDate);
+  const today = new Date();
+  const eventDateInfo = new Date(eventData.mainData.eventDate);
 
   useEffect(() => {
-    let width = window.innerWidth;
-
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, [mobile]);
+    const handleResize = () => {
+      setMobile(window.innerWidth < 481);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>{eventData.data.metaInfo.title}</title>
-        <meta name="description" content={eventData.data.metaInfo.desc} />
+        <title>{eventData.metaInfo.title}</title>
+        <meta name="description" content={eventData.metaInfo.desc} />
         <link
           rel="icon"
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
@@ -41,21 +38,21 @@ export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD 
       <Navbar HideButton={true} eventDateInfo={eventDateInfo} />
       <div>
         <EventHeader
-          deskimg={eventData.data.headImg.deskimg}
-          mobimg={eventData.data.headImg.mobimg}
+          deskimg={eventData.headImg.deskimg}
+          mobimg={eventData.headImg.mobimg}
         />
       </div>
-
       <div className={today >= eventDateInfo ? styles.Pages : styles.Page2}>
         <div>
           <div className={styles.left}>
             <div className={styles.prgrmFeature}>
               <EventFeature
-                event={true}
+                event={eventData.eventFeatureData.event}
+                eventFullStack={eventData.eventFeatureData.eventFullStack}
                 domainDataD={true}
-                reviewsDataD={reviewsDataD}
+                reviewsDataD={eventData.eventFeatureData.reviewsDataD}
                 interstedInHide={true}
-                data={eventData.data.eventFeatureData}
+                data={eventData.eventFeatureData}
                 eventDateInfo={eventDateInfo}
                 dataScience={true}
                 google={true}
@@ -64,13 +61,21 @@ export default function DataScienceEvent({ eventData, webinarDate, reviewsDataD 
           </div>
         </div>
         <div>
-          <RightDomain eventData={eventData} webinarDate={webinarDate} />
+          <RightDomain
+            eventData={eventData}
+            webinarDate={eventData.eventFeatureData.webinarDate}
+            event={eventData.eventFeatureData.event}
+            eventFullStack={eventData.eventFeatureData.eventFullStack}
+          />
         </div>
       </div>
-
       <Footer />
-      <WBotomLine  interstedInHide={true} dataScience={true} event={true}/>
-      {/* <BottomBar interstedInHide={true} dataScience={true} event={true} /> */}
+      <WBotomLine
+        interstedInHide={true}
+        dataScience={true}
+        event={eventData.eventFeatureData.event}
+        eventFullStack={eventData.eventFeatureData.eventFullStack}
+      />
     </div>
   );
 }
@@ -85,14 +90,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const eventData = getPostData(params.id);
-  const webinarDate = eventData.data.eventFeatureData.webinarDate; 
-  const  reviewsDataD = eventData.data.eventFeatureData.reviewsDataD;
-
   return {
     props: {
-      eventData,
-      webinarDate,
-      reviewsDataD,
+      eventData: eventData.data, // Pass the entire data as a single object
     },
   };
 }
