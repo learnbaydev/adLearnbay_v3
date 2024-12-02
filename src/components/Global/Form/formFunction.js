@@ -1,11 +1,14 @@
 // formFunctions.js
 
-const getEndPoint = (pathname, event) => {
+const getEndPoint = (pathname, event, eventFullStack) => {
   let endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   if (event) {
     endPoint = "https://getform.io/f/a0a0fb5b-0cba-4b29-9d35-03c35d0e0d28";
   }
 
+  if (eventFullStack) {
+    endPoint = "https://getform.io/f/69076866-e1f7-4cf3-a7d2-12603819a5a4";
+  }
   if (
     pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
     pathname === "/datascience/s2-data-science-ai-masters-program" ||
@@ -85,6 +88,7 @@ const redirectionThankYou = (
   pathname,
   fullStack,
   event,
+  eventFullStack,
   dataScience,
   dataScienceCounselling,
   redirection
@@ -103,6 +107,9 @@ const redirectionThankYou = (
     routerPath = "/Thank-you-fsd";
   }
   if (event) {
+    routerPath = "/event/Thank-You-event";
+  }
+  if(eventFullStack){
     routerPath = "/event/Thank-You-event";
   }
   if (dataScience) {

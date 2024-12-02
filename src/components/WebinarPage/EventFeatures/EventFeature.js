@@ -30,6 +30,7 @@ const EventFeature = ({
   interstedInHide,
   ADS,
   event,
+  eventFullStack,
 
 
 }) => {
@@ -85,6 +86,7 @@ const EventFeature = ({
               formotp={formotp}
               ADS={ADS}
               event={event}
+              eventFullStack={eventFullStack}
               // radio={radio}
             />
           )}

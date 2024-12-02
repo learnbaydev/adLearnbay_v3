@@ -19,6 +19,7 @@ const Form = ({
   downloadBrochure,
   radio,
   event,
+  eventFullStack,
   dataScience,
   fullStack,
   google,
@@ -147,6 +148,9 @@ const Form = ({
     btnText = "Register Now";
   }
 
+  if(eventFullStack){
+    btnText = "Register Now"
+  }
   if (offerFestive) {
     btnText = "Enroll Now";
   }
@@ -185,11 +189,12 @@ const Form = ({
     }
 
     try {
-      const endPoint = getEndPoint(router.pathname, event);
+      const endPoint = getEndPoint(router.pathname, event, eventFullStack);
       const pushPath = redirectionThankYou(
         router.pathname,
         fullStack,
         event,
+        eventFullStack,
         dataScience,
         dataScienceGeneric,
         dataScienceCounselling,
