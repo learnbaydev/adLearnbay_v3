@@ -24,6 +24,8 @@ const Navbar = ({
   dateTime,
   ApplyS2,
   DomainInput,
+  fullstackEvent,
+  webinarLink,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -53,20 +55,24 @@ const Navbar = ({
           <div className="whiteP" />
         </div>
         <div className="RightPopup">
-          {ApplyS2 ? <h5>Apply for Counsellling</h5> : <h5>Download Syllabus</h5>}
+          {ApplyS2 ? (
+            <h5>Apply for Counsellling</h5>
+          ) : (
+            <h5>Download Syllabus</h5>
+          )}
 
           {ApplyS2 ? (
             <Form
-            popup={true}
-            setTrigger={setPopups}
-            radio={radio}
-            upSkillingHide={true}
-            interstedInHide={interstedInHide}
-            dataScience={dataScience}
-            HideInterest={HideInterest}
-            OS={OS}
-            dateTime={dateTime}
-          />
+              popup={true}
+              setTrigger={setPopups}
+              radio={radio}
+              upSkillingHide={true}
+              interstedInHide={interstedInHide}
+              dataScience={dataScience}
+              HideInterest={HideInterest}
+              OS={OS}
+              dateTime={dateTime}
+            />
           ) : (
             <>
               {formotp ? (
@@ -113,17 +119,15 @@ const Navbar = ({
               height={60}
             />
           ) : (
-        
-              <Image
-                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
-                alt="Learnbay"
-                quality={100}
-                priority
-                style={{ objectFit: "contain" }}
-                width={mobile ? "135" : "230"}
-                height={60}
-              />
-          
+            <Image
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
+              alt="Learnbay"
+              quality={100}
+              priority
+              style={{ objectFit: "contain" }}
+              width={mobile ? "135" : "230"}
+              height={60}
+            />
           )}
         </div>
         <div className={styles.right}>
@@ -133,16 +137,34 @@ const Navbar = ({
             </div>
           ) : (
             <>
-              {HideButton ? (
-                ""
+              {fullstackEvent ? (
+                <>
+                  {" "}
+                <Link href={webinarLink}>
+                
+                <div >
+                    <Button
+                      text="Register Now"
+                      outline={true}
+
+                    />
+                  </div></Link>
+                </>
               ) : (
-                <div onClick={popupShow}>
-                  <Button
-                    text="Download Syllabus"
-                    outline={true}
-                    passIcon={<FaDownload className={styles.icon} />}
-                  />
-                </div>
+                <>
+                  {" "}
+                  {HideButton ? (
+                    ""
+                  ) : (
+                    <div onClick={popupShow}>
+                      <Button
+                        text="Download Syllabus"
+                        outline={true}
+                        passIcon={<FaDownload className={styles.icon} />}
+                      />
+                    </div>
+                  )}
+                </>
               )}
             </>
           )}

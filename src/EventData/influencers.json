@@ -1,0 +1,85 @@
+{
+    "metaInfo": {
+      "title": "Influencer",
+      "desc": "Enroll in the System Design Event and learn from live classes. Get Knowledge by working on industry projects.",
+      "keyword": "System Design",
+      "canonical": "https://course.learnbay.co/Event/fullstack"
+    },
+    "mainData": {
+        "title": "FullStack",
+        "eventDate": "10th Dec 2024",
+        "tag": "Principal Consultant",
+        "eventTime": "7:30-9:30PM, Tuesday",
+        "Duration": "Dr. Darshan Ingle",
+        "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
+        "register": "Principal Consultant",
+        "webinarLink": "https://us06web.zoom.us/webinar/register/9317333082208/WN_oKB8DePrSH64S8O3xQ3hHw",
+        "likes": "14+ Years of Experience"
+      },
+      "headImg": {
+        "deskimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack.webp",
+        "mobimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack-mblss.webp"
+      },
+    
+    "eventFeatureData": {
+      "heading1": "About this Masterclass",
+      "webinarLink": "https://us06web.zoom.us/webinar/register/9317333082208/WN_oKB8DePrSH64S8O3xQ3hHw",
+      "aboutThisMasterclass": [
+        "Bookmyshow, one of the most popular movie ticket booking apps, has built its platform using a well-designed Low Level Design architecture. LLD has helped them create a user-friendly interface that efficiently handles high volumes of traffic, transactions, and user requests.",
+        "Our masterclass will teach you to design a Movie-Ticket Booking App similar to Bookmyshow, by understanding their LLD principles, identifying key features, and ensuring optimal performance, scalability, and security. ",
+        "Whether you are an experienced developer or a beginner, we will help you build a successful platform that stands out in today's competitive market."
+      ],
+      "reviewsDataD":true,
+  "fullstackEvent":true,
+      "eventFullStack":true,
+      "webinarDate":"2024-12-10T20:00:00",
+  
+      "heading2": "Topics covered in this Masterclass",
+      "topicsCoveredMasterclass": [
+        "What is Generative AI and Why is it Relevant in Software Development?",
+        "Benefits of Gen AI Tools like Copilot for Developers and Teams",
+        "GenAI Copilot Tools: Autocompleting Code, Code Conversion, and Quality Review",
+        " Real-World Examples and Case Studies.",
+        "Engage in Questions & Answer Round."
+      ],
+  
+      "speakerName": "Dr. Darshan Ingle",
+      "speakerDesignation": "Designation : Principal Consultant",
+      "speakerComp": " 14+ years",
+      "img4": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/Ingle-round.webp",
+  
+      "h1": "100% Live Classes",
+      "h2": "Customized Learning",
+      "h3": "Microsoft  Certified Projects",
+      "h4": "3-year Subscription",
+  
+      "heading3": "This Masterclass is for",
+  
+      "topicsMasterclass": [
+        "Software Developers & Engineers: Master Generative AI tools for efficient coding",
+        "Tech enthusiasts and coders: Interested in upskilling their career in DSA and System Design.",
+        "Team Leads and Managers: Aiming to enhance team productivity with AI tools like Copilot.",
+        "AI and ML professionals: Exploring real-world applications of Generative AI."
+      ],
+  
+      "heading4": "What our Learners have to say",
+  
+      "heading5": "About Learnbay Academy",
+      "aboutLearnbay": [
+        "Welcome to Learnbay!",
+        "We offer specialized DSA, System Design, and Advanced AI & ML Programs to help working professionals advance their careers and succeed in the fast-paced world of tech."
+      ],
+      "aboutLearnbayHeading": "Some of our standout features include: ",
+      "standoutFeatures": [
+        "Curriculum that is developed, supervised, and approved by industry experts.",
+        "Curriculum inclusive of Gen AI",
+        "1:1 Mentorship from top experts in the field.",
+        "Opportunities to gain technical expertise through real-world projects",
+        "Over 120 hiring partners and dedicated placement support"
+      ],
+      "standoutFeaturesLastHead": [
+        "Sign up for a free demo class and enroll in the domain of your choice."
+      ]
+    }
+  }
+  

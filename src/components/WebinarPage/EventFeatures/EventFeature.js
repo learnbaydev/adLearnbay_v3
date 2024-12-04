@@ -31,8 +31,7 @@ const EventFeature = ({
   ADS,
   event,
   eventFullStack,
-
-
+  fullstackEvent,
 }) => {
   const [eventData, setEventData] = useState({
     aboutThisMasterclass: data.aboutThisMasterclass,
@@ -51,7 +50,7 @@ const EventFeature = ({
 
   return (
     <div className={styles.eFeature}>
-          <Popup
+      <Popup
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
@@ -115,11 +114,17 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
-          {/* <Link href={data.webinarLink} > */}
-          <button className="outLineBtn" onClick={popupShow}>
-            Register NOW!
-          </button>
-          {/* </Link> */}
+          {fullstackEvent ? (
+            <>
+              <Link href={data.webinarLink}>
+                <button className="outLineBtn">Register NOW!</button>
+              </Link>
+            </>
+          ) : (
+            <button className="outLineBtn" onClick={popupShow}>
+              Register NOW!
+            </button>
+          )}
         </div>
       </div>
 
@@ -251,11 +256,21 @@ const EventFeature = ({
       </div>
       <div>
         <div className={styles.centerBtn}>
-        {/* <Link href={data.webinarLink} > */}
-          <button className="outLineBtn" onClick={popupShow}>
-            Register NOW!
-          </button>
-          {/* </Link> */}
+          {fullstackEvent ? (
+            <>
+              <Link href={data.webinarLink}>
+                <button className="outLineBtn">Register NOW!</button>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link href={data.webinarLink}>
+                <button className="outLineBtn" onClick={popupShow}>
+                  Register NOW!
+                </button>
+              </Link>{" "}
+            </>
+          )}
         </div>
       </div>
 

@@ -35,7 +35,7 @@ export default function DataScienceEvent({ eventData }) {
         />
         <link rel="canonical" href="https://www.learnbay.co/event" />
       </Head>
-      <Navbar HideButton={true} eventDateInfo={eventDateInfo} />
+      <Navbar fullstackEvent={true} webinarLink={eventData.eventFeatureData.webinarLink} HideButton={true} eventDateInfo={eventDateInfo} />
       <div>
         <EventHeader
           deskimg={eventData.headImg.deskimg}
@@ -56,6 +56,7 @@ export default function DataScienceEvent({ eventData }) {
                 eventDateInfo={eventDateInfo}
                 dataScience={true}
                 google={true}
+                fullstackEvent={eventData.eventFeatureData.fullstackEvent}
               />
             </div>
           </div>
@@ -66,6 +67,14 @@ export default function DataScienceEvent({ eventData }) {
             webinarDate={eventData.eventFeatureData.webinarDate}
             event={eventData.eventFeatureData.event}
             eventFullStack={eventData.eventFeatureData.eventFullStack}
+            fullstackEvent={eventData.eventFeatureData.fullstackEvent}
+        fullstackEventD ={true}
+        webinarLink={eventData.eventFeatureData.webinarLink}
+        Duration={eventData.mainData. Duration}
+        register={eventData.mainData.register}
+        likes={eventData.mainData.likes}
+        eventTime={eventData.mainData.eventTime}
+        eventDate={eventData.mainData.eventDate}
           />
         </div>
       </div>
@@ -75,7 +84,9 @@ export default function DataScienceEvent({ eventData }) {
         dataScience={true}
         event={eventData.eventFeatureData.event}
         eventFullStack={eventData.eventFeatureData.eventFullStack}
+        
       />
+
     </div>
   );
 }

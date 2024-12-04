@@ -7,31 +7,32 @@
   },
   "mainData": {
     "title": "FullStack",
-    "eventDate": "11th March 2025",
-    "tag": "System Design",
-    "eventTime": "5-7PM, Saturday",
+    "eventDate": "10th Dec 2024",
+    "tag": "Principal Consultant",
+    "eventTime": "7:30-9:30PM, Tuesday",
     "Duration": "Dr. Darshan Ingle",
     "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
     "register": "Principal Consultant",
-    "webinarLink": "#",
-    "likes": ""
+    "webinarLink": "https://us06web.zoom.us/webinar/register/1817333082287/WN_oKB8DePrSH64S8O3xQ3hHw",
+    "likes": "14+ Years of Experience"
   },
   "headImg": {
     "deskimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack.webp",
     "mobimg": "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/webinar-fullstack-mblss.webp"
   },
+
   "eventFeatureData": {
     "heading1": "About this Masterclass",
-    "webinarLink": "#",
+    "webinarLink": "https://us06web.zoom.us/webinar/register/1817333082287/WN_oKB8DePrSH64S8O3xQ3hHw",
     "aboutThisMasterclass": [
       "Bookmyshow, one of the most popular movie ticket booking apps, has built its platform using a well-designed Low Level Design architecture. LLD has helped them create a user-friendly interface that efficiently handles high volumes of traffic, transactions, and user requests.",
       "Our masterclass will teach you to design a Movie-Ticket Booking App similar to Bookmyshow, by understanding their LLD principles, identifying key features, and ensuring optimal performance, scalability, and security. ",
       "Whether you are an experienced developer or a beginner, we will help you build a successful platform that stands out in today's competitive market."
     ],
-    "reviewsDataD":true,
-
-    "eventFullStack":true,
-    "webinarDate":"2024-12-10T20:00:00",
+    "reviewsDataD": true,
+    "fullstackEvent": true,
+    "eventFullStack": true,
+    "webinarDate": "2024-12-10T20:00:00",
 
     "heading2": "Topics covered in this Masterclass",
     "topicsCoveredMasterclass": [
@@ -49,7 +50,7 @@
 
     "h1": "100% Live Classes",
     "h2": "Customized Learning",
-    "h3": "IBM Certified Projects",
+    "h3": "Microsoft  Certified Projects",
     "h4": "3-year Subscription",
 
     "heading3": "This Masterclass is for",

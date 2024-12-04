@@ -10,12 +10,11 @@
 }
 
 .formDomain {
-  margin-top: 30vh;  /* Move down by 30% of the viewport height */
-  width: 100%;       /* Adjust width as needed */
-  padding: 20px;     /* Optional padding */
+  margin-top: 30vh; /* Move down by 30% of the viewport height */
+  width: 100%; /* Adjust width as needed */
+  padding: 20px; /* Optional padding */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
-
 
 .Back {
   background-color: #f4fcfe;
@@ -433,15 +432,15 @@
 
 .rightDomain {
   display: flex;
-  position: unset;
+  position: sticky;
   z-index: 0;
   flex-flow: column;
+  top: 10%;
 }
 
 .formDomain {
   background-color: #ffffff;
-  display: flex
-;
+  display: flex;
   flex-flow: column;
   border: 1px solid #0072bc20;
   border-radius: 6px;
@@ -477,7 +476,7 @@
   font-size: 34px;
   border-radius: 20px 20px 0px 0px;
   opacity: 0.82;
-  background: linear-gradient(90deg, #D84224 0%, #0058FF 100%);
+  background: linear-gradient(90deg, #d84224 0%, #0058ff 100%);
   padding: 60px 0px 24px 0px;
   margin-bottom: 20px;
 }
@@ -506,8 +505,8 @@
 .IconDomain {
   font-size: 20px;
 }
-.formDomain{
-  padding: 18px 0px;
+.formDomain {
+  /* padding: 18px 0px; */
   margin-top: 20px;
 }
 .formDomain h2 {
@@ -521,21 +520,23 @@
   color: #000;
 }
 
-.topForm{
+.topForm {
   display: flex;
   justify-content: space-between;
-padding: 0 20px 20px;
+  padding: 0 20px 20px;
 }
-
+.regButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* event main page style end*/
 @media (max-width: 1281px) {
-  
   .iconsRegister {
-    
-    padding:0 20px;
+    padding: 0 20px;
   }
-  .formDomain{
+  .formDomain {
     width: 30%;
     right: 6%;
   }
@@ -559,35 +560,27 @@ padding: 0 20px 20px;
     padding: 20px 40px;
   }
 
- 
-
   /* event main page style end*/
 }
 
-
-@media(max-width:1081px){
-
-  .formDomain{
+@media (max-width: 1081px) {
+  .formDomain {
     right: 4%;
     width: 32%;
   }
 }
 
-@media(max-width:1024px){
+@media (max-width: 1024px) {
   .headerDomain h3 {
-  
     font-size: 30px;
     padding: 50px 0px 20px 0px;
   }
 
   .iconsRegister {
-    
-    padding:0 20px;
+    padding: 0 20px;
     gap: 10px;
-
-
   }
-   .formDomain{
+  .formDomain {
     right: 7%;
     z-index: 1;
     position: initial;
@@ -595,15 +588,10 @@ padding: 0 20px 20px;
   }
 }
 
-
-@media(max-width:961px) {
-
+@media (max-width: 961px) {
   .headerDomain h3 {
-  
     margin-bottom: 14px;
   }
-
-  
 }
 
 @media (max-width: 801px) {
@@ -611,10 +599,9 @@ padding: 0 20px 20px;
     padding: 20px;
   }
 
-  .left{
+  .left {
     margin: 50px 20px 50px 20px;
   }
-
 }
 @media (max-width: 480px) {
   .container {
@@ -719,7 +706,7 @@ padding: 0 20px 20px;
 
   .formDomain {
     grid-template-columns: 100%;
-    padding:  20px 0px 20px 0px;
+    /* padding:  20px 0px 20px 0px; */
     display: flex;
     margin-top: 0px;
     position: initial;
@@ -857,10 +844,8 @@ padding: 0 20px 20px;
   }
 }
 
-@media screen and (max-width:375px) {
-  
-  .iconsRegisterp{
+@media screen and (max-width: 375px) {
+  .iconsRegisterp {
     font-size: 12px;
   }
-  
 }
