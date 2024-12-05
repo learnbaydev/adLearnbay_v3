@@ -84,7 +84,8 @@ export default function DataScienceEvent({ eventData }) {
         dataScience={true}
         event={eventData.eventFeatureData.event}
         eventFullStack={eventData.eventFeatureData.eventFullStack}
-        
+        webinarLink={eventData.eventFeatureData.webinarLink}
+        fullstackEvent={eventData.eventFeatureData.fullstackEvent}
       />
 
     </div>
