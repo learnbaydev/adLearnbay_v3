@@ -13,7 +13,7 @@
         "Duration": "Dr. Darshan Ingle",
         "img": "https://d32and0ii3b8oy.cloudfront.net/main/Intro+to+Full+Stack+Web+Development.png",
         "register": "Principal Consultant",
-        "webinarLink": "https://us06web.zoom.us/webinar/register/9317333082208/WN_oKB8DePrSH64S8O3xQ3hHw",
+        "webinarLink": "https://us06web.zoom.us/rec/share/l1eovJ6mzGWLQtnLGbKJ0x8e2No5MLC1BO2fXBURDY3PPvNd5l9UKY2gjv_dv_1x.HwzB8sH6KznPoHqL?startTime=1733838635000",
         "likes": "14+ Years of Experience"
       },
       "headImg": {
@@ -23,7 +23,7 @@
     
     "eventFeatureData": {
       "heading1": "About this Masterclass",
-      "webinarLink": "https://us06web.zoom.us/webinar/register/9317333082208/WN_oKB8DePrSH64S8O3xQ3hHw",
+      "webinarLink": "https://us06web.zoom.us/rec/share/l1eovJ6mzGWLQtnLGbKJ0x8e2No5MLC1BO2fXBURDY3PPvNd5l9UKY2gjv_dv_1x.HwzB8sH6KznPoHqL?startTime=1733838635000",
       "aboutThisMasterclass": [
         "Bookmyshow, one of the most popular movie ticket booking apps, has built its platform using a well-designed Low Level Design architecture. LLD has helped them create a user-friendly interface that efficiently handles high volumes of traffic, transactions, and user requests.",
         "Our masterclass will teach you to design a Movie-Ticket Booking App similar to Bookmyshow, by understanding their LLD principles, identifying key features, and ensuring optimal performance, scalability, and security. ",
