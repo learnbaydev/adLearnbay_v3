@@ -158,14 +158,14 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           softwareBtnHide={true}
           dataScienceCounselling={true}
-          dataScience={true}
+    
           radio={true}
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
@@ -184,14 +184,14 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           data={JobData}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
 
         <WhoProgram
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
           leftImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/advance-who.webp"
           ThirdSectionData={ThirdSectionData}
@@ -212,7 +212,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           adsHide={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <GetHire />
@@ -221,7 +221,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           noWt={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <LJourney />
@@ -229,10 +229,10 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <SyllabusNew
           buttonHide={true}
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           dataScienceCounselling={true}
-          dataScience={true}
+
           masterSyllabusMobile={
             DataScienceCourseData.DataScienceCourseData[0].masterSyllabusMobile
           }
@@ -259,7 +259,7 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           // <EMI POPUP
           emiType="NO COST EMI"
@@ -276,21 +276,21 @@ function Blockchain({ DataScienceCourseDataJson, projectSection }) {
         <MobileTestimonial
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           projectSection={
             DataScienceCourseData.DataScienceCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );

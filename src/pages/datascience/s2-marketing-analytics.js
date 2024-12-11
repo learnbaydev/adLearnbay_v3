@@ -40,10 +40,10 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -63,10 +63,10 @@ function Blockchain({ DataScienceCourseDataJson }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
+        <ProjectSection interstedInHide={true}  dataScience={true} ADS={true} />
         <SyllabusNew
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           onebtn={true}
           masterSyllabusMobile={
@@ -85,8 +85,8 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
         <SeventhSection />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );

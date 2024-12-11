@@ -18,7 +18,100 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     pathname === "/events/datascience" ||
     pathname === "/datascience/OS/s2-data-science-generic" ||
     pathname === "/datascience/s3-data-science-generic" ||
+    pathname === "/datascience/s2-data-science-generic" ||
+    pathname === "/datascience/s2-ai-ml-course-generic" ||
+    pathname === "/datascience/s2-artificial-intelligence-generic" ||
+    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
+
+    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
+
+
+    pathname === "/datascience/s2-ai-ml-course-generic" ||
+
+
+
+
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
+
+    pathname === "/datascience/bangalore/s2-artificial-intelligence" ||
+    pathname === "/datascience/bangalore/s2-business-analytics" ||
+    pathname === "/datascience/bangalore/s2-data-analytics" ||
+    pathname === "/datascience/bangalore/s2-data-science" ||
+
+    pathname === "/datascience/bangalore/s2-machine-learning" ||
+    pathname === "/datascience/s2-business-analytics-generic" ||
+    pathname === "/datascience/s2-data-analytics-generic"||
+    
+    pathname === "/datascience/s2-data-science-generic"||
+
+    pathname === "/datascience/pune/s2-artificial-intelligence"||
+    pathname === "/datascience/pune/s2-business-analytics"||
+
+    pathname === "/datascience/pune/s2-data-analytics"||
+
+    pathname === "/datascience/pune/s2-data-science"||
+
+    pathname === "/datascience/pune/s2-machine-learning"||
+    pathname === "/datascience/s2-artificial-intelligence-generic"||
+    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic"||
+    pathname === "/datascience/s2-deep-learning-generic"||
+    pathname === "/datascience/s2-business-analytics-job-assistance-generic"||
+    pathname === "/datascience/s2-data-analytics-job-assistance-generic"||
+
+    pathname === "/datascience/s2-data-science-job-assistance-generic"||
+
+    pathname === "/datascience/s2-machine-learning-job-assistance-generic"||
+
+    pathname === "/datascience/s2-data-analytics-training-generic"||
+
+    pathname === "/datascience/s2-data-analytics-syllabus-generic"||
+    pathname === "/datascience/s2-artificial-intelligence-syllabus-generic"||
+
+
+
+    pathname === "/datascience/s2-artificial-intelligence-training-generic"||
+
+    pathname === "/datascience/s2-business-analytics-syllabus-generic"||
+
+    pathname === "/datascience/s2-business-analytics-training-generic"||
+
+    pathname === "/datascience/s2-machine-learning-syllabus-generic"||
+
+
+    pathname === "/datascience/s2-machine-learning-training-generic"||
+    pathname === "/datascience/s2-data-science-banking"||
+
+    pathname === "/datascience/s2-hr-analytics"||
+
+    pathname === "/datascience/s2-masters-in-data-science-and-analytics"||
+    pathname === "/datascience/s2-masters-in-ai-and-ml"||
+
+    pathname === "/datascience/s2-data-science-advance-generic"||
+    pathname === "/datascience/s2-masters-in-ai-and-ml"||
+
+
+    pathname === "/datascience/s2-data-science-master"||
+
+    pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program"||
+
+    
+    pathname === "/ads/generic"||
+
+    pathname === "/datascience/hyderabad/s2-machine-learning"||
+    pathname === "/datascience/hyderabad/s2-artificial-intelligence"||
+    pathname === "/datascience/hyderabad/s2-data-science"||
+    pathname === "/datascience/hyderabad/s2-data-analytics"||
+    pathname === "/datascience/hyderabad/s2-business-analytics"||
+    pathname === "/datascience/chennai/s2-artificial-intelligence"||
+    pathname === "/datascience/chennai/s2-machine-learning"||
+    pathname === "/datascience/chennai/s2-data-science"||
+    pathname === "/datascience/chennai/s2-data-analytics"||
+    pathname === "/datascience/chennai/s2-business-analytics"||
+    pathname === "/fullstack/s2-dsa-and-system-design"||
+
+
+
+
     pathname === "/scholarship-ads" ||
     pathname === "/walk-in-counselling" ||
     pathname === "/ads/generic" ||

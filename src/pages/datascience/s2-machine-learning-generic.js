@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { ThirdSectionData } from "@/Data/ThirdSectionData";
 import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
@@ -153,14 +154,14 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           softwareBtnHide={true}
           dataScienceCounselling={true}
-          dataScience={true}
+
           radio={true}
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
@@ -179,14 +180,14 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
           data={JobData}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+  
           ADS={true}
         />
 
         <WhoProgram
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
           leftImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/advance-who.webp"
           ThirdSectionData={ThirdSectionData}
@@ -207,7 +208,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
           adsHide={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+      
           ADS={true}
         />
         <GetHire />
@@ -216,7 +217,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
           noWt={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <LJourney />
@@ -224,10 +225,10 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
         <SyllabusNew
           buttonHide={true}
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           dataScienceCounselling={true}
-          dataScience={true}
+
           masterSyllabusMobile={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
               .masterSyllabusMobile
@@ -257,7 +258,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           // <EMI POPUP
           emiType="NO COST EMI"
@@ -274,12 +275,12 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
         <MobileTestimonial
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           projectSection={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
@@ -287,9 +288,9 @@ function Blockchain({ AIMLDataScienceCourseDataJson, projectSection }) {
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );

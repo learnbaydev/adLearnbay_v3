@@ -49,10 +49,10 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -77,7 +77,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
 
         <SyllabusNew
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           masterSyllabusMobile={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0]
@@ -107,7 +107,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           titleCourse="Advanced Data Science and AI Program with domain specialization"
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
@@ -134,16 +134,16 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <MentorsSection />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           projectSection={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat OS={true} />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );

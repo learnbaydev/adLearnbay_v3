@@ -147,14 +147,14 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           softwareBtnHide={true}
           dataScienceCounselling={true}
-          dataScience={true}
+
           radio={true}
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
@@ -174,7 +174,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           data={JobData}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+     
           ADS={true}
         />
 
@@ -194,7 +194,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           adsHide={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <GetHire />
@@ -203,7 +203,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           noWt={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <LJourney />
@@ -211,10 +211,10 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <SyllabusNew
           buttonHide={true}
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           dataScienceCounselling={true}
-          dataScience={true}
+   
           masterSyllabusMobile={
             DataAnalyticsdata.DADataScienceCourseData[0].masterSyllabusMobile
           }
@@ -241,7 +241,7 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           // <EMI POPUP
           emiType="NO COST EMI"
@@ -258,21 +258,21 @@ function Blockchain({ DataAnalyticsdataJson, projectSection }) {
         <MobileTestimonial
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+     
           ADS={true}
         />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           projectSection={
             DataAnalyticsdata.DADataScienceCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );

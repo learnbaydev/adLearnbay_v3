@@ -48,10 +48,10 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar formotp={true} ADS={true} interstedInHide={true} />
+        <Navbar  dataScience={true} ADS={true} interstedInHide={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="Advance Data Science & AI Program with Domain Specialization"
@@ -72,12 +72,12 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           third="Early to mid-career professionals interested in data science"
           forth="Developing skills in data science for future opportunities"
         />
-        <ProjectSection interstedInHide={true} formotp={true} ADS={true} />
+        <ProjectSection interstedInHide={true}  dataScience={true} ADS={true} />
         <GetHire />
 
         <SyllabusNew
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           masterSyllabusMobile={
             DataScienceMastersinCS.DataScienceMastersinCS[0]
@@ -105,7 +105,7 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           // EMI POPUPDATA
           emiType="NO COST EMI"
@@ -129,16 +129,16 @@ function Blockchain({ DataScienceMastersinCSJson, projectSection }) {
         <MentorsSection />
         <NewProjectSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           projectSection={
             DataScienceMastersinCS.DataScienceMastersinCS[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );
