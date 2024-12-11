@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { parseJSONData } from "@/Util/JsonConvertor";
 import dynamic from "next/dynamic";
 import Head from "next/head";

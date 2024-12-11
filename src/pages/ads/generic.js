@@ -132,9 +132,9 @@ export default function Home() {
       </Head>
       <Navbar
         radio={true}
-        formotp={true}
+         dataScience={true}
         interstedInHide={true}
-        dataScience={true}
+
         ADS={true}
       />
 
@@ -146,7 +146,7 @@ export default function Home() {
         interstedInHide={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+
         ADS={true}
       />
       <Course
@@ -156,7 +156,7 @@ export default function Home() {
         newDesign={true}
         dataScienceGeneric={true}
         interstedInHide={true}
-        formotp={true}
+
         ADS={true}
       />
       <WhyLearnbay />
@@ -165,7 +165,7 @@ export default function Home() {
         interstedInHide={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+
         ADS={true}
       />
       <div className="realstory">
@@ -178,7 +178,7 @@ export default function Home() {
         interstedInHide={true}
         dataScience={true}
         organicADS={true}
-        formotp={true}
+
         ADS={true}
       />
 
@@ -187,7 +187,7 @@ export default function Home() {
       <MobileTestimonial
         dataScience={true}
         interstedInHide={true}
-        formotp={true}
+
         ADS={true}
         radio={true}
       />
@@ -198,7 +198,7 @@ export default function Home() {
         interstedInHide={true}
         radio={true}
         dataScience={true}
-        formotp={true}
+
         ADS={true}
       />
       <WhatsappFloat OS={true} />
@@ -206,7 +206,7 @@ export default function Home() {
         interstedInHide={true}
         radio={true}
         dataScience={true}
-        formotp={true}
+
         ADS={true}
       />
     </>

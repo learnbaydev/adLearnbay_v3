@@ -126,14 +126,14 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} formotp={true} ADS={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true} />
         <FirstSection
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           noImg={true}
           dataScienceCounselling={true}
-          dataScience={true}
+  
           radio={true}
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
@@ -158,7 +158,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           data={JobData}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
@@ -176,7 +176,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           noWt={true}
           dataScience={true}
           interstedInHide={true}
-          formotp={true}
+
           ADS={true}
         />
         <LJourney />
@@ -184,10 +184,10 @@ function Blockchain({ DataScienceCourseDataJson }) {
         <SyllabusNew
           buttonHide={true}
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           dataScienceCounselling={true}
-          dataScience={true}
+
           masterSyllabusMobile={
             DataScienceCourseData.DsaSystemDesign[0].masterSyllabusMobile
           }
@@ -213,7 +213,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           WeekdayTime="08:00PM - 10:00PM"
           FeeContent3="Flexible payment"
           interstedInHide={true}
-          formotp={true}
+           dataScience={true}
           ADS={true}
           HideThird={true}
 
@@ -230,9 +230,9 @@ function Blockchain({ DataScienceCourseDataJson }) {
 
         <SliderTabs WithoutService={true} />
         <SeventhSection />
-        <EightSection interstedInHide={true} formotp={true} ADS={true} />
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true} formotp={true} ADS={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
       </main>
     </>
   );
