@@ -104,7 +104,7 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience, OS }) => {
               </span>
             </div>
           </div>
-          <a href="/">
+          <Link href="/">
             <Image
               src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
               alt="Learnbay"
@@ -114,7 +114,7 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience, OS }) => {
               width={mobile ? "135" : "230"}
               height={60}
             />
-          </a>
+          </Link>
         </div>
         <div className={styles.right}>
           <div className={styles.dropdown}>
@@ -122,32 +122,32 @@ const Navbar = ({ radio, formotp, interstedInHide, dataScience, OS }) => {
               All Courses <FaChevronDown style={{ marginLeft: "5px" }} />
             </button>
             <div className={styles.dropdownContent}>
-              <a href="/datascience/data-science-certification-courses">
+              <Link href="/datascience/data-science-certification-courses">
                 Advance Data Science & AI Certification
-              </a>
+              </Link>
               {/* <a href="/fswd">  Web Development Program</a> */}
-              <a href="/fullstack/fssd">
+              <Link href="/fullstack/fssd">
                 Software Development Certification Program
-              </a>
+              </Link>
               {/* <a href="/fullstack/dsa">DSA & System Design</a> */}
-              <a href="/datascience/advance-ai-ml-certification">
+              <Link href="/datascience/advance-ai-ml-certification">
                 Advance AI & ML Certification
-              </a>
+              </Link>
               {/* <a href="/datascience/data-science-ai-cert-for-managers-leaders">
                 Data Science & AI Cert. For Managers & Leaders
               </a> */}
-              <a href="/datascience/data-science-ai-masters-program">
+              <Link href="/datascience/data-science-ai-masters-program">
                 Master in CS: Data Science and AI
-              </a>
-              <a href="/datascience/business-analytics-certification-course">
+              </Link>
+              <Link href="/datascience/business-analytics-certification-course">
                 Business Analytics Program
-              </a>
-              <a href="/datascience/data-analytics-certification-course">
+              </Link>
+              <Link href="/datascience/data-analytics-certification-course">
                 Data Analytics Program
-              </a>
-              <a href="/cloud&devops/cloud-computing-and-devOps-certification-program">
+              </Link>
+              <Link href="/cloud&devops/cloud-computing-and-devOps-certification-program">
                 Cloud Computing & DevOps Certification Program
-              </a>
+              </Link>
             </div>
           </div>
 

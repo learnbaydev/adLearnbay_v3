@@ -9,6 +9,13 @@ const getEndPoint = (pathname, event, eventFullStack) => {
   if (eventFullStack) {
     endPoint = "https://getform.io/f/69076866-e1f7-4cf3-a7d2-12603819a5a4";
   }
+
+  if (
+    pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
+    pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program"
+  ) {
+    endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
+  }
   if (
     pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
     pathname === "/datascience/s2-data-science-ai-masters-program" ||
@@ -21,97 +28,60 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     pathname === "/datascience/s2-data-science-generic" ||
     pathname === "/datascience/s2-ai-ml-course-generic" ||
     pathname === "/datascience/s2-artificial-intelligence-generic" ||
-    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
-
-    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
-
-
+    pathname ===
+      "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
+    pathname ===
+      "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
     pathname === "/datascience/s2-ai-ml-course-generic" ||
-
-
-
-
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
-
     pathname === "/datascience/bangalore/s2-artificial-intelligence" ||
     pathname === "/datascience/bangalore/s2-business-analytics" ||
     pathname === "/datascience/bangalore/s2-data-analytics" ||
     pathname === "/datascience/bangalore/s2-data-science" ||
-
     pathname === "/datascience/bangalore/s2-machine-learning" ||
     pathname === "/datascience/s2-business-analytics-generic" ||
-    pathname === "/datascience/s2-data-analytics-generic"||
-    
-    pathname === "/datascience/s2-data-science-generic"||
-
-    pathname === "/datascience/pune/s2-artificial-intelligence"||
-    pathname === "/datascience/pune/s2-business-analytics"||
-
-    pathname === "/datascience/pune/s2-data-analytics"||
-
-    pathname === "/datascience/pune/s2-data-science"||
-
-    pathname === "/datascience/pune/s2-machine-learning"||
-    pathname === "/datascience/s2-artificial-intelligence-generic"||
-    pathname === "/datascience/s2-artificial-intelligence-job-assistance-generic"||
-    pathname === "/datascience/s2-deep-learning-generic"||
-    pathname === "/datascience/s2-business-analytics-job-assistance-generic"||
-    pathname === "/datascience/s2-data-analytics-job-assistance-generic"||
-
-    pathname === "/datascience/s2-data-science-job-assistance-generic"||
-
-    pathname === "/datascience/s2-machine-learning-job-assistance-generic"||
-
-    pathname === "/datascience/s2-data-analytics-training-generic"||
-
-    pathname === "/datascience/s2-data-analytics-syllabus-generic"||
-    pathname === "/datascience/s2-artificial-intelligence-syllabus-generic"||
-
-
-
-    pathname === "/datascience/s2-artificial-intelligence-training-generic"||
-
-    pathname === "/datascience/s2-business-analytics-syllabus-generic"||
-
-    pathname === "/datascience/s2-business-analytics-training-generic"||
-
-    pathname === "/datascience/s2-machine-learning-syllabus-generic"||
-
-
-    pathname === "/datascience/s2-machine-learning-training-generic"||
-    pathname === "/datascience/s2-data-science-banking"||
-
-    pathname === "/datascience/s2-hr-analytics"||
-
-    pathname === "/datascience/s2-masters-in-data-science-and-analytics"||
-    pathname === "/datascience/s2-masters-in-ai-and-ml"||
-
-    pathname === "/datascience/s2-data-science-advance-generic"||
-    pathname === "/datascience/s2-masters-in-ai-and-ml"||
-
-
-    pathname === "/datascience/s2-data-science-master"||
-
-    pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program"||
-
-    
-    pathname === "/ads/generic"||
-
-    pathname === "/datascience/hyderabad/s2-machine-learning"||
-    pathname === "/datascience/hyderabad/s2-artificial-intelligence"||
-    pathname === "/datascience/hyderabad/s2-data-science"||
-    pathname === "/datascience/hyderabad/s2-data-analytics"||
-    pathname === "/datascience/hyderabad/s2-business-analytics"||
-    pathname === "/datascience/chennai/s2-artificial-intelligence"||
-    pathname === "/datascience/chennai/s2-machine-learning"||
-    pathname === "/datascience/chennai/s2-data-science"||
-    pathname === "/datascience/chennai/s2-data-analytics"||
-    pathname === "/datascience/chennai/s2-business-analytics"||
-    pathname === "/fullstack/s2-dsa-and-system-design"||
-
-
-
-
+    pathname === "/datascience/s2-data-analytics-generic" ||
+    pathname === "/datascience/s2-data-science-generic" ||
+    pathname === "/datascience/pune/s2-artificial-intelligence" ||
+    pathname === "/datascience/pune/s2-business-analytics" ||
+    pathname === "/datascience/pune/s2-data-analytics" ||
+    pathname === "/datascience/pune/s2-data-science" ||
+    pathname === "/datascience/pune/s2-machine-learning" ||
+    pathname === "/datascience/s2-artificial-intelligence-generic" ||
+    pathname ===
+      "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
+    pathname === "/datascience/s2-deep-learning-generic" ||
+    pathname === "/datascience/s2-business-analytics-job-assistance-generic" ||
+    pathname === "/datascience/s2-data-analytics-job-assistance-generic" ||
+    pathname === "/datascience/s2-data-science-job-assistance-generic" ||
+    pathname === "/datascience/s2-machine-learning-job-assistance-generic" ||
+    pathname === "/datascience/s2-data-analytics-training-generic" ||
+    pathname === "/datascience/s2-data-analytics-syllabus-generic" ||
+    pathname === "/datascience/s2-artificial-intelligence-syllabus-generic" ||
+    pathname === "/datascience/s2-artificial-intelligence-training-generic" ||
+    pathname === "/datascience/s2-business-analytics-syllabus-generic" ||
+    pathname === "/datascience/s2-business-analytics-training-generic" ||
+    pathname === "/datascience/s2-machine-learning-syllabus-generic" ||
+    pathname === "/datascience/s2-machine-learning-training-generic" ||
+    pathname === "/datascience/s2-data-science-banking" ||
+    pathname === "/datascience/s2-hr-analytics" ||
+    pathname === "/datascience/s2-masters-in-data-science-and-analytics" ||
+    pathname === "/datascience/s2-masters-in-ai-and-ml" ||
+    pathname === "/datascience/s2-data-science-advance-generic" ||
+    pathname === "/datascience/s2-masters-in-ai-and-ml" ||
+    pathname === "/datascience/s2-data-science-master" ||
+    pathname === "/ads/generic" ||
+    pathname === "/datascience/hyderabad/s2-machine-learning" ||
+    pathname === "/datascience/hyderabad/s2-artificial-intelligence" ||
+    pathname === "/datascience/hyderabad/s2-data-science" ||
+    pathname === "/datascience/hyderabad/s2-data-analytics" ||
+    pathname === "/datascience/hyderabad/s2-business-analytics" ||
+    pathname === "/datascience/chennai/s2-artificial-intelligence" ||
+    pathname === "/datascience/chennai/s2-machine-learning" ||
+    pathname === "/datascience/chennai/s2-data-science" ||
+    pathname === "/datascience/chennai/s2-data-analytics" ||
+    pathname === "/datascience/chennai/s2-business-analytics" ||
+    pathname === "/fullstack/s2-dsa-and-system-design" ||
     pathname === "/scholarship-ads" ||
     pathname === "/walk-in-counselling" ||
     pathname === "/ads/generic" ||
@@ -125,8 +95,6 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     pathname === "/datascience/business-analytics-certification-course" ||
     pathname === "/datascience/data-analytics-certification-course" ||
     pathname === "/apply-for-counselling-offer" ||
-    pathname ===
-      "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/OS/sp/s2-data-science-generic"
   ) {
     endPoint = "https://getform.io/f/c803e186-7053-4f33-9f49-909cc11e32bc";
@@ -159,12 +127,6 @@ const getEndPoint = (pathname, event, eventFullStack) => {
   ) {
     endPoint = "https://getform.io/f/fd9da107-864c-4617-a52a-7e112297efa6";
   }
-  if (
-    pathname ===
-    "/cloud&devops/s3-cloud-computing-and-devOps-certification-program"
-  ) {
-    endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
-  }
 
   if (pathname === "/apply-for-counselling-email-marketing") {
     endPoint = "https://getform.io/f/94c74039-f505-4ebf-922e-b4728bd793e3";
@@ -172,7 +134,7 @@ const getEndPoint = (pathname, event, eventFullStack) => {
   if (pathname === "/google") {
     endPoint = "https://getform.io/f/1cfd5db8-ec05-4d26-b05f-6b73a81ebf89";
   }
- 
+
   return endPoint;
   // ... (Logic to determine the endpoint based on the router)
 };
@@ -202,7 +164,7 @@ const redirectionThankYou = (
   if (event) {
     routerPath = "/event/Thank-You-event";
   }
-  if(eventFullStack){
+  if (eventFullStack) {
     routerPath = "/event/Thank-You-event";
   }
   if (dataScience) {
