@@ -10,12 +10,12 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     endPoint = "https://getform.io/f/69076866-e1f7-4cf3-a7d2-12603819a5a4";
   }
 
-  if (
-    pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
-    pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program"
-  ) {
-    endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
-  }
+  // if (
+  //   pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
+  //   pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program"
+  // ) {
+  //   endPoint = "https://getform.io/f/785b3539-e7ce-497c-a975-0dc288c3286c";
+  // }
   if (
     pathname === "/datascience/OS/s2-masters-in-data-science-and-ai" ||
     pathname === "/datascience/s2-data-science-ai-masters-program" ||
@@ -32,6 +32,8 @@ const getEndPoint = (pathname, event, eventFullStack) => {
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
     pathname ===
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
+       pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program" ||
+       pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/s2-ai-ml-course-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/datascience/bangalore/s2-artificial-intelligence" ||
