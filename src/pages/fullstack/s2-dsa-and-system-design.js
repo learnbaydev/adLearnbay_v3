@@ -201,8 +201,8 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
 
         <DSAFeeSection
-          Fee="₹ 75,000"
-          FeeEmi="₹ 4,916/month"
+          Fee="₹ 95,000"
+          FeeEmi="₹ 6,228/month"
           weekendbatch="Weekday Evening (DSA BATCHES)"
           weekdaybatch="Weekday Evening (DSA BATCHES)"
           weekday="MON-WED-FRI"
@@ -220,12 +220,12 @@ function Blockchain({ DataScienceCourseDataJson }) {
           // <EMI POPUP
           emiType="NO COST EMI"
           duration1="18 Months"
-          totalAmount1="₹75,000"
-          monthlyPayment1="₹4,916"
+          totalAmount1="₹95,000"
+          monthlyPayment1="₹9,342"
           greenDown1="Standard Intrest rate Applicable"
           duration2="12 Months"
-          totalAmount2="₹75,000"
-          monthlyPayment2="₹7,375"
+          totalAmount2="₹95,000"
+          monthlyPayment2="₹9,342"
           />
 
         <SliderTabs WithoutService={true} />

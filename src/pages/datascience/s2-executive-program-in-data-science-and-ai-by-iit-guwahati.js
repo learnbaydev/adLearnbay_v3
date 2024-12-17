@@ -31,6 +31,7 @@ import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import DSAFeeSection from "@/components/CoursePage/dsaFee/DSAFeeSection";
 
 function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
   const ExcutiveProgramAIDS = parseJSONData(ExcutiveProgramAIDSJson);
@@ -265,15 +266,15 @@ function Blockchain({ ExcutiveProgramAIDSJson, projectSection }) {
           Imgno={true}
           isGuwahati={true}
         />
-        <FeeSection
-          Fee="₹ 1,25,000"
+        <DSAFeeSection
+          Fee="₹ 1,90,000"
           FeeEmi="12,455/month          "
-          weekdaybatch="Weekday Batch"
+          weekdaybatch="Weekend Batch"
           weekendbatch="Weekday Batch"
-          weekday="MON - FRI"
+          weekday="SAT - SUN"
           weekend="MON - FRI"
-          WeekdayDate="Sep 29th"
-          WeekendDate="Aug 16th"
+          WeekdayDate="Jan 5th"
+          WeekendDate="Dec 13th"
           WeekdayTime="9:30 AM - 01:00 PM"
           WeekendTime="8:00 PM - 10:00 PM"
           FeeContent3="Flexible payment"
