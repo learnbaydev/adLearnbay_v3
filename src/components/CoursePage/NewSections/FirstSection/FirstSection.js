@@ -38,7 +38,9 @@ function FirstSection({
   formotp,
   ADS,
   DSA,
+  cyber,
   microsoftOnly,
+  workingPro,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -91,6 +93,7 @@ function FirstSection({
         noImg={noImg}
         DSA={DSA}
         microsoftOnly={microsoftOnly}
+        cyber={cyber}
       />
     </>
   );

@@ -149,6 +149,13 @@ function Blockchain({ DataScienceCourseDataJson }) {
           backgorunimg={true}
           backgroundImage="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/dsa_backgrounds.webp"
           microsoftOnly={true}
+          workingPro={true}
+        />
+        <WhoIsProgram
+          first="Bachelor’s degree with consistent good academic"
+          second="1+ year(s) experience in IT domain"
+          third="For working professionals with technical experience"
+          forth="For professionals seeking DSA & System Design skills"
         />
         <PSummaryAD
           summaryData={DataScienceCourseData.DsaSystemDesign[0].summarySection}
@@ -163,12 +170,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <FullStackSecondSection />
-        <WhoIsProgram
-          first="Bachelor’s degree with consistent good academic"
-          second="1+ year(s) experience in IT domain"
-          third="For working professionals with technical experience"
-          forth="For professionals seeking DSA & System Design skills"
-        />
+        
         <AnimationDSA />
         <GetHire />
 

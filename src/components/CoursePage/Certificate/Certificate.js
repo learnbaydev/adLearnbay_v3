@@ -4,7 +4,8 @@ import CertificateTabAdvance from "./CertificateTabAdvance";
 const Certificate = ({
   NoCertificate,
   data,
-  singlecertificate
+  singlecertificate,
+  cyber,
 }) => {
   return NoCertificate ? (
     ""
@@ -17,6 +18,7 @@ const Certificate = ({
         projectCertificate={data.projectCertificate}
         microCertificate={data.microCertificate}
         data={data}
+        cyber={cyber}
       />
     </div>
   );
