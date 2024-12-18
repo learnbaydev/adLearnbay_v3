@@ -68,7 +68,20 @@ font-weight: 400;
 line-height: 109%;
 }
 
-
+.CyberpanH1{
+    color: #FFF;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: 120.2%; /* 54.09px */
+letter-spacing: 0.45px;
+width: 100%;
+max-width: 80%;
+background: linear-gradient(270deg, #FFC6C6 5.73%, #8EC8FF 98.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .DsaH1{
   background: linear-gradient(90deg, #FE7A36 0.02%, #FFC436 49.93%);
   background-clip: text;
@@ -409,6 +422,12 @@ line-height: 109%;
   }
 
 
+  .CyberpanH1{
+    font-size: 26px;
+  }
+  .iHubdiv{
+    padding: 0 26px;
+  }
 
 }
 @media (max-width: 481px) {
