@@ -94,6 +94,7 @@ function FirstSection({
         DSA={DSA}
         microsoftOnly={microsoftOnly}
         cyber={cyber}
+        workingPro={workingPro}
       />
     </>
   );
