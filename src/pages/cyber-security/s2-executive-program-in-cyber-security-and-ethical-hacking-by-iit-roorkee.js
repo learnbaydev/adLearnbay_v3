@@ -181,7 +181,7 @@ function Blockchain({ DataScienceCourseDataJson, whyChooseData }) {
           upSkillingHide={true}
           ThirdTyped="Live Interactive Classes"
           titleCourse="DSA & System Design Program for working professionals"
-          cityParaCont="with Gen-AI for Software Developers"
+          cityParaCont=""
           brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cyber-Security-IIT.pdf"
           FirstRightImg="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Adv-dsai-_1_-min.webp"
           firstToparaImg="Cyber Security & Ethical Hacking"
