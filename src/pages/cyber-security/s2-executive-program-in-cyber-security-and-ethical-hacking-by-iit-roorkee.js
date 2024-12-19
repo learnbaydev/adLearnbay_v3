@@ -219,7 +219,7 @@ function Blockchain({ DataScienceCourseDataJson, whyChooseData }) {
           first="Graduation or Masters with Work experience."
           second="Minimum 1 year of IT work experience"
           third="Entry to Mid Level Professionals with 1+ Years of Experience"
-          forth="Achieving higher career growth in data science and AI"
+          forth="Achieving higher career growth in cyber security"
         />
 
         <GetHire />
