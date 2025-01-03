@@ -216,6 +216,9 @@
 .spanTrainerImg span {
   border-radius: 10px;
 }
+.imgTra {
+border-radius: 8px;
+}
 
 .webinarInfo {
   display: grid ;

@@ -145,6 +145,7 @@ const EventFeature = ({
                   height="100"
                   loading="lazy"
                   alt="backImg"
+                  className={styles.imgTra}
                 />
               </div>
             )}
