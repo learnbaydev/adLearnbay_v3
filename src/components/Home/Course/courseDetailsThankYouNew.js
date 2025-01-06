@@ -121,6 +121,14 @@ export const fullStackD = [
     link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/DSA.pdf",
   },
+
+  {
+    id: 4,
+    title: "Executive Certification in Cyber Security & Ethical Hacking",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cyber-Security-IIT.pdf",
+  },
 ];
 
 export const nonTechD = [
