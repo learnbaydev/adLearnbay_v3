@@ -115,7 +115,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>DSA & Cloud Computing Syllabus</p>
+            <p>DSA / Cloud Computing / Cyber Security Syllabus</p>
             <p>
               <FaChevronDown className="Icons" style={{ fontWeight: "600" }} />
             </p>
@@ -358,7 +358,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            DSA & Cloud Computing Syllabus
+            DSA / Cloud Computing / Cyber Security Syllabus
           </span>
           <div className={styles.line}></div>
           <span

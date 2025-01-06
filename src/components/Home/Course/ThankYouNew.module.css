@@ -29,7 +29,7 @@
 .listPanel {
   display: flex;
   justify-content: center;
-  padding: 30px 0px;
+  padding: 30px;
   gap: 20px;
   background: #009ce7;
 }
