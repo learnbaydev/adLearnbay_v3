@@ -17,6 +17,7 @@ const ContactCounsellor = ({
   noWt,
   formotp,
   ADS,
+  demoSessionButton
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -89,7 +90,7 @@ const ContactCounsellor = ({
           ></div>
         </div>
         <div className="RightPopup">
-          <h5>Apply For Counselling</h5>
+{demoSessionButton ? (          <h5>Book Demo Session</h5>):(          <h5>Apply For Counselling</h5>)}
           {formotp ? (
             <FormOtp
               titleCourse={titleCourse}
@@ -149,9 +150,14 @@ const ContactCounsellor = ({
         )}
 
         <div className={styles.consbtn1} onClick={popupShow}>
-          <button className={styles.consbtn} onClick={null}>
-            Apply for counselling
-          </button>
+         {
+demoSessionButton ? (<button className={styles.consbtn} onClick={null}>
+  Book Demo Session
+  </button>):(<button className={styles.consbtn} onClick={null}>
+Apply for counselling
+</button>)
+
+         }
         </div>
       </div>
       <div className={styles.conimg}>

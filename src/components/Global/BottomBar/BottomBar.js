@@ -16,6 +16,7 @@ const BottomBar = ({
   dataScience,
   radio,
   DomainInput,
+  demoSessionButton,
 }) => {
   const [popups, setPopups] = useState(false);
 
@@ -27,7 +28,7 @@ const BottomBar = ({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Apply for Counselling"
+        heading={  demoSessionButton ? ("Book Demo Session"):("Apply for Counselling")}
         interstedInHide={interstedInHide}
         upSkillingHide={true}
         ADS={ADS}
@@ -43,10 +44,19 @@ const BottomBar = ({
           <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
         </div>
       ) : (
-        <div className="flDivLeft" onClick={popupShow}>
-          Apply For Counselling
-          <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
-        </div>
+        <>
+          {demoSessionButton ? (
+            <div className="flDivLeft" onClick={popupShow}>
+   Book Demo Session
+
+            </div>
+          ) : (
+            <div className="flDivLeft" onClick={popupShow}>
+              Apply For Counselling
+              <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
+            </div>
+          )}
+        </>
       )}
 
       {whatsappShow ? (

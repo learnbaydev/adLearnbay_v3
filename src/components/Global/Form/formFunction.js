@@ -179,6 +179,10 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
+
+  if (pathname === "/fullstack/s2-dsa-and-system-design") {
+    routerPath = "https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session";
+  }
   if (
     pathname === "/walk-in-counselling" ||
     pathname === "/marketing/walk-in-counselling"

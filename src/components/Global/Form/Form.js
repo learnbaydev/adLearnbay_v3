@@ -13,6 +13,8 @@ import {
   redirectionThankYou,
 } from "./formFunction";
 
+
+
 const Form = ({
   popup,
   setTrigger,
@@ -38,6 +40,7 @@ const Form = ({
   offerFestive,
 }) => {
   const router = useRouter();
+  const isFullStackPath = router.pathname === "/fullstack/s2-dsa-and-system-design";
 
   const [formFields, setFormFields] = useState(
     getFormFields(
@@ -158,6 +161,9 @@ const Form = ({
   if (learning) {
     btnText = "Download Resources";
   }
+  if (router.pathname === "/fullstack/s2-dsa-and-system-design") {
+  btnText = "Book Demo Session";  // Set button text for the specific path
+}
 
   const [dateTimeError, setDateTimeError] = useState("");
 
@@ -480,10 +486,12 @@ const Form = ({
                   disabled={submitting}
                 >
                   {submitting
-                    ? "Submitting..."
-                    : downloadBrochure
-                    ? "Download Now"
-                    : btnText}
+              ? "Submitting..."
+              : isFullStackPath
+              ? "Book Demo Session"
+              : downloadBrochure
+              ? "Download Now"
+              : btnText}
                   {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </div>
@@ -498,11 +506,13 @@ const Form = ({
                   className={styles.button}
                   disabled={submitting}
                 >
-                  {submitting
-                    ? "Submitting..."
-                    : downloadBrochure
-                    ? "Download Now"
-                    : btnText}
+                 {submitting
+              ? "Submitting..."
+              : isFullStackPath
+              ? "Book Demo Session"
+              : downloadBrochure
+              ? "Download Now"
+              : btnText}
                   {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </>

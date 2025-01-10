@@ -21,6 +21,7 @@ function SyllabusNew({
   isGuwahati,
   formotp,
   ADS,
+  demoSessionButton,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -40,7 +41,7 @@ function SyllabusNew({
           upSkillingHide={true}
           popups={popups}
           setPopups={setPopups}
-          heading="Download Syllabus"
+          heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
           formotp={formotp}
           ADS={ADS}
         />
@@ -82,9 +83,16 @@ function SyllabusNew({
                   )}
                 </h4>
               ) : (
-                <h4>
-                  Free Consultation with<span> Expert</span>
-                </h4>
+              <>
+                {
+                  demoSessionButton ? (<h4>
+                    {}
+Book Demo Session
+                  </h4>):(<h4>
+                    {}
+                    Free Consultation with<span> Expert</span>
+                  </h4>)
+                }</>
               )}
               {formotp ? (
                 <FormOtp
@@ -119,11 +127,18 @@ function SyllabusNew({
         <div className={styles.buttonDiv}>
           {buttonHide ? "" : <></>}
           <div onClick={popupShow}>
-            <Button
-              nobannerButton={true}
-              text="DOWNLOAD SYLLABUS"
-              // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
-            />
+            {
+
+demoSessionButton ? (<Button
+                nobannerButton={true}
+                text="Book Demo Session"
+                // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+              />):(<Button
+                nobannerButton={true}
+                text="DOWNLOAD SYLLABUS"
+                // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+              />)
+            }
           </div>
         </div>
       </div>
