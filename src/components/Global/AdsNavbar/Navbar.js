@@ -26,6 +26,7 @@ const Navbar = ({
   DomainInput,
   fullstackEvent,
   webinarLink,
+  bookDemoSeesion,
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -58,7 +59,13 @@ const Navbar = ({
           {ApplyS2 ? (
             <h5>Apply for Counsellling</h5>
           ) : (
-            <h5>Download Syllabus</h5>
+            <>
+              {bookDemoSeesion ? (
+                <h5>Book Demo Session                </h5>
+              ) : (
+                <h5>Download Syllabus</h5>
+              )}
+            </>
           )}
 
           {ApplyS2 ? (
@@ -140,15 +147,11 @@ const Navbar = ({
               {fullstackEvent ? (
                 <>
                   {" "}
-                <Link href={webinarLink}>
-                
-                <div >
-                    <Button
-                      text="Register Now"
-                      outline={true}
-
-                    />
-                  </div></Link>
+                  <Link href={webinarLink}>
+                    <div>
+                      <Button text="Register Now" outline={true} />
+                    </div>
+                  </Link>
                 </>
               ) : (
                 <>
@@ -157,11 +160,16 @@ const Navbar = ({
                     ""
                   ) : (
                     <div onClick={popupShow}>
-                      <Button
+                     {
+                      bookDemoSeesion ? ( <Button
+                        text="Book Demo Session"
+                        outline={true}
+                      />):( <Button
                         text="Download Syllabus"
                         outline={true}
                         passIcon={<FaDownload className={styles.icon} />}
-                      />
+                      />)
+                     }
                     </div>
                   )}
                 </>

@@ -16,6 +16,7 @@ function EightSection({
   HideInterest,
   upSkilling,
   DomainInput,
+  demoSessionButton
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -47,7 +48,7 @@ function EightSection({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Download Syllabus"
+        heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
         downloadBrochure
         interstedInHide={interstedInHide}
         upSkillingHide={true}
@@ -64,7 +65,14 @@ function EightSection({
         </p>
       </div>
       <div onClick={popupShow} className={styles.btnInner}>
-        {DownloadSyllabus ? (
+      {
+
+demoSessionButton ? ( <Button
+  className={styles.buttonDiv}
+  text="Book Demo Session"
+
+  invert
+/>):(<>  {DownloadSyllabus ? (
           <Button
             className={styles.buttonDiv}
             text="Download Syllabus"
@@ -78,7 +86,8 @@ function EightSection({
             passIcon={<FaDownload className={styles.icon} />}
             invert
           />
-        )}
+        )}</>)
+      }
       </div>
     </section>
   );

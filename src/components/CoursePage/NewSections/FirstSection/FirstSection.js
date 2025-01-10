@@ -41,6 +41,7 @@ function FirstSection({
   cyber,
   microsoftOnly,
   workingPro,
+  demoSessionButton,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -50,7 +51,7 @@ function FirstSection({
       <PopupContent
         popups={popups}
         setPopups={setPopups}
-        heading="Download Syllabus"
+        heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
         downloadBrochure
         dataScience={true}
         interstedInHide={interstedInHide}
@@ -95,6 +96,7 @@ function FirstSection({
         microsoftOnly={microsoftOnly}
         cyber={cyber}
         workingPro={workingPro}
+        demoSessionButton={ demoSessionButton}
       />
     </>
   );

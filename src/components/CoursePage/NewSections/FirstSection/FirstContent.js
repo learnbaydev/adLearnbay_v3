@@ -48,6 +48,7 @@ const FirstContent = ({
   DSA,
   microsoftOnly,
   cyber,
+  demoSessionButton,
 }) => {
   const texts = [
     "Guaranteed Interview Calls",
@@ -297,47 +298,54 @@ const FirstContent = ({
               ) : (
                 <>
                   {" "}
-                 {workingPro ? (  <div className={styles.animationTextWrap}>
-                      <span className={styles.animationText}>
-                      Only for Working Professionals
-                      </span>
-                    </div>):(<> {fresher ? (
+                  {workingPro ? (
                     <div className={styles.animationTextWrap}>
                       <span className={styles.animationText}>
-                        Guaranteed Interview Calls
+                        Only for Working Professionals
                       </span>
                     </div>
                   ) : (
                     <>
-                      {IBMGl ? (
+                      {" "}
+                      {fresher ? (
                         <div className={styles.animationTextWrap}>
-                          {textfresher.map((text, index) => (
-                            <div
-                              key={index}
-                              className={styles.verticalSlideWrapper}
-                            >
-                              <span className={styles.animationText}>
-                                {text}
-                              </span>
-                            </div>
-                          ))}
+                          <span className={styles.animationText}>
+                            Guaranteed Interview Calls
+                          </span>
                         </div>
                       ) : (
-                        <div className={styles.animationTextWrap}>
-                          {texts.map((text, index) => (
-                            <div
-                              key={index}
-                              className={styles.verticalSlideWrapper}
-                            >
-                              <span className={styles.animationText}>
-                                {text}
-                              </span>
+                        <>
+                          {IBMGl ? (
+                            <div className={styles.animationTextWrap}>
+                              {textfresher.map((text, index) => (
+                                <div
+                                  key={index}
+                                  className={styles.verticalSlideWrapper}
+                                >
+                                  <span className={styles.animationText}>
+                                    {text}
+                                  </span>
+                                </div>
+                              ))}
                             </div>
-                          ))}
-                        </div>
+                          ) : (
+                            <div className={styles.animationTextWrap}>
+                              {texts.map((text, index) => (
+                                <div
+                                  key={index}
+                                  className={styles.verticalSlideWrapper}
+                                >
+                                  <span className={styles.animationText}>
+                                    {text}
+                                  </span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </>
                       )}
                     </>
-                  )}</>)}
+                  )}
                 </>
               )}
 
@@ -364,7 +372,11 @@ const FirstContent = ({
               ) : (
                 <div className={styles.btnImage}>
                   <div onClick={popupShow}>
-                    <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                    {demoSessionButton ? (
+                      <Button bannerButton={true} text="BOOK DEMO SESSION" />
+                    ) : (
+                      <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                    )}
                   </div>
                   {softwareBtnHide ? (
                     ""
@@ -392,7 +404,9 @@ const FirstContent = ({
             ) : (
               <>
                 {" "}
-                <p className={styles.p}>Free Career Counselling</p>
+            {
+              demoSessionButton ? (    <p className={styles.p}>Book Demo Session</p>):(    <p className={styles.p}>Free Career Counselling</p>)
+            }
               </>
             )}
 
@@ -438,7 +452,8 @@ const FirstContent = ({
         {mobile ? (
           <>
             <div className={styles.Mobile}>
-            {cyber ? (<div className={styles.iHubdiv}>
+              {cyber ? (
+                <div className={styles.iHubdiv}>
                   {" "}
                   <p className={styles.ptop}>In Collaboration With</p>{" "}
                   <Image
@@ -448,93 +463,99 @@ const FirstContent = ({
                     priority
                     alt="data science course"
                   />
-                </div>):(<>  {microsoftOnly ? (
-                <>
-                  <p className={styles.ptoptwo}>In Collaboration With</p>{" "}
-                  <div className={styles.ImageBlock}>
-                    <Image
-                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/micrososfttss.webp"
-                      width={160}
-                      height={30}
-                      priority
-                      alt="data science course"
-                    />
-                  </div>
-                </>
+                </div>
               ) : (
                 <>
                   {" "}
-                  {noImg ? (
-                    ""
+                  {microsoftOnly ? (
+                    <>
+                      <p className={styles.ptoptwo}>In Collaboration With</p>{" "}
+                      <div className={styles.ImageBlock}>
+                        <Image
+                          src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/micrososfttss.webp"
+                          width={160}
+                          height={30}
+                          priority
+                          alt="data science course"
+                        />
+                      </div>
+                    </>
                   ) : (
                     <>
-                      {isGuwahati ? (
-                        <>
-                          <p className={styles.ptoptwo}>
-                            In Collaboration With
-                          </p>{" "}
-                          <div className={styles.ImageBlock}>
-                            <Image
-                              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp"
-                              width="340"
-                              height="44"
-                              priority
-                              alt="data science course"
-                              className={styles.imgGuwahati}
-                            />
-                          </div>
-                        </>
+                      {" "}
+                      {noImg ? (
+                        ""
                       ) : (
                         <>
-                          {" "}
-                          {DSWolf ? (
+                          {isGuwahati ? (
                             <>
-                              <p className={styles.ptop}>
-                                Degree & Certification(s)
-                              </p>
+                              <p className={styles.ptoptwo}>
+                                In Collaboration With
+                              </p>{" "}
                               <div className={styles.ImageBlock}>
                                 <Image
-                                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/DS-only.webp"
+                                  src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp"
                                   width="340"
                                   height="44"
                                   priority
                                   alt="data science course"
+                                  className={styles.imgGuwahati}
                                 />
                               </div>
                             </>
                           ) : (
                             <>
                               {" "}
-                              <p className={styles.ptop}>
-                                In Collaboration With
-                              </p>
+                              {DSWolf ? (
+                                <>
+                                  <p className={styles.ptop}>
+                                    Degree & Certification(s)
+                                  </p>
+                                  <div className={styles.ImageBlock}>
+                                    <Image
+                                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/DS-only.webp"
+                                      width="340"
+                                      height="44"
+                                      priority
+                                      alt="data science course"
+                                    />
+                                  </div>
+                                </>
+                              ) : (
+                                <>
+                                  {" "}
+                                  <p className={styles.ptop}>
+                                    In Collaboration With
+                                  </p>
+                                </>
+                              )}
+                              <div className={styles.ImageBlock}>
+                                {ibmOnly ? (
+                                  <Image
+                                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
+                                    width="70"
+                                    height="30"
+                                    priority
+                                    alt="data science course"
+                                  />
+                                ) : (
+                                  <Image
+                                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
+                                    width="250"
+                                    height="40"
+                                    priority
+                                    alt="data science course"
+                                  />
+                                )}
+                              </div>
                             </>
                           )}
-                          <div className={styles.ImageBlock}>
-                            {ibmOnly ? (
-                              <Image
-                                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ibmnew.webp"
-                                width="70"
-                                height="30"
-                                priority
-                                alt="data science course"
-                              />
-                            ) : (
-                              <Image
-                                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ibm%26microsoft.webp"
-                                width="250"
-                                height="40"
-                                priority
-                                alt="data science course"
-                              />
-                            )}
-                          </div>
                         </>
                       )}
                     </>
                   )}
                 </>
-              )}</>)}
+              )}
               {isGuwahati ? (
                 <div className={styles.twodiv}>
                   <div className={styles.divone}>
@@ -580,7 +601,11 @@ const FirstContent = ({
                   {" "}
                   <div className={styles.btnImageMobile}>
                     <div onClick={popupShow}>
-                      <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                      {demoSessionButton ? (
+                        <Button bannerButton={true} text="BOOK DEMO SESSION" />
+                      ) : (
+                        <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                      )}
                     </div>
                     {softwareBtnHide ? (
                       ""
@@ -595,7 +620,7 @@ const FirstContent = ({
 
               <div className={styles.secondLeft}>
                 <div className={styles.form}>
-                  <p className={styles.p}>Free Career Counselling</p>
+{demoSessionButton ? (                  <p className={styles.p}>Book Demo Session</p>):(                  <p className={styles.p}>Free Career Counselling</p>)}
                   {formotp ? (
                     <FormOtp
                       dataScience={dataScience}

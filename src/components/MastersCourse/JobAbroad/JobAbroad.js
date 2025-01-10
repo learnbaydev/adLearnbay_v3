@@ -17,6 +17,7 @@ const JobAbroad = ({
   brochureLink,
   formotp,
   ADS,
+  demoSessionButton
 }) => {
   const { title, points, bannerImage } = data;
   const [popups, setPopups] = useState(false);
@@ -43,7 +44,10 @@ const JobAbroad = ({
             ></div>
           </div>
           <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
+{
+
+demoSessionButton ? (            <h5>Book Demo Session</h5>):(            <h5>Apply For Counselling</h5>)
+}
             {formotp ? (
               <FormOtp
                 popup={true}
@@ -98,9 +102,14 @@ const JobAbroad = ({
               </div>
             ) : (
               <div className={Styles.consbtn1} onClick={popupShow}>
-                <button className={Styles.consbtn}>
-                  Apply For Counselling
-                </button>
+               {
+demoSessionButton ? (<button className={Styles.consbtn}>
+Book Demo Session
+  </button>):(<button className={Styles.consbtn}>
+  Apply For Counselling
+  </button>)
+
+               }
               </div>
             )}
 
