@@ -159,18 +159,36 @@ const Navbar = ({
                   {HideButton ? (
                     ""
                   ) : (
-                    <div onClick={popupShow}>
-                     {
-                      bookDemoSeesion ? ( <Button
-                        text="Book Demo Session"
-                        outline={true}
-                      />):( <Button
-                        text="Download Syllabus"
-                        outline={true}
-                        passIcon={<FaDownload className={styles.icon} />}
-                      />)
-                     }
-                    </div>
+                   <>
+                   {
+
+                    bookDemoSeesion ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session">
+                     <div>
+                      {
+                       bookDemoSeesion ? ( <Button
+                         text="Book Demo Session"
+                         outline={true}
+                       />):( <Button
+                         text="Download Syllabus"
+                         outline={true}
+                         passIcon={<FaDownload className={styles.icon} />}
+                       />)
+                      }
+                     </div>
+                    </Link>):( <div onClick={popupShow}>
+                      {
+                       bookDemoSeesion ? ( <Button
+                         text="Book Demo Session"
+                         outline={true}
+                       />):( <Button
+                         text="Download Syllabus"
+                         outline={true}
+                         passIcon={<FaDownload className={styles.icon} />}
+                       />)
+                      }
+                     </div>)
+                   }
+                  </>
                   )}
                 </>
               )}

@@ -44,19 +44,37 @@ const BottomBar = ({
           <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
         </div>
       ) : (
-        <>
-          {demoSessionButton ? (
-            <div className="flDivLeft" onClick={popupShow}>
-   Book Demo Session
+   <>
+   {
 
-            </div>
-          ) : (
-            <div className="flDivLeft" onClick={popupShow}>
-              Apply For Counselling
-              <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
-            </div>
-          )}
-        </>
+demoSessionButton ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session">     <>
+      {demoSessionButton ? (
+        <div className="flDivLeft" onClick={popupShow}>
+Book Demo Session
+
+        </div>
+      ) : (
+        <div className="flDivLeft" onClick={popupShow}>
+          Apply For Counselling
+          <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
+        </div>
+      )}
+    </></Link>):(     <>
+      {demoSessionButton ? (
+        <div className="flDivLeft" onClick={popupShow}>
+Book Demo Session
+
+        </div>
+      ) : (
+        <div className="flDivLeft" onClick={popupShow}>
+          Apply For Counselling
+          <FaArrowRight style={{ color: "#fff" }} className="bIcon" />
+        </div>
+      )}
+    </>)
+   }
+   
+   </>
       )}
 
       {whatsappShow ? (

@@ -371,13 +371,24 @@ const FirstContent = ({
                 </>
               ) : (
                 <div className={styles.btnImage}>
-                  <div onClick={popupShow}>
+                 {
+
+demoSessionButton ? ( <Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session">
+
+<div >
                     {demoSessionButton ? (
                       <Button bannerButton={true} text="BOOK DEMO SESSION" />
                     ) : (
                       <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
                     )}
-                  </div>
+                  </div></Link>):( <div onClick={popupShow}>
+                    {demoSessionButton ? (
+                      <Button bannerButton={true} text="BOOK DEMO SESSION" />
+                    ) : (
+                      <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                    )}
+                  </div>)
+                 }
                   {softwareBtnHide ? (
                     ""
                   ) : (
@@ -600,13 +611,22 @@ const FirstContent = ({
                 <>
                   {" "}
                   <div className={styles.btnImageMobile}>
-                    <div onClick={popupShow}>
+                   {
+
+                    demoSessionButton ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session"> <div >
                       {demoSessionButton ? (
                         <Button bannerButton={true} text="BOOK DEMO SESSION" />
                       ) : (
                         <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
                       )}
-                    </div>
+                    </div></Link>):( <div onClick={popupShow}>
+                      {demoSessionButton ? (
+                        <Button bannerButton={true} text="BOOK DEMO SESSION" />
+                      ) : (
+                        <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                      )}
+                    </div>)
+                   }
                     {softwareBtnHide ? (
                       ""
                     ) : (

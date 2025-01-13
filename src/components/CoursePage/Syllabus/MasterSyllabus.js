@@ -126,7 +126,23 @@ Book Demo Session
         </section>
         <div className={styles.buttonDiv}>
           {buttonHide ? "" : <></>}
-          <div onClick={popupShow}>
+         {
+
+
+demoSessionButton ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session"> <div >
+  {
+
+demoSessionButton ? (<Button
+      nobannerButton={true}
+      text="Book Demo Session"
+      // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+    />):(<Button
+      nobannerButton={true}
+      text="DOWNLOAD SYLLABUS"
+      // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
+    />)
+  }
+</div></Link>):( <div onClick={popupShow}>
             {
 
 demoSessionButton ? (<Button
@@ -139,7 +155,8 @@ demoSessionButton ? (<Button
                 // passIcon={<FaDownload style={{ marginLeft: "10px" }} />}
               />)
             }
-          </div>
+          </div>)
+         }
         </div>
       </div>
     </>
