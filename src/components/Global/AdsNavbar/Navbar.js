@@ -8,6 +8,8 @@ import { FaDownload } from "react-icons/fa";
 import Button from "../Button/Button";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import PopupTest from "../Popup/PopupTest";
+import CrmForm from "../Form/CrmForm/CrmForm";
 
 const Navbar = ({
   radio,
@@ -27,6 +29,7 @@ const Navbar = ({
   fullstackEvent,
   webinarLink,
   bookDemoSeesion,
+  crmTest
 }) => {
   const [show, setShow] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -51,68 +54,80 @@ const Navbar = ({
 
   return (
     <div>
-      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-        <div className="leftPopup">
-          <div className="whiteP" />
-        </div>
-        <div className="RightPopup">
-          {ApplyS2 ? (
-            <h5>Apply for Counsellling</h5>
-          ) : (
-            <>
-              {bookDemoSeesion ? (
-                <h5>Book Demo Session                </h5>
-              ) : (
-                <h5>Download Syllabus</h5>
-              )}
-            </>
-          )}
+ {
 
-          {ApplyS2 ? (
+  crmTest ? (  <PopupTest trigger={popups} setTrigger={setPopups} className="popupModal">
+    <div className="leftPopup">
+      <div className="whiteP" />
+    </div>
+    <div className="RightPopup">
+    <h5>Download Brochure</h5>
+
+    <CrmForm/>
+    </div>
+  </PopupTest>):(     <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+    <div className="leftPopup">
+      <div className="whiteP" />
+    </div>
+    <div className="RightPopup">
+      {ApplyS2 ? (
+        <h5>Apply for Counsellling</h5>
+      ) : (
+        <>
+          {bookDemoSeesion ? (
+            <h5>Book Demo Session                </h5>
+          ) : (
+            <h5>Download Syllabus</h5>
+          )}
+        </>
+      )}
+
+      {ApplyS2 ? (
+        <Form
+          popup={true}
+          setTrigger={setPopups}
+          radio={radio}
+          upSkillingHide={true}
+          interstedInHide={interstedInHide}
+          dataScience={dataScience}
+          HideInterest={HideInterest}
+          OS={OS}
+          dateTime={dateTime}
+        />
+      ) : (
+        <>
+          {formotp ? (
+            <FormOtp
+              popup={true}
+              downloadBrochure
+              upSkillingHide={true}
+              ADS={ADS}
+              fullstackADS={fullstackADS}
+              marketing={marketing}
+              grad={grad}
+              radio={radio}
+              HideInterest={HideInterest}
+              DomainInput={DomainInput}
+            />
+          ) : (
             <Form
               popup={true}
               setTrigger={setPopups}
               radio={radio}
               upSkillingHide={true}
+              downloadBrochure
               interstedInHide={interstedInHide}
               dataScience={dataScience}
               HideInterest={HideInterest}
               OS={OS}
               dateTime={dateTime}
             />
-          ) : (
-            <>
-              {formotp ? (
-                <FormOtp
-                  popup={true}
-                  downloadBrochure
-                  upSkillingHide={true}
-                  ADS={ADS}
-                  fullstackADS={fullstackADS}
-                  marketing={marketing}
-                  grad={grad}
-                  radio={radio}
-                  HideInterest={HideInterest}
-                  DomainInput={DomainInput}
-                />
-              ) : (
-                <Form
-                  popup={true}
-                  setTrigger={setPopups}
-                  radio={radio}
-                  upSkillingHide={true}
-                  downloadBrochure
-                  interstedInHide={interstedInHide}
-                  dataScience={dataScience}
-                  HideInterest={HideInterest}
-                  OS={OS}
-                  dateTime={dateTime}
-                />
-              )}
-            </>
           )}
-        </div>
-      </Popup>
+        </>
+      )}
+    </div>
+  </Popup>)
+ }
       <nav className={styles.nav}>
         <div className={styles.left}>
           {ADS ? (

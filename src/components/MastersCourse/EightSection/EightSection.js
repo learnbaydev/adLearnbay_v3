@@ -4,6 +4,7 @@ import { FaDownload } from "react-icons/fa";
 import Button from "../../Global/Button/Button";
 import styles from "./EightSection.module.css";
 import Link from "next/link";
+import PopupContenttest from "@/components/Global/PopupContent/PopupContenttest";
 
 function EightSection({
   DownloadSyllabus,
@@ -17,7 +18,8 @@ function EightSection({
   HideInterest,
   upSkilling,
   DomainInput,
-  demoSessionButton
+  demoSessionButton,
+  crmTest,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -46,7 +48,7 @@ function EightSection({
 
   return (
     <section className={isVisible ? styles.EightSection : styles.hide}>
-      <PopupContent
+    {crmTest ? (  <PopupContenttest
         popups={popups}
         setPopups={setPopups}
         heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
@@ -59,7 +61,20 @@ function EightSection({
         dataScience={true}
         HideInterest={HideInterest}
         DomainInput={DomainInput}
-      />
+      />):(  <PopupContent
+        popups={popups}
+        setPopups={setPopups}
+        heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
+        downloadBrochure
+        interstedInHide={interstedInHide}
+        upSkillingHide={true}
+        ADS={ADS}
+        formotp={formotp}
+        radio={radio}
+        dataScience={true}
+        HideInterest={HideInterest}
+        DomainInput={DomainInput}
+      />)}
       <div>
         <p className={styles.career}>
           Learn industry-relevant skills and build a rewarding career

@@ -7,6 +7,8 @@ import FormOtp from "../../Global/FormOtp/FormOtp";
 import Form from "../../Global/Form/Form";
 import NewSyllabusMap from "./NewSyllabusMap";
 import styles from "./Syllabus.module.css";
+import CrmForm from "@/components/Global/Form/CrmForm/CrmForm";
+import PopupContenttest from "@/components/Global/PopupContent/PopupContenttest";
 
 function SyllabusNew({
   masterSyllabusMobile,
@@ -22,6 +24,7 @@ function SyllabusNew({
   formotp,
   ADS,
   demoSessionButton,
+  crmTest ,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -32,7 +35,9 @@ function SyllabusNew({
   return (
     <>
       <div id="curriculum" className={styles.containerDiv}>
-        <PopupContent
+      {
+
+        crmTest ? (  <PopupContenttest
           dataScience={dataScience}
           downloadBrochure
           titleCourse={titleCourse}
@@ -44,7 +49,20 @@ function SyllabusNew({
           heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
           formotp={formotp}
           ADS={ADS}
-        />
+        />):(  <PopupContent
+          dataScience={dataScience}
+          downloadBrochure
+          titleCourse={titleCourse}
+          brochureLink={brochureLink}
+          interstedInHide={interstedInHide}
+          upSkillingHide={true}
+          popups={popups}
+          setPopups={setPopups}
+          heading={demoSessionButton ? "Book Demo Session" : "Download Syllabus"}
+          formotp={formotp}
+          ADS={ADS}
+        />)
+      }
 
         <div className={styles.project}>
           <h3 className={styles.h1}>Explore our Syllabus</h3>
@@ -94,33 +112,36 @@ Book Demo Session
                   </h4>)
                 }</>
               )}
-              {formotp ? (
-                <FormOtp
-                  dataScienceCounselling={dataScienceCounselling}
-                  interstedInHide={interstedInHide}
-                  titleCourse={titleCourse}
-                  brochureLink={brochureLink}
-                  fullStack={fullStack}
-                  syllabus={true}
-                  upSkillingHide={true}
-                  formotp={formotp}
-                  ADS={ADS}
-                  dataScience={dataScience}
-                />
-              ) : (
-                <Form
-                  dataScienceCounselling={dataScienceCounselling}
-                  interstedInHide={interstedInHide}
-                  titleCourse={titleCourse}
-                  brochureLink={brochureLink}
-                  fullStack={fullStack}
-                  syllabus={true}
-                  upSkillingHide={true}
-                  formotp={formotp}
-                  ADS={ADS}
-                  dataScience={dataScience}
-                />
-              )}
+        {
+
+          crmTest ? (<CrmForm/>):(<>      {formotp ? (
+            <FormOtp
+              dataScienceCounselling={dataScienceCounselling}
+              interstedInHide={interstedInHide}
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+              fullStack={fullStack}
+              syllabus={true}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              dataScience={dataScience}
+            />
+          ) : (
+            <Form
+              dataScienceCounselling={dataScienceCounselling}
+              interstedInHide={interstedInHide}
+              titleCourse={titleCourse}
+              brochureLink={brochureLink}
+              fullStack={fullStack}
+              syllabus={true}
+              upSkillingHide={true}
+              formotp={formotp}
+              ADS={ADS}
+              dataScience={dataScience}
+            />
+          )}</>)
+        }
             </div>
           </div>
         </section>
