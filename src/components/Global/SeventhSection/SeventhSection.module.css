@@ -95,10 +95,26 @@
   align-items: center;
 }
 
+@media (max-width: 1281px) {
+
+
+  .rightPart {
+    width: 450px;
+  }
+}
+@media (max-width: 1081px) {
+  
+  .rightPart {
+    width: 400px;
+  }
+
+}
+
 @media (max-width: 1024px) {
   .LearnSupport {
     padding: 30px 30px 30px 180px;
   }
+
 }
 
 @media (max-width: 961px) {

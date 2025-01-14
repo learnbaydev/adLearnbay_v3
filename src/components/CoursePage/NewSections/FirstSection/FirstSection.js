@@ -42,6 +42,7 @@ function FirstSection({
   microsoftOnly,
   workingPro,
   demoSessionButton,
+  DemoClass
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -97,6 +98,7 @@ function FirstSection({
         cyber={cyber}
         workingPro={workingPro}
         demoSessionButton={ demoSessionButton}
+        DemoClass={DemoClass}
       />
     </>
   );

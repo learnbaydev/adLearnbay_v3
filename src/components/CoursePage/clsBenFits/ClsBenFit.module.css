@@ -1,0 +1,119 @@
+.ClsBenFits {
+    width: 90%;
+    max-width: 1300px;
+    margin:60px  auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ClsBenFits h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+
+  }
+  
+  .boxGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .boxMain {
+    width: calc(30% - 20px); /* Fits three boxes per row */
+    background: rgba(0, 114, 188, 0.08);
+    border-radius: 25px;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .topBox {
+    background: rgba(0, 114, 188, 0.10);
+    padding: 20px;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .topBox h4 {
+    margin: 0;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1.40rem;
+  }
+  
+  .iconDiv {
+    /* margin-top: 10px; */
+    color: #666;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 50%;
+    height: fit-content;
+    padding:2px;
+  }
+  
+  .iconDiv img {
+    padding: 4px;
+  }
+  
+  .boxDown {
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  @media screen and (max-width:1281px) {
+    .topBox h4 {
+        font-size: 1.20rem;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+
+.boxDown p {
+    font-size: 1rem;
+}
+.topBox h4 {
+    font-size: 1.06rem;
+}
+  }
+  
+  @media (max-width: 768px) {
+    .boxMain {
+      width: calc(45% - 20px); /* Adjust for smaller screens */
+    }
+    .ClsBenFits h2 {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .viewButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #0072bc;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      
+      .viewButton:hover {
+        background-color: #0056b3;
+      }
+      .topBox h4 {
+        font-size: 20px;
+      }
+      
+  }
+  
+  @media (max-width: 480px) {
+    .boxMain {
+      width: calc(100% - 20px); /* Full width for mobile */
+    }
+  }
+  

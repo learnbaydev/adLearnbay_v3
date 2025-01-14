@@ -3,21 +3,21 @@ import { useRouter } from "next/router";
 import styles from "./CrmForm.module.css";
 
 const CrmForm = () => {
-  const [formHeight, setFormHeight] = useState(500); // Default height
+  const [formHeight, setFormHeight] = useState(500); 
   const router = useRouter();
 
-  // Update form height on window resize
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setFormHeight(620); // Adjust for mobile
+        setFormHeight(620); 
       } else {
-        setFormHeight(500); // Default height for larger screens
+        setFormHeight(500); 
       }
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call on initial render
+    handleResize(); 
 
     const script = document.createElement("script");
     script.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
@@ -44,7 +44,7 @@ const CrmForm = () => {
           const formSubmitPath = window.location.pathname;
           console.log("Form submitted from:", formSubmitPath);
 
-          // Optionally send this data to your analytics or backend here
+         
 
           console.log("Form submitted, redirecting to thank you page...");
 
