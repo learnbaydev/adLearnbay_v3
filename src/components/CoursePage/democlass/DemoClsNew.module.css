@@ -1,0 +1,204 @@
+.DemoClsNew {
+    border-radius: 21px;
+background: #022646;
+max-width: 1300px;
+width: 90%;
+margin: 80px auto;
+padding: 40px 40px  80px 40px;
+margin-bottom: 20px;
+
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.DemoClsNew h2 {
+    color: #FFF;
+
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 144.5%; /* 79.475px */
+}
+
+.mentorDiv{
+    border-radius: 50.392px;
+background: linear-gradient(90deg, rgba(217, 217, 217, 0.50) 0.04%, rgba(115, 115, 115, 0.00) 99.57%);
+
+display: flex;
+width: fit-content;
+align-items: center;
+gap: 10px;
+}
+
+.mentorDiv p {
+    color: #FFF;
+font-size: 18.842px;
+font-style: normal;
+font-weight: 400;
+line-height: 132%; /* 44.672px */
+margin: 0;
+}
+
+.divInside{
+    display: flex;
+    padding:10px;
+    gap: 10px;
+}
+
+.microImage{
+    margin-top: 6px;
+}
+
+.para {
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 132%; /* 31.68px */
+max-width: 96%;
+}
+
+.demoButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.bttn {
+    border-radius: 13.055px;
+    background: #0072BC;
+    border: none;
+    color: #FFF;
+    font-size: 14.736px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 10px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    cursor: pointer;
+    overflow: hidden; /* Ensure the pseudo-element is confined within the button */
+    position: relative; /* For positioning the pseudo-element */
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.bttn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start outside the left edge */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Glass-like appearance */
+    filter: blur(4px); /* Add blur for the glass effect */
+    transform: skewX(-25deg); /* Add skew for dynamic look */
+    transition: left 0.4s ease; /* Smooth movement */
+    z-index: 1; /* Ensure it's above the background but below the text */
+}
+
+.bttn:hover::before {
+    left: 100%; /* Move to the right edge */
+}
+
+.bttn:hover {
+    color: #ffffff; /* Optional: Change text color on hover */
+}
+
+
+@media screen and (max-width:1281px) {
+    .DemoClsNew {
+max-width: 1100px;
+    }
+}
+
+
+@media screen and (max-width:1081px) {
+    .DemoClsNew {
+max-width: 1024px;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .DemoClsNew {
+max-width: 981px;
+    }
+}
+
+
+
+
+@media screen and (max-width:981px) {
+    .DemoClsNew {
+max-width: 841px;
+    }
+}
+
+
+@media screen and (max-width:861px) {
+    .DemoClsNew {
+max-width: 761px;
+    }
+}
+
+.bttn {
+    right: 0;
+}
+
+
+@media screen and (max-width:761px) {
+    .DemoClsNew {
+max-width: 641px;
+    }
+
+    .demoButton {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+    .bttn{
+        top: 0;
+    }
+}
+@media (max-width: 641px) {
+
+    .parent{
+        padding: 20px;
+    }
+    .DemoClsNew  {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        margin-top: 40px;
+        margin-bottom: 0;
+
+    }
+    .DemoClsNew h2 {
+        font-size: 20px;
+    }
+    .mentorDiv p {
+        font-size: 14px;
+    }
+    .divInside {
+        padding: 4px;
+    }
+    .swImg{
+        width: 50px;
+        height: 50px;
+    }
+    .microImage{
+        width: 80px;
+        height: 16px;
+    }
+    .para {
+        font-size: 14px;
+    }
+    .bttn{
+        font-size: 12px;
+    }
+}

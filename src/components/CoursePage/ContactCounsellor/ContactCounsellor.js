@@ -7,6 +7,7 @@ import { useState } from "react";
 import Popup from "@/components/Global/Popup/Popup";
 import Form from "@/components/Global/Form/Form";
 import FormOtp from "@/components/Global/FormOtp/FormOtp";
+import Link from "next/link";
 
 const ContactCounsellor = ({
   dataScience,
@@ -149,16 +150,29 @@ const ContactCounsellor = ({
           </>
         )}
 
-        <div className={styles.consbtn1} onClick={popupShow}>
-         {
-demoSessionButton ? (<button className={styles.consbtn} onClick={null}>
-  Book Demo Session
-  </button>):(<button className={styles.consbtn} onClick={null}>
-Apply for counselling
-</button>)
 
-         }
-        </div>
+        {
+
+demoSessionButton ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session"><div className={styles.consbtn1}>
+            {
+   demoSessionButton ? (<button className={styles.consbtn} onClick={null}>
+     Book Demo Session
+     </button>):(<button className={styles.consbtn} onClick={null}>
+   Apply for counselling
+   </button>)
+   
+            }
+           </div></Link>):(<div className={styles.consbtn1} onClick={popupShow}>
+            {
+   demoSessionButton ? (<button className={styles.consbtn} onClick={null}>
+     Book Demo Session
+     </button>):(<button className={styles.consbtn} onClick={null}>
+   Apply for counselling
+   </button>)
+   
+            }
+           </div>)
+        }
       </div>
       <div className={styles.conimg}>
         <Image

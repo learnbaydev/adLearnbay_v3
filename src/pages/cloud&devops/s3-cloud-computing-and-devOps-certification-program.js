@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 import Head from "next/head";
 import FirstSection from "@/components/CoursePage/Cloud&Devops/Devopsfirstsection/DevopFirstSection";
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
@@ -20,36 +22,9 @@ import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import styles from "../../styles/Counseling.module.css"
 
-function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
+function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection, crmTest }) {
   const CloudAndDevOpsCourseData = parseJSONData(CloudAndDevOpsCourseDataJson);
 
-  // Automatically trigger CRM form load on component mount
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
-    script.type = "text/javascript";
-    script.async = true;
-  
-    script.onload = () => {
-      // Check if CRM widget is available and add custom field
-      const crmForm = document.querySelector(".npf_wgts");
-      if (crmForm) {
-        const input = document.createElement("input");
-        input.type = "hidden";
-        input.name = "referrerPage";
-        input.value = window.location.pathname; // Dynamically set page path
-        crmForm.appendChild(input);
-      } else {
-        console.error("CRM form widget not found.");
-      }
-    };
-  
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script); // Cleanup script on unmount
-    };
-  }, []);
   
   return (
     <>
@@ -74,7 +49,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true} dataScience={true} ADS={true} />
+        <Navbar interstedInHide={true} dataScience={true} ADS={true}  crmTest={true} />
         <FirstSection
           interstedInHide={true}
           dataScience={true}
@@ -88,6 +63,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           firstHeading="Cloud Computing & DevOps"
           firstTopPara="Crack Interview in top MNCs  "
           softwareBtnHide={true}
+          crmTest={true}
         />
         <SecondSection />
         <S2SecondSection />
@@ -106,6 +82,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0]
               .masterSyllabusMobile
           }
+          crmTest ={true}
           onebtn={true}
         />
         <Certificate
@@ -141,6 +118,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           duration2="12 Months"
           totalAmount2="₹ 80,000"
           monthlyPayment2="₹ 7,866"
+          crmTest={true}
         />
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <Testimonial
@@ -156,54 +134,18 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
         <NewProjectSection
           interstedInHide={true}
           dataScience={true}
+          crmTest={true}
           ADS={true}
           projectSection={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0].projectSection
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true} dataScience={true} ADS={true} />
+        <EightSection interstedInHide={true} dataScience={true} ADS={true} crmTest={true}/>
         <WhatsappFloat OS={true} />
-        <BottomBar interstedInHide={true} dataScience={true} ADS={true} />
+        <BottomBar interstedInHide={true} dataScience={true} ADS={true}  crmTest={true}/>
 
-      {/* Custom CRM Form Embed */}
-<div
-  style={{
-    margin: "2rem auto",
-    padding: "1.5rem",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "8px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    maxWidth: "600px",
-    textAlign: "center",
-  }}
->
-  <h2
-    style={{
-      fontSize: "1.8rem",
-      fontWeight: "bold",
-      color: "#333",
-      marginBottom: "1rem",
-    }}
-  >
-    Enroll Now - Get Started with Your Journey!
-  </h2>
-  <p
-    style={{
-      fontSize: "1.2rem",
-      color: "#555",
-      marginBottom: "1.5rem",
-    }}
-  >
-    Fill out the form below and let us know from which page you are visiting.
-  </p>
-
-  {/* Hidden Input Field for Page Tracking */}
-  <div className="npf_wgts" data-height="500px" data-w="10fa3854ed723ad6abac72856e751fc1">
-    {/* Example Form with Hidden Field */}
-
-  </div>
-</div>
+     
 
       </main>
     </>

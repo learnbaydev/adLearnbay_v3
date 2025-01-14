@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Styles from "./NewProjectSection.module.css";
+import PopupContenttest from "../PopupContent/PopupContenttest";
 const Button = dynamic(() => import("../Button/Button"));
 const Popup = dynamic(() => import("../Popup/Popup"));
 const Form = lazy(() => import("../Form/Form"));
@@ -21,6 +22,7 @@ function NewProjectSection({
   ADS,
   HideInterest,
   radio,
+  crmTest,
 }) {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -35,20 +37,35 @@ function NewProjectSection({
   };
   return (
     <section className={Styles.container}>
-      <PopupContent
-        popups={popups}
-        setPopups={setPopups}
-        heading="Download Syllabus"
-        downloadBrochure
-        dataScience={dataScience}
-        dataScienceCounselling={dataScienceCounselling}
-        interstedInHide={interstedInHide}
-        upSkillingHide={true}
-        ADS={ADS}
-        formotp={formotp}
-        HideInterest={HideInterest}
-        radio={radio}
-      />
+ {
+  crmTest ? (     <PopupContenttest
+    popups={popups}
+    setPopups={setPopups}
+    heading="Download Syllabus"
+    downloadBrochure
+    dataScience={dataScience}
+    dataScienceCounselling={dataScienceCounselling}
+    interstedInHide={interstedInHide}
+    upSkillingHide={true}
+    ADS={ADS}
+    formotp={formotp}
+    HideInterest={HideInterest}
+    radio={radio}
+  />):(     <PopupContent
+    popups={popups}
+    setPopups={setPopups}
+    heading="Download Syllabus"
+    downloadBrochure
+    dataScience={dataScience}
+    dataScienceCounselling={dataScienceCounselling}
+    interstedInHide={interstedInHide}
+    upSkillingHide={true}
+    ADS={ADS}
+    formotp={formotp}
+    HideInterest={HideInterest}
+    radio={radio}
+  />)
+ }
       <h4>Industry Projects</h4>
       <p>
         Curriculum is specifically engineered to meet the expectations of

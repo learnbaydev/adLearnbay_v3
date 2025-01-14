@@ -1,0 +1,81 @@
+.crmFormWrapper {
+  width: 90%; 
+  max-width: 900px; 
+  text-align: center;
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add some padding around the form */
+}
+
+.crmForm {
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+}
+
+.crmFormTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.crmFormDescription {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.npf_wgts {
+  width: 100%;
+  height: 500px; /* Default height */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+/* Button Styles */
+.crmFormButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #0070f3;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: auto;
+}
+
+.crmFormButton:hover {
+  background-color: #005bb5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .crmFormWrapper {
+    width: 95%; /* Make the form more compact */
+    max-width: 600px; /* Reduce the max-width on mobile */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .crmFormTitle {
+    font-size: 1.5rem; /* Reduce title font size */
+  }
+
+  .crmFormDescription {
+    font-size: 1rem; /* Reduce description font size */
+  }
+
+  .npf_wgts {
+    height: auto; /* Adjust height for better responsiveness */
+    padding: 15px; /* Reduce padding on mobile */
+  }
+
+  .crmFormButton {
+    width: 100%; /* Make the button full width on mobile */
+    padding: 0.7rem 0; /* Increase padding for better mobile usability */
+    font-size: 1.1rem; /* Slightly increase button font size */
+  }
+}

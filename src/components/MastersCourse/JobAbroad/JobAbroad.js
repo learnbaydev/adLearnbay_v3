@@ -101,16 +101,30 @@ demoSessionButton ? (            <h5>Book Demo Session</h5>):(            <h5>Ap
                 </Link>
               </div>
             ) : (
-              <div className={Styles.consbtn1} onClick={popupShow}>
-               {
+              <>
+              
+              {
+
+demoSessionButton ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session"><div className={Styles.consbtn1} >
+  {
 demoSessionButton ? (<button className={Styles.consbtn}>
 Book Demo Session
-  </button>):(<button className={Styles.consbtn}>
-  Apply For Counselling
-  </button>)
+</button>):(<button className={Styles.consbtn}>
+Apply For Counselling
+</button>)
 
-               }
-              </div>
+  }
+ </div></Link>):(<div className={Styles.consbtn1} onClick={popupShow}>
+  {
+demoSessionButton ? (<button className={Styles.consbtn}>
+Book Demo Session
+</button>):(<button className={Styles.consbtn}>
+Apply For Counselling
+</button>)
+
+  }
+ </div>)
+}</>
             )}
 
             <>

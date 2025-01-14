@@ -1,6 +1,7 @@
 import PopupContent from "@/components/Global/PopupContent/PopupContent";
 import { useState } from "react";
 import FeeContent from "./FeeContent";
+import PopupContenttest from "@/components/Global/PopupContent/PopupContenttest";
 
 const FeeSection = ({
   Fee,
@@ -34,12 +35,14 @@ const FeeSection = ({
   greenDown2,
   OS,
   CutFee,
+  crmTest,
 }) => {
   const [popups, setPopups] = useState(false);
 
   return (
     <div id="Fees">
-      <PopupContent
+    {
+      crmTest ? (  <PopupContenttest
         popups={popups}
         setPopups={setPopups}
         heading={OS ? ("Apply for Consultation") : ("Apply for counselling")}
@@ -51,7 +54,20 @@ const FeeSection = ({
         formotp={formotp}
         HideInterest={HideInterest}
         OS={OS}
-      />
+      />):(  <PopupContent
+        popups={popups}
+        setPopups={setPopups}
+        heading={OS ? ("Apply for Consultation") : ("Apply for counselling")}
+        dataScience={dataScience}
+        dataScienceCounselling={dataScienceCounselling}
+        interstedInHide={interstedInHide}
+        upSkillingHide={true}
+        ADS={ADS}
+        formotp={formotp}
+        HideInterest={HideInterest}
+        OS={OS}
+      />)
+    }
       <FeeContent
         dataScience={dataScience}
         WeekdayDate={WeekdayDate}
