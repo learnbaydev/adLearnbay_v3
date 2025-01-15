@@ -9,6 +9,7 @@ import NewSyllabusMap from "./NewSyllabusMap";
 import styles from "./Syllabus.module.css";
 import CrmForm from "@/components/Global/Form/CrmForm/CrmForm";
 import PopupContenttest from "@/components/Global/PopupContent/PopupContenttest";
+import SyllDemoCard from "../demoClssyllbuscard/SyllDemoCard";
 
 function SyllabusNew({
   masterSyllabusMobile,
@@ -76,74 +77,76 @@ function SyllabusNew({
           <div className={styles.syllabusLeft}>
             <NewSyllabusMap Syllabus={masterSyllabusMobile} />
           </div>
-          <div className={styles.button}>
-            <div className={styles.formWrapper}>
-              <div className={styles.boxDiv}>
-                <div className={styles.formBox}>
-                  {" "}
-                  <FaRegUser className={styles.iconUser} /> 7,568 people filled
-                </div>
+       {
+  demoSessionButton ? (    <div className={`${styles.demoCard} ${styles.sticky}`}><SyllDemoCard/></div>):(   <div className={styles.button}>
+          <div className={styles.formWrapper}>
+            <div className={styles.boxDiv}>
+              <div className={styles.formBox}>
+                {" "}
+                <FaRegUser className={styles.iconUser} /> 7,568 people filled
               </div>
-
-              {MastersContent ? (
-                <h4>
-                  Interested in{" "}
-                  {isGuwahati ? (
-                    <>
-                      {" "}
-                      <span>Degree?</span>
-                    </>
-                  ) : (
-                    <>
-                      {" "}
-                      <span>Master’s Degree?</span>
-                    </>
-                  )}
-                </h4>
-              ) : (
-              <>
-                {
-                  demoSessionButton ? (<h4>
-                    {}
-Book Demo Session
-                  </h4>):(<h4>
-                    {}
-                    Free Consultation with<span> Expert</span>
-                  </h4>)
-                }</>
-              )}
-        {
-
-          crmTest ? (<CrmForm/>):(<>      {formotp ? (
-            <FormOtp
-              dataScienceCounselling={dataScienceCounselling}
-              interstedInHide={interstedInHide}
-              titleCourse={titleCourse}
-              brochureLink={brochureLink}
-              fullStack={fullStack}
-              syllabus={true}
-              upSkillingHide={true}
-              formotp={formotp}
-              ADS={ADS}
-              dataScience={dataScience}
-            />
-          ) : (
-            <Form
-              dataScienceCounselling={dataScienceCounselling}
-              interstedInHide={interstedInHide}
-              titleCourse={titleCourse}
-              brochureLink={brochureLink}
-              fullStack={fullStack}
-              syllabus={true}
-              upSkillingHide={true}
-              formotp={formotp}
-              ADS={ADS}
-              dataScience={dataScience}
-            />
-          )}</>)
-        }
             </div>
+
+            {MastersContent ? (
+              <h4>
+                Interested in{" "}
+                {isGuwahati ? (
+                  <>
+                    {" "}
+                    <span>Degree?</span>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    <span>Master’s Degree?</span>
+                  </>
+                )}
+              </h4>
+            ) : (
+            <>
+              {
+                demoSessionButton ? (<h4>
+                  {}
+Book Demo Session
+                </h4>):(<h4>
+                  {}
+                  Free Consultation with<span> Expert</span>
+                </h4>)
+              }</>
+            )}
+      {
+
+        crmTest ? (<CrmForm/>):(<>      {formotp ? (
+          <FormOtp
+            dataScienceCounselling={dataScienceCounselling}
+            interstedInHide={interstedInHide}
+            titleCourse={titleCourse}
+            brochureLink={brochureLink}
+            fullStack={fullStack}
+            syllabus={true}
+            upSkillingHide={true}
+            formotp={formotp}
+            ADS={ADS}
+            dataScience={dataScience}
+          />
+        ) : (
+          <Form
+            dataScienceCounselling={dataScienceCounselling}
+            interstedInHide={interstedInHide}
+            titleCourse={titleCourse}
+            brochureLink={brochureLink}
+            fullStack={fullStack}
+            syllabus={true}
+            upSkillingHide={true}
+            formotp={formotp}
+            ADS={ADS}
+            dataScience={dataScience}
+          />
+        )}</>)
+      }
           </div>
+        </div>)
+       }
         </section>
         <div className={styles.buttonDiv}>
           {buttonHide ? "" : <></>}
