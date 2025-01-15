@@ -48,6 +48,7 @@
   font-weight: 800;
 }
 
+
 .ques {
   display: flex;
   justify-content: space-between;
@@ -444,6 +445,17 @@
   top: 42px;
 }
 
+.demoCard{
+ display: block; 
+}
+.sticky {
+  position: sticky;
+  top: 0; /* Adjust to stick at the top */
+  z-index: 100; /* Ensure it appears above other elements */
+  background-color: white; /* Optional: Add background to prevent overlap issues */
+  padding: 10px; /* Adjust padding as needed */
+}
+
 @media (min-width: 1281px) {
   .customArrow2 {
     left: 1264px;
@@ -582,6 +594,7 @@
 
     
   }
+
   .pointsinside{
     gap: 6px;
   }
@@ -622,6 +635,11 @@
   .QOuter{
     padding-left: 35px;
   }
+  .demoCard{
+    display: none; 
+   }
+ 
+  
 }
 @media (max-width: 481px) {
   .Syllabus {
