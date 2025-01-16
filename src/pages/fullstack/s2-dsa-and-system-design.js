@@ -126,14 +126,14 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
       </Head>
       <main>
-        <Navbar interstedInHide={true}  dataScience={true} ADS={true} bookDemoSeesion={true} />
+        <Navbar interstedInHide={true}  dataScience={true} ADS={true}  />
         <FirstSection
           interstedInHide={true}
            dataScience={true}
           ADS={true}
           noImg={true}
           dataScienceCounselling={true}
-          demoSessionButton={true}
+
   
           radio={true}
           upSkillingHide={true}
@@ -180,7 +180,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
           noWt={true}
           dataScience={true}
           interstedInHide={true}
-          demoSessionButton={true}
+
 
           ADS={true}
         />
@@ -192,7 +192,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
            dataScience={true}
           ADS={true}
           dataScienceCounselling={true}
-          demoSessionButton ={true}
+   
 
           masterSyllabusMobile={
             DataScienceCourseData.DsaSystemDesign[0].masterSyllabusMobile
@@ -236,9 +236,9 @@ function Blockchain({ DataScienceCourseDataJson }) {
 
         <SliderTabs WithoutService={true} />
         <SeventhSection />
-        <EightSection interstedInHide={true}  dataScience={true} ADS={true}  demoSessionButton={true}/>
+        <EightSection interstedInHide={true}  dataScience={true} ADS={true}  />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} demoSessionButton={true} />
+        <BottomBar interstedInHide={true}  dataScience={true} ADS={true}  />
       </main>
     </>
   );

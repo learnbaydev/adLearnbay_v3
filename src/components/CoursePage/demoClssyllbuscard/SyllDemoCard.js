@@ -82,7 +82,7 @@ const SyllDemoCard = () => {
         <div className={styles.listDown}>
           <div className={styles.bookFreebtn}>
             <div >
-            <Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session">   <button>Book your Demo Session Now</button></Link>
+            <Link href="https://docs.google.com/forms/d/1055DeqdBGx5dljVVWISdWf_CA59cPLeoQ8dt1hwhRKY/viewform">   <button>Book your Demo Session Now</button></Link>
             </div>
             <div className={styles.conImg}>
               <Image
