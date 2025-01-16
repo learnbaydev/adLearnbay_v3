@@ -161,9 +161,7 @@ const Form = ({
   if (learning) {
     btnText = "Download Resources";
   }
-  if (router.pathname === "/fullstack/s2-dsa-and-system-design") {
-  btnText = "Book Demo Session";  // Set button text for the specific path
-}
+
 
   const [dateTimeError, setDateTimeError] = useState("");
 
@@ -485,13 +483,11 @@ const Form = ({
                   className={styles.button}
                   disabled={submitting}
                 >
-                  {submitting
-              ? "Submitting..."
-              : isFullStackPath
-              ? "Book Demo Session"
-              : downloadBrochure
-              ? "Download Now"
-              : btnText}
+                 {submitting
+                    ? "Submitting..."
+                    : downloadBrochure
+                    ? "Download Now"
+                    : btnText}
                   {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </div>
@@ -506,13 +502,11 @@ const Form = ({
                   className={styles.button}
                   disabled={submitting}
                 >
-                 {submitting
-              ? "Submitting..."
-              : isFullStackPath
-              ? "Book Demo Session"
-              : downloadBrochure
-              ? "Download Now"
-              : btnText}
+                  {submitting
+                    ? "Submitting..."
+                    : downloadBrochure
+                    ? "Download Now"
+                    : btnText}
                   {/* {downloadBrochure ? "Download Now" : btnText}{" "} */}
                 </button>
               </>
