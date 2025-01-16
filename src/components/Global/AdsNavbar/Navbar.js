@@ -177,7 +177,7 @@ const Navbar = ({
                    <>
                    {
 
-                    bookDemoSeesion ? (<Link href="https://calendly.com/learnbay-live-demo-class/book-your-slot-for-live-demo-session">
+                    bookDemoSeesion ? (<Link href="https://docs.google.com/forms/d/1055DeqdBGx5dljVVWISdWf_CA59cPLeoQ8dt1hwhRKY/viewform">
                      <div>
                       {
                        bookDemoSeesion ? ( <Button
