@@ -14,9 +14,9 @@ import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
 import Head from "next/head";
 
-import { parseJSONData } from "../../../Util/JsonConvertor";
-import FullStackSecondSection from "../../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
-import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
+import { parseJSONData } from "../../Util/JsonConvertor";
+import FullStackSecondSection from "../components/CoursePage/FullStackSecondSection/FullStackSecondSection";
+import SyllabusNew from "../components/CoursePage/Syllabus/MasterSyllabus";
 import PSummaryAD from "@/components/CoursePage/pSummary/PSummaryAD";
 import AnimationDSA from "@/components/CoursePage/AnimationDsa/AnimationDSA";
 import NewCertificateSection from "@/components/CoursePage/newCertificate/NewCertificate";
@@ -291,7 +291,7 @@ data={DataScienceCourseData.IITCyberSecurityData[0].Certificate}
 }
 export default Blockchain;
 export async function getStaticProps() {
-  const data = await import("../../Data/CyberSecurityData");
+  const data = await import("../Data/CyberSecurityData");
   function getDataScienceCourseDataJSON(dataScienceCourseData) {
     return JSON.stringify(dataScienceCourseData);
   }

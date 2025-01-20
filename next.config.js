@@ -37,6 +37,13 @@ const nextConfig = {
           "/apply-for-counselling-data-science-marketing",
         permanent: true,
       },
+
+      {
+        source: "/cyber-security/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
+        destination:
+          "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
+        permanent: true,
+      },
     ];
   },
 };
