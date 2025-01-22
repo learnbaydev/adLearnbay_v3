@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRouter } from 'next/router';
 import styles from "./Certificate.module.css";
 import Image from "next/image";
 import { BsCheckCircle } from "react-icons/bs";
@@ -11,15 +12,44 @@ function CertificateTab({
   OnlyDS,
   noTabs,
   cyber,
+  ecMicro,
 }) {
   const [MActive, setMActive] = useState(false);
   const [IActive, setIActive] = useState(true);
   const [IBCActive, setIBCActive] = useState(false);
   const [DegreeCActive, setDegreeActive] = useState(false);
+  const router = useRouter();
+const currentPath = router.pathname;
   return (
     <section className={styles.CertificateTab}>
       <div className={styles.header}>
-        {cyber ? (
+       {ecMicro ? (  <div className={`${styles.pWrapN} ${styles.cyberwrap}`}>
+            <p
+              onClick={() => {
+                setIActive(true);
+                setMActive(false);
+                setIBCActive(false);
+                setDegreeActive(false);
+              }}
+              className={IActive ? styles.activeP : styles.inactiveP}
+            >
+    Microsoft
+            </p>
+            
+            
+
+            <p
+              onClick={() => {
+                setIActive(false);
+                setMActive(true);
+                setIBCActive(false);
+                setDegreeActive(false);
+              }}
+              className={MActive ? styles.activeP : styles.inactiveP}
+            >
+  Certified Ethical Hacker
+            </p>
+          </div>):(<> {cyber ? (
           <div className={`${styles.pWrapN} ${styles.cyberwrap}`}>
             <p
               onClick={() => {
@@ -170,7 +200,7 @@ function CertificateTab({
               </div>
             )}
           </>
-        )}
+        )}</>)}
       </div>
 
       {IActive ? (
@@ -185,6 +215,8 @@ function CertificateTab({
                 </p>
               );
             })}
+            
+
           </div>
           <div className={styles.leftSide}>
             <Image
@@ -197,6 +229,7 @@ function CertificateTab({
               loading="lazy"
               quality={40}
             />
+     
             <div
               className={`${styles.CertificateDiv} ${styles.IItImag} imgWrapper`}
             >
@@ -218,6 +251,7 @@ function CertificateTab({
                   height={800}
                   className={styles.iitImage}
                 />
+                
               ) : (
                 <Image
                   src={data.degreeCertificate.img}
@@ -227,6 +261,8 @@ function CertificateTab({
                   width={1150}
                   height={800}
                 />
+
+                
               )}</>)}
             </div>
           </div>
@@ -247,6 +283,20 @@ function CertificateTab({
                 </p>
               );
             })}
+{(currentPath === '/s2-advanced-cyber-security-course-training' && ecMicro) || 
+ (currentPath === '/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee' && cyber) ? (
+  <div className={styles.noteIt}>
+    <span>
+      {currentPath === '/s2-advanced-cyber-security-course-training' ? (
+        <i>* Exam voucher included in this program</i>
+      ) : (
+        <i>*Exam voucher for EC council sold separately</i>
+      )}
+    </span>
+  </div>
+) : null}
+
+
           </div>
           <div className={styles.leftSide}>
             <Image
@@ -269,6 +319,7 @@ function CertificateTab({
                 quality={100}
               />
             </div>
+            
           </div>
         </div>
       ) : (
@@ -287,6 +338,7 @@ function CertificateTab({
                 </p>
               );
             })}
+            
           </div>
           <div className={styles.leftSide}>
             <Image
@@ -326,6 +378,7 @@ function CertificateTab({
                 </p>
               );
             })}
+            
           </div>
           <div className={styles.leftSide}>
             <Image
@@ -338,6 +391,7 @@ function CertificateTab({
               loading="lazy"
               quality={60}
             />
+            
             <div className={`${styles.CertificateDiv} imgWrapper`}>
               <Image
                 src={data.DSDegreeCertificate.img}
@@ -348,6 +402,7 @@ function CertificateTab({
                 quality={100}
               />
             </div>
+            
           </div>
         </div>
       ) : (

@@ -50,6 +50,8 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     pathname === "/datascience/pune/s2-data-science" ||
     pathname === "/datascience/pune/s2-machine-learning" ||
     pathname === "/datascience/s2-artificial-intelligence-generic" ||
+    pathname === "/s2-advanced-cyber-security-course-training" ||
+    pathname === "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee"||
     pathname ===
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
       pathname === "/datascience/s2-executive-program-in-data-science-and-ai-by-iit-guwahati" ||

@@ -93,8 +93,8 @@ const PSummaryAD = ({
               {item.extraImageSrc && (
                 <Image
                   src={item.extraImageSrc}
-                  width={180}
-                  height={40}
+                  width={item.width}
+                  height={item.height}
                   loading="lazy"
                   alt={item.extraImageAlt}
                   className={styles.ibmLogo}

@@ -21,6 +21,8 @@ const summaryData = [
       imageAlt: "Certification",
       extraImageSrc: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IBM_MICROS.webp",
       extraImageAlt: "IBMLOGO",
+         width:"180",
+          height:"26"
     },
     {
       id: 4,

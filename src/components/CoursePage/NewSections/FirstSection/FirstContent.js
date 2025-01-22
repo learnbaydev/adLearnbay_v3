@@ -51,6 +51,7 @@ const FirstContent = ({
   cyber,
   demoSessionButton,
   DemoClass,
+  ecMicro,
 }) => {
   const texts = [
     "Guaranteed Interview Calls",
@@ -181,13 +182,22 @@ const FirstContent = ({
                 <div className={styles.iHubdiv}>
                   {" "}
                   <p className={styles.ptop}>In Collaboration With</p>{" "}
-                  <Image
+                {
+
+                  ecMicro ? (<Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mcs.webp"
+                    width={200}
+                    height={20}
+                    priority
+                    alt="data science course"
+                  />):(  <Image
                     src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iHub-logos.webp"
                     width={180}
                     height={40}
                     priority
                     alt="data science course"
-                  />
+                  />)
+                }
                 </div>
               ) : (
                 <>
@@ -581,7 +591,15 @@ const FirstContent = ({
         {mobile ? (
           <>
             <div className={styles.Mobile}>
-              {cyber ? (
+
+            {ecMicro ? (
+                              <div className={styles.iHubdiv}><Image
+                              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mcs.webp"
+                              width={200}
+                              height={20}
+                              priority
+                              alt="data science course"
+                            /></div>):(<>  {cyber ? (
                 <div className={styles.iHubdiv}>
                   {" "}
                   <p className={styles.ptop}>In Collaboration With</p>{" "}
@@ -684,7 +702,7 @@ const FirstContent = ({
                     </>
                   )}
                 </>
-              )}
+              )}</>)}
               {isGuwahati ? (
                 <div className={styles.twodiv}>
                   <div className={styles.divone}>

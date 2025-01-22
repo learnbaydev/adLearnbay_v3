@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./whyChooseSection.module.css";
 import Image from "next/image";
 
-function AnimationGEN({ cyber, whyChooseData }) {
+function AnimationGEN({ cyber, whyChooseData, ecMicro }) {
   const divRefs = useRef([]);
   const arrowSvg = [
     // eslint-disable-next-line react/jsx-key
@@ -152,23 +152,31 @@ function AnimationGEN({ cyber, whyChooseData }) {
                 {/* Conditionally rendering for the first section */}
                 {index === 0 ? (
                   <div style={{ marginTop: "20px" }}>
-                    {cyber ? (
-                      <Image
-                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iHub-logos.webp"
-                        width={240}
-                        height={50}
-                        loading="lazy"
-                        alt="IIT"
-                      />
-                    ) : (
-                      <Image
-                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iit_GEN_WHy+(1).webp"
-                        width={200}
-                        height={40}
-                        loading="lazy"
-                        alt="IIT"
-                      />
-                    )}
+                {
+                  ecMicro ? (<Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mcs.webp"
+                    width={200}
+                    height={20}
+                    loading="lazy"
+                    alt="IIT"
+                  />):(<>    {cyber ? (
+                    <Image
+                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iHub-logos.webp"
+                      width={240}
+                      height={50}
+                      loading="lazy"
+                      alt="IIT"
+                    />
+                  ) : (
+                    <Image
+                      src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iit_GEN_WHy+(1).webp"
+                      width={200}
+                      height={40}
+                      loading="lazy"
+                      alt="IIT"
+                    />
+                  )}</>)
+                }
                   </div>
                 ) : null}
 
