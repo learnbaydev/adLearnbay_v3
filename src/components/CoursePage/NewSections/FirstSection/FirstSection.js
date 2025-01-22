@@ -42,7 +42,8 @@ function FirstSection({
   microsoftOnly,
   workingPro,
   demoSessionButton,
-  DemoClass
+  DemoClass,
+  ecMicro
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -99,6 +100,7 @@ function FirstSection({
         workingPro={workingPro}
         demoSessionButton={ demoSessionButton}
         DemoClass={DemoClass}
+        ecMicro={ecMicro}
       />
     </>
   );

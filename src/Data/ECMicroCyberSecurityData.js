@@ -1,4 +1,4 @@
-export const IITCyberSecurityData = [
+export const ECMicroCyberSecurityData = [
     {
       secondSection: [
         {
@@ -71,10 +71,10 @@ export const IITCyberSecurityData = [
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/mastr_Icon_four+(1).webp",
           imageAlt: "Certification",
           extraImageSrc:
-            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iHub-logos.webp",
+            "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mc-black.webp",
           extraImageAlt: "IIt Guwati",
-             width:"150",
-          height:"40"
+          width:"180",
+          height:"26"
         },
       ],
   
@@ -83,9 +83,12 @@ export const IITCyberSecurityData = [
         {
           image:
             "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/blue_why.webp",
-          title: "iHUB DivyaSampark, IIT Roorkee Certification",
+            title: "EC-Council & Microsoft Certification",
           description:
-            "Stand out with a prestigious certification from iHUB DivyaSampark, IIT Roorkee.",
+            "Stand out with a Advance certification from EC-Council and Microsoft",
+            logos:"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mcs.webp",
+            logosWidth:"200",
+                logosHeight:"20",
           subItems: [
             {
               icon: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/3dicons+(1).webp",
@@ -590,13 +593,13 @@ export const IITCyberSecurityData = [
       ],
       Certificate: {
         degreeCertificate: {
-          id: 1,
-          img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ihub+_rrk.webp",
-          title: "Certification from iHUB DivyaSampark, IIT Roorkee",
+          id: 2,
+          img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/Azure%2BAI%2BFundamentals.png",
+          title: "Certification in Collaboration with Microsoft",
           para: [
-            "Executive Certification: Earned in Cyber Security from iHUB DivyaSampark, IIT Roorkee.",
-            "Hands-On Experience: Practical learning at IIT Roorkee campus*",
-            "Top Faculty: Learn directly from IIT faculty.",
+            "Industry-certified Microsoft certificates",
+            "Gain expertise & get recognized worldwide",
+            "Boost job opportunities and earnings with Microsoft’s certification",
           ],
         },
         microCertificate: {

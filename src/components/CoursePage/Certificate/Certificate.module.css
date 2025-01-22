@@ -120,7 +120,7 @@
   border-radius: 50%;
 }
 .CertificateDiv {
-  padding-left:80px;
+  padding-left:50px;
 }
 .CertificateDiv img {
   width: auto;
@@ -141,6 +141,12 @@
   padding-left: 100px;
   height: 410px !important;
 }
+.noteIt{
+  color: #fff;
+  position: relative;
+    font-size: 11px;
+    top: 40px;
+  }
 @media (max-width: 1281px) {
   .certificate {
     padding: 0px 40px;
@@ -330,7 +336,11 @@
   gap: 20px;
   padding: 10px 28px;
 
+
   }
+  .noteIt{
+    top: 10px;
+      }
 }
 
 @media (max-width: 481px) {

@@ -163,7 +163,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
         {/* <MasterSecondSection data={seconddata} /> */}
         <JobAbroad
-        demoSessionButton={true}
+
           data={JobData}
           dataScience={true}
           interstedInHide={true}
