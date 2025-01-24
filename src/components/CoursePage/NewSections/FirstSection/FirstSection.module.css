@@ -642,6 +642,14 @@ background-clip: text;
  .downrytimge p {
   font-size: 14px;
  }
+ .mangImg img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.mangImg {
+  padding-left: 20px;
+}
 
 
 }
