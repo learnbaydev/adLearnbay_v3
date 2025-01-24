@@ -11,6 +11,14 @@
   grid-template-columns: 3.4% 94%;
   gap: 4px;
 }
+
+/* Syllabus.module.css */
+.maindivGENMANGERS {
+  margin-bottom: 0px; /* Add vertical spacing between modules */
+  padding: 4px 0; /* Optional: add padding for a better look */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
 .mobileSyllabus {
   display: none;
 }
@@ -43,11 +51,10 @@
   font-size: 18px;
   color: #646464;
 }
-.syllabusLeft h4 {
+.syllabusLeft .p {
   font-size: 36px;
   font-weight: 800;
 }
-
 
 .ques {
   display: flex;
@@ -145,12 +152,12 @@
 .trackimgStrt {
   position: absolute;
   z-index: 998;
-  left: 40px;
+  left: 5%;
 }
 
 .trackimgend {
   position: relative;
-  z-index: 998;
+  z-index: 999;
   right: 102px;
   top: 70px;
 }
@@ -169,6 +176,14 @@
   margin-bottom: 30px;
 }
 
+.GenAIQues{
+  display: grid;
+  grid-template-columns: 72% 20% 10%;
+}
+.GenAIQuesO{
+  display: grid;
+  grid-template-columns: 72% 20% 10%;
+}
 .quesO {
   display: flex;
   justify-content: space-between;
@@ -189,7 +204,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 158%; /* 31.6px */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .ques h2 {
@@ -198,7 +213,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 158%; /* 31.6px */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .ans {
@@ -287,11 +302,17 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   border: 0.5px solid gray;
-  padding-bottom: 30px;
-
 }
 
-
+.formWrapper h4 {
+  color: #555;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 191.682%;
+}
 .formWrapper span {
   color: #0072bc;
 }
@@ -316,7 +337,7 @@
   justify-content: right;
   font-size: 14px;
 }
-.formWrapper h4 {
+.formWrapper .p {
   color: #555;
   text-align: center;
   font-size: 20px;
@@ -403,7 +424,7 @@
   cursor: pointer;
 }
 .colorHeading {
-  color: #FE7A36;
+  color: #fe7a36;
   font-style: normal;
   font-weight: 700;
   line-height: 126.5%;
@@ -444,27 +465,119 @@
   left: 1200px;
   top: 42px;
 }
-
-.demoCard{
- display: block; 
+.pointsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.sticky {
-  position: sticky;
-  top: 0; /* Adjust to stick at the top */
-  z-index: 100; /* Ensure it appears above other elements */
-  background-color: white; /* Optional: Add background to prevent overlap issues */
-  padding: 10px; /* Adjust padding as needed */
+.pointsdivGEnAI{
+  justify-content:start;
 }
 
-@media (min-width: 1281px) {
-  .customArrow2 {
-    left: 1264px;
-  }
+.hoursSpan {
+  /* position: absolute; */
+  top: 40px;
+  left: 82%;
+  font-weight: 800;
+  color: #0072bc;
+  width: fit-content;
+  font-size: 13px;
 }
+
+.centerHeadline {
+  display: flex;
+  border-radius: 20px;
+  border: 0.903px solid #0072bc;
+  padding: 10px 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  left: 12%;
+  flex-direction: column;
+  background: radial-gradient(
+      circle at 10% 10%,
+      /* Blue circle positioned at the top left */ rgba(6, 59, 92, 0.9) 1%,
+      /* Smaller blue circle */ transparent 30% /* Smooth transition to black */
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      /* Orange circle positioned at the bottom right */
+        rgba(254, 122, 54, 000.3) 1%,
+      /* Glowing orange circle */ transparent 40%
+        /* Smooth transition to black */
+    ),
+    #212121;
+  background-color: rgba(15, 14, 14, 0.954);
+  background-repeat: no-repeat;
+}
+.centerHeadline h4 {
+  color: #fff;
+  font-size: 20.084px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 158%; /* 42.793px */
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourDiv {
+  border-radius: 8.348px;
+  background: #c3e5fa;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.hourDiv span {
+  margin: 0;
+  padding: 0;
+  color: #0072bc;
+  font-size: 10.445px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 158%;
+}
+
+.termdiv {
+  background-color: rgba(91, 97, 109, 0.415);
+  border-radius: 6px;
+  text-align: center;
+  padding: 4px 10px;
+}
+.termdiv p {
+  color: #fff;
+  font-size: 14.084px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 158%; /* 42.793px */
+  padding: 0;
+  margin: 0;
+}
+
+.coursePReq{
+  margin-left: 180px;
+  color: #0072bc;
+}
+.coursePReq :nth-child(1){
+color: red;
+font-weight: 300;
+}
+
 
 @media (max-width: 1281px) {
+
   .Syllabus {
     margin: 70px 20px 0px 20px;
+  }
+  .customArrow2 {
+    left: 1264px;
   }
   .FlexInput {
     display: flex;
@@ -500,8 +613,22 @@
     z-index: 1;
     margin: 0px 10px;
   }
+ 
+
+  .hoursSpan {
+
+    top: 60px;
+    left: 82%;
+  
+  }
 }
 
+@media (max-width: 1081px) {
+
+.centerHeadline{
+  max-width: 490px;
+}
+}
 @media (max-width: 1024px) {
   .Syllabus {
     gap: 40px;
@@ -528,6 +655,16 @@
     display: flex;
     flex-flow: column;
     gap: 30px;
+  }
+
+  .hoursSpan {
+    /* position: absolute; */
+    top: 40px;
+    left: 79%;
+    font-weight: 800;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 13px;
   }
 
   .ASlide {
@@ -585,61 +722,77 @@
   .topBar {
     padding: 20px 10px 20px 10px;
   }
-  .syllabusLeft{
+  .syllabusLeft {
     padding: 30px 0;
     gap: 0;
   }
-  .points{
+  .points {
     font-size: 9px;
-
-    
   }
-
-  .pointsinside{
+  .pointsinside {
     gap: 6px;
   }
   .ques h2 {
     font-size: 14px;
   }
-  .ques{
-    padding: 20px;
-    height: fit-content;
-
-  }
-  .quesO{
+  .ques {
     padding: 20px;
     height: fit-content;
   }
-  .quesO h2{
+  .GenAIQues{
+    grid-template-columns: 71% 23% 2%;
+  }
+  .quesO {
+    padding: 20px;
+    height: fit-content;
+  }
+  .quesO h2 {
     font-size: 14px;
-    
   }
   .moduleImage {
     width: 45px;
-
   }
-  .trackimgStrt{
+  .trackimgStrt {
     position: relative;
     left: -4px;
   }
   .QOuter.open {
-    padding-left:35px;
+    padding-left: 35px;
   }
-  .maindiv{
+  .maindiv {
     margin: 0px 8px;
   }
-  .trackimgend{
+  .trackimgend {
     right: 75.6px;
     top: 70px;
   }
-  .QOuter{
+  .QOuter {
     padding-left: 35px;
   }
-  .demoCard{
-    display: none; 
-   }
- 
-  
+  .centerHeadline {
+    width: 100%;
+    max-width: 79%;
+    margin-top: 40px;
+    left: 15%;
+  }
+  .centerHeadline h4 {
+    margin-bottom: 0;
+    font-size: 13.084px;
+  }
+  .termdiv p {
+    font-size: 12px;
+  }
+  .maindivGENMANGERS {
+    padding: 0;
+  }
+  .firstDiv {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    align-items: center;
+  }
+  .coursePReq{
+    margin: 20px;
+  }
 }
 @media (max-width: 481px) {
   .Syllabus {
@@ -660,7 +813,7 @@
   }
 
   .containerDiv {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .buttonDiv {
@@ -676,7 +829,7 @@
     margin: 0px 0px 0px 0px;
     position: inherit;
     height: fit-content;
-    /* overflow: unset; */
+    overflow: unset;
   }
 
   .line {
@@ -719,15 +872,22 @@
   .customArrow2 {
     display: none;
   }
-
-
-
-
 }
 
-
 @media (max-width: 391px) {
+  .ques h2 {
+    font-size: 12px;
+  }
+  .quesO h2 {
+    font-size: 12px;
+  }
+  .hoursSpan {
+    top: 35px;
+    left: 74%;
+  }
+}
 
+@media (max-width: 361px) {
   .ques h2 {
     font-size: 12px;
   }
@@ -735,4 +895,9 @@
     font-size: 12px;
   }
 
+  .hoursSpan {
+    top: 36px;
+    left: 74%;
+
+  }
 }

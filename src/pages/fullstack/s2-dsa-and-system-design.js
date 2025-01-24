@@ -173,7 +173,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
         <TrainerSection plainimg={true} iimgchmbl={true} />
         <FullStackSecondSection />
         
-        <AnimationDSA />
+        <AnimationDSA       whyChooseData={DataScienceCourseData.DsaSystemDesign[0].whyChooseData} />
         <GetHire />
 
         <ContactCounsellor

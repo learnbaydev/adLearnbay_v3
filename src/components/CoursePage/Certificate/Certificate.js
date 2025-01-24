@@ -6,7 +6,8 @@ const Certificate = ({
   data,
   singlecertificate,
   cyber,
-  ecMicro
+  ecMicro,
+  noTabs,
 }) => {
   return NoCertificate ? (
     ""
@@ -21,6 +22,7 @@ const Certificate = ({
         data={data}
         cyber={cyber}
         ecMicro={ecMicro}
+        noTabs={noTabs}
       />
     </div>
   );

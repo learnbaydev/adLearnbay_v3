@@ -10,6 +10,8 @@ import styles from "./Syllabus.module.css";
 import CrmForm from "@/components/Global/Form/CrmForm/CrmForm";
 import PopupContenttest from "@/components/Global/PopupContent/PopupContenttest";
 import SyllDemoCard from "../demoClssyllbuscard/SyllDemoCard";
+import NewSyllabusMangersGenAiMap from "./NewSyllabusMapMangersGenAI";
+
 
 function SyllabusNew({
   masterSyllabusMobile,
@@ -26,6 +28,9 @@ function SyllabusNew({
   ADS,
   demoSessionButton,
   crmTest ,
+  onlyGENAIPage,
+  GenAIMangersOnly,
+  genAIIIT,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -74,9 +79,20 @@ function SyllabusNew({
         </div>
 
         <section className={styles.Syllabus}>
-          <div className={styles.syllabusLeft}>
-            <NewSyllabusMap Syllabus={masterSyllabusMobile} />
+        <div className={styles.syllabusLeft}>
+            {GenAIMangersOnly ? (
+              <NewSyllabusMangersGenAiMap
+                Syllabus={masterSyllabusMobile}
+                onlyGENAIPage={onlyGENAIPage}
+              />
+            ) : (
+              <NewSyllabusMap
+                Syllabus={masterSyllabusMobile}
+                onlyGENAIPage={onlyGENAIPage}
+              />
+            )}
           </div>
+
        {
   demoSessionButton ? (    <div className={`${styles.demoCard} ${styles.sticky}`}><SyllDemoCard/></div>):(   <div className={styles.button}>
           <div className={styles.formWrapper}>
@@ -181,8 +197,8 @@ demoSessionButton ? (<Button
             }
           </div>)
          }
-        </div>
-      </div>
+        </div>{genAIIIT ? (        <p className={styles.coursePReq}><b>Note-</b> <strong>Course Prerequisites:</strong> You should have knowledge of Python, Machine Learning, & Deep Learning. *</p>
+):(null)}      </div>
     </>
   );
 }

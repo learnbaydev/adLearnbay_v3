@@ -52,6 +52,8 @@ const FirstContent = ({
   demoSessionButton,
   DemoClass,
   ecMicro,
+  GenAI,
+  devopsIIt,
 }) => {
   const texts = [
     "Guaranteed Interview Calls",
@@ -160,6 +162,19 @@ const FirstContent = ({
               )}
             </>
           )}
+
+{devopsIIt ? (
+            <div className={styles.mangImg}>
+              <Image
+                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/MANGlogo.webp"
+                alt="MANG"
+                loading="lazy"
+                width={400}
+                height={60}
+              />
+            </div>
+          ) : (
+         <>
           {DSA ? (
             <p className={`${styles.ptopCiity} ${styles.ptopGen}`}>
               {cityParaCont.split("Gen-AI").map((part, index, arr) => (
@@ -174,10 +189,77 @@ const FirstContent = ({
           ) : (
             <p className={styles.ptopCiity}>{cityParaCont}</p>
           )}
+         </>
+          )}
+         
           {mobile ? (
             ""
           ) : (
-            <>
+          <>
+          {GenAI ? (  <>
+            <div className={styles.microsoftDiv}>
+                      <p className={styles.ptop}>In Collaboration With</p>{" "}
+                      <Image
+                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp"
+                        width={190}
+                        height={50}
+                        priority
+                        alt="data science course"
+                      />
+                    </div> <>
+                  {" "}
+              
+                    <div className={styles.animationTextWrap}>
+                      <span className={styles.animationText}>
+                        Only for Working Professionals
+                      </span>
+                    </div>
+    
+                 
+              
+                </>
+
+
+
+
+
+
+                                  <div className={styles.btnImage}>
+                  {demoSessionButton ? (
+                    <Link href="https://docs.google.com/forms/d/1055DeqdBGx5dljVVWISdWf_CA59cPLeoQ8dt1hwhRKY/viewform">
+                      <div>
+                        {demoSessionButton ? (
+                          <Button
+                            bannerButton={true}
+                            text="BOOK DEMO SESSION"
+                          />
+                        ) : (
+                          <Button
+                            bannerButton={true}
+                            text="DOWNLOAD SYLLABUS"
+                          />
+                        )}
+                      </div>
+                    </Link>
+                  ) : (
+                    <div onClick={popupShow}>
+                      {demoSessionButton ? (
+                        <Button bannerButton={true} text="BOOK DEMO SESSION" />
+                      ) : (
+                        <Button bannerButton={true} text="DOWNLOAD SYLLABUS" />
+                      )}
+                    </div>
+                  )}
+                  {softwareBtnHide ? (
+                    ""
+                  ) : (
+                    <div onClick={videoShow} className={styles.FaPlay}>
+                      INTRO VIDEO <FaYoutube className={styles.IconYou} />
+                    </div>
+                  )}
+                </div>
+               </>
+              ):(  <>
               {cyber ? (
                 <div className={styles.iHubdiv}>
                   {" "}
@@ -417,7 +499,8 @@ const FirstContent = ({
                   )}
                 </div>
               )}
-            </>
+            </>)}
+          </>
           )}
         </div>
 
@@ -592,7 +675,31 @@ const FirstContent = ({
           <>
             <div className={styles.Mobile}>
 
-            {ecMicro ? (
+           
+
+
+       {GenAI ? ( <>
+            <div className={styles.iHubdiv}>
+                      <p className={styles.ptop}>In Collaboration With</p>{" "}
+                      <Image
+                        src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp"
+                        width={190}
+                        height={50}
+                        priority
+                        alt="data science course"
+                      />
+                    </div> <div>
+                  {" "}
+              
+                    <div className={styles.animationTextWrap}>
+                      <span className={styles.animationText}>
+                        Only for Working Professionals
+                      </span>
+                    </div>
+    
+                 </div>
+              
+                </>):(<>     {ecMicro ? (
                               <div className={styles.iHubdiv}><Image
                               src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ec-mcs.webp"
                               width={200}
@@ -702,7 +809,7 @@ const FirstContent = ({
                     </>
                   )}
                 </>
-              )}</>)}
+              )}</>)}</>)}
               {isGuwahati ? (
                 <div className={styles.twodiv}>
                   <div className={styles.divone}>

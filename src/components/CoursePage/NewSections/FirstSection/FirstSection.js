@@ -43,7 +43,9 @@ function FirstSection({
   workingPro,
   demoSessionButton,
   DemoClass,
-  ecMicro
+  ecMicro,
+  GenAI,
+  devopsIIt,
 }) {
   const [popups, setPopups] = useState(false);
   const [video, setVideo] = useState(false);
@@ -101,6 +103,8 @@ function FirstSection({
         demoSessionButton={ demoSessionButton}
         DemoClass={DemoClass}
         ecMicro={ecMicro}
+        GenAI={GenAI}
+        devopsIIt={devopsIIt}
       />
     </>
   );
