@@ -1,5 +1,5 @@
 import FeeSection from "@/components/CoursePage/FeeSection/FeeSection";
-import FirstSection from "@/components/CoursePage/FirstSection/FirstSection";
+import FirstSection from "@/components/CoursePage/NewSections/FirstSection/FirstSection";
 import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
 import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
@@ -11,13 +11,27 @@ import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import Testimonial from "@/components/Global/Testimonial/Testimonial";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import GetHire from "@/components/Home/GetHire/GetHire";
-import ProjectSection from "@/components/Home/ProjectSection/ProjectSection";
+import CloudDevopsecond from "@/components/CoursePage/Cloud&Devops/DevOpsSecondSection/DevOpsSecondSection";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import S2SecondSection from "@/components/S2SecondSection/SecondSection";
 import Head from "next/head";
 import { useState } from "react";
 import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../../components/CoursePage/Syllabus/MasterSyllabus";
+import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
+import SliderTabs from "@/components/Global/SliderTabs/SliderTabs";
+import ToolsCovered from "@/components/CoursePage/ToolsCovered/ToolsCovered";
+import LJourney from "@/components/CoursePage/NewSections/LJourney/LJourney";
+import ContactCounsellor from "@/components/CoursePage/ContactCounsellor/ContactCounsellor";
+import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
+import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
+import WhyLearnbay from "@/components/CoursePage/WhyLearnbay/WhyLearnbay";
+import MasterSecondSection from "@/components/MastersCourse/MasterSecondSection/MasterSecondSection";
+import JobAbroad from "@/components/MastersCourse/JobAbroad/JobAbroad";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { BsDisplay, BsPeople, BsPersonGear } from "react-icons/bs";
+import { AiOutlineContainer } from "react-icons/ai";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
 
 function Blockchain({ AIMLDataScienceCourseDataJson }) {
   const AIMLDataScienceCourseData = parseJSONData(
@@ -25,6 +39,96 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
   );
 
   const [popupData, setPopupData] = useState([]);
+ const seconddata = [
+    {
+      boldText: "IBM",
+      normalText: "Certified Capstone",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review1.webp",
+    },
+    {
+      CboldText: "175%",
+      normalText: "Average Salary Hike",
+      imageUrl:
+        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/review2.webp",
+    },
+    { boldText: "35K+", normalText: "Trusted Learners" },
+  ];
+  const DsSecond = {
+    title1: "Domain Specialization",
+    image1:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds-one.webp",
+    points: [
+      "Leverage your prior work experience for  relevant career transition",
+      "Aim for higher salary hikes.",
+    ],
+    image2:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/ds.webp",
+    title2: "Job Roles You Can Target",
+    jobRoles: [
+      {
+        icon: <FaReact />,
+        role: "Sr. ML Engineer ",
+        salary: " 33 LPA",
+      },
+      {
+        icon: <TbBrandGoogleAnalytics />,
+        role: "Sr. AI Engineer ",
+        salary: " 20.9 LPA",
+      },
+      { icon: <BsPersonGear />, role: "NLP Engineer ", salary: "13 LPA" },
+    ],
+    image3:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Group-768-min.webp",
+    image4:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Mask+group+(10).webp",
+    title3: "Assured Job Assistance",
+    jobAssistance: [
+      { icon: <BsDisplay />, text: "8-10 Interview Calls" },
+      { icon: <AiOutlineContainer />, text: "Resume Building Session" },
+      { icon: <FaLinkedinIn />, text: "LinkedIn Profile Review" },
+    ],
+    formbl: [{ icon: <BsPeople />, text: "Mock Interview Sessions" }],
+    image5:
+      "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/cloud-second-min.webp",
+  };
+  const JobData = {
+    title: "Mastering the Future: Advanced AI    ",
+    points: [
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job4.webp",
+        imgAlt: "",
+        title: "Gain cutting-edge skills in Artificial Intelligence        ",
+        description:
+          "Expert crafted curriculum that readies you for advanced AI job roles        ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job2.webp",
+        imgAlt: "",
+        title: "Maximize Your Earning Potential        ",
+        description:
+          "Gain skills and earn higher salaries in the booming AI industry        ",
+      },
+      {
+        imgSrc:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/job3.webp",
+        imgAlt: "",
+        title: "Curriculum inclusive of Gen-AI        ",
+        description:
+          "Tailored for career transformation in a tech-driven era        ",
+      },
+    ],
+    bannerImage: {
+      src: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/ai-ml-main.webp",
+      width: 500,
+      height: 400,
+      priority: true,
+      quality: 80,
+      alt: "Banner Image 1 Alt",
+    },
+  };
 
   return (
     <>
@@ -62,7 +166,10 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           idss="YWxTtvb3x-U"
           softwareBtnHide={true}
         />
-        <SecondSection />
+
+     
+       <MasterSecondSection data={seconddata} />
+        <CloudDevopsecond data={DsSecond} dataScience={true} />
         <S2SecondSection
           p1="IBM Certified"
           p11="Capstone Projects"
@@ -73,24 +180,65 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           p4="1:1 Support"
           p44="Dedicated Program"
         />
-        <WhoIsProgram
+        <JobAbroad
+          data={JobData}
+          dataScience={true}
+          interstedInHide={true}
+          
+          ADS={true}
+        />
+  <WhoIsProgram
           first="Bachelor's degree with consistent good academic"
           second="Minimum 1 Year of IT/Non-IT work experience"
           third="Early to mid-career professionals interested in AI & ML "
           forth="Developing skills in AI & ML for future opportunities"
+        /> 
+       
+        <Realstory />
+        <TrainerSection plainimg={true} iimgchmbl={true} />
+        <div style={{ marginTop: "100px" }}>
+          <WhoIsProgram
+            first="Bachelor's degree with consistent good academic"
+            second="Minimum 1 year of IT/Non-IT work experience"
+            third="Early to mid-career professionals interested in AI"
+            forth="Developing skills in AI for future opportunities"
+          />
+        </div>
+
+        <WhyLearnbay
+          projectInno={true}
+          adsHide={true}
+          dataScience={true}
+          interstedInHide={true}
+          
+          ADS={true}
         />
-        <ProjectSection interstedInHide={true}  dataScience={true} ADS={true} />
         <GetHire />
+
+        <ContactCounsellor
+          noWt={true}
+          dataScience={true}
+          interstedInHide={true}
+          
+          ADS={true}
+        />
+        <LJourney />
+
         <SyllabusNew
+          buttonHide={true}
+          interstedInHide={true}
+          
+          ADS={true}
+          dataScienceCounselling={true}
+          dataScience={true}
           masterSyllabusMobile={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
               .masterSyllabusMobile
           }
           onebtn={true}
-          interstedInHide={true}
-           dataScience={true}
-          ADS={true}
         />
+        <ToolsCovered />
+
         <Certificate
           data={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0].Certificate
@@ -98,7 +246,7 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
         />
         <FeeSection
           Fee="₹ 1,15,000"
-          FeeEmi="₹7,539/month"
+          FeeEmi="₹ 7,539/ Month"
           weekdaybatch="Weekday Batch"
           weekendbatch="Weekend Batch"
           weekday="MON - THU"
@@ -112,10 +260,8 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           FeeContent5="10 days refund policy"
           FeeContent6="No additional cost"
           interstedInHide={true}
-           dataScience={true}
+          
           ADS={true}
-          titleCourse="Advanced Data Science and AI Program with domain specialization"
-          brochureLink="https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program.pdf"
           // <EMI POPUP
           emiType="NO COST EMI"
           duration1="18 Months"
@@ -126,18 +272,17 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           totalAmount2="₹1,15,000"
           monthlyPayment2="₹11,308"
         />
-        <Testimonial
-          redirectDS={true}
-          heading="Hear it from our Alumni"
-          Testimonial={
-            AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
-              .testimonialgenric
-          }
-        />
         <MentorsSection />
+        <SliderTabs WithoutService={true} />
+        <MobileTestimonial
+          dataScience={true}
+          interstedInHide={true}
+          
+          ADS={true}
+        />
         <NewProjectSection
           interstedInHide={true}
-           dataScience={true}
+          
           ADS={true}
           projectSection={
             AIMLDataScienceCourseData.AIMLDataScienceCourseData[0]
@@ -145,9 +290,9 @@ function Blockchain({ AIMLDataScienceCourseDataJson }) {
           }
         />
         <SeventhSection />
-        <EightSection interstedInHide={true}  dataScience={true} ADS={true} />
+        <EightSection interstedInHide={true}  ADS={true} />
         <WhatsappFloat />
-        <BottomBar interstedInHide={true}  dataScience={true} ADS={true} />
+        <BottomBar interstedInHide={true}  ADS={true} />
       </main>
     </>
   );
