@@ -44,6 +44,22 @@ const nextConfig = {
           "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
         permanent: true,
       },
+
+
+      {
+        source: "/fullstack/s2-generative-ai-course-for-professionals",
+        destination:
+          "/artificial-intelligence/s2-generative-ai-course-for-professionals",
+        permanent: true,
+      },
+
+
+      {
+        source: "/datascience/s2-generative-ai-course-for-managers",
+        destination:
+          "/artificial-intelligence/s2-generative-ai-course-for-managers",
+        permanent: true,
+      },
     ];
   },
 };

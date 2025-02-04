@@ -87,12 +87,12 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
         <link
           rel="canonical"
-          href="https://www.learnbay.co/datascience/generative-ai-course-for-managers"
+          href="https://course.learnbay.co/artificial-intelligence/s2-generative-ai-course-for-managers"
         />
 
         <meta
           property="og:url"
-          content="https://www.learnbay.co/datascience/generative-ai-course-for-managers"
+          content="https://course.learnbay.co/artificial-intelligence/s2-generative-ai-course-for-managers"
         />
         <meta
           property="og:title"
