@@ -49,7 +49,7 @@ const nextConfig = {
       {
         source: "/fullstack/s2-generative-ai-course-for-professionals",
         destination:
-          "/artificial-intelligence/s2-generative-ai-course-for-professionals",
+          "/artificial-intelligence/s2-generative-ai-course-for-fullstack-professionals",
         permanent: true,
       },
 
@@ -57,7 +57,7 @@ const nextConfig = {
       {
         source: "/datascience/s2-generative-ai-course-for-managers",
         destination:
-          "/artificial-intelligence/s2-generative-ai-course-for-managers",
+          "/artificial-intelligence/s2-generative-ai-course-for-data-science-professionals",
         permanent: true,
       },
     ];
