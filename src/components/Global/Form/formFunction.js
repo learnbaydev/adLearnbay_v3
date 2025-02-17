@@ -503,6 +503,10 @@ const getFormFields = (
           value: "Cyber Security & Ethical Hacking",
           label: "Cyber Security & Ethical Hacking",
         },
+        {
+          value: "Generative AI",
+          label: "Generative AI",
+        },
         
       ],
       required: radio, // Conditionally required
