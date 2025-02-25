@@ -6,7 +6,9 @@ import styles from "../styles/ThankYou.module.css";
 
 import FooterThankYou from "@/components/Global/Footer/FooterThankYou";
 import CourseThankYou from "@/components/Home/Course/ThankYouNew";
+import { certificationCourses } from "@/components/Home/Course/CertificationCard/Data/CertificationCardData";
 import cookies from "next-cookies";
+import CertificationCard from "@/components/Home/Course/CertificationCard/CertificationCard";
 
 const setCookie = (name, value, days, domain) => {
   const expires = new Date();
@@ -71,6 +73,15 @@ const ThankYou = ({ initialName, initialPhone }) => {
                 layout="intrinsic"
               />
             </div>
+          </div>
+          <div className={styles.cardwrapper}>
+            {certificationCourses.map((course, index) => (
+              <CertificationCard
+                data={course}
+                download={true}
+                isThankYou={true}
+              />
+            ))}
           </div>
           <CourseThankYou />
         </section>
