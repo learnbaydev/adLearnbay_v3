@@ -173,3 +173,21 @@ export const SP = [
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/sp/Data_Analytics_Certification_Program_sp.pdf",
   },
 ];
+
+export const GenAI = [
+  {
+    id: 1,
+    title:
+      "GenAI Certification for Managers & Tech Leaders",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
+  },
+  {
+    id: 2,
+    title:
+      "GenAI Developer Certification for Professionals",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Developer-Program.pdf",
+  },
+];

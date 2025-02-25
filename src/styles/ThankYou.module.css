@@ -5,7 +5,14 @@
   justify-content: center;
   height: 100%;
 }
-
+.cardwrapper {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 35px 0;
+}
 .Back {
   background-color: #f4fcfe;
   height: 400px;
@@ -181,6 +188,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+  }
+
+  .cardwrapper {
+    grid-template-columns: 100%;
+    margin: 35px 14px;
   }
 
   .Back {
