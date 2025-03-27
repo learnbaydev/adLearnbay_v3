@@ -42,9 +42,10 @@ export const GENAIManagersLeadersCourseData = [
         title: "E&ICT Academy, IIT Guwahati-Backed Certification",
         description:
           "Stand out with a prestigious certification from E&ICT Academy, IIT Guwahati.",
-          logos:"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iit_GEN_WHy+(1).webp",
-          logosWidth:"200",
-              logosHeight:"45",
+        logos:
+          "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iit_GEN_WHy+(1).webp",
+        logosWidth: "200",
+        logosHeight: "45",
         subItems: [
           {
             icon: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/3dicons+(1).webp",
@@ -158,8 +159,8 @@ export const GENAIManagersLeadersCourseData = [
         extraImageSrc:
           "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/iit_Gu_sum+(1).webp",
         extraImageAlt: "IIt Guwati",
-               width:"180",
-        height:"40"
+        width: "180",
+        height: "40",
       },
     ],
     masterSyllabusMobile: [
@@ -666,7 +667,7 @@ export const GENAIManagersLeadersCourseData = [
         img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/e%26ICTs.webp",
         title: "Certification from E&ICT Academy, IIT Guwahati",
         para: [
-          "Executive Certification: Earned in DS & AI from E&ICT Academy, IIT Guwahati.",
+          "Executive Certification: Earned in Generative-AI from E&ICT Academy, IIT Guwahati.",
           "Hands-On Experience: Practical learning at E&ICT Academy IIT, Guwahati campus.",
           "Top Faculty: Learn directly from E&ICT Academy, Guwahati IIT experts.",
         ],
@@ -780,7 +781,7 @@ export const GENAIManagersLeadersCourseData = [
         ],
         rank: "#4",
         duration: "20 hours",
-      }
+      },
       // Add more data as needed
     ],
     faq: [
