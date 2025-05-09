@@ -178,7 +178,7 @@ export default function Home() {
 
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection organic={true}/>
+      <SeventhSection dataScience={true} radio={true} organic={true}/>
       <EightSection
         radio={true}
         dataScience={true}

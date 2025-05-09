@@ -149,7 +149,7 @@ export default function Home() {
         Testimonial={testimonial}
       />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection />
+      <SeventhSection  dataScience={true} interstedInHide={true} radio={true}/>
       <EightSection interstedInHide={true} radio={true} dataScience={true} />
       <BottomBar interstedInHide={true} radio={true} dataScience={true} />
     </div>

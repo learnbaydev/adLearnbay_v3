@@ -14,6 +14,7 @@ const NewSevenSection = ({
   dataScienceCounselling,
   interstedInHide,
   dataScienceGeneric,
+  upSkillingHide
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = () => {
@@ -21,16 +22,23 @@ const NewSevenSection = ({
   };
   return (
     <div>
-      <PopupContent
-        dataScience={dataScience}
-        radio={radio}
-        dataScienceCounselling={dataScienceCounselling}
-        dataScienceGeneric={dataScienceGeneric}
-        popups={popups}
-        setPopups={setPopups}
-        interstedInHide={interstedInHide}
-        heading="Apply For Counselling"
-      />
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+               <div className="leftPopup">
+                 <div className="whiteP" />
+               </div>
+               <div className="RightPopup">
+                 <h5>Apply For Counselling</h5>
+                 <Form
+                   dataScienceCounselling={dataScienceCounselling}
+                   dataScienceGeneric={dataScienceGeneric}
+                   radio={radio}
+                   dataScience={dataScience}
+                   upSkillingHide={true}
+                   interstedInHide={interstedInHide}
+                   
+                 />
+               </div>
+             </Popup>
       <div className={`${styles.NewSevenSection} width`}>
         <div className={styles.griContiner}>
           <div className={styles.left}>
