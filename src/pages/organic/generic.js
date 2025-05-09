@@ -164,7 +164,7 @@ export default function Home() {
             <AnimationNew />
             <ReviewSlider idss="eautK0odE7Q" />
   
-            <ContactUs dataScienceCounselling={true} radio={true} />
+            <ContactUs dataScience={true} radio={true} />
       <CLogo />
       <Other />
 

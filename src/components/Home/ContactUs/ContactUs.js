@@ -3,6 +3,7 @@ import Image from "next/image";
 // import FormInline from "../../Global/FormSection/FormInline";
 import styles from "./ContactUs.module.css";
 import FormNew from "@/components/Global/Form/FormNew";
+import Form from "@/components/Global/Form/Form";
 
 function ContactUs({
   dataScience,
@@ -184,7 +185,7 @@ function ContactUs({
             <p className={styles.NormalPForm}>
             Free Counselling with Experts
             </p>
-            <FormNew
+            <Form
               dataScience={dataScience}
               dataScienceCounselling={dataScienceCounselling}
               radio={radio}

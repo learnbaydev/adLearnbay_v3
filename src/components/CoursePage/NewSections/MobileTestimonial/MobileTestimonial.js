@@ -254,7 +254,7 @@ const testimonials = [
   },
 ];
 
-function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, interstedInHide}) {
+function MobileTestimonial({dataScienceGeneric, dataScience, dataScienceCounselling, radio, interstedInHide}) {
   const [popups, setPopups] = useState(false);
 
   const [activeIndex, setActiveIndex] = useState(Math.floor(testimonials.length / 3));
@@ -299,7 +299,7 @@ function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, i
               dataScienceCounselling={dataScienceCounselling}
               dataScienceGeneric={dataScienceGeneric}
               radio={radio}
-        
+              dataScience={dataScience}
               upSkillingHide={true}
               interstedInHide={interstedInHide}
               
