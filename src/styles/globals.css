@@ -2,6 +2,104 @@
 
 :root {
   --swiper-navigation-color: #edb552;
+  /* Define your color variables */
+  --primary-color: #0072bc;
+  --secondary-color: #ffc436;
+  --tertiary-color: #72bc00;
+  --quaternary-color: #f98e00;
+  --quinary-color: #0c356a;
+  --senary-color: #eff3f6;
+  --septenary-color: #252525;
+  --white: #ffffff;
+  --black: #000000;
+  --cyan: #e5f1f8;
+  --brown: #fe7a3629;
+  --grey: #747272;
+  --red: #ff3131;
+  --orange: #ff9562;
+  --deep-orange: #e95407;
+  --deep-grey: #333;
+  --whitee: #f5f5f5;
+  --sky-blue: #0070f3;
+  --light-blue: #2d9cd7;
+  --light-grey: #4f4b4b;
+  --light-grayy: #646464;
+  --light-black: #212121;
+  --light-green: #35d028;
+  --deep-blue: #022646;
+  --light-deep-blue: #21415d;
+  --stone-color: #606060;
+  --light-bluee: #0383ff;
+  --dark-black: #00090f;
+  --red-official: #ff0000;
+  --dark-blue: #005f8a;
+  --dark-grey: #7a7a7a;
+  --light-white: #f7f7f7;
+  --medium-grey: #ccc;
+  --light-orange: #fe7a36;
+  --deeep-grey: #666;
+  --bluee: #007bff;
+  --light-blueee: #0056b3;
+  --deep-cyan: #36ddfe;
+  --white-deep: #fff1ea;
+  --greyy: #d3d3d3;
+  --deeep-grey: #727272;
+  --medium-greyy: #6c6c6c;
+  --medium-greey: #616161;
+  --light-whitee: #d9d9d9;
+  --daark-black: #141414;
+  --daark-grey: #848484;
+  --gray: #808080;
+  --grayy: #969494;
+  --ggrey: #999;
+  --bblack: #454545;
+  --gogreen: #454545;
+  --stonee: #454545;
+  --cement: #555555;
+  --wwhite: #dfdada;
+  --black-diamond: #383838;
+  --greyyy: #787878;
+  --whiteee: #f4f4f4;
+  --greeyy: #747474;
+  --ggrrey: #5f5d5d;
+  --light-ggrey: #525050;
+  --mint-green: #03b877;
+  --parrot-green: #04c988;
+  --royale-blue: #005a9b;
+  --light-greyy: #aeaeae;
+  --lightt-grey: #dedede;
+  --light-blackk: #909090;
+  --blue-grey: #767676;
+  --smokey: #afafaf;
+  --dark-smoke: #a8a8a8;
+  --darkest-smoke: #484848;
+  --carbon: #414141;
+  --cementt: #b3b3b3;
+  --green: #008000;
+  --carbon-black: #2e2e2e;
+  --deep-cyann: #36ddfe;
+  --cementtt: #d3d3d3;
+  --deepblack: #121212;
+  --ceementt: #d9e9f4;
+  --peacock-blue: #336ca8;
+  --kashmiri-stone: #555;
+  --kashmiri-blackstone: #f0f0f0;
+  --kashmiri-whitestone: #8a8a8a;
+  --blue-eyes: #16a0fb;
+  --kashmiri-diamond: #fefefe;
+
+  /* Define font sizes for desktop */
+  --desktop_h1-font-size: 42px;
+  --desktop_h2-font-size: 38px;
+  --desktop_h3-font-size: 30px;
+  --desktop_h4-font-size: 26px;
+  --desktop_h5-font-size: 20px;
+  --desktop_p-font-size: 16px;
+  --desktop_span-font-size: 14px;
+
+  /* Define font colour for desktop */
+  --desktop_h1-font-colour: #fff;
+  --desktop_h2-font-colour: #a4a4a4;
 }
 * {
   box-sizing: border-box;
@@ -15,51 +113,24 @@ body {
   overflow-x: hidden;
 }
 
-.PlusIcon {
-  background-color: #000;
-}
-
-.realstory {
-  margin-top: 100px;
-}
-.CookieConsent {
-  background-color: #212121 !important;
-  padding: 0px 20px;
-  text-align: center;
-  display: grid !important;
-  grid-template-columns: 35% 6%;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000 !important;
-}
-
-.CookieConsent > div {
-  width: fit-content;
-  flex: 0;
-  margin: 0px !important;
-}
-
-#rcc-confirm-button {
-  background-color: #0072bc !important;
-  margin: 15px 0px !important;
-  border-radius: 2.67px !important;
-  font-size: 16px !important;
-  color: #fff;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.cookie-consent-button:hover {
-  background-color: #0056b3;
-}
-
 body {
   background-color: transparent;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+}
+.react-tel-input{
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20) !important;
+  border-radius: 0 !important;
+}
+.react-tel-input .selected-flag{
+  background-color:#fff;
+  border: 0;
+}
+.react-tel-input .flag-dropdown{
+  border: none !important;
 }
 h1 {
   font-size: 34px;
@@ -127,7 +198,7 @@ a {
   height: 100%;
   left: 0;
   top: 0;
-  /* border-radius: 10px; */
+
   width: 100%;
   overflow: hidden;
   z-index: -1;
@@ -140,6 +211,9 @@ a {
 }
 .flexBoxRow {
   flex-flow: row;
+}
+iframe {
+  border-radius:18px;
 }
 
 .flexJustSpaceBetween {
@@ -155,6 +229,9 @@ a {
   align-items: start;
 }
 
+.realstory{
+margin-top: 100px;
+}
 .bIcons {
   margin-right: 8px;
   display: initial;
@@ -222,13 +299,6 @@ a {
   color: #555;
 }
 
-.leftPopup {
-  background-image: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/popup-left.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
 .swiper-scrollbar-drag {
   background-color: #0072bc !important;
   width: 20% !important;
@@ -241,10 +311,19 @@ a {
 
 .react-tel-input .form-control {
   width: 100% !important;
+  color: gray !important;
 }
+
+/* New Styles */
 
 .containerWidth {
   width: 1300px;
+  margin: auto;
+}
+
+.width{
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -273,23 +352,35 @@ a {
     align-items: center;
     justify-content: center;
   }
+
   .containerWidth {
     width: 1180px;
     margin: auto;
   }
-}
-@media (max-width: 1180px) {
-  .containerWidth {
-    width: auto;
-    margin: auto;
+  .width{
+
+    max-width: 1100px;
+   
   }
-  
+
 }
+@media (max-width: 1181px) {
+  .width{
+
+    max-width: 980px;
+    
+   
+  }
+
+}
+
+
 @media (max-width: 1080px) {
   .containerWidth {
     width: 1040px;
     margin: auto;
   }
+  
   
 }
 @media (max-width: 1024px) {
@@ -305,6 +396,11 @@ a {
   .wrapper {
     padding: 30px 40px;
   }
+
+  .containerWidth {
+    width: auto;
+    margin: auto;
+  }
   .whiteP {
     width: 350px;
   }
@@ -312,10 +408,7 @@ a {
     width: 90%;
     margin-left: 50px;
   }
-  .containerWidth {
-    width: auto;
-    margin: auto;
-  }
+ 
 }
 @media (max-width: 850px) {
   .leftPopup {
@@ -388,14 +481,6 @@ a {
     width: 80% !important;
     left: 10% !important;
   }
-
-  .CookieConsent {
-    grid-template-columns: 100%;
-    padding-top: 10px;
-  }
-  .CookieConsent > div {
-    margin: 5px auto 10px auto !important;
-  }
 }
 .divWrapper {
   display: none;
@@ -436,9 +521,7 @@ a {
   margin-left: 40px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  overflow: scroll;
-  padding-top: 20px;
+  gap: 10px;
 }
 
 .RightPopup h5 {
@@ -472,7 +555,6 @@ a {
     width: 100vw;
   }
   .flDivLeft {
-    /* display: none; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,10 +575,7 @@ a {
     display: flex;
     align-items: center;
   }
-
   .RightPopup {
     margin-left: 0;
-    padding-top: 20px;
-    gap: 20px;
   }
 }

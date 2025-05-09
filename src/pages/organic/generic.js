@@ -8,6 +8,13 @@ import ContactUs from "@/components/Home/ContactUs/ContactUs";
 import GetHire from "@/components/Home/GetHire/GetHire";
 import WhyLearnbay from "@/components/Home/WhyLearnbay/WhyLearnbay";
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import CLogo from "@/components/newHome/Compnays/CLogo";
+import InfinityLogo from "@/components/newHome/InfinityLogo/InfinityLogo";
+import KickStart from "@/components/newHome/KickStartSection/KickStart";
+import NewCourse from "@/components/newHome/NewCourse/NewCourse";
+import Other from "@/components/newHome/OtherVS/Other";
+import ReviewSlider from "@/components/newHome/reviewSlider/reviewSlider";
+import AnimationNew from "@/components/newHome/whyChooseSection/AnimationNew";
 import CareerHome from "@/components/OrganicGeneric/CareerHome/CareerHome";
 import FirstSection from "@/components/OrganicGeneric/FirstSection/FirstSection";
 import Media from "@/components/OrganicGeneric/Media/Media";
@@ -145,7 +152,9 @@ export default function Home() {
         organicADS={true}
         ADS={true}
       />
-      <Course
+         <InfinityLogo />
+         <KickStart />
+      <NewCourse
         dataScience={true}
         radio={true}
         organicADS={true}
@@ -153,32 +162,21 @@ export default function Home() {
         dataScienceGeneric={true}
         ADS={true}
       />
-      <WhyLearnbay />
-      <CareerHome
-        radio={true}
-        dataScience={true}
-        organicADS={true}
-        ADS={true}
-      />
-      <div className="realstory">
-        <Realstory />
-      </div>
+            <AnimationNew />
+            <ReviewSlider idss="eautK0odE7Q" />
+  
+            <ContactUs dataScienceCounselling={true} radio={true} />
+      <CLogo />
+      <Other />
 
-      <TrainerSection plainimg={true} iimgchmbl={true} />
-      <ContactUs
-        radio={true}
-        dataScience={true}
-        organicADS={true}
-        ADS={true}
-      />
 
-      <GetHire />
 
       <MobileTestimonial
         dataScience={true}
         ADS={true}
         radio={true}
       />
+
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
       <SeventhSection organic={true}/>

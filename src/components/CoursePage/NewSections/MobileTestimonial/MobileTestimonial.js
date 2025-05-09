@@ -3,7 +3,6 @@ import Styles from "./MobileTestimonial.module.css";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Button from "@/components/Global/Button/Button";
-import FormOtp from "@/components/Global/FormOtp/FormOtp";
 import Form from "@/components/Global/Form/Form";
 import Popup from "@/components/Global/Popup/Popup";
 
@@ -255,23 +254,12 @@ const testimonials = [
   },
 ];
 
-function MobileTestimonial({
-  dataScienceCounselling,
-  HideInterest,
-  interstedInHide,
-  formotp,
-  ADS,
-  dataScience,
-  radio,
-  DomainInput,
-}) {
+function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, interstedInHide}) {
   const [popups, setPopups] = useState(false);
 
-  const [activeIndex, setActiveIndex] = useState(
-    Math.floor(testimonials.length / 3)
-  );
+  const [activeIndex, setActiveIndex] = useState(Math.floor(testimonials.length / 3));
 
-  //   const [activeIndex, setActiveIndex] = useState(0);
+//   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNextClick = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -290,10 +278,7 @@ function MobileTestimonial({
   const calculateTransform = () => {
     const centerOffset = Math.floor((5 - 1) / 2); // Assuming 5 users are visible at a time
     const offset = activeIndex * 100;
-    const translateValue = Math.max(
-      Math.min(offset, 0),
-      -((testimonials.length - 5) * 100)
-    );
+    const translateValue = Math.max(Math.min(offset, 0), -((testimonials.length - 5) * 100));
     return `translateX(${translateValue}%)`;
   };
 
@@ -303,35 +288,22 @@ function MobileTestimonial({
 
   return (
     <>
-      <section className={Styles.section}>
-        <Popup trigger={popups} setTrigger={setPopups} className="popupModal ">
+      <section className={`${Styles.section} width`}>
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
           <div className="leftPopup">
             <div className="whiteP" />
           </div>
           <div className="RightPopup">
             <h5>Apply For Counselling</h5>
-            {formotp ? (
-              <FormOtp
-              dataScience={dataScience}
-              interstedInHide={interstedInHide}
+            <Form
               dataScienceCounselling={dataScienceCounselling}
-              upSkillingHide={true}
-              formotp={formotp}
-              ADS={ADS}
+              dataScienceGeneric={dataScienceGeneric}
               radio={radio}
-            HideInterest={HideInterest}
-            DomainInput={DomainInput}
+        
+              upSkillingHide={true}
+              interstedInHide={interstedInHide}
+              
             />
-            ) : (
-              <Form
-                dataScience={dataScience}
-                interstedInHide={interstedInHide}
-                dataScienceCounselling={dataScienceCounselling}
-                upSkillingHide={true}
-                ADS={ADS}
-                radio={radio}
-              />
-            )}
           </div>
         </Popup>
         <div className={Styles.TestimonialContainer}>
@@ -345,10 +317,7 @@ function MobileTestimonial({
                 {" "}
                 <IoIosArrowBack className={Styles.icons} />{" "}
               </div>
-              <div
-                className={Styles.sliderUser}
-                style={{ transform: calculateTransform() }}
-              >
+              <div className={Styles.sliderUser} style={{ transform: calculateTransform() }}>
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={testimonial.id}
@@ -391,7 +360,7 @@ function MobileTestimonial({
           <Image
             width="363"
             height="500"
-            style={{ width: "100%" }}
+            style={{width:"100%"}}
             src={testimonials[activeIndex].MobileReviewImage}
             alt={`User ${testimonials[activeIndex].UserImage}`}
           />
