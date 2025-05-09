@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./CertificationCard.module.css";
-import { MdOutlineFileDownloadSvg } from "@/Data/svgData/points";
+
 // import { useState } from "react";
 // import dynamic from "next/dynamic";
 import Link from "next/link";
+import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 const CertificationCard = ({
   data,
   download,

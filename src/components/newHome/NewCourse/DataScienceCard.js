@@ -8,7 +8,9 @@ import Image from 'next/image';
 import Form from '@/components/Global/Form/Form';
 import Popup from '@/components/Global/Popup/Popup';
 import Link from 'next/link';
-import { MdOutlineFileDownloadSvg } from '@/Data/svgdata/MDIcons';
+import { MdOutlineFileDownloadSvg } from '@/Data/svgData/MDIcons';
+
+
 
 const DataScienceCard = ({
   dataScience,

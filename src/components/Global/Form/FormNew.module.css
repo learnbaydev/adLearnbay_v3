@@ -21,6 +21,13 @@
   color:rgba(0, 0, 0, 0.20);
 
 }
+.formWrapper.react-tel-input .selected-flag{
+  background-color:#fff;
+  border: 0;
+}
+.react-tel-input .flag-dropdown{
+  border: none !important;
+}
 
 .spanLabel {
   color: #ff3131 !important;

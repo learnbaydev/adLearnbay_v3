@@ -1,12 +1,12 @@
+import dynamic from "next/dynamic";
+import Head from "next/head";
+
 import MobileTestimonial from "@/components/CoursePage/NewSections/MobileTestimonial/MobileTestimonial";
-import Realstory from "@/components/CoursePage/NewSections/Realstory/Realstory";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import TrainerSection from "@/components/Global/TrainerSection/TrainerSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import ContactUs from "@/components/Home/ContactUs/ContactUs";
-import GetHire from "@/components/Home/GetHire/GetHire";
-import WhyLearnbay from "@/components/Home/WhyLearnbay/WhyLearnbay";
+
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import CLogo from "@/components/newHome/Compnays/CLogo";
 import InfinityLogo from "@/components/newHome/InfinityLogo/InfinityLogo";
@@ -15,17 +15,16 @@ import NewCourse from "@/components/newHome/NewCourse/NewCourse";
 import Other from "@/components/newHome/OtherVS/Other";
 import ReviewSlider from "@/components/newHome/reviewSlider/reviewSlider";
 import AnimationNew from "@/components/newHome/whyChooseSection/AnimationNew";
-import CareerHome from "@/components/OrganicGeneric/CareerHome/CareerHome";
-import FirstSection from "@/components/OrganicGeneric/FirstSection/FirstSection";
 import Media from "@/components/OrganicGeneric/Media/Media";
-import dynamic from "next/dynamic";
-import Head from "next/head";
+
+const FirstSection = dynamic(() =>
+  import("@/components/OrganicGeneric/FirstSection/FirstSection")
+);
+
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
-const Course = dynamic(() =>
-  import("@/components/Home/Course/CourseNewDesign/Course")
-);
+
 
 export default function Home() {
   const data = [

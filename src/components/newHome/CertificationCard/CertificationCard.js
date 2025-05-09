@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./CertificationCard.module.css";
-import { MdOutlineFileDownloadSvg } from "@/Data/svgdata/MDIcons";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("@/components/Global/Popup/Popup"));
 const Form = dynamic(() => import("@/components/Global/Form/Form"));
 
 import Link from "next/link";
+import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 const CertificationCard = ({
   data,
   download,

@@ -1,205 +1,200 @@
-.Section2 {
-  margin: 100px 0px;
+.NewSevenSection{
+  border-radius: 50px;
+background: #212121;
+margin: 100px auto;
+
+padding: 50px 80px;
+
 }
 
-.infop {
-  display: none;
-  color: black;
-  margin: 0px 0px 10px 0px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.LearnSupport {
-  padding: 30px 100px 30px 300px;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  height: fit-content;
-  margin-top: 30px;
-  margin-bottom: 0px;
+.griContiner{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns:62% 25%;
+  justify-content: center;
 }
-
-.pBot {
+.fontDiv h4 {
+  color: #FFC436;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 153%; /* 45.9px */
+}
+.fontDiv h3 {
+  color: #FFF;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 400;
-  color: #0072bc;
-  margin: 0;
-  margin-bottom: 30px;
-  padding-right: 130px;
-  font-size: 20px;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 153%;
 }
-
-.LearnSupport .pTop {
-  color: #f99600;
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-  margin-bottom: 30px;
-  font-weight: 600;
-  line-height: normal;
+.fontDiv p {
+  color: #FFF;
+font-size: 17px;
+font-style: normal;
+font-weight: 300;
+line-height: 153%; /* 33.66px */
 }
-.LearnSupport h5 {
-  color: #0072bc;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.btnWrap {
+.ryt {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+position: relative;
 }
 
-.btn1 {
+.ryt  img {
+  position: absolute;
+  bottom: -50px;
+}
+
+.buttonDiv{
+display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.green {
+  border-radius: 5px;
+  background: var(--p3, #04C988);
+  color: #fff;
+  border: none;
+  padding: 6px 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153%; /* 30.6px */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.green:hover {
+  background: #03b877;
+  box-shadow: 0 0 15px rgba(4, 201, 136, 0.6);
+}
+
+.blue {
   display: flex;
   gap: 10px;
+  color: #0072BC;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 5px;
+  background: #FFF;
+  border: none;
   align-items: center;
-  text-align: center;
-  margin-right: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  fill: #48c355;
-
-  background-color: #48c355;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #48c355;
-  border-radius: 4px;
-  box-shadow: 0px 0px 5px 0px #48c35550;
-  padding: 12px;
-  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn1:hover {
-  color: #48c355;
-  background-color: #fff;
+.blue:hover {
+  color: #005a9b;
+  box-shadow: 0 0 15px rgba(104, 114, 121, 0.6);
 }
 
-.bIcon {
-  font-size: 20px;
-  margin-left: 10px;
+.NewSevenSectionM {
+  display: none;
 }
 
-.rightPart {
-  width: 500px;
-  height: 390px;
-  display: flex;
-  align-items: center;
+@media screen and (max-width:1281px) {
+  .NewSevenSection{
+      padding: 50px 0px;
+   }
+
+}
+@media screen and (max-width:1081px) {
+
+
+  @media screen and (max-width:951px) {
+     
+.ryt img {
+  bottom: -50px;
 }
 
-@media (max-width: 1281px) {
+  }    
 
 
-  .rightPart {
-    width: 450px;
-  }
 }
-@media (max-width: 1081px) {
-  
-  .rightPart {
-    width: 400px;
-  }
+@media screen and (max-width:1281px) {
+
+
 
 }
 
-@media (max-width: 1024px) {
-  .LearnSupport {
-    padding: 30px 30px 30px 180px;
+
+
+@media screen and (max-width:641px) {
+  .NewSevenSection{
+      display: none;
+  }
+
+  .NewSevenSectionM{
+      display: block;
+      border-radius: 30px;
+      background: #212121;
+      padding: 20px;
+      margin: 20px;
+  }
+  .griContiner{
+      display: flex;
+  flex-direction: column;
+  }
+
+  .NewSevenSectionM h4 {
+      font-size: 20px;
+
+  }
+  .NewSevenSectionM h3{
+font-size: 26px;
+  }
+  .NewSevenSectionM p {
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 153%;
+      width: 241px;
+  }
+
+  .ryt img {
+      position: absolute;
+      width: 130px;
+      height: auto;
+      right: -10px;
+      bottom: -20px;
+
+  }
+
+  .ryt{
+gap: 0;
+position: relative;
+display: block;
+
+  }
+  .buttonDiv {
+      flex-direction: column;
+      gap: 16px;
+
+  }
+  .green{
+      padding: 9px;
+  font-size: 18px;
+  width: fit-content;
+  }
+  .blue{
+     gap: 8px;
+      font-size: 18px;
+      padding: 10px;
+      width: 200px;
   }
 
 }
 
-@media (max-width: 961px) {
-  .LearnSupport {
-    padding: 30px 30px 30px 180px;
-  }
-}
+@media screen and (max-width:360px) {
 
-@media (max-width: 801px) {
-  .LearnSupport {
-    padding: 30px 30px 30px 180px;
-  }
-  .LearnSupport h5 {
-    font-size: 22px;
-    line-height: 24px;
-  }
-  .pBot {
-    font-size: 16px;
-  }
-  .LearnSupport .pTop {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 641px) {
-  .LearnSupport {
-    padding: 30px 30px 30px 30px;
-  }
-  .rightPart {
-    display: none;
-  }
-  .Section2 {
-    margin: 50px 0px;
-  }
-}
-
-@media (max-width: 481px) {
-  .LearnSupport {
-    padding: 24px 20px 0px 20px;
-    display: block;
-    margin: 0px 20px 70px 20px;
-    border-radius: 10px;
-    height: 730px;
-    justify-content: space-evenly;
-    margin-top: 30px;
-  }
-  .LearnSupport .pTop {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 18px;
-  }
-  .LearnSupport h5 {
-    font-size: 23px;
-    line-height: 35px;
-    color: #0072bc;
-    font-weight: 700;
+  .blue, .green{
+      font-size: 14px;
   }
 
-  .pBot {
-    font-size: 16px;
-    line-height: 26px;
-    padding-right: 0px;
-  }
-
-  .btnWrap {
-    display: grid;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    gap: 20px;
-  }
-
-  .h1 {
-    color: #0072bc;
-    margin: 10px 0px 20px 0px;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .infop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-  .rightPart {
-    display: none;
-  }
 }
