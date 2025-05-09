@@ -10,6 +10,7 @@ import Testimonial from "@/components/OrganicGeneric/TestimonialOrganic/Testimon
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import NewCourse from "@/components/newHome/NewCourse/NewCourse";
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
@@ -123,14 +124,22 @@ export default function Home() {
           <BoxShape />
         </div>
       </div>
-      <Course
+      {/* <Course
         dataScience={true}
         radio={true}
         organicADS={true}
         newDesign={true}
         dataScienceGeneric={true}
         interstedInHide={true}
-      />
+      /> */}
+         <NewCourse
+              dataScience={true}
+              radio={true}
+              organicADS={true}
+              newDesign={true}
+              dataScienceGeneric={true}
+              ADS={true}
+            />
       <Switch organicADS={true} />
       <ProjectSection interstedInHide={true} radio={true} dataScience={true} />
 
@@ -140,7 +149,7 @@ export default function Home() {
         Testimonial={testimonial}
       />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection />
+      <SeventhSection  dataScience={true} interstedInHide={true} radio={true}/>
       <EightSection interstedInHide={true} radio={true} dataScience={true} />
       <BottomBar interstedInHide={true} radio={true} dataScience={true} />
     </div>

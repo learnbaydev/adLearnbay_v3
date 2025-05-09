@@ -1,22 +1,27 @@
 import Image from "next/image";
 import styles from "./CertificationCard.module.css";
+import { useState } from "react";
+import dynamic from "next/dynamic";
+const Popup = dynamic(() => import("@/components/Global/Popup/Popup"));
+const Form = dynamic(() => import("@/components/Global/Form/Form"));
 
-// import { useState } from "react";
-// import dynamic from "next/dynamic";
 import Link from "next/link";
 import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 const CertificationCard = ({
   data,
   download,
   newBadge = true,
-//   platform,
-  isThankYou,
+  dataScience,
+  radio,
+  dataScienceCounselling,
+  dataScienceGeneric,
+  interstedInHide,
   imageAlt = "Certification Image",
 }) => {
-//   const [popups, setPopups] = useState(false);
-//   const [titleCourse, setTitleCourse] = useState();
-//   const [brochureLinks, setBrochureLinks] = useState();
-//   const [brochurePdfs, setBrochurePdfs] = useState();
+  const [popups, setPopups] = useState(false);
+  const [titleCourse, setTitleCourse] = useState();
+  const [brochureLinks, setBrochureLinks] = useState();
+  const [brochurePdfs, setBrochurePdfs] = useState();
   return (
     <div className={styles.card}>
       {/* "New" Badge */}
@@ -43,23 +48,34 @@ const CertificationCard = ({
 
       {/* Middle Section: Subtitle (with Icon) and Bullet Points */}
       <div className={styles.textContainer}>
-        {/* <Popup
+        <Popup
           trigger={popups}
           setTrigger={setPopups}
           className="popupModal"
           downloadBrochure
         >
+          <div className="leftPopup">
+            <div
+              className="whiteP"
+              style={{ width: "340px", height: "400px" }}
+            ></div>
+          </div>
           <div className="RightPopup">
             <h5>Download Syllabus</h5>
             <Form
               titleCourse={titleCourse}
               brochureLink={data.brochureLinks}
               brochurePdf={data.brochurePdfs}
-              platform={platform}
+              dataScience={dataScience}
+              dataScienceCounselling={dataScienceCounselling}
+              dataScienceGeneric={dataScienceGeneric}
+              radio={radio}
               downloadBrochure
+              upSkillingHide={true}
+              interstedInHide={interstedInHide}
             />
           </div>
-        </Popup> */}
+        </Popup>
         <div className={styles.textwrapper}>
           {/* {subtitleIcon && (
             <Image
@@ -97,23 +113,9 @@ const CertificationCard = ({
         {/* Buttons */}
         <div className={styles.buttonGroup}>
           {data.link ? (
-            isThankYou ? (
-              <Link href={data.link} passHref>
-                <button className={styles.viewDetails}>View Details</button>
-              </Link>
-            ) : (
-              <button
-                className={styles.viewDetails}
-                onClick={() => {
-                  // setTitleCourse(data.title);
-                  // setBrochureLinks(data.brochureLinks);
-                  // setBrochurePdfs(data.brochurePdfs);
-                  setPopups(true);
-                }}
-              >
-                View Details
-              </button>
-            )
+            <a href={data.link}>
+              <button className={styles.viewDetails}>View Details</button>
+            </a>
           ) : (
             <button disabled className={styles.viewDetails}>
               No Details Available
@@ -121,7 +123,7 @@ const CertificationCard = ({
           )}
           {download ? (
             <a
-              href={data.brochureLinks}
+              href={data.brochurePdfs}
               download
               target="_blank"
               rel="noopener noreferrer"

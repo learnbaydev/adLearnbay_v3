@@ -1,120 +1,112 @@
-import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { useState } from "react";
 import styles from "./SeventhSection.module.css";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { MdCall } from "react-icons/md";
 import Image from "next/image";
-import Button from "../Button/Button";
+import { FaPhoneAlt } from "react-icons/fa";
+import PopupContent from "@/components/Global/PopupContent/PopupContent";
+import Link from "next/link";
+const Popup = dynamic(() => import("@/components/Global/Popup/Popup"));
+const Form = dynamic(() => import("@/components/Global/Form/Form"));
 
-function SeventhSection({ fullStackCont, organic }) {
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-  }, []);
+const NewSevenSection = ({
+  dataScience,
+  radio,
+  dataScienceCounselling,
+  interstedInHide,
+  dataScienceGeneric,
+  upSkillingHide
+}) => {
+  const [popups, setPopups] = useState(false);
+  const popupShow = () => {
+    setPopups(true);
+  };
   return (
-    <div className={styles.Section2}>
-      <p className={styles.infop}>24X7 Learner’s Support</p>
-
-      <div className={styles.LearnSupport}>
-        <div className="bgWrap">
-          {mobile ? (
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven-girl-mbls.webp"
-              fill={true}
-              className={styles.deskImage}
-              alt="Learners support"
-              loading="lazy"
-            />
-          ) : (
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/coursePage/new-bg-sevventt.webp"
-              fill={true}
-              alt="Learners support"
-              loading="lazy"
-            />
-          )}
-        </div>
-        <div className={styles.learnInner}>
-          <p className={styles.pTop}>Got more questions?</p>
-          <h5>Talk to our team directly</h5>
-          <p className={styles.pBot}>
-            Contact us and our academic counsellor will get in touch with you
-            shortly
-          </p>
-          {fullStackCont ? (
-            <div className={styles.btnWrap}>
-              <a
-                href="https://api.whatsapp.com/send?phone=919731135221&text=Hello,"
-                target="_blank"
-              >
-                <button className={styles.btn1}>
-                  <AiOutlineWhatsApp /> Enquire Now
-                </button>
-              </a>
-              <a href="tel: +919731135221">
-                <Button
-                  text="+91 97311 35221"
-                  passIcon={<MdCall />}
-                  outline={true}
-                  invert
-                />
-              </a>
+    <div>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+               <div className="leftPopup">
+                 <div className="whiteP" />
+               </div>
+               <div className="RightPopup">
+                 <h5>Apply For Counselling</h5>
+                 <Form
+                   dataScienceCounselling={dataScienceCounselling}
+                   dataScienceGeneric={dataScienceGeneric}
+                   radio={radio}
+                   dataScience={dataScience}
+                   upSkillingHide={true}
+                   interstedInHide={interstedInHide}
+                   
+                 />
+               </div>
+             </Popup>
+      <div className={`${styles.NewSevenSection} width`}>
+        <div className={styles.griContiner}>
+          <div className={styles.left}>
+            <div className={styles.fontDiv}>
+              <h4>Got more questions?</h4>
+              <h3>Talk to our team directly</h3>
+              <p>
+                Contact us and our academic counsellor will get in touch with
+                you shortly
+              </p>
             </div>
-          ) : (
-            <>
-              {organic ? (
-                <div className={styles.btnWrap}>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=917349222263&text=Hello,"
-                    target="_blank"
-                  >
-                    <button className={styles.btn1}>
-                      <AiOutlineWhatsApp /> Enquire Now
-                    </button>
-                  </a>
 
-                  <a href="tel: +917795687988">
-                    <Button
-                      text="917795687988"
-                      passIcon={<MdCall />}
-                      outline={true}
-                      invert
-                    />
-                  </a>
-                </div>
-              ) : (
-                <div className={styles.btnWrap}>
-                  {/* <a
-                  href="https://api.whatsapp.com/send?phone=916364939404&text=Hello,"
-                  target="_blank"
-                >
-                  <button className={styles.btn1}>
-                    <AiOutlineWhatsApp /> Enquire Now
-                  </button>
-                </a> */}
-                  <a href="tel: +916364939404">
-                    <Button
-                      text="+91 6364 939404"
-                      passIcon={<MdCall />}
-                      outline={true}
-                      invert
-                    />
-                  </a>
-                </div>
-              )}
-            </>
-          )}
-        </div>
-        <div className={styles.rightPart}>
-          <div className="imgWrapper">
+            <div className={styles.buttonDiv}>
+              <button className={styles.green} onClick={popupShow}>
+                Enquire Now
+              </button>
+              <Link href="tel:+917795687988" className={styles.callLink}>
+              <button className={styles.blue}>
+                <FaPhoneAlt />   091-77956 87988
+
+              </button>
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.ryt}>
             <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven-new-girls.webp"
-              width={600}
-              height={600}
-              alt="data science course"
-              style={{ borderRadius: "5px" }}
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven_mblss.webp"
+              width={220}
+              height={350}
+              alt="coun"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.NewSevenSectionM}>
+        <div className={styles.griContiner}>
+          <div className={styles.left}>
+            <div className={styles.fontDiv}>
+              <h4>Got more questions?</h4>
+              <h3>Talk to our team directly</h3>
+              <p>
+                Contact us and our academic counsellor will get in touch with
+                you shortly
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.ryt}>
+            <div className={styles.buttonDiv}>
+              <button className={styles.green} onClick={popupShow}>
+                Enquire Now
+              </button>
+              <Link href="tel:+917795687988" className={styles.callLink}>
+              <button className={styles.blue}>
+                <FaPhoneAlt />   091-77956 87988
+
+              </button>
+              </Link>
+            </div>
+
+            <Image
+              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven_mblss.webp"
+              width={400}
+              height={350}
+              alt="coun"
               loading="lazy"
             />
           </div>
@@ -122,6 +114,6 @@ function SeventhSection({ fullStackCont, organic }) {
       </div>
     </div>
   );
-}
+};
 
-export default SeventhSection;
+export default NewSevenSection;
