@@ -113,9 +113,14 @@ const CertificationCard = ({
         {/* Buttons */}
         <div className={styles.buttonGroup}>
           {data.link ? (
-            <a href={data.link}>
-              <button className={styles.viewDetails}>View Details</button>
-            </a>
+
+              <button className={styles.viewDetails}   onClick={() => {
+                setTitleCourse(data.title);
+                setBrochureLinks(data.brochureLinks);
+                setBrochurePdfs(data.brochurePdfs);
+                setPopups(true);
+              }}>View Details</button>
+
           ) : (
             <button disabled className={styles.viewDetails}>
               No Details Available

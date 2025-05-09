@@ -141,11 +141,16 @@ const DataScienceCard = ({
                     Brochure <MdOutlineFileDownloadSvg />
                   </button>
                   {course.link ? (
-                    <a href={course.link}>
-                      <button className={styles.viewDetailsButton}>
+       
+                      <button className={styles.viewDetailsButton}   onClick={() => {
+                        setTitleCourse(course.titleCourse);
+                        setBrochureLinks(course.brochureLinks);
+                        setBrochurePdf(course.brochurePdfs);
+                        setPopups(true);
+                      }}>
                         View Details
                       </button>
-                    </a>
+
                   ) : (
                     <button disabled className={styles.viewDetailsButton}>
                       No Details Available
@@ -221,11 +226,17 @@ const DataScienceCard = ({
                   Brochure <MdOutlineFileDownloadSvg/>
                 </button>
                 {course.link ? (
-                  <a href={course.link}>
-                    <button className={styles.viewDetailsButton}>
+                
+                    <button className={styles.viewDetailsButton}   onClick={() => {
+                      setTitleCourse(course.titleCourse);
+                      setBrochureLinks(course.brochureLinks);
+                  
+                      setBrochurePdf(course.brochurePdfs);
+                      setPopups(true);
+                    }}>
                       View Details
                     </button>
-                  </a>
+                  
                 ) : (
                   <button disabled className={styles.viewDetailsButton}>
                     No Details Available
