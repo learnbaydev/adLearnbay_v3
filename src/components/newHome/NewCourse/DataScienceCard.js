@@ -148,6 +148,7 @@ const DataScienceCard = ({
                         setBrochurePdf(course.brochurePdfs);
                         setPopups(true);
                       }}>
+                      
                         View Details
                       </button>
 
