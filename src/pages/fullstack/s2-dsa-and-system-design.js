@@ -207,7 +207,7 @@ function Blockchain({ DataScienceCourseDataJson }) {
         />
 
         <DSAFeeSection
-          Fee="₹ 123,900"
+          Fee="₹ 1,23,900"
           FeeEmi="₹ 8,122/month"
           weekendbatch="Weekday Evening (DSA BATCHES)"
           weekdaybatch="Weekday Evening (DSA BATCHES)"
