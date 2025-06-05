@@ -19,6 +19,7 @@ import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import UpdatedCertificate from "@/components/CoursePage/UpdatedCertificate/UpdatedCertificate";
 
 function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
   const CloudAndDevOpsCourseData = parseJSONData(CloudAndDevOpsCourseDataJson);
@@ -84,7 +85,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
           dataScience={true}
         />
 
-        <Certificate
+        <UpdatedCertificate
           data={
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0].Certificate
           }
