@@ -3,7 +3,8 @@ import styles from "./dsaFee.module.css";
 import Image from "next/image";
 import Emipopup from "../EMIPopup/Emipopup";
 import Modal from "react-modal";
-import { Points } from "@/Data/svgData/Points";
+import { Points } from "../../../Data/svgData/Points";
+// import { Points } from "@/Data/svgData/Points";
 const DSAFeeSection = ({
   weekendbatch,
   weekdaybatch,
