@@ -4,7 +4,7 @@ import SecondSection from "@/components/CoursePage/SecondSection/SecondSection";
 import WhoIsProgram from "@/components/CoursePage/WhoIsProgram/WhoIsProgram";
 import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
-import Certificate from "@/components/Global/Certificate/Certificate";
+import Certificate from "@/components/CoursePage/UpdatedCertificate/UpdatedCertificate";
 import MentorsSection from "@/components/Global/MentorsSection/MentorsSection";
 import NewProjectSection from "@/components/Global/NewProjectSection/NewProjectSection";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
@@ -19,6 +19,7 @@ import { parseJSONData } from "../../../Util/JsonConvertor";
 import SyllabusNew from "../../components/CoursePage/Syllabus/MasterSyllabus";
 
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
+import DSAFeeSection from "@/components/CoursePage/dsaFee/DSAFeeSection";
 
 function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
   const CloudAndDevOpsCourseData = parseJSONData(CloudAndDevOpsCourseDataJson);
@@ -29,7 +30,6 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
     <>
       <Head>
         <title>
-          {" "}
           Master Cloud Computing and DevOps with Advanced Certification Programs
           - Learnbay
         </title>
@@ -91,7 +91,7 @@ function Blockchain({ CloudAndDevOpsCourseDataJson, projectSection }) {
             CloudAndDevOpsCourseData.CloudAndDevOpsCourseData[0].Certificate
           }
         />
-        <FeeSection
+        <DSAFeeSection
           Fee=" ₹80,000"
           FeeEmi="₹5,244/month"
           weekdaybatch="Weekend Batch"
