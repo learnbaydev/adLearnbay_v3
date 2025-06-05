@@ -3,9 +3,10 @@ import Footer from "@/components/Global/Footer/Footer";
 import SeventhSection from "@/components/Global/SeventhSection/SeventhSection";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import dynamic from "next/dynamic";
+import DSAFeeSection from "../dsaFee/DSAFeeSection";
 const SyllabusNew = dynamic(() => import("../Syllabus/MasterSyllabus"));
 const ToolsCovered = dynamic(() => import("../ToolsCovered/ToolsCovered"));
-const Certificate = dynamic(() => import("../Certificate/Certificate"));
+const Certificate = dynamic(() => import("../UpdatedCertificate/UpdatedCertificate"));
 const FeeSection = dynamic(() => import("../FeeSection/FeeSection"));
 const MentorsSection = dynamic(() =>
   import("../../Global/MentorsSection/MentorsSection")
@@ -42,7 +43,7 @@ const SecondPart = ({
       />
       <ToolsCovered devops={true} mbldevops={mbldevops} />
       <Certificate data={CertificateData} />
-      <FeeSection
+      <DSAFeeSection
         devopfee={devopfee}
         Fee=" ₹ 80,000"
         FeeEmi="₹ 5,244/month"

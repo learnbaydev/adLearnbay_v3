@@ -3,7 +3,7 @@ import styles from "./dsaFee.module.css";
 import Image from "next/image";
 import Emipopup from "../EMIPopup/Emipopup";
 import Modal from "react-modal";
-import { Points } from "@/Data/svgData/points";
+import { Points } from "@/Data/svgData/Points";
 const DSAFeeSection = ({
   weekendbatch,
   weekdaybatch,
@@ -71,7 +71,7 @@ const DSAFeeSection = ({
             </div>
           </div>
         </div>
-
+{/* 
         <div className={styles.batch}>
           <p className={styles.batchHead}>Batch Details :</p>
           <div className={styles.weekday}>
@@ -114,7 +114,7 @@ const DSAFeeSection = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Emi Popup */}
