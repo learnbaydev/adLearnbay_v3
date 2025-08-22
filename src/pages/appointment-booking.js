@@ -1,4 +1,4 @@
-import Form1 from "@/components/Form/form-01";
+import Form1 from "@/components/Form/Form-01";
 import React from "react";
 
 const appointmentBooking = () => {

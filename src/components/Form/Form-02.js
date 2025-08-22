@@ -1,56 +1,28 @@
-// components/Form2.js
-import { useEffect, useState } from "react";
 import styles from "./form2.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 const Form2 = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    domain: "",
-    reason: "",
-  });
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, []);
-
-  const GETFORM_ENDPOINT = "";
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form 2 submitted:", formData);
-    // Add your form submission logic here
-  };
-
   const domainOptions = [
     { value: "", label: "Explore other domains" },
-    { value: "cloud-devops", label: "Cloud & DevOps" },
-    { value: "cyber-security", label: "Cyber Security" },
-    { value: "software-development", label: "Software Development" },
-    { value: "data-cience-and-gen-ai", label: "Data Science & Gen AI" },
-    { value: "not-sure", label: "Not sure" },
+    { value: "Cloud and Devops", label: "Cloud & DevOps" },
+    { value: "Cyber Security", label: "Cyber Security" },
+    { value: "Software Development", label: "Software Development" },
+    { value: "Data Science & Gen AI", label: "Data Science & Gen AI" },
+    { value: "Not Sure", label: "Not sure" },
+    {
+      value: "Not looking for any Course",
+      label: "Not looking for any Course",
+    },
   ];
 
   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form
+        action={`https://getform.io/f/aqoekpva`}
+        method="POST"
+        className={styles.form}
+      >
         <div className={styles.center}>
           <Link href="/">
             <Image
@@ -67,45 +39,19 @@ const Form2 = () => {
         <h2>Career Interest Inquiry</h2>
         <div className={styles.formGroup}>
           <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" id="name" name="name" required />
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+          <input type="email" id="email" name="email" required />
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="phone">Phone:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
+          <input type="tel" id="phone" name="phone" required />
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="domain">Interested Domain:</label>
-          <select
-            id="domain"
-            name="domain"
-            value={formData.domain}
-            onChange={handleChange}
-          >
+          <select id="domain" name="domain">
             {domainOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
@@ -114,13 +60,11 @@ const Form2 = () => {
           </select>
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="reason">Reason for interest:</label>
+          <label htmlFor="tell_us_in_details">Tell us in details:</label>
           <textarea
-            id="reason"
-            name="reason"
+            id="tell_us_in_details"
+            name="tell_us_in_details"
             rows="5"
-            value={formData.reason}
-            onChange={handleChange}
           ></textarea>
         </div>
         <button type="submit">Submit</button>
