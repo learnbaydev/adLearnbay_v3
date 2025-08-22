@@ -1,9 +1,6 @@
-// components/Form1.js
-
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./form1.module.css";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,20 +17,60 @@ const Form1 = () => {
     }
   }, []);
 
-  // Helper function to generate time options from 10:00 AM to 9:00 PM IST
   const generateTimeOptions = () => {
     const options = [];
     for (let i = 10; i <= 21; i++) {
-      const time = `${i < 10 ? "0" : ""}${i}:00`;
+      const hour = i > 12 ? i - 12 : i;
+      const ampm = i >= 12 ? "PM" : "AM";
+      const time = `${hour < 10 ? "0" : ""}${hour}:00:00 ${ampm}`;
       options.push(
         <option key={time} value={time}>
-          {time} IST
+          {time}
         </option>
       );
     }
     return options;
   };
 
+  // Function to format the date to YYYY-MM-DD
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${day}/${month}/${year}`;
+  };
+
+  // Function to calculate and format the future dates
+  const getFutureDates = () => {
+    const today = new Date();
+    const futureDates = [];
+    for (let i = 0; i <= 7; i++) {
+      const nextDate = new Date(today);
+      nextDate.setDate(today.getDate() + i);
+      // 0 = Sunday, 6 = Saturday
+      if (nextDate.getDay() !== 0) {
+        // Exclude Sunday
+        futureDates.push(nextDate);
+      }
+    }
+    return futureDates;
+  };
+
+  // Function to generate date options for the select input
+  const generateDateOptions = () => {
+    const dates = getFutureDates();
+    return dates.map((date) => {
+      const formattedDate = formatDate(date);
+      const displayDate = `${String(date.getDate()).padStart(2, "0")}/${String(
+        date.getMonth() + 1
+      ).padStart(2, "0")}/${date.getFullYear()}`;
+      return (
+        <option key={formattedDate} value={formattedDate}>
+          {displayDate}
+        </option>
+      );
+    });
+  };
   return (
     <div className={styles.container}>
       <form
@@ -54,7 +91,6 @@ const Form1 = () => {
             />
           </Link>
         </div>
-
         <h2> Appointment Booking</h2>
         <div className={styles.formGroup}>
           <label htmlFor="name">Name:</label>
@@ -70,8 +106,12 @@ const Form1 = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="date">Date (Mon-Sat):</label>
-          <input type="date" id="date" name="appointmentDate" required />
+          <select id="date" name="appointmentDate" required>
+            <option value="">Select a date</option>
+            {generateDateOptions()}
+          </select>
         </div>
+
         <div className={styles.formGroup}>
           <label htmlFor="time">Time (10 AM - 9 PM IST):</label>
           <select id="time" name="appointmentTime" required>
