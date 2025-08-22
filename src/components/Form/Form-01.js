@@ -1,22 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
 import styles from "./form1.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 const Form1 = () => {
-  const [mobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    let width = window.innerWidth;
-    if (width < 481) {
-      setMobile(true);
-    }
-    if (width > 481) {
-      setMobile(false);
-    }
-  }, []);
-
   const generateTimeOptions = () => {
     const options = [];
     for (let i = 10; i <= 21; i++) {
