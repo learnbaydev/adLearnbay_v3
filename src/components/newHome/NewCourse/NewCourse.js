@@ -192,17 +192,17 @@ const NewCourse = ({
                       </button>
 
                       {course.link ? (
-                        
-                          <button className={styles.viewDetailsButton}
+                        <button
+                          className={styles.viewDetailsButton}
                           onClick={() => {
                             setTitleCourse(course.titleCourse);
                             setBrochureLinks(course.brochureLinks);
                             setBrochurePdfs(course.brochurePdfs);
                             setPopups(true);
-                          }}>
-                            View Details
-                          </button>
-                 
+                          }}
+                        >
+                          View Details
+                        </button>
                       ) : (
                         <button disabled className={styles.viewDetailsButton}>
                           No Details Available
@@ -303,17 +303,17 @@ const NewCourse = ({
                     </button>
 
                     {course.link ? (
-          
-                        <button className={styles.viewDetailsButton}
+                      <button
+                        className={styles.viewDetailsButton}
                         onClick={() => {
                           setTitleCourse(course.titleCourse);
                           setBrochureLinks(course.brochureLinks);
                           setBrochurePdfs(course.brochurePdfs);
                           setPopups(true);
-                        }}>
-                          View Details
-                        </button>
-       
+                        }}
+                      >
+                        View Details
+                      </button>
                     ) : (
                       <button disabled className={styles.viewDetailsButton}>
                         No Details Available
@@ -428,7 +428,12 @@ const NewCourse = ({
       </div> */}
       <div className={styles.cardwrapper}>
         {certificationCourses.map((course, index) => (
-          <CertificationCard data={course} radio={true} dataScience={true} />
+          <CertificationCard
+            data={course}
+            radio={true}
+            dataScience={true}
+            key={index}
+          />
         ))}
       </div>
     </div>
