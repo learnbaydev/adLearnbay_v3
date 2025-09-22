@@ -16,6 +16,7 @@ import Other from "@/components/newHome/OtherVS/Other";
 import ReviewSlider from "@/components/newHome/reviewSlider/reviewSlider";
 import AnimationNew from "@/components/newHome/whyChooseSection/AnimationNew";
 import Media from "@/components/OrganicGeneric/Media/Media";
+import ProgramSection from "@/components/homeNew/ProgramSection/ProgramSection";
 
 const FirstSection = dynamic(() =>
   import("@/components/OrganicGeneric/FirstSection/FirstSection")
@@ -24,7 +25,6 @@ const FirstSection = dynamic(() =>
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
-
 
 export default function Home() {
   const data = [
@@ -136,11 +136,7 @@ export default function Home() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <Navbar radio={true} dataScience={true} ADS={true} />
 
       <FirstSection
         first="Tools"
@@ -151,8 +147,10 @@ export default function Home() {
         organicADS={true}
         ADS={true}
       />
-         <InfinityLogo />
-         <KickStart />
+      <InfinityLogo />
+      {/* <ProgramSection /> */}
+      <ProgramSection />
+      <KickStart />
       <NewCourse
         dataScience={true}
         radio={true}
@@ -161,35 +159,20 @@ export default function Home() {
         dataScienceGeneric={true}
         ADS={true}
       />
-            <AnimationNew />
-            <ReviewSlider idss="eautK0odE7Q" />
-  
-            <ContactUs dataScience={true} radio={true} />
+      <AnimationNew />
+      <ReviewSlider idss="eautK0odE7Q" />
+      <ContactUs dataScience={true} radio={true} />
       <CLogo />
       <Other />
 
-
-
-      <MobileTestimonial
-        dataScience={true}
-        ADS={true}
-        radio={true}
-      />
+      <MobileTestimonial dataScience={true} ADS={true} radio={true} />
 
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection dataScience={true} radio={true} organic={true}/>
-      <EightSection
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <SeventhSection dataScience={true} radio={true} organic={true} />
+      <EightSection radio={true} dataScience={true} ADS={true} />
       <WhatsappFloat chat360code1={true} />
-      <BottomBar
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <BottomBar radio={true} dataScience={true} ADS={true} />
     </>
   );
 }
