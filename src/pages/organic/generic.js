@@ -17,6 +17,7 @@ import ReviewSlider from "@/components/newHome/reviewSlider/reviewSlider";
 import AnimationNew from "@/components/newHome/whyChooseSection/AnimationNew";
 import Media from "@/components/OrganicGeneric/Media/Media";
 import ProgramSection from "@/components/homeNew/ProgramSection/ProgramSection";
+import HeroSection from "@/components/homeNew/HeroSecation/HeroSection";
 
 const FirstSection = dynamic(() =>
   import("@/components/OrganicGeneric/FirstSection/FirstSection")
@@ -138,7 +139,7 @@ export default function Home() {
       </Head>
       <Navbar radio={true} dataScience={true} ADS={true} />
 
-      <FirstSection
+      {/* <FirstSection
         first="Tools"
         second="Tips"
         third="Technology"
@@ -146,7 +147,9 @@ export default function Home() {
         dataScience={true}
         organicADS={true}
         ADS={true}
-      />
+      /> */}
+
+      <HeroSection />
       <InfinityLogo />
       {/* <ProgramSection /> */}
       <ProgramSection />
