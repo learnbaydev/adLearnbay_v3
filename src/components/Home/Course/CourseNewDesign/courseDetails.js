@@ -29,26 +29,26 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -362,25 +362,25 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -723,25 +723,25 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -789,26 +789,26 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -1192,25 +1192,25 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -1258,26 +1258,26 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -1522,25 +1522,25 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -1588,26 +1588,26 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -1891,25 +1891,25 @@ export const courseDetails = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -1957,26 +1957,26 @@ export const courseDetails = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -2078,26 +2078,26 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,
@@ -2431,25 +2431,25 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -3263,25 +3263,25 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -4028,25 +4028,25 @@ export const courseDetailsM = [
             link2:
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
           },
-          {
-            id: 4,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Advance Data Analytics",
-            title1: "Program",
-            tagHead: "Gen AI Integrated",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-            titleCourse: "Advance Data Analytics Program Data Science & AI",
-            para: [
-              "6 months | 4 capstone projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "Unlimited Interview Calls",
-            ],
-            link1: "/datascience/advance-data-analytics-program-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
-          },
+          // {
+          //   id: 4,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Advance Data Analytics",
+          //   title1: "Program",
+          //   tagHead: "Gen AI Integrated",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          //   titleCourse: "Advance Data Analytics Program Data Science & AI",
+          //   para: [
+          //     "6 months | 4 capstone projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "Unlimited Interview Calls",
+          //   ],
+          //   link1: "/datascience/advance-data-analytics-program-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+          // },
           {
             id: 2,
             img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/FSD-Card.webp",
@@ -4114,26 +4114,26 @@ export const courseDetailsM = [
               "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
           },
 
-          {
-            id: 2,
-            img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
-            title: "Executive program in",
-            title1: "Data Science & AI",
-            tagHead: "No coding exp required",
-            tag: "Data science",
-            brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-            titleCourse: "Executive program in Data Science & AI",
-            para: [
-              "11 months  |  4 Capstone Projects",
-              "E&ICT Academy IIT Guwahati Certification",
-              "2 days Campus Immersion at IIT",
-            ],
-            link1:
-              "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-            link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-          },
+          // {
+          //   id: 2,
+          //   img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/NewCourseCard/IIT_card_course.webp",
+          //   title: "Executive program in",
+          //   title1: "Data Science & AI",
+          //   tagHead: "No coding exp required",
+          //   tag: "Data science",
+          //   brochureLinks:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          //   titleCourse: "Executive program in Data Science & AI",
+          //   para: [
+          //     "11 months  |  4 Capstone Projects",
+          //     "E&ICT Academy IIT Guwahati Certification",
+          //     "2 days Campus Immersion at IIT",
+          //   ],
+          //   link1:
+          //     "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+          //   link2:
+          //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+          // },
 
           {
             id: 3,

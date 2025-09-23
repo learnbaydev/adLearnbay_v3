@@ -14,19 +14,19 @@ export const courses = {
       brochurePdfs:
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/AI-Master-Certification.pdf",
     },
-    {
-      title: "Executive program in Data Science & AI",
-      duration: "11 months | 4 Capstone Project",
-      certification: "E&ICT Academy IIT Guwahati Certification",
-      description: "2 days Campus Immersion at IIT",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IIt_cardss.webp",
-      link: "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Executive-program-iit.pdf",
-    },
+    // {
+    //   title: "Executive program in Data Science & AI",
+    //   duration: "11 months | 4 Capstone Project",
+    //   certification: "E&ICT Academy IIT Guwahati Certification",
+    //   description: "2 days Campus Immersion at IIT",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IIt_cardss.webp",
+    //   link: "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Executive-program-iit.pdf",
+    // },
     {
       title: "Generative AI & Machine Learning Program",
       duration: "9 months | 2 capstone Projects",
@@ -432,19 +432,19 @@ export const courses = {
       brochurePdfs:
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/AI-Master-Certification.pdf",
     },
-    {
-      title: "Executive program in Data Science & AI",
-      duration: "11 months | 4 Capstone Project",
-      certification: "E&ICT Academy IIT Guwahati Certification",
-      description: "2 days Campus Immersion at IIT",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IIt_cardss.webp",
-      link: "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Executive-program-iit.pdf",
-    },
+    // {
+    //   title: "Executive program in Data Science & AI",
+    //   duration: "11 months | 4 Capstone Project",
+    //   certification: "E&ICT Academy IIT Guwahati Certification",
+    //   description: "2 days Campus Immersion at IIT",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IIt_cardss.webp",
+    //   link: "/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Executive-program-iit.pdf",
+    // },
     {
       title: "Generative AI & Machine Learning Program",
       duration: "9 months | 2 capstone Projects",
@@ -931,19 +931,19 @@ export const courses = {
       brochurePdfs:
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
     },
-    {
-      title: "GenAI Developer Certification for Professionals",
-      duration: "3 months",
-      certification: "Project Certification form IIT Guwahati",
-      description: "For Working Professional",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/genAI_IIT_Devs.webp",
-      link: "/fullstack/generative-ai-course-for-professional",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Developer-Program.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Developer-Program.pdf",
-    },
+    // {
+    //   title: "GenAI Developer Certification for Professionals",
+    //   duration: "3 months",
+    //   certification: "Project Certification form IIT Guwahati",
+    //   description: "For Working Professional",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/genAI_IIT_Devs.webp",
+    //   link: "/fullstack/generative-ai-course-for-professional",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Developer-Program.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Developer-Program.pdf",
+    // },
     {
       title: "Cloud Computing & DevOps Certification Program",
       duration: "10 months | 3 Project",
