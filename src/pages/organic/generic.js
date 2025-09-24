@@ -6,7 +6,9 @@ import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import ContactUs from "@/components/Home/ContactUs/ContactUs";
-
+const LearningToPlacement = dynamic(() =>
+  import("@/components/newHome/LearningToPlacementhome/LearningToPlacementhome")
+);
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import CLogo from "@/components/newHome/Compnays/CLogo";
 import InfinityLogo from "@/components/newHome/InfinityLogo/InfinityLogo";
@@ -162,6 +164,7 @@ export default function Home() {
         dataScienceGeneric={true}
         ADS={true}
       />
+      <LearningToPlacement />
       <AnimationNew />
       <ReviewSlider idss="eautK0odE7Q" />
       <ContactUs dataScience={true} radio={true} />

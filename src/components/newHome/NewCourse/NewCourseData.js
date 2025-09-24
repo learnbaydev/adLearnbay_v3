@@ -918,19 +918,19 @@ export const courses = {
   ],
 
   dsa: [
-    {
-      title: "GenAI Certification for Managers & Tech Leaders",
-      duration: "4 months",
-      certification: "Project Certification form Guwahati",
-      description: "For Managers & Tech Leaders",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/GEN_AI_Techs.webp",
-      link: "/datascience/generative-ai-course-for-manager",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
-    },
+    // {
+    //   title: "GenAI Certification for Managers & Tech Leaders",
+    //   duration: "4 months",
+    //   certification: "Project Certification form Guwahati",
+    //   description: "For Managers & Tech Leaders",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/GEN_AI_Techs.webp",
+    //   link: "/datascience/generative-ai-course-for-manager",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
+    // },
     // {
     //   title: "GenAI Developer Certification for Professionals",
     //   duration: "3 months",
@@ -957,6 +957,30 @@ export const courses = {
     //   brochurePdfs:
     //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
     // },
+    {
+      title: "Generative AI and Agentic AI for Software Developers",
+      duration: "4 months",
+      certification: "Get certified in GenAI from IBM",
+      description: "Designed for developers & IT pros",
+      image: "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/genai.webp",
+      link: "/artificial-intelligence/genai-software-developers",
+      brochureLinks:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/GenAI+Developer+Master+Certification+Programv1.pdf",
+      brochurePdfs:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/New+Brochure/GenAI+Developer+Master+Certification+Program.pdf",
+    },
+    {
+      title: "Generative AI and Agentic AI for Managers & Leaders",
+      duration: "4 months",
+      certification: "Get certified in GenAI from IBM",
+      description: "Designed for senior managers & leaders",
+      image: "https://d32and0ii3b8oy.cloudfront.net/adlearnbay/genaisw.webp",
+      link: "/artificial-intelligence/generative-ai-for-managers",
+      brochureLinks:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Generative+AI+and+Agentic+AI+for+Managers+%26+Leaders_compressedv1.pdf",
+      brochurePdfs:
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/New+Brochure/Generative+AI+and+Agentic+AI+for+Managers+%26+Leaders_compressed.pdf",
+    },
   ],
   CyberSecurity: [
     {
