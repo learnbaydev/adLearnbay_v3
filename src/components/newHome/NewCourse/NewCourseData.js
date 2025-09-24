@@ -286,19 +286,19 @@ export const courses = {
       brochurePdfs:
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/data-dtructure-system-design.pdf",
     },
-    {
-      title: "Cloud Computing & DevOps Certification Program",
-      duration: "10 months | 3 Project",
-      certification: "Global Certification",
-      description: "Designed by industry experts",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
-      link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
-    },
+    // {
+    //   title: "Cloud Computing & DevOps Certification Program",
+    //   duration: "10 months | 3 Project",
+    //   certification: "Global Certification",
+    //   description: "Designed by industry experts",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
+    //   link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
+    // },
     {
       title: "Cloud Computing & DevOps Certification Program",
       duration: "6 months | 3 Project",
@@ -815,19 +815,19 @@ export const courses = {
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/data-dtructure-system-design.pdf",
     },
 
-    {
-      title: "Cloud Computing & DevOps Certification Program",
-      duration: "10 months | 3 Project",
-      certification: "Global Certification",
-      description: "Designed by industry experts",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
-      link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
-    },
+    // {
+    //   title: "Cloud Computing & DevOps Certification Program",
+    //   duration: "10 months | 3 Project",
+    //   certification: "Global Certification",
+    //   description: "Designed by industry experts",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
+    //   link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
+    // },
     {
       title: "Cloud Computing & DevOps Certification Program",
       duration: "6 months | 3 Project",
@@ -944,19 +944,19 @@ export const courses = {
     //   brochurePdfs:
     //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/GenAI-Developer-Program.pdf",
     // },
-    {
-      title: "Cloud Computing & DevOps Certification Program",
-      duration: "10 months | 3 Project",
-      certification: "Global Certification",
-      description: "Designed by industry experts",
-      image:
-        "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
-      link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
-      brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
-      brochurePdfs:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
-    },
+    // {
+    //   title: "Cloud Computing & DevOps Certification Program",
+    //   duration: "10 months | 3 Project",
+    //   certification: "Global Certification",
+    //   description: "Designed by industry experts",
+    //   image:
+    //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Cloud_Gens.webp",
+    //   link: "/cloud&devops/executive-program-in-cloud-and-devops-by-iit-guwahati",
+    //   brochureLinks:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/IIT-cloud-devops.pdf",
+    //   brochurePdfs:
+    //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/IIT-cloud-devops.pdf",
+    // },
   ],
   CyberSecurity: [
     {
