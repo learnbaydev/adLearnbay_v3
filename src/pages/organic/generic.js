@@ -156,14 +156,16 @@ export default function Home() {
       {/* <ProgramSection /> */}
       <ProgramSection />
       <KickStart />
-      <NewCourse
-        dataScience={true}
-        radio={true}
-        organicADS={true}
-        newDesign={true}
-        dataScienceGeneric={true}
-        ADS={true}
-      />
+      <div id="course-section">
+        <NewCourse
+          dataScience={true}
+          radio={true}
+          organicADS={true}
+          newDesign={true}
+          dataScienceGeneric={true}
+          ADS={true}
+        />
+      </div>
       <LearningToPlacement />
       <AnimationNew />
       <ReviewSlider idss="eautK0odE7Q" />
