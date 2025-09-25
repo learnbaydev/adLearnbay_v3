@@ -6,7 +6,9 @@ import Navbar from "@/components/Global/AdsNavbar/Navbar";
 import BottomBar from "@/components/Global/BottomBar/BottomBar";
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
 import ContactUs from "@/components/Home/ContactUs/ContactUs";
-
+const LearningToPlacement = dynamic(() =>
+  import("@/components/newHome/LearningToPlacementhome/LearningToPlacementhome")
+);
 import EightSection from "@/components/MastersCourse/EightSection/EightSection";
 import CLogo from "@/components/newHome/Compnays/CLogo";
 import InfinityLogo from "@/components/newHome/InfinityLogo/InfinityLogo";
@@ -16,6 +18,8 @@ import Other from "@/components/newHome/OtherVS/Other";
 import ReviewSlider from "@/components/newHome/reviewSlider/reviewSlider";
 import AnimationNew from "@/components/newHome/whyChooseSection/AnimationNew";
 import Media from "@/components/OrganicGeneric/Media/Media";
+import ProgramSection from "@/components/homeNew/ProgramSection/ProgramSection";
+import HeroSection from "@/components/homeNew/HeroSecation/HeroSection";
 
 const FirstSection = dynamic(() =>
   import("@/components/OrganicGeneric/FirstSection/FirstSection")
@@ -24,7 +28,6 @@ const FirstSection = dynamic(() =>
 const SeventhSection = dynamic(() =>
   import("@/components/Global/SeventhSection/SeventhSection")
 );
-
 
 export default function Home() {
   const data = [
@@ -136,13 +139,9 @@ export default function Home() {
           href="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/cloud-computing/website-icon.webp"
         />
       </Head>
-      <Navbar
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <Navbar radio={true} dataScience={true} ADS={true} />
 
-      <FirstSection
+      {/* <FirstSection
         first="Tools"
         second="Tips"
         third="Technology"
@@ -150,46 +149,38 @@ export default function Home() {
         dataScience={true}
         organicADS={true}
         ADS={true}
-      />
-         <InfinityLogo />
-         <KickStart />
-      <NewCourse
-        dataScience={true}
-        radio={true}
-        organicADS={true}
-        newDesign={true}
-        dataScienceGeneric={true}
-        ADS={true}
-      />
-            <AnimationNew />
-            <ReviewSlider idss="eautK0odE7Q" />
-  
-            <ContactUs dataScience={true} radio={true} />
+      /> */}
+
+      <HeroSection />
+      <InfinityLogo />
+      {/* <ProgramSection /> */}
+      <ProgramSection />
+      <KickStart />
+      <div id="course-section">
+        <NewCourse
+          dataScience={true}
+          radio={true}
+          organicADS={true}
+          newDesign={true}
+          dataScienceGeneric={true}
+          ADS={true}
+        />
+      </div>
+      <LearningToPlacement />
+      <AnimationNew />
+      <ReviewSlider idss="eautK0odE7Q" />
+      <ContactUs dataScience={true} radio={true} />
       <CLogo />
       <Other />
 
-
-
-      <MobileTestimonial
-        dataScience={true}
-        ADS={true}
-        radio={true}
-      />
+      <MobileTestimonial dataScience={true} ADS={true} radio={true} />
 
       <Media projectData={data} />
       {/* <ContactUs popup={true} dataScienceGeneric={true} radio={true} /> */}
-      <SeventhSection dataScience={true} radio={true} organic={true}/>
-      <EightSection
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <SeventhSection dataScience={true} radio={true} organic={true} />
+      <EightSection radio={true} dataScience={true} ADS={true} />
       <WhatsappFloat chat360code1={true} />
-      <BottomBar
-        radio={true}
-        dataScience={true}
-        ADS={true}
-      />
+      <BottomBar radio={true} dataScience={true} ADS={true} />
     </>
   );
 }
