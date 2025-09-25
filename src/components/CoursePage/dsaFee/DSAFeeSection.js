@@ -3,7 +3,7 @@ import styles from "./dsaFee.module.css";
 import Image from "next/image";
 import Emipopup from "../EMIPopup/Emipopup";
 import Modal from "react-modal";
-import { Points } from "../../../Data/svgData/Points";
+import { Points } from "../../../Data/svgData/points";
 // import { Points } from "@/Data/svgData/Points";
 const DSAFeeSection = ({
   weekendbatch,
@@ -39,7 +39,7 @@ const DSAFeeSection = ({
   };
 
   // eslint-disable-next-line react/jsx-key
-  const point = [<Points/>];
+  const point = [<Points />];
   return (
     <section className={styles.main}>
       <h2>Fee & Batch Details </h2>
@@ -72,7 +72,7 @@ const DSAFeeSection = ({
             </div>
           </div>
         </div>
-{/* 
+        {/* 
         <div className={styles.batch}>
           <p className={styles.batchHead}>Batch Details :</p>
           <div className={styles.weekday}>
