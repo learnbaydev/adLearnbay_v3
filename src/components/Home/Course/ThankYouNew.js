@@ -26,7 +26,7 @@ function CourseThankYou() {
     <div className={styles.Course} id="course">
       <div className={styles.coursesM}>
         <div className={styles.listPanel}>
-        <div
+          <div
             className={styles.spanDiv}
             onClick={() => {
               setViewAll(false);
@@ -241,10 +241,10 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>E&ICT Academy of IIT Guwahati</p>
+            {/* <p>E&ICT Academy of IIT Guwahati</p>
             <p>
               <FaChevronDown className="Icons" />
-            </p>
+            </p> */}
           </div>
           {Guarantee ? (
             <div className={styles.gridPanel}>
@@ -395,7 +395,7 @@ function CourseThankYou() {
       </div>
       <div className={styles.coursesD}>
         <div className={styles.listPanel}>
-        <span
+          <span
             onClick={() => {
               setViewAll(false);
               setOneYear(false);
@@ -448,7 +448,7 @@ function CourseThankYou() {
           >
             DSA / Cloud Computing / Cyber Security Syllabus
           </span>
-          <div className={styles.line}></div>
+          {/* <div className={styles.line}></div>
           <span
             onClick={() => {
               setViewAll(false);
@@ -465,7 +465,7 @@ function CourseThankYou() {
             }
           >
             E&ICT Academy of IIT Guwahati
-          </span>
+          </span> */}
           <div className={styles.line}></div>
           <span
             onClick={() => {

@@ -71,6 +71,7 @@ const ThankYou = ({ initialName, initialPhone }) => {
                 width="522"
                 height="380"
                 layout="intrinsic"
+                alt="img"
               />
             </div>
           </div>
@@ -80,6 +81,7 @@ const ThankYou = ({ initialName, initialPhone }) => {
                 data={course}
                 download={true}
                 isThankYou={true}
+                key={index}
               />
             ))}
           </div>
