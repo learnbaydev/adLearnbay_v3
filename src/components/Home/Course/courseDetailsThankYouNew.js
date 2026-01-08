@@ -63,14 +63,14 @@ export const placementProject = [
     id: 2,
     title: "GenAI and Agentic AI for Software Developers",
 
-    link2:
+    link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+for+Software+Developers+(2)2026_compressed.pdf",
   },
   {
     id: 3,
     title: "GenAI & Agentic AI Master Certification Program",
 
-    link3:
+    link1:
       "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+Master+Program+for+Tech+Professionals+(4)2026_compressed.pdf",
   },
 ];

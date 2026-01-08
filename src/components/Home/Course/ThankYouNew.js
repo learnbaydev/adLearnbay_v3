@@ -363,7 +363,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Master Certification</p>
+            <p>Master Certification </p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -428,7 +428,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Data Sci & GenAI
+            Data Sci & GenAI Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -446,7 +446,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Cloud & DevOps
+            Cloud & DevOps Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -464,7 +464,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            SDE
+            SDE Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -500,7 +500,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Master Certification
+            Master Certification Syllabus
           </span>
         </div>
         {genAI ? (
