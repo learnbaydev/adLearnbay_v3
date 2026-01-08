@@ -1,140 +1,123 @@
 export const viewAllD = [
   {
     id: 1,
-    title: "Data Science & AI Certification Program For Managers and Leaders",
+    title: "GenAI & Agentic AI Master Certification Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Certification+Program+For+Managers+%26+Leaders+Learnbay.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+Master+Program+for+Tech+Professionals+(4)2026_compressed.pdf",
   },
   {
     id: 2,
-    title: "Data Science & AI Certification Program for BFSI Professionals",
+    title: "AI-Powered Cloud and DevOps Master Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Certification+Program+for+BFSI+Professionals.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/AI-Powered+Cloud+DevOps+Engineering+Master+Program+(8)2026_compressed.pdf",
+  },
+  {
+    id: 3,
+    title: "SDE Master Program With GenAI & Agentic AI",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/SDE+Master+Program+for+Tech+Professionals2026_compressed.pdf",
   },
   {
     id: 4,
-    title: "HR Analytics Certification Program",
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/HR+Analytics+Certification+Program.pdf",
-  },
-  {
-    id: 5,
-    title: "Marketing Analytics Certification Program",
+    title: "Advanced Data Science & GenAI Master Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Marketing+Analytics+Certification+Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Data+Science+and+GenAI+Program+(3)2026_compressed+(1).pdf",
   },
 ];
 export const dataScience = [
   {
     id: 1,
-    title: "Data Science and AI Master Certification Program",
+    title: "Advanced Data Science & GenAI Master Program",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Science+%26+AI+Master+Certification+Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Data+Science+and+GenAI+Master+Program+(3)2026_compressed.pdf",
   },
   {
     id: 2,
-    title: "Business Analytics Master Certification Program",
+    title: "Data Science & GenAI Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Business+Analytics+Program+newone.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Data+Science+and+GenAI+Program+(3)2026_compressed+(1).pdf",
   },
 
   {
     id: 3,
-    title: "Advanced AI and ML Certification Program",
+    title: "Data Analytics and Business Analytics with Generative AI",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance+Artifical+Intelligence+%26+ML+Certification+Program.pdf",
-  },
-
-  {
-    id: 4,
-    title: "Advanced Data Science and AI Certification",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advanced+Data+Science+%26+AI++Certification+Program.pdf",
-  },
-
-  {
-    id: 5,
-    title: "Data Science and AI Program for Freshers",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data_Science_%26_AI_For_Freshers.pdf",
-  },
-  {
-    id: 6,
-    title: "Data Analytics Certification Program",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Data+Analytics+Certification+Program+new.pdf",
-  },
-  {
-    id: 7,
-    title: "Data Science Foundation Program",
-
-    link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/Data+Science+Foundation+Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/DABA+2026+(1)2026_compressed.pdf",
   },
 ];
 
 export const placementProject = [
   {
     id: 1,
-    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/Business-Analytics.png",
-    title: "Executive program in Data Science & AI",
+    title: "SDE Master Program With GenAI & Agentic AI",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Executive+program+in+Data+Science+%26+AI-+IIT_compress.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/SDE+Master+Program+for+Tech+Professionals2026_compressed.pdf",
   },
   {
-    id: 1,
-    img: "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/course.learnbay.co/NImages/Business-Analytics.png",
-    title: "Advance Data Analytics Program",
+    id: 2,
+    title: "GenAI and Agentic AI for Software Developers",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/iit-Guwahati/Copy+of+Data+Analytics+Certification+Program_compress.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+for+Software+Developers+(2)2026_compressed.pdf",
+  },
+  {
+    id: 3,
+    title: "GenAI & Agentic AI Master Certification Program",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+Master+Program+for+Tech+Professionals+(4)2026_compressed.pdf",
   },
 ];
 
 export const fullStackD = [
   {
     id: 1,
-    title: "Cloud Computing & DevOps Certification Program",
+    title: "AI-Powered Cloud and DevOps Master Program",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cloud-and-Devops-Certification-Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/AI-Powered+Cloud+DevOps+Engineering+Master+Program+(8)2026_compressed.pdf",
   },
   {
     id: 2,
-    title: "Certificate in AWS Cloud Computing & Devops",
+    title: "Cloud & DevOps for Network Professionals",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/AWS-Cloud-and-Devops-Certification-Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Cloud+and+Devops+Engineering+For+Network+Professionals2026+_compressed.pdf",
   },
   {
     id: 3,
-    title: "DSA & System Design Program",
+    title: "Cloud & DevOps for System Administrators",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/DSA.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Cloud+and+Devops+Engineering+For+System+Admin+Professionals++(3)2026_compressed.pdf",
   },
 
   {
     id: 4,
-    title: "Executive Certification in Cyber Security & Ethical Hacking",
+    title: "Cloud & DevOps for IT Support & IT Operations",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Cyber-Security-IIT.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Cloud+and+Devops+Engineering+For+ITS+%26+ITOps+Professionals++(3)2026_compressed.pdf",
   },
   {
-    id: 4,
-    title: "Advance Certification in Cyber Security & Ethical Hacking",
+    id: 5,
+    title: "Cloud & DevOps for Database Administrators",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Advance-Cyber-security.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Complete+Final+of+Cloud+and+Devops+Engineering+For+DBA+Professionals++(5)2026_compressed.pdf",
+  },
+  {
+    id: 6,
+    title: "Advanced Cloud & DevOps Program",
+
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Advanced+Cloud+and+Devops+Program+(2)2026_compressed.pdf",
   },
 ];
 
@@ -177,17 +160,39 @@ export const SP = [
 export const GenAI = [
   {
     id: 1,
-    title:
-      "GenAI Certification for Managers & Tech Leaders",
+    title: "GenAI & Agentic AI Master Certification Program",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Managers-Tech-Leaders-iits.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+Master+Program+for+Tech+Professionals+(4)2026_compressed.pdf",
   },
   {
     id: 2,
-    title:
-      "GenAI Developer Certification for Professionals",
-
+    title: "GenAI & Agentic AI For Manager & Leaders",
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/GenAI-Developer-Program.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Managers+and+Leaders+GenAI+and+Agentic+AI+Program+(3)2026_compressed.pdf",
+  },
+
+  {
+    id: 3,
+    title: "GenAI & Agentic AI For Cloud & DevOps",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Gen+AI+%26+Agentic+AI+for+Cloud+%26+DevOps+(4)+2026_compressed.pdf",
+  },
+  {
+    id: 4,
+    title: "GenAI & Agentic AI For Software Developer",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+for+Software+Developers+(2)2026_compressed.pdf",
+  },
+  {
+    id: 5,
+    title: "GenAI & Agentic AI Program",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+and+Agentic+AI+Program+(3)2026_compressed.pdf",
+  },
+  {
+    id: 6,
+    title: "Applied AI Practioner Program",
+    link1:
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/IIT+Patna+Applied+AI+Program+(4)2026_compressed.pdf",
   },
 ];

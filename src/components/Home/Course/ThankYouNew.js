@@ -180,7 +180,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>DSA / Cloud Computing / Cyber Security Syllabus</p>
+            <p>Cloud & DevOps</p>
             <p>
               <FaChevronDown className="Icons" style={{ fontWeight: "600" }} />
             </p>
@@ -241,10 +241,10 @@ function CourseThankYou() {
                   }
             }
           >
-            {/* <p>E&ICT Academy of IIT Guwahati</p>
+            <p>SDE</p>
             <p>
               <FaChevronDown className="Icons" />
-            </p> */}
+            </p>
           </div>
           {Guarantee ? (
             <div className={styles.gridPanel}>
@@ -363,7 +363,7 @@ function CourseThankYou() {
                   }
             }
           >
-            <p>Domain Courses Syllabus</p>
+            <p>Master Certification </p>
             <p>
               <FaChevronDown className="Icons" />
             </p>
@@ -428,7 +428,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Data Science Syllabus
+            Data Sci & GenAI Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -446,9 +446,9 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            DSA / Cloud Computing / Cyber Security Syllabus
+            Cloud & DevOps Syllabus
           </span>
-          {/* <div className={styles.line}></div>
+          <div className={styles.line}></div>
           <span
             onClick={() => {
               setViewAll(false);
@@ -464,8 +464,8 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            E&ICT Academy of IIT Guwahati
-          </span> */}
+            SDE Syllabus
+          </span>
           <div className={styles.line}></div>
           <span
             onClick={() => {
@@ -482,7 +482,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Master's Degree Syllabus
+            Master Degree Syllabus
           </span>
           <div className={styles.line}></div>
           <span
@@ -500,7 +500,7 @@ function CourseThankYou() {
                 : { background: "#009CE7", color: "#fff" }
             }
           >
-            Domain Courses Syllabus
+            Master Certification Syllabus
           </span>
         </div>
         {genAI ? (
