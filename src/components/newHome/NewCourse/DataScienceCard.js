@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { courses } from './NewCourseData'; 
-import styles from './DataScienceCard.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; 
-import { Navigation, Pagination } from 'swiper'; 
-import Image from 'next/image';
-import Form from '@/components/Global/Form/Form';
-import Popup from '@/components/Global/Popup/Popup';
-import Link from 'next/link';
-import { MdOutlineFileDownloadSvg } from '@/Data/svgData/MDIcons';
-
-
+import React, { useState, useEffect } from "react";
+import { courses } from "./NewCourseData";
+import styles from "./DataScienceCard.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import { Navigation, Pagination } from "swiper";
+import Image from "next/image";
+import Form from "@/components/Global/Form/Form";
+import Popup from "@/components/Global/Popup/Popup";
+import Link from "next/link";
+import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 
 const DataScienceCard = ({
   dataScience,
@@ -22,9 +20,9 @@ const DataScienceCard = ({
   brochurePdf,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const [titleCourse, setTitleCourse] = useState('');
-  const [brochureLinks, setBrochureLinks] = useState('');
-  const [brochurePdfs, setBrochurePdf] = useState('');
+  const [titleCourse, setTitleCourse] = useState("");
+  const [brochureLinks, setBrochureLinks] = useState("");
+  const [brochurePdfs, setBrochurePdf] = useState("");
   const [popups, setPopups] = useState(false);
 
   useEffect(() => {
@@ -33,16 +31,16 @@ const DataScienceCard = ({
     };
 
     handleResize(); // Check on initial render
-    window.addEventListener('resize', handleResize); // Add event listener
+    window.addEventListener("resize", handleResize); // Add event listener
 
-    return () => window.removeEventListener('resize', handleResize); // Cleanup
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
   }, []);
 
   const popupShow = () => {
     setPopups(true);
   };
 
-  const renderSwiper = (sectionData, sectionTitle, sectionClass = '') => (
+  const renderSwiper = (sectionData, sectionTitle, sectionClass = "") => (
     <div className={`${styles.sectionContainer} ${sectionClass}`}>
       <h2 className={styles.sectionTitle}>{sectionTitle}</h2>
       <Swiper
@@ -52,7 +50,7 @@ const DataScienceCard = ({
         pagination={{ clickable: true }}
         breakpoints={{
           320: {
-            slidesPerView: 1, 
+            slidesPerView: 1,
             spaceBetween: 10,
           },
           412: {
@@ -141,17 +139,17 @@ const DataScienceCard = ({
                     Brochure <MdOutlineFileDownloadSvg />
                   </button>
                   {course.link ? (
-       
-                      <button className={styles.viewDetailsButton}   onClick={() => {
+                    <button
+                      className={styles.viewDetailsButton}
+                      onClick={() => {
                         setTitleCourse(course.titleCourse);
                         setBrochureLinks(course.brochureLinks);
                         setBrochurePdf(course.brochurePdfs);
                         setPopups(true);
-                      }}>
-                      
-                        View Details
-                      </button>
-
+                      }}
+                    >
+                      View Details
+                    </button>
                   ) : (
                     <button disabled className={styles.viewDetailsButton}>
                       No Details Available
@@ -166,7 +164,7 @@ const DataScienceCard = ({
     </div>
   );
 
-  const renderDesktop = (sectionData, sectionTitle, sectionClass = '') => (
+  const renderDesktop = (sectionData, sectionTitle, sectionClass = "") => (
     <div className={`${styles.mainContainer} ${sectionClass}`}>
       <h2 className={styles.sectionTitle}>{sectionTitle}</h2>
       <div className={styles.desktopContainer}>
@@ -224,20 +222,21 @@ const DataScienceCard = ({
                     popupShow();
                   }}
                 >
-                  Brochure <MdOutlineFileDownloadSvg/>
+                  Brochure <MdOutlineFileDownloadSvg />
                 </button>
                 {course.link ? (
-                
-                    <button className={styles.viewDetailsButton}   onClick={() => {
+                  <button
+                    className={styles.viewDetailsButton}
+                    onClick={() => {
                       setTitleCourse(course.titleCourse);
                       setBrochureLinks(course.brochureLinks);
-                  
+
                       setBrochurePdf(course.brochurePdfs);
                       setPopups(true);
-                    }}>
-                      View Details
-                    </button>
-                  
+                    }}
+                  >
+                    View Details
+                  </button>
                 ) : (
                   <button disabled className={styles.viewDetailsButton}>
                     No Details Available
@@ -262,7 +261,7 @@ const DataScienceCard = ({
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: '340px', height: '400px' }}
+            style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
@@ -283,19 +282,31 @@ const DataScienceCard = ({
       </Popup>
 
       {/* Data Science and AI Section */}
-      {isMobile
+      {/* {isMobile
         ? renderSwiper(courses.dataScienceAndAI, 'Data Science and AI')
         : renderDesktop(courses.dataScienceAndAI, 'Data Science and AI')}
 
       {/* Business Analytics / Data Analytics Section */}
-      {isMobile
+      {/* {isMobile
         ? renderSwiper(courses.DABA, 'Managers / HR / BFSI  ', styles.BADA)
-        : renderDesktop(courses.DABA, '', styles.BADA)}
+        : renderDesktop(courses.DABA, '', styles.BADA)} */}
 
       {/* Cloud Computing & Software Development Section */}
-      {isMobile
+      {/*
+       {isMobile
         ? renderSwiper(courses.CloudS, 'Cloud Computing & Software Development', styles.CloudS)
-        : renderDesktop(courses.CloudS, 'Cloud Computing & Software Development', styles.CloudS)}
+        : renderDesktop(courses.CloudS, 'Cloud Computing & Software Development', styles.CloudS)} */}
+
+      {isMobile
+        ? renderSwiper(courses.CloudDevops, "Cloud & DevOps", styles.CloudS)
+        : renderDesktop(courses.CloudDevops, "Cloud & DevOps", styles.CloudS)}
+      {isMobile
+        ? renderSwiper(courses.sde, "Software Developer Program", styles.CloudS)
+        : renderDesktop(
+            courses.sde,
+            "Software Developer Program",
+            styles.CloudS
+          )}
     </div>
   );
 };
