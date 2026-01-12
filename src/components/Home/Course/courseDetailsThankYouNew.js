@@ -57,14 +57,14 @@ export const placementProject = [
     title: "SDE Master Program With GenAI & Agentic AI",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/SDE+Master+Program+for+Tech+Professionals2026_compressed.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/SDE_Master_Program_for_Tech_Professionals.pdf",
   },
   {
     id: 2,
     title: "GenAI and Agentic AI for Software Developers",
 
     link1:
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI+%26+Agentic+AI+for+Software+Developers+(2)2026_compressed.pdf",
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/GenAI_and_Agentic_AI_for_Software_Developers.pdf",
   },
   {
     id: 3,
