@@ -32,8 +32,10 @@ const getEndPoint = (pathname, event, eventFullStack) => {
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
     pathname ===
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
-       pathname === "/cloud&devops/s2-cloud-computing-and-devOps-certification-program" ||
-       pathname === "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
+    pathname ===
+      "/cloud&devops/s2-cloud-computing-and-devOps-certification-program" ||
+    pathname ===
+      "/cloud&devops/cloud-computing-and-devOps-certification-program" ||
     pathname === "/datascience/s2-ai-ml-course-generic" ||
     pathname === "/datascience/OS/sp/s2-data-analytics-generic" ||
     pathname === "/datascience/bangalore/s2-artificial-intelligence" ||
@@ -51,15 +53,22 @@ const getEndPoint = (pathname, event, eventFullStack) => {
     pathname === "/datascience/pune/s2-machine-learning" ||
     pathname === "/datascience/s2-artificial-intelligence-generic" ||
     pathname === "/s2-advanced-cyber-security-course-training" ||
-    pathname === "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee"||
-    pathname === "/artificial-intelligence/s2-generative-ai-course-for-data-science-professionals"||
-    pathname === "/artificial-intelligence/s2-generative-ai-course-for-fullstack-professionals"||
-    pathname === "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee"||
-    pathname === "/cloud&devops/s2-executive-program-in-cloud-and-devops-by-iit-guwahati" ||
+    pathname ===
+      "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee" ||
+    pathname ===
+      "/artificial-intelligence/s2-generative-ai-course-for-data-science-professionals" ||
+    pathname ===
+      "/artificial-intelligence/s2-generative-ai-course-for-fullstack-professionals" ||
+    pathname ===
+      "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee" ||
+    pathname ===
+      "/cloud&devops/s2-executive-program-in-cloud-and-devops-by-iit-guwahati" ||
     pathname ===
       "/datascience/s2-artificial-intelligence-job-assistance-generic" ||
-      pathname === "/datascience/s2-executive-program-in-data-science-and-ai-by-iit-guwahati" ||
-      pathname === "/cyber-security/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee"||
+    pathname ===
+      "/datascience/s2-executive-program-in-data-science-and-ai-by-iit-guwahati" ||
+    pathname ===
+      "/cyber-security/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee" ||
     pathname === "/datascience/s2-deep-learning-generic" ||
     pathname === "/datascience/s2-business-analytics-job-assistance-generic" ||
     pathname === "/datascience/s2-data-analytics-job-assistance-generic" ||
@@ -185,7 +194,6 @@ const redirectionThankYou = (
     routerPath = "/Thank-you";
   }
 
-  
   if (
     pathname === "/walk-in-counselling" ||
     pathname === "/marketing/walk-in-counselling"
@@ -221,7 +229,7 @@ const redirectionThankYou = (
 
   if (pathname === "/marketing/data-science-ai-masters-program") {
     routerPath =
-      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf";
+      "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf";
   }
   if (pathname === "/Thank-you") {
     setToggle(false);
@@ -507,7 +515,6 @@ const getFormFields = (
           value: "Generative AI",
           label: "Generative AI",
         },
-        
       ],
       required: radio, // Conditionally required
       showField: radio, // Conditionally render the field

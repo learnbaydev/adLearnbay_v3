@@ -156,7 +156,7 @@ export const courseDetails = [
             tagHead: "Crack Job Interviews",
             tag: "Full stack",
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
             titleCourse: "Master in CS: Data Science and AI",
             para: [
               "18 months | 3 Projects",
@@ -165,7 +165,7 @@ export const courseDetails = [
             ],
             link1: "/datascience/data-science-ai-masters-program",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
           },
           {
             id: 3,
@@ -316,13 +316,13 @@ export const courseDetails = [
   //           tag: "Full stack",
   //           Green: true,
   //           brochureLinks:
-  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
   //           titleCourse: "Master in CS: Data Science and AI",
   //           para: ["18 months | 3 Projects", "Globally recognized degree"],
   //           newDesign: true,
   //           link1: "/datascience/data-science-ai-masters-program",
   //           link2:
-  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
   //         },
   //         {
   //           id: 3,
@@ -504,7 +504,7 @@ export const courseDetailsM = [
             tagHead: "Crack Job Interviews",
             tag: "Full stack",
             brochureLinks:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
             titleCourse: "Master in CS: Data Science and AI",
             para: [
               "18 months | 3 Projects",
@@ -513,7 +513,7 @@ export const courseDetailsM = [
             ],
             link1: "/datascience/data-science-ai-masters-program",
             link2:
-              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+              "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
           },
           {
             id: 3,
@@ -664,13 +664,13 @@ export const courseDetailsM = [
   //           tag: "Full stack",
   //           Green: true,
   //           brochureLinks:
-  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
   //           titleCourse: "Master in CS: Data Science and AI",
   //           para: ["18 months | 3 Projects", "Globally recognized degree"],
   //           newDesign: true,
   //           link1: "/datascience/data-science-ai-masters-program",
   //           link2:
-  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+  //             "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
   //         },
   //         {
   //           id: 3,
