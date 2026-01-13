@@ -970,7 +970,7 @@ export const courses = {
         "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/GENIBM4.webp",
       link: "/data-science-and-genai-program",
       brochureLinks:
-        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+        "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
       brochurePdfs:
         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026/Data+Science+and+GenAI+Program+(3)_compressed.pdf",
     },
@@ -1311,7 +1311,7 @@ export const masterCourse = {
     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_card_Mblss.webp",
   link: "/datascience/data-science-and-ai-masters-in-cs",
   brochureLinks:
-    "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+    "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
   brochurePdfs:
     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Masters-in-CS.pdf",
 };
@@ -2178,7 +2178,7 @@ export const SvgArrow = ({ color }) => (
 //         "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/woolf_card.webp",
 //       link: "/datascience/data-science-and-ai-masters-in-cs",
 //       brochureLinks:
-//         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+//         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
 //       brochurePdfs:
 //         "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Masters-in-CS.pdf",
 //     },
@@ -2411,7 +2411,7 @@ export const SvgArrow = ({ color }) => (
 //     "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_card_Mblss.webp",
 //   link: "/datascience/data-science-and-ai-masters-in-cs",
 //   brochureLinks:
-//     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/NewCourseBrochure/Masters%2Bin%2BCS%2BData%2BScience%2B%2526%2BAI.pdf",
+//     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/2026_live/Masters-in-CS.pdf",
 //   brochurePdfs:
 //     "https://brochureslearnbay.s3.ap-south-1.amazonaws.com/downloadBrochure/Masters-in-CS.pdf",
 // };
