@@ -5,25 +5,25 @@ import HomeLine from "@/components/Home/HomeLine/HomeLine";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 const Course = dynamic(() => import("@/components/Home/Course/Course"));
-const WhyLearnbay = dynamic(() =>
-  import("@/components/Home/WhyLearnbay/WhyLearnbay")
+const WhyLearnbay = dynamic(
+  () => import("@/components/Home/WhyLearnbay/WhyLearnbay"),
 );
 import WhatsappFloat from "@/components/Global/WhatappsFloat/WhatsappFloat";
-const ProjectSection = dynamic(() =>
-  import("@/components/Home/ProjectSection/ProjectSection")
+const ProjectSection = dynamic(
+  () => import("@/components/Home/ProjectSection/ProjectSection"),
 );
-const Testimonial = dynamic(() =>
-  import("@/components/Global/Testimonial/Testimonial")
+const Testimonial = dynamic(
+  () => import("@/components/Global/Testimonial/Testimonial"),
 );
-const ContactUs = dynamic(() =>
-  import("@/components/Home/ContactUs/ContactUs")
+const ContactUs = dynamic(
+  () => import("@/components/Home/ContactUs/ContactUs"),
 );
 const GetHire = dynamic(() => import("@/components/Home/GetHire/GetHire"));
-const TrainerSection = dynamic(() =>
-  import("@/components/Global/TrainerSection/TrainerSection")
+const TrainerSection = dynamic(
+  () => import("@/components/Global/TrainerSection/TrainerSection"),
 );
-const SeventhSection = dynamic(() =>
-  import("@/components/Global/SeventhSection/SeventhSection")
+const SeventhSection = dynamic(
+  () => import("@/components/Global/SeventhSection/SeventhSection"),
 );
 const Footer = dynamic(() => import("@/components/Global/Footer/Footer"));
 
@@ -115,10 +115,9 @@ export default function Home({}) {
           interstedInHide={true}
         />
         <GetHire />
-        <TrainerSection 
-        idss="eautK0odE7Q" />
+        <TrainerSection idss="eautK0odE7Q" />
         <Testimonial
-        redirectDS={true}
+          redirectDS={true}
           dataScience={true}
           radio={true}
           interstedInHide={true}
