@@ -33,18 +33,17 @@ const nextConfig = {
     return [
       {
         source: "/apply-for-counselling-marketing",
-        destination:
-          "/apply-for-counselling-data-science-marketing",
+        destination: "/apply-for-counselling-data-science-marketing",
         permanent: true,
       },
 
       {
-        source: "/cyber-security/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
+        source:
+          "/cyber-security/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
         destination:
           "/s2-executive-program-in-cyber-security-and-ethical-hacking-by-iit-roorkee",
         permanent: true,
       },
-
 
       {
         source: "/fullstack/s2-generative-ai-course-for-professionals",
@@ -53,11 +52,15 @@ const nextConfig = {
         permanent: true,
       },
 
-
       {
         source: "/datascience/s2-generative-ai-course-for-managers",
         destination:
           "/artificial-intelligence/s2-generative-ai-course-for-data-science-professionals",
+        permanent: true,
+      },
+      {
+        source: "/",
+        destination: "/organic/generic",
         permanent: true,
       },
     ];

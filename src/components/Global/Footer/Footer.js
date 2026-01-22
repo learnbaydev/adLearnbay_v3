@@ -177,14 +177,13 @@ const Footer = ({ adPage, adPageCity }) => {
               );
             })}
           </div>
-   
         </>
       )}
       <div className={styles.FooterBottom}>
         <div className={styles.FooterBottomInner}>
           <p className={styles.FooterInnerB}>
-            Copyright © 2015 - 2024 Learnbay by Learnvista Pvt. Ltd. All Rights
-            Reserved.
+            Copyright © 2015 - {new Date().getFullYear()} Learnbay by Learnvista
+            Pvt. Ltd. All Rights Reserved.
           </p>
         </div>
       </div>
