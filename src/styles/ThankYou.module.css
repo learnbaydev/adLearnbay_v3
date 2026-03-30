@@ -359,75 +359,39 @@
 }
 
 /* ── Seats ── */
-.seatsSection {
-  background: rgba(239, 68, 68, 0.04);
-  border: 1px solid rgba(239, 68, 68, 0.16);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 14px;
-}
-
-.seatsTop {
+.seatsRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .seatsLabel {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: #e2e8f0;
-  font-weight: 500;
-}
-
-.fire {
-  font-size: 16px;
-  animation: flicker 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.65;
-  }
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
 }
 
 .seatsCount {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 11px;
+  font-weight: 600;
   color: #ef4444;
-  background: rgba(239, 68, 68, 0.1);
-  padding: 4px 12px;
-  border-radius: 20px;
 }
 
+/* ── Progress bar ── */
 .progressTrack {
-  height: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 100px;
+  height: 5px;
+  background: #f3f4f6;
+  border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 
 .progressFill {
   height: 100%;
-  background: linear-gradient(90deg, #f59e0b, #ef4444);
-  border-radius: 100px;
-  transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.progressLabels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 7px;
-  font-size: 11px;
-  color: #475569;
+  background: linear-gradient(90deg, #9b8fd4, #5b4ee8);
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
 }
 
 /* ── IBM bar ── */
@@ -526,7 +490,24 @@
 .WDBack h4 {
   text-align: left;
 }
+.ctaSection {
+  margin-top: 30px;
+  text-align: center;
+}
 
+.ctaNote {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #e2e8f0; /* brighter so it’s visible */
+  background: rgba(17, 24, 39, 0.6);
+  padding: 10px;
+  border-left: 3px solid #3b82f6;
+  border-radius: 6px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
 /* ─────────────────────────────────────────────
    Responsive
    ───────────────────────────────────────────── */

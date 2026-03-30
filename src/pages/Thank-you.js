@@ -11,7 +11,6 @@ import CertificationCard from "@/components/Home/Course/CertificationCard/Certif
 
 /* ─── Constants ─── */
 const TOTAL_SEATS = 24;
-const SEATS_PER_DAY = 4;
 const BASE_DATE = new Date("2026-03-24T00:00:00");
 const DEADLINE = new Date("2026-03-31T23:59:59");
 
@@ -23,10 +22,18 @@ function setCookie(name, value, days, domain) {
   document.cookie = `${name}=${value || ""};expires=${date.toUTCString()};path=/;domain=${domain}`;
 }
 
+/* ✅ Smart seats logic (never below 4) */
 function getRemainingSeats() {
-  const daysPassed = Math.floor((new Date() - BASE_DATE) / 86400000);
-  const remaining = TOTAL_SEATS - daysPassed * SEATS_PER_DAY;
-  return Math.max(remaining, 1);
+  const now = new Date();
+
+  const totalDuration = DEADLINE - BASE_DATE;
+  const elapsed = now - BASE_DATE;
+
+  const progress = Math.min(elapsed / totalDuration, 1);
+
+  const calculatedSeats = Math.floor(TOTAL_SEATS - progress * TOTAL_SEATS);
+
+  return Math.max(calculatedSeats, 4); // 👈 never go below 4
 }
 
 function pad(n) {
@@ -46,33 +53,40 @@ function getTimeLeft() {
 
 /* ─── Component ─── */
 const ThankYou = ({ initialName, initialPhone }) => {
-  // null = not yet mounted; avoids server/client mismatch
   const [timeLeft, setTimeLeft] = useState(null);
   const [remainingSeats, setRemainingSeats] = useState(null);
 
+  /* ✅ Progress capped at 96% */
   const progressPercent =
     remainingSeats === null
       ? 0
-      : Math.min(
-          Math.round(((TOTAL_SEATS - remainingSeats) / TOTAL_SEATS) * 100),
-          100,
+      : Math.max(
+          Math.min(
+            Math.round(((TOTAL_SEATS - remainingSeats) / TOTAL_SEATS) * 100),
+            96,
+          ),
+          80, // keeps it looking filled
         );
 
-  /* Set cookies once on mount */
+  /* Set cookies */
   useEffect(() => {
     setCookie("yourCookieName", initialName, 30, ".learnbay.co");
     setCookie("yourCookieName", initialPhone, 30, ".learnbay.co");
   }, [initialName, initialPhone]);
 
-  /* Initialise client-only values after first render to prevent hydration mismatch */
+  /* Init client-only values */
   useEffect(() => {
     setRemainingSeats(getRemainingSeats());
     setTimeLeft(getTimeLeft());
-    const interval = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
+
+    const interval = setInterval(() => {
+      setTimeLeft(getTimeLeft());
+      setRemainingSeats(getRemainingSeats()); // 👈 keeps it dynamic
+    }, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
-  /* Safely stringify for GTM */
   const emailJson = JSON.stringify(initialName || "");
   const phoneJson = JSON.stringify(initialPhone || "");
 
@@ -104,13 +118,12 @@ const ThankYou = ({ initialName, initialPhone }) => {
       <div className={styles.main}>
         <Navbar HideButton={true} />
 
-        {/* Decorative orbs */}
         <div className={styles.orb1} />
         <div className={styles.orb2} />
         <div className={styles.orb3} />
 
         <section className={styles.mains}>
-          {/* ── Hero ── */}
+          {/* HERO */}
           <div className={styles.hero}>
             <div className={styles.badge}>
               <span className={styles.badgeDot} />
@@ -128,68 +141,33 @@ const ThankYou = ({ initialName, initialPhone }) => {
             </p>
           </div>
 
-          {/* ── Main Card ── */}
+          {/* MAIN CARD */}
           <div className={styles.mainCard}>
-            {/* Scholarship band */}
-            <div className={styles.scholBand}>
-              <div className={styles.scholGlow} />
-              <div className={styles.scholTop}>
-                <div className={styles.scholLeft}>
-                  <div className={styles.pctCircle}>30%</div>
-                  <div>
-                    <div className={styles.scholLabel}>Scholarship Offer</div>
-                    <div className={styles.scholSub}>
-                      Available on all AI programs
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.scholRight}>
-                  <div className={styles.validLabel}>Valid till</div>
-                  <div className={styles.validDate}>31st March</div>
-                </div>
-              </div>
-
-              <div className={styles.divider} />
-
-              <div className={styles.feeNote}>
-                Fees will increase from{" "}
-                <span className={styles.feeHighlight}>1st April 2026</span>
-              </div>
-            </div>
-
-            {/* Countdown timer */}
+            {/* TIMER */}
             <div className={styles.timerStrip}>
               <div className={styles.timerLabel}>Offer expires in</div>
               <div className={styles.timerBoxes}>
-                <div className={styles.tBox}>
-                  <div className={styles.tNum}>{timeLeft?.d ?? "--"}</div>
-                  <div className={styles.tLbl}>Days</div>
-                </div>
-                <span className={styles.tSep}>:</span>
-                <div className={styles.tBox}>
-                  <div className={styles.tNum}>{timeLeft?.h ?? "--"}</div>
-                  <div className={styles.tLbl}>Hours</div>
-                </div>
-                <span className={styles.tSep}>:</span>
-                <div className={styles.tBox}>
-                  <div className={styles.tNum}>{timeLeft?.m ?? "--"}</div>
-                  <div className={styles.tLbl}>Mins</div>
-                </div>
-                <span className={styles.tSep}>:</span>
-                <div className={styles.tBox}>
-                  <div className={styles.tNum}>{timeLeft?.s ?? "--"}</div>
-                  <div className={styles.tLbl}>Secs</div>
-                </div>
+                {["d", "h", "m", "s"].map((key, i) => (
+                  <div key={i} className={styles.tBox}>
+                    <div className={styles.tNum}>{timeLeft?.[key] ?? "--"}</div>
+                    <div className={styles.tLbl}>
+                      {key === "d"
+                        ? "Days"
+                        : key === "h"
+                          ? "Hours"
+                          : key === "m"
+                            ? "Mins"
+                            : "Secs"}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Seats */}
+            {/* SEATS */}
             <div className={styles.seatsSection}>
               <div className={styles.seatsTop}>
-                <div className={styles.seatsLabel}>
-                  <span className={styles.fire}>🔥</span> Seats filling fast
-                </div>
+                <div className={styles.seatsLabel}>🔥 Seats filling fast</div>
                 <div className={styles.seatsCount}>
                   Only {remainingSeats ?? "..."} left
                 </div>
@@ -200,36 +178,39 @@ const ThankYou = ({ initialName, initialPhone }) => {
                   className={styles.progressFill}
                   style={{ width: `${progressPercent}%` }}
                 />
-                Seats filling fast
               </div>
 
               <div className={styles.progressLabels}>
                 <span>Seats claimed</span>
-                <span>
-                  {remainingSeats === null
-                    ? "..."
-                    : `${progressPercent}% filled`}
-                </span>
+                <span>{progressPercent}% filled</span>
               </div>
             </div>
 
-            {/* IBM bar */}
+            {/* IBM */}
             <div className={styles.ibmBar}>
               <Image
                 src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/new-UI/ibm-microsoft+(1).webp"
-                alt="IBM & Microsoft"
+                alt="IBM and Microsoft"
                 width={120}
                 height={40}
-                className={styles.logoImg}
               />
               <span className={styles.ibmSep}>|</span>
               <span className={styles.ibmText}>
-                Industry-certified program · Placement support
+                Industry-certified program · Placement support included
               </span>
+            </div>
+
+            {/* NOTE */}
+            <div className={styles.ctaSection}>
+              <p className={styles.ctaNote}>
+                Note: Scholarships are limited and offered on a first-come,
+                first-served basis. Check your eligibility during the counseling
+                session.
+              </p>
             </div>
           </div>
 
-          {/* Course cards */}
+          {/* COURSES */}
           <div className={styles.cardwrapper}>
             {certificationCourses.map((course, index) => (
               <CertificationCard
@@ -246,23 +227,6 @@ const ThankYou = ({ initialName, initialPhone }) => {
 
         <FooterThankYou />
       </div>
-
-      {/* Chat360 bot */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(botId) {
-              var s = document.createElement("script");
-              s.async = true;
-              s.type = "text/javascript";
-              s.src = "https://app.chat360.io/widget/chatbox/common_scripts/script.js";
-              s.onload = function() { window.loadChat360Bot(botId); };
-              s.onerror = function(err) { console.error(err); };
-              document.body.appendChild(s);
-            })("4f4d2e98-0778-4fb7-a9c3-af6fd1bedad8");
-          `,
-        }}
-      />
     </>
   );
 };
