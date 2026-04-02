@@ -8,6 +8,7 @@ import CourseThankYou from "@/components/Home/Course/ThankYouNew";
 import { certificationCourses } from "@/components/Home/Course/CertificationCard/Data/CertificationCardData";
 import cookies from "next-cookies";
 import CertificationCard from "@/components/Home/Course/CertificationCard/CertificationCard";
+import SuccessPage from "../components/ThankYouNew/SuccessPage";
 
 /* ─── Constants ─── */
 const TOTAL_SEATS = 24;
@@ -123,106 +124,13 @@ const ThankYou = ({ initialName, initialPhone }) => {
         <div className={styles.orb3} />
 
         <section className={styles.mains}>
-          {/* HERO */}
-          <div className={styles.hero}>
-            <div className={styles.badge}>
-              <span className={styles.badgeDot} />
-              Enquiry Successfully Registered
-            </div>
-
-            <h1 className={styles.heroTitle}>
-              Avail Financial Year End <br />
-              <span className={styles.gradGreen}>Scholarship</span>
-            </h1>
-
-            <p className={styles.heroSub}>
-              Our expert will call you shortly. Lock your scholarship before it
-              expires.
-            </p>
+          <div style={{ marginTop: "30px" }}>
+            <SuccessPage
+              option1={"Call scheduled"}
+              option2={"Your Enquiry Is Successfully Registered"}
+            />
+            <CourseThankYou />
           </div>
-
-          {/* MAIN CARD */}
-          <div className={styles.mainCard}>
-            {/* TIMER */}
-            <div className={styles.timerStrip}>
-              <div className={styles.timerLabel}>Offer expires in</div>
-              <div className={styles.timerBoxes}>
-                {["d", "h", "m", "s"].map((key, i) => (
-                  <div key={i} className={styles.tBox}>
-                    <div className={styles.tNum}>{timeLeft?.[key] ?? "--"}</div>
-                    <div className={styles.tLbl}>
-                      {key === "d"
-                        ? "Days"
-                        : key === "h"
-                          ? "Hours"
-                          : key === "m"
-                            ? "Mins"
-                            : "Secs"}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* SEATS */}
-            <div className={styles.seatsSection}>
-              <div className={styles.seatsTop}>
-                <div className={styles.seatsLabel}>🔥 Seats filling fast</div>
-                <div className={styles.seatsCount}>
-                  Only {remainingSeats ?? "..."} left
-                </div>
-              </div>
-
-              <div className={styles.progressTrack}>
-                <div
-                  className={styles.progressFill}
-                  style={{ width: `${progressPercent}%` }}
-                />
-              </div>
-
-              <div className={styles.progressLabels}>
-                <span>Seats claimed</span>
-                <span>{progressPercent}% filled</span>
-              </div>
-            </div>
-
-            {/* IBM */}
-            <div className={styles.ibmBar}>
-              <Image
-                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/new-UI/ibm-microsoft+(1).webp"
-                alt="IBM and Microsoft"
-                width={120}
-                height={40}
-              />
-              <span className={styles.ibmSep}>|</span>
-              <span className={styles.ibmText}>
-                Industry-certified program · Placement support included
-              </span>
-            </div>
-
-            {/* NOTE */}
-            <div className={styles.ctaSection}>
-              <p className={styles.ctaNote}>
-                Note: Scholarships are limited and offered on a first-come,
-                first-served basis. Check your eligibility during the counseling
-                session.
-              </p>
-            </div>
-          </div>
-
-          {/* COURSES */}
-          <div className={styles.cardwrapper}>
-            {certificationCourses.map((course, index) => (
-              <CertificationCard
-                key={index}
-                data={course}
-                download={true}
-                isThankYou={true}
-              />
-            ))}
-          </div>
-
-          <CourseThankYou />
         </section>
 
         <FooterThankYou />
