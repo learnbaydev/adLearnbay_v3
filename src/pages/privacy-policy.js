@@ -10,7 +10,7 @@ function privacy() {
     <div>
       <Head>
         <title>Learnbay - Privacy Policies</title>
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
           content="Learn about Learnbay's privacy policies, which ensure the security of your personal information."
